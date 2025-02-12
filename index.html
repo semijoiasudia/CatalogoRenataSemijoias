@@ -16,6 +16,9 @@
             font-size: 24px;
             color: #333;
         }
+        .modal-open {
+            overflow: hidden;
+        }
         .categories {
             display: flex;
             justify-content: center;
@@ -304,10 +307,12 @@
             document.getElementById('modalImg').src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
             document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open'); // Bloqueia a rolagem da página principal
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open'); // Libera a rolagem da página principal
         }
 
         function saveImage() {
