@@ -5,57 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renata - Semijoias e Acessórios</title>
     <style>
-        /* Estilos anteriores mantidos */
-        .banho-filter {
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+        .categories {
             display: flex;
-            gap: 10px;
             justify-content: center;
-            margin: 15px 0;
+            gap: 10px;
+            margin-bottom: 20px;
         }
-
-        .banho-filter button {
-            padding: 8px 15px;
-            background-color: #6c757d;
-            border: none;
-            border-radius: 15px;
-            color: white;
+        .categories button {
+            padding: 10px 20px;
+            font-size: 16px;
             cursor: pointer;
-            transition: all 0.3s;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s;
         }
-
-        .banho-filter button:hover {
-            background-color: #5a6268;
+        .categories button:hover {
+            background-color: #0056b3;
+        }
+        .categories button.active {
+            background-color: #0056b3;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
             transform: scale(1.05);
         }
-
-        .banho-filter button.active-banho {
-            background-color: #ffc107;
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
             color: #000;
+            font-weight: bold;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3; /* Garante que o botão fique sobre a imagem */
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .save-btn {
+            margin: 20px 0 10px 0; /* Espaçamento superior e inferior */
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            flex-shrink: 0; /* Impede que o botão diminua */
+        }
+        .save-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
-    <!-- Estrutura HTML anterior mantida -->
+    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
+    <h3>Catálogo - Categorias</h3>
+    <div class="categories" id="categories"></div>
+    <div class="gallery" id="gallery"></div>
     
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg">
+            </div>
+            <button class="save-btn" onclick="saveImage()">Salvar Imagem</button>
+            <p>Anote o código da peça ou clique em salvar para salvar a foto em seu dispositivo e posteriormente nos enviar.</p>
+        </div>
+    </div>
+
+    <div id="rodape" class="rodape"></div>
+
     <script>
         const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
         let descricoes = {};
 
-        // Função atualizada para carregar descrições
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
         async function loadDescriptions() {
             try {
                 const response = await fetch(descricoesUrl);
                 const text = await response.text();
                 const lines = text.split('\n');
                 lines.forEach(line => {
-                    const [codigo, descricao, preco, banho] = line.split(';');
+                    const [codigo, descricao, preco] = line.split(';');
                     if (codigo && descricao && preco) {
                         descricoes[codigo.trim()] = {
                             descricao: descricao.trim(),
-                            preco: formatarPreco(preco.trim()),
-                            banho: banho?.trim() || 'sem banho'
+                            preco: formatarPreco(preco.trim())
                         };
                     }
                 });
@@ -64,38 +231,36 @@
             }
         }
 
-        // Novo código para filtro de banho
-        function createBanhoFilter(banhosDisponiveis) {
-            const filterContainer = document.createElement('div');
-            filterContainer.className = 'banho-filter';
-            
-            const btnTodos = document.createElement('button');
-            btnTodos.textContent = 'Todos';
-            btnTodos.onclick = () => filterByBanho('todos');
-            filterContainer.appendChild(btnTodos);
+        async function loadCategories() {
+            try {
+                const response = await fetch(repoUrl);
+                const data = await response.json();
+                const categoriesDiv = document.getElementById('categories');
+                
+                data.forEach(item => {
+                    if (item.type === 'dir') {
+                        const button = document.createElement('button');
+                        button.textContent = item.name;
+                        button.onclick = () => {
+                            document.querySelectorAll('.categories button').forEach(btn => {
+                                btn.classList.remove('active');
+                            });
+                            button.classList.add('active');
+                            loadImages(item.name);
+                        };
+                        categoriesDiv.appendChild(button);
 
-            banhosDisponiveis.forEach(banho => {
-                const btn = document.createElement('button');
-                btn.textContent = banho;
-                btn.onclick = () => filterByBanho(banho);
-                filterContainer.appendChild(btn);
-            });
-            
-            return filterContainer;
+                        if (item.name.toLowerCase() === 'brincos') {
+                            button.classList.add('active');
+                            loadImages(item.name);
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+            }
         }
 
-        function filterByBanho(banhoSelecionado) {
-            const items = document.querySelectorAll('.gallery .item');
-            items.forEach(item => {
-                const codigo = item.querySelector('.codigo').textContent.replace('COD: ', '');
-                const itemBanho = descricoes[codigo]?.banho || '';
-                item.style.display = (banhoSelecionado === 'todos' || itemBanho === banhoSelecionado) 
-                    ? 'block' 
-                    : 'none';
-            });
-        }
-
-        // Função loadImages atualizada
         async function loadImages(folderName) {
             try {
                 const response = await fetch(`${repoUrl}/${folderName}`);
@@ -106,39 +271,84 @@
                 files.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
-                        const { descricao, preco, banho } = descricoes[codigo] || { 
+                        const { descricao, preco } = descricoes[codigo] || { 
                             descricao: "Descrição não disponível", 
-                            preco: "Preço não disponível",
-                            banho: "sem banho"
+                            preco: "Preço não disponível" 
                         };
 
                         const item = document.createElement('div');
                         item.className = 'item';
 
-                        // ... (código anterior de criação dos elementos)
+                        const img = document.createElement('img');
+                        img.src = file.download_url;
+                        img.onclick = () => showModal(file.download_url, codigo);
+                        
+                        const codigoElement = document.createElement('div');
+                        codigoElement.className = 'codigo';
+                        codigoElement.textContent = `COD: ${codigo}`;
 
+                        const desc = document.createElement('div');
+                        desc.className = 'description';
+                        desc.textContent = descricao;
+
+                        const precoElement = document.createElement('div');
+                        precoElement.className = 'preco';
+                        precoElement.textContent = preco;
+
+                        item.append(img, codigoElement, desc, precoElement);
                         gallery.appendChild(item);
                     }
                 });
-
-                // Adiciona filtros de banho
-                const banhosDisponiveis = [...new Set(files.map(file => {
-                    const codigo = file.name.split('.')[0];
-                    return descricoes[codigo]?.banho || 'sem banho';
-                }))];
-
-                const existingFilter = document.querySelector('.banho-filter');
-                if (existingFilter) existingFilter.remove();
-
-                const banhoFilter = createBanhoFilter(banhosDisponiveis);
-                gallery.parentNode.insertBefore(banhoFilter, gallery);
-
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
             }
         }
 
-        // Restante do código anterior mantido
+        function showModal(src, codigo) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open'); // Bloqueia a rolagem da página principal
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open'); // Libera a rolagem da página principal
+        }
+
+        function saveImage() {
+            html2canvas(document.querySelector("#captureArea"), {
+                useCORS: true,
+                allowTaint: true,
+                scale: 2
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                console.error("Erro ao salvar imagem:", error);
+            });
+        }
+
+        async function loadRodape() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
+                if (!response.ok) throw new Error("Erro ao carregar o rodapé.");
+                const text = await response.text();
+                // Substituindo as quebras de linha por <br>
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        window.onload = async () => {
+            await loadDescriptions();
+            loadCategories();
+            loadRodape();
+        };
     </script>
 </body>
 </html>
