@@ -54,6 +54,9 @@
         .gallery .item {
             text-align: center;
             position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
         }
         .gallery img {
             width: 100%;
@@ -69,6 +72,10 @@
             margin-top: 10px;
             font-size: 14px;
             color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
         }
         .gallery .preco {
             margin-top: 5px;
@@ -206,7 +213,6 @@
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
         let descricoes = {};
         let currentFolder = '';
-        let banhosDisponiveis = new Set(); // Armazena os tipos de banho disponíveis
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -223,39 +229,16 @@
                 lines.forEach(line => {
                     const [codigo, descricao, preco, banho] = line.split(';');
                     if (codigo && descricao && preco && banho) {
-                        const banhoFormatado = banho.trim().toLowerCase();
                         descricoes[codigo.trim()] = {
                             descricao: descricao.trim(),
                             preco: formatarPreco(preco.trim()),
-                            banho: banhoFormatado
+                            banho: banho.trim().toLowerCase()
                         };
-                        banhosDisponiveis.add(banhoFormatado); // Adiciona o banho ao conjunto de banhos disponíveis
                     }
                 });
             } catch (error) {
                 console.error("Erro ao carregar descrições:", error);
             }
-        }
-
-        function criarBotoesSubcategorias() {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = ''; // Limpa os botões anteriores
-
-            // Adiciona o botão "Todos"
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.onclick = () => filterByBanho('todos');
-            subcategoriesDiv.appendChild(botaoTodos);
-
-            // Adiciona os botões para cada tipo de banho disponível
-            banhosDisponiveis.forEach(banho => {
-                const botaoBanho = document.createElement('button');
-                botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1); // Capitaliza a primeira letra
-                botaoBanho.onclick = () => filterByBanho(banho);
-                subcategoriesDiv.appendChild(botaoBanho);
-            });
-
-            subcategoriesDiv.style.display = 'flex'; // Exibe os botões de subcategoria
         }
 
         async function loadCategories() {
@@ -290,7 +273,7 @@
 
         async function loadImages(folderName) {
             currentFolder = folderName;
-            criarBotoesSubcategorias(); // Cria os botões de subcategoria dinamicamente
+            const banhosNaCategoria = new Set(); // Armazena os banhos presentes na categoria selecionada
 
             try {
                 const response = await fetch(`${repoUrl}/${folderName}`);
@@ -306,6 +289,11 @@
                             preco: "Preço não disponível",
                             banho: "todos"
                         };
+
+                        // Adiciona o banho ao conjunto de banhos disponíveis na categoria
+                        if (banho) {
+                            banhosNaCategoria.add(banho);
+                        }
 
                         const item = document.createElement('div');
                         item.className = 'item';
@@ -331,9 +319,33 @@
                         gallery.appendChild(item);
                     }
                 });
+
+                // Cria os botões de subcategoria apenas com os banhos presentes na categoria
+                criarBotoesSubcategorias(banhosNaCategoria);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
             }
+        }
+
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = ''; // Limpa os botões anteriores
+
+            // Adiciona o botão "Todos"
+            const botaoTodos = document.createElement('button');
+            botaoTodos.textContent = 'Todos';
+            botaoTodos.onclick = () => filterByBanho('todos');
+            subcategoriesDiv.appendChild(botaoTodos);
+
+            // Adiciona os botões para cada tipo de banho presente na categoria
+            banhosNaCategoria.forEach(banho => {
+                const botaoBanho = document.createElement('button');
+                botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1); // Capitaliza a primeira letra
+                botaoBanho.onclick = () => filterByBanho(banho);
+                subcategoriesDiv.appendChild(botaoBanho);
+            });
+
+            subcategoriesDiv.style.display = 'flex'; // Exibe os botões de subcategoria
         }
 
         function filterByBanho(banho) {
