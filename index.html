@@ -184,11 +184,7 @@
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
     <h3>Catálogo - Categorias</h3>
     <div class="categories" id="categories"></div>
-    <div class="subcategories" id="subcategories" style="display: none;">
-        <button onclick="filterByBanho('prata')">Prata</button>
-        <button onclick="filterByBanho('dourado')">Dourado</button>
-        <button onclick="filterByBanho('todos')">Todos</button>
-    </div>
+    <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
     
     <div class="modal" id="imageModal">
@@ -210,6 +206,7 @@
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
         let descricoes = {};
         let currentFolder = '';
+        let banhosDisponiveis = new Set(); // Armazena os tipos de banho disponíveis
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -226,16 +223,39 @@
                 lines.forEach(line => {
                     const [codigo, descricao, preco, banho] = line.split(';');
                     if (codigo && descricao && preco && banho) {
+                        const banhoFormatado = banho.trim().toLowerCase();
                         descricoes[codigo.trim()] = {
                             descricao: descricao.trim(),
                             preco: formatarPreco(preco.trim()),
-                            banho: banho.trim()
+                            banho: banhoFormatado
                         };
+                        banhosDisponiveis.add(banhoFormatado); // Adiciona o banho ao conjunto de banhos disponíveis
                     }
                 });
             } catch (error) {
                 console.error("Erro ao carregar descrições:", error);
             }
+        }
+
+        function criarBotoesSubcategorias() {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = ''; // Limpa os botões anteriores
+
+            // Adiciona o botão "Todos"
+            const botaoTodos = document.createElement('button');
+            botaoTodos.textContent = 'Todos';
+            botaoTodos.onclick = () => filterByBanho('todos');
+            subcategoriesDiv.appendChild(botaoTodos);
+
+            // Adiciona os botões para cada tipo de banho disponível
+            banhosDisponiveis.forEach(banho => {
+                const botaoBanho = document.createElement('button');
+                botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1); // Capitaliza a primeira letra
+                botaoBanho.onclick = () => filterByBanho(banho);
+                subcategoriesDiv.appendChild(botaoBanho);
+            });
+
+            subcategoriesDiv.style.display = 'flex'; // Exibe os botões de subcategoria
         }
 
         async function loadCategories() {
@@ -270,7 +290,7 @@
 
         async function loadImages(folderName) {
             currentFolder = folderName;
-            document.getElementById('subcategories').style.display = 'flex';
+            criarBotoesSubcategorias(); // Cria os botões de subcategoria dinamicamente
 
             try {
                 const response = await fetch(`${repoUrl}/${folderName}`);
