@@ -207,6 +207,29 @@
             margin: 0;
             padding: 5px;
         }
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .pagination button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button.active {
+            background-color: #495057;
+            font-weight: bold;
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -216,6 +239,7 @@
     <div class="categories" id="categories"></div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
     
     <div class="modal" id="imageModal">
         <div class="modal-content">
@@ -236,6 +260,8 @@
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
         let descricoes = {};
         let currentFolder = '';
+        let currentPage = 1;
+        const imagesPerPage = 20;
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -306,7 +332,14 @@
                 const gallery = document.getElementById('gallery');
                 gallery.innerHTML = '';
 
-                files.forEach(file => {
+                const totalPages = Math.ceil(files.length / imagesPerPage);
+                displayPagination(totalPages);
+
+                const startIndex = (currentPage - 1) * imagesPerPage;
+                const endIndex = startIndex + imagesPerPage;
+                const filesToDisplay = files.slice(startIndex, endIndex);
+
+                filesToDisplay.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
                         const { descricao, preco, banho } = descricoes[codigo] || { 
@@ -421,6 +454,24 @@
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
                 console.error(error);
+            }
+        }
+
+        function displayPagination(totalPages) {
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.onclick = () => {
+                    currentPage = i;
+                    loadImages(currentFolder);
+                };
+                if (i === currentPage) {
+                    button.classList.add('active');
+                }
+                paginationDiv.appendChild(button);
             }
         }
 
