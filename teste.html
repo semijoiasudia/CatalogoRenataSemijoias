@@ -405,6 +405,7 @@
                 if (currentPage < totalPages) {
                     currentPage++;
                     displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola para o topo suavemente
                 }
             };
             nextButton.disabled = currentPage === totalPages;
