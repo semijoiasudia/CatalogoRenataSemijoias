@@ -348,13 +348,13 @@
                 allFiles = await response.json();
                 allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
 
-                // Processa todos os arquivos para coletar os banhos, ignorando fotos sem descrição
+                // Processa todos os arquivos para coletar os banhos
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
-                        const item = descricoes[codigo];
-                        if (item && item.banho) { // Verifica se existe descrição e banho
-                            banhosNaCategoria.add(item.banho);
+                        const { banho } = descricoes[codigo] || { banho: '' }; // Define banho como vazio para itens sem descrição
+                        if (banho) { // Só adiciona ao Set se o banho não for vazio
+                            banhosNaCategoria.add(banho);
                         }
                     }
                 });
@@ -370,7 +370,7 @@
             return allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
-                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || ''; // Define banho como vazio para itens sem descrição
                 return currentBanho === 'todos' || banho === currentBanho;
             });
         }
@@ -388,12 +388,12 @@
                 const { descricao, preco, banho } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: "todos"
+                    banho: "" // Define banho como vazio para itens sem descrição
                 };
 
                 const item = document.createElement('div');
                 item.className = 'item';
-                item.dataset.banho = banho;
+                item.dataset.banho = banho || 'todos'; // Usa "todos" como fallback para o filtro, mas não adiciona ao Set
 
                 const img = document.createElement('img');
                 img.src = file.download_url;
@@ -462,9 +462,9 @@
                 subcategoriesDiv.appendChild(botaoTodos);
             }
 
-            // Adiciona botões apenas para banhos válidos, ignorando "todos"
+            // Adiciona botões apenas para banhos não vazios, ignorando banhos vazios ("")
             banhosNaCategoria.forEach(banho => {
-                if (banho !== 'todos') { // Evita duplicatas ou confusão com "todos"
+                if (banho && banho !== '') { // Ignora banhos vazios
                     const botaoBanho = document.createElement('button');
                     // Normaliza o texto do botão para consistência
                     let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
