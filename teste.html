@@ -365,7 +365,7 @@
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
                 const { descricao, preco, banho } = descricoes[codigo] || { 
-                    descricao: "Descrição não disponível", 
+                    descricao: "Descrição não disponível - Este ítem pode não estar disponível", 
                     preco: "Preço não disponível",
                     banho: "todos"
                 };
