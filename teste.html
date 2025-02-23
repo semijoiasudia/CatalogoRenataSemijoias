@@ -289,10 +289,16 @@
                 lines.forEach(line => {
                     const [codigo, descricao, preco, banho] = line.split(';');
                     if (codigo && descricao && preco && banho) {
+                        // Normaliza o banho para tratar variações como "2 banhos", "2 Banhos", etc.
+                        let normalizedBanho = banho.trim().toLowerCase();
+                        // Trata especificamente "2 banhos" para garantir consistência
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
                         descricoes[codigo.trim()] = {
                             descricao: descricao.trim(),
                             preco: formatarPreco(preco.trim()),
-                            banho: banho.trim().toLowerCase()
+                            banho: normalizedBanho
                         };
                     }
                 });
@@ -341,6 +347,18 @@
                 const response = await fetch(`${repoUrl}/${folderName}`);
                 allFiles = await response.json();
                 allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
+
+                // Processa todos os arquivos para coletar os banhos
+                allFiles.forEach(file => {
+                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
+                        const codigo = file.name.split('.')[0];
+                        const { banho } = descricoes[codigo] || { banho: '' }; // Define banho como vazio para itens sem descrição
+                        if (banho) { // Só adiciona ao Set se o banho não for vazio
+                            banhosNaCategoria.add(banho);
+                        }
+                    }
+                });
+
                 displayPage(currentPage, banhosNaCategoria);
                 criarBotoesSubcategorias(banhosNaCategoria);
             } catch (error) {
@@ -352,7 +370,7 @@
             return allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
-                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || ''; // Define banho como vazio para itens sem descrição
                 return currentBanho === 'todos' || banho === currentBanho;
             });
         }
@@ -368,18 +386,14 @@
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
                 const { descricao, preco, banho } = descricoes[codigo] || { 
-                    descricao: "Descrição não disponível", 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: "todos"
+                    banho: "" // Define banho como vazio para itens sem descrição
                 };
-
-                if (banho) {
-                    banhosNaCategoria.add(banho);
-                }
 
                 const item = document.createElement('div');
                 item.className = 'item';
-                item.dataset.banho = banho;
+                item.dataset.banho = banho || 'todos'; // Usa "todos" como fallback para o filtro, mas não adiciona ao Set
 
                 const img = document.createElement('img');
                 img.src = file.download_url;
@@ -438,7 +452,9 @@
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            if (!document.querySelector('.subcategories button[data-banho="todos"]')) {
+            // Adiciona o botão "Todos" apenas uma vez, usando uma verificação mais robusta
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
                 const botaoTodos = document.createElement('button');
                 botaoTodos.textContent = 'Todos';
                 botaoTodos.dataset.banho = 'todos';
@@ -446,12 +462,20 @@
                 subcategoriesDiv.appendChild(botaoTodos);
             }
 
+            // Adiciona botões apenas para banhos não vazios, ignorando banhos vazios ("")
             banhosNaCategoria.forEach(banho => {
-                const botaoBanho = document.createElement('button');
-                botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1);
-                botaoBanho.dataset.banho = banho;
-                botaoBanho.onclick = () => filterByBanho(banho);
-                subcategoriesDiv.appendChild(botaoBanho);
+                if (banho && banho !== '') { // Ignora banhos vazios
+                    const botaoBanho = document.createElement('button');
+                    // Normaliza o texto do botão para consistência
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos'; // Garante que o texto exibido seja consistente
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
             });
 
             subcategoriesDiv.style.display = 'flex';
