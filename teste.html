@@ -32,7 +32,7 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #d4af37, #b8860b);
+            background: linear-gradient(135deg, #d4af37, #b8860b); /* Gradiente dourado */
             color: white;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s;
@@ -44,26 +44,24 @@
         }
         
         .categories button.active {
-            background: linear-gradient(135deg, #b8860b, #8b6914);
+            background: linear-gradient(135deg, #b8860b, #8b6914); /* Dourado mais escuro */
             font-weight: bold;
         }
         .subcategories button {
-            padding: 8px 16px;
-            font-size: 14px;
+            padding: 8px 16px; /* Botões menores */
+            font-size: 14px; /* Fonte menor */
             cursor: pointer;
             border: none;
             border-radius: 5px;
-            background-color: #6c757d;
+            background-color: #6c757d; /* Cor cinza */
             color: white;
             transition: background-color 0.3s;
         }
-        
         .subcategories button:hover {
-            background-color: #5a6268;
+            background-color: #5a6268; /* Cor cinza mais escura no hover */
         }
-        
         .subcategories button.active {
-            background-color: #495057;
+            background-color: #5a6268; /* Cor cinza mais escura quando ativo */
             font-weight: bold;
         }
         .gallery {
@@ -177,8 +175,8 @@
         .close:hover {
             background: rgba(255, 255, 255, 1);
         }
-        .save-btn {
-            margin: 20px 0 10px 0;
+        .save-btn, .request-btn {
+            margin: 10px 0;
             background-color: #28a745;
             color: white;
             padding: 12px 24px;
@@ -190,8 +188,15 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
+        .request-btn {
+            background-color: #007bff; /* Azul para diferenciar do botão salvar */
+        }
         .save-btn:hover {
             background-color: #218838;
+            transform: scale(1.05);
+        }
+        .request-btn:hover {
+            background-color: #0056b3;
             transform: scale(1.05);
         }
         .rodape {
@@ -207,63 +212,49 @@
             margin: 0;
             padding: 5px;
         }
-        /* Novos estilos para paginação */
         .pagination {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 10px;
-            margin: 20px 0;
+            margin-top: 20px;
         }
-        
         .pagination button {
             padding: 8px 16px;
-            border: none;
-            border-radius: 4px;
-            background: linear-gradient(135deg, #d4af37, #b8860b);
-            color: white;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        
-        .pagination button:disabled {
-            background: #cccccc;
-            cursor: not-allowed;
-        }
-        
-        .pagination button:not(:disabled):hover {
-            transform: scale(1.05);
-        }
-        
-        .page-info {
-            display: flex;
-            align-items: center;
-            color: #333;
             font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <h3>Catálogo - Categorias 4444</h3>
+    <h3>Catálogo - Categorias</h3>
     <div class="categories" id="categories"></div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
-    <div class="pagination" id="pagination">
-        <button id="prevPage" onclick="previousPage()">Anterior</button>
-        <div class="page-info">Página <span id="currentPage">1</span> de <span id="totalPages">1</span></div>
-        <button id="nextPage" onclick="nextPage()">Próxima</button>
-    </div>
+    <div class="pagination" id="pagination"></div>
     
     <div class="modal" id="imageModal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" onclick="closeModal()">×</span>
             <div class="capture-area" id="captureArea">
                 <div class="modal-codigo" id="modalCodigo"></div>
                 <img id="modalImg">
             </div>
             <button class="save-btn" onclick="saveImage()">Salvar Imagem</button>
+            <button class="request-btn" onclick="requestItem()">Solicitar este Item</button>
             <p>Anote o código da peça ou clique em salvar para salvar a foto em seu dispositivo e posteriormente nos enviar.</p>
         </div>
     </div>
@@ -275,9 +266,10 @@
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
         let descricoes = {};
         let currentFolder = '';
+        const itemsPerPage = 20;
         let currentPage = 1;
-        const imagesPerPage = 20;
-        let currentImages = [];
+        let allFiles = [];
+        let currentBanho = 'todos'; // Variável para rastrear o filtro ativo
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -339,59 +331,48 @@
         async function loadImages(folderName) {
             currentFolder = folderName;
             const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos'; // Reseta o filtro ao mudar de categoria
 
             try {
                 const response = await fetch(`${repoUrl}/${folderName}`);
-                const files = await response.json();
-                files.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
-                
-                // Armazena todas as imagens para paginação
-                currentImages = files.filter(file => 
-                    file.name.endsWith('.jpg') || file.name.endsWith('.png')
-                );
-
-                // Configura a paginação inicial
-                setupPagination();
-                displayCurrentPage();
-
-                // Coleta banhos para subcategorias
-                currentImages.forEach(file => {
-                    const codigo = file.name.split('.')[0];
-                    const { banho } = descricoes[codigo] || { banho: "todos" };
-                    if (banho) {
-                        banhosNaCategoria.add(banho);
-                    }
-                });
-
+                allFiles = await response.json();
+                allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
+                displayPage(currentPage, banhosNaCategoria);
                 criarBotoesSubcategorias(banhosNaCategoria);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
             }
         }
 
-        function setupPagination() {
-            currentPage = 1;
-            const totalPages = Math.ceil(currentImages.length / imagesPerPage);
-            document.getElementById('currentPage').textContent = currentPage;
-            document.getElementById('totalPages').textContent = totalPages;
-            updatePaginationButtons();
+        function getFilteredFiles() {
+            return allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
         }
 
-        function displayCurrentPage() {
+        function displayPage(page, banhosNaCategoria) {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
-            
-            const startIndex = (currentPage - 1) * imagesPerPage;
-            const endIndex = Math.min(startIndex + imagesPerPage, currentImages.length);
-            
-            for (let i = startIndex; i < endIndex; i++) {
-                const file = currentImages[i];
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+
+            paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
-                const { descricao, preco, banho } = descricoes[codigo] || {
-                    descricao: "Descrição não disponível",
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível", 
                     preco: "Preço não disponível",
                     banho: "todos"
                 };
+
+                if (banho) {
+                    banhosNaCategoria.add(banho);
+                }
 
                 const item = document.createElement('div');
                 item.className = 'item';
@@ -415,83 +396,68 @@
 
                 item.append(img, codigoElement, desc, precoElement);
                 gallery.appendChild(item);
-            }
+            });
+
+            updatePagination();
         }
 
-        function updatePaginationButtons() {
-            const totalPages = Math.ceil(currentImages.length / imagesPerPage);
-            document.getElementById('prevPage').disabled = currentPage === 1;
-            document.getElementById('nextPage').disabled = currentPage === totalPages;
-        }
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
 
-        function previousPage() {
-            if (currentPage > 1) {
-                currentPage--;
-                document.getElementById('currentPage').textContent = currentPage;
-                displayCurrentPage();
-                updatePaginationButtons();
-            }
-        }
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
 
-        function nextPage() {
-            const totalPages = Math.ceil(currentImages.length / imagesPerPage);
-            if (currentPage < totalPages) {
-                currentPage++;
-                document.getElementById('currentPage').textContent = currentPage;
-                displayCurrentPage();
-                updatePaginationButtons();
-            }
-        }
-
-        function filterByBanho(banho) {
-            const response = await fetch(`${repoUrl}/${currentFolder}`);
-            const files = await response.json();
-            files.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
-            
-            currentImages = files.filter(file => 
-                (file.name.endsWith('.jpg') || file.name.endsWith('.png'))
-            );
-
-            if (banho !== 'todos') {
-                currentImages = currentImages.filter(file => {
-                    const codigo = file.name.split('.')[0];
-                    const itemBanho = descricoes[codigo]?.banho || 'todos';
-                    return itemBanho === banho;
-                });
-            }
-
-            setupPagination();
-            displayCurrentPage();
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
         }
 
         function criarBotoesSubcategorias(banhosNaCategoria) {
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.classList.add('active');
-            botaoTodos.onclick = () => {
-                document.querySelectorAll('.subcategories button').forEach(btn => btn.classList.remove('active'));
-                botaoTodos.classList.add('active');
-                filterByBanho('todos');
-            };
-            subcategoriesDiv.appendChild(botaoTodos);
+            if (!document.querySelector('.subcategories button[data-banho="todos"]')) {
+                const botaoTodos = document.createElement('button');
+                botaoTodos.textContent = 'Todos';
+                botaoTodos.dataset.banho = 'todos';
+                botaoTodos.onclick = () => filterByBanho('todos');
+                subcategoriesDiv.appendChild(botaoTodos);
+            }
 
             banhosNaCategoria.forEach(banho => {
-                if (banho && banho !== 'todos') {
-                    const botaoBanho = document.createElement('button');
-                    botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    botaoBanho.onclick = () => {
-                        document.querySelectorAll('.subcategories button').forEach(btn => btn.classList.remove('active'));
-                        botaoBanho.classList.add('active');
-                        filterByBanho(banho);
-                    };
-                    subcategoriesDiv.appendChild(botaoBanho);
-                }
+                const botaoBanho = document.createElement('button');
+                botaoBanho.textContent = banho.charAt(0).toUpperCase() + banho.slice(1);
+                botaoBanho.dataset.banho = banho;
+                botaoBanho.onclick = () => filterByBanho(banho);
+                subcategoriesDiv.appendChild(botaoBanho);
             });
 
             subcategoriesDiv.style.display = 'flex';
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho; // Atualiza o filtro ativo
+            currentPage = 1; // Reseta para a primeira página ao mudar o filtro
+            displayPage(currentPage, new Set()); // Re-renderiza a galeria com o novo filtro
         }
 
         function showModal(src, codigo) {
@@ -518,6 +484,24 @@
                 link.click();
             }).catch(error => {
                 console.error("Erro ao salvar imagem:", error);
+            });
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const phoneNumber = '+5534997622408'; // Número formatado corretamente para o WhatsApp (+5534997622408)
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            // Verifica se o número está registrado no WhatsApp (simulação básica com mensagem de alerta)
+            fetch(`https://api.whatsapp.com/send?phone=${phoneNumber}`, {
+                method: 'HEAD',
+                mode: 'no-cors'
+            }).then(response => {
+                window.open(whatsappUrl, '_blank');
+            }).catch(error => {
+                alert('Desculpe, o número de WhatsApp informado não está registrado ou ativo. Por favor, entre em contato diretamente com o suporte em +55 34 99884-9884 ou verifique o número.');
+                console.error("Erro ao verificar o número do WhatsApp:", error);
             });
         }
 
