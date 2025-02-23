@@ -452,7 +452,9 @@
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            if (!document.querySelector('.subcategories button[data-banho="todos"]')) {
+            // Adiciona o botão "Todos" apenas uma vez, usando uma flag para evitar duplicatas
+            let botaoTodosExistente = document.querySelector('.subcategories button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
                 const botaoTodos = document.createElement('button');
                 botaoTodos.textContent = 'Todos';
                 botaoTodos.dataset.banho = 'todos';
