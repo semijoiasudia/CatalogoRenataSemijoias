@@ -271,6 +271,9 @@
         let allFiles = [];
         let currentBanho = 'todos'; // Variável para rastrear o filtro ativo
 
+        // Define o número de telefone como uma constante fixa
+        const PHONE_NUMBER = '5534998849884';
+
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
             const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
@@ -365,7 +368,7 @@
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
                 const { descricao, preco, banho } = descricoes[codigo] || { 
-                    descricao: "Descrição não disponível - Este ítem pode não estar disponível", 
+                    descricao: "Descrição não disponível", 
                     preco: "Preço não disponível",
                     banho: "todos"
                 };
@@ -489,20 +492,9 @@
 
         function requestItem() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const phoneNumber = '+5534997622408'; // Número formatado corretamente para o WhatsApp (+5534997622408)
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-            // Verifica se o número está registrado no WhatsApp (simulação básica com mensagem de alerta)
-            fetch(`https://api.whatsapp.com/send?phone=${phoneNumber}`, {
-                method: 'HEAD',
-                mode: 'no-cors'
-            }).then(response => {
-                window.open(whatsappUrl, '_blank');
-            }).catch(error => {
-                alert('Desculpe, o número de WhatsApp informado não está registrado ou ativo. Por favor, entre em contato diretamente com o suporte em +55 34 99884-9884 ou verifique o número.');
-                console.error("Erro ao verificar o número do WhatsApp:", error);
-            });
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         }
 
         async function loadRodape() {
