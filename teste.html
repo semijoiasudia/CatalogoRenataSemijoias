@@ -175,8 +175,8 @@
         .close:hover {
             background: rgba(255, 255, 255, 1);
         }
-        .save-btn {
-            margin: 20px 0 10px 0;
+        .save-btn, .request-btn {
+            margin: 10px 0;
             background-color: #28a745;
             color: white;
             padding: 12px 24px;
@@ -188,8 +188,15 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
+        .request-btn {
+            background-color: #007bff; /* Azul para diferenciar do botão salvar */
+        }
         .save-btn:hover {
             background-color: #218838;
+            transform: scale(1.05);
+        }
+        .request-btn:hover {
+            background-color: #0056b3;
             transform: scale(1.05);
         }
         .rodape {
@@ -247,6 +254,7 @@
                 <img id="modalImg">
             </div>
             <button class="save-btn" onclick="saveImage()">Salvar Imagem</button>
+            <button class="request-btn" onclick="requestItem()">Solicitar este Item</button>
             <p>Anote o código da peça ou clique em salvar para salvar a foto em seu dispositivo e posteriormente nos enviar.</p>
         </div>
     </div>
@@ -477,6 +485,14 @@
             }).catch(error => {
                 console.error("Erro ao salvar imagem:", error);
             });
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const phoneNumber = '34998849884'; // Número fornecido, formatado como +5534998849884
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         }
 
         async function loadRodape() {
