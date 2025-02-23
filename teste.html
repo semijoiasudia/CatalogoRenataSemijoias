@@ -337,67 +337,65 @@
             }
         }
 
+        function getFilteredFiles() {
+            return allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+        }
+
         function displayPage(page, banhosNaCategoria) {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
-            const paginatedFiles = allFiles.slice(start, end);
+            const paginatedFiles = filteredFiles.slice(start, end);
 
             paginatedFiles.forEach(file => {
-                if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
-                    const codigo = file.name.split('.')[0];
-                    const { descricao, preco, banho } = descricoes[codigo] || { 
-                        descricao: "Descrição não disponível", 
-                        preco: "Preço não disponível",
-                        banho: "todos"
-                    };
+                const codigo = file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível", 
+                    preco: "Preço não disponível",
+                    banho: "todos"
+                };
 
-                    if (banho) {
-                        banhosNaCategoria.add(banho);
-                    }
-
-                    // Aplica o filtro de banho ao renderizar
-                    if (currentBanho !== 'todos' && banho !== currentBanho) {
-                        return; // Pula itens que não correspondem ao filtro ativo
-                    }
-
-                    const item = document.createElement('div');
-                    item.className = 'item';
-                    item.dataset.banho = banho;
-
-                    const img = document.createElement('img');
-                    img.src = file.download_url;
-                    img.onclick = () => showModal(file.download_url, codigo);
-                    
-                    const codigoElement = document.createElement('div');
-                    codigoElement.className = 'codigo';
-                    codigoElement.textContent = `COD: ${codigo}`;
-
-                    const desc = document.createElement('div');
-                    desc.className = 'description';
-                    desc.textContent = descricao;
-
-                    const precoElement = document.createElement('div');
-                    precoElement.className = 'preco';
-                    precoElement.textContent = preco;
-
-                    item.append(img, codigoElement, desc, precoElement);
-                    gallery.appendChild(item);
+                if (banho) {
+                    banhosNaCategoria.add(banho);
                 }
+
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho;
+
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.onclick = () => showModal(file.download_url, codigo);
+                
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+
+                item.append(img, codigoElement, desc, precoElement);
+                gallery.appendChild(item);
             });
 
             updatePagination();
         }
 
         function updatePagination() {
-            const totalPages = Math.ceil(allFiles.filter(file => {
-                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
-                const codigo = file.name.split('.')[0];
-                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
-                return currentBanho === 'todos' || banho === currentBanho;
-            }).length / itemsPerPage);
-
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
             const paginationDiv = document.getElementById('pagination');
             paginationDiv.innerHTML = '';
 
