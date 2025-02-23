@@ -348,13 +348,13 @@
                 allFiles = await response.json();
                 allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
 
-                // Processa todos os arquivos para coletar os banhos
+                // Processa todos os arquivos para coletar os banhos, ignorando fotos sem descrição
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
-                        const { banho } = descricoes[codigo] || { banho: 'todos' };
-                        if (banho) {
-                            banhosNaCategoria.add(banho);
+                        const item = descricoes[codigo];
+                        if (item && item.banho) { // Verifica se existe descrição e banho
+                            banhosNaCategoria.add(item.banho);
                         }
                     }
                 });
@@ -452,8 +452,8 @@
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            // Adiciona o botão "Todos" apenas uma vez, usando uma flag para evitar duplicatas
-            let botaoTodosExistente = document.querySelector('.subcategories button[data-banho="todos"]');
+            // Adiciona o botão "Todos" apenas uma vez, usando uma verificação mais robusta
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
             if (!botaoTodosExistente) {
                 const botaoTodos = document.createElement('button');
                 botaoTodos.textContent = 'Todos';
@@ -462,17 +462,20 @@
                 subcategoriesDiv.appendChild(botaoTodos);
             }
 
+            // Adiciona botões apenas para banhos válidos, ignorando "todos"
             banhosNaCategoria.forEach(banho => {
-                const botaoBanho = document.createElement('button');
-                // Normaliza o texto do botão para consistência
-                let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                if (banho === '2 banhos') {
-                    displayText = '2 Banhos'; // Garante que o texto exibido seja consistente
+                if (banho !== 'todos') { // Evita duplicatas ou confusão com "todos"
+                    const botaoBanho = document.createElement('button');
+                    // Normaliza o texto do botão para consistência
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos'; // Garante que o texto exibido seja consistente
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
                 }
-                botaoBanho.textContent = displayText;
-                botaoBanho.dataset.banho = banho;
-                botaoBanho.onclick = () => filterByBanho(banho);
-                subcategoriesDiv.appendChild(botaoBanho);
             });
 
             subcategoriesDiv.style.display = 'flex';
