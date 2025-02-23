@@ -261,6 +261,7 @@
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
+        let currentBanho = 'todos'; // Variável para rastrear o filtro ativo
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -323,6 +324,7 @@
             currentFolder = folderName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
+            currentBanho = 'todos'; // Reseta o filtro ao mudar de categoria
 
             try {
                 const response = await fetch(`${repoUrl}/${folderName}`);
@@ -355,6 +357,11 @@
                         banhosNaCategoria.add(banho);
                     }
 
+                    // Aplica o filtro de banho ao renderizar
+                    if (currentBanho !== 'todos' && banho !== currentBanho) {
+                        return; // Pula itens que não correspondem ao filtro ativo
+                    }
+
                     const item = document.createElement('div');
                     item.className = 'item';
                     item.dataset.banho = banho;
@@ -384,7 +391,13 @@
         }
 
         function updatePagination() {
-            const totalPages = Math.ceil(allFiles.length / itemsPerPage);
+            const totalPages = Math.ceil(allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || 'todos';
+                return currentBanho === 'todos' || banho === currentBanho;
+            }).length / itemsPerPage);
+
             const paginationDiv = document.getElementById('pagination');
             paginationDiv.innerHTML = '';
 
@@ -405,7 +418,7 @@
                 if (currentPage < totalPages) {
                     currentPage++;
                     displayPage(currentPage, new Set());
-                    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola para o topo suavemente
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             };
             nextButton.disabled = currentPage === totalPages;
@@ -436,15 +449,9 @@
         }
 
         function filterByBanho(banho) {
-            const items = document.querySelectorAll('.gallery .item');
-            items.forEach(item => {
-                const itemBanho = item.dataset.banho;
-                if (banho === 'todos' || itemBanho === banho) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            currentBanho = banho; // Atualiza o filtro ativo
+            currentPage = 1; // Reseta para a primeira página ao mudar o filtro
+            displayPage(currentPage, new Set()); // Re-renderiza a galeria com o novo filtro
         }
 
         function showModal(src, codigo) {
