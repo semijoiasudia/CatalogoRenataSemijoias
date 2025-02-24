@@ -326,10 +326,7 @@
                         };
                         categoriesDiv.appendChild(button);
 
-                        if (item.name.toLowerCase() === 'brincos') {
-                            button.classList.add('active');
-                            loadImages(item.name);
-                        }
+                        // Não carrega automaticamente "Brincos" por padrão; espera o parâmetro da URL
                     }
                 });
             } catch (error) {
@@ -533,11 +530,43 @@
             }
         }
 
+        // Função para obter o parâmetro da URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
         window.onload = async () => {
             await loadDescriptions();
-            loadCategories();
+            await loadCategories();
+
+            // Verifica se há um parâmetro "categoria" na URL
+            const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
+            const categoryButton = document.querySelector(`.categories button:contains(${initialCategory})`);
+            if (categoryButton) {
+                document.querySelectorAll('.categories button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                categoryButton.classList.add('active');
+                loadImages(initialCategory);
+            } else {
+                // Se a categoria não for encontrada, carrega "Brincos" por padrão
+                const defaultButton = document.querySelector('.categories button:contains(Brincos)');
+                if (defaultButton) {
+                    defaultButton.classList.add('active');
+                    loadImages('Brincos');
+                }
+            }
+
             loadRodape();
         };
+
+        // Extensão de String.prototype para suporte a :contains (simula jQuery)
+        if (!String.prototype.contains) {
+            String.prototype.contains = function(text) {
+                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
+            };
+        }
     </script>
 </body>
 </html>
