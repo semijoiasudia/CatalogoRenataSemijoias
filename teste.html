@@ -240,7 +240,7 @@
 </head>
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <h3>Catálogo de Produtos</h3>
+    <h3>Catálogo de Produtos - 14:11 - 24/02</h3>
     <div class="categories" id="categories"></div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
@@ -536,37 +536,47 @@
             return urlParams.get(name);
         }
 
+        // Função para encontrar o botão da categoria pelo texto exato
+        function findCategoryButton(categoryName) {
+            const buttons = document.querySelectorAll('.categories button');
+            for (let button of buttons) {
+                if (button.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return button;
+                }
+            }
+            return null;
+        }
+
         window.onload = async () => {
             await loadDescriptions();
             await loadCategories();
 
             // Verifica se há um parâmetro "categoria" na URL
             const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
-            const categoryButton = document.querySelector(`.categories button:contains(${initialCategory})`);
+            const categoryButton = findCategoryButton(initialCategory);
+
             if (categoryButton) {
+                // Remove a classe 'active' de todos os botões
                 document.querySelectorAll('.categories button').forEach(btn => {
                     btn.classList.remove('active');
                 });
+                // Adiciona a classe 'active' ao botão da categoria selecionada
                 categoryButton.classList.add('active');
-                loadImages(initialCategory);
+                // Carrega as imagens da categoria selecionada
+                loadImages(categoryButton.textContent.trim());
             } else {
                 // Se a categoria não for encontrada, carrega "Brincos" por padrão
-                const defaultButton = document.querySelector('.categories button:contains(Brincos)');
+                const defaultButton = findCategoryButton('Brincos');
                 if (defaultButton) {
                     defaultButton.classList.add('active');
                     loadImages('Brincos');
+                } else {
+                    console.error('Categoria padrão "Brincos" não encontrada.');
                 }
             }
 
             loadRodape();
         };
-
-        // Extensão de String.prototype para suporte a :contains (simula jQuery)
-        if (!String.prototype.contains) {
-            String.prototype.contains = function(text) {
-                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
-            };
-        }
     </script>
 </body>
 </html>
