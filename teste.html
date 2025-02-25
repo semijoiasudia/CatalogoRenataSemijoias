@@ -362,13 +362,29 @@
                             scrollToActiveTab();
                         };
                         tabs.appendChild(tab);
-
-                        // Define "Brincos" como ativo por padrão
-                        if (item.name.toLowerCase() === 'brincos') {
-                            tab.classList.add('active');
-                        }
                     }
                 });
+
+                // Após carregar todas as abas, define a categoria inicial
+                const initialCategory = getQueryParam('categoria') || 'Brincos';
+                const initialTab = document.querySelector(`.tab:contains(${initialCategory})`);
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    loadImages(initialTab.textContent.trim());
+                    scrollToActiveTab(); // Rola até a aba ativa após carregar
+                } else {
+                    // Se a categoria não for encontrada, carrega "Brincos" por padrão
+                    const defaultTab = document.querySelector('.tab:contains(Brincos)');
+                    if (defaultTab) {
+                        defaultTab.classList.add('active');
+                        loadImages('Brincos');
+                        scrollToActiveTab(); // Rola até a aba ativa após carregar
+                    } else {
+                        console.error('Categoria padrão "Brincos" não encontrada.');
+                    }
+                }
+
                 console.log('Categorias carregadas com sucesso:', data.filter(item => item.type === 'dir').map(item => item.name));
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
@@ -616,6 +632,7 @@
                     scrollToActiveTab(); // Rola até a aba ativa após carregar
                 } else {
                     console.error('Categoria padrão "Brincos" não encontrada.');
+                    alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
                 }
             }
 
