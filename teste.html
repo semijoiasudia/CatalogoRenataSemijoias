@@ -399,7 +399,7 @@
             currentBanho = 'todos'; // Reseta o filtro ao mudar de categoria
 
             try {
-                const response = await fetch(`${repoUrl}/${folderName}`);
+                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
                 allFiles = await response.json();
                 allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
 
@@ -452,6 +452,7 @@
 
                 const img = document.createElement('img');
                 img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
                 img.onclick = () => showModal(file.download_url, codigo);
                 
                 const codigoElement = document.createElement('div');
@@ -593,17 +594,6 @@
         function getQueryParam(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
-        }
-
-        // Função para encontrar o botão da categoria pelo texto exato
-        function findCategoryButton(categoryName) {
-            const buttons = document.querySelectorAll('.categories button');
-            for (let button of buttons) {
-                if (button.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                    return button;
-                }
-            }
-            return null;
         }
 
         function selectCategory(category) {
