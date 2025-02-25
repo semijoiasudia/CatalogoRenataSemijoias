@@ -272,7 +272,7 @@
         let currentBanho = 'todos'; // Variável para rastrear o filtro ativo
 
         // Define o número de telefone como uma constante fixa
-        const PHONE_NUMBER = '5534998849884';
+        const PHONE_NUMBER = '5534997622408';
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -326,10 +326,7 @@
                         };
                         categoriesDiv.appendChild(button);
 
-                        if (item.name.toLowerCase() === 'brincos') {
-                            button.classList.add('active');
-                            loadImages(item.name);
-                        }
+                        // Não carrega automaticamente "Brincos" por padrão; espera o parâmetro da URL
                     }
                 });
             } catch (error) {
@@ -430,6 +427,7 @@
                 if (currentPage > 1) {
                     currentPage--;
                     displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             };
             prevButton.disabled = currentPage === 1;
@@ -533,9 +531,51 @@
             }
         }
 
+        // Função para obter o parâmetro da URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Função para encontrar o botão da categoria pelo texto exato
+        function findCategoryButton(categoryName) {
+            const buttons = document.querySelectorAll('.categories button');
+            for (let button of buttons) {
+                if (button.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return button;
+                }
+            }
+            return null;
+        }
+
         window.onload = async () => {
             await loadDescriptions();
-            loadCategories();
+            await loadCategories();
+
+            // Verifica se há um parâmetro "categoria" na URL
+            const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
+            const categoryButton = findCategoryButton(initialCategory);
+
+            if (categoryButton) {
+                // Remove a classe 'active' de todos os botões
+                document.querySelectorAll('.categories button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Adiciona a classe 'active' ao botão da categoria selecionada
+                categoryButton.classList.add('active');
+                // Carrega as imagens da categoria selecionada
+                loadImages(categoryButton.textContent.trim());
+            } else {
+                // Se a categoria não for encontrada, carrega "Brincos" por padrão
+                const defaultButton = findCategoryButton('Brincos');
+                if (defaultButton) {
+                    defaultButton.classList.add('active');
+                    loadImages('Brincos');
+                } else {
+                    console.error('Categoria padrão "Brincos" não encontrada.');
+                }
+            }
+
             loadRodape();
         };
     </script>
