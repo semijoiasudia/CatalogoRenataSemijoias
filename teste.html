@@ -19,33 +19,76 @@
         .modal-open {
             overflow: hidden;
         }
-        .categories, .subcategories {
+        .category-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 20px;
+        }
+        .category-select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 10px center;
+            background-size: 20px;
+            position: relative;
+        }
+        .category-select:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+        .category-options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            border: 1px solid #ccc;
+            border-radius: 0 0 8px 8px;
+            background-color: white;
+            max-height: 200px;
+            overflow-y: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .category-options.show {
+            display: block;
+        }
+        .category-option {
+            padding: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .category-option:hover {
+            background-color: #f1f1f1;
+        }
+        .category-option.active {
+            background-color: #d4af37;
+            color: white;
+        }
+        .search-input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .subcategories {
             display: flex;
             justify-content: center;
             gap: 10px;
             margin-bottom: 20px;
             flex-wrap: wrap;
-        }
-        .categories button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #d4af37, #b8860b); /* Gradiente dourado */
-            color: white;
-            font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.3s;
-        }
-        
-        .categories button:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(212, 175, 55, 0.5);
-        }
-        
-        .categories button.active {
-            background: linear-gradient(135deg, #b8860b, #8b6914); /* Dourado mais escuro */
-            font-weight: bold;
         }
         .subcategories button {
             padding: 8px 16px; /* Botões menores */
@@ -241,7 +284,13 @@
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
     <h3>Catálogo de Produtos</h3>
-    <div class="categories" id="categories"></div>
+    <div class="category-container">
+        <select class="category-select" onchange="selectCategory(this.value)">
+            <option value="" disabled selected>Selecione uma categoria</option>
+            <!-- Categorias preenchidas dinamicamente via JavaScript -->
+        </select>
+        <div class="category-options" id="categoryOptions"></div>
+    </div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
@@ -311,27 +360,36 @@
             try {
                 const response = await fetch(repoUrl);
                 const data = await response.json();
-                const categoriesDiv = document.getElementById('categories');
-                
-                data.forEach(item => {
-                    if (item.type === 'dir') {
-                        const button = document.createElement('button');
-                        button.textContent = item.name;
-                        button.onclick = () => {
-                            document.querySelectorAll('.categories button').forEach(btn => {
-                                btn.classList.remove('active');
-                            });
-                            button.classList.add('active');
-                            loadImages(item.name);
-                        };
-                        categoriesDiv.appendChild(button);
-
-                        // Não carrega automaticamente "Brincos" por padrão; espera o parâmetro da URL
-                    }
-                });
+                const categories = data
+                    .filter(item => item.type === 'dir')
+                    .map(item => item.name);
+                populateCategoryDropdown(categories);
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
             }
+        }
+
+        function populateCategoryDropdown(categories) {
+            const categorySelect = document.querySelector('.category-select');
+            const categoryOptions = document.getElementById('categoryOptions');
+            const searchInput = document.createElement('input');
+            searchInput.type = 'text';
+            searchInput.className = 'search-input';
+            searchInput.placeholder = 'Pesquise uma categoria...';
+            categoryOptions.insertBefore(searchInput, categoryOptions.firstChild);
+
+            categories.forEach(category => {
+                const option = document.createElement('option');
+                option.value = category;
+                option.textContent = category;
+                categorySelect.appendChild(option);
+
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'category-option';
+                optionDiv.textContent = category;
+                optionDiv.onclick = () => selectCategory(category);
+                categoryOptions.appendChild(optionDiv);
+            });
         }
 
         async function loadImages(folderName) {
@@ -548,33 +606,57 @@
             return null;
         }
 
+        function selectCategory(category) {
+            if (category) {
+                document.querySelectorAll('.category-option').forEach(option => {
+                    option.classList.remove('active');
+                });
+                const selectedOption = document.querySelector(`.category-option:contains(${category})`);
+                if (selectedOption) {
+                    selectedOption.classList.add('active');
+                }
+                loadImages(category);
+                document.querySelector('.category-select').value = category;
+                document.getElementById('categoryOptions').classList.remove('show');
+            }
+        }
+
+        // Mostra/esconde as opções ao clicar no select
+        document.querySelector('.category-select').addEventListener('click', () => {
+            document.getElementById('categoryOptions').classList.toggle('show');
+        });
+
+        // Fecha as opções ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!document.querySelector('.category-select').contains(e.target) && !document.getElementById('categoryOptions').contains(e.target)) {
+                document.getElementById('categoryOptions').classList.remove('show');
+            }
+        });
+
+        // Filtra opções com base na busca
+        document.querySelector('.search-input').addEventListener('input', () => {
+            const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+            const options = document.querySelectorAll('.category-option');
+            options.forEach(option => {
+                const text = option.textContent.toLowerCase();
+                option.style.display = text.includes(searchTerm) ? 'block' : 'none';
+            });
+        });
+
+        // Extensão de String.prototype para suporte a :contains (simula jQuery)
+        if (!String.prototype.contains) {
+            String.prototype.contains = function(text) {
+                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
+            };
+        }
+
         window.onload = async () => {
             await loadDescriptions();
             await loadCategories();
 
             // Verifica se há um parâmetro "categoria" na URL
             const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
-            const categoryButton = findCategoryButton(initialCategory);
-
-            if (categoryButton) {
-                // Remove a classe 'active' de todos os botões
-                document.querySelectorAll('.categories button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                // Adiciona a classe 'active' ao botão da categoria selecionada
-                categoryButton.classList.add('active');
-                // Carrega as imagens da categoria selecionada
-                loadImages(categoryButton.textContent.trim());
-            } else {
-                // Se a categoria não for encontrada, carrega "Brincos" por padrão
-                const defaultButton = findCategoryButton('Brincos');
-                if (defaultButton) {
-                    defaultButton.classList.add('active');
-                    loadImages('Brincos');
-                } else {
-                    console.error('Categoria padrão "Brincos" não encontrada.');
-                }
-            }
+            selectCategory(initialCategory);
 
             loadRodape();
         };
