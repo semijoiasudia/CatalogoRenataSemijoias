@@ -367,7 +367,7 @@
 
                 // Após carregar todas as abas, define a categoria inicial
                 const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = document.querySelector(`.tab:contains(${initialCategory})`);
+                const initialTab = findTabByText(initialCategory);
                 if (initialTab) {
                     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                     initialTab.classList.add('active');
@@ -375,13 +375,14 @@
                     scrollToActiveTab(); // Rola até a aba ativa após carregar
                 } else {
                     // Se a categoria não for encontrada, carrega "Brincos" por padrão
-                    const defaultTab = document.querySelector('.tab:contains(Brincos)');
+                    const defaultTab = findTabByText('Brincos');
                     if (defaultTab) {
                         defaultTab.classList.add('active');
                         loadImages('Brincos');
                         scrollToActiveTab(); // Rola até a aba ativa após carregar
                     } else {
                         console.error('Categoria padrão "Brincos" não encontrada.');
+                        alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
                     }
                 }
 
@@ -390,6 +391,17 @@
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
             }
+        }
+
+        // Função para encontrar uma aba pelo texto exato (ignorando maiúsculas/minúsculas)
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
         }
 
         async function loadImages(folderName) {
@@ -614,50 +626,8 @@
         window.onload = async () => {
             await loadDescriptions();
             await loadCategories();
-
-            // Verifica se há um parâmetro "categoria" na URL
-            const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
-            const tab = document.querySelector(`.tab:contains(${initialCategory})`);
-            if (tab) {
-                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                loadImages(tab.textContent.trim());
-                scrollToActiveTab(); // Rola até a aba ativa após carregar
-            } else {
-                // Se a categoria não for encontrada, carrega "Brincos" por padrão
-                const defaultTab = document.querySelector('.tab:contains(Brincos)');
-                if (defaultTab) {
-                    defaultTab.classList.add('active');
-                    loadImages('Brincos');
-                    scrollToActiveTab(); // Rola até a aba ativa após carregar
-                } else {
-                    console.error('Categoria padrão "Brincos" não encontrada.');
-                    alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
-                }
-            }
-
             loadRodape();
         };
-
-        // Extensão de String.prototype para suporte a :contains (simula jQuery)
-        if (!String.prototype.contains) {
-            String.prototype.contains = function(text) {
-                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
-            };
-        }
-
-        // Adiciona rolagem suave ao clicar nas abas
-        document.getElementById('tabs').addEventListener('click', (e) => {
-            if (e.target.classList.contains('tab')) {
-                const tab = e.target;
-                const tabRect = tab.getBoundingClientRect();
-                const containerRect = tab.parentElement.parentElement.getBoundingClientRect();
-                const scrollLeft = tab.parentElement.parentElement.scrollLeft;
-                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
-
-                tab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
-            }
-        });
     </script>
 </body>
 </html>
