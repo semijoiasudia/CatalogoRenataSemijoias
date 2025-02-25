@@ -427,6 +427,7 @@
                 if (currentPage > 1) {
                     currentPage--;
                     displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
             };
             prevButton.disabled = currentPage === 1;
