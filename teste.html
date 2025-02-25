@@ -212,6 +212,9 @@
             font-size: 16px;
             color: #333;
         }
+        .modal-info b {
+            font-weight: bold;
+        }
         .save-btn, .request-btn {
             margin: 10px 0;
             background-color: #28a745;
@@ -579,28 +582,41 @@
             let touchStartX = 0;
             let touchEndX = 0;
 
+            // Evento para toque (mobile)
             modalImg.addEventListener('touchstart', (e) => {
                 touchStartX = e.changedTouches[0].screenX;
             }, { passive: true });
 
-            modalImg.addEventListener('touchend', (e) => {
+            modalImg.addEventListener('touchmove', (e) => {
                 touchEndX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            modalImg.addEventListener('touchend', (e) => {
                 handleSwipe(currentImages, currentIndex);
             }, { passive: true });
 
+            // Evento para mouse (desktop)
+            let isDragging = false;
+
             modalImg.addEventListener('mousedown', (e) => {
+                isDragging = true;
                 touchStartX = e.screenX;
-                const mouseMove = (moveEvent) => {
-                    touchEndX = moveEvent.screenX;
-                };
-                const mouseUp = () => {
-                    document.removeEventListener('mousemove', mouseMove);
-                    document.removeEventListener('mouseup', mouseUp);
-                    handleSwipe(currentImages, currentIndex);
-                };
-                document.addEventListener('mousemove', mouseMove);
-                document.addEventListener('mouseup', mouseUp);
+                document.addEventListener('mousemove', handleMouseMove);
+                document.addEventListener('mouseup', handleMouseUp);
             });
+
+            function handleMouseMove(e) {
+                if (isDragging) {
+                    touchEndX = e.screenX;
+                }
+            }
+
+            function handleMouseUp() {
+                isDragging = false;
+                document.removeEventListener('mousemove', handleMouseMove);
+                document.removeEventListener('mouseup', handleMouseUp);
+                handleSwipe(currentImages, currentIndex);
+            }
         }
 
         function updateModalInfo(codigo, currentImages, currentIndex) {
@@ -609,14 +625,16 @@
                 preco: "Preço não disponível"
             };
             document.getElementById('modalInfo').innerHTML = `
-                Descrição: ${descricao}<br>
-                Preço: ${preco}
+                ${descricao}<br>
+                <b>${preco}</b>
             `;
         }
 
         function handleSwipe(currentImages, currentIndex) {
             const swipeThreshold = 50; // Distância mínima para considerar um swipe (em pixels)
             const diff = touchEndX - touchStartX;
+
+            console.log('Swipe detectado:', { diff, currentIndex, direction: diff > 0 ? 'esquerda' : 'direita' });
 
             if (Math.abs(diff) > swipeThreshold) {
                 if (diff > 0 && currentIndex > 0) {
@@ -640,6 +658,7 @@
             // Remove eventos de toque e mouse ao fechar o modal
             const modalImg = document.getElementById('modalImg');
             modalImg.removeEventListener('touchstart', handleTouchStart);
+            modalImg.removeEventListener('touchmove', handleTouchMove);
             modalImg.removeEventListener('touchend', handleTouchEnd);
             modalImg.removeEventListener('mousedown', handleMouseDown);
         }
