@@ -207,6 +207,11 @@
         .close:hover {
             background: rgba(255, 255, 255, 1);
         }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
         .save-btn, .request-btn {
             margin: 10px 0;
             background-color: #28a745;
@@ -287,9 +292,9 @@
                 <div class="modal-codigo" id="modalCodigo"></div>
                 <img id="modalImg">
             </div>
+            <div class="modal-info" id="modalInfo"></div>
             <button class="save-btn" onclick="saveImage()">Salvar Imagem</button>
             <button class="request-btn" onclick="requestItem()">Solicitar este Item</button>
-            <p>Anote o código da peça ou clique em salvar para salvar a foto em seu dispositivo e posteriormente nos enviar.</p>
         </div>
     </div>
 
@@ -558,15 +563,85 @@
         }
 
         function showModal(src, codigo) {
+            const currentImages = allFiles.filter(file => file.name.endsWith('.jpg') || file.name.endsWith('.png'))
+                                        .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+            const currentIndex = currentImages.findIndex(file => file.name.split('.')[0] === codigo);
+            
             document.getElementById('modalImg').src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            updateModalInfo(codigo, currentImages, currentIndex);
+            
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
+
+            // Adiciona eventos de toque e mouse para navegação
+            const modalImg = document.getElementById('modalImg');
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            modalImg.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            modalImg.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe(currentImages, currentIndex);
+            }, { passive: true });
+
+            modalImg.addEventListener('mousedown', (e) => {
+                touchStartX = e.screenX;
+                const mouseMove = (moveEvent) => {
+                    touchEndX = moveEvent.screenX;
+                };
+                const mouseUp = () => {
+                    document.removeEventListener('mousemove', mouseMove);
+                    document.removeEventListener('mouseup', mouseUp);
+                    handleSwipe(currentImages, currentIndex);
+                };
+                document.addEventListener('mousemove', mouseMove);
+                document.addEventListener('mouseup', mouseUp);
+            });
+        }
+
+        function updateModalInfo(codigo, currentImages, currentIndex) {
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+            document.getElementById('modalInfo').innerHTML = `
+                Descrição: ${descricao}<br>
+                Preço: ${preco}
+            `;
+        }
+
+        function handleSwipe(currentImages, currentIndex) {
+            const swipeThreshold = 50; // Distância mínima para considerar um swipe (em pixels)
+            const diff = touchEndX - touchStartX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0 && currentIndex > 0) {
+                    // Swipe para a direita: carrega a imagem anterior
+                    const prevImage = currentImages[currentIndex - 1];
+                    const prevCodigo = prevImage.name.split('.')[0];
+                    showModal(prevImage.download_url, prevCodigo);
+                } else if (diff < 0 && currentIndex < currentImages.length - 1) {
+                    // Swipe para a esquerda: carrega a próxima imagem
+                    const nextImage = currentImages[currentIndex + 1];
+                    const nextCodigo = nextImage.name.split('.')[0];
+                    showModal(nextImage.download_url, nextCodigo);
+                }
+            }
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+
+            // Remove eventos de toque e mouse ao fechar o modal
+            const modalImg = document.getElementById('modalImg');
+            modalImg.removeEventListener('touchstart', handleTouchStart);
+            modalImg.removeEventListener('touchend', handleTouchEnd);
+            modalImg.removeEventListener('mousedown', handleMouseDown);
         }
 
         function saveImage() {
