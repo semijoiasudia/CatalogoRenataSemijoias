@@ -19,14 +19,23 @@
         .modal-open {
             overflow: hidden;
         }
-        .categories, .subcategories {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .tabs-container {
+            width: 100%;
+            max-width: 1000px; /* Ajuste conforme necessário */
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            margin: 0 auto 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .categories button {
+        .tabs {
+            display: inline-flex;
+            gap: 5px;
+        }
+        .tab {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -35,17 +44,40 @@
             background: linear-gradient(135deg, #d4af37, #b8860b); /* Gradiente dourado */
             color: white;
             font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.3s;
+            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            white-space: nowrap; /* Evita que o texto quebre */
+            min-width: 120px; /* Garante um tamanho mínimo para cada aba */
+            text-align: center;
         }
-        
-        .categories button:hover {
+        .tab:hover {
             transform: scale(1.05);
             box-shadow: 0px 4px 8px rgba(212, 175, 55, 0.5);
         }
-        
-        .categories button.active {
+        .tab.active {
             background: linear-gradient(135deg, #b8860b, #8b6914); /* Dourado mais escuro */
             font-weight: bold;
+        }
+        /* Estilo para o scroll horizontal */
+        .tabs-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .tabs-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb:hover {
+            background: #b8860b;
+        }
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
         }
         .subcategories button {
             padding: 8px 16px; /* Botões menores */
@@ -235,83 +267,14 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
-        .category-container {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto 20px;
-        }
-        .category-select {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            cursor: pointer;
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 10px center;
-            background-size: 20px;
-            position: relative;
-        }
-        .category-select:focus {
-            outline: none;
-            border-color: #d4af37;
-            box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
-        }
-        .category-options {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            border: 1px solid #ccc;
-            border-radius: 0 0 8px 8px;
-            background-color: white;
-            max-height: 200px;
-            overflow-y: auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            z-index: 10;
-        }
-        .category-options.show {
-            display: block;
-        }
-        .category-option {
-            padding: 10px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-        .category-option:hover {
-            background-color: #f1f1f1;
-        }
-        .category-option.active {
-            background-color: #d4af37;
-            color: white;
-        }
-        .search-input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 5px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <h3>[Hora: <span id="currentTime"></span>] Catálogo de Produtos</h3>
-    <div class="categories" id="categories"></div>
-    <div class="category-container">
-        <select class="category-select" onchange="selectCategory(this.value)">
-            <option value="" disabled selected>Selecione uma categoria</option>
-            <!-- Categorias preenchidas dinamicamente via JavaScript -->
-        </select>
-        <div class="category-options" id="categoryOptions"></div>
+    <h3>Catálogo de Produtos</h3>
+    <div class="tabs-container">
+        <div class="tabs" id="tabs"></div>
     </div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="gallery" id="gallery"></div>
@@ -352,24 +315,16 @@
             return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
         }
 
-        // Função para atualizar a hora atual
-        function updateTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            document.getElementById('currentTime').textContent = timeString;
-        }
-
         async function loadDescriptions() {
             try {
                 const response = await fetch(descricoesUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const lines = text.split('\n');
                 lines.forEach(line => {
                     const [codigo, descricao, preco, banho] = line.split(';');
                     if (codigo && descricao && preco && banho) {
-                        // Normaliza o banho para tratar variações como "2 banhos", "2 Banhos", etc.
                         let normalizedBanho = banho.trim().toLowerCase();
-                        // Trata especificamente "2 banhos" para garantir consistência
                         if (normalizedBanho.includes('2 banhos')) {
                             normalizedBanho = '2 banhos';
                         }
@@ -380,62 +335,44 @@
                         };
                     }
                 });
+                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
             } catch (error) {
                 console.error("Erro ao carregar descrições:", error);
+                alert(`Erro ao carregar descrições: ${error.message}`);
             }
         }
 
         async function loadCategories() {
             try {
                 const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const data = await response.json();
-                const categoriesDiv = document.getElementById('categories');
-                const categorySelect = document.querySelector('.category-select');
-                const categoryOptions = document.getElementById('categoryOptions');
-                
-                categoriesDiv.innerHTML = '';
-                categorySelect.innerHTML = '<option value="" disabled selected>Selecione uma categoria</option>';
-                categoryOptions.innerHTML = '';
-
-                const searchInput = document.createElement('input');
-                searchInput.type = 'text';
-                searchInput.className = 'search-input';
-                searchInput.placeholder = 'Pesquise uma categoria...';
-                categoryOptions.insertBefore(searchInput, categoryOptions.firstChild);
+                const tabs = document.getElementById('tabs');
+                tabs.innerHTML = ''; // Limpa as abas existentes
 
                 data.forEach(item => {
                     if (item.type === 'dir') {
-                        const button = document.createElement('button');
-                        button.textContent = item.name;
-                        button.onclick = () => {
-                            document.querySelectorAll('.categories button').forEach(btn => {
-                                btn.classList.remove('active');
-                            });
-                            button.classList.add('active');
+                        const tab = document.createElement('button');
+                        tab.className = 'tab';
+                        tab.textContent = item.name;
+                        tab.onclick = () => {
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            tab.classList.add('active');
                             loadImages(item.name);
                         };
-                        categoriesDiv.appendChild(button);
+                        tabs.appendChild(tab);
 
-                        const option = document.createElement('option');
-                        option.value = item.name;
-                        option.textContent = item.name;
-                        categorySelect.appendChild(option);
-
-                        const optionDiv = document.createElement('div');
-                        optionDiv.className = 'category-option';
-                        optionDiv.textContent = item.name;
-                        optionDiv.onclick = () => selectCategory(item.name);
-                        categoryOptions.appendChild(optionDiv);
-
-                        // Carrega "Brincos" automaticamente se for o padrão
+                        // Define "Brincos" como ativo por padrão
                         if (item.name.toLowerCase() === 'brincos') {
-                            button.classList.add('active');
+                            tab.classList.add('active');
                             loadImages(item.name);
                         }
                     }
                 });
+                console.log('Categorias carregadas com sucesso:', data.filter(item => item.type === 'dir').map(item => item.name));
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
+                alert(`Erro ao carregar categorias: ${error.message}`);
             }
         }
 
@@ -447,15 +384,15 @@
 
             try {
                 const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
                 allFiles = await response.json();
                 allFiles.sort((a, b) => b.name.localeCompare(a.name, undefined, { numeric: true }));
 
-                // Processa todos os arquivos para coletar os banhos
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
-                        const { banho } = descricoes[codigo] || { banho: '' }; // Define banho como vazio para itens sem descrição
-                        if (banho) { // Só adiciona ao Set se o banho não for vazio
+                        const { banho } = descricoes[codigo] || { banho: '' };
+                        if (banho) {
                             banhosNaCategoria.add(banho);
                         }
                     }
@@ -463,8 +400,10 @@
 
                 displayPage(currentPage, banhosNaCategoria);
                 criarBotoesSubcategorias(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', folderName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
+                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
             }
         }
 
@@ -472,7 +411,7 @@
             return allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
-                const banho = (descricoes[codigo] && descricoes[codigo].banho) || ''; // Define banho como vazio para itens sem descrição
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
                 return currentBanho === 'todos' || banho === currentBanho;
             });
         }
@@ -490,16 +429,18 @@
                 const { descricao, preco, banho } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: "" // Define banho como vazio para itens sem descrição
+                    banho: ""
                 };
 
                 const item = document.createElement('div');
                 item.className = 'item';
-                item.dataset.banho = banho || 'todos'; // Usa "todos" como fallback para o filtro, mas não adiciona ao Set
+                item.dataset.banho = banho || 'todos';
 
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo);
                 
                 const codigoElement = document.createElement('div');
@@ -556,7 +497,6 @@
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            // Adiciona o botão "Todos" apenas uma vez, usando uma verificação mais robusta
             let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
             if (!botaoTodosExistente) {
                 const botaoTodos = document.createElement('button');
@@ -566,14 +506,12 @@
                 subcategoriesDiv.appendChild(botaoTodos);
             }
 
-            // Adiciona botões apenas para banhos não vazios, ignorando banhos vazios ("")
             banhosNaCategoria.forEach(banho => {
-                if (banho && banho !== '') { // Ignora banhos vazios
+                if (banho && banho !== '') {
                     const botaoBanho = document.createElement('button');
-                    // Normaliza o texto do botão para consistência
                     let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
                     if (banho === '2 banhos') {
-                        displayText = '2 Banhos'; // Garante que o texto exibido seja consistente
+                        displayText = '2 Banhos';
                     }
                     botaoBanho.textContent = displayText;
                     botaoBanho.dataset.banho = banho;
@@ -586,9 +524,9 @@
         }
 
         function filterByBanho(banho) {
-            currentBanho = banho; // Atualiza o filtro ativo
-            currentPage = 1; // Reseta para a primeira página ao mudar o filtro
-            displayPage(currentPage, new Set()); // Re-renderiza a galeria com o novo filtro
+            currentBanho = banho;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
         }
 
         function showModal(src, codigo) {
@@ -628,12 +566,13 @@
         async function loadRodape() {
             try {
                 const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
-                if (!response.ok) throw new Error("Erro ao carregar o rodapé.");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
-                console.error(error);
+                console.error("Erro ao carregar rodapé:", error);
+                alert(`Erro ao carregar rodapé: ${error.message}`);
             }
         }
 
@@ -643,87 +582,50 @@
             return urlParams.get(name);
         }
 
-        function selectCategory(category) {
-            if (category) {
-                document.querySelectorAll('.category-option').forEach(option => {
-                    option.classList.remove('active');
-                });
-                const selectedOption = document.querySelector(`.category-option:contains(${category})`);
-                if (selectedOption) {
-                    selectedOption.classList.add('active');
-                }
-                loadImages(category);
-                document.querySelector('.category-select').value = category;
-                document.getElementById('categoryOptions').classList.remove('show');
-
-                // Atualiza os botões para refletir a categoria selecionada
-                document.querySelectorAll('.categories button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                const categoryButton = document.querySelector(`.categories button:contains(${category})`);
-                if (categoryButton) {
-                    categoryButton.classList.add('active');
-                }
-            }
-        }
-
-        // Mostra/esconde as opções ao clicar no select
-        document.querySelector('.category-select').addEventListener('click', () => {
-            document.getElementById('categoryOptions').classList.toggle('show');
-        });
-
-        // Fecha as opções ao clicar fora
-        document.addEventListener('click', (e) => {
-            if (!document.querySelector('.category-select').contains(e.target) && !document.getElementById('categoryOptions').contains(e.target)) {
-                document.getElementById('categoryOptions').classList.remove('show');
-            }
-        });
-
-        // Filtra opções com base na busca
-        document.querySelector('.search-input').addEventListener('input', () => {
-            const searchTerm = document.querySelector('.search-input').value.toLowerCase();
-            const options = document.querySelectorAll('.category-option');
-            options.forEach(option => {
-                const text = option.textContent.toLowerCase();
-                option.style.display = text.includes(searchTerm) ? 'block' : 'none';
-            });
-        });
-
-        // Extensão de String.prototype para suporte a :contains (simula jQuery)
-        if (!String.prototype.contains) {
-            String.prototype.contains = function(text) {
-                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
-            };
-        }
-
         window.onload = async () => {
-            updateTime(); // Atualiza a hora ao carregar a página
             await loadDescriptions();
             await loadCategories();
-            
+
             // Verifica se há um parâmetro "categoria" na URL
             const initialCategory = getQueryParam('categoria') || 'Brincos'; // Padrão para "Brincos" se não especificado
-            const categoryButton = document.querySelector(`.categories button:contains(${initialCategory})`);
-            if (categoryButton) {
-                document.querySelectorAll('.categories button').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                categoryButton.classList.add('active');
-                loadImages(categoryButton.textContent.trim());
+            const tab = document.querySelector(`.tab:contains(${initialCategory})`);
+            if (tab) {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                loadImages(tab.textContent.trim());
             } else {
                 // Se a categoria não for encontrada, carrega "Brincos" por padrão
-                const defaultButton = document.querySelector('.categories button:contains(Brincos)');
-                if (defaultButton) {
-                    defaultButton.classList.add('active');
+                const defaultTab = document.querySelector('.tab:contains(Brincos)');
+                if (defaultTab) {
+                    defaultTab.classList.add('active');
                     loadImages('Brincos');
+                } else {
+                    console.error('Categoria padrão "Brincos" não encontrada.');
                 }
             }
 
             loadRodape();
         };
 
-        // Atualiza a hora a cada segundo
-        setInterval(updateTime, 1000);
+        // Extensão de String.prototype para soporte a :contains (simula jQuery)
+        if (!String.prototype.contains) {
+            String.prototype.contains = function(text) {
+                return this.toLowerCase().indexOf(text.toLowerCase()) !== -1;
+            };
+        }
+
+        // Adiciona rolagem suave ao clicar nas abas
+        document.getElementById('tabs').addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab')) {
+                const tab = e.target;
+                const tabRect = tab.getBoundingClientRect();
+                const containerRect = tab.parentElement.parentElement.getBoundingClientRect();
+                const scrollLeft = tab.parentElement.parentElement.scrollLeft;
+                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+
+                tab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+            }
+        });
     </script>
 </body>
 </html>
