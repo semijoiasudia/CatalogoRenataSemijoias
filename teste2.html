@@ -222,9 +222,9 @@
         }
         .save-btn, .request-btn {
             margin: 10px 0;
-            background-color: #28a745;
             color: white;
-            padding: 12px 24px;
+            /*padding: 12px 24px;*/
+            padding: 6px 12px;
             border: none;
             border-radius: 25px;
             cursor: pointer;
@@ -233,15 +233,18 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: all 0.3s;
         }
+        .save-btn{
+            background-color: #007bff; /* Azul para Salvar */
+        }
         .request-btn {
-            background-color: #007bff;
+            background-color: #28a745; /* Verde para Solicitar */
         }
         .save-btn:hover {
-            background-color: #218838;
+            background-color: #0056b3; /* Azul escuro no hover */
             transform: scale(1.05);
         }
         .request-btn:hover {
-            background-color: #0056b3;
+            background-color: #218838; /* Verde escuro no hover */
             transform: scale(1.05);
         }
         .rodape {
@@ -301,8 +304,14 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <button class="save-btn" onclick="saveImage()">Salvar Imagem</button>
-            <button class="request-btn" onclick="requestItem()">Solicitar este Item</button>
+            <button class="save-btn" onclick="saveImage()">
+                <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 8px; margin-left: -5px;">
+                Salvar Imagem
+            </button>
+            <button class="request-btn" onclick="requestItem()">
+                <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 8px; margin-left: -5px">
+                Solicitar este Item
+            </button>
         </div>
     </div>
 
