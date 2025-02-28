@@ -10,7 +10,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+            overflow-x: hidden;
         }
         h1 {
             margin: 20px 0;
@@ -180,7 +180,7 @@
             background: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
-            z-index: 1000; /* Valor alto para garantir que o modal fique acima de tudo */
+            z-index: 1000;
         }
         .modal-content {
             position: relative;
@@ -258,17 +258,17 @@
             transition: all 0.3s;
         }
         .save-btn {
-            background-color: #007bff; /* Azul para Salvar */
+            background-color: #007bff;
         }
         .request-btn {
-            background-color: #28a745; /* Verde para Solicitar */
+            background-color: #28a745;
         }
         .save-btn:hover {
-            background-color: #0056b3; /* Azul escuro no hover */
+            background-color: #0056b3;
             transform: scale(1.05);
         }
         .request-btn:hover {
-            background-color: #218838; /* Verde escuro no hover */
+            background-color: #218838;
             transform: scale(1.05);
         }
         .rodape {
@@ -289,7 +289,7 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20px;
-            margin-bottom: 20px; /* Adicionado para dar espaço antes do botão Fale Conosco */
+            margin-bottom: 20px;
         }
         .pagination button {
             padding: 8px 16px;
@@ -309,7 +309,7 @@
             cursor: not-allowed;
         }
         .fale-conosco-btn {
-            background-color: #28a745; /* Mesmo verde do botão Solicitar */
+            background-color: #28a745;
             color: white;
             padding: 15px;
             text-align: center;
@@ -319,17 +319,17 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            max-width: 100%; /* Garante que não exceda a largura da viewport */
+            max-width: 100%;
             border-radius: 0;
             font-weight: bold;
             transition: background-color 0.3s;
             margin-bottom: 0;
-            box-sizing: border-box; /* Inclui padding na largura total */
-            position: relative; /* Evita interferência com outros elementos */
-            z-index: 10; /* Garante que fique abaixo do modal, mas acima do rodapé */
-        }        
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
         .fale-conosco-btn:hover {
-            background-color: #218838; /* Mesmo verde escuro do hover do Solicitar */
+            background-color: #218838;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -386,7 +386,7 @@
         let currentPage = 1;
         let allFiles = [];
         let currentBanho = 'todos';
-        let currentSort = 'newest'; // Ordenação inicial por "Mais Novos"
+        let currentSort = 'newest';
 
         const PHONE_NUMBER = '5534997622408';
 
@@ -430,10 +430,12 @@
         }
 
         async function loadCategories() {
+            console.log('Iniciando loadCategories');
             try {
                 const response = await fetch(repoUrl);
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const data = await response.json();
+                console.log('Dados das categorias recebidos:', data);
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
 
@@ -457,12 +459,14 @@
                 if (initialTab) {
                     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                     initialTab.classList.add('active');
+                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
                     loadImages(initialTab.textContent.trim());
                     scrollToActiveTab();
                 } else {
                     const defaultTab = findTabByText('Brincos');
                     if (defaultTab) {
                         defaultTab.classList.add('active');
+                        console.log('Carregando categoria padrão: Brincos');
                         loadImages('Brincos');
                         scrollToActiveTab();
                     } else {
@@ -489,6 +493,7 @@
         }
 
         async function loadImages(folderName) {
+            console.log('Iniciando loadImages para:', folderName);
             currentFolder = folderName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
@@ -498,6 +503,7 @@
                 const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
                 if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
                 allFiles = await response.json();
+                console.log('Arquivos recebidos:', allFiles);
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
@@ -518,6 +524,7 @@
         }
 
         function getFilteredFiles() {
+            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
             let filtered = allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
@@ -532,29 +539,32 @@
                 const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
 
                 switch (currentSort) {
-                    case 'newest': // Maior código primeiro
+                    case 'newest':
                         return codigoB.localeCompare(codigoA, undefined, { numeric: true });
-                    case 'oldest': // Menor código primeiro
+                    case 'oldest':
                         return codigoA.localeCompare(codigoB, undefined, { numeric: true });
-                    case 'highestPrice': // Maior preço primeiro
+                    case 'highestPrice':
                         return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
-                    case 'lowestPrice': // Menor preço primeiro
+                    case 'lowestPrice':
                         return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
                     default:
                         return 0;
                 }
             });
 
+            console.log('Arquivos filtrados e ordenados:', filtered.length);
             return filtered;
         }
 
         function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
             const filteredFiles = getFilteredFiles();
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
 
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
@@ -627,8 +637,9 @@
 
         function applySort() {
             currentSort = document.getElementById('sortFilter').value;
-            currentPage = 1; // Volta para a primeira página ao mudar a ordenação
+            currentPage = 1;
             displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
         }
 
         function criarBotoesSubcategorias(banhosNaCategoria) {
@@ -689,8 +700,8 @@
 
         function saveImage() {
             html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true;
-                allowTaint: true;
+                useCORS: true,
+                allowTaint: true,
                 scale: 2
             }).then(canvas => {
                 const link = document.createElement('a');
@@ -745,10 +756,12 @@
         }
 
         window.onload = async () => {
+            console.log('Iniciando carregamento da página');
             await loadDescriptions();
             await loadCategories();
             loadRodape();
             setupFaleConoscoButton();
+            console.log('Carregamento da página concluído');
         };
     </script>
 </body>
