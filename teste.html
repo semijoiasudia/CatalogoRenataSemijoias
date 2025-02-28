@@ -283,12 +283,31 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
+        .fale-conosco-btn {
+            background-color: #28a745; /* Mesmo verde do botão Solicitar */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 0;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-bottom: 0;
+        }        
+        .fale-conosco-btn:hover {
+            background-color: #218838; /* Mesmo verde escuro do hover do Solicitar */
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <h3>Catálogo de Produtos</h3>
+    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
     <div class="tabs-container">
         <div class="tabs" id="tabs"></div>
     </div>
@@ -314,7 +333,7 @@
             </button>
         </div>
     </div>
-
+    <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">Fale Conosco</a>
     <div id="rodape" class="rodape"></div>
 
     <script>
@@ -616,7 +635,10 @@
             const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
-
+        function setupFaleConoscoButton() {
+            const faleConoscoBtn = document.getElementById('faleConoscoBtn');
+            faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
         async function loadRodape() {
             try {
                 const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
@@ -651,6 +673,7 @@
             await loadDescriptions();
             await loadCategories();
             loadRodape();
+            setupFaleConoscoButton();
         };
     </script>
 </body>
