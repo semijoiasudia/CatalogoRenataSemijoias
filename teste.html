@@ -10,6 +10,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            overflow-x: hidden; /* Evita rolagem horizontal indesejada */
         }
         h1 {
             margin: 20px 0;
@@ -156,8 +157,6 @@
             background: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
-            overflow-y: auto; /* Permite rolagem se o conteúdo exceder a altura */
-            z-index: 1000; /* Garante que o modal fique acima de tudo */
         }
         .modal-content {
             position: relative;
@@ -165,9 +164,8 @@
             padding: 25px;
             border-radius: 8px;
             max-width: 90%;
-            max-height: 90vh;
-            overflow: auto;
-            box-sizing: border-box; /* Inclui padding no cálculo de tamanho */
+            max-height: 90%;
+            overflow: hidden;
         }
         .capture-area {
             position: relative;
@@ -298,10 +296,14 @@
             border: none;
             cursor: pointer;
             width: 100%;
+            max-width: 100%; /* Garante que não exceda a largura da viewport */
             border-radius: 0;
             font-weight: bold;
             transition: background-color 0.3s;
             margin-bottom: 0;
+            box-sizing: border-box; /* Inclui padding na largura total */
+            position: relative; /* Evita interferência com outros elementos */
+            z-index: 10; /* Garante que fique abaixo do modal, mas acima do rodapé */
         }        
         .fale-conosco-btn:hover {
             background-color: #218838; /* Mesmo verde escuro do hover do Solicitar */
