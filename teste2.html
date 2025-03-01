@@ -42,7 +42,7 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #d4af37, #b8860b);
+            background: linear-gradient(135deg, #e6c977, #d4af37); /* Cor normal */
             color: white;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
@@ -50,12 +50,14 @@
             min-width: 120px;
             text-align: center;
         }
+        
         .tab:hover {
             transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(212, 175, 55, 0.5);
+            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5); /* Sombra baseada na cor #e6c977 */
         }
+        
         .tab.active {
-            background: linear-gradient(135deg, #b8860b, #8b6914);
+            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor quando ativo */
             font-weight: bold;
         }
         .tabs-container::-webkit-scrollbar {
@@ -66,11 +68,12 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb {
-            background: #d4af37;
+            background: #e6c977; /* Cor da "bolinha" da barra de rolagem */
             border-radius: 4px;
         }
+        
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #b8860b;
+            background: #d4af37; /* Cor quando passa o mouse sobre a barra */
         }
         .subcategories {
             display: flex;
