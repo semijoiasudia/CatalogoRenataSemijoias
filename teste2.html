@@ -619,7 +619,7 @@
             transition: opacity 0.3s ease-in-out;
         }
         .add-to-cart-gallery {
-            margin-top: 10px;
+            margin: 10px auto 0; /* Centraliza o botão (adicionando auto nas margens laterais) */
             background-color: transparent; /* Sem fundo */
             color: #333; /* Cor do texto escura */
             border: 1px solid #000; /* Borda fina preta */
@@ -632,6 +632,7 @@
             align-items: center;
             justify-content: center;
             gap: 4px;
+            max-width: fit-content; /* Limita a largura ao conteúdo */
         }
         .add-to-cart-gallery:hover {
             background-color: rgba(0,0,0,0.05); /* Fundo levemente cinza ao passar o mouse */
@@ -1325,7 +1326,7 @@
                 // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
                 item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
