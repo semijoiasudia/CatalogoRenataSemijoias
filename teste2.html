@@ -620,26 +620,26 @@
         }
         .add-to-cart-gallery {
             margin-top: 10px;
-            background-color: #e6c977; /* Cor mais suave, como botões de categoria */
-            color: white;
-            border: none;
-            border-radius: 50%; /* Formato circular */
-            width: 36px;
-            height: 36px;
-            padding: 0;
+            background-color: transparent; /* Sem fundo */
+            color: #333; /* Cor do texto escura */
+            border: 1px solid #000; /* Borda fina preta */
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s;
+            gap: 4px;
         }
         .add-to-cart-gallery:hover {
-            background-color: #d4af37;
-            transform: scale(1.1);
+            background-color: rgba(0,0,0,0.05); /* Fundo levemente cinza ao passar o mouse */
         }
         .add-to-cart-gallery img {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -694,7 +694,7 @@
                 </button>
                 <button class="request-btn" onclick="requestItem()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
-                    Solicitar somente este item
+                    Solicitar este Item
                 </button>
             </div>
         </div>
@@ -1318,30 +1318,17 @@
                 desc.className = 'description';
                 desc.textContent = descricao;
 
-                // Preço e botão em um container flex
-                const precoContainer = document.createElement('div');
-                precoContainer.className = 'preco-container';
-                precoContainer.style.display = 'flex';
-                precoContainer.style.alignItems = 'center';
-                precoContainer.style.justifyContent = 'center';
-                precoContainer.style.gap = '5px';
-                precoContainer.style.marginTop = '5px';
-
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
 
-                // Botão de adicionar à sacola (apenas ícone)
+                // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.title = "Adicionar à sacola";
-                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Adicionar à sacola">';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
-                precoContainer.appendChild(precoElement);
-                precoContainer.appendChild(addToCartBtn);
-
-                item.append(imgContainer, codigoElement, desc, precoContainer);
+                item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
                 gallery.appendChild(item);
             });
 
