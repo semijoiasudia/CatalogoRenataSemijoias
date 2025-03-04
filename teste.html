@@ -375,18 +375,18 @@
             background-color: #218838;
         }
 
-        /* Estilos modificados para o carrinho de compras */
+        /* Estilos modificados para a sacola de compras */
         .cart-icon-container {
             position: fixed;
             top: 20px;
-            left: 20px; /* Alterado de right para left */
+            left: 20px;
             z-index: 900;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .cart-icon {
-            background: linear-gradient(135deg, #A7C7E7, #6A92B8); /* Cores mais suaves */
+            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
             color: white;
             width: 50px;
             height: 50px;
@@ -620,7 +620,7 @@
         }
         .add-to-cart-gallery {
             margin-top: 10px;
-            background-color: #A7C7E7; /* Cor mais suave */
+            background-color: #e6c977; /* Cor mais suave, como botões de categoria */
             color: white;
             border: none;
             border-radius: 20px;
@@ -630,7 +630,7 @@
             transition: background-color 0.3s;
         }
         .add-to-cart-gallery:hover {
-            background-color: #6A92B8;
+            background-color: #d4af37;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -639,10 +639,10 @@
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
     <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
     
-    <!-- Ícone do Carrinho (agora à esquerda) -->
+    <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
-            <i>🛒</i>
+            <i>🛍️</i>
         </div>
         <div class="cart-counter" id="cartCounter">0</div>
     </div>
@@ -675,13 +675,13 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
                 <button class="save-btn" onclick="saveImage()">
                     <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
                     Salvar Imagem
                 </button>
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
-                    <i>🛒</i> Adicionar ao Carrinho
+                    <i>🛍️</i> Adicionar à Sacola
                 </button>
                 <button class="request-btn" onclick="requestItem()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
@@ -691,11 +691,11 @@
         </div>
     </div>
     
-    <!-- Modal do Carrinho (Modificada) -->
+    <!-- Modal da Sacola (Modificada) -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <span class="close" onclick="closeCartModal()">×</span>
-            <div class="cart-title">Meu Carrinho</div>
+            <div class="cart-title">Minha Sacola</div>
             <div class="cart-items" id="cartItems">
                 <!-- Itens do carrinho serão adicionados aqui -->
             </div>
@@ -737,7 +737,7 @@
             </div>
             
             <div class="cart-actions">
-                <button class="cart-clear" onclick="clearCart()">Limpar Carrinho</button>
+                <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
                 <button class="cart-checkout" onclick="checkoutCart()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
                     Finalizar Pedido
@@ -872,10 +872,10 @@
             }
             
             saveCart();
-            showNotification(`Item adicionado ao carrinho: ${codigo}`);
+            showNotification(`Item adicionado à sacola: ${codigo}`);
         }
 
-        // Adicionar ao carrinho a partir da modal
+        // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const descricao = document.querySelector('.modal-info .descricao').textContent;
@@ -885,13 +885,13 @@
             addToCart(codigo, descricao, preco, imagem);
         }
 
-        // Adicionar ao carrinho a partir da galeria
+        // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
             event.stopPropagation(); // Evita que a modal abra
             addToCart(codigo, descricao, preco, imagem);
         }
 
-        // Exibir a modal do carrinho
+        // Exibir a modal da sacola
         function openCartModal() {
             renderCartItems();
             document.getElementById('cartModal').style.display = 'flex';
@@ -903,7 +903,7 @@
             });
         }
 
-        // Fechar a modal do carrinho
+        // Fechar a modal da sacola
         function closeCartModal() {
             document.getElementById('cartModal').style.display = 'none';
             document.body.classList.remove('modal-open');
@@ -943,7 +943,7 @@
             cartItemsContainer.innerHTML = '';
             
             if (cart.length === 0) {
-                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Seu carrinho está vazio</div>';
+                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Sua sacola está vazia</div>';
                 updateCartTotals();
                 return;
             }
@@ -1006,20 +1006,20 @@
             renderCartItems();
         }
 
-        // Limpar carrinho
+        // Limpar sacola
         function clearCart() {
-            if (confirm('Tem certeza que deseja limpar o carrinho?')) {
+            if (confirm('Tem certeza que deseja limpar a sacola?')) {
                 cart = [];
                 saveCart();
                 renderCartItems();
-                showNotification('Carrinho limpo com sucesso');
+                showNotification('Sacola limpa com sucesso');
             }
         }
 
         // Finalizar pedido
         function checkoutCart() {
             if (cart.length === 0) {
-                alert('Seu carrinho está vazio');
+                alert('Sua sacola está vazia');
                 return;
             }
             
@@ -1316,7 +1316,7 @@
                 // Botão de adicionar ao carrinho
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.innerHTML = '<i>🛒</i> Adicionar';
+                addToCartBtn.innerHTML = '<i>🛍️</i> Adicionar';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
                 item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
