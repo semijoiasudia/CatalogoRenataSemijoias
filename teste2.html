@@ -375,18 +375,18 @@
             background-color: #218838;
         }
 
-        /* Estilos para o carrinho de compras */
+        /* Estilos modificados para a sacola de compras */
         .cart-icon-container {
             position: fixed;
             top: 20px;
-            right: 20px;
+            left: 20px;
             z-index: 900;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .cart-icon {
-            background: linear-gradient(135deg, #d4af37, #b8860b);
+            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
             color: white;
             width: 50px;
             height: 50px;
@@ -522,15 +522,53 @@
         }
         .cart-summary {
             margin-top: 20px;
-            padding: 10px;
+            padding: 15px;
             background-color: #f8f9fa;
-            border-radius: 4px;
+            border-radius: 8px;
+        }
+        .cart-total-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 16px;
         }
         .cart-total {
             font-size: 18px;
             font-weight: bold;
             text-align: right;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cart-delivery-options {
+            margin-top: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .delivery-title {
+            font-weight: bold;
             margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option input {
+            margin-right: 10px;
+        }
+        .delivery-option label {
+            font-size: 14px;
+        }
+        .delivery-price {
+            margin-left: auto;
+            font-weight: bold;
         }
         .cart-actions {
             display: flex;
@@ -582,17 +620,26 @@
         }
         .add-to-cart-gallery {
             margin-top: 10px;
-            background-color: #d4af37;
+            background-color: #e6c977; /* Cor mais suave, como botões de categoria */
             color: white;
             border: none;
-            border-radius: 20px;
-            padding: 5px 10px;
-            font-size: 12px;
+            border-radius: 50%; /* Formato circular */
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
         }
         .add-to-cart-gallery:hover {
-            background-color: #b8860b;
+            background-color: #d4af37;
+            transform: scale(1.1);
+        }
+        .add-to-cart-gallery img {
+            width: 20px;
+            height: 20px;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -601,10 +648,10 @@
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
     <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
     
-    <!-- Ícone do Carrinho -->
+    <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
-            <i>🛒</i>
+            <i>🛍️</i>
         </div>
         <div class="cart-counter" id="cartCounter">0</div>
     </div>
@@ -637,35 +684,69 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
                 <button class="save-btn" onclick="saveImage()">
                     <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
                     Salvar Imagem
                 </button>
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
-                    <i>🛒</i> Adicionar ao Carrinho
+                    <i>🛍️</i> Adicionar à Sacola
                 </button>
                 <button class="request-btn" onclick="requestItem()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
-                    Solicitar este Item
+                    Solicitar somente este item
                 </button>
             </div>
         </div>
     </div>
     
-    <!-- Modal do Carrinho -->
+    <!-- Modal da Sacola (Modificada) -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <span class="close" onclick="closeCartModal()">×</span>
-            <div class="cart-title">Meu Carrinho</div>
+            <div class="cart-title">Minha Sacola</div>
             <div class="cart-items" id="cartItems">
                 <!-- Itens do carrinho serão adicionados aqui -->
             </div>
-            <div class="cart-summary">
-                <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+            
+            <!-- Opções de entrega -->
+            <div class="cart-delivery-options" id="deliveryOptions">
+                <div class="delivery-title">Opções de Entrega:</div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryUberlandia" name="deliveryOption" value="uberlandia" checked>
+                    <label for="deliveryUberlandia">Entrega em Uberlândia</label>
+                    <span class="delivery-price">R$ 13,00</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryOther" name="deliveryOption" value="other">
+                    <label for="deliveryOther">Entrega em outras cidades</label>
+                    <span class="delivery-price">A Calcular</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="pickupStore" name="deliveryOption" value="pickup">
+                    <label for="pickupStore">Retirar na loja</label>
+                    <span class="delivery-price">Grátis</span>
+                </div>
             </div>
+            
+            <!-- Resumo do carrinho -->
+            <div class="cart-summary">
+                <div class="cart-total-line">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-total-line">
+                    <span>Frete:</span>
+                    <span id="cartShipping">R$ 13,00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">R$ 0,00</span>
+                </div>
+            </div>
+            
             <div class="cart-actions">
-                <button class="cart-clear" onclick="clearCart()">Limpar Carrinho</button>
+                <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
                 <button class="cart-checkout" onclick="checkoutCart()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
                     Finalizar Pedido
@@ -696,6 +777,14 @@
         let currentVisibleFiles = [];
         let cart = [];
 
+        // Configurações de entrega
+        const deliveryConfig = {
+            freteUberlandia: 13.00,
+            freteOutrasCidades: "A Calcular"
+        };
+
+        let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
+
         const PHONE_NUMBER = '5534997622408';
 
         let scale = 1;
@@ -708,6 +797,37 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
+
+        // Carregar configurações de entrega do arquivo config.ini (simulado)
+        function loadDeliveryConfig() {
+            // Aqui normalmente seria feito o carregamento do arquivo config.ini
+            // Como estamos simulando, vamos apenas usar os valores já definidos
+            console.log("Configurações de entrega carregadas:", deliveryConfig);
+        }
+
+        // Atualizar opção de entrega selecionada
+        function updateDeliveryOption() {
+            const deliveryOptions = document.getElementsByName('deliveryOption');
+            for (const option of deliveryOptions) {
+                if (option.checked) {
+                    selectedDeliveryOption = option.value;
+                    break;
+                }
+            }
+            updateCartTotals();
+        }
+
+        // Calcular valor do frete
+        function getShippingCost() {
+            switch (selectedDeliveryOption) {
+                case 'uberlandia':
+                    return deliveryConfig.freteUberlandia;
+                case 'pickup':
+                    return 0;
+                default:
+                    return 0; // "A Calcular" é tratado como 0 para cálculos
+            }
+        }
 
         // Carregar carrinho do localStorage ao iniciar
         function loadCart() {
@@ -761,10 +881,10 @@
             }
             
             saveCart();
-            showNotification(`Item adicionado ao carrinho: ${codigo}`);
+            showNotification(`Item adicionado à sacola: ${codigo}`);
         }
 
-        // Adicionar ao carrinho a partir da modal
+        // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const descricao = document.querySelector('.modal-info .descricao').textContent;
@@ -774,23 +894,56 @@
             addToCart(codigo, descricao, preco, imagem);
         }
 
-        // Adicionar ao carrinho a partir da galeria
+        // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
             event.stopPropagation(); // Evita que a modal abra
             addToCart(codigo, descricao, preco, imagem);
         }
 
-        // Exibir a modal do carrinho
+        // Exibir a modal da sacola
         function openCartModal() {
             renderCartItems();
             document.getElementById('cartModal').style.display = 'flex';
             document.body.classList.add('modal-open');
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
         }
 
-        // Fechar a modal do carrinho
+        // Fechar a modal da sacola
         function closeCartModal() {
             document.getElementById('cartModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+        }
+
+        // Atualizar os totais do carrinho
+        function updateCartTotals() {
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            const shipping = getShippingCost();
+            let total = subtotal;
+            
+            // Só adiciona o frete se não for "A Calcular" (outras cidades)
+            if (selectedDeliveryOption === 'uberlandia' || selectedDeliveryOption === 'pickup') {
+                total += shipping;
+            }
+            
+            document.getElementById('cartSubtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            
+            // Atualizar texto do frete
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartShipping').textContent = deliveryConfig.freteOutrasCidades;
+            } else {
+                document.getElementById('cartShipping').textContent = `R$ ${shipping.toFixed(2).replace('.', ',')}`;
+            }
+            
+            // Para o total, se for "outras cidades", indicamos que o valor é parcial
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartTotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete`;
+            } else {
+                document.getElementById('cartTotal').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+            }
         }
 
         // Renderizar itens do carrinho
@@ -799,16 +952,12 @@
             cartItemsContainer.innerHTML = '';
             
             if (cart.length === 0) {
-                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Seu carrinho está vazio</div>';
-                document.getElementById('cartTotal').textContent = 'Total: R$ 0,00';
+                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Sua sacola está vazia</div>';
+                updateCartTotals();
                 return;
             }
             
-            let total = 0;
-            
             cart.forEach((item, index) => {
-                total += item.precoNumber * item.quantity;
-                
                 const itemElement = document.createElement('div');
                 itemElement.className = 'cart-item';
                 itemElement.innerHTML = `
@@ -831,7 +980,7 @@
                 cartItemsContainer.appendChild(itemElement);
             });
             
-            document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+            updateCartTotals();
         }
 
         // Atualizar quantidade de um item
@@ -866,20 +1015,20 @@
             renderCartItems();
         }
 
-        // Limpar carrinho
+        // Limpar sacola
         function clearCart() {
-            if (confirm('Tem certeza que deseja limpar o carrinho?')) {
+            if (confirm('Tem certeza que deseja limpar a sacola?')) {
                 cart = [];
                 saveCart();
                 renderCartItems();
-                showNotification('Carrinho limpo com sucesso');
+                showNotification('Sacola limpa com sucesso');
             }
         }
 
         // Finalizar pedido
         function checkoutCart() {
             if (cart.length === 0) {
-                alert('Seu carrinho está vazio');
+                alert('Sua sacola está vazia');
                 return;
             }
             
@@ -890,9 +1039,29 @@
                 message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
             });
             
-            // Adicionar total
-            const total = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
-            message += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
+            // Adicionar subtotal
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            message += `\n*Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+            
+            // Adicionar opção de entrega selecionada
+            let deliveryText = '';
+            switch(selectedDeliveryOption) {
+                case 'uberlandia':
+                    deliveryText = `Entrega em Uberlândia: R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${(subtotal + deliveryConfig.freteUberlandia).toFixed(2).replace('.', ',')}*`;
+                    break;
+                case 'other':
+                    deliveryText = `Entrega em outra cidade: ${deliveryConfig.freteOutrasCidades}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total parcial: R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete*`;
+                    break;
+                case 'pickup':
+                    deliveryText = 'Retirada na loja: Grátis';
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+                    break;
+            }
             
             // Adicionar mensagem final
             message += '\n\nOlá, gostaria de fazer este pedido.';
@@ -1149,17 +1318,30 @@
                 desc.className = 'description';
                 desc.textContent = descricao;
 
+                // Preço e botão em um container flex
+                const precoContainer = document.createElement('div');
+                precoContainer.className = 'preco-container';
+                precoContainer.style.display = 'flex';
+                precoContainer.style.alignItems = 'center';
+                precoContainer.style.justifyContent = 'center';
+                precoContainer.style.gap = '5px';
+                precoContainer.style.marginTop = '5px';
+
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
 
-                // Botão de adicionar ao carrinho
+                // Botão de adicionar à sacola (apenas ícone)
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.innerHTML = '<i>🛒</i> Adicionar';
+                addToCartBtn.title = "Adicionar à sacola";
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Adicionar à sacola">';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
-                item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
+                precoContainer.appendChild(precoElement);
+                precoContainer.appendChild(addToCartBtn);
+
+                item.append(imgContainer, codigoElement, desc, precoContainer);
                 gallery.appendChild(item);
             });
 
@@ -1501,12 +1683,19 @@
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
+            loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategoriasAtivas();
             await loadDescriptions();
             await loadCategories();
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+            
             console.log('Carregamento da página concluído');
         };
     </script>
