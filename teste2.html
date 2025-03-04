@@ -42,7 +42,7 @@
             cursor: pointer;
             border: none;
             border-radius: 8px;
-            background: linear-gradient(135deg, #e6c977, #d4af37); /* Cor normal */
+            background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             font-weight: bold;
             transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
@@ -50,14 +50,12 @@
             min-width: 120px;
             text-align: center;
         }
-        
         .tab:hover {
             transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5); /* Sombra baseada na cor #e6c977 */
+            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
         }
-        
         .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor quando ativo */
+            background: linear-gradient(135deg, #d4af37, #b8860b);
             font-weight: bold;
         }
         .tabs-container::-webkit-scrollbar {
@@ -68,12 +66,11 @@
             border-radius: 4px;
         }
         .tabs-container::-webkit-scrollbar-thumb {
-            background: #e6c977; /* Cor da "bolinha" da barra de rolagem */
+            background: #e6c977;
             border-radius: 4px;
         }
-        
         .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #d4af37; /* Cor quando passa o mouse sobre a barra */
+            background: #d4af37;
         }
         .subcategories {
             display: flex;
@@ -137,15 +134,34 @@
             max-width: 150px;
             margin: 0 auto;
         }
-        .gallery img {
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery .img-container img {
             width: 100%;
             height: auto;
             cursor: pointer;
             border-radius: 8px;
             transition: transform 0.2s;
+            user-select: none;
+            -webkit-touch-callout: none;
         }
-        .gallery img:hover {
+        .gallery .img-container img:hover {
             transform: scale(1.05);
+        }
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
         }
         .gallery .description {
             margin-top: 10px;
@@ -184,6 +200,7 @@
             justify-content: center;
             align-items: center;
             z-index: 1000;
+            overflow: auto;
         }
         .modal-content {
             position: relative;
@@ -193,6 +210,9 @@
             max-width: 90%;
             max-height: 90%;
             overflow: hidden;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
         }
         .capture-area {
             position: relative;
@@ -201,6 +221,19 @@
             max-width: 100%;
             max-height: 65vh;
             border-radius: 8px;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
         }
         .modal-codigo {
             position: absolute;
@@ -248,7 +281,7 @@
             font-weight: bold;
             margin-top: 5px;
         }
-        .save-btn, .request-btn {
+        .save-btn, .request-btn, .add-to-cart-btn {
             margin: 10px 0;
             color: white;
             padding: 6px 12px;
@@ -266,12 +299,19 @@
         .request-btn {
             background-color: #28a745;
         }
+        .add-to-cart-btn {
+            background-color: #d4af37;
+        }
         .save-btn:hover {
             background-color: #0056b3;
             transform: scale(1.05);
         }
         .request-btn:hover {
             background-color: #218838;
+            transform: scale(1.05);
+        }
+        .add-to-cart-btn:hover {
+            background-color: #b8860b;
             transform: scale(1.05);
         }
         .rodape {
@@ -334,12 +374,241 @@
         .fale-conosco-btn:hover {
             background-color: #218838;
         }
+
+        /* Estilos para o carrinho de compras */
+        .cart-icon-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart-icon {
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+        .cart-counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+        .cart-content {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .cart-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .cart-items {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .cart-item-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .cart-item-codigo {
+            font-size: 12px;
+            color: #666;
+        }
+        .cart-item-price {
+            font-weight: bold;
+            color: #000;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .cart-quantity {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .quantity-btn {
+            background-color: #ddd;
+            border: none;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .remove-item {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .cart-total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .cart-clear, .cart-checkout {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cart-clear {
+            background-color: #6c757d;
+            color: white;
+        }
+        .cart-checkout {
+            background-color: #28a745;
+            color: white;
+        }
+        .cart-clear:hover {
+            background-color: #5a6268;
+        }
+        .cart-checkout:hover {
+            background-color: #218838;
+        }
+        .empty-cart-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            z-index: 1002;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .add-to-cart-gallery {
+            margin-top: 10px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 5px 10px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-to-cart-gallery:hover {
+            background-color: #b8860b;
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
     <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    
+    <!-- Ícone do Carrinho -->
+    <div class="cart-icon-container">
+        <div class="cart-icon" onclick="openCartModal()">
+            <i>🛒</i>
+        </div>
+        <div class="cart-counter" id="cartCounter">0</div>
+    </div>
+    
     <div class="tabs-container">
         <div class="tabs" id="tabs"></div>
     </div>
@@ -356,24 +625,55 @@
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
+    <!-- Notificação de Adição ao Carrinho -->
+    <div class="notification" id="notification"></div>
+    
+    <!-- Modal de Imagem -->
     <div class="modal" id="imageModal">
-        <div class="modal-content">
+        <div class="modal-content" id="modalContent">
             <span class="close" onclick="closeModal()">×</span>
             <div class="capture-area" id="captureArea">
                 <div class="modal-codigo" id="modalCodigo"></div>
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <button class="save-btn" onclick="saveImage()">
-                <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
-                Salvar Imagem
-            </button>
-            <button class="request-btn" onclick="requestItem()">
-                <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
-                Solicitar este Item
-            </button>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                <button class="save-btn" onclick="saveImage()">
+                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
+                    Salvar Imagem
+                </button>
+                <button class="add-to-cart-btn" onclick="addToCartFromModal()">
+                    <i>🛒</i> Adicionar ao Carrinho
+                </button>
+                <button class="request-btn" onclick="requestItem()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
+                    Solicitar este Item
+                </button>
+            </div>
         </div>
     </div>
+    
+    <!-- Modal do Carrinho -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close" onclick="closeCartModal()">×</span>
+            <div class="cart-title">Meu Carrinho</div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total" id="cartTotal">Total: R$ 0,00</div>
+            </div>
+            <div class="cart-actions">
+                <button class="cart-clear" onclick="clearCart()">Limpar Carrinho</button>
+                <button class="cart-checkout" onclick="checkoutCart()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
+                    Finalizar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+    
     <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
         <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
         Fale Conosco
@@ -383,15 +683,239 @@
     <script>
         const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
         const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
+        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/CategoriasAtivas.txt";
         let descricoes = {};
+        let categoriasAtivas = [];
         let currentFolder = '';
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
         let currentBanho = 'todos';
         let currentSort = 'newest';
+        let currentModalIndex = 0;
+        let currentVisibleFiles = [];
+        let cart = [];
 
         const PHONE_NUMBER = '5534997622408';
+
+        let scale = 1;
+        let minScale = 1;
+        let maxScale = 5;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+        let touchStartX = 0;
+        let touchStartTime = 0;
+
+        // Carregar carrinho do localStorage ao iniciar
+        function loadCart() {
+            const savedCart = localStorage.getItem('semijoiasCart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCartCounter();
+            }
+        }
+
+        // Salvar carrinho no localStorage
+        function saveCart() {
+            localStorage.setItem('semijoiasCart', JSON.stringify(cart));
+            updateCartCounter();
+        }
+
+        // Atualizar contador de itens no carrinho
+        function updateCartCounter() {
+            const counter = document.getElementById('cartCounter');
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            counter.textContent = totalItems;
+            
+            // Se o carrinho estiver vazio, esconder o contador
+            if (totalItems === 0) {
+                counter.style.display = 'none';
+            } else {
+                counter.style.display = 'flex';
+            }
+        }
+
+        // Adicionar item ao carrinho
+        function addToCart(codigo, descricao, preco, imagem) {
+            const precoNumber = getNumericPrice(preco);
+            
+            // Verificar se o item já está no carrinho
+            const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
+            
+            if (existingItemIndex > -1) {
+                // Incrementar quantidade se já existir
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                // Adicionar novo item
+                cart.push({
+                    codigo,
+                    descricao,
+                    preco,
+                    precoNumber,
+                    imagem,
+                    quantity: 1
+                });
+            }
+            
+            saveCart();
+            showNotification(`Item adicionado ao carrinho: ${codigo}`);
+        }
+
+        // Adicionar ao carrinho a partir da modal
+        function addToCartFromModal() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const descricao = document.querySelector('.modal-info .descricao').textContent;
+            const preco = document.querySelector('.modal-info .preco').textContent;
+            const imagem = document.getElementById('modalImg').src;
+            
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Adicionar ao carrinho a partir da galeria
+        function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
+            event.stopPropagation(); // Evita que a modal abra
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Exibir a modal do carrinho
+        function openCartModal() {
+            renderCartItems();
+            document.getElementById('cartModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+        }
+
+        // Fechar a modal do carrinho
+        function closeCartModal() {
+            document.getElementById('cartModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        // Renderizar itens do carrinho
+        function renderCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = '';
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Seu carrinho está vazio</div>';
+                document.getElementById('cartTotal').textContent = 'Total: R$ 0,00';
+                return;
+            }
+            
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                total += item.precoNumber * item.quantity;
+                
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <img src="${item.imagem}" alt="${item.descricao}" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">${item.descricao}</div>
+                        <div class="cart-item-codigo">Código: ${item.codigo}</div>
+                        <div class="cart-item-price">${item.preco}</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-quantity">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, -1)">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" onchange="updateItemQuantityManual(${index}, this.value)">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, 1)">+</button>
+                        </div>
+                        <button class="remove-item" onclick="removeCartItem(${index})">×</button>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(itemElement);
+            });
+            
+            document.getElementById('cartTotal').textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        // Atualizar quantidade de um item
+        function updateItemQuantity(index, change) {
+            cart[index].quantity += change;
+            
+            if (cart[index].quantity < 1) {
+                cart[index].quantity = 1;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Atualizar quantidade manualmente via input
+        function updateItemQuantityManual(index, value) {
+            const quantity = parseInt(value);
+            if (isNaN(quantity) || quantity < 1) {
+                cart[index].quantity = 1;
+            } else {
+                cart[index].quantity = quantity;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Remover item do carrinho
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            saveCart();
+            renderCartItems();
+        }
+
+        // Limpar carrinho
+        function clearCart() {
+            if (confirm('Tem certeza que deseja limpar o carrinho?')) {
+                cart = [];
+                saveCart();
+                renderCartItems();
+                showNotification('Carrinho limpo com sucesso');
+            }
+        }
+
+        // Finalizar pedido
+        function checkoutCart() {
+            if (cart.length === 0) {
+                alert('Seu carrinho está vazio');
+                return;
+            }
+            
+            let message = '*Novo Pedido*\n\n';
+            
+            // Adicionar itens
+            cart.forEach(item => {
+                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
+            });
+            
+            // Adicionar total
+            const total = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            message += `\n*Total: R$ ${total.toFixed(2).replace('.', ',')}*`;
+            
+            // Adicionar mensagem final
+            message += '\n\nOlá, gostaria de fazer este pedido.';
+            
+            // Abrir WhatsApp
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Exibir notificação
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            notification.style.opacity = '1';
+            
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 300);
+            }, 2000);
+        }
 
         function formatarPreco(preco) {
             if (!preco) return "Preço não disponível";
@@ -403,6 +927,25 @@
         function getNumericPrice(preco) {
             if (!preco || preco === "Preço não disponível") return 0;
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo CategoriasAtivas.txt não encontrado, todas as categorias serão exibidas.");
+                    categoriasAtivas = [];
+                    return;
+                }
+                const text = await response.text();
+                categoriasAtivas = text.split('\n')
+                    .map(linha => linha.trim())
+                    .filter(linha => linha !== '');
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = [];
+            }
         }
 
         async function loadDescriptions() {
@@ -443,7 +986,7 @@
                 tabs.innerHTML = '';
 
                 data.forEach(item => {
-                    if (item.type === 'dir') {
+                    if (item.type === 'dir' && (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name))) {
                         const tab = document.createElement('button');
                         tab.className = 'tab';
                         tab.textContent = item.name;
@@ -466,19 +1009,17 @@
                     loadImages(initialTab.textContent.trim());
                     scrollToActiveTab();
                 } else {
-                    const defaultTab = findTabByText('Brincos');
+                    const defaultTab = findTabByText('Brincos') || tabs.children[0];
                     if (defaultTab) {
                         defaultTab.classList.add('active');
-                        console.log('Carregando categoria padrão: Brincos');
-                        loadImages('Brincos');
+                        console.log('Carregando categoria padrão:', defaultTab.textContent);
+                        loadImages(defaultTab.textContent.trim());
                         scrollToActiveTab();
                     } else {
-                        console.error('Categoria padrão "Brincos" não encontrada.');
-                        alert('Categoria padrão "Brincos" não encontrada. Verifique o repositório GitHub.');
+                        console.error('Nenhuma categoria disponível.');
+                        alert('Nenhuma categoria disponível. Verifique o repositório GitHub.');
                     }
                 }
-
-                console.log('Categorias carregadas com sucesso:', data.filter(item => item.type === 'dir').map(item => item.name));
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
@@ -555,7 +1096,7 @@
                 }
             });
 
-            console.log('Arquivos filtrados e ordenados:', filtered.length);
+            currentVisibleFiles = filtered;
             return filtered;
         }
 
@@ -576,18 +1117,30 @@
                     preco: "Preço não disponível",
                     banho: ""
                 };
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
                 const item = document.createElement('div');
                 item.className = 'item';
                 item.dataset.banho = banho || 'todos';
+
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
 
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo);
-                
+                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
                 codigoElement.textContent = `COD: ${codigo}`;
@@ -600,11 +1153,20 @@
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
 
-                item.append(img, codigoElement, desc, precoElement);
+                // Botão de adicionar ao carrinho
+                const addToCartBtn = document.createElement('button');
+                addToCartBtn.className = 'add-to-cart-gallery';
+                addToCartBtn.innerHTML = '<i>🛒</i> Adicionar';
+                addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
+
+                item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
                 gallery.appendChild(item);
             });
 
             updatePagination();
+            document.querySelectorAll('.gallery img').forEach(img => {
+                img.addEventListener('contextmenu', (e) => e.preventDefault());
+            });
         }
 
         function updatePagination() {
@@ -681,24 +1243,202 @@
             displayPage(currentPage, new Set());
         }
 
-        function showModal(src, codigo) {
-            const { descricao, preco } = descricoes[codigo] || { 
-                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                preco: "Preço não disponível"
-            };
-            document.getElementById('modalImg').src = src;
-            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
-            document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${descricao}</div>
-                <div class="preco">${preco}</div>
-            `;
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            resetZoomAndPan();
+            updateModalContent(codigo);
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
+            setupModalInteraction();
+            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+            resetZoomAndPan();
+        }
+
+        function resetZoomAndPan() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateModalTransform();
+        }
+
+        function updateModalContent(codigo) {
+            const file = currentVisibleFiles[currentModalIndex];
+            if (!file) return;
+
+            const src = file.download_url;
+            codigo = file.name.split('.')[0];
+
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+            `;
+            updateModalTransform();
+        }
+
+        function updateModalTransform() {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+
+        function setupModalInteraction() {
+            const modalContent = document.getElementById('modalContent');
+
+            let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
+
+            modalContent.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY * -0.01;
+                adjustScale(delta);
+            });
+
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            modalContent.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    touchStartTime = Date.now();
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
+                } else if (e.touches.length === 2) {
+                    startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                }
+            }, false);
+
+            modalContent.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
+                    const newDist = getDistance(e.touches);
+                    const scaleChange = newDist / startDist;
+                    adjustScale((scaleChange - 1) * 2);
+                    startDist = newDist;
+
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, false);
+
+            modalContent.addEventListener('touchend', (e) => {
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                    if (scale === 1) {
+                        const touchEndX = e.changedTouches[0].screenX;
+                        const timeDiff = Date.now() - touchStartTime;
+                        if (timeDiff < 300) {
+                            handleSwipe(touchStartX, touchEndX);
+                        }
+                    }
+                }
+            }, false);
+        }
+
+        function adjustScale(delta) {
+            scale += delta;
+            scale = Math.max(minScale, Math.min(maxScale, scale));
+            clampTranslation();
+            updateModalTransform();
+        }
+
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+
+            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
+            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
+
+            translateX = Math.max(-maxX, Math.min(maxX, translateX));
+            translateY = Math.max(-maxY, Math.min(maxY, translateY));
+
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        function handleSwipe(touchStartX, touchEndX) {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
+                currentModalIndex++;
+                const nextFile = currentVisibleFiles[currentModalIndex];
+                const codigo = nextFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevFile = currentVisibleFiles[currentModalIndex];
+                const codigo = prevFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            }
         }
 
         function saveImage() {
@@ -760,10 +1500,13 @@
 
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
+            loadCart(); // Carregar carrinho salvo
+            await loadCategoriasAtivas();
             await loadDescriptions();
             await loadCategories();
             loadRodape();
             setupFaleConoscoButton();
+            updateCartCounter(); // Atualizar contador do carrinho
             console.log('Carregamento da página concluído');
         };
     </script>
