@@ -1287,6 +1287,8 @@
                     preco: "Preço não disponível",
                     banho: ""
                 };
+                
+                // Calcular o índice correto no array atual de arquivos visíveis (filtrados)
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
                 const item = document.createElement('div');
@@ -1301,10 +1303,16 @@
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Esta é a parte crucial - sempre passamos o índice correto quando abrimos a modal
+                img.onclick = () => {
+                    // Recalculamos o índice no momento do clique para garantir que seja o atual
+                    const currentIndex = currentVisibleFiles.findIndex(f => f.name === file.name);
+                    showModal(file.download_url, codigo, currentIndex);
+                };
 
                 const logo = document.createElement('img');
-                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.src = 'imagens/logo.png';
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
 
@@ -1427,6 +1435,7 @@
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
             resetZoomAndPan();
+            // Não precisamos resetar currentModalIndex aqui
         }
 
         function resetZoomAndPan() {
@@ -1596,18 +1605,30 @@
 
         function handleSwipe(touchStartX, touchEndX) {
             const swipeThreshold = 50;
+            
+            // Swipe para a esquerda (próxima imagem)
             if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
+                // Incrementar para a próxima imagem
                 currentModalIndex++;
                 const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
+                if (nextFile) {
+                    const codigo = nextFile.name.split('.')[0];
+                    resetZoomAndPan();
+                    updateModalContent(codigo);
+                    console.log(`Swipe navegou para a imagem ${currentModalIndex} (próxima)`);
+                }
+            } 
+            // Swipe para a direita (imagem anterior)
+            else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
+                // Decrementar para a imagem anterior
                 currentModalIndex--;
                 const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
+                if (prevFile) {
+                    const codigo = prevFile.name.split('.')[0];
+                    resetZoomAndPan();
+                    updateModalContent(codigo);
+                    console.log(`Swipe navegou para a imagem ${currentModalIndex} (anterior)`);
+                }
             }
         }
 
