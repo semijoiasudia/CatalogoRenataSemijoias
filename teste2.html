@@ -662,7 +662,7 @@
     </div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="filter-container">
-        <label for="sortFilter">1.2 Ordenar por: </label>
+        <label for="sortFilter">1.3 Ordenar por: </label>
         <select id="sortFilter" onchange="applySort()">
             <option value="newest" selected>Mais Novos</option>
             <option value="oldest">Mais Antigos</option>
@@ -777,6 +777,7 @@
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
         let cart = [];
+        let modalAbortController = null;
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1426,8 +1427,12 @@
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
-            currentModalIndex = index;
-            resetZoomAndPan();           
+            resetZoomAndPan();
+            
+            if (modalAbortController) {
+                modalAbortController.abort();
+                modalAbortController = null;
+            }
         }
 
         function resetZoomAndPan() {
@@ -1476,25 +1481,35 @@
 
         function setupModalInteraction() {
             const modalContent = document.getElementById('modalContent');
-
+            
+            // Remove listeners anteriores
+            if (modalAbortController) {
+                modalAbortController.abort();
+            }
+            
+            modalAbortController = new AbortController();
+            const signal = modalAbortController.signal;
+        
             let startDist = 0;
             let lastX = 0;
             let lastY = 0;
-
+        
+            // Wheel event para zoom
             modalContent.addEventListener('wheel', (e) => {
                 e.preventDefault();
                 const delta = e.deltaY * -0.01;
                 adjustScale(delta);
-            });
-
+            }, { signal });
+        
+            // Mouse events para arrastar
             modalContent.addEventListener('mousedown', (e) => {
                 if (scale > 1) {
                     isDragging = true;
                     startX = e.clientX - translateX;
                     startY = e.clientY - translateY;
                 }
-            });
-
+            }, { signal });
+        
             document.addEventListener('mousemove', (e) => {
                 if (isDragging) {
                     e.preventDefault();
@@ -1503,12 +1518,13 @@
                     clampTranslation();
                     updateModalTransform();
                 }
-            });
-
+            }, { signal });
+        
             document.addEventListener('mouseup', () => {
                 isDragging = false;
-            });
-
+            }, { signal });
+        
+            // Touch events
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
@@ -1523,8 +1539,8 @@
                     lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
                     lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
                 }
-            }, false);
-
+            }, { passive: false, signal });
+        
             modalContent.addEventListener('touchmove', (e) => {
                 e.preventDefault();
                 if (e.touches.length === 1 && isDragging) {
@@ -1537,7 +1553,7 @@
                     const scaleChange = newDist / startDist;
                     adjustScale((scaleChange - 1) * 2);
                     startDist = newDist;
-
+        
                     const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
                     const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
                     translateX += (newX - lastX) / scale;
@@ -1547,8 +1563,8 @@
                     clampTranslation();
                     updateModalTransform();
                 }
-            }, false);
-
+            }, { passive: false, signal });
+        
             modalContent.addEventListener('touchend', (e) => {
                 if (e.touches.length === 0) {
                     isDragging = false;
@@ -1560,7 +1576,7 @@
                         }
                     }
                 }
-            }, false);
+            }, { signal });
         }
 
         function adjustScale(delta) {
