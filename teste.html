@@ -619,18 +619,55 @@
             transition: opacity 0.3s ease-in-out;
         }
         .add-to-cart-gallery {
-            margin-top: 10px;
-            background-color: #e6c977; /* Cor mais suave, como botões de categoria */
-            color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 5px 10px;
+            margin: 10px auto 0; /* Centraliza o botão (adicionando auto nas margens laterais) */
+            background-color: transparent; /* Sem fundo */
+            color: #333; /* Cor do texto escura */
+            border: 1px solid #000; /* Borda fina preta */
+            border-radius: 4px;
+            padding: 5px 8px;
             font-size: 12px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            max-width: fit-content; /* Limita a largura ao conteúdo */
         }
         .add-to-cart-gallery:hover {
+            background-color: rgba(0,0,0,0.05); /* Fundo levemente cinza ao passar o mouse */
+        }
+        .add-to-cart-gallery img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+        
+        /* Estilos para botões de navegação do modal */
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .nav-btn {
             background-color: #d4af37;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #b8860b;
+            transform: scale(1.05);
+        }
+        .nav-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            transform: none;
         }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
@@ -675,7 +712,12 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+            <!-- Botões de navegação do modal -->
+            <div class="navigation-buttons">
+                <button id="prevImageBtn" class="nav-btn" onclick="navigatePrevImage()">← Anterior</button>
+                <button id="nextImageBtn" class="nav-btn" onclick="navigateNextImage()">Próximo →</button>
+            </div>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
                 <button class="save-btn" onclick="saveImage()">
                     <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
                     Salvar Imagem
@@ -786,8 +828,43 @@
         let startX = 0;
         let startY = 0;
         let isDragging = false;
-        let touchStartX = 0;
-        let touchStartTime = 0;
+
+        // Funções de navegação do modal
+        function navigatePrevImage() {
+            if (currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevFile = currentVisibleFiles[currentModalIndex];
+                if (prevFile) {
+                    const codigo = prevFile.name.split('.')[0];
+                    resetZoomAndPan();
+                    updateModalContent(codigo);
+                    updateNavigationButtons();
+                }
+            }
+        }
+
+        function navigateNextImage() {
+            if (currentModalIndex < currentVisibleFiles.length - 1) {
+                currentModalIndex++;
+                const nextFile = currentVisibleFiles[currentModalIndex];
+                if (nextFile) {
+                    const codigo = nextFile.name.split('.')[0];
+                    resetZoomAndPan();
+                    updateModalContent(codigo);
+                    updateNavigationButtons();
+                }
+            }
+        }
+
+        function updateNavigationButtons() {
+            const prevBtn = document.getElementById('prevImageBtn');
+            const nextBtn = document.getElementById('nextImageBtn');
+            
+            if (prevBtn && nextBtn) {
+                prevBtn.disabled = currentModalIndex <= 0;
+                nextBtn.disabled = currentModalIndex >= currentVisibleFiles.length - 1;
+            }
+        }
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
@@ -1277,6 +1354,8 @@
                     preco: "Preço não disponível",
                     banho: ""
                 };
+                
+                // Calcular o índice correto no array atual de arquivos visíveis (filtrados)
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
                 const item = document.createElement('div');
@@ -1291,10 +1370,15 @@
                 img.alt = descricao || 'Imagem do produto';
                 img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Abrir modal ao clicar na imagem
+                img.onclick = () => {
+                    const index = currentVisibleFiles.findIndex(f => f.name === file.name);
+                    showModal(file.download_url, codigo, index);
+                };
 
                 const logo = document.createElement('img');
-                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.src = 'imagens/logo.png';
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
 
@@ -1313,10 +1397,10 @@
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
 
-                // Botão de adicionar ao carrinho
+                // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.innerHTML = '<i>🛍️</i> Adicionar';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
                 item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
@@ -1411,12 +1495,17 @@
             document.body.classList.add('modal-open');
             setupModalInteraction();
             document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
+            // Atualizar estado dos botões de navegação
+            updateNavigationButtons();
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
             resetZoomAndPan();
+            
+            // Resetar índice ao fechar o modal
+            currentModalIndex = -1;
         }
 
         function resetZoomAndPan() {
@@ -1446,7 +1535,7 @@
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
 
             const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+            logo.src = 'imagens/logo.png'; 
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
             captureArea.appendChild(logo);
@@ -1456,6 +1545,7 @@
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
+            updateNavigationButtons();
         }
 
         function updateModalTransform() {
@@ -1470,12 +1560,14 @@
             let lastX = 0;
             let lastY = 0;
 
+            // Evento de roda do mouse para zoom
             modalContent.addEventListener('wheel', (e) => {
                 e.preventDefault();
                 const delta = e.deltaY * -0.01;
                 adjustScale(delta);
             });
 
+            // Eventos para arrastar com o mouse
             modalContent.addEventListener('mousedown', (e) => {
                 if (scale > 1) {
                     isDragging = true;
@@ -1498,10 +1590,9 @@
                 isDragging = false;
             });
 
+            // Eventos para zoom com dois dedos (pinch)
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
-                    touchStartX = e.touches[0].screenX;
-                    touchStartTime = Date.now();
                     if (scale > 1) {
                         isDragging = true;
                         startX = e.touches[0].clientX - translateX;
@@ -1539,16 +1630,7 @@
             }, false);
 
             modalContent.addEventListener('touchend', (e) => {
-                if (e.touches.length === 0) {
-                    isDragging = false;
-                    if (scale === 1) {
-                        const touchEndX = e.changedTouches[0].screenX;
-                        const timeDiff = Date.now() - touchStartTime;
-                        if (timeDiff < 300) {
-                            handleSwipe(touchStartX, touchEndX);
-                        }
-                    }
-                }
+                isDragging = false;
             }, false);
         }
 
@@ -1571,33 +1653,23 @@
             const modalRect = modalContent.getBoundingClientRect();
             const containerRect = modal.getBoundingClientRect();
 
+            // Calcular as dimensões do modal com o zoom aplicado
             const scaledWidth = modalRect.width * scale;
             const scaledHeight = modalRect.height * scale;
 
-            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
-            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
+            // Calcular limites de arrasto para impedir que o modal desapareça
+            // Usar o valor maior para garantir que pelo menos parte do modal esteja sempre visível
+            const maxXOffset = Math.max((scaledWidth / 2) - 50, 0);
+            const maxYOffset = Math.max((scaledHeight / 2) - 50, 0);
 
-            translateX = Math.max(-maxX, Math.min(maxX, translateX));
-            translateY = Math.max(-maxY, Math.min(maxY, translateY));
+            // Limitar a translação para manter pelo menos uma borda do modal visível na tela
+            translateX = Math.max(-maxXOffset, Math.min(maxXOffset, translateX));
+            translateY = Math.max(-maxYOffset, Math.min(maxYOffset, translateY));
 
-            if (scaledWidth <= containerRect.width) translateX = 0;
-            if (scaledHeight <= containerRect.height) translateY = 0;
-        }
-
-        function handleSwipe(touchStartX, touchEndX) {
-            const swipeThreshold = 50;
-            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
-                currentModalIndex++;
-                const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
-                currentModalIndex--;
-                const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
+            // Se o modal não estiver ampliado, centralizar
+            if (scale <= 1) {
+                translateX = 0;
+                translateY = 0;
             }
         }
 
