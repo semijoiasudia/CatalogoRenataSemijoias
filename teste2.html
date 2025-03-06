@@ -1268,6 +1268,10 @@
             currentVisibleFiles = filtered;
             return filtered;
         }
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
+        }
 
         function displayPage(page, banhosNaCategoria) {
             console.log('Exibindo página:', page);
