@@ -1614,16 +1614,26 @@
             const modal = document.getElementById('imageModal');
             const modalRect = modalContent.getBoundingClientRect();
             const containerRect = modal.getBoundingClientRect();
-
+            
+            // Cálculo do tamanho escalado da imagem
             const scaledWidth = modalRect.width * scale;
             const scaledHeight = modalRect.height * scale;
-
-            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
-            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
-
-            translateX = Math.max(-maxX, Math.min(maxX, translateX));
-            translateY = Math.max(-maxY, Math.min(maxY, translateY));
-
+            
+            // Calcula quanto a imagem pode se mover em cada direção
+            // Fórmula corrigida para evitar que a imagem desapareça completamente
+            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
+            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
+            
+            // Garante uma área mínima visível da imagem (25% da largura/altura)
+            const minVisibleRatio = 0.25;
+            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
+            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
+            
+            // Limita a translação dentro dos valores permitidos
+            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
+            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
+            
+            // Se a imagem não estiver ampliada, centraliza
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
         }
