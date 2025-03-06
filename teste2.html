@@ -803,7 +803,6 @@
         function loadDeliveryConfig() {
             // Aqui normalmente seria feito o carregamento do arquivo config.ini
             // Como estamos simulando, vamos apenas usar os valores já definidos
-            console.log("Configurações de entrega carregadas:", deliveryConfig);
         }
 
         // Atualizar opção de entrega selecionada
@@ -1103,7 +1102,6 @@
             try {
                 const response = await fetch(categoriasAtivasUrl);
                 if (!response.ok) {
-                    console.warn("Arquivo CategoriasAtivas.txt não encontrado, todas as categorias serão exibidas.");
                     categoriasAtivas = [];
                     return;
                 }
@@ -1111,9 +1109,7 @@
                 categoriasAtivas = text.split('\n')
                     .map(linha => linha.trim())
                     .filter(linha => linha !== '');
-                console.log('Categorias ativas carregadas:', categoriasAtivas);
             } catch (error) {
-                console.error("Erro ao carregar categorias ativas:", error);
                 categoriasAtivas = [];
             }
         }
@@ -1138,20 +1134,16 @@
                         };
                     }
                 });
-                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
             } catch (error) {
-                console.error("Erro ao carregar descrições:", error);
                 alert(`Erro ao carregar descrições: ${error.message}`);
             }
         }
 
         async function loadCategories() {
-            console.log('Iniciando loadCategories');
             try {
                 const response = await fetch(repoUrl);
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const data = await response.json();
-                console.log('Dados das categorias recebidos:', data);
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
 
@@ -1175,23 +1167,19 @@
                 if (initialTab) {
                     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                     initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
                     loadImages(initialTab.textContent.trim());
                     scrollToActiveTab();
                 } else {
                     const defaultTab = findTabByText('Brincos') || tabs.children[0];
                     if (defaultTab) {
                         defaultTab.classList.add('active');
-                        console.log('Carregando categoria padrão:', defaultTab.textContent);
                         loadImages(defaultTab.textContent.trim());
                         scrollToActiveTab();
                     } else {
-                        console.error('Nenhuma categoria disponível.');
                         alert('Nenhuma categoria disponível. Verifique o repositório GitHub.');
                     }
                 }
             } catch (error) {
-                console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
             }
         }
@@ -1207,7 +1195,6 @@
         }
 
         async function loadImages(folderName) {
-            console.log('Iniciando loadImages para:', folderName);
             currentFolder = folderName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
@@ -1217,7 +1204,6 @@
                 const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
                 if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
                 allFiles = await response.json();
-                console.log('Arquivos recebidos:', allFiles);
                 allFiles.forEach(file => {
                     if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
                         const codigo = file.name.split('.')[0];
@@ -1230,15 +1216,12 @@
 
                 displayPage(currentPage, banhosNaCategoria);
                 criarBotoesSubcategorias(banhosNaCategoria);
-                console.log('Imagens carregadas com sucesso para:', folderName);
             } catch (error) {
-                console.error("Erro ao carregar imagens:", error);
                 alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
             }
         }
 
         function getFilteredFiles() {
-            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
             let filtered = allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
                 const codigo = file.name.split('.')[0];
@@ -1271,14 +1254,12 @@
         }
 
         function displayPage(page, banhosNaCategoria) {
-            console.log('Exibindo página:', page);
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
             const filteredFiles = getFilteredFiles();
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
             const paginatedFiles = filteredFiles.slice(start, end);
-            console.log('Itens a exibir:', paginatedFiles.length);
 
             paginatedFiles.forEach(file => {
                 const codigo = file.name.split('.')[0];
@@ -1299,8 +1280,6 @@
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
-                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
 
                 const logo = document.createElement('img');
@@ -1374,7 +1353,6 @@
             currentSort = document.getElementById('sortFilter').value;
             currentPage = 1;
             displayPage(currentPage, new Set());
-            console.log('Ordenação aplicada:', currentSort);
         }
 
         function criarBotoesSubcategorias(banhosNaCategoria) {
@@ -1416,7 +1394,7 @@
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
-            updateModalContent(codigo);
+            updateModalContent();
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
             setupModalInteraction();
@@ -1427,7 +1405,6 @@
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
             resetZoomAndPan();
-            currentModalIndex = -1; // Marca explicitamente que não há imagem aberta
         }
 
         function resetZoomAndPan() {
@@ -1437,13 +1414,12 @@
             updateModalTransform();
         }
 
-        function updateModalContent(codigo) {
+        function updateModalContent() {
             const file = currentVisibleFiles[currentModalIndex];
             if (!file) return;
 
             const src = file.download_url;
-            codigo = file.name.split('.')[0];
-
+            const codigo = file.name.split('.')[0];
             const { descricao, preco } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                 preco: "Preço não disponível"
@@ -1599,16 +1575,12 @@
             const swipeThreshold = 50;
             if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
                 currentModalIndex++;
-                const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.name.split('.')[0];
                 resetZoomAndPan();
-                updateModalContent(codigo);
+                updateModalContent();
             } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
                 currentModalIndex--;
-                const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.name.split('.')[0];
                 resetZoomAndPan();
-                updateModalContent(codigo);
+                updateModalContent();
             }
         }
 
@@ -1623,7 +1595,6 @@
                 link.href = canvas.toDataURL('image/png');
                 link.click();
             }).catch(error => {
-                console.error("Erro ao salvar imagem:", error);
             });
         }
 
@@ -1647,7 +1618,6 @@
                 const formattedText = text.replace(/\n/g, '<br>');
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
-                console.error("Erro ao carregar rodapé:", error);
                 alert(`Erro ao carregar rodapé: ${error.message}`);
             }
         }
@@ -1670,7 +1640,6 @@
         }
 
         window.onload = async () => {
-            console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategoriasAtivas();
@@ -1684,8 +1653,6 @@
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
             });
-            
-            console.log('Carregamento da página concluído');
         };
     </script>
 </body>
