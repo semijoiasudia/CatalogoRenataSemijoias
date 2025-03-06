@@ -210,12 +210,17 @@
             max-width: 90%;
             max-height: 90%;
             overflow: hidden;
-            transform-origin: center center;
-            transition: transform 0.1s ease-out;
-            touch-action: none;
+        }
+        .zoom-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 100%;
         }
         .capture-area {
             position: relative;
+            transform-origin: center center;
+            transition: transform 0.1s;
         }
         .modal img {
             max-width: 100%;
@@ -669,6 +674,35 @@
             cursor: not-allowed;
             transform: none;
         }
+        
+        /* Indicadores de zoom */
+        .zoom-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 4px;
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+            z-index: 3;
+        }
+        .zoom-btn {
+            width: 30px;
+            height: 30px;
+            background: #d4af37;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .zoom-btn:hover {
+            background: #b8860b;
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -689,7 +723,7 @@
     </div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="filter-container">
-        <label for="sortFilter">Ordenar por: </label>
+        <label for="sortFilter">1.1 Ordenar por: </label>
         <select id="sortFilter" onchange="applySort()">
             <option value="newest" selected>Mais Novos</option>
             <option value="oldest">Mais Antigos</option>
@@ -707,9 +741,17 @@
     <div class="modal" id="imageModal">
         <div class="modal-content" id="modalContent">
             <span class="close" onclick="closeModal()">×</span>
-            <div class="capture-area" id="captureArea">
-                <div class="modal-codigo" id="modalCodigo"></div>
-                <img id="modalImg">
+            <div class="zoom-container" id="zoomContainer">
+                <div class="capture-area" id="captureArea">
+                    <div class="modal-codigo" id="modalCodigo"></div>
+                    <img id="modalImg">
+                    <img id="modalLogo" class="logo-watermark">
+                </div>
+            </div>
+            <div class="zoom-controls">
+                <button class="zoom-btn" onclick="zoomIn()">+</button>
+                <button class="zoom-btn" onclick="zoomOut()">−</button>
+                <button class="zoom-btn" onclick="resetZoom()">↺</button>
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <!-- Botões de navegação do modal -->
@@ -820,14 +862,99 @@
 
         const PHONE_NUMBER = '5534997622408';
 
+        // ===== NOVO SISTEMA DE ZOOM =====
         let scale = 1;
-        let minScale = 1;
-        let maxScale = 5;
-        let translateX = 0;
-        let translateY = 0;
-        let startX = 0;
-        let startY = 0;
+        const MIN_SCALE = 0.5;
+        const MAX_SCALE = 5;
         let isDragging = false;
+        let lastX, lastY;
+
+        // Funções para zoom com controles
+        function zoomIn() {
+            if (scale < MAX_SCALE) {
+                scale = Math.min(scale * 1.2, MAX_SCALE);
+                updateZoom();
+            }
+        }
+
+        function zoomOut() {
+            if (scale > MIN_SCALE) {
+                scale = Math.max(scale / 1.2, MIN_SCALE);
+                updateZoom();
+            }
+        }
+
+        function resetZoom() {
+            scale = 1;
+            updateZoom();
+        }
+
+        function updateZoom() {
+            const captureArea = document.getElementById('captureArea');
+            captureArea.style.transform = `scale(${scale})`;
+            
+            // Ajustar altura do container de zoom se necessário
+            const zoomContainer = document.getElementById('zoomContainer');
+            if (scale > 1) {
+                zoomContainer.style.overflow = 'auto';
+            } else {
+                zoomContainer.style.overflow = 'hidden';
+            }
+        }
+
+        // Inicializar zoom e arrastar
+        function initZoom() {
+            const zoomContainer = document.getElementById('zoomContainer');
+            const captureArea = document.getElementById('captureArea');
+            
+            // Reset na escala
+            scale = 1;
+            captureArea.style.transform = `scale(${scale})`;
+            
+            // Zoom com a roda do mouse
+            zoomContainer.addEventListener('wheel', function(e) {
+                e.preventDefault();
+                
+                if (e.deltaY < 0) {
+                    // Zoom in
+                    zoomIn();
+                } else {
+                    // Zoom out
+                    zoomOut();
+                }
+            });
+            
+            // Eventos touch para dispositivos móveis
+            let initialScale = 1;
+            let initialDistance = 0;
+            
+            function getDistance(touches) {
+                return Math.hypot(
+                    touches[0].clientX - touches[1].clientX,
+                    touches[0].clientY - touches[1].clientY
+                );
+            }
+            
+            zoomContainer.addEventListener('touchstart', function(e) {
+                if (e.touches.length === 2) {
+                    e.preventDefault();
+                    initialDistance = getDistance(e.touches);
+                    initialScale = scale;
+                }
+            }, { passive: false });
+            
+            zoomContainer.addEventListener('touchmove', function(e) {
+                if (e.touches.length === 2) {
+                    e.preventDefault();
+                    
+                    const currentDistance = getDistance(e.touches);
+                    const scaleChange = currentDistance / initialDistance;
+                    
+                    scale = Math.min(Math.max(initialScale * scaleChange, MIN_SCALE), MAX_SCALE);
+                    updateZoom();
+                }
+            }, { passive: false });
+        }
 
         // Funções de navegação do modal
         function navigatePrevImage() {
@@ -836,7 +963,7 @@
                 const prevFile = currentVisibleFiles[currentModalIndex];
                 if (prevFile) {
                     const codigo = prevFile.name.split('.')[0];
-                    resetZoomAndPan();
+                    resetZoom();
                     updateModalContent(codigo);
                     updateNavigationButtons();
                 }
@@ -849,7 +976,7 @@
                 const nextFile = currentVisibleFiles[currentModalIndex];
                 if (nextFile) {
                     const codigo = nextFile.name.split('.')[0];
-                    resetZoomAndPan();
+                    resetZoom();
                     updateModalContent(codigo);
                     updateNavigationButtons();
                 }
@@ -1489,30 +1616,28 @@
 
         function showModal(src, codigo, index) {
             currentModalIndex = index;
-            resetZoomAndPan();
-            updateModalContent(codigo);
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
-            setupModalInteraction();
-            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
-            // Atualizar estado dos botões de navegação
+            
+            // Resetar zoom antes de mostrar o modal
+            scale = 1;
+            
+            updateModalContent(codigo);
             updateNavigationButtons();
+            
+            // Inicializar sistema de zoom
+            initZoom();
+            
+            // Prevenir menu de contexto na imagem do modal
+            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
         }
 
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
-            resetZoomAndPan();
             
             // Resetar índice ao fechar o modal
             currentModalIndex = -1;
-        }
-
-        function resetZoomAndPan() {
-            scale = 1;
-            translateX = 0;
-            translateY = 0;
-            updateModalTransform();
         }
 
         function updateModalContent(codigo) {
@@ -1527,150 +1652,22 @@
                 preco: "Preço não disponível"
             };
 
-            const captureArea = document.getElementById('captureArea');
-            const existingLogo = captureArea.querySelector('.logo-watermark');
-            if (existingLogo) existingLogo.remove();
-
+            // Atualizar imagem e logo
             document.getElementById('modalImg').src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('modalLogo').src = 'imagens/logo.png';
 
-            const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png'; 
-            logo.className = 'logo-watermark';
-            logo.alt = 'Logo';
-            captureArea.appendChild(logo);
-
+            // Atualizar informações
             document.getElementById('modalInfo').innerHTML = `
                 <div class="descricao">${descricao}</div>
                 <div class="preco">${preco}</div>
             `;
-            updateModalTransform();
+            
+            // Resetar zoom
+            resetZoom();
+            
+            // Atualizar estado dos botões de navegação
             updateNavigationButtons();
-        }
-
-        function updateModalTransform() {
-            const modalContent = document.getElementById('modalContent');
-            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
-        }
-
-        function setupModalInteraction() {
-            const modalContent = document.getElementById('modalContent');
-
-            let startDist = 0;
-            let lastX = 0;
-            let lastY = 0;
-
-            // Evento de roda do mouse para zoom
-            modalContent.addEventListener('wheel', (e) => {
-                e.preventDefault();
-                const delta = e.deltaY * -0.01;
-                adjustScale(delta);
-            });
-
-            // Eventos para arrastar com o mouse
-            modalContent.addEventListener('mousedown', (e) => {
-                if (scale > 1) {
-                    isDragging = true;
-                    startX = e.clientX - translateX;
-                    startY = e.clientY - translateY;
-                }
-            });
-
-            document.addEventListener('mousemove', (e) => {
-                if (isDragging) {
-                    e.preventDefault();
-                    translateX = e.clientX - startX;
-                    translateY = e.clientY - startY;
-                    clampTranslation();
-                    updateModalTransform();
-                }
-            });
-
-            document.addEventListener('mouseup', () => {
-                isDragging = false;
-            });
-
-            // Eventos para zoom com dois dedos (pinch)
-            modalContent.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 1) {
-                    if (scale > 1) {
-                        isDragging = true;
-                        startX = e.touches[0].clientX - translateX;
-                        startY = e.touches[0].clientY - translateY;
-                    }
-                } else if (e.touches.length === 2) {
-                    startDist = getDistance(e.touches);
-                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-                }
-            }, false);
-
-            modalContent.addEventListener('touchmove', (e) => {
-                e.preventDefault();
-                if (e.touches.length === 1 && isDragging) {
-                    translateX = e.touches[0].clientX - startX;
-                    translateY = e.touches[0].clientY - startY;
-                    clampTranslation();
-                    updateModalTransform();
-                } else if (e.touches.length === 2) {
-                    const newDist = getDistance(e.touches);
-                    const scaleChange = newDist / startDist;
-                    adjustScale((scaleChange - 1) * 2);
-                    startDist = newDist;
-
-                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-                    translateX += (newX - lastX) / scale;
-                    translateY += (newY - lastY) / scale;
-                    lastX = newX;
-                    lastY = newY;
-                    clampTranslation();
-                    updateModalTransform();
-                }
-            }, false);
-
-            modalContent.addEventListener('touchend', (e) => {
-                isDragging = false;
-            }, false);
-        }
-
-        function adjustScale(delta) {
-            scale += delta;
-            scale = Math.max(minScale, Math.min(maxScale, scale));
-            clampTranslation();
-            updateModalTransform();
-        }
-
-        function getDistance(touches) {
-            const dx = touches[0].clientX - touches[1].clientX;
-            const dy = touches[0].clientY - touches[1].clientY;
-            return Math.sqrt(dx * dx + dy * dy);
-        }
-
-        function clampTranslation() {
-            const modalContent = document.getElementById('modalContent');
-            const modal = document.getElementById('imageModal');
-            const modalRect = modalContent.getBoundingClientRect();
-            const containerRect = modal.getBoundingClientRect();
-
-            // Calcular as dimensões do modal com o zoom aplicado
-            const scaledWidth = modalRect.width * scale;
-            const scaledHeight = modalRect.height * scale;
-
-            // Calcular limites de arrasto para impedir que o modal desapareça
-            // Usar o valor maior para garantir que pelo menos parte do modal esteja sempre visível
-            const maxXOffset = Math.max((scaledWidth / 2) - 50, 0);
-            const maxYOffset = Math.max((scaledHeight / 2) - 50, 0);
-
-            // Limitar a translação para manter pelo menos uma borda do modal visível na tela
-            translateX = Math.max(-maxXOffset, Math.min(maxXOffset, translateX));
-            translateY = Math.max(-maxYOffset, Math.min(maxYOffset, translateY));
-
-            // Se o modal não estiver ampliado, centralizar
-            if (scale <= 1) {
-                translateX = 0;
-                translateY = 0;
-            }
         }
 
         function saveImage() {
