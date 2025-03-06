@@ -662,7 +662,7 @@
     </div>
     <div class="subcategories" id="subcategories" style="display: none;"></div>
     <div class="filter-container">
-        <label for="sortFilter">1.1 Ordenar por: </label>
+        <label for="sortFilter">1.2 Ordenar por: </label>
         <select id="sortFilter" onchange="applySort()">
             <option value="newest" selected>Mais Novos</option>
             <option value="oldest">Mais Antigos</option>
@@ -1404,6 +1404,7 @@
         function closeModal() {
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+            currentModalIndex = 0;
             resetZoomAndPan();
         }
 
