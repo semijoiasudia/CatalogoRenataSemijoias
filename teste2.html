@@ -768,7 +768,6 @@
         const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/CategoriasAtivas.txt";
         let descricoes = {};
         let categoriasAtivas = [];
-        let currentFolder = '';
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
@@ -1209,7 +1208,6 @@
 
         async function loadImages(folderName) {
             console.log('Iniciando loadImages para:', folderName);
-            currentFolder = folderName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
             currentBanho = 'todos';
@@ -1580,8 +1578,23 @@
         }
 
         function adjustScale(delta) {
+            // Se estiver tentando diminuir (delta negativo) e já estiver no tamanho mínimo, não permitir
+            if (delta < 0 && scale <= minScale) {
+                scale = minScale; // Garante que a escala seja exatamente 1 nesse caso
+                return; // Não prossegue com o zoom out
+            }
+            
+            // Caso contrário, aplica o zoom normalmente
             scale += delta;
+            
+            // Garante que a escala esteja dentro dos limites permitidos
             scale = Math.max(minScale, Math.min(maxScale, scale));
+            
+            // Se a escala estiver muito próxima do mínimo, ajusta para exatamente o mínimo
+            if (scale < minScale + 0.05) {
+                scale = minScale;
+            }
+            
             clampTranslation();
             updateModalTransform();
         }
@@ -1666,11 +1679,6 @@
                 console.error("Erro ao carregar rodapé:", error);
                 alert(`Erro ao carregar rodapé: ${error.message}`);
             }
-        }
-
-        function getQueryParam(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
         }
 
         function scrollToActiveTab() {
