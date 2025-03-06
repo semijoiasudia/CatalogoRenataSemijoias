@@ -768,7 +768,6 @@
         const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/CategoriasAtivas.txt";
         let descricoes = {};
         let categoriasAtivas = [];
-        let currentFolder = '';
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
@@ -777,6 +776,7 @@
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
         let cart = [];
+        let modalAbortController = null;
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1208,7 +1208,6 @@
 
         async function loadImages(folderName) {
             console.log('Iniciando loadImages para:', folderName);
-            currentFolder = folderName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
             currentBanho = 'todos';
@@ -1268,6 +1267,10 @@
 
             currentVisibleFiles = filtered;
             return filtered;
+        }
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
         }
 
         function displayPage(page, banhosNaCategoria) {
@@ -1427,6 +1430,11 @@
             document.getElementById('imageModal').style.display = 'none';
             document.body.classList.remove('modal-open');
             resetZoomAndPan();
+            
+            if (modalAbortController) {
+                modalAbortController.abort();
+                modalAbortController = null;
+            }
         }
 
         function resetZoomAndPan() {
@@ -1475,25 +1483,35 @@
 
         function setupModalInteraction() {
             const modalContent = document.getElementById('modalContent');
-
+            
+            // Remove listeners anteriores
+            if (modalAbortController) {
+                modalAbortController.abort();
+            }
+            
+            modalAbortController = new AbortController();
+            const signal = modalAbortController.signal;
+        
             let startDist = 0;
             let lastX = 0;
             let lastY = 0;
-
+        
+            // Wheel event para zoom
             modalContent.addEventListener('wheel', (e) => {
                 e.preventDefault();
                 const delta = e.deltaY * -0.01;
                 adjustScale(delta);
-            });
-
+            }, { signal });
+        
+            // Mouse events para arrastar
             modalContent.addEventListener('mousedown', (e) => {
                 if (scale > 1) {
                     isDragging = true;
                     startX = e.clientX - translateX;
                     startY = e.clientY - translateY;
                 }
-            });
-
+            }, { signal });
+        
             document.addEventListener('mousemove', (e) => {
                 if (isDragging) {
                     e.preventDefault();
@@ -1502,12 +1520,13 @@
                     clampTranslation();
                     updateModalTransform();
                 }
-            });
-
+            }, { signal });
+        
             document.addEventListener('mouseup', () => {
                 isDragging = false;
-            });
-
+            }, { signal });
+        
+            // Touch events
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
@@ -1522,8 +1541,8 @@
                     lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
                     lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
                 }
-            }, false);
-
+            }, { passive: false, signal });
+        
             modalContent.addEventListener('touchmove', (e) => {
                 e.preventDefault();
                 if (e.touches.length === 1 && isDragging) {
@@ -1536,7 +1555,7 @@
                     const scaleChange = newDist / startDist;
                     adjustScale((scaleChange - 1) * 2);
                     startDist = newDist;
-
+        
                     const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
                     const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
                     translateX += (newX - lastX) / scale;
@@ -1546,8 +1565,8 @@
                     clampTranslation();
                     updateModalTransform();
                 }
-            }, false);
-
+            }, { passive: false, signal });
+        
             modalContent.addEventListener('touchend', (e) => {
                 if (e.touches.length === 0) {
                     isDragging = false;
@@ -1559,12 +1578,27 @@
                         }
                     }
                 }
-            }, false);
+            }, { signal });
         }
 
         function adjustScale(delta) {
+            // Se estiver tentando diminuir (delta negativo) e já estiver no tamanho mínimo, não permitir
+            if (delta < 0 && scale <= minScale) {
+                scale = minScale; // Garante que a escala seja exatamente 1 nesse caso
+                return; // Não prossegue com o zoom out
+            }
+            
+            // Caso contrário, aplica o zoom normalmente
             scale += delta;
+            
+            // Garante que a escala esteja dentro dos limites permitidos
             scale = Math.max(minScale, Math.min(maxScale, scale));
+            
+            // Se a escala estiver muito próxima do mínimo, ajusta para exatamente o mínimo
+            if (scale < minScale + 0.05) {
+                scale = minScale;
+            }
+            
             clampTranslation();
             updateModalTransform();
         }
@@ -1580,16 +1614,26 @@
             const modal = document.getElementById('imageModal');
             const modalRect = modalContent.getBoundingClientRect();
             const containerRect = modal.getBoundingClientRect();
-
+            
+            // Cálculo do tamanho escalado da imagem
             const scaledWidth = modalRect.width * scale;
             const scaledHeight = modalRect.height * scale;
-
-            const maxX = (scaledWidth - containerRect.width) / (2 * scale);
-            const maxY = (scaledHeight - containerRect.height) / (2 * scale);
-
-            translateX = Math.max(-maxX, Math.min(maxX, translateX));
-            translateY = Math.max(-maxY, Math.min(maxY, translateY));
-
+            
+            // Calcula quanto a imagem pode se mover em cada direção
+            // Fórmula corrigida para evitar que a imagem desapareça completamente
+            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
+            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
+            
+            // Garante uma área mínima visível da imagem (25% da largura/altura)
+            const minVisibleRatio = 0.25;
+            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
+            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
+            
+            // Limita a translação dentro dos valores permitidos
+            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
+            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
+            
+            // Se a imagem não estiver ampliada, centraliza
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
         }
@@ -1649,11 +1693,6 @@
                 console.error("Erro ao carregar rodapé:", error);
                 alert(`Erro ao carregar rodapé: ${error.message}`);
             }
-        }
-
-        function getQueryParam(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
         }
 
         function scrollToActiveTab() {
