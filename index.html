@@ -642,6 +642,28 @@
             height: 16px;
             vertical-align: middle;
         }
+        .payment-info {
+            display: block;
+            text-align: right;
+            margin-top: 4px;
+        }
+        /* Estilo para o texto "à vista" */
+        .payment-info .a-vista {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #28a745;
+        }
+        
+        /* Estilo para o texto sobre parcelamento */
+        .payment-info .parcelamento {
+            display: block;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: italic;
+            color: #666;
+            margin-top: 1px;
+        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -733,8 +755,14 @@
             <!-- Resumo do carrinho -->
             <div class="cart-summary">
                 <div class="cart-total-line">
-                    <span>Subtotal:</span>
-                    <span id="cartSubtotal">R$ 0,00</span>
+                    <span>Total:</span>
+                    <div>
+                        <span id="cartTotal">R$ 0,00</span>
+                        <div class="payment-info">
+                            <span class="a-vista">à vista</span>
+                            <span class="parcelamento">*consultar valores para parcelar*</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="cart-total-line">
                     <span>Frete:</span>
