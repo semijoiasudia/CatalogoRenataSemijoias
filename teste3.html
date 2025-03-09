@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata - Semijoias e Acessórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .modal-open {
+            overflow: hidden;
+        }
+        .tabs-container {
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            margin: 0 auto 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tabs {
+            display: inline-flex;
+            gap: 5px;
+        }
+        .tab {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+        .tab:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
+        }
+        .tab.active {
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            font-weight: bold;
+        }
+        .tabs-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .tabs-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb {
+            background: #e6c977;
+            border-radius: 4px;
+        }
+        .tabs-container::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .subcategories button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .subcategories button:hover {
+            background-color: #5a6268;
+        }
+        .subcategories button.active {
+            background-color: #5a6268;
+            font-weight: bold;
+        }
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filter-container label {
+            font-size: 14px;
+            color: #333;
+        }
+        .filter-container select {
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .filter-container select:hover {
+            border-color: #b8860b;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .gallery .img-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .gallery .img-container img:hover {
+            transform: scale(1.05);
+        }
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+        }
+        .gallery .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .add-to-cart-gallery {
+            width: 100%;
+            margin-top: 15px;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        .add-to-cart-gallery:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .add-to-cart-gallery img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            overflow: auto;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 8px;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .modal-info .descricao {
+            font-size: 16px;
+        }
+        .modal-info .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        .save-btn, .request-btn, .add-to-cart-btn {
+            width: 100%;
+            margin: 0;
+            color: #333;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .save-btn:hover, .request-btn:hover, .add-to-cart-btn:hover {
+            background-color: #e8e8e8;
+        }
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .pagination button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .fale-conosco-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-bottom: 0;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+        }
+        .fale-conosco-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos modificados para a sacola de compras */
+        .cart-icon-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart-icon {
+            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+        .cart-counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            border: 3px solid white; /* Adiciona o círculo branco */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
+        }
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+        .cart-content {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .cart-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .cart-items {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .cart-item-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .cart-item-codigo {
+            font-size: 12px;
+            color: #666;
+        }
+        .cart-item-price {
+            font-weight: bold;
+            color: #000;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .cart-quantity {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .quantity-btn {
+            background-color: #ddd;
+            border: none;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .remove-item {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .cart-total-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .cart-total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cart-delivery-options {
+            margin-top: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .delivery-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option input {
+            margin-right: 10px;
+        }
+        .delivery-option label {
+            font-size: 14px;
+        }
+        .delivery-price {
+            margin-left: auto;
+            font-weight: bold;
+        }
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .cart-clear, .cart-checkout {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cart-clear {
+            background-color: #6c757d;
+            color: white;
+        }
+        .cart-checkout {
+            background-color: #28a745;
+            color: white;
+        }
+        .cart-clear:hover {
+            background-color: #5a6268;
+        }
+        .cart-checkout:hover {
+            background-color: #218838;
+        }
+        .empty-cart-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            z-index: 1002;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
+    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    
+    <!-- Ícone da Sacola (à esquerda) -->
+    <div class="cart-icon-container">
+        <div class="cart-icon" onclick="openCartModal()">
+            <i>🛍️</i>
+        </div>
+        <div class="cart-counter" id="cartCounter">0</div>
+    </div>
+    
+    <div class="tabs-container">
+        <div class="tabs" id="tabs"></div>
+    </div>
+    <div class="subcategories" id="subcategories" style="display: none;"></div>
+    <div class="filter-container">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
+    
+    <!-- Notificação de Adição ao Carrinho -->
+    <div class="notification" id="notification"></div>
+    
+    <!-- Modal de Imagem -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content" id="modalContent">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg">
+            </div>
+            <div class="modal-info" id="modalInfo"></div>
+            <div class="modal-buttons">
+                <button class="save-btn" onclick="saveImage()">
+                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
+                    Salvar Imagem
+                </button>
+                <button class="add-to-cart-btn" onclick="addToCartFromModal()">
+                    <i>🛍️</i> Adicionar à Sacola
+                </button>
+                <button class="request-btn" onclick="requestItem()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
+                    Solicitar este Item
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal da Sacola (Modificada) -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close" onclick="closeCartModal()">×</span>
+            <div class="cart-title">Minha Sacola</div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            
+            <!-- Opções de entrega -->
+            <div class="cart-delivery-options" id="deliveryOptions">
+                <div class="delivery-title">Opções de Entrega:</div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryUberlandia" name="deliveryOption" value="uberlandia" checked>
+                    <label for="deliveryUberlandia">Entrega em Uberlândia</label>
+                    <span class="delivery-price">R$ 13,00</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryOther" name="deliveryOption" value="other">
+                    <label for="deliveryOther">Entrega em outras cidades</label>
+                    <span class="delivery-price">A Calcular</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="pickupStore" name="deliveryOption" value="pickup">
+                    <label for="pickupStore">Retirar na loja</label>
+                    <span class="delivery-price">Grátis</span>
+                </div>
+            </div>
+            
+            <!-- Resumo do carrinho -->
+            <div class="cart-summary">
+                <div class="cart-total-line">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-total-line">
+                    <span>Frete:</span>
+                    <span id="cartShipping">R$ 13,00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <div style="text-align: right;">
+                        <span id="cartTotal">R$ 0,00</span>
+                        <div style="font-size: 14px; font-weight: normal; color: #28a745;">à vista</div>
+                    </div>
+                </div>
+                <div style="font-size: 12px; font-style: italic; color: #666; text-align: right; margin-top: 8px;">
+                    *consultar valores para parcelar*
+                </div>
+                
+            </div>
+            
+            <div class="cart-actions">
+                <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
+                <button class="cart-checkout" onclick="checkoutCart()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
+                    Finalizar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
+        <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
+        Fale Conosco
+    </a>
+    <div id="rodape" class="rodape"></div>
+
+    <script>
+        const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
+        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
+        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/CategoriasAtivas.txt";
+        let descricoes = {};
+        let categoriasAtivas = [];
+        const itemsPerPage = 20;
+        let currentPage = 1;
+        let allFiles = [];
+        let currentBanho = 'todos';
+        let currentSort = 'newest';
+        let currentModalIndex = 0;
+        let currentVisibleFiles = [];
+        let cart = [];
+        let modalAbortController = null;
+
+        // Configurações de entrega
+        const deliveryConfig = {
+            freteUberlandia: 13.00,
+            freteOutrasCidades: "A Calcular"
+        };
+
+        let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
+
+        const PHONE_NUMBER = '5534997622408';
+
+        let scale = 1;
+        let minScale = 1;
+        let maxScale = 5;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+        let touchStartX = 0;
+        let touchStartTime = 0;
+
+        // Carregar configurações de entrega do arquivo config.ini (simulado)
+        function loadDeliveryConfig() {
+            // Aqui normalmente seria feito o carregamento do arquivo config.ini
+            // Como estamos simulando, vamos apenas usar os valores já definidos
+            console.log("Configurações de entrega carregadas:", deliveryConfig);
+        }
+
+        // Atualizar opção de entrega selecionada
+        function updateDeliveryOption() {
+            const deliveryOptions = document.getElementsByName('deliveryOption');
+            for (const option of deliveryOptions) {
+                if (option.checked) {
+                    selectedDeliveryOption = option.value;
+                    break;
+                }
+            }
+            updateCartTotals();
+        }
+
+        // Calcular valor do frete
+        function getShippingCost() {
+            switch (selectedDeliveryOption) {
+                case 'uberlandia':
+                    return deliveryConfig.freteUberlandia;
+                case 'pickup':
+                    return 0;
+                default:
+                    return 0; // "A Calcular" é tratado como 0 para cálculos
+            }
+        }
+
+        // Carregar carrinho do localStorage ao iniciar
+        function loadCart() {
+            const savedCart = localStorage.getItem('semijoiasCart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCartCounter();
+            }
+        }
+
+        // Salvar carrinho no localStorage
+        function saveCart() {
+            localStorage.setItem('semijoiasCart', JSON.stringify(cart));
+            updateCartCounter();
+        }
+
+        // Atualizar contador de itens no carrinho
+        function updateCartCounter() {
+            const counter = document.getElementById('cartCounter');
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            counter.textContent = totalItems;
+            
+            // Se o carrinho estiver vazio, esconder o contador
+            if (totalItems === 0) {
+                counter.style.display = 'none';
+            } else {
+                counter.style.display = 'flex';
+            }
+        }
+
+        // Adicionar item ao carrinho
+        function addToCart(codigo, descricao, preco, imagem) {
+            const precoNumber = getNumericPrice(preco);
+            
+            // Verificar se o item já está no carrinho
+            const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
+            
+            if (existingItemIndex > -1) {
+                // Incrementar quantidade se já existir
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                // Adicionar novo item
+                cart.push({
+                    codigo,
+                    descricao,
+                    preco,
+                    precoNumber,
+                    imagem,
+                    quantity: 1
+                });
+            }
+            
+            saveCart();
+            showNotification(`Item adicionado à sacola: ${codigo}`);
+        }
+
+        // Adicionar à sacola a partir da modal
+        function addToCartFromModal() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const descricao = document.querySelector('.modal-info .descricao').textContent;
+            const preco = document.querySelector('.modal-info .preco').textContent;
+            const imagem = document.getElementById('modalImg').src;
+            
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Adicionar à sacola a partir da galeria
+        function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
+            event.stopPropagation(); // Evita que a modal abra
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Exibir a modal da sacola
+        function openCartModal() {
+            renderCartItems();
+            document.getElementById('cartModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+        }
+
+        // Fechar a modal da sacola
+        function closeCartModal() {
+            document.getElementById('cartModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        // Atualizar os totais do carrinho
+        function updateCartTotals() {
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            const shipping = getShippingCost();
+            let total = subtotal;
+            
+            // Só adiciona o frete se não for "A Calcular" (outras cidades)
+            if (selectedDeliveryOption === 'uberlandia' || selectedDeliveryOption === 'pickup') {
+                total += shipping;
+            }
+            
+            document.getElementById('cartSubtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            
+            // Atualizar texto do frete
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartShipping').textContent = deliveryConfig.freteOutrasCidades;
+            } else {
+                document.getElementById('cartShipping').textContent = `R$ ${shipping.toFixed(2).replace('.', ',')}`;
+            }
+            
+            // Para o total, se for "outras cidades", indicamos que o valor é parcial
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartTotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete`;
+            } else {
+                document.getElementById('cartTotal').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+            }
+        }
+
+        // Renderizar itens do carrinho
+        function renderCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = '';
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Sua sacola está vazia</div>';
+                updateCartTotals();
+                return;
+            }
+            
+            cart.forEach((item, index) => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <img src="${item.imagem}" alt="${item.descricao}" class="cart-item-img">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">${item.descricao}</div>
+                        <div class="cart-item-codigo">Código: ${item.codigo}</div>
+                        <div class="cart-item-price">${item.preco}</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-quantity">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, -1)">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" onchange="updateItemQuantityManual(${index}, this.value)">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, 1)">+</button>
+                        </div>
+                        <button class="remove-item" onclick="removeCartItem(${index})">×</button>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(itemElement);
+            });
+            
+            updateCartTotals();
+        }
+
+        // Atualizar quantidade de um item
+        function updateItemQuantity(index, change) {
+            cart[index].quantity += change;
+            
+            if (cart[index].quantity < 1) {
+                cart[index].quantity = 1;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Atualizar quantidade manualmente via input
+        function updateItemQuantityManual(index, value) {
+            const quantity = parseInt(value);
+            if (isNaN(quantity) || quantity < 1) {
+                cart[index].quantity = 1;
+            } else {
+                cart[index].quantity = quantity;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Remover item do carrinho
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            saveCart();
+            renderCartItems();
+        }
+
+        // Limpar sacola
+        function clearCart() {
+            if (confirm('Tem certeza que deseja limpar a sacola?')) {
+                cart = [];
+                saveCart();
+                renderCartItems();
+                showNotification('Sacola limpa com sucesso');
+            }
+        }
+
+        // Finalizar pedido
+        function checkoutCart() {
+            if (cart.length === 0) {
+                alert('Sua sacola está vazia');
+                return;
+            }
+            
+            let message = '*Novo Pedido*\n\n';
+            
+            // Adicionar itens
+            cart.forEach(item => {
+                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
+            });
+            
+            // Adicionar subtotal
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            message += `\n*Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+            
+            // Adicionar opção de entrega selecionada
+            let deliveryText = '';
+            switch(selectedDeliveryOption) {
+                case 'uberlandia':
+                    deliveryText = `Entrega em Uberlândia: R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${(subtotal + deliveryConfig.freteUberlandia).toFixed(2).replace('.', ',')}*`;
+                    break;
+                case 'other':
+                    deliveryText = `Entrega em outra cidade: ${deliveryConfig.freteOutrasCidades}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total parcial: R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete*`;
+                    break;
+                case 'pickup':
+                    deliveryText = 'Retirada na loja: Grátis';
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+                    break;
+            }
+            
+            // Adicionar mensagem final
+            message += '\n\nOlá, gostaria de fazer este pedido.';
+            
+            // Abrir WhatsApp
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Exibir notificação
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            notification.style.opacity = '1';
+            
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 300);
+            }, 2000);
+        }
+
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo CategoriasAtivas.txt não encontrado, todas as categorias serão exibidas.");
+                    categoriasAtivas = [];
+                    return;
+                }
+                const text = await response.text();
+                categoriasAtivas = text.split('\n')
+                    .map(linha => linha.trim())
+                    .filter(linha => linha !== '');
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = [];
+            }
+        }
+
+        async function loadDescriptions() {
+            try {
+                const response = await fetch(descricoesUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const lines = text.split('\n');
+                lines.forEach(line => {
+                    const [codigo, descricao, preco, banho] = line.split(';');
+                    if (codigo && descricao && preco && banho) {
+                        let normalizedBanho = banho.trim().toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
+                        descricoes[codigo.trim()] = {
+                            descricao: descricao.trim(),
+                            preco: formatarPreco(preco.trim()),
+                            banho: normalizedBanho
+                        };
+                    }
+                });
+                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+            } catch (error) {
+                console.error("Erro ao carregar descrições:", error);
+                alert(`Erro ao carregar descrições: ${error.message}`);
+            }
+        }
+
+        async function loadCategories() {
+            console.log('Iniciando loadCategories');
+            try {
+                const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const data = await response.json();
+                console.log('Dados das categorias recebidos:', data);
+                const tabs = document.getElementById('tabs');
+                tabs.innerHTML = '';
+
+                data.forEach(item => {
+                    if (item.type === 'dir' && (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name))) {
+                        const tab = document.createElement('button');
+                        tab.className = 'tab';
+                        tab.textContent = item.name;
+                        tab.onclick = () => {
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            tab.classList.add('active');
+                            loadImages(item.name);
+                            scrollToActiveTab();
+                        };
+                        tabs.appendChild(tab);
+                    }
+                });
+
+                const initialCategory = getQueryParam('categoria') || 'Brincos';
+                const initialTab = findTabByText(initialCategory);
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
+                    loadImages(initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else {
+                    const defaultTab = findTabByText('Brincos') || tabs.children[0];
+                    if (defaultTab) {
+                        defaultTab.classList.add('active');
+                        console.log('Carregando categoria padrão:', defaultTab.textContent);
+                        loadImages(defaultTab.textContent.trim());
+                        scrollToActiveTab();
+                    } else {
+                        console.error('Nenhuma categoria disponível.');
+                        alert('Nenhuma categoria disponível. Verifique o repositório GitHub.');
+                    }
+                }
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+                alert(`Erro ao carregar categorias: ${error.message}`);
+            }
+        }
+
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
+        }
+
+        async function loadImages(folderName) {
+            console.log('Iniciando loadImages para:', folderName);
+            const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos';
+
+            try {
+                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
+                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
+                allFiles = await response.json();
+                console.log('Arquivos recebidos:', allFiles);
+                allFiles.forEach(file => {
+                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
+                        const codigo = file.name.split('.')[0];
+                        const { banho } = descricoes[codigo] || { banho: '' };
+                        if (banho) {
+                            banhosNaCategoria.add(banho);
+                        }
+                    }
+                });
+
+                displayPage(currentPage, banhosNaCategoria);
+                criarBotoesSubcategorias(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', folderName);
+            } catch (error) {
+                console.error("Erro ao carregar imagens:", error);
+                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
+            }
+        }
+
+        function getFilteredFiles() {
+            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
+            let filtered = allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+
+            filtered.sort((a, b) => {
+                const codigoA = a.name.split('.')[0];
+                const codigoB = b.name.split('.')[0];
+                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
+                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
+
+                switch (currentSort) {
+                    case 'newest':
+                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'oldest':
+                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                    case 'highestPrice':
+                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    case 'lowestPrice':
+                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                    default:
+                        return 0;
+                }
+            });
+
+            currentVisibleFiles = filtered;
+            return filtered;
+        }
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
+        }
+
+        function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
+
+            paginatedFiles.forEach(file => {
+                const codigo = file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    preco: "Preço não disponível",
+                    banho: ""
+                };
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
+
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho || 'todos';
+
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
+                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
+                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'content-wrapper';
+
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+
+                // Botão de adicionar à sacola com ícone e texto
+                const addToCartBtn = document.createElement('button');
+                addToCartBtn.className = 'add-to-cart-gallery';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
+                addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
+
+                contentWrapper.appendChild(desc);
+                contentWrapper.appendChild(precoElement);
+
+                item.appendChild(imgContainer);
+                item.appendChild(codigoElement);
+                item.appendChild(contentWrapper);
+                item.appendChild(addToCartBtn);
+                
+                gallery.appendChild(item);
+            });
+
+            updatePagination();
+            document.querySelectorAll('.gallery img').forEach(img => {
+                img.addEventListener('contextmenu', (e) => e.preventDefault());
+            });
+        }
+
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
+        }
+
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+
+            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
+            if (!botaoTodosExistente) {
+                const botaoTodos = document.createElement('button');
+                botaoTodos.textContent = 'Todos';
+                botaoTodos.dataset.banho = 'todos';
+                botaoTodos.onclick = () => filterByBanho('todos');
+                subcategoriesDiv.appendChild(botaoTodos);
+            }
+
+            banhosNaCategoria.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
+            });
+
+            subcategoriesDiv.style.display = 'flex';
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+        }
+
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            resetZoomAndPan();
+            updateModalContent(codigo);
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+            resetZoomAndPan();
+            
+            if (modalAbortController) {
+                modalAbortController.abort();
+                modalAbortController = null;
+            }
+        }
+
+        function resetZoomAndPan() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateModalTransform();
+        }
+
+        function updateModalContent(codigo) {
+            const file = currentVisibleFiles[currentModalIndex];
+            if (!file) return;
+
+            const src = file.download_url;
+            codigo = file.name.split('.')[0];
+
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+            `;
+            updateModalTransform();
+        }
+
+        function updateModalTransform() {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+
+        function setupModalInteraction() {
+            const modalContent = document.getElementById('modalContent');
+            
+            // Remove listeners anteriores
+            if (modalAbortController) {
+                modalAbortController.abort();
+            }
+            
+            modalAbortController = new AbortController();
+            const signal = modalAbortController.signal;
+        
+            let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
+        
+            // Wheel event para zoom
+            modalContent.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY * -0.01;
+                adjustScale(delta);
+            }, { signal });
+        
+            // Mouse events para arrastar
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            }, { signal });
+        
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { signal });
+        
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            }, { signal });
+        
+            // Touch events
+            modalContent.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    touchStartTime = Date.now();
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
+                } else if (e.touches.length === 2) {
+                    startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                }
+            }, { passive: false, signal });
+        
+            modalContent.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
+                    const newDist = getDistance(e.touches);
+                    const scaleChange = newDist / startDist;
+                    adjustScale((scaleChange - 1) * 2);
+                    startDist = newDist;
+        
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { passive: false, signal });
+        
+            modalContent.addEventListener('touchend', (e) => {
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                    if (scale === 1) {
+                        const touchEndX = e.changedTouches[0].screenX;
+                        const timeDiff = Date.now() - touchStartTime;
+                        if (timeDiff < 300) {
+                            handleSwipe(touchStartX, touchEndX);
+                        }
+                    }
+                }
+            }, { signal });
+        }
+
+        function adjustScale(delta) {
+            // Se estiver tentando diminuir (delta negativo) e já estiver no tamanho mínimo, não permitir
+            if (delta < 0 && scale <= minScale) {
+                scale = minScale; // Garante que a escala seja exatamente 1 nesse caso
+                return; // Não prossegue com o zoom out
+            }
+            
+            // Caso contrário, aplica o zoom normalmente
+            scale += delta;
+            
+            // Garante que a escala esteja dentro dos limites permitidos
+            scale = Math.max(minScale, Math.min(maxScale, scale));
+            
+            // Se a escala estiver muito próxima do mínimo, ajusta para exatamente o mínimo
+            if (scale < minScale + 0.05) {
+                scale = minScale;
+            }
+            
+            clampTranslation();
+            updateModalTransform();
+        }
+
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+            
+            // Cálculo do tamanho escalado da imagem
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+            
+            // Calcula quanto a imagem pode se mover em cada direção
+            // Fórmula corrigida para evitar que a imagem desapareça completamente
+            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
+            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
+            
+            // Garante uma área mínima visível da imagem (25% da largura/altura)
+            const minVisibleRatio = 0.25;
+            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
+            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
+            
+            // Limita a translação dentro dos valores permitidos
+            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
+            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
+            
+            // Se a imagem não estiver ampliada, centraliza
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        function handleSwipe(touchStartX, touchEndX) {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
+                currentModalIndex++;
+                const nextFile = currentVisibleFiles[currentModalIndex];
+                const codigo = nextFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevFile = currentVisibleFiles[currentModalIndex];
+                const codigo = prevFile.name.split('.')[0];
+                resetZoomAndPan();
+                updateModalContent(codigo);
+            }
+        }
+
+        function saveImage() {
+            html2canvas(document.querySelector("#captureArea"), {
+                useCORS: true,
+                allowTaint: true,
+                scale: 2
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(error => {
+                console.error("Erro ao salvar imagem:", error);
+            });
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function setupFaleConoscoButton() {
+            const faleConoscoBtn = document.getElementById('faleConoscoBtn');
+            faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
+
+        async function loadRodape() {
+            try {
+                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error("Erro ao carregar rodapé:", error);
+                alert(`Erro ao carregar rodapé: ${error.message}`);
+            }
+        }
+
+        function scrollToActiveTab() {
+            const activeTab = document.querySelector('.tab.active');
+            if (activeTab) {
+                const tabRect = activeTab.getBoundingClientRect();
+                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
+                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
+                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
+
+                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+            }
+        }
+
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            loadCart(); // Carregar carrinho salvo
+            loadDeliveryConfig(); // Carregar configurações de entrega
+            await loadCategoriasAtivas();
+            await loadDescriptions();
+            await loadCategories();
+            loadRodape();
+            setupFaleConoscoButton();
+            updateCartCounter(); // Atualizar contador do carrinho
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+            
+            console.log('Carregamento da página concluído');
+        };
+    </script>
+</body>
+</html>
