@@ -761,7 +761,7 @@
                 <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
                 <button class="cart-checkout" onclick="checkoutCart()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
-                    Finalizar Pedido
+                    Enviar Pedido
                 </button>
             </div>
         </div>
@@ -1145,7 +1145,8 @@
                         descricoes[codigo.trim()] = {
                             descricao: descricao.trim(),
                             preco: formatarPreco(preco.trim()),
-                            banho: normalizedBanho
+                            banho: normalizedBanho,
+                            dataUltimaEntrada: dataUltimaEntrada ? dataUltimaEntrada.trim() : ''
                         };
                     }
                 });
@@ -1255,30 +1256,63 @@
                 const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
                 return currentBanho === 'todos' || banho === currentBanho;
             });
-
+        
             filtered.sort((a, b) => {
                 const codigoA = a.name.split('.')[0];
                 const codigoB = b.name.split('.')[0];
                 const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
                 const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
-
+                const dataA = descricoes[codigoA]?.dataUltimaEntrada || "";
+                const dataB = descricoes[codigoB]?.dataUltimaEntrada || "";
+        
+                // Função auxiliar para comparar datas no formato DD/MM/AAAA
+                const compararDatas = (dataA, dataB, ordemCrescente = false) => {
+                    if (!dataA && !dataB) return 0;
+                    if (!dataA) return ordemCrescente ? -1 : 1;
+                    if (!dataB) return ordemCrescente ? 1 : -1;
+                    
+                    // Converter datas no formato DD/MM/AAAA para comparação
+                    const [diaA, mesA, anoA] = dataA.split('/');
+                    const [diaB, mesB, anoB] = dataB.split('/');
+                    const dateStrA = `${anoA}-${mesA}-${diaA}`;
+                    const dateStrB = `${anoB}-${mesB}-${diaB}`;
+                    
+                    // Comparar datas
+                    return ordemCrescente ? 
+                        dateStrA.localeCompare(dateStrB) : // Crescente (mais antigo primeiro)
+                        dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
+                };
+        
                 switch (currentSort) {
                     case 'newest':
-                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        // Ordenar pela data mais recente primeiro
+                        const resultNewest = compararDatas(dataA, dataB, false);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultNewest !== 0 ? resultNewest : 
+                               codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     case 'oldest':
-                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                        // Ordenar pela data mais antiga primeiro
+                        const resultOldest = compararDatas(dataA, dataB, true);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultOldest !== 0 ? resultOldest : 
+                               codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                        
                     case 'highestPrice':
                         return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     case 'lowestPrice':
                         return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     default:
                         return 0;
                 }
             });
-
+        
             currentVisibleFiles = filtered;
             return filtered;
         }
+        
         function getQueryParam(name) {
            const urlParams = new URLSearchParams(window.location.search);
            return urlParams.get(name);
