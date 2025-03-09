@@ -121,18 +121,20 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            max-width: 800px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            max-width: 900px;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
         }
         .gallery .item {
             text-align: center;
             position: relative;
             width: 100%;
-            max-width: 150px;
+            max-width: 180px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
         .gallery .img-container {
             position: relative;
@@ -163,6 +165,11 @@
             pointer-events: none;
             border-radius: 1px; /* Ajuste leve para não cortar os cantos */
         }
+        .gallery .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
         .gallery .description {
             margin-top: 10px;
             font-size: 14px;
@@ -188,6 +195,30 @@
             border-radius: 3px;
             font-size: 12px;
             font-weight: bold;
+        }
+        .add-to-cart-gallery {
+            width: 100%;
+            margin-top: 15px;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        .add-to-cart-gallery:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .add-to-cart-gallery img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
         }
         .modal {
             display: none;
@@ -281,38 +312,33 @@
             font-weight: bold;
             margin-top: 5px;
         }
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: 10px;
+            max-width: 100%;
+        }
         .save-btn, .request-btn, .add-to-cart-btn {
-            margin: 10px 0;
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 25px;
+            width: 100%;
+            margin: 0;
+            color: #333;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #f5f5f5;
             transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
         }
-        .save-btn {
-            background-color: #007bff;
-        }
-        .request-btn {
-            background-color: #28a745;
-        }
-        .add-to-cart-btn {
-            background-color: #d4af37;
-        }
-        .save-btn:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-        .request-btn:hover {
-            background-color: #218838;
-            transform: scale(1.05);
-        }
-        .add-to-cart-btn:hover {
-            background-color: #b8860b;
-            transform: scale(1.05);
+        .save-btn:hover, .request-btn:hover, .add-to-cart-btn:hover {
+            background-color: #e8e8e8;
         }
         .rodape {
             margin-top: 20px;
@@ -416,6 +442,8 @@
             justify-content: center;
             font-size: 14px;
             font-weight: bold;
+            border: 3px solid white; /* Adiciona o círculo branco */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
         }
         .cart-modal {
             display: none;
@@ -618,30 +646,6 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-        .add-to-cart-gallery {
-            margin: 10px auto 0; /* Centraliza o botão (adicionando auto nas margens laterais) */
-            background-color: transparent; /* Sem fundo */
-            color: #333; /* Cor do texto escura */
-            border: 1px solid #000; /* Borda fina preta */
-            border-radius: 4px;
-            padding: 5px 8px;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-            max-width: fit-content; /* Limita a largura ao conteúdo */
-        }
-        .add-to-cart-gallery:hover {
-            background-color: rgba(0,0,0,0.05); /* Fundo levemente cinza ao passar o mouse */
-        }
-        .add-to-cart-gallery img {
-            width: 16px;
-            height: 16px;
-            vertical-align: middle;
-        }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
@@ -685,16 +689,16 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+            <div class="modal-buttons">
                 <button class="save-btn" onclick="saveImage()">
-                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
+                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
                     Salvar Imagem
                 </button>
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
                     <i>🛍️</i> Adicionar à Sacola
                 </button>
                 <button class="request-btn" onclick="requestItem()">
-                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
                     Solicitar este Item
                 </button>
             </div>
@@ -757,7 +761,7 @@
                 <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
                 <button class="cart-checkout" onclick="checkoutCart()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
-                    Finalizar Pedido
+                    Enviar Pedido
                 </button>
             </div>
         </div>
@@ -1325,6 +1329,9 @@
                 codigoElement.className = 'codigo';
                 codigoElement.textContent = `COD: ${codigo}`;
 
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'content-wrapper';
+
                 const desc = document.createElement('div');
                 desc.className = 'description';
                 desc.textContent = descricao;
@@ -1339,7 +1346,14 @@
                 addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
-                item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
+                contentWrapper.appendChild(desc);
+                contentWrapper.appendChild(precoElement);
+
+                item.appendChild(imgContainer);
+                item.appendChild(codigoElement);
+                item.appendChild(contentWrapper);
+                item.appendChild(addToCartBtn);
+                
                 gallery.appendChild(item);
             });
 
