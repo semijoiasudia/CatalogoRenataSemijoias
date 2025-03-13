@@ -17,9 +17,257 @@
             font-size: 24px;
             color: #333;
         }
+        .logo-container {
+            padding: 15px 0;
+            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 100px;
+            height: auto;
+        }
         .modal-open {
             overflow: hidden;
         }
+        
+        /* Estilos para o carrossel de novidades */
+        .novidades-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto 20px;
+            padding: 15px 5px;
+            position: relative;
+            background-color: #fcfaf5;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .novidades-titulo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .novidades-titulo:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            margin: 8px auto 0;
+        }
+        .novidades-subtitulo {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .novidades-footer {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .ver-todas-novidades {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+        .ver-todas-novidades:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+        }
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 5px;
+            max-width: 100%;
+        }
+        .carousel-items {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            margin: 0 -5px; /* Reduzi a margem */
+            padding: 5px 0;
+            width: 100%;
+        }
+        .carousel-item {
+            min-width: calc(25% - 10px);
+            max-width: calc(25% - 10px);
+            padding: 0 5px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        .carousel-item:hover {
+            transform: translateY(-5px);
+        }
+        @media (max-width: 768px) {
+            .carousel-item {
+                min-width: calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .carousel-item {
+                min-width: calc(100% - 10px);
+                max-width: calc(100% - 10px);
+            }
+        }
+        @media (max-width: 768px) {
+            .carousel-item {
+                min-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .carousel-item {
+                min-width: calc(100% - 20px);
+            }
+        }
+        .carousel-item .inner {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .carousel-item .inner:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .carousel-item .img-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 100%; /* Aspecto 1:1 */
+            height: auto;
+        }
+        .carousel-item .img-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Alterado para contain */
+            transition: transform 0.3s;
+        }
+        .carousel-item .img-container img:hover {
+            transform: scale(1.05);
+        }
+        .carousel-item .carousel-codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .carousel-item .tag-novidade {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .carousel-item .content {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .carousel-item .description {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            flex-grow: 1;
+        }
+        .carousel-item .preco {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            margin-top: auto;
+        }
+        .carousel-item .date {
+            font-size: 12px;
+            color: #777;
+            margin-top: 4px;
+        }
+        .carousel-nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .carousel-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .carousel-dot.active {
+            background-color: #d4af37;
+        }
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+        .carousel-control {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s;
+            pointer-events: auto;
+        }
+        .carousel-control:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .carousel-control.prev {
+            margin-left: 5px;
+        }
+        .carousel-control.next {
+            margin-right: 5px;
+        }
+        
+        /* Estilos existentes */
         .tabs-container {
             width: 100%;
             max-width: 1000px;
@@ -650,8 +898,10 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
-    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    <!-- Logo no topo (Substituindo os banners) -->
+    <div class="logo-container">
+        <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios">
+    </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -659,6 +909,25 @@
             <i>🛍️</i>
         </div>
         <div class="cart-counter" id="cartCounter">0</div>
+    </div>
+    
+    <!-- Seção de Novidades (Carrossel) -->
+    <div class="novidades-container">
+        <h2 class="novidades-titulo">Novidades e Reposições</h2>
+        <p class="novidades-subtitulo">Confira os itens que chegaram nos últimos 30 dias</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-controls">
+                <div class="carousel-control prev" onclick="moveCarousel(-1)">❮</div>
+                <div class="carousel-control next" onclick="moveCarousel(1)">❯</div>
+            </div>
+            <div class="carousel-items" id="novidades-carousel">
+                <!-- Os itens do carrossel serão adicionados via JavaScript -->
+            </div>
+        </div>
+        <div class="carousel-nav" id="carousel-nav">
+            <!-- Os indicadores de navegação serão adicionados via JavaScript -->
+        </div>
     </div>
     
     <div class="tabs-container">
@@ -788,6 +1057,11 @@
         let currentVisibleFiles = [];
         let cart = [];
         let modalAbortController = null;
+        let recentItems = []; // Para armazenar itens recentes para o carrossel
+        let carouselPosition = 0;
+        let carouselItemsPerPage = 4; // Itens visíveis por página no carrossel
+        let carouselAutoplayInterval = null;
+        let novidadesFiltroAtivo = false;
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -809,6 +1083,333 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
+
+        // Função para carregar itens recentes (novidades e reposições)
+        async function loadRecentItems() {
+            recentItems = [];
+            const thirtyDaysAgo = new Date();
+            thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+            
+            // Mostrar indicador de carregamento
+            const carousel = document.getElementById('novidades-carousel');
+            carousel.innerHTML = '<div class="carousel-item" style="width:100%;"><div class="inner" style="padding:20px;text-align:center;"><div>Carregando novidades...</div></div></div>';
+            
+            // Buscar em todas as categorias
+            try {
+                const response = await fetch(repoUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const categories = await response.json();
+                
+                // Para cada categoria, buscar os itens
+                const promises = categories.map(async (category) => {
+                    if (category.type !== 'dir') return;
+                    
+                    try {
+                        const categoryResponse = await fetch(`${repoUrl}/${encodeURIComponent(category.name)}`);
+                        if (!categoryResponse.ok) return;
+                        
+                        const files = await categoryResponse.json();
+                        
+                        // Filtrar apenas arquivos de imagem
+                        const imageFiles = files.filter(file => 
+                            file.name.endsWith('.jpg') || file.name.endsWith('.png'));
+                        
+                        // Para cada arquivo, verificar a data de entrada
+                        imageFiles.forEach(file => {
+                            const codigo = file.name.split('.')[0];
+                            const item = descricoes[codigo];
+                            
+                            if (item && item.dataUltimaEntrada) {
+                                // Converter data do formato DD/MM/AAAA para objeto Date
+                                const parts = item.dataUltimaEntrada.split('/');
+                                if (parts.length === 3) {
+                                    const itemDate = new Date(parts[2], parts[1] - 1, parts[0]);
+                                    
+                                    // Verificar se o item é recente (menos de 30 dias)
+                                    if (itemDate >= thirtyDaysAgo) {
+                                        recentItems.push({
+                                            codigo: codigo,
+                                            descricao: item.descricao,
+                                            preco: item.preco,
+                                            banho: item.banho,
+                                            dataEntrada: item.dataUltimaEntrada,
+                                            categoria: category.name,
+                                            imageUrl: file.download_url,
+                                            date: itemDate
+                                        });
+                                    }
+                                }
+                            }
+                        });
+                    } catch (error) {
+                        console.error(`Erro ao carregar itens da categoria ${category.name}:`, error);
+                    }
+                });
+                
+                await Promise.all(promises);
+                
+                // Ordenar por data de entrada (mais recente primeiro)
+                recentItems.sort((a, b) => b.date - a.date);
+                
+                // Exibir itens no carrossel (limitado a 12 itens)
+                renderCarousel(recentItems);
+                startCarouselAutoplay();
+                
+                console.log(`Carregados ${recentItems.length} itens recentes`);
+            } catch (error) {
+                console.error("Erro ao carregar itens recentes:", error);
+                const carousel = document.getElementById('novidades-carousel');
+                carousel.innerHTML = '<div class="carousel-item" style="width:100%;"><div class="inner" style="padding:20px;text-align:center;"><div>Não foi possível carregar as novidades</div></div></div>';
+            }
+        }
+
+        // Renderizar o carrossel de novidades
+        function renderCarousel() {
+            const container = document.getElementById('novidades-carousel');
+            container.innerHTML = '';
+            
+            if (recentItems.length === 0) {
+                const noItems = document.createElement('div');
+                noItems.className = 'carousel-item';
+                noItems.innerHTML = `
+                    <div class="inner">
+                        <div class="content">
+                            <p>Não há novidades recentes.</p>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(noItems);
+                return;
+            }
+            
+            // Criar elementos do carrossel
+            recentItems.forEach((item, index) => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'carousel-item';
+                
+                itemElement.innerHTML = `
+                    <div class="inner">
+                        <div class="img-container">
+                            <div class="carousel-codigo">COD: ${item.codigo}</div>
+                            <div class="tag-novidade">Novos</div>
+                            <img src="${item.imageUrl}" alt="${item.descricao}" onclick="showModalFromCarousel(${index})">
+                        </div>
+                        <div class="content">
+                            <div class="description">${item.descricao}</div>
+                            <div class="preco">${item.preco}</div>
+                            <div class="date">Entrada: ${item.dataEntrada}</div>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(itemElement);
+            });
+            
+            // Criar indicadores de navegação
+            updateCarouselDots();
+            
+            // Posicionar o carrossel na primeira página
+            updateCarouselPosition();
+        }
+        
+        // Atualizar os pontos de navegação do carrossel
+        function updateCarouselDots() {
+            const container = document.getElementById('novidades-carousel');
+            const items = container.querySelectorAll('.carousel-item');
+            const numPages = Math.ceil(items.length / carouselItemsPerPage);
+            const dotsContainer = document.getElementById('carousel-nav');
+            dotsContainer.innerHTML = '';
+            
+            // Limitar o número de pontos visíveis para não sobrecarregar visualmente
+            const maxDotsVisible = 7;
+            const showAllDots = numPages <= maxDotsVisible;
+            
+            if (showAllDots) {
+                // Mostrar todos os pontos normalmente
+                for (let i = 0; i < numPages; i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'carousel-dot' + (i === carouselPosition ? ' active' : '');
+                    dot.onclick = () => {
+                        carouselPosition = i;
+                        updateCarouselPosition();
+                        updateCarouselDots();
+                    };
+                    dotsContainer.appendChild(dot);
+                }
+            } else {
+                // Mostrar versão simplificada com elipses
+                const halfVisible = Math.floor(maxDotsVisible / 2);
+                
+                // Sempre mostrar o primeiro ponto
+                addDot(0);
+                
+                // Lógica para determinar quais pontos mostrar
+                if (carouselPosition <= halfVisible) {
+                    // Próximo do início - mostrar os primeiros pontos
+                    for (let i = 1; i < maxDotsVisible - 1; i++) {
+                        addDot(i);
+                    }
+                    addEllipsis();
+                } else if (carouselPosition >= numPages - halfVisible - 1) {
+                    // Próximo do fim - mostrar os últimos pontos
+                    addEllipsis();
+                    for (let i = numPages - maxDotsVisible + 1; i < numPages - 1; i++) {
+                        addDot(i);
+                    }
+                } else {
+                    // No meio - mostrar pontos ao redor da posição atual
+                    addEllipsis();
+                    for (let i = carouselPosition - 1; i <= carouselPosition + 1; i++) {
+                        addDot(i);
+                    }
+                    addEllipsis();
+                }
+                
+                // Sempre mostrar o último ponto
+                addDot(numPages - 1);
+            }
+            
+            // Função auxiliar para adicionar um ponto
+            function addDot(position) {
+                const dot = document.createElement('span');
+                dot.className = 'carousel-dot' + (position === carouselPosition ? ' active' : '');
+                dot.onclick = () => {
+                    carouselPosition = position;
+                    updateCarouselPosition();
+                    updateCarouselDots();
+                };
+                dotsContainer.appendChild(dot);
+            }
+            
+            // Função auxiliar para adicionar elipses
+            function addEllipsis() {
+                const ellipsis = document.createElement('span');
+                ellipsis.className = 'carousel-dot-ellipsis';
+                ellipsis.innerHTML = '&hellip;';
+                ellipsis.style.margin = '0 5px';
+                ellipsis.style.color = '#999';
+                ellipsis.style.cursor = 'default';
+                dotsContainer.appendChild(ellipsis);
+            }
+        }
+        
+        // Mover o carrossel para a posição atual
+        function updateCarouselPosition() {
+            const container = document.getElementById('novidades-carousel');
+            const items = container.querySelectorAll('.carousel-item');
+            
+            // Ajustar responsivamente a quantidade de itens por página
+            if (window.innerWidth <= 480) {
+                carouselItemsPerPage = 1;
+            } else if (window.innerWidth <= 768) {
+                carouselItemsPerPage = 2;
+            } else {
+                carouselItemsPerPage = 4;
+            }
+            
+            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
+            
+            // Garantir que a posição esteja dentro dos limites
+            if (carouselPosition < 0) carouselPosition = 0;
+            if (carouselPosition >= totalPages) carouselPosition = totalPages - 1;
+            
+            // Calcular a posição de deslocamento
+            const offset = -carouselPosition * (100 / carouselItemsPerPage);
+            container.style.transform = `translateX(${offset}%)`;
+            
+            // Atualizar os pontos de navegação
+            const dots = document.querySelectorAll('.carousel-dot');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === carouselPosition);
+            });
+        }
+        
+        // Mover o carrossel (direção: -1 para esquerda, 1 para direita)
+        function moveCarousel(direction) {
+            const container = document.getElementById('novidades-carousel');
+            const items = container.querySelectorAll('.carousel-item');
+            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
+            
+            carouselPosition += direction;
+            
+            // Loop circular
+            if (carouselPosition < 0) carouselPosition = totalPages - 1;
+            if (carouselPosition >= totalPages) carouselPosition = 0;
+            
+            updateCarouselPosition();
+        }
+        
+        // Iniciar o autoplay do carrossel
+        // Função para mostrar todas as novidades
+        function mostrarTodasNovidades() {
+            // Verificar se já estamos mostrando todas
+            if (novidadesFiltroAtivo) {
+                // Voltar para carrossel inicial (primeiros 20)
+                novidadesFiltroAtivo = false;
+                const initialItems = recentItems.slice(0, 20); 
+                renderCarousel(initialItems);
+            } else {
+                // Mostrar todas as novidades
+                novidadesFiltroAtivo = true;
+                renderCarousel(recentItems);
+            }
+            
+            // Reiniciar o autoplay
+            startCarouselAutoplay();
+        }
+        
+        function startCarouselAutoplay() {
+            // Limpar intervalo anterior se existir
+            if (carouselAutoplayInterval) {
+                clearInterval(carouselAutoplayInterval);
+            }
+            
+            // Iniciar novo intervalo
+            carouselAutoplayInterval = setInterval(() => {
+                moveCarousel(1); // Move para a direita a cada intervalo
+            }, 5000); // Muda a cada 5 segundos
+        }
+        
+        // Parar o autoplay do carrossel
+        function stopCarouselAutoplay() {
+            if (carouselAutoplayInterval) {
+                clearInterval(carouselAutoplayInterval);
+                carouselAutoplayInterval = null;
+            }
+        }
+        
+        // Abrir modal a partir do carrossel
+        function showModalFromCarousel(index) {
+            const item = recentItems[index];
+            resetZoomAndPan();
+            
+            const modalImg = document.getElementById('modalImg');
+            modalImg.src = item.imageUrl;
+            
+            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${item.descricao}</div>
+                <div class="preco">${item.preco}</div>
+            `;
+            
+            // Adicionar a logo watermark
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+            
+            // Parar autoplay do carrossel quando abrir o modal
+            stopCarouselAutoplay();
+        }
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
@@ -928,6 +1529,9 @@
         function closeCartModal() {
             document.getElementById('cartModal').style.display = 'none';
             document.body.classList.remove('modal-open');
+            
+            // Reiniciar autoplay do carrossel quando fechar o modal do carrinho
+            startCarouselAutoplay();
         }
 
         // Atualizar os totais do carrinho
@@ -1163,6 +1767,9 @@
                     }
                 });
                 console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+                
+                // Após carregar as descrições, carregar os itens recentes
+                await loadRecentItems();
             } catch (error) {
                 console.error("Erro ao carregar descrições:", error);
                 alert(`Erro ao carregar descrições: ${error.message}`);
@@ -1491,6 +2098,9 @@
             document.body.classList.add('modal-open');
             setupModalInteraction();
             document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
+            
+            // Parar autoplay do carrossel quando abrir o modal
+            stopCarouselAutoplay();
         }
 
         function closeModal() {
@@ -1502,6 +2112,9 @@
                 modalAbortController.abort();
                 modalAbortController = null;
             }
+            
+            // Reiniciar autoplay do carrossel
+            startCarouselAutoplay();
         }
 
         function resetZoomAndPan() {
@@ -1773,6 +2386,18 @@
                 activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
             }
         }
+        
+        // Ajustar tamanho do carrossel quando a janela mudar de tamanho
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 480) {
+                carouselItemsPerPage = 1;
+            } else if (window.innerWidth <= 768) {
+                carouselItemsPerPage = 2;
+            } else {
+                carouselItemsPerPage = 4;
+            }
+            updateCarouselPosition();
+        });
 
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
@@ -1785,9 +2410,31 @@
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
             
+            // Definir quantidade inicial de itens por página do carrossel com base na largura
+            if (window.innerWidth <= 480) {
+                carouselItemsPerPage = 1;
+            } else if (window.innerWidth <= 768) {
+                carouselItemsPerPage = 2;
+            } else {
+                carouselItemsPerPage = 4;
+            }
+            
             // Configurar listeners para as opções de entrega
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
+            });
+            
+            // Adicionar listener para redimensionamento da janela
+            window.addEventListener('resize', () => {
+                // Ajustar carrossel de acordo com o tamanho da tela
+                if (window.innerWidth <= 480) {
+                    carouselItemsPerPage = 1;
+                } else if (window.innerWidth <= 768) {
+                    carouselItemsPerPage = 2;
+                } else {
+                    carouselItemsPerPage = 4;
+                }
+                updateCarouselPosition();
             });
             
             console.log('Carregamento da página concluído');
