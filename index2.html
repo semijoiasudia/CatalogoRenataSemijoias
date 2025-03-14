@@ -150,6 +150,7 @@
             transition: transform 0.2s;
             user-select: none;
             -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .gallery .img-container img:hover {
             transform: scale(1.05);
@@ -254,6 +255,7 @@
             border-radius: 8px;
             user-select: none;
             -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .modal .logo-watermark {
             position: absolute;
@@ -489,6 +491,9 @@
             object-fit: cover;
             border-radius: 4px;
             margin-right: 10px;
+            user-select: none;
+            -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .cart-item-info {
             flex-grow: 1;
@@ -649,7 +654,7 @@
     </style>
 </head>
 <body>
-    <img src="imagens/logo.png" alt="Logo Renata Semijoias" style="width: 140px; height: auto; margin: 10px auto; display: block;">
+    <img src="imagens/logo.png" alt="Logo Renata Semijoias" style="width: 140px; height: auto; margin: 10px auto; display: block; user-select: none; -webkit-touch-callout: none; pointer-events: none;">
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -1398,9 +1403,7 @@
             });
 
             updatePagination();
-            document.querySelectorAll('.gallery img').forEach(img => {
-                img.addEventListener('contextmenu', (e) => e.preventDefault());
-            });
+            // Este evento é adicionado, mas como definimos pointer-events: none no CSS, não será necessário
         }
 
         function updatePagination() {
@@ -1484,7 +1487,7 @@
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
             setupModalInteraction();
-            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
+            // Este evento é adicionado, mas como definimos pointer-events: none no CSS, não será necessário
         }
 
         function closeModal() {
@@ -1753,6 +1756,35 @@
             }
         }
 
+        // Adicionar função para prevenir download de todas as imagens
+        function preventImageDownload() {
+            // Prevenir o menu de contexto em todas as imagens
+            document.querySelectorAll('img').forEach(img => {
+                img.draggable = false;
+                img.style.webkitUserSelect = 'none';
+                img.style.userSelect = 'none';
+                img.style.webkitTouchCallout = 'none';
+                img.setAttribute('unselectable', 'on');
+            });
+            
+            // Prevenir o comportamento padrão para todos os eventos relevantes
+            document.addEventListener('contextmenu', e => {
+                if (e.target.tagName === 'IMG') e.preventDefault();
+            }, false);
+            
+            document.addEventListener('touchstart', e => {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                }
+            }, {passive: false});
+            
+            document.addEventListener('dragstart', e => {
+                if (e.target.tagName === 'IMG') e.preventDefault();
+            }, false);
+        }
+        
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
@@ -1769,6 +1801,7 @@
                 option.addEventListener('change', updateDeliveryOption);
             });
             
+            preventImageDownload();
             console.log('Carregamento da página concluído');
         };
     </script>
