@@ -150,6 +150,7 @@
             transition: transform 0.2s;
             user-select: none;
             -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .gallery .img-container img:hover {
             transform: scale(1.05);
@@ -163,7 +164,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 1px;
         }
         .gallery .content-wrapper {
             flex: 1;
@@ -254,6 +255,7 @@
             border-radius: 8px;
             user-select: none;
             -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .modal .logo-watermark {
             position: absolute;
@@ -264,7 +266,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 1px;
         }
         .modal-codigo {
             position: absolute;
@@ -401,7 +403,7 @@
             background-color: #218838;
         }
 
-        /* Estilos modificados para a sacola de compras */
+        /* Estilos para a sacola de compras */
         .cart-icon-container {
             position: fixed;
             top: 20px;
@@ -412,7 +414,7 @@
             justify-content: center;
         }
         .cart-icon {
-            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
+            background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             width: 50px;
             height: 50px;
@@ -442,8 +444,8 @@
             justify-content: center;
             font-size: 14px;
             font-weight: bold;
-            border: 3px solid white; /* Adiciona o círculo branco */
-            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
+            border: 3px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
         .cart-modal {
             display: none;
@@ -489,6 +491,9 @@
             object-fit: cover;
             border-radius: 4px;
             margin-right: 10px;
+            user-select: none;
+            -webkit-touch-callout: none;
+            pointer-events: none;
         }
         .cart-item-info {
             flex-grow: 1;
@@ -649,7 +654,7 @@
     </style>
 </head>
 <body>
-    <img src="imagens/logo.png" alt="Logo" style="width: 140px; height: auto; margin: 20px auto; display: block;">
+    <img src="imagens/logo.png" alt="Logo Renata Semijoias" style="width: 140px; height: auto; margin: 10px auto; display: block; user-select: none; -webkit-touch-callout: none; pointer-events: none;">
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -699,7 +704,7 @@
         </div>
     </div>
     
-    <!-- Modal da Sacola (Modificada) -->
+    <!-- Modal da Sacola -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <span class="close" onclick="closeCartModal()">×</span>
@@ -768,18 +773,20 @@
     <div id="rodape" class="rodape"></div>
 
     <script>
-        const repoUrl = "./Catalogos";
-        const descricoesUrl = "./ItensDescricao.txt";
-        const categoriasAtivasUrl = "./CategoriasAtivas.txt";
-        let descricoes = {};
+        // URLs dos arquivos JSON
+        const categoriasAtivasUrl = "CategoriasAtivas.json";
+        const itensDescricaoUrl = "ItensDescricao.json";
+        
         let categoriasAtivas = [];
-        const itemsPerPage = 20;
+        let todosProdutos = {};
+        let allItems = [];
+        let currentVisibleItems = [];
         let currentPage = 1;
-        let allFiles = [];
+        let currentCategory = '';
         let currentBanho = 'todos';
         let currentSort = 'newest';
         let currentModalIndex = 0;
-        let currentVisibleFiles = [];
+        const itemsPerPage = 20;
         let cart = [];
         let modalAbortController = null;
 
@@ -789,10 +796,11 @@
             freteOutrasCidades: "A Calcular"
         };
 
-        let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
+        let selectedDeliveryOption = "uberlandia"; // Opção padrão
 
         const PHONE_NUMBER = '5534997622408';
 
+        // Variáveis para zoom e pan
         let scale = 1;
         let minScale = 1;
         let maxScale = 5;
@@ -804,38 +812,679 @@
         let touchStartX = 0;
         let touchStartTime = 0;
 
-        // Carregar configurações de entrega do arquivo config.ini (simulado)
-        function loadDeliveryConfig() {
-            // Aqui normalmente seria feito o carregamento do arquivo config.ini
-            // Como estamos simulando, vamos apenas usar os valores já definidos
-            console.log("Configurações de entrega carregadas:", deliveryConfig);
+        // Função para formatar preço
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            // Se já está formatado com R$, retorna o mesmo valor
+            if (preco.includes('R$')) return preco;
+            
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,.]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
         }
 
-        // Atualizar opção de entrega selecionada
-        function updateDeliveryOption() {
-            const deliveryOptions = document.getElementsByName('deliveryOption');
-            for (const option of deliveryOptions) {
-                if (option.checked) {
-                    selectedDeliveryOption = option.value;
-                    break;
+        // Função para obter valor numérico do preço
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        // Função para carregar categorias ativas do JSON
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo CategoriasAtivas.json não encontrado.");
+                    categoriasAtivas = [];
+                    return;
+                }
+                categoriasAtivas = await response.json();
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = [];
+            }
+        }
+
+        // Função para carregar dados dos produtos do JSON
+        async function loadProdutos() {
+            try {
+                const response = await fetch(itensDescricaoUrl);
+                if (!response.ok) {
+                    console.error(`Erro HTTP: ${response.status}`);
+                    return;
+                }
+                
+                const data = await response.json();
+                todosProdutos = data.produtos;
+                
+                // Processar todos os produtos e normalizar os dados
+                Object.keys(todosProdutos).forEach(codigo => {
+                    const produto = todosProdutos[codigo];
+                    // Normalizar banho
+                    if (produto.banho) {
+                        produto.banho = produto.banho.toLowerCase();
+                        if (produto.banho.includes('2 banhos')) {
+                            produto.banho = '2 banhos';
+                        }
+                    }
+                    
+                    // Normalizar categoria
+                    if (produto.categoria) {
+                        produto.categoria = normalizarCategoria(produto.categoria);
+                    }
+                    
+                    // Se não tiver o campo pasta, usaremos a categoria normalizada
+                    if (!produto.pasta) {
+                        produto.pasta = produto.categoria;
+                    }
+                    
+                    // Adicionar preço formatado
+                    produto.precoFormatado = formatarPreco(produto.preco);
+                    produto.precoNumerico = getNumericPrice(produto.precoFormatado);
+                    
+                    // Adicionar URL da imagem fictícia (na implementação real, deve apontar para imagens reais)
+                    produto.imagemUrl = `imagens/produtos/${codigo}.jpg`;
+                });
+                
+                // Criar array de todos os itens para facilitar a filtragem
+                allItems = Object.keys(todosProdutos).map(codigo => {
+                    return {
+                        codigo,
+                        ...todosProdutos[codigo]
+                    };
+                });
+                
+                console.log('Produtos carregados com sucesso:', allItems.length);
+            } catch (error) {
+                console.error("Erro ao carregar produtos:", error);
+                alert(`Erro ao carregar produtos: ${error.message}`);
+            }
+        }
+
+        // Função para normalizar nome de categoria
+        function normalizarCategoria(categoria) {
+            // Map de normalização de categorias
+            const categoryMap = {
+                'BRINCO': 'Brincos',
+                'BRACELET': 'Braceletes',
+                'BRACELETE': 'Braceletes',
+                'CHOKER': 'Chokers',
+                'COLAR': 'Colares',
+                'RELÓGIO': 'Relógios',
+                'RELOGIO': 'Relógios',
+                'INOX': 'Aço Inox',
+                'AÇO INOX': 'Aço Inox',
+                'ACO INOX': 'Aço Inox',
+                'ANEL': 'Aneis',
+                'CONJUNTO': 'Conjuntos',
+                'PIERCING': 'Piercings',
+                'PULSEIRA': 'Pulseiras',
+                'BIJUTERIA': 'Bijuterias',
+                'TORNOZELEIRA': 'Tornozeleiras',
+                'PINGENTE': 'Pingentes',
+                'ACESSORIO': 'Acessórios',
+                'ACESSÓRIO': 'Acessórios',
+                'ACESSORIO DIVERSOS': 'Acessórios'
+            };
+            
+            const normalizedCategory = categoria.trim().toUpperCase();
+            return categoryMap[normalizedCategory] || normalizedCategory;
+        }
+
+        // Função para carregar categorias e criar tabs
+        function loadCategories() {
+            const tabs = document.getElementById('tabs');
+            tabs.innerHTML = '';
+            
+            // Usar as categorias ativas do JSON
+            categoriasAtivas.forEach(item => {
+                if (item.type === 'dir') {
+                    const tab = document.createElement('button');
+                    tab.className = 'tab';
+                    tab.textContent = item.name;
+                    tab.onclick = () => {
+                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        loadCategoryItems(item.name);
+                        scrollToActiveTab();
+                    };
+                    tabs.appendChild(tab);
+                }
+            });
+            
+            // Selecionar categoria inicial
+            const initialCategory = getQueryParam('categoria') || 'Brincos';
+            const initialTab = findTabByText(initialCategory);
+            if (initialTab) {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                initialTab.classList.add('active');
+                loadCategoryItems(initialTab.textContent.trim());
+                scrollToActiveTab();
+            } else {
+                const defaultTab = findTabByText('Brincos') || tabs.children[0];
+                if (defaultTab) {
+                    defaultTab.classList.add('active');
+                    loadCategoryItems(defaultTab.textContent.trim());
+                    scrollToActiveTab();
+                } else {
+                    console.error('Nenhuma categoria disponível.');
+                    alert('Nenhuma categoria disponível. Verifique o arquivo de categorias.');
                 }
             }
-            updateCartTotals();
         }
 
-        // Calcular valor do frete
-        function getShippingCost() {
-            switch (selectedDeliveryOption) {
-                case 'uberlandia':
-                    return deliveryConfig.freteUberlandia;
-                case 'pickup':
-                    return 0;
-                default:
-                    return 0; // "A Calcular" é tratado como 0 para cálculos
+        // Encontrar tab pelo texto
+        function findTabByText(categoryName) {
+            const tabs = document.querySelectorAll('.tab');
+            for (let tab of tabs) {
+                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                    return tab;
+                }
+            }
+            return null;
+        }
+
+        // Função para carregar itens de uma categoria
+        function loadCategoryItems(category) {
+            currentCategory = category;
+            currentPage = 1;
+            currentBanho = 'todos';
+            
+            // Encontrar todos os banhos disponíveis nesta categoria
+            const banhosNaCategoria = new Set();
+            
+            // Filtrar itens por categoria
+            const filteredItems = allItems.filter(item => 
+                item.categoria === category || 
+                normalizarCategoria(item.categoria) === category
+            );
+            
+            // Coletar banhos únicos
+            filteredItems.forEach(item => {
+                if (item.banho) {
+                    banhosNaCategoria.add(item.banho);
+                }
+            });
+            
+            displayPage(currentPage, banhosNaCategoria);
+            criarBotoesSubcategorias(banhosNaCategoria);
+        }
+
+        // Função para filtrar e ordenar os itens
+        function getFilteredItems() {
+            // Filtrar por categoria primeiro
+            let filtered = allItems.filter(item => 
+                item.categoria === currentCategory || 
+                normalizarCategoria(item.categoria) === currentCategory
+            );
+            
+            // Filtrar por banho se necessário
+            if (currentBanho !== 'todos') {
+                filtered = filtered.filter(item => item.banho === currentBanho);
+            }
+            
+            // Ordenar os itens
+            filtered.sort((a, b) => {
+                const precoA = a.precoNumerico || 0;
+                const precoB = b.precoNumerico || 0;
+                const dataA = a.dataUltimaEntrada || "";
+                const dataB = b.dataUltimaEntrada || "";
+                
+                // Função auxiliar para comparar datas no formato DD/MM/AAAA
+                const compararDatas = (dataA, dataB, ordemCrescente = false) => {
+                    if (!dataA && !dataB) return 0;
+                    if (!dataA) return ordemCrescente ? -1 : 1;
+                    if (!dataB) return ordemCrescente ? 1 : -1;
+                    
+                    // Converter datas para comparação
+                    const [diaA, mesA, anoA] = dataA.split('/');
+                    const [diaB, mesB, anoB] = dataB.split('/');
+                    const dateStrA = `${anoA}-${mesA}-${diaA}`;
+                    const dateStrB = `${anoB}-${mesB}-${diaB}`;
+                    
+                    return ordemCrescente ? 
+                        dateStrA.localeCompare(dateStrB) : 
+                        dateStrB.localeCompare(dateStrA);
+                };
+                
+                switch (currentSort) {
+                    case 'newest':
+                        // Ordenar pela data mais recente primeiro
+                        return compararDatas(dataA, dataB, false) || 
+                               b.codigo.localeCompare(a.codigo, undefined, { numeric: true });
+                        
+                    case 'oldest':
+                        // Ordenar pela data mais antiga primeiro
+                        return compararDatas(dataA, dataB, true) || 
+                               a.codigo.localeCompare(b.codigo, undefined, { numeric: true });
+                        
+                    case 'highestPrice':
+                        return precoB - precoA || 
+                               b.codigo.localeCompare(a.codigo, undefined, { numeric: true });
+                        
+                    case 'lowestPrice':
+                        return precoA - precoB || 
+                               b.codigo.localeCompare(a.codigo, undefined, { numeric: true });
+                        
+                    default:
+                        return 0;
+                }
+            });
+            
+            currentVisibleItems = filtered;
+            return filtered;
+        }
+
+        // Função para buscar parâmetro na URL
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Função para exibir página de itens
+        function displayPage(page, banhosNaCategoria) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            
+            const filteredItems = getFilteredItems();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedItems = filteredItems.slice(start, end);
+            
+            paginatedItems.forEach(item => {
+                const codigo = item.codigo;
+                const descricao = item.descricao || "Descrição não disponível";
+                const preco = item.precoFormatado || "Preço não disponível";
+                const banho = item.banho || "";
+                
+                // Usar a pasta do item, se disponível, ou tentar derivar da categoria
+                const pasta = item.pasta || normalizarCategoria(item.categoria);
+                const imageUrl = `Catalogos/${pasta}/${codigo}.jpg`;
+                
+                // Encontrar o índice no array filtrado completo
+                const indexInAll = currentVisibleItems.findIndex(i => i.codigo === codigo);
+                
+                const itemElement = document.createElement('div');
+                itemElement.className = 'item';
+                itemElement.dataset.banho = banho;
+                
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+                
+                const img = document.createElement('img');
+                img.src = imageUrl;
+                img.alt = descricao;
+                img.onerror = () => {
+                    img.src = 'imagens/produto-sem-imagem.jpg'; // Imagem padrão para casos de erro
+                };
+                img.onclick = () => showModal(imageUrl, codigo, indexInAll);
+                
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png';
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+                
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+                
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+                
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'content-wrapper';
+                
+                const descElement = document.createElement('div');
+                descElement.className = 'description';
+                descElement.textContent = descricao;
+                
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+                
+                // Botão de adicionar à sacola
+                const addToCartBtn = document.createElement('button');
+                addToCartBtn.className = 'add-to-cart-gallery';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
+                addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, imageUrl);
+                
+                contentWrapper.appendChild(descElement);
+                contentWrapper.appendChild(precoElement);
+                
+                itemElement.appendChild(imgContainer);
+                itemElement.appendChild(codigoElement);
+                itemElement.appendChild(contentWrapper);
+                itemElement.appendChild(addToCartBtn);
+                
+                gallery.appendChild(itemElement);
+            });
+            
+            updatePagination();
+        }
+
+        // Função para atualizar paginação
+        function updatePagination() {
+            const filteredItems = getFilteredItems();
+            const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+            
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+            
+            // Poderia adicionar números de página aqui se desejar
+            
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        // Função para aplicar ordenação
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+        }
+
+        // Função para criar botões de subcategorias (banhos)
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+            
+            // Botão "Todos"
+            const botaoTodos = document.createElement('button');
+            botaoTodos.textContent = 'Todos';
+            botaoTodos.dataset.banho = 'todos';
+            botaoTodos.classList.add(currentBanho === 'todos' ? 'active' : '');
+            botaoTodos.onclick = () => filterByBanho('todos');
+            subcategoriesDiv.appendChild(botaoTodos);
+            
+            // Botões para cada tipo de banho
+            banhosNaCategoria.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.classList.add(currentBanho === banho ? 'active' : '');
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
+                }
+            });
+            
+            subcategoriesDiv.style.display = banhosNaCategoria.size > 0 ? 'flex' : 'none';
+        }
+
+        // Função para filtrar por banho
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            
+            // Atualizar classes ativas nos botões
+            document.querySelectorAll('#subcategories button').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.banho === banho);
+            });
+            
+            displayPage(currentPage, new Set());
+        }
+
+        // Função para exibir modal do produto
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            resetZoomAndPan();
+            updateModalContent(codigo);
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+        }
+
+        // Função para fechar modal
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+            resetZoomAndPan();
+            
+            if (modalAbortController) {
+                modalAbortController.abort();
+                modalAbortController = null;
             }
         }
 
-        // Carregar carrinho do localStorage ao iniciar
+        // Função para resetar zoom e pan
+        function resetZoomAndPan() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateModalTransform();
+        }
+
+        // Função para atualizar conteúdo da modal
+        function updateModalContent(codigo) {
+            const item = currentVisibleItems[currentModalIndex];
+            if (!item) return;
+            
+            const pasta = item.pasta || normalizarCategoria(item.categoria);
+            const src = `Catalogos/${pasta}/${codigo}.jpg`;
+            codigo = item.codigo;
+            const descricao = item.descricao || "Descrição não disponível";
+            const preco = item.precoFormatado || "Preço não disponível";
+            
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+            
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+            `;
+            updateModalTransform();
+        }
+
+        // Função para atualizar transformação da modal (zoom e pan)
+        function updateModalTransform() {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+
+        // Configurar interação na modal (zoom e pan)
+        function setupModalInteraction() {
+            const modalContent = document.getElementById('modalContent');
+            
+            // Remove listeners anteriores
+            if (modalAbortController) {
+                modalAbortController.abort();
+            }
+            
+            modalAbortController = new AbortController();
+            const signal = modalAbortController.signal;
+            
+            let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
+            
+            // Wheel event para zoom
+            modalContent.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY * -0.01;
+                adjustScale(delta);
+            }, { signal });
+            
+            // Mouse events para arrastar
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            }, { signal });
+            
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { signal });
+            
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            }, { signal });
+            
+            // Touch events
+            modalContent.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    touchStartTime = Date.now();
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
+                } else if (e.touches.length === 2) {
+                    startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                }
+            }, { passive: false, signal });
+            
+            modalContent.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
+                    const newDist = getDistance(e.touches);
+                    const scaleChange = newDist / startDist;
+                    adjustScale((scaleChange - 1) * 2);
+                    startDist = newDist;
+                    
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { passive: false, signal });
+            
+            modalContent.addEventListener('touchend', (e) => {
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                    if (scale === 1) {
+                        const touchEndX = e.changedTouches[0].screenX;
+                        const timeDiff = Date.now() - touchStartTime;
+                        if (timeDiff < 300) {
+                            handleSwipe(touchStartX, touchEndX);
+                        }
+                    }
+                }
+            }, { signal });
+        }
+
+        // Função para ajustar escala (zoom)
+        function adjustScale(delta) {
+            if (delta < 0 && scale <= minScale) {
+                scale = minScale;
+                return;
+            }
+            
+            scale += delta;
+            scale = Math.max(minScale, Math.min(maxScale, scale));
+            
+            if (scale < minScale + 0.05) {
+                scale = minScale;
+            }
+            
+            clampTranslation();
+            updateModalTransform();
+        }
+
+        // Calcular distância entre dois toques
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        // Limitar a translação para manter imagem visível
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+            
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+            
+            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
+            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
+            
+            const minVisibleRatio = 0.25;
+            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
+            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
+            
+            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
+            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
+            
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        // Gerenciar gestos de swipe
+        function handleSwipe(touchStartX, touchEndX) {
+            const swipeThreshold = 50;
+            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleItems.length - 1) {
+                currentModalIndex++;
+                const nextItem = currentVisibleItems[currentModalIndex];
+                resetZoomAndPan();
+                updateModalContent(nextItem.codigo);
+            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
+                currentModalIndex--;
+                const prevItem = currentVisibleItems[currentModalIndex];
+                resetZoomAndPan();
+                updateModalContent(prevItem.codigo);
+            }
+        }
+
+        // Funções para o carrinho
+
+        // Carregar carrinho do localStorage
         function loadCart() {
             const savedCart = localStorage.getItem('semijoiasCart');
             if (savedCart) {
@@ -856,7 +1505,6 @@
             const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
             counter.textContent = totalItems;
             
-            // Se o carrinho estiver vazio, esconder o contador
             if (totalItems === 0) {
                 counter.style.display = 'none';
             } else {
@@ -868,14 +1516,11 @@
         function addToCart(codigo, descricao, preco, imagem) {
             const precoNumber = getNumericPrice(preco);
             
-            // Verificar se o item já está no carrinho
             const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
             
             if (existingItemIndex > -1) {
-                // Incrementar quantidade se já existir
                 cart[existingItemIndex].quantity += 1;
             } else {
-                // Adicionar novo item
                 cart.push({
                     codigo,
                     descricao,
@@ -924,27 +1569,48 @@
             document.body.classList.remove('modal-open');
         }
 
+        // Atualizar opção de entrega selecionada
+        function updateDeliveryOption() {
+            const deliveryOptions = document.getElementsByName('deliveryOption');
+            for (const option of deliveryOptions) {
+                if (option.checked) {
+                    selectedDeliveryOption = option.value;
+                    break;
+                }
+            }
+            updateCartTotals();
+        }
+
+        // Calcular valor do frete
+        function getShippingCost() {
+            switch (selectedDeliveryOption) {
+                case 'uberlandia':
+                    return deliveryConfig.freteUberlandia;
+                case 'pickup':
+                    return 0;
+                default:
+                    return 0; // "A Calcular" é tratado como 0 para cálculos
+            }
+        }
+
         // Atualizar os totais do carrinho
         function updateCartTotals() {
             const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
             const shipping = getShippingCost();
             let total = subtotal;
             
-            // Só adiciona o frete se não for "A Calcular" (outras cidades)
             if (selectedDeliveryOption === 'uberlandia' || selectedDeliveryOption === 'pickup') {
                 total += shipping;
             }
             
             document.getElementById('cartSubtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
             
-            // Atualizar texto do frete
             if (selectedDeliveryOption === 'other') {
                 document.getElementById('cartShipping').textContent = deliveryConfig.freteOutrasCidades;
             } else {
                 document.getElementById('cartShipping').textContent = `R$ ${shipping.toFixed(2).replace('.', ',')}`;
             }
             
-            // Para o total, se for "outras cidades", indicamos que o valor é parcial
             if (selectedDeliveryOption === 'other') {
                 document.getElementById('cartTotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete`;
             } else {
@@ -1077,6 +1743,14 @@
             window.open(whatsappUrl, '_blank');
         }
 
+        // Solicitar item específico por WhatsApp
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
         // Exibir notificação
         function showNotification(message) {
             const notification = document.getElementById('notification');
@@ -1092,655 +1766,25 @@
             }, 2000);
         }
 
-        function formatarPreco(preco) {
-            if (!preco) return "Preço não disponível";
-            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
-            if (isNaN(valorNumerico)) return "Preço não disponível";
-            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
-        }
-
-        function getNumericPrice(preco) {
-            if (!preco || preco === "Preço não disponível") return 0;
-            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
-        }
-
-        async function loadCategoriasAtivas() {
-            try {
-                const response = await fetch(categoriasAtivasUrl);
-                if (!response.ok) {
-                    console.warn("Arquivo CategoriasAtivas.txt não encontrado, todas as categorias serão exibidas.");
-                    categoriasAtivas = [];
-                    return;
-                }
-                const text = await response.text();
-                categoriasAtivas = text.split('\n')
-                    .map(linha => linha.trim())
-                    .filter(linha => linha !== '');
-                console.log('Categorias ativas carregadas:', categoriasAtivas);
-            } catch (error) {
-                console.error("Erro ao carregar categorias ativas:", error);
-                categoriasAtivas = [];
-            }
-        }
-
-        async function loadDescriptions() {
-            try {
-                const response = await fetch(descricoesUrl);
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const text = await response.text();
-                const lines = text.split('\n');
-                lines.forEach(line => {
-                    const parts = line.split(';');
-                    
-                    // Verificar se temos pelo menos os 4 campos básicos
-                    if (parts.length >= 4) {
-                        const codigo = parts[0].trim();
-                        const descricao = parts[1].trim();
-                        const preco = parts[2].trim();
-                        const banho = parts[3].trim();
-                        // A data da última entrada é opcional (5º campo)
-                        const dataEntrada = parts.length >= 5 ? parts[4].trim() : '';
-                        
-                        if (codigo && descricao && preco && banho) {
-                            let normalizedBanho = banho.toLowerCase();
-                            if (normalizedBanho.includes('2 banhos')) {
-                                normalizedBanho = '2 banhos';
-                            }
-                            
-                            descricoes[codigo] = {
-                                descricao: descricao,
-                                preco: formatarPreco(preco),
-                                banho: normalizedBanho,
-                                dataUltimaEntrada: dataEntrada
-                            };
-                        }
-                    }
-                });
-                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
-            } catch (error) {
-                console.error("Erro ao carregar descrições:", error);
-                alert(`Erro ao carregar descrições: ${error.message}`);
-            }
-        }
-
-        async function loadCategories() {
-            console.log('Iniciando loadCategories');
-            try {
-                const response = await fetch(repoUrl);
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const data = await response.json();
-                console.log('Dados das categorias recebidos:', data);
-                const tabs = document.getElementById('tabs');
-                tabs.innerHTML = '';
-
-                data.forEach(item => {
-                    if (item.type === 'dir' && (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name))) {
-                        const tab = document.createElement('button');
-                        tab.className = 'tab';
-                        tab.textContent = item.name;
-                        tab.onclick = () => {
-                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                            tab.classList.add('active');
-                            loadImages(item.name);
-                            scrollToActiveTab();
-                        };
-                        tabs.appendChild(tab);
-                    }
-                });
-
-                const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = findTabByText(initialCategory);
-                if (initialTab) {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.textContent.trim());
-                    scrollToActiveTab();
-                } else {
-                    const defaultTab = findTabByText('Brincos') || tabs.children[0];
-                    if (defaultTab) {
-                        defaultTab.classList.add('active');
-                        console.log('Carregando categoria padrão:', defaultTab.textContent);
-                        loadImages(defaultTab.textContent.trim());
-                        scrollToActiveTab();
-                    } else {
-                        console.error('Nenhuma categoria disponível.');
-                        alert('Nenhuma categoria disponível. Verifique o repositório GitHub.');
-                    }
-                }
-            } catch (error) {
-                console.error("Erro ao carregar categorias:", error);
-                alert(`Erro ao carregar categorias: ${error.message}`);
-            }
-        }
-
-        function findTabByText(categoryName) {
-            const tabs = document.querySelectorAll('.tab');
-            for (let tab of tabs) {
-                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                    return tab;
-                }
-            }
-            return null;
-        }
-
-        async function loadImages(folderName) {
-            console.log('Iniciando loadImages para:', folderName);
-            const banhosNaCategoria = new Set();
-            currentPage = 1;
-            currentBanho = 'todos';
-
-            try {
-                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
-                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
-                allFiles = await response.json();
-                console.log('Arquivos recebidos:', allFiles);
-                allFiles.forEach(file => {
-                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
-                        const codigo = file.name.split('.')[0];
-                        const { banho } = descricoes[codigo] || { banho: '' };
-                        if (banho) {
-                            banhosNaCategoria.add(banho);
-                        }
-                    }
-                });
-
-                displayPage(currentPage, banhosNaCategoria);
-                criarBotoesSubcategorias(banhosNaCategoria);
-                console.log('Imagens carregadas com sucesso para:', folderName);
-            } catch (error) {
-                console.error("Erro ao carregar imagens:", error);
-                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
-            }
-        }
-
-        function getFilteredFiles() {
-            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
-            let filtered = allFiles.filter(file => {
-                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
-                const codigo = file.name.split('.')[0];
-                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
-                return currentBanho === 'todos' || banho === currentBanho;
-            });
-        
-            filtered.sort((a, b) => {
-                const codigoA = a.name.split('.')[0];
-                const codigoB = b.name.split('.')[0];
-                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
-                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
-                const dataA = descricoes[codigoA]?.dataUltimaEntrada || "";
-                const dataB = descricoes[codigoB]?.dataUltimaEntrada || "";
-        
-                // Função auxiliar para comparar datas no formato DD/MM/AAAA
-                const compararDatas = (dataA, dataB, ordemCrescente = false) => {
-                    if (!dataA && !dataB) return 0;
-                    if (!dataA) return ordemCrescente ? -1 : 1;
-                    if (!dataB) return ordemCrescente ? 1 : -1;
-                    
-                    // Converter datas no formato DD/MM/AAAA para comparação
-                    const [diaA, mesA, anoA] = dataA.split('/');
-                    const [diaB, mesB, anoB] = dataB.split('/');
-                    const dateStrA = `${anoA}-${mesA}-${diaA}`;
-                    const dateStrB = `${anoB}-${mesB}-${diaB}`;
-                    
-                    // Comparar datas
-                    return ordemCrescente ? 
-                        dateStrA.localeCompare(dateStrB) : // Crescente (mais antigo primeiro)
-                        dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
-                };
-        
-                switch (currentSort) {
-                    case 'newest':
-                        // Ordenar pela data mais recente primeiro
-                        const resultNewest = compararDatas(dataA, dataB, false);
-                        // Se datas iguais ou inexistentes, usa o código como desempate
-                        return resultNewest !== 0 ? resultNewest : 
-                               codigoB.localeCompare(codigoA, undefined, { numeric: true });
-                        
-                    case 'oldest':
-                        // Ordenar pela data mais antiga primeiro
-                        const resultOldest = compararDatas(dataA, dataB, true);
-                        // Se datas iguais ou inexistentes, usa o código como desempate
-                        return resultOldest !== 0 ? resultOldest : 
-                               codigoA.localeCompare(codigoB, undefined, { numeric: true });
-                        
-                    case 'highestPrice':
-                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
-                        
-                    case 'lowestPrice':
-                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
-                        
-                    default:
-                        return 0;
-                }
-            });
-        
-            currentVisibleFiles = filtered;
-            return filtered;
-        }
-        
-        function getQueryParam(name) {
-           const urlParams = new URLSearchParams(window.location.search);
-           return urlParams.get(name);
-        }
-
-        function displayPage(page, banhosNaCategoria) {
-            console.log('Exibindo página:', page);
-            const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
-            const filteredFiles = getFilteredFiles();
-            const start = (page - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            const paginatedFiles = filteredFiles.slice(start, end);
-            console.log('Itens a exibir:', paginatedFiles.length);
-
-            paginatedFiles.forEach(file => {
-                const codigo = file.name.split('.')[0];
-                const { descricao, preco, banho } = descricoes[codigo] || { 
-                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                    preco: "Preço não disponível",
-                    banho: ""
-                };
-                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
-
-                const item = document.createElement('div');
-                item.className = 'item';
-                item.dataset.banho = banho || 'todos';
-
-                const imgContainer = document.createElement('div');
-                imgContainer.className = 'img-container';
-
-                const img = document.createElement('img');
-                img.src = file.download_url;
-                img.alt = descricao || 'Imagem do produto';
-                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
-
-                const logo = document.createElement('img');
-                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
-                logo.className = 'logo-watermark';
-                logo.alt = 'Logo';
-
-                imgContainer.appendChild(img);
-                imgContainer.appendChild(logo);
-
-                const codigoElement = document.createElement('div');
-                codigoElement.className = 'codigo';
-                codigoElement.textContent = `COD: ${codigo}`;
-
-                const contentWrapper = document.createElement('div');
-                contentWrapper.className = 'content-wrapper';
-
-                const desc = document.createElement('div');
-                desc.className = 'description';
-                desc.textContent = descricao;
-
-                const precoElement = document.createElement('div');
-                precoElement.className = 'preco';
-                precoElement.textContent = preco;
-
-                // Botão de adicionar à sacola com ícone e texto
-                const addToCartBtn = document.createElement('button');
-                addToCartBtn.className = 'add-to-cart-gallery';
-                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
-                addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
-
-                contentWrapper.appendChild(desc);
-                contentWrapper.appendChild(precoElement);
-
-                item.appendChild(imgContainer);
-                item.appendChild(codigoElement);
-                item.appendChild(contentWrapper);
-                item.appendChild(addToCartBtn);
-                
-                gallery.appendChild(item);
-            });
-
-            updatePagination();
-            document.querySelectorAll('.gallery img').forEach(img => {
-                img.addEventListener('contextmenu', (e) => e.preventDefault());
-            });
-        }
-
-        function updatePagination() {
-            const filteredFiles = getFilteredFiles();
-            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
-            const paginationDiv = document.getElementById('pagination');
-            paginationDiv.innerHTML = '';
-
-            const prevButton = document.createElement('button');
-            prevButton.textContent = 'Anterior';
-            prevButton.onclick = () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    displayPage(currentPage, new Set());
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            };
-            prevButton.disabled = currentPage === 1;
-            paginationDiv.appendChild(prevButton);
-
-            const nextButton = document.createElement('button');
-            nextButton.textContent = 'Próxima';
-            nextButton.onclick = () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    displayPage(currentPage, new Set());
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
-            };
-            nextButton.disabled = currentPage === totalPages;
-            paginationDiv.appendChild(nextButton);
-        }
-
-        function applySort() {
-            currentSort = document.getElementById('sortFilter').value;
-            currentPage = 1;
-            displayPage(currentPage, new Set());
-            console.log('Ordenação aplicada:', currentSort);
-        }
-
-        function criarBotoesSubcategorias(banhosNaCategoria) {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = '';
-
-            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
-            if (!botaoTodosExistente) {
-                const botaoTodos = document.createElement('button');
-                botaoTodos.textContent = 'Todos';
-                botaoTodos.dataset.banho = 'todos';
-                botaoTodos.onclick = () => filterByBanho('todos');
-                subcategoriesDiv.appendChild(botaoTodos);
-            }
-
-            banhosNaCategoria.forEach(banho => {
-                if (banho && banho !== '') {
-                    const botaoBanho = document.createElement('button');
-                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    if (banho === '2 banhos') {
-                        displayText = '2 Banhos';
-                    }
-                    botaoBanho.textContent = displayText;
-                    botaoBanho.dataset.banho = banho;
-                    botaoBanho.onclick = () => filterByBanho(banho);
-                    subcategoriesDiv.appendChild(botaoBanho);
-                }
-            });
-
-            subcategoriesDiv.style.display = 'flex';
-        }
-
-        function filterByBanho(banho) {
-            currentBanho = banho;
-            currentPage = 1;
-            displayPage(currentPage, new Set());
-        }
-
-        function showModal(src, codigo, index) {
-            currentModalIndex = index;
-            resetZoomAndPan();
-            updateModalContent(codigo);
-            document.getElementById('imageModal').style.display = 'flex';
-            document.body.classList.add('modal-open');
-            setupModalInteraction();
-            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
-        }
-
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-            document.body.classList.remove('modal-open');
-            resetZoomAndPan();
-            
-            if (modalAbortController) {
-                modalAbortController.abort();
-                modalAbortController = null;
-            }
-        }
-
-        function resetZoomAndPan() {
-            scale = 1;
-            translateX = 0;
-            translateY = 0;
-            updateModalTransform();
-        }
-
-        function updateModalContent(codigo) {
-            const file = currentVisibleFiles[currentModalIndex];
-            if (!file) return;
-
-            const src = file.download_url;
-            codigo = file.name.split('.')[0];
-
-            const { descricao, preco } = descricoes[codigo] || { 
-                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                preco: "Preço não disponível"
-            };
-
-            const captureArea = document.getElementById('captureArea');
-            const existingLogo = captureArea.querySelector('.logo-watermark');
-            if (existingLogo) existingLogo.remove();
-
-            document.getElementById('modalImg').src = src;
-            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
-
-            const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
-            logo.className = 'logo-watermark';
-            logo.alt = 'Logo';
-            captureArea.appendChild(logo);
-
-            document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${descricao}</div>
-                <div class="preco">${preco}</div>
-            `;
-            updateModalTransform();
-        }
-
-        function updateModalTransform() {
-            const modalContent = document.getElementById('modalContent');
-            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
-        }
-
-        function setupModalInteraction() {
-            const modalContent = document.getElementById('modalContent');
-            
-            // Remove listeners anteriores
-            if (modalAbortController) {
-                modalAbortController.abort();
-            }
-            
-            modalAbortController = new AbortController();
-            const signal = modalAbortController.signal;
-        
-            let startDist = 0;
-            let lastX = 0;
-            let lastY = 0;
-        
-            // Wheel event para zoom
-            modalContent.addEventListener('wheel', (e) => {
-                e.preventDefault();
-                const delta = e.deltaY * -0.01;
-                adjustScale(delta);
-            }, { signal });
-        
-            // Mouse events para arrastar
-            modalContent.addEventListener('mousedown', (e) => {
-                if (scale > 1) {
-                    isDragging = true;
-                    startX = e.clientX - translateX;
-                    startY = e.clientY - translateY;
-                }
-            }, { signal });
-        
-            document.addEventListener('mousemove', (e) => {
-                if (isDragging) {
-                    e.preventDefault();
-                    translateX = e.clientX - startX;
-                    translateY = e.clientY - startY;
-                    clampTranslation();
-                    updateModalTransform();
-                }
-            }, { signal });
-        
-            document.addEventListener('mouseup', () => {
-                isDragging = false;
-            }, { signal });
-        
-            // Touch events
-            modalContent.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 1) {
-                    touchStartX = e.touches[0].screenX;
-                    touchStartTime = Date.now();
-                    if (scale > 1) {
-                        isDragging = true;
-                        startX = e.touches[0].clientX - translateX;
-                        startY = e.touches[0].clientY - translateY;
-                    }
-                } else if (e.touches.length === 2) {
-                    startDist = getDistance(e.touches);
-                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-                }
-            }, { passive: false, signal });
-        
-            modalContent.addEventListener('touchmove', (e) => {
-                e.preventDefault();
-                if (e.touches.length === 1 && isDragging) {
-                    translateX = e.touches[0].clientX - startX;
-                    translateY = e.touches[0].clientY - startY;
-                    clampTranslation();
-                    updateModalTransform();
-                } else if (e.touches.length === 2) {
-                    const newDist = getDistance(e.touches);
-                    const scaleChange = newDist / startDist;
-                    adjustScale((scaleChange - 1) * 2);
-                    startDist = newDist;
-        
-                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-                    translateX += (newX - lastX) / scale;
-                    translateY += (newY - lastY) / scale;
-                    lastX = newX;
-                    lastY = newY;
-                    clampTranslation();
-                    updateModalTransform();
-                }
-            }, { passive: false, signal });
-        
-            modalContent.addEventListener('touchend', (e) => {
-                if (e.touches.length === 0) {
-                    isDragging = false;
-                    if (scale === 1) {
-                        const touchEndX = e.changedTouches[0].screenX;
-                        const timeDiff = Date.now() - touchStartTime;
-                        if (timeDiff < 300) {
-                            handleSwipe(touchStartX, touchEndX);
-                        }
-                    }
-                }
-            }, { signal });
-        }
-
-        function adjustScale(delta) {
-            // Se estiver tentando diminuir (delta negativo) e já estiver no tamanho mínimo, não permitir
-            if (delta < 0 && scale <= minScale) {
-                scale = minScale; // Garante que a escala seja exatamente 1 nesse caso
-                return; // Não prossegue com o zoom out
-            }
-            
-            // Caso contrário, aplica o zoom normalmente
-            scale += delta;
-            
-            // Garante que a escala esteja dentro dos limites permitidos
-            scale = Math.max(minScale, Math.min(maxScale, scale));
-            
-            // Se a escala estiver muito próxima do mínimo, ajusta para exatamente o mínimo
-            if (scale < minScale + 0.05) {
-                scale = minScale;
-            }
-            
-            clampTranslation();
-            updateModalTransform();
-        }
-
-        function getDistance(touches) {
-            const dx = touches[0].clientX - touches[1].clientX;
-            const dy = touches[0].clientY - touches[1].clientY;
-            return Math.sqrt(dx * dx + dy * dy);
-        }
-
-        function clampTranslation() {
-            const modalContent = document.getElementById('modalContent');
-            const modal = document.getElementById('imageModal');
-            const modalRect = modalContent.getBoundingClientRect();
-            const containerRect = modal.getBoundingClientRect();
-            
-            // Cálculo do tamanho escalado da imagem
-            const scaledWidth = modalRect.width * scale;
-            const scaledHeight = modalRect.height * scale;
-            
-            // Calcula quanto a imagem pode se mover em cada direção
-            // Fórmula corrigida para evitar que a imagem desapareça completamente
-            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
-            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
-            
-            // Garante uma área mínima visível da imagem (25% da largura/altura)
-            const minVisibleRatio = 0.25;
-            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
-            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
-            
-            // Limita a translação dentro dos valores permitidos
-            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
-            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
-            
-            // Se a imagem não estiver ampliada, centraliza
-            if (scaledWidth <= containerRect.width) translateX = 0;
-            if (scaledHeight <= containerRect.height) translateY = 0;
-        }
-
-        function handleSwipe(touchStartX, touchEndX) {
-            const swipeThreshold = 50;
-            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
-                currentModalIndex++;
-                const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
-                currentModalIndex--;
-                const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            }
-        }
-
-        function requestItem() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
-            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-
+        // Configurar botão Fale Conosco
         function setupFaleConoscoButton() {
             const faleConoscoBtn = document.getElementById('faleConoscoBtn');
             faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
         }
 
+        // Carregar rodapé do site
         async function loadRodape() {
             try {
-                const response = await fetch("./rodape.txt");
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const text = await response.text();
+                // Na implementação real, buscar de um arquivo
+                const text = "© 2025 Renata Semijoias - Todos os direitos reservados.\nSemijoias e acessórios de alta qualidade com as últimas tendências.";
                 const formattedText = text.replace(/\n/g, '<br>');
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
                 console.error("Erro ao carregar rodapé:", error);
-                alert(`Erro ao carregar rodapé: ${error.message}`);
             }
         }
 
+        // Scrollar para a aba ativa
         function scrollToActiveTab() {
             const activeTab = document.querySelector('.tab.active');
             if (activeTab) {
@@ -1753,15 +1797,42 @@
             }
         }
 
+        // Prevenir download de imagens
+        function preventImageDownload() {
+            document.querySelectorAll('img').forEach(img => {
+                img.draggable = false;
+                img.style.webkitUserSelect = 'none';
+                img.style.userSelect = 'none';
+                img.style.webkitTouchCallout = 'none';
+                img.setAttribute('unselectable', 'on');
+            });
+            
+            document.addEventListener('contextmenu', e => {
+                if (e.target.tagName === 'IMG') e.preventDefault();
+            }, false);
+            
+            document.addEventListener('touchstart', e => {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                }
+            }, {passive: false});
+            
+            document.addEventListener('dragstart', e => {
+                if (e.target.tagName === 'IMG') e.preventDefault();
+            }, false);
+        }
+        
+        // Inicializar a aplicação
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
-            loadDeliveryConfig(); // Carregar configurações de entrega
-            await loadCategoriasAtivas();
-            await loadDescriptions();
-            await loadCategories();
-            loadRodape();
-            setupFaleConoscoButton();
+            await loadCategoriasAtivas(); // Carregar categorias ativas
+            await loadProdutos(); // Carregar dados dos produtos
+            loadCategories(); // Carregar tabs de categorias
+            loadRodape(); // Carregar rodapé
+            setupFaleConoscoButton(); // Configurar botão Fale Conosco
             updateCartCounter(); // Atualizar contador do carrinho
             
             // Configurar listeners para as opções de entrega
@@ -1769,6 +1840,7 @@
                 option.addEventListener('change', updateDeliveryOption);
             });
             
+            preventImageDownload(); // Prevenir download de imagens
             console.log('Carregamento da página concluído');
         };
     </script>
