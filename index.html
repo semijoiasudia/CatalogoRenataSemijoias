@@ -1157,7 +1157,7 @@
                         // A data da última entrada é opcional (5º campo)
                         const dataEntrada = parts.length >= 5 ? parts[4].trim() : '';
                         
-                        if (codigo && descricao && preco && banho) {
+                        if (codigo && descricao && preco) {
                             let normalizedBanho = banho.toLowerCase();
                             if (normalizedBanho.includes('2 banhos')) {
                                 normalizedBanho = '2 banhos';
