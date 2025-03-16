@@ -330,7 +330,7 @@
             margin-top: 10px;
             max-width: 100%;
         }
-        .save-btn, .request-btn, .add-to-cart-btn {
+        .request-btn, .add-to-cart-btn {
             width: 100%;
             margin: 0;
             color: #333;
@@ -347,7 +347,7 @@
             justify-content: center;
             gap: 5px;
         }
-        .save-btn:hover, .request-btn:hover, .add-to-cart-btn:hover {
+        .request-btn:hover, .add-to-cart-btn:hover {
             background-color: #e8e8e8;
         }
         .rodape {
@@ -657,11 +657,10 @@
             transition: opacity 0.3s ease-in-out;
         }
     </style>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
-    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    <!-- Logo no topo com largura de 140px -->
+    <img src="imagens/logo.png" alt="Logo" style="width: 140px; height: auto; margin: 10px auto; display: block;">
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -700,10 +699,6 @@
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <div class="modal-buttons">
-                <button class="save-btn" onclick="saveImage()">
-                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
-                    Salvar Imagem
-                </button>
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
                     <i>🛍️</i> Adicionar à Sacola
                 </button>
@@ -1730,21 +1725,6 @@
                 resetZoomAndPan();
                 updateModalContent(codigo);
             }
-        }
-
-        function saveImage() {
-            html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true,
-                allowTaint: true,
-                scale: 2
-            }).then(canvas => {
-                const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }).catch(error => {
-                console.error("Erro ao salvar imagem:", error);
-            });
         }
 
         function requestItem() {
