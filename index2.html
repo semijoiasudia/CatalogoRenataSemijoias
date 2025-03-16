@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,7 +13,7 @@
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
     </script>
-    -->
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -331,7 +330,7 @@
             margin-top: 10px;
             max-width: 100%;
         }
-        .save-btn, .request-btn, .add-to-cart-btn {
+        .request-btn, .add-to-cart-btn {
             width: 100%;
             margin: 0;
             color: #333;
@@ -348,7 +347,7 @@
             justify-content: center;
             gap: 5px;
         }
-        .save-btn:hover, .request-btn:hover, .add-to-cart-btn:hover {
+        .request-btn:hover, .add-to-cart-btn:hover {
             background-color: #e8e8e8;
         }
         .rodape {
@@ -658,7 +657,6 @@
             transition: opacity 0.3s ease-in-out;
         }
     </style>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <!-- Logo no topo com largura de 140px -->
@@ -701,10 +699,6 @@
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <div class="modal-buttons">
-                <button class="save-btn" onclick="saveImage()">
-                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
-                    Salvar Imagem
-                </button>
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
                     <i>🛍️</i> Adicionar à Sacola
                 </button>
@@ -1731,21 +1725,6 @@
                 resetZoomAndPan();
                 updateModalContent(codigo);
             }
-        }
-
-        function saveImage() {
-            html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true,
-                allowTaint: true,
-                scale: 2
-            }).then(canvas => {
-                const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }).catch(error => {
-                console.error("Erro ao salvar imagem:", error);
-            });
         }
 
         function requestItem() {
