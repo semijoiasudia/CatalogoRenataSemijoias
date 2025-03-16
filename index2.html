@@ -511,6 +511,14 @@
             object-fit: cover;
             border-radius: 4px;
             margin-right: 10px;
+            user-select: none;
+            -webkit-touch-callout: none;
+            pointer-events: auto;
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            user-drag: none;
         }
         .cart-item-info {
             flex-grow: 1;
@@ -857,6 +865,12 @@
                     break;
                 }
             }
+            // Aplicar proteção para imagens do carrinho
+            document.querySelectorAll('.cart-item-img').forEach(img => {
+                img.addEventListener('contextmenu', (e) => e.preventDefault());
+                img.addEventListener('dragstart', (e) => e.preventDefault());
+            });
+            
             updateCartTotals();
         }
 
