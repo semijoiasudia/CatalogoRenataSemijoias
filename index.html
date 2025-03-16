@@ -28,7 +28,7 @@
             padding: 15px 0;
             background: linear-gradient(135deg, #f8f8f8, #ffffff);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .logo-container img {
             max-width: 140px;
@@ -40,7 +40,7 @@
             width: 100%;
             max-width: 100%;
             margin: 0 auto 20px;
-            padding: 15px 5px;
+            padding: 5px 5px 8px;
             position: relative;
             background-color: #fcfaf5;
             border-radius: 12px;
@@ -52,17 +52,26 @@
             font-size: 22px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             text-align: center;
             position: relative;
         }
-        .catalogo-titulo:after {
+        .catalogo-subtitulo {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogo-container:after {
             content: '';
             display: block;
             width: 50px;
             height: 2px;
             background: linear-gradient(135deg, #e6c977, #d4af37);
-            margin: 8px auto 0;
+            margin: 10px auto;
         }
         
         h1 {
@@ -461,11 +470,12 @@
             left: 20px;
             z-index: 900;
             display: flex;
+            flex-direction: column; /* Alterado para coluna para empilhar os elementos */
             align-items: center;
-            justify-content: center;
         }
         .cart-icon {
-            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
+            position: relative; /* Para manter o contador posicionado corretamente */
+            background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             width: 50px;
             height: 50px;
@@ -477,6 +487,12 @@
             font-size: 24px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             transition: transform 0.3s;
+        }
+        .cart-label {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
         }
         .cart-icon:hover {
             transform: scale(1.1);
@@ -709,7 +725,8 @@
     
     <!-- Novo container de título estilizado -->
     <div class="catalogo-container">
-        <h2 class="catalogo-titulo">Catálogo de Semijoias e Acessórios</h2>
+        <h2 class="catalogo-titulo">Seja bem vinda!</h2>
+        <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
     </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
@@ -718,6 +735,7 @@
             <i>🛍️</i>
         </div>
         <div class="cart-counter" id="cartCounter">0</div>
+        <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
     
     <div class="tabs-container">
