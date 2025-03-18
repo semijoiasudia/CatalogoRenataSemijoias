@@ -2,32 +2,11 @@
   "categoria": "BRINCO",
   "produtos": [
     {
-      "codigo": "3413",
-      "descricao": "FLOR VAZADA COM PONTO DE LUZ",
-      "preco": "46,9",
+      "codigo": "3402",
+      "descricao": "EAR HOOK ZIRCONIAS CRISTAL",
+      "preco": "44,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/08/2024"
-    },
-    {
-      "codigo": "3435",
-      "descricao": "TRIO P. LUZ QUADRADO CRISTAL 4/5/6MM",
-      "preco": "56,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/09/2024"
-    },
-    {
-      "codigo": "3450",
-      "descricao": "BOTAO FLOR M",
-      "preco": "46,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/09/2024"
-    },
-    {
-      "codigo": "3443",
-      "descricao": "ESFERA LISA 6MM",
-      "preco": "32,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/09/2024"
+      "dataUltimaEntrada": "19/08/2024"
     },
     {
       "codigo": "3425",
@@ -37,11 +16,11 @@
       "dataUltimaEntrada": "30/08/2024"
     },
     {
-      "codigo": "3438",
-      "descricao": "DUO PONTO DE LUZ QUADRADO 5/6MM",
+      "codigo": "3413",
+      "descricao": "FLOR VAZADA COM PONTO DE LUZ",
       "preco": "46,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/09/2024"
+      "dataUltimaEntrada": "28/08/2024"
     },
     {
       "codigo": "3427",
@@ -58,9 +37,37 @@
       "dataUltimaEntrada": "29/08/2024"
     },
     {
+      "codigo": "3443",
+      "descricao": "ESFERA LISA 6MM",
+      "preco": "32,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/09/2024"
+    },
+    {
+      "codigo": "3401",
+      "descricao": "ARGOLA CLCK P 3 PEDRAS CRISTAL",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/08/2024"
+    },
+    {
+      "codigo": "3438",
+      "descricao": "DUO PONTO DE LUZ QUADRADO 5/6MM",
+      "preco": "46,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/09/2024"
+    },
+    {
       "codigo": "3436",
       "descricao": "TRIO P. LUZ QUADRADO CRISTAL 5/6/8MM",
       "preco": "69,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/09/2024"
+    },
+    {
+      "codigo": "3435",
+      "descricao": "TRIO P. LUZ QUADRADO CRISTAL 4/5/6MM",
+      "preco": "56,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/09/2024"
     },
@@ -72,11 +79,18 @@
       "dataUltimaEntrada": "26/02/2025"
     },
     {
-      "codigo": "3382",
-      "descricao": "TRIO ARGOLINHA OVAL LISA PMG",
-      "preco": "79,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "11/08/2024"
+      "codigo": "3381",
+      "descricao": "ARGOLA LISA QUADRADA G",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/08/2024"
+    },
+    {
+      "codigo": "4099",
+      "descricao": "ARGOLA CLICK 3 FILEIRAS ZIRCONIAS COLORS TAM M",
+      "preco": "52,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/02/2025"
     },
     {
       "codigo": "4098",
@@ -114,34 +128,6 @@
       "dataUltimaEntrada": "10/08/2024"
     },
     {
-      "codigo": "3379",
-      "descricao": "ARGOLA LISA QUADRADA P",
-      "preco": "32,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/08/2024"
-    },
-    {
-      "codigo": "4097",
-      "descricao": "MEIA ARGOLA RETANGULAR ORGANICA TAM M",
-      "preco": "49,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/02/2025"
-    },
-    {
-      "codigo": "3381",
-      "descricao": "ARGOLA LISA QUADRADA G",
-      "preco": "42,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/08/2024"
-    },
-    {
-      "codigo": "3402",
-      "descricao": "EAR HOOK ZIRCONIAS CRISTAL",
-      "preco": "44,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/08/2024"
-    },
-    {
       "codigo": "3384",
       "descricao": "TRIO CORACAO CRISTAL PP/P/M",
       "preco": "42,9",
@@ -149,11 +135,46 @@
       "dataUltimaEntrada": "11/08/2024"
     },
     {
-      "codigo": "3451",
-      "descricao": "GOTA ORGANICA M",
-      "preco": "39,9",
+      "codigo": "3380",
+      "descricao": "ARGOLA LISA QUADRADA M",
+      "preco": "36,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/08/2024"
+    },
+    {
+      "codigo": "3400",
+      "descricao": "LACO CRAVEJADO CRISTAL P",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/08/2024"
+    },
+    {
+      "codigo": "3358",
+      "descricao": "ARGOLA NAVETE CRISTAL",
+      "preco": "44,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "03/08/2024"
+    },
+    {
+      "codigo": "3382",
+      "descricao": "TRIO ARGOLINHA OVAL LISA PMG",
+      "preco": "79,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "11/08/2024"
+    },
+    {
+      "codigo": "3450",
+      "descricao": "BOTAO FLOR M",
+      "preco": "46,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "07/09/2024"
+    },
+    {
+      "codigo": "4097",
+      "descricao": "MEIA ARGOLA RETANGULAR ORGANICA TAM M",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/02/2025"
     },
     {
       "codigo": "3397",
@@ -170,114 +191,23 @@
       "dataUltimaEntrada": "19/08/2024"
     },
     {
-      "codigo": "3400",
-      "descricao": "LACO CRAVEJADO CRISTAL P",
-      "preco": "42,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/08/2024"
-    },
-    {
-      "codigo": "3401",
-      "descricao": "ARGOLA CLCK P 3 PEDRAS CRISTAL",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/08/2024"
-    },
-    {
-      "codigo": "3380",
-      "descricao": "ARGOLA LISA QUADRADA M",
-      "preco": "36,9",
+      "codigo": "3379",
+      "descricao": "ARGOLA LISA QUADRADA P",
+      "preco": "32,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "10/08/2024"
     },
     {
-      "codigo": "3521",
-      "descricao": "CIRCULO CRAVEJADO COLORS P",
-      "preco": "39,9",
+      "codigo": "3498",
+      "descricao": "TREVO ESMALTADO VERDE G",
+      "preco": "19,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/10/2024"
-    },
-    {
-      "codigo": "3480",
-      "descricao": "CORACAO TEXTURIZADO",
-      "preco": "34,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3511",
-      "descricao": "ARGOLA OVAL 3 PEDRAS COLORS",
-      "preco": "46,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3513",
-      "descricao": "BORBOLETA CRAVEJADA COLORS",
-      "preco": "49,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3514",
-      "descricao": "BORBOLETA CRAVEJADA COLORS",
-      "preco": "44,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3517",
-      "descricao": "ARGOLINHA DUPLA 2 PONTOS DE LUZ P",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3506",
-      "descricao": "CORACAO COM ESPIRITO SANTO CRAVEJADO",
-      "preco": "49,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3519",
-      "descricao": "ARGOLA CLICK ZIRCONIA RETANGULAR P",
-      "preco": "42,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3565",
-      "descricao": "CORACAO CRAVEJADO COLORS",
-      "preco": "49,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "09/10/2024"
-    },
-    {
-      "codigo": "3523",
-      "descricao": "TRIO GOTA VAZADA PP/P/M",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/10/2024"
-    },
-    {
-      "codigo": "3527",
-      "descricao": "FLOR 5 PETALAS E PONTO DE LUZ P",
-      "preco": "46,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/10/2024"
+      "dataUltimaEntrada": "03/10/2024"
     },
     {
       "codigo": "3528",
       "descricao": "FLOR 5 PETALAS E PONTO DE LUZ P",
       "preco": "42,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "06/10/2024"
-    },
-    {
-      "codigo": "3534",
-      "descricao": "TRANQ FLOCO DE NEVE COLORS",
-      "preco": "46,9",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "06/10/2024"
     },
@@ -289,11 +219,32 @@
       "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3538",
-      "descricao": "ARGOLA CLICK 5 ZIRCONIAS QUADRADAS",
-      "preco": "42,9",
-      "banho": "Banhado a Prata",
+      "codigo": "3527",
+      "descricao": "FLOR 5 PETALAS E PONTO DE LUZ P",
+      "preco": "46,9",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/10/2024"
+    },
+    {
+      "codigo": "3523",
+      "descricao": "TRIO GOTA VAZADA PP/P/M",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/10/2024"
+    },
+    {
+      "codigo": "3521",
+      "descricao": "CIRCULO CRAVEJADO COLORS P",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/10/2024"
+    },
+    {
+      "codigo": "3519",
+      "descricao": "ARGOLA CLICK ZIRCONIA RETANGULAR P",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
     },
     {
       "codigo": "3518",
@@ -303,11 +254,67 @@
       "dataUltimaEntrada": "04/10/2024"
     },
     {
-      "codigo": "3477",
-      "descricao": "BOTAO E ARGOLA M",
+      "codigo": "3517",
+      "descricao": "ARGOLINHA DUPLA 2 PONTOS DE LUZ P",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "3514",
+      "descricao": "BORBOLETA CRAVEJADA COLORS",
+      "preco": "44,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "3513",
+      "descricao": "BORBOLETA CRAVEJADA COLORS",
       "preco": "49,9",
       "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "3511",
+      "descricao": "ARGOLA OVAL 3 PEDRAS COLORS",
+      "preco": "46,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "4060",
+      "descricao": "INFANTIL CEREJA PP",
+      "preco": "29,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/02/2025"
+    },
+    {
+      "codigo": "3506",
+      "descricao": "CORACAO COM ESPIRITO SANTO CRAVEJADO",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "3476",
+      "descricao": "OVAL ORGANICO VAZADO TRABALHADO P",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3473",
+      "descricao": "PINGENTE FLOR ROSA VAZADA",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3454",
+      "descricao": "GOTA LISA ALONGADA M",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/09/2024"
     },
     {
       "codigo": "3455",
@@ -338,60 +345,18 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3471",
-      "descricao": "EAR CUFF PONTOS DE LUZ REDONDOS",
+      "codigo": "3503",
+      "descricao": "QUADRADO CRAVEJADO COLORS P",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2024"
+    },
+    {
+      "codigo": "3538",
+      "descricao": "ARGOLA CLICK 5 ZIRCONIAS QUADRADAS",
       "preco": "42,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "4060",
-      "descricao": "INFANTIL CEREJA PP",
-      "preco": "29,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/02/2025"
-    },
-    {
-      "codigo": "3476",
-      "descricao": "OVAL ORGANICO VAZADO TRABALHADO P",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3454",
-      "descricao": "GOTA LISA ALONGADA M",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/09/2024"
-    },
-    {
-      "codigo": "4099",
-      "descricao": "ARGOLA CLICK 3 FILEIRAS ZIRCONIAS COLORS TAM M",
-      "preco": "52,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/02/2025"
-    },
-    {
-      "codigo": "3497",
-      "descricao": "TREVO ESMALTADO VERDE P",
-      "preco": "36,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
-      "codigo": "3316",
-      "descricao": "CORACAO CRAVEJADO CRISTAL P",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/07/2024"
-    },
-    {
-      "codigo": "3498",
-      "descricao": "TREVO ESMALTADO VERDE G",
-      "preco": "19,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "06/10/2024"
     },
     {
       "codigo": "3501",
@@ -401,32 +366,67 @@
       "dataUltimaEntrada": "24/11/2024"
     },
     {
-      "codigo": "3503",
-      "descricao": "QUADRADO CRAVEJADO COLORS P",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
+      "codigo": "3480",
+      "descricao": "CORACAO TEXTURIZADO",
+      "preco": "34,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3473",
-      "descricao": "PINGENTE FLOR ROSA VAZADA",
-      "preco": "39,9",
+      "codigo": "3477",
+      "descricao": "BOTAO E ARGOLA M",
+      "preco": "49,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "4113",
-      "descricao": "CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
-      "preco": "44,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
+      "codigo": "3534",
+      "descricao": "TRANQ FLOCO DE NEVE COLORS",
+      "preco": "46,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3225",
-      "descricao": "GOTA CRAVEJADA CRISTAL",
-      "preco": "29,9",
+      "codigo": "3313",
+      "descricao": "ARGOLINHA CLICK CARTIER M",
+      "preco": "39,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
+      "dataUltimaEntrada": "18/07/2024"
+    },
+    {
+      "codigo": "3497",
+      "descricao": "TREVO ESMALTADO VERDE P",
+      "preco": "36,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2024"
+    },
+    {
+      "codigo": "3451",
+      "descricao": "GOTA ORGANICA M",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/09/2024"
+    },
+    {
+      "codigo": "3471",
+      "descricao": "EAR CUFF PONTOS DE LUZ REDONDOS",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3206",
+      "descricao": "TRIANGULO ORGANICO P",
+      "preco": "19,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/06/2024"
+    },
+    {
+      "codigo": "3127",
+      "descricao": "EAR CUFF 3 FLORES P",
+      "preco": "19,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/05/2024"
     },
     {
       "codigo": "3151",
@@ -457,32 +457,32 @@
       "dataUltimaEntrada": "10/06/2024"
     },
     {
-      "codigo": "3181",
-      "descricao": "CORACAO LISO/CORACOES TRABALHADOS",
-      "preco": "39,9",
+      "codigo": "3324",
+      "descricao": "CORACAO CRAVEJADO COLORS M",
+      "preco": "44,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/06/2024"
+      "dataUltimaEntrada": "23/07/2024"
     },
     {
-      "codigo": "3122",
-      "descricao": "ESFERAS CASCATA",
+      "codigo": "3199",
+      "descricao": "ARGOLA CORACAO 1 LADO CRAVEJADO",
       "preco": "69,9",
       "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/06/2024"
+    },
+    {
+      "codigo": "3052",
+      "descricao": "QUADRADO ABAULADO M",
+      "preco": "29,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/05/2024"
+    },
+    {
+      "codigo": "4113",
+      "descricao": "CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
+      "preco": "44,9",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "3206",
-      "descricao": "TRIANGULO ORGANICO P",
-      "preco": "19,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2024"
-    },
-    {
-      "codigo": "3080",
-      "descricao": "FOLHA TRABALHADA M",
-      "preco": "19,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/05/2024"
     },
     {
       "codigo": "4112",
@@ -520,18 +520,11 @@
       "dataUltimaEntrada": "16/06/2024"
     },
     {
-      "codigo": "3325",
-      "descricao": "ARGOLA CLICK GOTA CRAVEJADA M",
+      "codigo": "3181",
+      "descricao": "CORACAO LISO/CORACOES TRABALHADOS",
       "preco": "39,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
-    },
-    {
-      "codigo": "3199",
-      "descricao": "ARGOLA CORACAO 1 LADO CRAVEJADO",
-      "preco": "69,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/06/2024"
+      "dataUltimaEntrada": "10/06/2024"
     },
     {
       "codigo": "2803",
@@ -583,11 +576,11 @@
       "dataUltimaEntrada": "28/10/2024"
     },
     {
-      "codigo": "3127",
-      "descricao": "EAR CUFF 3 FLORES P",
-      "preco": "19,9",
+      "codigo": "3122",
+      "descricao": "ESFERAS CASCATA",
+      "preco": "69,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/05/2024"
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "2796",
@@ -597,11 +590,11 @@
       "dataUltimaEntrada": "24/03/2024"
     },
     {
-      "codigo": "3226",
-      "descricao": "CORACAO CRAVEJADO CRISTAL E COLORS",
-      "preco": "49,9",
+      "codigo": "3080",
+      "descricao": "FOLHA TRABALHADA M",
+      "preco": "19,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
+      "dataUltimaEntrada": "17/05/2024"
     },
     {
       "codigo": "2974",
@@ -639,11 +632,11 @@
       "dataUltimaEntrada": "25/05/2024"
     },
     {
-      "codigo": "3052",
-      "descricao": "QUADRADO ABAULADO M",
-      "preco": "29,9",
+      "codigo": "3226",
+      "descricao": "CORACAO CRAVEJADO CRISTAL E COLORS",
+      "preco": "49,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/05/2024"
+      "dataUltimaEntrada": "16/06/2024"
     },
     {
       "codigo": "2790",
@@ -653,9 +646,9 @@
       "dataUltimaEntrada": "30/10/2024"
     },
     {
-      "codigo": "3328",
-      "descricao": "ARGOLA CLICK FORMATO CORACAO COLORS",
-      "preco": "49,9",
+      "codigo": "3327",
+      "descricao": "ARGOLA CLICK P 3 FILEIRAS CRISTAL",
+      "preco": "56,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "23/07/2024"
     },
@@ -667,18 +660,18 @@
       "dataUltimaEntrada": "16/06/2024"
     },
     {
+      "codigo": "3311",
+      "descricao": "MEIA ARGOLA LISA P 2CM",
+      "preco": "19,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/07/2024"
+    },
+    {
       "codigo": "3312",
       "descricao": "MEIA ARGOLA LISA M",
       "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024"
-    },
-    {
-      "codigo": "3313",
-      "descricao": "ARGOLINHA CLICK CARTIER M",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/07/2024"
     },
     {
       "codigo": "3509",
@@ -688,11 +681,11 @@
       "dataUltimaEntrada": "04/10/2024"
     },
     {
-      "codigo": "3324",
-      "descricao": "CORACAO CRAVEJADO COLORS M",
-      "preco": "44,9",
+      "codigo": "3316",
+      "descricao": "CORACAO CRAVEJADO CRISTAL P",
+      "preco": "39,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
+      "dataUltimaEntrada": "18/07/2024"
     },
     {
       "codigo": "3541",
@@ -702,25 +695,32 @@
       "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3309",
-      "descricao": "TREVO PINK",
-      "preco": "44,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "16/07/2024"
-    },
-    {
-      "codigo": "3327",
-      "descricao": "ARGOLA CLICK P 3 FILEIRAS CRISTAL",
-      "preco": "56,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
-    },
-    {
       "codigo": "3307",
       "descricao": "ARGOLA FORMATO NAVETE CRISTAL",
       "preco": "29,9",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "16/07/2024"
+    },
+    {
+      "codigo": "3326",
+      "descricao": "ARGOLA FINA CRAVEJADA INTERNA/EXTERNA",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
+    },
+    {
+      "codigo": "3304",
+      "descricao": "TRIO ARGOLA LISA QUADRADA PMG",
+      "preco": "79,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/07/2024"
+    },
+    {
+      "codigo": "3328",
+      "descricao": "ARGOLA CLICK FORMATO CORACAO COLORS",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
     },
     {
       "codigo": "3329",
@@ -758,25 +758,25 @@
       "dataUltimaEntrada": "02/08/2024"
     },
     {
+      "codigo": "3325",
+      "descricao": "ARGOLA CLICK GOTA CRAVEJADA M",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
+    },
+    {
+      "codigo": "3282",
+      "descricao": "PONTO DE LUZ 6MM",
+      "preco": "32,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/07/2024"
+    },
+    {
       "codigo": "3351",
       "descricao": "TREVO CRAVEJADO P",
       "preco": "39,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/08/2024"
-    },
-    {
-      "codigo": "3326",
-      "descricao": "ARGOLA FINA CRAVEJADA INTERNA/EXTERNA",
-      "preco": "49,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
-    },
-    {
-      "codigo": "3283",
-      "descricao": "PONTO DE LUZ 5MM",
-      "preco": "26,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/07/2024"
     },
     {
       "codigo": "3228",
@@ -814,32 +814,32 @@
       "dataUltimaEntrada": "02/07/2024"
     },
     {
-      "codigo": "3280",
-      "descricao": "ARGOLA M LISA",
-      "preco": "46,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/07/2024"
+      "codigo": "3309",
+      "descricao": "TREVO PINK",
+      "preco": "44,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "16/07/2024"
     },
     {
-      "codigo": "3311",
-      "descricao": "MEIA ARGOLA LISA P 2CM",
-      "preco": "19,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/07/2024"
-    },
-    {
-      "codigo": "3282",
-      "descricao": "PONTO DE LUZ 6MM",
-      "preco": "32,9",
+      "codigo": "3281",
+      "descricao": "PONTO DE LUZ 8MM",
+      "preco": "36,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/07/2024"
     },
     {
-      "codigo": "3358",
-      "descricao": "ARGOLA NAVETE CRISTAL",
-      "preco": "44,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "03/08/2024"
+      "codigo": "3225",
+      "descricao": "GOTA CRAVEJADA CRISTAL",
+      "preco": "29,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/06/2024"
+    },
+    {
+      "codigo": "3283",
+      "descricao": "PONTO DE LUZ 5MM",
+      "preco": "26,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/07/2024"
     },
     {
       "codigo": "3284",
@@ -877,18 +877,11 @@
       "dataUltimaEntrada": "09/07/2024"
     },
     {
-      "codigo": "3304",
-      "descricao": "TRIO ARGOLA LISA QUADRADA PMG",
-      "preco": "79,9",
+      "codigo": "3280",
+      "descricao": "ARGOLA M LISA",
+      "preco": "46,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/07/2024"
-    },
-    {
-      "codigo": "3281",
-      "descricao": "PONTO DE LUZ 8MM",
-      "preco": "36,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/07/2024"
+      "dataUltimaEntrada": "02/07/2024"
     },
     {
       "codigo": "3842",
@@ -1255,74 +1248,11 @@
       "dataUltimaEntrada": "08/01/2025"
     },
     {
-      "codigo": "3706",
-      "descricao": "TRIO QUADRADO",
-      "preco": "79,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/11/2024"
-    },
-    {
-      "codigo": "3622",
-      "descricao": "TREVO AMARELO MANTEIGA",
+      "codigo": "3632",
+      "descricao": "MAO DE FATIMA",
       "preco": "42,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/10/2024"
-    },
-    {
-      "codigo": "3707",
-      "descricao": "TRIO QUADRADO",
-      "preco": "69,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "22/11/2024"
-    },
-    {
-      "codigo": "3600",
-      "descricao": "ARGOLA LISA ABAULADA M",
-      "preco": "49,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/10/2024"
-    },
-    {
-      "codigo": "3669",
-      "descricao": "ARGOLA ELOS INSPIRACAO TIFFANY",
-      "preco": "54,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/11/2024"
-    },
-    {
-      "codigo": "3625",
-      "descricao": "TREVO ROSA BEBE",
-      "preco": "39,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "28/10/2024"
-    },
-    {
-      "codigo": "3670",
-      "descricao": "ARGOLA ELOS INSPIRACAO TIFFANY",
-      "preco": "49,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "07/11/2024"
-    },
-    {
-      "codigo": "3630",
-      "descricao": "FLOR CRISTAL P",
-      "preco": "39,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/10/2024"
-    },
-    {
-      "codigo": "3675",
-      "descricao": "FLOR M ORGANICA COM PONTO DE LUZ",
-      "preco": "54,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/11/2024"
-    },
-    {
-      "codigo": "3712",
-      "descricao": "TRIO GOTA CRAVEJADA CRISTAL",
-      "preco": "59,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/11/2024"
+      "dataUltimaEntrada": "30/10/2024"
     },
     {
       "codigo": "3705",
@@ -1339,13 +1269,6 @@
       "dataUltimaEntrada": "22/11/2024"
     },
     {
-      "codigo": "3554",
-      "descricao": "CACHO DE UVA CRAVEJADO CRISTAL",
-      "preco": "32,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "07/10/2024"
-    },
-    {
       "codigo": "4077",
       "descricao": "INFANTIL FLOR COM FURO PP",
       "preco": "29,9",
@@ -1353,44 +1276,44 @@
       "dataUltimaEntrada": "21/02/2025"
     },
     {
-      "codigo": "3564",
-      "descricao": "CORACAO CRAVEJADO COLORS",
+      "codigo": "3675",
+      "descricao": "FLOR M ORGANICA COM PONTO DE LUZ",
       "preco": "54,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/10/2024"
+      "dataUltimaEntrada": "07/11/2024"
     },
     {
-      "codigo": "3606",
-      "descricao": "TRIO PATINHAS PMG",
-      "preco": "59,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/10/2024"
-    },
-    {
-      "codigo": "3624",
-      "descricao": "TREVO ROSA BEBE",
-      "preco": "42,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/10/2024"
-    },
-    {
-      "codigo": "3716",
-      "descricao": "PONTO DE LUZ 5MM",
-      "preco": "26,9",
+      "codigo": "3670",
+      "descricao": "ARGOLA ELOS INSPIRACAO TIFFANY",
+      "preco": "49,9",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/11/2024"
+      "dataUltimaEntrada": "07/11/2024"
     },
     {
-      "codigo": "3560",
-      "descricao": "FLOR 5 PETALAS COLORS",
-      "preco": "42,9",
+      "codigo": "3669",
+      "descricao": "ARGOLA ELOS INSPIRACAO TIFFANY",
+      "preco": "54,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/10/2024"
+      "dataUltimaEntrada": "07/11/2024"
     },
     {
-      "codigo": "3634",
-      "descricao": "OLHO GREGO CREVEJADO",
-      "preco": "39,9",
+      "codigo": "4078",
+      "descricao": "INFANTIL 2 CORACOES ABAULADOS P",
+      "preco": "29,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/02/2025"
+    },
+    {
+      "codigo": "3642",
+      "descricao": "ARGOLA 3 FIOS E 2 PONTOS DE LUZ",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/10/2024"
+    },
+    {
+      "codigo": "3639",
+      "descricao": "MEIA ARGOLA E CORACAO PINK",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/10/2024"
     },
@@ -1402,38 +1325,17 @@
       "dataUltimaEntrada": "30/10/2024"
     },
     {
-      "codigo": "3639",
-      "descricao": "MEIA ARGOLA E CORACAO PINK",
-      "preco": "29,9",
+      "codigo": "3706",
+      "descricao": "TRIO QUADRADO",
+      "preco": "79,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/10/2024"
-    },
-    {
-      "codigo": "4078",
-      "descricao": "INFANTIL 2 CORACOES ABAULADOS P",
-      "preco": "29,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/02/2025"
-    },
-    {
-      "codigo": "3553",
-      "descricao": "CACHO DE UVA CRAVEJADO CRISTAL",
-      "preco": "34,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/10/2024"
+      "dataUltimaEntrada": "22/11/2024"
     },
     {
       "codigo": "3633",
       "descricao": "MAO DE FATIMA",
       "preco": "39,9",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "30/10/2024"
-    },
-    {
-      "codigo": "3632",
-      "descricao": "MAO DE FATIMA",
-      "preco": "42,9",
-      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/10/2024"
     },
     {
@@ -1444,11 +1346,88 @@
       "dataUltimaEntrada": "29/10/2024"
     },
     {
+      "codigo": "3630",
+      "descricao": "FLOR CRISTAL P",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/10/2024"
+    },
+    {
+      "codigo": "3625",
+      "descricao": "TREVO ROSA BEBE",
+      "preco": "39,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/10/2024"
+    },
+    {
+      "codigo": "3624",
+      "descricao": "TREVO ROSA BEBE",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/10/2024"
+    },
+    {
+      "codigo": "3622",
+      "descricao": "TREVO AMARELO MANTEIGA",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/10/2024"
+    },
+    {
+      "codigo": "3606",
+      "descricao": "TRIO PATINHAS PMG",
+      "preco": "59,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/10/2024"
+    },
+    {
+      "codigo": "3600",
+      "descricao": "ARGOLA LISA ABAULADA M",
+      "preco": "49,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/10/2024"
+    },
+    {
       "codigo": "4130",
       "descricao": "TRANQUETA COM ZIRCONIA OVAL",
       "preco": "42,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/03/2025"
+    },
+    {
+      "codigo": "3565",
+      "descricao": "CORACAO CRAVEJADO COLORS",
+      "preco": "49,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "09/10/2024"
+    },
+    {
+      "codigo": "3560",
+      "descricao": "FLOR 5 PETALAS COLORS",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/10/2024"
+    },
+    {
+      "codigo": "3554",
+      "descricao": "CACHO DE UVA CRAVEJADO CRISTAL",
+      "preco": "32,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "07/10/2024"
+    },
+    {
+      "codigo": "3553",
+      "descricao": "CACHO DE UVA CRAVEJADO CRISTAL",
+      "preco": "34,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/10/2024"
+    },
+    {
+      "codigo": "3634",
+      "descricao": "OLHO GREGO CREVEJADO",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/10/2024"
     },
     {
       "codigo": "3714",
@@ -1458,11 +1437,25 @@
       "dataUltimaEntrada": "24/11/2024"
     },
     {
-      "codigo": "3642",
-      "descricao": "ARGOLA 3 FIOS E 2 PONTOS DE LUZ",
-      "preco": "49,9",
+      "codigo": "3707",
+      "descricao": "TRIO QUADRADO",
+      "preco": "69,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "22/11/2024"
+    },
+    {
+      "codigo": "3712",
+      "descricao": "TRIO GOTA CRAVEJADA CRISTAL",
+      "preco": "59,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/10/2024"
+      "dataUltimaEntrada": "22/11/2024"
+    },
+    {
+      "codigo": "3716",
+      "descricao": "PONTO DE LUZ 5MM",
+      "preco": "26,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/11/2024"
     }
   ]
 }

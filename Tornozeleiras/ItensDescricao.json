@@ -2,18 +2,18 @@
   "categoria": "TORNOZELEIRA",
   "produtos": [
     {
-      "codigo": "3164",
-      "descricao": "CORACAO VAZADO E PONTOS DE LUZ",
-      "preco": "42,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/06/2024"
-    },
-    {
       "codigo": "3231",
       "descricao": "3 TREVOS DE 4 FOLHAS",
       "preco": "44,9",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "20/06/2024"
+    },
+    {
+      "codigo": "3164",
+      "descricao": "CORACAO VAZADO E PONTOS DE LUZ",
+      "preco": "42,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/06/2024"
     }
   ]
 }

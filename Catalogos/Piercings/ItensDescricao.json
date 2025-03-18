@@ -2,46 +2,11 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "3543",
-      "descricao": "FAKE BORBOLETA LISA",
-      "preco": "34,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/10/2024"
-    },
-    {
-      "codigo": "2521",
-      "descricao": "FAKE LISO PINGENTE PONTO DE LUZ",
-      "preco": "34,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/02/2024"
-    },
-    {
-      "codigo": "3555",
-      "descricao": "FAKE ELOS CORRENTE",
-      "preco": "34,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/10/2024"
-    },
-    {
-      "codigo": "3969",
-      "descricao": "FAKE 2 FIOS ENTRELACADOS",
-      "preco": "29,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/01/2025"
-    },
-    {
-      "codigo": "3629",
-      "descricao": "FAKE CORACAO COLORS LADO DIR",
-      "preco": "32,9",
+      "codigo": "3772",
+      "descricao": "FAKE GOTA ABAULADA",
+      "preco": "39,9",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "29/10/2024"
-    },
-    {
-      "codigo": "3020",
-      "descricao": "FLECHA",
-      "preco": "29,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/05/2024"
+      "dataUltimaEntrada": "03/12/2024"
     },
     {
       "codigo": "3544",
@@ -58,8 +23,22 @@
       "dataUltimaEntrada": "29/10/2024"
     },
     {
+      "codigo": "2521",
+      "descricao": "FAKE LISO PINGENTE PONTO DE LUZ",
+      "preco": "34,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/02/2024"
+    },
+    {
       "codigo": "3314",
       "descricao": "FAKE 3 BARRAS COLORS",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/07/2024"
+    },
+    {
+      "codigo": "3315",
+      "descricao": "FAKE ZIRCONIAS COLORS",
       "preco": "39,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/07/2024"
@@ -72,18 +51,18 @@
       "dataUltimaEntrada": "03/12/2024"
     },
     {
-      "codigo": "3945",
-      "descricao": "FAKE FIO FINO LISO",
-      "preco": "19,9",
+      "codigo": "3543",
+      "descricao": "FAKE BORBOLETA LISA",
+      "preco": "34,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/01/2025"
+      "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3772",
-      "descricao": "FAKE GOTA ABAULADA",
-      "preco": "39,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "03/12/2024"
+      "codigo": "3555",
+      "descricao": "FAKE ELOS CORRENTE",
+      "preco": "34,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/10/2024"
     },
     {
       "codigo": "3935",
@@ -93,6 +72,27 @@
       "dataUltimaEntrada": "23/01/2025"
     },
     {
+      "codigo": "3945",
+      "descricao": "FAKE FIO FINO LISO",
+      "preco": "19,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/01/2025"
+    },
+    {
+      "codigo": "3969",
+      "descricao": "FAKE 2 FIOS ENTRELACADOS",
+      "preco": "29,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/01/2025"
+    },
+    {
+      "codigo": "3629",
+      "descricao": "FAKE CORACAO COLORS LADO DIR",
+      "preco": "32,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "29/10/2024"
+    },
+    {
       "codigo": "3019",
       "descricao": "FLOR COM PONTO DE LUZ",
       "preco": "29,9",
@@ -100,11 +100,11 @@
       "dataUltimaEntrada": "04/05/2024"
     },
     {
-      "codigo": "3315",
-      "descricao": "FAKE ZIRCONIAS COLORS",
-      "preco": "39,9",
+      "codigo": "3020",
+      "descricao": "FLECHA",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/07/2024"
+      "dataUltimaEntrada": "04/05/2024"
     }
   ]
 }
