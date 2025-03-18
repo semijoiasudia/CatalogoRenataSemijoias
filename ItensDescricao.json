@@ -24,14 +24,6 @@
       "categoria": "ANEL",
       "pasta": "Anéis"
     },
-    "884": {
-      "descricao": "CORDÃO BAIANO 2MM",
-      "preco": "54,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/07/2024",
-      "categoria": "PULSEIRA",
-      "pasta": "Pulseiras"
-    },
     "993": {
       "descricao": "REGULAVEL LARGO CORACAO VAZADO",
       "preco": "59,9",
@@ -122,7 +114,7 @@
     },
     "2207": {
       "descricao": "GOTA LONGA VERDE ESMERALDA 51CM",
-      "preco": "89,9",
+      "preco": "49,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "20/12/2023",
       "categoria": "CONJUNTO",
@@ -216,14 +208,6 @@
       "categoria": "BRINCO",
       "pasta": "Brincos"
     },
-    "2767": {
-      "descricao": "ARGOLA TRANCADA M",
-      "preco": "34,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/03/2024",
-      "categoria": "BRINCO",
-      "pasta": "Brincos"
-    },
     "2790": {
       "descricao": "2 EM 1 - ARGOLA PING CORACAO",
       "preco": "49,9",
@@ -250,15 +234,15 @@
     },
     "2843": {
       "descricao": "PING QUADRADO ZIRCONIA CRISTAL 47CM",
-      "preco": "49,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "23/07/2024",
       "categoria": "COLAR",
       "pasta": "Colares"
     },
     "2847": {
-      "descricao": "MINI CORACOES 44CM",
-      "preco": "74,9",
+      "descricao": "MINI CORACOES 39+5CM",
+      "preco": "49,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/04/2024",
       "categoria": "CHOKER",
@@ -282,7 +266,7 @@
     },
     "2950": {
       "descricao": "CORACOES CRISTAL 49CM",
-      "preco": "69,9",
+      "preco": "39,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/04/2024",
       "categoria": "COLAR",
@@ -333,6 +317,14 @@
       "preco": "19,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/05/2024",
+      "categoria": "BRINCO",
+      "pasta": "Brincos"
+    },
+    "3018": {
+      "descricao": "GOTA E PINGENTE FLOR DIAMANTADA",
+      "preco": "19,9",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/05/2024",
       "categoria": "BRINCO",
       "pasta": "Brincos"
     },
@@ -392,14 +384,6 @@
       "categoria": "ANEL",
       "pasta": "Anéis"
     },
-    "3059": {
-      "descricao": "BORBOLETA VAZADA 47CM",
-      "preco": "62,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/05/2024",
-      "categoria": "COLAR",
-      "pasta": "Colares"
-    },
     "3072": {
       "descricao": "REGULAVEL LARGO BORBOLETA VAZADA",
       "preco": "19,9",
@@ -450,7 +434,7 @@
     },
     "3154": {
       "descricao": "TRIANGULO ORGANICO M",
-      "preco": "44,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/06/2024",
       "categoria": "BRINCO",
@@ -594,7 +578,7 @@
     },
     "3225": {
       "descricao": "GOTA CRAVEJADA CRISTAL",
-      "preco": "49,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "16/06/2024",
       "categoria": "BRINCO",
@@ -642,7 +626,7 @@
     },
     "3260": {
       "descricao": "PINGENTES ZIRCONIAS QUADRADAS 46CM",
-      "preco": "64,9",
+      "preco": "39,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/06/2024",
       "categoria": "CHOKER",
@@ -746,7 +730,7 @@
     },
     "3290": {
       "descricao": "LACO VAZADO AUTISMO 41+5CM",
-      "preco": "59,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/07/2024",
       "categoria": "COLAR",
@@ -778,7 +762,7 @@
     },
     "3297": {
       "descricao": "PONTO DE LUZ M 8MM 45+5CM",
-      "preco": "49,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/07/2024",
       "categoria": "COLAR",
@@ -786,7 +770,7 @@
     },
     "3298": {
       "descricao": "CORACAO PIXELS COLORS",
-      "preco": "39,9",
+      "preco": "19,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/07/2024",
       "categoria": "BRINCO",
@@ -818,7 +802,7 @@
     },
     "3307": {
       "descricao": "ARGOLA FORMATO NAVETE CRISTAL",
-      "preco": "59,9",
+      "preco": "29,9",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "16/07/2024",
       "categoria": "BRINCO",
@@ -834,7 +818,7 @@
     },
     "3311": {
       "descricao": "MEIA ARGOLA LISA P 2CM",
-      "preco": "39,9",
+      "preco": "19,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024",
       "categoria": "BRINCO",
@@ -842,7 +826,7 @@
     },
     "3312": {
       "descricao": "MEIA ARGOLA LISA M",
-      "preco": "44,9",
+      "preco": "29,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024",
       "categoria": "BRINCO",
@@ -2032,14 +2016,6 @@
       "categoria": "BRINCO",
       "pasta": "Brincos"
     },
-    "3742": {
-      "descricao": "GOTA TRABALHADA E PONTO DE LUZ",
-      "preco": "36,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "28/11/2024",
-      "categoria": "BRINCO",
-      "pasta": "Brincos"
-    },
     "3744": {
       "descricao": "PINGENTES NAVETE CRISTAL 41+5CM",
       "preco": "69,9",
@@ -2205,6 +2181,14 @@
       "preco": "36,9",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/12/2024",
+      "categoria": "BRINCO",
+      "pasta": "Brincos"
+    },
+    "3848": {
+      "descricao": "TRANQUETA PONTO DE LUZ ROSA",
+      "preco": "39,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/12/2024",
       "categoria": "BRINCO",
       "pasta": "Brincos"
     },
@@ -2400,14 +2384,6 @@
       "categoria": "BRINCO",
       "pasta": "Brincos"
     },
-    "3899": {
-      "descricao": "PATINHA CRAVEJADA CRISTAL",
-      "preco": "36,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "06/01/2025",
-      "categoria": "BRINCO",
-      "pasta": "Brincos"
-    },
     "3901": {
       "descricao": "CORACAO CRAVEJADO COLORS E FLECHA",
       "preco": "32,9",
@@ -2436,14 +2412,6 @@
       "descricao": "BORBOLETA CRAVEJADA COLORS",
       "preco": "39,9",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "08/01/2025",
-      "categoria": "BRINCO",
-      "pasta": "Brincos"
-    },
-    "3905": {
-      "descricao": "QUADRADO CRAVEJADO COLORS P",
-      "preco": "32,9",
-      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/01/2025",
       "categoria": "BRINCO",
       "pasta": "Brincos"
@@ -3056,14 +3024,6 @@
       "categoria": "ANEL",
       "pasta": "Anéis"
     },
-    "4096": {
-      "descricao": "DUO GOTA ALONGADA CRAVEJADA E LISA",
-      "preco": "129,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/02/2025",
-      "categoria": "BRINCO",
-      "pasta": "Brincos"
-    },
     "4097": {
       "descricao": "MEIA ARGOLA RETANGULAR ORGANICA TAM M",
       "preco": "49,9",
@@ -3239,6 +3199,14 @@
       "dataUltimaEntrada": "12/03/2025",
       "categoria": "PULSEIRA",
       "pasta": "Pulseiras"
+    },
+    "4130": {
+      "descricao": "TRANQUETA COM ZIRCONIA OVAL",
+      "preco": "42,9",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/03/2025",
+      "categoria": "BRINCO",
+      "pasta": "Brincos"
     }
   }
 }
