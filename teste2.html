@@ -74,7 +74,7 @@
             margin: 10px auto;
         }
         
-        /* Estilos do carrossel */
+        /* Estilos do carrossel atualizados */
         .carrossel-container {
             width: 100%;
             overflow: hidden;
@@ -82,12 +82,12 @@
             margin: 15px 0 25px;
             border-radius: 8px;
         }
-        
+
         .carrossel-wrapper {
             display: flex;
             transition: transform 0.5s ease;
         }
-        
+
         .carrossel-slide {
             flex: 0 0 100%;
             position: relative;
@@ -97,7 +97,7 @@
             overflow: hidden;
             border-radius: 8px;
         }
-        
+
         .carrossel-slide img {
             width: 130%; /* 30% maior que o tamanho padrão */
             height: 100%;
@@ -105,23 +105,30 @@
             transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
             transition: transform 0.3s ease;
         }
-        
+
         .carrossel-slide:hover img {
             transform: translateX(-11.5%) scale(1.05); /* Efeito de zoom suave */
         }
-        
+
+        /* Reposiciona a faixa do título para ser menos intrusiva */
         .carrossel-slide-title {
             position: absolute;
-            bottom: 20px;
+            bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.5);
             color: white;
-            padding: 10px 0;
+            padding: 5px 0;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
         }
-        
+
+        .carrossel-slide:hover .carrossel-slide-title {
+            opacity: 1;
+        }
+
         .carrossel-controls {
             position: absolute;
             top: 50%;
@@ -130,7 +137,7 @@
             justify-content: space-between;
             transform: translateY(-50%);
         }
-        
+
         .carrossel-prev, .carrossel-next {
             background: rgba(255,255,255,0.7);
             border: none;
@@ -146,11 +153,24 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .carrossel-prev:hover, .carrossel-next:hover {
             background: rgba(255,255,255,0.9);
         }
-        
+
+        .carrossel-category-name {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            background: rgba(212, 175, 55, 0.8);
+            color: white;
+            padding: 4px 12px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 3;
+        }
+
         .carrossel-dots {
             position: absolute;
             bottom: 10px;
@@ -160,7 +180,7 @@
             gap: 8px;
             z-index: 2;
         }
-        
+
         .carrossel-dot {
             width: 10px;
             height: 10px;
@@ -169,13 +189,13 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        
+
         .carrossel-dot.active {
             background: white;
             transform: scale(1.2);
         }
-        
-        /* Responsividade do carrossel */
+
+        /* Responsividade */
         @media (min-width: 768px) {
             .carrossel-container {
                 max-width: 90%;
@@ -850,6 +870,7 @@
                 <button class="carrossel-prev">❮</button>
                 <button class="carrossel-next">❯</button>
             </div>
+            <div class="carrossel-category-name" id="carrossel-category-name"></div>
             <div class="carrossel-dots" id="carrossel-dots"></div>
         </div>
     </div>
@@ -2006,209 +2027,292 @@
                     return;
                 }
                 
-                // Limpar o carrossel existente
-                const wrapper = document.getElementById('carrossel-wrapper');
-                const dotsContainer = document.getElementById('carrossel-dots');
-                
-                if (!wrapper || !dotsContainer) {
-                    console.error("Elementos do carrossel não encontrados");
+                // Localizar o container onde o carrossel será inserido
+                const catalogoContainer = document.querySelector('.catalogo-container');
+                if (!catalogoContainer) {
+                    console.error("Container 'catalogo-container' não encontrado");
                     return;
                 }
                 
-                wrapper.innerHTML = '';
-                dotsContainer.innerHTML = '';
+                // Limpar o HTML atual do carrossel, se existir
+                const carrosselAtual = document.getElementById('categorias-carrossel');
+                if (carrosselAtual) {
+                    carrosselAtual.remove();
+                }
                 
-                // Função para tentar obter a primeira imagem de uma categoria
-                async function getCategoryFirstImage(categoryName) {
+                // Criar a estrutura base do carrossel
+                const carrosselHTML = `
+                    <div id="categorias-carrossel" class="carrossel-container">
+                        <div class="carrossel-wrapper" id="carrossel-wrapper">
+                            <!-- Os slides serão adicionados dinamicamente -->
+                        </div>
+                        <div class="carrossel-controls">
+                            <button class="carrossel-prev">❮</button>
+                            <button class="carrossel-next">❯</button>
+                        </div>
+                        <div class="carrossel-category-name" id="carrossel-category-name"></div>
+                        <div class="carrossel-dots" id="carrossel-dots"></div>
+                    </div>
+                `;
+                
+                // Inserir o HTML do carrossel no container
+                catalogoContainer.insertAdjacentHTML('beforeend', carrosselHTML);
+                
+                // Variáveis para controlar o carrossel
+                let allImages = [];
+                let currentCategoryIndex = 0;
+                let currentImageIndex = 0;
+                let imagesPerCategory = {};
+                
+                // Função para tentar obter múltiplas imagens de uma categoria
+                async function getCategoryImages(categoryName, limit = 5) {
                     // Buscar a categoria nas categorias ativas
                     const categoryFound = categoriasAtivas.find(cat => 
                         cat.name.toLowerCase() === categoryName.toLowerCase());
                         
                     if (!categoryFound) {
-                        return 'imagens/placeholder.jpg'; // Imagem padrão
+                        return [{ src: 'imagens/placeholder.jpg', title: 'Imagem não encontrada' }];
                     }
                     
                     try {
-                        // Tentar carregar produtos da categoria para obter a primeira imagem
+                        // Tentar carregar produtos da categoria para obter imagens
                         const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
                         const response = await fetch(jsonUrl);
                         if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                         
                         const data = await response.json();
-                        if (data.produtos && data.produtos.length > 0) {
-                            const firstProduct = data.produtos[0];
-                            return `${firstProduct.pastaFotos}${firstProduct.imagem}`;
+                        if (!data.produtos || data.produtos.length === 0) {
+                            return [{ src: 'imagens/placeholder.jpg', title: 'Nenhum produto nesta categoria' }];
                         }
+                        
+                        // Pegar até 'limit' produtos mais recentes da categoria
+                        const products = data.produtos.slice(0, limit);
+                        
+                        // Mapear para o formato que precisamos
+                        return products.map(produto => ({
+                            src: `${produto.pastaFotos}${produto.imagem}`,
+                            title: produto.descricao || 'Produto sem descrição',
+                            codigo: produto.codigo
+                        }));
+                        
                     } catch (error) {
-                        console.warn(`Erro ao carregar imagem para categoria ${categoryName}:`, error);
+                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
+                        return [{ src: 'imagens/placeholder.jpg', title: 'Erro ao carregar imagens' }];
                     }
-                    
-                    return 'imagens/placeholder.jpg'; // Imagem padrão em caso de erro
                 }
                 
-                // Criar slides e dots para cada categoria
-                for (let i = 0; i < categorias.length; i++) {
-                    const categoria = categorias[i];
+                // Carregar imagens para todas as categorias
+                for (const categoria of categorias) {
+                    const images = await getCategoryImages(categoria.nome);
+                    allImages.push({
+                        categoryName: categoria.nome,
+                        images: images
+                    });
+                    imagesPerCategory[categoria.nome] = images.length;
+                }
+                
+                // Atualizar o carrossel para a categoria atual
+                function updateCarouselForCategory(categoryIndex) {
+                    if (!allImages[categoryIndex]) return;
                     
-                    // Obter imagem da categoria
-                    const imagemSrc = await getCategoryFirstImage(categoria.nome);
+                    const category = allImages[categoryIndex];
+                    const wrapper = document.getElementById('carrossel-wrapper');
+                    const dotsContainer = document.getElementById('carrossel-dots');
+                    const categoryNameElement = document.getElementById('carrossel-category-name');
                     
-                    // Criar slide
-                    const slide = document.createElement('div');
-                    slide.className = 'carrossel-slide';
-                    slide.dataset.categoria = categoria.nome;
-                    slide.innerHTML = `
-                        <img src="${imagemSrc}" alt="${categoria.nome}" onerror="this.src='imagens/placeholder.jpg'">
-                        <div class="carrossel-slide-title">${categoria.nome}</div>
-                    `;
-                    wrapper.appendChild(slide);
+                    // Limpar elementos existentes
+                    wrapper.innerHTML = '';
+                    dotsContainer.innerHTML = '';
                     
-                    // Criar dot para navegação
-                    const dot = document.createElement('div');
-                    dot.className = 'carrossel-dot';
-                    if (i === 0) dot.classList.add('active');
-                    dotsContainer.appendChild(dot);
+                    // Atualizar nome da categoria
+                    categoryNameElement.textContent = category.categoryName;
+                    
+                    // Adicionar slides para cada imagem da categoria
+                    category.images.forEach((image, index) => {
+                        const slide = document.createElement('div');
+                        slide.className = 'carrossel-slide';
+                        slide.innerHTML = `
+                            <img src="${image.src}" alt="${image.title}" onerror="this.src='imagens/placeholder.jpg'">
+                            <div class="carrossel-slide-title">${image.codigo || ''}</div>
+                        `;
+                        wrapper.appendChild(slide);
+                        
+                        // Adicionar dot para a navegação
+                        const dot = document.createElement('div');
+                        dot.className = 'carrossel-dot';
+                        if (index === 0) dot.classList.add('active');
+                        dot.addEventListener('click', () => {
+                            goToSlide(index);
+                            restartAutoplay();
+                        });
+                        dotsContainer.appendChild(dot);
+                        
+                        // Adicionar click para abrir o modal do produto
+                        slide.addEventListener('click', () => {
+                            if (image.codigo) {
+                                // Encontrar o produto correspondente nos arquivos visíveis
+                                const productFile = currentVisibleFiles.find(file => file.codigo === image.codigo);
+                                if (productFile) {
+                                    const index = currentVisibleFiles.indexOf(productFile);
+                                    showModal(productFile.download_url, image.codigo, index);
+                                } else {
+                                    // Se não encontrado nos arquivos visíveis, tentar navegar para a categoria
+                                    navigateToCategory(category.categoryName);
+                                }
+                            } else {
+                                // Se não tiver código, apenas navegar para a categoria
+                                navigateToCategory(category.categoryName);
+                            }
+                        });
+                    });
+                    
+                    // Resetar para a primeira imagem
+                    currentImageIndex = 0;
+                    goToSlide(0);
+                }
+                
+                // Função para navegar entre categorias
+                function nextCategory() {
+                    currentCategoryIndex = (currentCategoryIndex + 1) % allImages.length;
+                    updateCarouselForCategory(currentCategoryIndex);
+                }
+                
+                function prevCategory() {
+                    currentCategoryIndex = (currentCategoryIndex - 1 + allImages.length) % allImages.length;
+                    updateCarouselForCategory(currentCategoryIndex);
                 }
                 
                 // Configurar comportamento do carrossel
-                setupCarouselBehavior();
+                let autoplayInterval;
+                
+                // Função para ir para um slide específico
+                function goToSlide(index) {
+                    const wrapper = document.getElementById('carrossel-wrapper');
+                    const slides = document.querySelectorAll('.carrossel-slide');
+                    const dots = document.querySelectorAll('.carrossel-dot');
+                    
+                    if (!slides.length) return;
+                    
+                    if (index < 0) index = slides.length - 1;
+                    if (index >= slides.length) index = 0;
+                    
+                    currentImageIndex = index;
+                    
+                    const slideWidth = slides[0].offsetWidth;
+                    wrapper.style.transform = `translateX(-${currentImageIndex * slideWidth}px)`;
+                    
+                    // Atualizar dots ativos
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === currentImageIndex);
+                    });
+                }
+                
+                // Funções de navegação entre imagens
+                function nextSlide() {
+                    const currentCategory = allImages[currentCategoryIndex];
+                    if (!currentCategory) return;
+                    
+                    const totalSlides = currentCategory.images.length;
+                    currentImageIndex = (currentImageIndex + 1) % totalSlides;
+                    goToSlide(currentImageIndex);
+                }
+                
+                function prevSlide() {
+                    const currentCategory = allImages[currentCategoryIndex];
+                    if (!currentCategory) return;
+                    
+                    const totalSlides = currentCategory.images.length;
+                    currentImageIndex = (currentImageIndex - 1 + totalSlides) % totalSlides;
+                    goToSlide(currentImageIndex);
+                }
+                
+                // Configurar botões de navegação
+                const prevBtn = document.querySelector('.carrossel-prev');
+                const nextBtn = document.querySelector('.carrossel-next');
+                
+                prevBtn.addEventListener('click', () => {
+                    prevSlide();
+                    restartAutoplay();
+                });
+                
+                nextBtn.addEventListener('click', () => {
+                    nextSlide();
+                    restartAutoplay();
+                });
+                
+                // Funções para controlar o autoplay
+                function startAutoplay() {
+                    stopAutoplay(); // Evitar duplicação
+                    autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
+                }
+                
+                function stopAutoplay() {
+                    clearInterval(autoplayInterval);
+                }
+                
+                function restartAutoplay() {
+                    stopAutoplay();
+                    startAutoplay();
+                }
+                
+                // Pausar autoplay ao passar o mouse sobre o carrossel
+                const container = document.querySelector('.carrossel-container');
+                container.addEventListener('mouseenter', stopAutoplay);
+                container.addEventListener('mouseleave', startAutoplay);
+                
+                // Configurar navegação por toque para dispositivos móveis
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                container.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    stopAutoplay();
+                }, { passive: true });
+                
+                container.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                    startAutoplay();
+                }, { passive: true });
+                
+                function handleSwipe() {
+                    const swipeThreshold = 50;
+                    if (touchEndX < touchStartX - swipeThreshold) {
+                        nextSlide(); // Deslizar para a esquerda, próximo slide
+                    } else if (touchEndX > touchStartX + swipeThreshold) {
+                        prevSlide(); // Deslizar para a direita, slide anterior
+                    }
+                }
+                
+                // Função para navegar para uma categoria
+                function navigateToCategory(categoryName) {
+                    // Encontrar a tab correspondente à categoria
+                    const tabs = document.querySelectorAll('.tab');
+                    for (let tab of tabs) {
+                        if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                            // Simular clique na tab para navegar para a categoria
+                            tab.click();
+                            break;
+                        }
+                    }
+                }
+                
+                // Ajustar tamanho dos slides quando a janela é redimensionada
+                function updateSlideWidth() {
+                    goToSlide(currentImageIndex);
+                }
+                
+                window.addEventListener('resize', updateSlideWidth);
+                
+                // Inicializar com a primeira categoria
+                if (allImages.length > 0) {
+                    updateCarouselForCategory(0);
+                    startAutoplay();
+                }
                 
             } catch (error) {
                 console.error("Erro ao inicializar carrossel:", error);
             }
-        }
-
-        // Função para configurar o comportamento do carrossel
-        function setupCarouselBehavior() {
-            const wrapper = document.getElementById('carrossel-wrapper');
-            const slides = document.querySelectorAll('.carrossel-slide');
-            const dots = document.querySelectorAll('.carrossel-dot');
-            const prevBtn = document.querySelector('.carrossel-prev');
-            const nextBtn = document.querySelector('.carrossel-next');
-            
-            if (!wrapper || !slides.length) return;
-            
-            let currentIndex = 0;
-            let autoplayInterval;
-            
-            // Função para ir para um slide específico
-            function goToSlide(index) {
-                if (index < 0) index = slides.length - 1;
-                if (index >= slides.length) index = 0;
-                
-                currentIndex = index;
-                const slideWidth = slides[0].offsetWidth;
-                wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-                
-                // Atualizar dots ativos
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === currentIndex);
-                });
-            }
-            
-            // Configurar dots para navegação
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    goToSlide(index);
-                    restartAutoplay();
-                });
-            });
-            
-            // Funções de navegação
-            function nextSlide() {
-                goToSlide(currentIndex + 1);
-            }
-            
-            function prevSlide() {
-                goToSlide(currentIndex - 1);
-            }
-            
-            // Configurar botões de navegação
-            prevBtn.addEventListener('click', () => {
-                prevSlide();
-                restartAutoplay();
-            });
-            
-            nextBtn.addEventListener('click', () => {
-                nextSlide();
-                restartAutoplay();
-            });
-            
-            // Funções para controlar o autoplay
-            function startAutoplay() {
-                stopAutoplay(); // Evitar duplicação
-                autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
-            }
-            
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-            
-            function restartAutoplay() {
-                stopAutoplay();
-                startAutoplay();
-            }
-            
-            // Pausar autoplay ao passar o mouse sobre o carrossel
-            const container = document.querySelector('.carrossel-container');
-            container.addEventListener('mouseenter', stopAutoplay);
-            container.addEventListener('mouseleave', startAutoplay);
-            
-            // Configurar navegação por toque para dispositivos móveis
-            let touchStartX = 0;
-            let touchEndX = 0;
-            
-            container.addEventListener('touchstart', (e) => {
-                touchStartX = e.changedTouches[0].screenX;
-                stopAutoplay();
-            }, { passive: true });
-            
-            container.addEventListener('touchend', (e) => {
-                touchEndX = e.changedTouches[0].screenX;
-                handleSwipeCarousel();
-                startAutoplay();
-            }, { passive: true });
-            
-            function handleSwipeCarousel() {
-                const swipeThreshold = 50;
-                if (touchEndX < touchStartX - swipeThreshold) {
-                    nextSlide(); // Deslizar para a esquerda, próximo slide
-                } else if (touchEndX > touchStartX + swipeThreshold) {
-                    prevSlide(); // Deslizar para a direita, slide anterior
-                }
-            }
-            
-            // Adicionar evento de clique para navegar para a categoria
-            slides.forEach(slide => {
-                slide.addEventListener('click', () => {
-                    const categoria = slide.dataset.categoria;
-                    navigateToCategory(categoria);
-                });
-            });
-            
-            // Função para navegar para uma categoria
-            function navigateToCategory(categoryName) {
-                // Encontrar a tab correspondente à categoria
-                const tabs = document.querySelectorAll('.tab');
-                for (let tab of tabs) {
-                    if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                        // Simular clique na tab para navegar para a categoria
-                        tab.click();
-                        break;
-                    }
-                }
-            }
-            
-            // Ajustar tamanho dos slides quando a janela é redimensionada
-            function updateSlideWidth() {
-                goToSlide(currentIndex);
-            }
-            
-            window.addEventListener('resize', updateSlideWidth);
-            
-            // Inicializar
-            goToSlide(0);
-            startAutoplay();
         }
 
         window.onload = async () => {
