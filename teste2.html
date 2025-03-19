@@ -96,7 +96,8 @@
             height: 250px; /* Altura fixa para todos os slides */
             overflow: hidden;
             border-radius: 8px;
-            pointer-events: none;
+            /*pointer-events: none;*/
+            z-index: 1; /* Garante que o slide esteja acima */
         }
 
         .carrossel-slide img {
@@ -105,6 +106,7 @@
             object-fit: cover;
             transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
             transition: transform 0.3s ease;
+            cursor: pointer; /* Garante que a imagem também tenha o cursor pointer */
             pointer-events: auto;
         }
 
@@ -119,6 +121,12 @@
             display: flex;
             justify-content: space-between;
             transform: translateY(-50%);
+            z-index: 5; /* Garante que os controles estejam acima dos slides */
+        }
+        @media (max-width: 768px) {
+            .carrossel-slide {
+                touch-action: manipulation; /* Melhora resposta ao toque */
+            }
         }
 
         .carrossel-prev, .carrossel-next {
@@ -879,7 +887,7 @@
             <option value="lowestPrice">Menor Preço</option>
         </select>
     </div>
-    <p class="catalogo-subtitulo">Selecione seus itens favoritos...</p>
+    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
@@ -2117,20 +2125,28 @@
                     if (index === 0) dot.classList.add('active');
                     dot.addEventListener('click', (e) => {
                         e.preventDefault();
+                        e.stopPropagation(); // Impede a propagação para não abrir o modal
                         goToSlide(index);
                         restartAutoplay();
                     });
                     dotsContainer.appendChild(dot);
                     
-                    // Adicionar click para abrir o modal ou navegar para a categoria
-                    slideElement.addEventListener('click', (e) => {
-                        if (e.target.tagName === 'IMG') { // Garantir que o clique foi diretamente na imagem
-                            e.stopPropagation(); // Evitar interferência de outros eventos
-                            if (slide.imageUrl && slide.codigo) { // Verificar se os dados estão prontos
-                                showModalFromCarousel(slide);
-                            }
-                        }
-                    });
+                    // Melhorar tratamento de evento de clique no slide
+                    slideElement.onclick = function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showModalFromCarousel(slide);
+                    };
+                    
+                    // Garantir que a imagem também capture o clique corretamente
+                    const imgElement = slideElement.querySelector('img');
+                    if (imgElement) {
+                        imgElement.onclick = function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            showModalFromCarousel(slide);
+                        };
+                    }
                 });
                 
                 // Configurar comportamento do carrossel
@@ -2190,6 +2206,19 @@
                     prevSlide();
                     restartAutoplay();
                 });
+                prevBtn.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    prevSlide();
+                    restartAutoplay();
+                };
+                nextBtn.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nextSlide();
+                    restartAutoplay();
+                };
+
                 
                 nextBtn.addEventListener('click', (e) => {
                     e.preventDefault();
