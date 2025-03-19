@@ -96,6 +96,7 @@
             height: 250px; /* Altura fixa para todos os slides */
             overflow: hidden;
             border-radius: 8px;
+            pointer-events: none;
         }
 
         .carrossel-slide img {
@@ -104,6 +105,7 @@
             object-fit: cover;
             transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
             transition: transform 0.3s ease;
+            pointer-events: auto;
         }
 
         .carrossel-slide:hover img {
@@ -2124,8 +2126,12 @@
                     
                     // Adicionar click para abrir o modal ou navegar para a categoria
                     slideElement.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        showModalFromCarousel(slide);
+                        if (e.target.tagName === 'IMG') { // Garantir que o clique foi diretamente na imagem
+                            e.stopPropagation(); // Evitar interferência de outros eventos
+                            if (slide.imageUrl && slide.codigo) { // Verificar se os dados estão prontos
+                                showModalFromCarousel(slide);
+                            }
+                        }
                     });
                 });
                 
