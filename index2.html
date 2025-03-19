@@ -906,19 +906,16 @@
         function buildImagePath(pastaFotos, imageName) {
             if (!pastaFotos || !imageName) return 'imagens/placeholder.jpg';
             
-            // Processar o caminho base
-            const processedPath = processPath(pastaFotos);
-            // Processar o nome da imagem
-            const processedImage = encodeURIComponent(imageName);
+            // Normalizar o caminho garantindo uma única barra no final
+            const normalizedPath = pastaFotos.trim().replace(/\/?$/, '/');
             
-            // Construir caminho completo
-            let fullPath = '';
-            if (processedPath) {
-                fullPath = processedPath + (processedPath.endsWith('/') ? '' : '/') + processedImage;
-            } else {
-                fullPath = processedImage;
-            }
-            
+            // Codificar todo o caminho preservando as barras
+            const fullPath = encodeURI(`${normalizedPath}${imageName}`)
+                .replace(/%2F/g, '/')  // Manter barras normais
+                .replace(/'/g, '%27')   // Codificar apóstrofos
+                .replace(/\(/g, '%28')  // Codificar parênteses
+                .replace(/\)/g, '%29');
+        
             console.log(`Caminho da imagem construído: ${fullPath}`);
             return fullPath;
         }
