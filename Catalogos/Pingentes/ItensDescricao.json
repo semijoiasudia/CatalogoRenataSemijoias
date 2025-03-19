@@ -3,22 +3,31 @@
   "produtos": [
     {
       "codigo": "1497",
-      "descricao": "CHANEL CRAV. CRISTAL",
-      "preco": "29,9",
+      "descricao": "PINGENTE CHANEL CRAV. CRISTAL",
+      "imagem": "1497.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "07/08/2023"
     },
     {
-      "codigo": "3271",
-      "descricao": "FLOR ORGANICA",
-      "preco": "36,9",
+      "codigo": "3270",
+      "descricao": "PINGENTE CORACAO CRISTAL G",
+      "imagem": "3270.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "01/07/2024"
     },
     {
-      "codigo": "3270",
-      "descricao": "CORACAO CRISTAL G",
-      "preco": "34,9",
+      "codigo": "3271",
+      "descricao": "PINGENTE FLOR ORGANICA",
+      "imagem": "3271.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "01/07/2024"
     }

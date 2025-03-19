@@ -2,158 +2,224 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "3979",
-      "descricao": "CONJUNTO GOTAS VERDE",
-      "preco": "139,9",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
-    },
-    {
-      "codigo": "3948",
-      "descricao": "BRACELETE INSPIRACAO CRAVEJADO",
-      "preco": "72,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "24/01/2025"
-    },
-    {
-      "codigo": "4073",
-      "descricao": "BRINCO DUO TREVO PRETO",
-      "preco": "29,9",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "21/02/2025"
-    },
-    {
       "codigo": "4072",
-      "descricao": "BRINCO MODELO 5 GRANDE CRAVEJADO COLORS",
-      "preco": "39,9",
+      "descricao": "BIJUTERIA BRINCO MODELO 5 GRANDE CRAVEJADO COLORS",
+      "imagem": "4072.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "21/02/2025"
     },
     {
       "codigo": "4071",
-      "descricao": "BRINCO MODELO 4 GRANDE CRAVEJADO COLORS",
-      "preco": "39,9",
+      "descricao": "BIJUTERIA BRINCO MODELO 4 GRANDE CRAVEJADO COLORS",
+      "imagem": "4071.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "21/02/2025"
     },
     {
-      "codigo": "4122",
-      "descricao": "COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
-      "preco": "29,9",
+      "codigo": "4117",
+      "descricao": "BIJUTERIA COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
+      "imagem": "4117.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "NIQUEL FREE",
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4123",
-      "descricao": "COLAR CRISTAIS PRETO 2,5MM 39+7CM",
-      "preco": "29,9",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
+      "codigo": "3982",
+      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA BOREAL/PRETO",
+      "imagem": "3982.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "8,00",
+      "precoConsignado": "12,00",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
     },
     {
-      "codigo": "4118",
-      "descricao": "COLAR CRISTAIS VERDE 4MM 38+5CM",
-      "preco": "29,9",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
+      "codigo": "4073",
+      "descricao": "BIJUTERIA BRINCO DUO TREVO PRETO",
+      "imagem": "4073.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/02/2025"
     },
     {
       "codigo": "4119",
-      "descricao": "COLAR CRISTAIS TRANPARENTE 4MM 38+5CM",
-      "preco": "29,9",
+      "descricao": "BIJUTERIA COLAR CRISTAIS TRANPARENTE 4MM 38+5CM",
+      "imagem": "4119.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "NIQUEL FREE",
       "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4120",
-      "descricao": "COLAR CRISTAIS CINZA 4MM 38+5CM",
-      "preco": "29,9",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4117",
-      "descricao": "COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
-      "preco": "29,9",
+      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
+      "imagem": "4120.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "NIQUEL FREE",
       "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "3981",
-      "descricao": "PULSEIRA STRASS ELASTICA BOREAL/VERDE",
-      "preco": "8",
+      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA BOREAL/VERDE",
+      "imagem": "3981.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "8,00",
+      "precoConsignado": "12,00",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "11/02/2025"
     },
     {
-      "codigo": "3982",
-      "descricao": "PULSEIRA STRASS ELASTICA BOREAL/PRETO",
-      "preco": "8",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
+      "codigo": "3948",
+      "descricao": "BIJUTERIA BRACELETE INSPIRACAO CRAVEJADO",
+      "imagem": "3948.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "24/01/2025"
     },
     {
       "codigo": "3983",
-      "descricao": "PULSEIRA STRASS ELASTICA CRISTAL",
-      "preco": "8",
+      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA CRISTAL",
+      "imagem": "3983.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "8,00",
+      "precoConsignado": "12,00",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "11/02/2025"
     },
     {
-      "codigo": "4121",
-      "descricao": "COLAR CRISTAIS DEGRADE PINK/VERDE 2,5MM 39+7CM",
-      "preco": "29,9",
+      "codigo": "4118",
+      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
+      "imagem": "4118.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "NIQUEL FREE",
       "dataUltimaEntrada": "09/03/2025"
     },
     {
+      "codigo": "4024",
+      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
+      "imagem": "4024.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
       "codigo": "4070",
-      "descricao": "BRINCO MODELO 3 GRANDE CRAVEJADO COLORS",
-      "preco": "39,9",
+      "descricao": "BIJUTERIA BRINCO MODELO 3 GRANDE CRAVEJADO COLORS",
+      "imagem": "4070.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "21/02/2025"
     },
     {
-      "codigo": "4029",
-      "descricao": "BRACELETE ABERTO FIO 2 BANHOS",
-      "preco": "40",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/02/2025"
+      "codigo": "4123",
+      "descricao": "BIJUTERIA COLAR CRISTAIS PRETO 2,5MM 39+7CM",
+      "imagem": "4123.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4122",
+      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
+      "imagem": "4122.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "405",
-      "descricao": "CONJUNTO DIEZ VERDE MENTA",
-      "preco": "139,9",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/10/2022"
     },
     {
-      "codigo": "4024",
-      "descricao": "BRINCO FESTA FLOR E GOTA CRISTAL",
-      "preco": "69,9",
-      "banho": "Banhado a Prata",
+      "codigo": "4121",
+      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE PINK/VERDE 2,5MM 39+7CM",
+      "imagem": "4121.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4020",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE COLORS 5MM 39CM",
+      "imagem": "4020.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4022",
-      "descricao": "CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
-      "preco": "89,9",
-      "banho": "RÓDIO",
+      "codigo": "4029",
+      "descricao": "BIJUTERIA BRACELETE ABERTO FIO 2 BANHOS",
+      "imagem": "4029.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/02/2025"
     },
     {
       "codigo": "4021",
-      "descricao": "CHOKER RIVIERA BAGUETE CRISTAL 5MM 39CM",
-      "preco": "89,9",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 5MM 39CM",
+      "imagem": "4021.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4020",
-      "descricao": "CHOKER RIVIERA BAGUETE COLORS 5MM 39CM",
-      "preco": "89,9",
-      "banho": "Banhado a Ouro",
+      "codigo": "4022",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
+      "imagem": "4022.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "RÓDIO",
       "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "3979",
+      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
+      "imagem": "3979.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "189,98",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
     }
   ]
 }
