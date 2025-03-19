@@ -2,14 +2,14 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4011",
-      "descricao": "INOX PULSEIRA CORACAO CRAVEJADO CRISTAL",
-      "imagem": "4011.jpg",
+      "codigo": "4065",
+      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
+      "imagem": "4065.jpg",
       "pastaFotos": "Catalogos/Aço Inox/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "14/02/2025"
+      "dataUltimaEntrada": "20/02/2025"
     },
     {
       "codigo": "4056",
@@ -22,14 +22,14 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
-      "codigo": "4065",
-      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
-      "imagem": "4065.jpg",
+      "codigo": "4010",
+      "descricao": "INOX PULSEIRA CORACAO VAZADO CRAVEJADO ",
+      "imagem": "4010.jpg",
       "pastaFotos": "Catalogos/Aço Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "20/02/2025"
+      "dataUltimaEntrada": "14/02/2025"
     },
     {
       "codigo": "4049",
@@ -90,16 +90,6 @@
       "precoConsignado": "44,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4010",
-      "descricao": "INOX PULSEIRA CORACAO VAZADO CRAVEJADO ",
-      "imagem": "4010.jpg",
-      "pastaFotos": "Catalogos/Aço Inox/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "14/02/2025"
     }
   ]
 }
