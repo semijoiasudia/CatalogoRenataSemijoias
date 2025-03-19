@@ -1,0 +1,25 @@
+{
+  "categoria": "DESTAQUES",
+  "produtos": [
+    {
+      "codigo": "4032",
+      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA ROXO P",
+      "imagem": "4032.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4031",
+      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA COLORS P",
+      "imagem": "4031.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/02/2025"
+    }
+  ]
+}
