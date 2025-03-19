@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>
+    </script> -->
     
     <style>
         body {
@@ -883,44 +883,62 @@
         let touchStartX = 0;
         let touchStartTime = 0;
 
-        // Função para processar caminhos com caracteres especiais
-        function processPath(path) {
-            if (!path) return '';
-            
-            // Remover barras do início e fim se existirem
-            let cleanPath = path.trim();
-            while (cleanPath.endsWith('/')) {
-                cleanPath = cleanPath.slice(0, -1);
-            }
-            while (cleanPath.startsWith('/')) {
-                cleanPath = cleanPath.substring(1);
-            }
-            
-            // Dividir o caminho para processar cada segmento separadamente
-            const segments = cleanPath.split('/');
-            const processedSegments = segments.map(segment => encodeURIComponent(segment));
-            return processedSegments.join('/');
+        // Mapeamento de caracteres especiais comuns em português
+        const accentMap = {
+            'á': 'a', 'à': 'a', 'â': 'a', 'ã': 'a', 'ä': 'a',
+            'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
+            'í': 'i', 'ì': 'i', 'î': 'i', 'ï': 'i',
+            'ó': 'o', 'ò': 'o', 'ô': 'o', 'õ': 'o', 'ö': 'o',
+            'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u',
+            'ç': 'c',
+            'ñ': 'n'
+        };
+
+        // Função para remover acentos
+        function removeAccents(str) {
+            if (!str) return '';
+            return str.replace(/[áàâãäéèêëíìîïóòôõöúùûüçñ]/gi, match => accentMap[match.toLowerCase()] || match);
         }
-        
-        // Função para construir o caminho completo da imagem
-        function buildImagePath(pastaFotos, imageName) {
-            if (!pastaFotos || !imageName) return 'imagens/placeholder.jpg';
+
+        // Função para construir um caminho seguro para URL
+        function buildSafePath(path, fileName) {
+            if (!path) return fileName || '';
             
-            // Processar o caminho base
-            const processedPath = processPath(pastaFotos);
-            // Processar o nome da imagem
-            const processedImage = encodeURIComponent(imageName);
+            // Remover barras extras no início e fim
+            let basePath = path.trim();
+            while (basePath.endsWith('/')) basePath = basePath.slice(0, -1);
             
-            // Construir caminho completo
-            let fullPath = '';
-            if (processedPath) {
-                fullPath = processedPath + (processedPath.endsWith('/') ? '' : '/') + processedImage;
-            } else {
-                fullPath = processedImage;
-            }
+            // Solução 1: Usar o path sem acentos (para categorias com acentos)
+            const noAccentsPath = removeAccents(basePath);
             
-            console.log(`Caminho da imagem construído: ${fullPath}`);
-            return fullPath;
+            // Solução 2: Usar o path original (para compatibilidade com sistemas que aceitam acentos)
+            const originalPath = basePath;
+            
+            // Preparar o nome do arquivo
+            const safeFileName = fileName || '';
+            
+            // Construir as possíveis combinações de caminhos (com ordem de prioridade)
+            const paths = [
+                // Caminhos com barra no final
+                `${originalPath}/${safeFileName}`,
+                `${noAccentsPath}/${safeFileName}`,
+                
+                // Versões secundárias para casos especiais
+                `${originalPath.replace('%EF%BF%BD', 'e')}/${safeFileName}`,
+                basePath.includes('Anйis') ? `Catalogos/Anéis/${safeFileName}` : null,
+                basePath.includes('Anйis') ? `Catalogos/Aneis/${safeFileName}` : null,
+                basePath.includes('Relйgios') ? `Catalogos/Relógios/${safeFileName}` : null,
+                basePath.includes('Relйgios') ? `Catalogos/Relogios/${safeFileName}` : null,
+                basePath.includes('A%C3%A7o') ? `Catalogos/Aço Inox/${safeFileName}` : null,
+                basePath.includes('A%C3%A7o') ? `Catalogos/Aco Inox/${safeFileName}` : null,
+                basePath.includes('Acessйrios') ? `Catalogos/Acessórios/${safeFileName}` : null,
+                basePath.includes('Acessйrios') ? `Catalogos/Acessorios/${safeFileName}` : null
+            ].filter(Boolean); // Remover entradas nulas
+            
+            console.log(`Possíveis caminhos para ${path}/${fileName}:`, paths);
+            
+            // Retornar o caminho original como principal para debug
+            return paths[0];
         }
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
@@ -1354,13 +1372,24 @@
                 
                 // Converter produtos para o formato esperado pelas funções existentes
                 allFiles = produtos.map(produto => {
-                    // Usar a função buildImagePath para construir o caminho correto da imagem
-                    const imagePath = buildImagePath(produto.pastaFotos, produto.imagem);
+                    // Construir caminho da imagem de forma segura
+                    const imagePath = buildSafePath(produto.pastaFotos, produto.imagem);
+                    console.log(`Caminho da imagem: ${imagePath}`);
+                    
+                    // Criamos um objeto de imagem temporário para pré-verificação
+                    const img = new Image();
+                    
+                    // Registrar tentativas de caminhos para debug
+                    const pathAttempts = [];
+                    
                     return {
                         name: produto.imagem,
                         path: imagePath,
                         download_url: imagePath,
-                        codigo: produto.codigo
+                        pathAttempts: pathAttempts,
+                        codigo: produto.codigo,
+                        originalPath: produto.pastaFotos,
+                        fileName: produto.imagem
                     };
                 });
                 
@@ -1491,27 +1520,69 @@
                 // Adicionar tratamento de erro antes de definir o src
                 img.onerror = () => {
                     console.error(`Erro ao carregar imagem: ${file.download_url}`);
-                    img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
                     
-                    // Tentar caminho alternativo (se o problema for caso de extensão)
-                    setTimeout(() => {
-                        // Tentar versão maiúscula da extensão
-                        const altPathUpperExt = file.download_url.replace(/\.(jpg|png)$/i, match => match.toUpperCase());
-                        console.log(`Tentando caminho alternativo (maiúsculo): ${altPathUpperExt}`);
+                    // Tentar caminhos alternativos
+                    const basePath = file.originalPath || '';
+                    const fileName = file.fileName || file.name;
+                    
+                    // Gerar variações de caminhos para tentar
+                    const alternativePaths = [
+                        // Versão sem acentos
+                        `${removeAccents(basePath)}/${fileName}`,
                         
-                        const altImg = new Image();
-                        altImg.onload = () => {
-                            img.src = altPathUpperExt; // Se a alternativa funcionar, atualizar a imagem
-                            console.log(`Imagem alternativa carregada: ${altPathUpperExt}`);
-                        };
-                        altImg.src = altPathUpperExt;
-                    }, 500);
+                        // Versões com correções específicas
+                        basePath.includes('Anйis') ? `Catalogos/Anéis/${fileName}` : null,
+                        basePath.includes('Anйis') ? `Catalogos/Aneis/${fileName}` : null,
+                        basePath.includes('Relйgios') ? `Catalogos/Relógios/${fileName}` : null,
+                        basePath.includes('Relйgios') ? `Catalogos/Relogios/${fileName}` : null,
+                        basePath.includes('A%C3%A7o') ? `Catalogos/Aço Inox/${fileName}` : null,
+                        basePath.includes('A%C3%A7o') ? `Catalogos/Aco Inox/${fileName}` : null,
+                        basePath.includes('Acessйrios') ? `Catalogos/Acessórios/${fileName}` : null,
+                        basePath.includes('Acessйrios') ? `Catalogos/Acessorios/${fileName}` : null,
+                        
+                        // Fallback para caminho alternativo na raiz
+                        `Catalogos/${fileName}`,
+                        `imagens/${fileName}`,
+                        
+                        // Última tentativa: placeholder
+                        'imagens/placeholder.jpg'
+                    ].filter(Boolean);
+                    
+                    // Tentar cada caminho alternativo
+                    tryNextPath(alternativePaths, 0, img);
                 };
                 
                 img.onload = () => console.log(`Imagem carregada com sucesso: ${file.download_url}`);
                 img.alt = descricao || 'Imagem do produto';
                 img.src = file.download_url; // Definir src depois do tratamento de erro
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                
+                // Função para tentar vários caminhos até encontrar um que funcione
+                function tryNextPath(paths, index, imgElement) {
+                    if (index >= paths.length) {
+                        // Se esgotamos todas as tentativas, usar o placeholder
+                        imgElement.src = 'imagens/placeholder.jpg';
+                        return;
+                    }
+                    
+                    const path = paths[index];
+                    console.log(`Tentando caminho alternativo (${index+1}/${paths.length}): ${path}`);
+                    
+                    const tempImg = new Image();
+                    tempImg.onload = () => {
+                        // Caminho funcionou!
+                        imgElement.src = path;
+                        console.log(`Caminho alternativo funcionou: ${path}`);
+                        
+                        // Atualizar o download_url para uso no modal
+                        file.workingPath = path;
+                    };
+                    tempImg.onerror = () => {
+                        // Tentar o próximo caminho
+                        setTimeout(() => tryNextPath(paths, index + 1, imgElement), 50);
+                    };
+                    tempImg.src = path;
+                }
 
                 const logo = document.createElement('img');
                 logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
