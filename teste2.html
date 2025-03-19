@@ -2,8 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
+    
+    <!-- Google tag (gtag.js)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZJK53CRZJF');
+    </script> -->
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +22,171 @@
             padding: 0;
             overflow-x: hidden;
         }
+        
+        /* Novo container da logo */
+        .logo-container {
+            padding: 15px 0;
+            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .logo-container img {
+            max-width: 140px;
+            height: auto;
+        }
+        
+        /* Novo container de título */
+        .catalogo-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto 20px;
+            padding: 5px 5px 8px;
+            position: relative;
+            background-color: #fcfaf5;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .catalogo-titulo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 6px;
+            text-align: center;
+            position: relative;
+        }
+        .catalogo-subtitulo {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .catalogo-container:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            margin: 10px auto;
+        }
+        
+        /* Estilos do carrossel */
+        .carrossel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 15px 0 25px;
+            border-radius: 8px;
+        }
+        
+        .carrossel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carrossel-slide {
+            flex: 0 0 100%;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            height: 250px; /* Altura fixa para todos os slides */
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        
+        .carrossel-slide img {
+            width: 130%; /* 30% maior que o tamanho padrão */
+            height: 100%;
+            object-fit: cover;
+            transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
+            transition: transform 0.3s ease;
+        }
+        
+        .carrossel-slide:hover img {
+            transform: translateX(-11.5%) scale(1.05); /* Efeito de zoom suave */
+        }
+        
+        .carrossel-slide-title {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .carrossel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        
+        .carrossel-prev, .carrossel-next {
+            background: rgba(255,255,255,0.7);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 0 10px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carrossel-prev:hover, .carrossel-next:hover {
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .carrossel-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            z-index: 2;
+        }
+        
+        .carrossel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .carrossel-dot.active {
+            background: white;
+            transform: scale(1.2);
+        }
+        
+        /* Responsividade do carrossel */
+        @media (min-width: 768px) {
+            .carrossel-container {
+                max-width: 90%;
+                margin: 15px auto 25px;
+            }
+            
+            .carrossel-slide {
+                height: 300px; /* Altura maior para telas maiores */
+            }
+        }
+        
         h1 {
             margin: 20px 0;
             font-size: 24px;
@@ -121,18 +296,20 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            max-width: 800px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            max-width: 900px;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
         }
         .gallery .item {
             text-align: center;
             position: relative;
             width: 100%;
-            max-width: 150px;
+            max-width: 180px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
         }
         .gallery .img-container {
             position: relative;
@@ -163,6 +340,11 @@
             pointer-events: none;
             border-radius: 1px; /* Ajuste leve para não cortar os cantos */
         }
+        .gallery .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
         .gallery .description {
             margin-top: 10px;
             font-size: 14px;
@@ -188,6 +370,30 @@
             border-radius: 3px;
             font-size: 12px;
             font-weight: bold;
+        }
+        .add-to-cart-gallery {
+            width: 100%;
+            margin-top: 15px;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        .add-to-cart-gallery:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .add-to-cart-gallery img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
         }
         .modal {
             display: none;
@@ -281,38 +487,33 @@
             font-weight: bold;
             margin-top: 5px;
         }
-        .save-btn, .request-btn, .add-to-cart-btn {
-            margin: 10px 0;
-            color: white;
-            padding: 6px 12px;
-            border: none;
-            border-radius: 25px;
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        .request-btn, .add-to-cart-btn {
+            width: 100%;
+            margin: 0;
+            color: #333;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background-color: #f5f5f5;
             transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
         }
-        .save-btn {
-            background-color: #007bff;
-        }
-        .request-btn {
-            background-color: #28a745;
-        }
-        .add-to-cart-btn {
-            background-color: #d4af37;
-        }
-        .save-btn:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-        .request-btn:hover {
-            background-color: #218838;
-            transform: scale(1.05);
-        }
-        .add-to-cart-btn:hover {
-            background-color: #b8860b;
-            transform: scale(1.05);
+        .request-btn:hover, .add-to-cart-btn:hover {
+            background-color: #e8e8e8;
         }
         .rodape {
             margin-top: 20px;
@@ -382,11 +583,12 @@
             left: 20px;
             z-index: 900;
             display: flex;
+            flex-direction: column; /* Alterado para coluna para empilhar os elementos */
             align-items: center;
-            justify-content: center;
         }
         .cart-icon {
-            background: linear-gradient(135deg, #e6c977, #d4af37); /* Mesma cor dos botões de categoria */
+            position: relative; /* Para manter o contador posicionado corretamente */
+            background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             width: 50px;
             height: 50px;
@@ -398,6 +600,12 @@
             font-size: 24px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             transition: transform 0.3s;
+        }
+        .cart-label {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
         }
         .cart-icon:hover {
             transform: scale(1.1);
@@ -416,6 +624,8 @@
             justify-content: center;
             font-size: 14px;
             font-weight: bold;
+            border: 3px solid white; /* Adiciona o círculo branco */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
         }
         .cart-modal {
             display: none;
@@ -618,59 +828,31 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-        .add-to-cart-gallery {
-            margin: 10px auto 0; /* Centraliza o botão (adicionando auto nas margens laterais) */
-            background-color: transparent; /* Sem fundo */
-            color: #333; /* Cor do texto escura */
-            border: 1px solid #000; /* Borda fina preta */
-            border-radius: 4px;
-            padding: 5px 8px;
-            font-size: 12px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-            max-width: fit-content; /* Limita a largura ao conteúdo */
-        }
-        .add-to-cart-gallery:hover {
-            background-color: rgba(0,0,0,0.05); /* Fundo levemente cinza ao passar o mouse */
-        }
-        .add-to-cart-gallery img {
-            width: 16px;
-            height: 16px;
-            vertical-align: middle;
-        }
-        .payment-info {
-            display: block;
-            text-align: right;
-            margin-top: 4px;
-        }
-        
-        /* Estilo para o texto "à vista" */
-        .payment-info .a-vista {
-            display: block;
-            font-size: 14px;
-            font-weight: bold;
-            color: #28a745;
-        }
-        
-        /* Estilo para o texto sobre parcelamento */
-        .payment-info .parcelamento {
-            display: block;
-            font-size: 12px;
-            font-weight: normal;
-            font-style: italic;
-            color: #666;
-            margin-top: 1px;
-        }
     </style>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
-    <img src="imagens/bannertopo.jpg" alt="Imagem do topo" style="width: 100%; height: auto;">
-    <img src="imagens/banner2.jpg" alt="Segundo banner" style="width: 100%; height: auto;">
+    <!-- Novo container da logo -->
+    <div class="logo-container">
+        <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios">
+    </div>
+    
+    <!-- Novo container de título estilizado -->
+    <div class="catalogo-container">
+        <h2 class="catalogo-titulo">Seja bem vinda!</h2>
+        <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
+        
+        <!-- Carrossel de categorias - HTML será gerado dinamicamente pelo JavaScript -->
+        <div id="categorias-carrossel" class="carrossel-container">
+            <div class="carrossel-wrapper" id="carrossel-wrapper">
+                <!-- Os slides serão adicionados dinamicamente -->
+            </div>
+            <div class="carrossel-controls">
+                <button class="carrossel-prev">❮</button>
+                <button class="carrossel-next">❯</button>
+            </div>
+            <div class="carrossel-dots" id="carrossel-dots"></div>
+        </div>
+    </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -678,6 +860,7 @@
             <i>🛍️</i>
         </div>
         <div class="cart-counter" id="cartCounter">0</div>
+        <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
     
     <div class="tabs-container">
@@ -708,16 +891,12 @@
                 <img id="modalImg">
             </div>
             <div class="modal-info" id="modalInfo"></div>
-            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
-                <button class="save-btn" onclick="saveImage()">
-                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px;">
-                    Salvar Imagem
-                </button>
+            <div class="modal-buttons">
                 <button class="add-to-cart-btn" onclick="addToCartFromModal()">
                     <i>🛍️</i> Adicionar à Sacola
                 </button>
                 <button class="request-btn" onclick="requestItem()">
-                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
                     Solicitar este Item
                 </button>
             </div>
@@ -765,21 +944,22 @@
                 </div>
                 <div class="cart-total">
                     <span>Total:</span>
-                        <div>
-                            <span id="cartTotal">R$ 0,00</span>
-                            <div class="payment-info">
-                                <span class="a-vista">à vista</span>
-                                <span class="parcelamento">*consultar valores para parcelar*</span>
-                            </div>
-                        </div>
+                    <div style="text-align: right;">
+                        <span id="cartTotal">R$ 0,00</span>
+                        <div style="font-size: 14px; font-weight: normal; color: #28a745;">à vista</div>
+                    </div>
                 </div>
+                <div style="font-size: 12px; font-style: italic; color: #666; text-align: right; margin-top: 8px;">
+                    *consultar valores para parcelar*
+                </div>
+                
             </div>
             
             <div class="cart-actions">
                 <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
                 <button class="cart-checkout" onclick="checkoutCart()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
-                    Finalizar Pedido
+                    Enviar Pedido
                 </button>
             </div>
         </div>
@@ -792,11 +972,10 @@
     <div id="rodape" class="rodape"></div>
 
     <script>
-        const repoUrl = "https://api.github.com/repos/semijoiasudia/CatalogoRenataSemijoias/contents/Catalogos";
-        const descricoesUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/ItensDescricao.txt";
-        const categoriasAtivasUrl = "https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/CategoriasAtivas.txt";
-        let descricoes = {};
+        const categoriasAtivasUrl = "CategoriasAtivas.json";
         let categoriasAtivas = [];
+        let descricoes = {};
+        
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
@@ -806,6 +985,7 @@
         let currentVisibleFiles = [];
         let cart = [];
         let modalAbortController = null;
+        let currentCategory = '';
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1128,18 +1308,16 @@
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
         }
 
+        // Carregar categorias ativas do novo arquivo JSON
         async function loadCategoriasAtivas() {
             try {
                 const response = await fetch(categoriasAtivasUrl);
                 if (!response.ok) {
-                    console.warn("Arquivo CategoriasAtivas.txt não encontrado, todas as categorias serão exibidas.");
+                    console.warn("Arquivo CategoriasAtivas.json não encontrado, todas as categorias serão exibidas.");
                     categoriasAtivas = [];
                     return;
                 }
-                const text = await response.text();
-                categoriasAtivas = text.split('\n')
-                    .map(linha => linha.trim())
-                    .filter(linha => linha !== '');
+                categoriasAtivas = await response.json();
                 console.log('Categorias ativas carregadas:', categoriasAtivas);
             } catch (error) {
                 console.error("Erro ao carregar categorias ativas:", error);
@@ -1147,77 +1325,81 @@
             }
         }
 
-        async function loadDescriptions() {
+        // Carregar produtos para uma categoria específica através do seu JSON
+        async function loadProductsForCategory(categoryDir, categoryName) {
             try {
-                const response = await fetch(descricoesUrl);
+                const jsonUrl = `${categoryDir}/ItensDescricao.json`;
+                console.log(`Carregando produtos de: ${jsonUrl}`);
+                
+                const response = await fetch(jsonUrl);
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const text = await response.text();
-                const lines = text.split('\n');
-                lines.forEach(line => {
-                    const [codigo, descricao, preco, banho] = line.split(';');
-                    if (codigo && descricao && preco && banho) {
-                        let normalizedBanho = banho.trim().toLowerCase();
-                        if (normalizedBanho.includes('2 banhos')) {
-                            normalizedBanho = '2 banhos';
-                        }
-                        descricoes[codigo.trim()] = {
-                            descricao: descricao.trim(),
-                            preco: formatarPreco(preco.trim()),
-                            banho: normalizedBanho
-                        };
-                    }
+                
+                const data = await response.json();
+                console.log(`Carregados ${data.produtos.length} produtos da categoria ${data.categoria || categoryName}`);
+                
+                // Limpar descrições anteriores e adicionar novos produtos
+                descricoes = {};
+                
+                // Adicionar os produtos ao objeto descricoes
+                data.produtos.forEach(produto => {
+                    descricoes[produto.codigo] = {
+                        descricao: produto.descricao,
+                        preco: formatarPreco(produto.preco),
+                        banho: produto.banho.toLowerCase(),
+                        dataUltimaEntrada: produto.dataUltimaEntrada
+                    };
                 });
-                console.log('Descrições carregadas com sucesso:', Object.keys(descricoes).length);
+                
+                return data.produtos;
             } catch (error) {
-                console.error("Erro ao carregar descrições:", error);
-                alert(`Erro ao carregar descrições: ${error.message}`);
+                console.error(`Erro ao carregar produtos da categoria ${categoryName}: ${error}`);
+                return [];
             }
         }
 
+        // Carregar categorias a partir do JSON
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
-                const response = await fetch(repoUrl);
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                const data = await response.json();
-                console.log('Dados das categorias recebidos:', data);
+                await loadCategoriasAtivas();
+                
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
 
-                data.forEach(item => {
-                    if (item.type === 'dir' && (categoriasAtivas.length === 0 || categoriasAtivas.includes(item.name))) {
-                        const tab = document.createElement('button');
-                        tab.className = 'tab';
-                        tab.textContent = item.name;
-                        tab.onclick = () => {
-                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                            tab.classList.add('active');
-                            loadImages(item.name);
-                            scrollToActiveTab();
-                        };
-                        tabs.appendChild(tab);
-                    }
+                // Criar abas para cada categoria ativa
+                categoriasAtivas.forEach(categoria => {
+                    const tab = document.createElement('button');
+                    tab.className = 'tab';
+                    tab.textContent = categoria.name;
+                    tab.dataset.diretorio = categoria.diretorio;
+                    tab.onclick = () => {
+                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        loadImages(categoria.diretorio, categoria.name);
+                        scrollToActiveTab();
+                    };
+                    tabs.appendChild(tab);
                 });
 
+                // Carregar a categoria inicial
                 const initialCategory = getQueryParam('categoria') || 'Brincos';
                 const initialTab = findTabByText(initialCategory);
                 if (initialTab) {
                     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                     initialTab.classList.add('active');
                     console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.textContent.trim());
+                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else if (tabs.children.length > 0) {
+                    // Se a categoria inicial não for encontrada, carregar a primeira categoria
+                    const defaultTab = tabs.children[0];
+                    defaultTab.classList.add('active');
+                    console.log('Carregando categoria padrão:', defaultTab.textContent);
+                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
                     scrollToActiveTab();
                 } else {
-                    const defaultTab = findTabByText('Brincos') || tabs.children[0];
-                    if (defaultTab) {
-                        defaultTab.classList.add('active');
-                        console.log('Carregando categoria padrão:', defaultTab.textContent);
-                        loadImages(defaultTab.textContent.trim());
-                        scrollToActiveTab();
-                    } else {
-                        console.error('Nenhuma categoria disponível.');
-                        alert('Nenhuma categoria disponível. Verifique o repositório GitHub.');
-                    }
+                    console.error('Nenhuma categoria disponível.');
+                    alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
@@ -1235,33 +1417,54 @@
             return null;
         }
 
-        async function loadImages(folderName) {
-            console.log('Iniciando loadImages para:', folderName);
+        // Carregar imagens a partir dos produtos de uma categoria
+        async function loadImages(categoryDir, categoryName) {
+            console.log(`Iniciando loadImages para: ${categoryName} (${categoryDir})`);
+            
+            currentCategory = categoryName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
             currentBanho = 'todos';
 
             try {
-                const response = await fetch(`${repoUrl}/${encodeURIComponent(folderName)}`);
-                if (!response.ok) throw new Error(`Erro HTTP ao carregar imagens: ${response.status}`);
-                allFiles = await response.json();
-                console.log('Arquivos recebidos:', allFiles);
-                allFiles.forEach(file => {
-                    if (file.name.endsWith('.jpg') || file.name.endsWith('.png')) {
-                        const codigo = file.name.split('.')[0];
-                        const { banho } = descricoes[codigo] || { banho: '' };
-                        if (banho) {
-                            banhosNaCategoria.add(banho);
+                // Carregar produtos da categoria
+                const produtos = await loadProductsForCategory(categoryDir, categoryName);
+                
+                if (produtos.length === 0) {
+                    console.warn(`Nenhum produto encontrado para a categoria ${categoryName}`);
+                    allFiles = [];
+                    displayPage(currentPage, banhosNaCategoria);
+                    return;
+                }
+                
+                // Converter produtos para o formato esperado pelas funções existentes
+                allFiles = produtos.map(produto => {
+                    const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                    return {
+                        name: produto.imagem,
+                        path: imagePath,
+                        download_url: imagePath,
+                        codigo: produto.codigo
+                    };
+                });
+                
+                // Coletar banhos únicos na categoria
+                produtos.forEach(produto => {
+                    if (produto.banho) {
+                        let normalizedBanho = produto.banho.toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
                         }
+                        banhosNaCategoria.add(normalizedBanho);
                     }
                 });
 
                 displayPage(currentPage, banhosNaCategoria);
                 criarBotoesSubcategorias(banhosNaCategoria);
-                console.log('Imagens carregadas com sucesso para:', folderName);
+                console.log('Imagens carregadas com sucesso para:', categoryName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
-                alert(`Erro ao carregar imagens da categoria ${folderName}: ${error.message}`);
+                alert(`Erro ao carregar imagens da categoria ${categoryName}: ${error.message}`);
             }
         }
 
@@ -1269,34 +1472,67 @@
             console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
             let filtered = allFiles.filter(file => {
                 if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
-                const codigo = file.name.split('.')[0];
+                const codigo = file.codigo || file.name.split('.')[0];
                 const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
                 return currentBanho === 'todos' || banho === currentBanho;
             });
-
+        
             filtered.sort((a, b) => {
-                const codigoA = a.name.split('.')[0];
-                const codigoB = b.name.split('.')[0];
+                const codigoA = a.codigo || a.name.split('.')[0];
+                const codigoB = b.codigo || b.name.split('.')[0];
                 const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
                 const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
-
+                const dataA = descricoes[codigoA]?.dataUltimaEntrada || "";
+                const dataB = descricoes[codigoB]?.dataUltimaEntrada || "";
+        
+                // Função auxiliar para comparar datas no formato DD/MM/AAAA
+                const compararDatas = (dataA, dataB, ordemCrescente = false) => {
+                    if (!dataA && !dataB) return 0;
+                    if (!dataA) return ordemCrescente ? -1 : 1;
+                    if (!dataB) return ordemCrescente ? 1 : -1;
+                    
+                    // Converter datas no formato DD/MM/AAAA para comparação
+                    const [diaA, mesA, anoA] = dataA.split('/');
+                    const [diaB, mesB, anoB] = dataB.split('/');
+                    const dateStrA = `${anoA}-${mesA}-${diaA}`;
+                    const dateStrB = `${anoB}-${mesB}-${diaB}`;
+                    
+                    // Comparar datas
+                    return ordemCrescente ? 
+                        dateStrA.localeCompare(dateStrB) : // Crescente (mais antigo primeiro)
+                        dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
+                };
+        
                 switch (currentSort) {
                     case 'newest':
-                        return codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        // Ordenar pela data mais recente primeiro
+                        const resultNewest = compararDatas(dataA, dataB, false);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultNewest !== 0 ? resultNewest : 
+                               codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     case 'oldest':
-                        return codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                        // Ordenar pela data mais antiga primeiro
+                        const resultOldest = compararDatas(dataA, dataB, true);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultOldest !== 0 ? resultOldest : 
+                               codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                        
                     case 'highestPrice':
                         return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     case 'lowestPrice':
                         return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
                     default:
                         return 0;
                 }
             });
-
+        
             currentVisibleFiles = filtered;
             return filtered;
         }
+        
         function getQueryParam(name) {
            const urlParams = new URLSearchParams(window.location.search);
            return urlParams.get(name);
@@ -1312,8 +1548,14 @@
             const paginatedFiles = filteredFiles.slice(start, end);
             console.log('Itens a exibir:', paginatedFiles.length);
 
+            if (paginatedFiles.length === 0) {
+                gallery.innerHTML = '<div style="text-align: center; padding: 20px; color: #666;">Nenhum produto encontrado nesta categoria</div>';
+                updatePagination();
+                return;
+            }
+
             paginatedFiles.forEach(file => {
-                const codigo = file.name.split('.')[0];
+                const codigo = file.codigo || file.name.split('.')[0];
                 const { descricao, preco, banho } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
@@ -1331,7 +1573,10 @@
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
-                img.onerror = () => console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                img.onerror = () => {
+                    console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                    img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
+                };
                 img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
 
@@ -1347,6 +1592,9 @@
                 codigoElement.className = 'codigo';
                 codigoElement.textContent = `COD: ${codigo}`;
 
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'content-wrapper';
+
                 const desc = document.createElement('div');
                 desc.className = 'description';
                 desc.textContent = descricao;
@@ -1361,7 +1609,14 @@
                 addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
-                item.append(imgContainer, codigoElement, desc, precoElement, addToCartBtn);
+                contentWrapper.appendChild(desc);
+                contentWrapper.appendChild(precoElement);
+
+                item.appendChild(imgContainer);
+                item.appendChild(codigoElement);
+                item.appendChild(contentWrapper);
+                item.appendChild(addToCartBtn);
+                
                 gallery.appendChild(item);
             });
 
@@ -1376,6 +1631,13 @@
             const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
             const paginationDiv = document.getElementById('pagination');
             paginationDiv.innerHTML = '';
+
+            if (totalPages <= 1) {
+                paginationDiv.style.display = 'none';
+                return;
+            }
+
+            paginationDiv.style.display = 'flex';
 
             const prevButton = document.createElement('button');
             prevButton.textContent = 'Anterior';
@@ -1413,14 +1675,19 @@
             const subcategoriesDiv = document.getElementById('subcategories');
             subcategoriesDiv.innerHTML = '';
 
-            let botaoTodosExistente = subcategoriesDiv.querySelector('button[data-banho="todos"]');
-            if (!botaoTodosExistente) {
-                const botaoTodos = document.createElement('button');
-                botaoTodos.textContent = 'Todos';
-                botaoTodos.dataset.banho = 'todos';
-                botaoTodos.onclick = () => filterByBanho('todos');
-                subcategoriesDiv.appendChild(botaoTodos);
+            if (banhosNaCategoria.size === 0) {
+                subcategoriesDiv.style.display = 'none';
+                return;
             }
+
+            subcategoriesDiv.style.display = 'flex';
+
+            const botaoTodos = document.createElement('button');
+            botaoTodos.textContent = 'Todos';
+            botaoTodos.dataset.banho = 'todos';
+            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
+            botaoTodos.onclick = () => filterByBanho('todos');
+            subcategoriesDiv.appendChild(botaoTodos);
 
             banhosNaCategoria.forEach(banho => {
                 if (banho && banho !== '') {
@@ -1431,17 +1698,22 @@
                     }
                     botaoBanho.textContent = displayText;
                     botaoBanho.dataset.banho = banho;
+                    botaoBanho.className = currentBanho === banho ? 'active' : '';
                     botaoBanho.onclick = () => filterByBanho(banho);
                     subcategoriesDiv.appendChild(botaoBanho);
                 }
             });
-
-            subcategoriesDiv.style.display = 'flex';
         }
 
         function filterByBanho(banho) {
             currentBanho = banho;
             currentPage = 1;
+            
+            // Atualizar visualmente o botão ativo
+            document.querySelectorAll('#subcategories button').forEach(button => {
+                button.classList.toggle('active', button.dataset.banho === banho);
+            });
+            
             displayPage(currentPage, new Set());
         }
 
@@ -1478,7 +1750,7 @@
             if (!file) return;
 
             const src = file.download_url;
-            codigo = file.name.split('.')[0];
+            codigo = file.codigo || file.name.split('.')[0];
 
             const { descricao, preco } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
@@ -1672,31 +1944,16 @@
             if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
                 currentModalIndex++;
                 const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.name.split('.')[0];
+                const codigo = nextFile.codigo || nextFile.name.split('.')[0];
                 resetZoomAndPan();
                 updateModalContent(codigo);
             } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
                 currentModalIndex--;
                 const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.name.split('.')[0];
+                const codigo = prevFile.codigo || prevFile.name.split('.')[0];
                 resetZoomAndPan();
                 updateModalContent(codigo);
             }
-        }
-
-        function saveImage() {
-            html2canvas(document.querySelector("#captureArea"), {
-                useCORS: true,
-                allowTaint: true,
-                scale: 2
-            }).then(canvas => {
-                const link = document.createElement('a');
-                link.download = `peca-${document.getElementById('modalCodigo').textContent.replace('COD: ', '')}.png`;
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            }).catch(error => {
-                console.error("Erro ao salvar imagem:", error);
-            });
         }
 
         function requestItem() {
@@ -1713,14 +1970,14 @@
 
         async function loadRodape() {
             try {
-                const response = await fetch("https://raw.githubusercontent.com/semijoiasudia/CatalogoRenataSemijoias/main/rodape.txt");
+                const response = await fetch("rodape.txt");
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
                 document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
             } catch (error) {
                 console.error("Erro ao carregar rodapé:", error);
-                alert(`Erro ao carregar rodapé: ${error.message}`);
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">© 2025 Renata - Semijoias e Acessórios. Todos os direitos reservados.</p>`;
             }
         }
 
@@ -1736,13 +1993,230 @@
             }
         }
 
+        // Função para criar e inicializar o carrossel de categorias
+        async function initCategoriesCarousel() {
+            try {
+                // Carregar categorias do arquivo JSON
+                const response = await fetch('CategoriasCarrossel.json');
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                
+                const categorias = await response.json();
+                if (!categorias || categorias.length === 0) {
+                    console.warn("Nenhuma categoria encontrada para o carrossel");
+                    return;
+                }
+                
+                // Limpar o carrossel existente
+                const wrapper = document.getElementById('carrossel-wrapper');
+                const dotsContainer = document.getElementById('carrossel-dots');
+                
+                if (!wrapper || !dotsContainer) {
+                    console.error("Elementos do carrossel não encontrados");
+                    return;
+                }
+                
+                wrapper.innerHTML = '';
+                dotsContainer.innerHTML = '';
+                
+                // Função para tentar obter a primeira imagem de uma categoria
+                async function getCategoryFirstImage(categoryName) {
+                    // Buscar a categoria nas categorias ativas
+                    const categoryFound = categoriasAtivas.find(cat => 
+                        cat.name.toLowerCase() === categoryName.toLowerCase());
+                        
+                    if (!categoryFound) {
+                        return 'imagens/placeholder.jpg'; // Imagem padrão
+                    }
+                    
+                    try {
+                        // Tentar carregar produtos da categoria para obter a primeira imagem
+                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
+                        const response = await fetch(jsonUrl);
+                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                        
+                        const data = await response.json();
+                        if (data.produtos && data.produtos.length > 0) {
+                            const firstProduct = data.produtos[0];
+                            return `${firstProduct.pastaFotos}${firstProduct.imagem}`;
+                        }
+                    } catch (error) {
+                        console.warn(`Erro ao carregar imagem para categoria ${categoryName}:`, error);
+                    }
+                    
+                    return 'imagens/placeholder.jpg'; // Imagem padrão em caso de erro
+                }
+                
+                // Criar slides e dots para cada categoria
+                for (let i = 0; i < categorias.length; i++) {
+                    const categoria = categorias[i];
+                    
+                    // Obter imagem da categoria
+                    const imagemSrc = await getCategoryFirstImage(categoria.nome);
+                    
+                    // Criar slide
+                    const slide = document.createElement('div');
+                    slide.className = 'carrossel-slide';
+                    slide.dataset.categoria = categoria.nome;
+                    slide.innerHTML = `
+                        <img src="${imagemSrc}" alt="${categoria.nome}" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-slide-title">${categoria.nome}</div>
+                    `;
+                    wrapper.appendChild(slide);
+                    
+                    // Criar dot para navegação
+                    const dot = document.createElement('div');
+                    dot.className = 'carrossel-dot';
+                    if (i === 0) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+                }
+                
+                // Configurar comportamento do carrossel
+                setupCarouselBehavior();
+                
+            } catch (error) {
+                console.error("Erro ao inicializar carrossel:", error);
+            }
+        }
+
+        // Função para configurar o comportamento do carrossel
+        function setupCarouselBehavior() {
+            const wrapper = document.getElementById('carrossel-wrapper');
+            const slides = document.querySelectorAll('.carrossel-slide');
+            const dots = document.querySelectorAll('.carrossel-dot');
+            const prevBtn = document.querySelector('.carrossel-prev');
+            const nextBtn = document.querySelector('.carrossel-next');
+            
+            if (!wrapper || !slides.length) return;
+            
+            let currentIndex = 0;
+            let autoplayInterval;
+            
+            // Função para ir para um slide específico
+            function goToSlide(index) {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                
+                currentIndex = index;
+                const slideWidth = slides[0].offsetWidth;
+                wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+                
+                // Atualizar dots ativos
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentIndex);
+                });
+            }
+            
+            // Configurar dots para navegação
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                    restartAutoplay();
+                });
+            });
+            
+            // Funções de navegação
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+            
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+            
+            // Configurar botões de navegação
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                restartAutoplay();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                restartAutoplay();
+            });
+            
+            // Funções para controlar o autoplay
+            function startAutoplay() {
+                stopAutoplay(); // Evitar duplicação
+                autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
+            }
+            
+            function stopAutoplay() {
+                clearInterval(autoplayInterval);
+            }
+            
+            function restartAutoplay() {
+                stopAutoplay();
+                startAutoplay();
+            }
+            
+            // Pausar autoplay ao passar o mouse sobre o carrossel
+            const container = document.querySelector('.carrossel-container');
+            container.addEventListener('mouseenter', stopAutoplay);
+            container.addEventListener('mouseleave', startAutoplay);
+            
+            // Configurar navegação por toque para dispositivos móveis
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            container.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                stopAutoplay();
+            }, { passive: true });
+            
+            container.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipeCarousel();
+                startAutoplay();
+            }, { passive: true });
+            
+            function handleSwipeCarousel() {
+                const swipeThreshold = 50;
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    nextSlide(); // Deslizar para a esquerda, próximo slide
+                } else if (touchEndX > touchStartX + swipeThreshold) {
+                    prevSlide(); // Deslizar para a direita, slide anterior
+                }
+            }
+            
+            // Adicionar evento de clique para navegar para a categoria
+            slides.forEach(slide => {
+                slide.addEventListener('click', () => {
+                    const categoria = slide.dataset.categoria;
+                    navigateToCategory(categoria);
+                });
+            });
+            
+            // Função para navegar para uma categoria
+            function navigateToCategory(categoryName) {
+                // Encontrar a tab correspondente à categoria
+                const tabs = document.querySelectorAll('.tab');
+                for (let tab of tabs) {
+                    if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
+                        // Simular clique na tab para navegar para a categoria
+                        tab.click();
+                        break;
+                    }
+                }
+            }
+            
+            // Ajustar tamanho dos slides quando a janela é redimensionada
+            function updateSlideWidth() {
+                goToSlide(currentIndex);
+            }
+            
+            window.addEventListener('resize', updateSlideWidth);
+            
+            // Inicializar
+            goToSlide(0);
+            startAutoplay();
+        }
+
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
-            await loadCategoriasAtivas();
-            await loadDescriptions();
-            await loadCategories();
+            await loadCategories(); // Carregar categorias já usa o JSON correto
+            await initCategoriesCarousel(); // Inicializar o carrossel de categorias
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
