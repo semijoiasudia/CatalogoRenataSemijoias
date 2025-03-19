@@ -906,16 +906,19 @@
         function buildImagePath(pastaFotos, imageName) {
             if (!pastaFotos || !imageName) return 'imagens/placeholder.jpg';
             
-            // Normalizar o caminho garantindo uma única barra no final
-            const normalizedPath = pastaFotos.trim().replace(/\/?$/, '/');
+            // Processar o caminho base
+            const processedPath = processPath(pastaFotos);
+            // Processar o nome da imagem
+            const processedImage = encodeURIComponent(imageName);
             
-            // Codificar todo o caminho preservando as barras
-            const fullPath = encodeURI(`${normalizedPath}${imageName}`)
-                .replace(/%2F/g, '/')  // Manter barras normais
-                .replace(/'/g, '%27')   // Codificar apóstrofos
-                .replace(/\(/g, '%28')  // Codificar parênteses
-                .replace(/\)/g, '%29');
-        
+            // Construir caminho completo
+            let fullPath = '';
+            if (processedPath) {
+                fullPath = processedPath + (processedPath.endsWith('/') ? '' : '/') + processedImage;
+            } else {
+                fullPath = processedImage;
+            }
+            
             console.log(`Caminho da imagem construído: ${fullPath}`);
             return fullPath;
         }
@@ -1533,6 +1536,14 @@
                 precoElement.className = 'preco';
                 precoElement.textContent = preco;
 
+                // Adicionar caminho da imagem para debug
+                const imagePath = document.createElement('div');
+                imagePath.style.fontSize = '10px';
+                imagePath.style.wordBreak = 'break-all';
+                imagePath.style.color = '#888';
+                imagePath.style.marginTop = '5px';
+                imagePath.textContent = `Imagem: ${file.download_url}`;
+
                 // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
                 addToCartBtn.className = 'add-to-cart-gallery';
@@ -1541,6 +1552,8 @@
 
                 contentWrapper.appendChild(desc);
                 contentWrapper.appendChild(precoElement);
+                contentWrapper.appendChild(imagePath);
+                contentWrapper.appendChild(imagePath);
 
                 item.appendChild(imgContainer);
                 item.appendChild(codigoElement);
@@ -1720,6 +1733,9 @@
             document.getElementById('modalInfo').innerHTML = `
                 <div class="descricao">${descricao}</div>
                 <div class="preco">${preco}</div>
+                <div style="font-size: 10px; word-break: break-all; color: #888; margin-top: 5px;">
+                    Imagem: ${src}
+                </div>
             `;
             updateModalTransform();
         }
