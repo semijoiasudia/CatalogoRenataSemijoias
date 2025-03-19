@@ -35,11 +35,11 @@
             height: auto;
         }
         
-        /* Novo container de título */
+        /* Título estilizado mais elegante */
         .catalogo-container {
             width: 100%;
             max-width: 100%;
-            margin: 0 auto 20px;
+            margin: 0 auto 5px;
             padding: 5px 5px 8px;
             position: relative;
             background-color: #fcfaf5;
@@ -49,21 +49,21 @@
             box-sizing: border-box;
         }
         .catalogo-titulo {
-            font-size: 22px;
+            font-size: 18px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 6px;
+            margin: 0;
+            padding: 5px 0;
             text-align: center;
             position: relative;
         }
+        /* Texto explicativo movido para fora do container */
         .catalogo-subtitulo {
             font-size: 14px;
             color: #666;
-            margin-bottom: 10px;
+            margin: 5px auto 15px;
             text-align: center;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .catalogo-container:after {
             content: '';
@@ -71,7 +71,7 @@
             width: 50px;
             height: 2px;
             background: linear-gradient(135deg, #e6c977, #d4af37);
-            margin: 10px auto;
+            margin: 5px auto;
         }
         
         /* Estilos do carrossel atualizados */
@@ -837,23 +837,25 @@
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios">
     </div>
     
-    <!-- Novo container de título estilizado -->
+    <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda!</h2>
-        <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
-        
-        <!-- Carrossel de categorias - HTML será gerado dinamicamente pelo JavaScript -->
-        <div id="categorias-carrossel" class="carrossel-container">
-            <div class="carrossel-wrapper" id="carrossel-wrapper">
-                <!-- Os slides serão adicionados dinamicamente -->
-            </div>
-            <div class="carrossel-controls">
-                <button class="carrossel-prev">❮</button>
-                <button class="carrossel-next">❯</button>
-            </div>
-            <div class="carrossel-category-name" id="carrossel-category-name"></div>
-            <div class="carrossel-dots" id="carrossel-dots"></div>
+    </div>
+    
+    <!-- Texto explicativo movido para fora do container -->
+    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
+    
+    <!-- Carrossel de categorias - HTML será gerado dinamicamente pelo JavaScript -->
+    <div id="categorias-carrossel" class="carrossel-container">
+        <div class="carrossel-wrapper" id="carrossel-wrapper">
+            <!-- Os slides serão adicionados dinamicamente -->
         </div>
+        <div class="carrossel-controls">
+            <button class="carrossel-prev">❮</button>
+            <button class="carrossel-next">❯</button>
+        </div>
+        <div class="carrossel-category-name" id="carrossel-category-name"></div>
+        <div class="carrossel-dots" id="carrossel-dots"></div>
     </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
@@ -988,6 +990,7 @@
         let cart = [];
         let modalAbortController = null;
         let currentCategory = '';
+        let isCategoryChanging = false; // Controle para evitar cliques durante mudança de categoria
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1108,6 +1111,7 @@
 
         // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
+            event.preventDefault();
             event.stopPropagation(); // Evita que a modal abra
             addToCart(codigo, descricao, preco, imagem);
         }
@@ -1375,10 +1379,18 @@
                     tab.textContent = categoria.name;
                     tab.dataset.diretorio = categoria.diretorio;
                     tab.onclick = () => {
+                        if (isCategoryChanging) return; // Ignora clique se já estiver mudando de categoria
+                        isCategoryChanging = true; // Define flag de mudança
+                        
                         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                         tab.classList.add('active');
                         loadImages(categoria.diretorio, categoria.name);
                         scrollToActiveTab();
+                        
+                        // Reseta a flag após um curto intervalo
+                        setTimeout(() => {
+                            isCategoryChanging = false;
+                        }, 300);
                     };
                     tabs.appendChild(tab);
                 });
@@ -1579,11 +1591,13 @@
                     console.error(`Erro ao carregar imagem: ${file.download_url}`);
                     img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
                 };
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                img.onclick = (e) => {
+                    e.preventDefault(); // Previne comportamento padrão
+                    showModal(file.download_url, codigo, indexInAll);
+                };
 
                 const logo = document.createElement('img');
-                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.src = 'imagens/logo.png';
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
 
@@ -1767,7 +1781,7 @@
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
 
             const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+            logo.src = 'imagens/logo.png';
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
             captureArea.appendChild(logo);
@@ -1985,35 +1999,17 @@
                 }
                 
                 // Localizar o container onde o carrossel será inserido
-                const catalogoContainer = document.querySelector('.catalogo-container');
-                if (!catalogoContainer) {
-                    console.error("Container 'catalogo-container' não encontrado");
+                const carrosselContainer = document.getElementById('categorias-carrossel');
+                if (!carrosselContainer) {
+                    console.error("Container 'categorias-carrossel' não encontrado");
                     return;
                 }
                 
                 // Limpar o HTML atual do carrossel, se existir
-                const carrosselAtual = document.getElementById('categorias-carrossel');
-                if (carrosselAtual) {
-                    carrosselAtual.remove();
+                const carrosselWrapper = document.getElementById('carrossel-wrapper');
+                if (carrosselWrapper) {
+                    carrosselWrapper.innerHTML = '';
                 }
-                
-                // Criar a estrutura base do carrossel
-                const carrosselHTML = `
-                    <div id="categorias-carrossel" class="carrossel-container">
-                        <div class="carrossel-wrapper" id="carrossel-wrapper">
-                            <!-- Os slides serão adicionados dinamicamente -->
-                        </div>
-                        <div class="carrossel-controls">
-                            <button class="carrossel-prev">❮</button>
-                            <button class="carrossel-next">❯</button>
-                        </div>
-                        <div class="carrossel-category-name" id="carrossel-category-name"></div>
-                        <div class="carrossel-dots" id="carrossel-dots"></div>
-                    </div>
-                `;
-                
-                // Inserir o HTML do carrossel no container
-                catalogoContainer.insertAdjacentHTML('beforeend', carrosselHTML);
                 
                 // Array para armazenar todos os slides
                 let allSlides = [];
@@ -2084,18 +2080,16 @@
                     const dot = document.createElement('div');
                     dot.className = 'carrossel-dot';
                     if (index === 0) dot.classList.add('active');
-                    dot.addEventListener('click', () => {
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
                         goToSlide(index);
                         restartAutoplay();
                     });
                     dotsContainer.appendChild(dot);
                     
                     // Adicionar click para abrir o modal ou navegar para a categoria
-                    const imgElement = slideElement.querySelector('img');
-                    imgElement.addEventListener('click', (e) => {
+                    slideElement.addEventListener('click', (e) => {
                         e.preventDefault();
-                        e.stopPropagation(); // Impedir propagação do evento
-                        
                         handleSlideClick(slide);
                     });
                 });
