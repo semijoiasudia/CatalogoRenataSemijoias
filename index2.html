@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js) 
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>-->
+    </script>
     
     <style>
         body {
@@ -882,6 +882,46 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
+
+        // Função para processar caminhos com caracteres especiais
+        function processPath(path) {
+            if (!path) return '';
+            
+            // Remover barras do início e fim se existirem
+            let cleanPath = path.trim();
+            while (cleanPath.endsWith('/')) {
+                cleanPath = cleanPath.slice(0, -1);
+            }
+            while (cleanPath.startsWith('/')) {
+                cleanPath = cleanPath.substring(1);
+            }
+            
+            // Dividir o caminho para processar cada segmento separadamente
+            const segments = cleanPath.split('/');
+            const processedSegments = segments.map(segment => encodeURIComponent(segment));
+            return processedSegments.join('/');
+        }
+        
+        // Função para construir o caminho completo da imagem
+        function buildImagePath(pastaFotos, imageName) {
+            if (!pastaFotos || !imageName) return 'imagens/placeholder.jpg';
+            
+            // Processar o caminho base
+            const processedPath = processPath(pastaFotos);
+            // Processar o nome da imagem
+            const processedImage = encodeURIComponent(imageName);
+            
+            // Construir caminho completo
+            let fullPath = '';
+            if (processedPath) {
+                fullPath = processedPath + (processedPath.endsWith('/') ? '' : '/') + processedImage;
+            } else {
+                fullPath = processedImage;
+            }
+            
+            console.log(`Caminho da imagem construído: ${fullPath}`);
+            return fullPath;
+        }
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
