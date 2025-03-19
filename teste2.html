@@ -1873,13 +1873,6 @@
             modalContent.addEventListener('touchend', (e) => {
                 if (e.touches.length === 0) {
                     isDragging = false;
-                    if (scale === 1) {
-                        const touchEndX = e.changedTouches[0].screenX;
-                        const timeDiff = Date.now() - touchStartTime;
-                        if (timeDiff < 300) {
-                            handleSwipe(touchStartX, touchEndX);
-                        }
-                    }
                 }
             }, { signal });
         }
@@ -1939,23 +1932,6 @@
             // Se a imagem não estiver ampliada, centraliza
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
-        }
-
-        function handleSwipe(touchStartX, touchEndX) {
-            const swipeThreshold = 50;
-            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
-                currentModalIndex++;
-                const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.codigo || nextFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
-                currentModalIndex--;
-                const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.codigo || prevFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            }
         }
 
         function requestItem() {
@@ -2071,7 +2047,8 @@
                             src: `${produto.pastaFotos}${produto.imagem}`,
                             title: produto.descricao || 'Produto sem descrição',
                             codigo: produto.codigo,
-                            categoryName: categoryName
+                            categoryName: categoryName,
+                            diretorio: categoryFound.diretorio
                         }));
                         
                     } catch (error) {
@@ -2113,24 +2090,112 @@
                     });
                     dotsContainer.appendChild(dot);
                     
-                    // Adicionar click para abrir o modal do produto ou navegar para a categoria
-                    slideElement.addEventListener('click', () => {
-                        if (slide.codigo) {
-                            // Encontrar o produto correspondente nos arquivos visíveis
-                            const productFile = currentVisibleFiles.find(file => file.codigo === slide.codigo);
-                            if (productFile) {
-                                const index = currentVisibleFiles.indexOf(productFile);
-                                showModal(productFile.download_url, slide.codigo, index);
-                            } else {
-                                // Se não encontrado nos arquivos visíveis, tentar navegar para a categoria
-                                navigateToCategory(slide.categoryName);
-                            }
-                        } else {
-                            // Se não tiver código, apenas navegar para a categoria
-                            navigateToCategory(slide.categoryName);
-                        }
+                    // Adicionar click para abrir o modal ou navegar para a categoria
+                    const imgElement = slideElement.querySelector('img');
+                    imgElement.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation(); // Impedir propagação do evento
+                        
+                        handleSlideClick(slide);
                     });
                 });
+                
+                // Função para lidar com clique no slide
+                function handleSlideClick(slide) {
+                    if (slide.codigo) {
+                        // Se temos um código, abrir o modal com a imagem específica
+                        openSpecificProduct(slide);
+                    } else {
+                        // Se não temos um código, navegar para a categoria
+                        navigateToCategory(slide.categoryName);
+                    }
+                }
+                
+                // Função para abrir um produto específico
+                function openSpecificProduct(slide) {
+                    // Primeiro tente verificar se o produto está na visualização atual
+                    const productInCurrentView = currentVisibleFiles.find(file => file.codigo === slide.codigo);
+                    
+                    if (productInCurrentView) {
+                        // Se estiver na visualização atual, use showModal diretamente
+                        const index = currentVisibleFiles.indexOf(productInCurrentView);
+                        showModal(productInCurrentView.download_url, slide.codigo, index);
+                    } else {
+                        // Se não estiver na visualização atual, precisamos carregar a categoria primeiro
+                        // e então abrir o modal do produto
+                        
+                        // Encontrar a tab correspondente à categoria
+                        const tabs = document.querySelectorAll('.tab');
+                        let foundTab = null;
+                        
+                        for (let tab of tabs) {
+                            if (tab.textContent.trim().toLowerCase() === slide.categoryName.toLowerCase()) {
+                                foundTab = tab;
+                                break;
+                            }
+                        }
+                        
+                        if (foundTab) {
+                            // Quando a categoria for carregada, precisamos abrir o modal
+                            // Vamos usar o código do produto para identificá-lo após o carregamento
+                            
+                            // Primeiro, carregar a categoria
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            foundTab.classList.add('active');
+                            
+                            // Carregar imagens da categoria e depois abrir o modal
+                            loadImagesAndThenOpenModal(foundTab.dataset.diretorio, slide.categoryName, slide.codigo);
+                        } else {
+                            // Se não encontrar a tab, apenas navegar para a categoria
+                            navigateToCategory(slide.categoryName);
+                        }
+                    }
+                }
+                
+                // Função para carregar imagens e depois abrir um modal específico
+                async function loadImagesAndThenOpenModal(diretorio, categoryName, codigo) {
+                    try {
+                        // Carregar produtos da categoria
+                        const produtos = await loadProductsForCategory(diretorio, categoryName);
+                        
+                        if (produtos.length === 0) {
+                            console.warn(`Nenhum produto encontrado para a categoria ${categoryName}`);
+                            return;
+                        }
+                        
+                        // Converter produtos para o formato esperado
+                        allFiles = produtos.map(produto => {
+                            const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                            return {
+                                name: produto.imagem,
+                                path: imagePath,
+                                download_url: imagePath,
+                                codigo: produto.codigo
+                            };
+                        });
+                        
+                        // Atualizar os arquivos visíveis
+                        currentVisibleFiles = getFilteredFiles();
+                        
+                        // Encontrar o produto específico
+                        const productFile = currentVisibleFiles.find(file => file.codigo === codigo);
+                        
+                        if (productFile) {
+                            // Se encontrar o produto, abrir o modal
+                            const index = currentVisibleFiles.indexOf(productFile);
+                            setTimeout(() => {
+                                showModal(productFile.download_url, codigo, index);
+                            }, 100); // Pequeno delay para garantir que tudo esteja pronto
+                        }
+                        
+                        // Atualizar a exibição da página
+                        displayPage(1, new Set());
+                        criarBotoesSubcategorias(new Set());
+                        
+                    } catch (error) {
+                        console.error("Erro ao carregar imagens:", error);
+                    }
+                }
                 
                 // Configurar comportamento do carrossel
                 let currentSlideIndex = 0;
@@ -2183,12 +2248,16 @@
                 const prevBtn = document.querySelector('.carrossel-prev');
                 const nextBtn = document.querySelector('.carrossel-next');
                 
-                prevBtn.addEventListener('click', () => {
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     prevSlide();
                     restartAutoplay();
                 });
                 
-                nextBtn.addEventListener('click', () => {
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
                     nextSlide();
                     restartAutoplay();
                 });
@@ -2212,30 +2281,6 @@
                 const container = document.querySelector('.carrossel-container');
                 container.addEventListener('mouseenter', stopAutoplay);
                 container.addEventListener('mouseleave', startAutoplay);
-                
-                // Configurar navegação por toque para dispositivos móveis
-                let touchStartX = 0;
-                let touchEndX = 0;
-                
-                container.addEventListener('touchstart', (e) => {
-                    touchStartX = e.changedTouches[0].screenX;
-                    stopAutoplay();
-                }, { passive: true });
-                
-                container.addEventListener('touchend', (e) => {
-                    touchEndX = e.changedTouches[0].screenX;
-                    handleSwipeCarousel();
-                    startAutoplay();
-                }, { passive: true });
-                
-                function handleSwipeCarousel() {
-                    const swipeThreshold = 50;
-                    if (touchEndX < touchStartX - swipeThreshold) {
-                        nextSlide(); // Deslizar para a esquerda, próximo slide
-                    } else if (touchEndX > touchStartX + swipeThreshold) {
-                        prevSlide(); // Deslizar para a direita, slide anterior
-                    }
-                }
                 
                 // Função para navegar para uma categoria
                 function navigateToCategory(categoryName) {
