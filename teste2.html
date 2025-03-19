@@ -840,23 +840,23 @@
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda!</h2>
+        
+        <!-- Carrossel de categorias dentro do container -->
+        <div id="categorias-carrossel" class="carrossel-container">
+            <div class="carrossel-wrapper" id="carrossel-wrapper">
+                <!-- Os slides serão adicionados dinamicamente -->
+            </div>
+            <div class="carrossel-controls">
+                <button class="carrossel-prev">❮</button>
+                <button class="carrossel-next">❯</button>
+            </div>
+            <div class="carrossel-category-name" id="carrossel-category-name"></div>
+            <div class="carrossel-dots" id="carrossel-dots"></div>
+        </div>
     </div>
     
-    <!-- Texto explicativo movido para fora do container -->
+    <!-- Texto explicativo movido para baixo do carrossel -->
     <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
-    
-    <!-- Carrossel de categorias - HTML será gerado dinamicamente pelo JavaScript -->
-    <div id="categorias-carrossel" class="carrossel-container">
-        <div class="carrossel-wrapper" id="carrossel-wrapper">
-            <!-- Os slides serão adicionados dinamicamente -->
-        </div>
-        <div class="carrossel-controls">
-            <button class="carrossel-prev">❮</button>
-            <button class="carrossel-next">❯</button>
-        </div>
-        <div class="carrossel-category-name" id="carrossel-category-name"></div>
-        <div class="carrossel-dots" id="carrossel-dots"></div>
-    </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -1733,6 +1733,38 @@
             displayPage(currentPage, new Set());
         }
 
+        // Função para mostrar um modal diretamente de um slide do carrossel
+        function showModalFromCarousel(slide) {
+            if (!slide || !slide.imageUrl) return;
+            
+            resetZoomAndPan();
+            
+            // Configurar a modal com as informações do slide
+            document.getElementById('modalImg').src = slide.imageUrl;
+            document.getElementById('modalCodigo').textContent = `COD: ${slide.codigo}`;
+            
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${slide.descricao}</div>
+                <div class="preco">${slide.preco}</div>
+            `;
+            
+            // Adicionar a logo watermark
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
+            // Exibir a modal
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+        }
+
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
@@ -2044,7 +2076,10 @@
                             title: produto.descricao || 'Produto sem descrição',
                             codigo: produto.codigo,
                             categoryName: categoryName,
-                            diretorio: categoryFound.diretorio
+                            diretorio: categoryFound.diretorio,
+                            descricao: produto.descricao,
+                            preco: formatarPreco(produto.preco),
+                            imageUrl: `${produto.pastaFotos}${produto.imagem}`
                         }));
                         
                     } catch (error) {
@@ -2090,106 +2125,9 @@
                     // Adicionar click para abrir o modal ou navegar para a categoria
                     slideElement.addEventListener('click', (e) => {
                         e.preventDefault();
-                        handleSlideClick(slide);
+                        showModalFromCarousel(slide);
                     });
                 });
-                
-                // Função para lidar com clique no slide
-                function handleSlideClick(slide) {
-                    if (slide.codigo) {
-                        // Se temos um código, abrir o modal com a imagem específica
-                        openSpecificProduct(slide);
-                    } else {
-                        // Se não temos um código, navegar para a categoria
-                        navigateToCategory(slide.categoryName);
-                    }
-                }
-                
-                // Função para abrir um produto específico
-                function openSpecificProduct(slide) {
-                    // Primeiro tente verificar se o produto está na visualização atual
-                    const productInCurrentView = currentVisibleFiles.find(file => file.codigo === slide.codigo);
-                    
-                    if (productInCurrentView) {
-                        // Se estiver na visualização atual, use showModal diretamente
-                        const index = currentVisibleFiles.indexOf(productInCurrentView);
-                        showModal(productInCurrentView.download_url, slide.codigo, index);
-                    } else {
-                        // Se não estiver na visualização atual, precisamos carregar a categoria primeiro
-                        // e então abrir o modal do produto
-                        
-                        // Encontrar a tab correspondente à categoria
-                        const tabs = document.querySelectorAll('.tab');
-                        let foundTab = null;
-                        
-                        for (let tab of tabs) {
-                            if (tab.textContent.trim().toLowerCase() === slide.categoryName.toLowerCase()) {
-                                foundTab = tab;
-                                break;
-                            }
-                        }
-                        
-                        if (foundTab) {
-                            // Quando a categoria for carregada, precisamos abrir o modal
-                            // Vamos usar o código do produto para identificá-lo após o carregamento
-                            
-                            // Primeiro, carregar a categoria
-                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                            foundTab.classList.add('active');
-                            
-                            // Carregar imagens da categoria e depois abrir o modal
-                            loadImagesAndThenOpenModal(foundTab.dataset.diretorio, slide.categoryName, slide.codigo);
-                        } else {
-                            // Se não encontrar a tab, apenas navegar para a categoria
-                            navigateToCategory(slide.categoryName);
-                        }
-                    }
-                }
-                
-                // Função para carregar imagens e depois abrir um modal específico
-                async function loadImagesAndThenOpenModal(diretorio, categoryName, codigo) {
-                    try {
-                        // Carregar produtos da categoria
-                        const produtos = await loadProductsForCategory(diretorio, categoryName);
-                        
-                        if (produtos.length === 0) {
-                            console.warn(`Nenhum produto encontrado para a categoria ${categoryName}`);
-                            return;
-                        }
-                        
-                        // Converter produtos para o formato esperado
-                        allFiles = produtos.map(produto => {
-                            const imagePath = `${produto.pastaFotos}${produto.imagem}`;
-                            return {
-                                name: produto.imagem,
-                                path: imagePath,
-                                download_url: imagePath,
-                                codigo: produto.codigo
-                            };
-                        });
-                        
-                        // Atualizar os arquivos visíveis
-                        currentVisibleFiles = getFilteredFiles();
-                        
-                        // Encontrar o produto específico
-                        const productFile = currentVisibleFiles.find(file => file.codigo === codigo);
-                        
-                        if (productFile) {
-                            // Se encontrar o produto, abrir o modal
-                            const index = currentVisibleFiles.indexOf(productFile);
-                            setTimeout(() => {
-                                showModal(productFile.download_url, codigo, index);
-                            }, 100); // Pequeno delay para garantir que tudo esteja pronto
-                        }
-                        
-                        // Atualizar a exibição da página
-                        displayPage(1, new Set());
-                        criarBotoesSubcategorias(new Set());
-                        
-                    } catch (error) {
-                        console.error("Erro ao carregar imagens:", error);
-                    }
-                }
                 
                 // Configurar comportamento do carrossel
                 let currentSlideIndex = 0;
@@ -2275,19 +2213,6 @@
                 const container = document.querySelector('.carrossel-container');
                 container.addEventListener('mouseenter', stopAutoplay);
                 container.addEventListener('mouseleave', startAutoplay);
-                
-                // Função para navegar para uma categoria
-                function navigateToCategory(categoryName) {
-                    // Encontrar a tab correspondente à categoria
-                    const tabs = document.querySelectorAll('.tab');
-                    for (let tab of tabs) {
-                        if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                            // Simular clique na tab para navegar para a categoria
-                            tab.click();
-                            break;
-                        }
-                    }
-                }
                 
                 // Ajustar tamanho dos slides quando a janela é redimensionada
                 function updateSlideWidth() {
