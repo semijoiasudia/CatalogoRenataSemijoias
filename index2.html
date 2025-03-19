@@ -1314,7 +1314,8 @@
                 
                 // Converter produtos para o formato esperado pelas funções existentes
                 allFiles = produtos.map(produto => {
-                    const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                    // Usar a função buildImagePath para construir o caminho correto da imagem
+                    const imagePath = buildImagePath(produto.pastaFotos, produto.imagem);
                     return {
                         name: produto.imagem,
                         path: imagePath,
@@ -1446,13 +1447,30 @@
                 imgContainer.className = 'img-container';
 
                 const img = document.createElement('img');
-                img.src = file.download_url;
-                img.alt = descricao || 'Imagem do produto';
+                
+                // Adicionar tratamento de erro antes de definir o src
                 img.onerror = () => {
                     console.error(`Erro ao carregar imagem: ${file.download_url}`);
                     img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
+                    
+                    // Tentar caminho alternativo (se o problema for caso de extensão)
+                    setTimeout(() => {
+                        // Tentar versão maiúscula da extensão
+                        const altPathUpperExt = file.download_url.replace(/\.(jpg|png)$/i, match => match.toUpperCase());
+                        console.log(`Tentando caminho alternativo (maiúsculo): ${altPathUpperExt}`);
+                        
+                        const altImg = new Image();
+                        altImg.onload = () => {
+                            img.src = altPathUpperExt; // Se a alternativa funcionar, atualizar a imagem
+                            console.log(`Imagem alternativa carregada: ${altPathUpperExt}`);
+                        };
+                        altImg.src = altPathUpperExt;
+                    }, 500);
                 };
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
+                
+                img.onload = () => console.log(`Imagem carregada com sucesso: ${file.download_url}`);
+                img.alt = descricao || 'Imagem do produto';
+                img.src = file.download_url; // Definir src depois do tratamento de erro
                 img.onclick = () => showModal(file.download_url, codigo, indexInAll);
 
                 const logo = document.createElement('img');
@@ -1636,7 +1654,24 @@
             const existingLogo = captureArea.querySelector('.logo-watermark');
             if (existingLogo) existingLogo.remove();
 
-            document.getElementById('modalImg').src = src;
+            const modalImg = document.getElementById('modalImg');
+            modalImg.onerror = () => {
+                console.error(`Erro ao carregar imagem no modal: ${src}`);
+                modalImg.src = 'imagens/placeholder.jpg';
+                
+                // Tentar caminho alternativo
+                setTimeout(() => {
+                    const altPathUpperExt = src.replace(/\.(jpg|png)$/i, match => match.toUpperCase());
+                    console.log(`Tentando caminho alternativo no modal: ${altPathUpperExt}`);
+                    
+                    const altImg = new Image();
+                    altImg.onload = () => {
+                        modalImg.src = altPathUpperExt;
+                    };
+                    altImg.src = altPathUpperExt;
+                }, 500);
+            };
+            modalImg.src = src;
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
 
             const logo = document.createElement('img');
