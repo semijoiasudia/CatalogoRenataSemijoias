@@ -1,18 +1,4 @@
 [
-  {"name": "Braceletes", "diretorio": "Catalogos/Braceletes"},
-  {"name": "Brincos", "diretorio": "Catalogos/Brincos"},
-  {"name": "Chokers", "diretorio": "Catalogos/Chokers"},
-  {"name": "Colares", "diretorio": "Catalogos/Colares"},
-  {"name": "Relógios", "diretorio": "Catalogos/Relogios"},
-  {"name": "Aço Inox", "diretorio": "Catalogos/Aco Inox"},
-  {"name": "Anéis", "diretorio": "Catalogos/Aneis"},
-  {"name": "Conjuntos", "diretorio": "Catalogos/Conjuntos"},
-  {"name": "Piercings", "diretorio": "Catalogos/Piercings"},
-  {"name": "Pulseiras", "diretorio": "Catalogos/Pulseiras"},
-  {"name": "Bijuterias", "diretorio": "Catalogos/Bijuterias"},
-  {"name": "Tornozeleiras", "diretorio": "Catalogos/Tornozeleiras"},
-  {"name": "Pingentes", "diretorio": "Catalogos/Pingentes"},
-  {"name": "Acessórios", "diretorio": "Catalogos/Acessorios"},
-  {"name": "Ofertas", "diretorio": "Catalogos/Ofertas"},
-  {"name": "Destaques", "diretorio": "Catalogos/Destaques"}
+  {"nome": "Novidades"},
+  {"nome": "Destaques"}
 ]
