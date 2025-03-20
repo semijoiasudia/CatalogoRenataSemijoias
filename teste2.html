@@ -29,10 +29,26 @@
             background: linear-gradient(135deg, #f8f8f8, #ffffff);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 10px;
+            position: relative; /* Para que o overlay fique posicionado corretamente */
         }
         .logo-container img {
             max-width: 140px;
             height: auto;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+        }
+        /* Overlay para proteger a logo */
+        .logo-protection {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
         }
         
         /* Título estilizado mais elegante */
@@ -104,6 +120,12 @@
             transition: transform 0.3s ease;
             display: inline-block; /* Permite centralização */
             margin: 0 auto; /* Centraliza a imagem horizontalmente */
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
         }
         
         .carrossel-h-slide:hover img {
@@ -405,6 +427,9 @@
             border-radius: 8px;
             user-select: none;
             -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
         }
         .modal .logo-watermark {
             position: absolute;
@@ -660,6 +685,11 @@
             object-fit: cover;
             border-radius: 4px;
             margin-right: 10px;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
         }
         .cart-item-info {
             flex-grow: 1;
@@ -833,7 +863,9 @@
 <body>
     <!-- Novo container da logo -->
     <div class="logo-container">
-        <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios">
+        <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
+        <!-- Overlay para proteção extra contra cliques na logo -->
+        <div class="logo-protection"></div>
     </div>
     
     <!-- Novo container de título estilizado mais discreto -->
@@ -888,7 +920,7 @@
             <span class="close" onclick="closeModal()">×</span>
             <div class="capture-area" id="captureArea">
                 <div class="modal-codigo" id="modalCodigo"></div>
-                <img id="modalImg">
+                <img id="modalImg" draggable="false">
             </div>
             <div class="modal-info" id="modalInfo"></div>
             <div class="modal-buttons">
@@ -1012,6 +1044,31 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
+
+        // Proteção global contra download de imagens
+        document.addEventListener('DOMContentLoaded', function() {
+            // Proteção para a logo no topo
+            const logoImg = document.querySelector('.logo-container img');
+            if (logoImg) {
+                logoImg.addEventListener('contextmenu', (e) => e.preventDefault());
+                logoImg.addEventListener('dragstart', (e) => e.preventDefault());
+            }
+            
+            // Proteção global para todas as imagens
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            document.addEventListener('dragstart', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
@@ -1177,7 +1234,7 @@
                 const itemElement = document.createElement('div');
                 itemElement.className = 'cart-item';
                 itemElement.innerHTML = `
-                    <img src="${item.imagem}" alt="${item.descricao}" class="cart-item-img">
+                    <img src="${item.imagem}" alt="${item.descricao}" class="cart-item-img" draggable="false">
                     <div class="cart-item-info">
                         <div class="cart-item-title">${item.descricao}</div>
                         <div class="cart-item-codigo">Código: ${item.codigo}</div>
@@ -1589,6 +1646,7 @@
                 const img = document.createElement('img');
                 img.src = file.download_url;
                 img.alt = descricao || 'Imagem do produto';
+                img.draggable = false;
                 img.onerror = () => {
                     console.error(`Erro ao carregar imagem: ${file.download_url}`);
                     img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
@@ -1602,6 +1660,7 @@
                 logo.src = 'imagens/logo.png';
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
+                logo.draggable = false;
 
                 imgContainer.appendChild(img);
                 imgContainer.appendChild(logo);
@@ -1759,6 +1818,7 @@
             logo.src = 'imagens/logo.png';
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
+            logo.draggable = false;
             captureArea.appendChild(logo);
             
             // Exibir a modal
@@ -1818,6 +1878,7 @@
             logo.src = 'imagens/logo.png';
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
+            logo.draggable = false;
             captureArea.appendChild(logo);
 
             document.getElementById('modalInfo').innerHTML = `
@@ -2087,7 +2148,7 @@
                     const slideElement = document.createElement('div');
                     slideElement.className = 'carrossel-h-slide';
                     slideElement.innerHTML = `
-                        <img src="${image.src}" alt="${image.categoryName}" onerror="this.src='imagens/placeholder.jpg'">
+                        <img src="${image.src}" alt="${image.categoryName}" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
                         <div class="carrossel-h-category-name">${image.categoryName}</div>
                     `;
                     
@@ -2168,6 +2229,21 @@
             // Configurar listeners para as opções de entrega
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
+            });
+            
+            // Proteção global contra download de imagens
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            document.addEventListener('dragstart', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
             });
             
             console.log('Carregamento da página concluído');
