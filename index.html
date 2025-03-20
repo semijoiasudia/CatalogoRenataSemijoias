@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)-->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script> 
+    </script>
     
     <style>
         body {
@@ -25,7 +25,7 @@
         
         /* Novo container da logo */
         .logo-container {
-            padding: 15px 0;
+            padding: 8px 0;
             background: linear-gradient(135deg, #f8f8f8, #ffffff);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 10px;
@@ -35,11 +35,11 @@
             height: auto;
         }
         
-        /* Novo container de título */
+        /* Título estilizado mais elegante */
         .catalogo-container {
             width: 100%;
             max-width: 100%;
-            margin: 0 auto 20px;
+            margin: 0 auto 5px;
             padding: 5px 5px 8px;
             position: relative;
             background-color: #fcfaf5;
@@ -49,31 +49,102 @@
             box-sizing: border-box;
         }
         .catalogo-titulo {
-            font-size: 22px;
-            font-weight: bold;
+            font-size: 15px;
+            font-weight: normal;
             color: #333;
-            margin-bottom: 6px;
+            margin: 0;
+            padding: 5px 0;
             text-align: center;
             position: relative;
         }
+        /* Texto explicativo movido para fora do container */
         .catalogo-subtitulo {
             font-size: 14px;
             color: #666;
-            margin-bottom: 10px;
+            margin: 5px auto 15px;
             text-align: center;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .catalogo-container:after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            margin: 10px auto;
         }
         
+        /* Estilos do carrossel horizontal */
+        .carrossel-horizontal {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        .carrossel-h-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto; /* Centraliza o container */
+            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
+        }
+        
+        .carrossel-h-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carrossel-h-slide {
+            flex: 0 0 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: relative;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+        
+        .carrossel-h-slide img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            display: inline-block; /* Permite centralização */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        }
+        
+        .carrossel-h-slide:hover img {
+            transform: scale(1.05);
+        }
+        
+        .carrossel-h-prev, .carrossel-h-next {
+            background: rgba(255,255,255,0.7);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carrossel-h-prev:hover, .carrossel-h-next:hover {
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .carrossel-h-category-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: auto;
+            bottom: auto;
+            transform: none;
+            background: rgba(212, 175, 55, 0.8);
+            color: white;
+            padding: 4px 12px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 3;
+        }
+               
         h1 {
             margin: 20px 0;
             font-size: 24px;
@@ -723,12 +794,22 @@
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios">
     </div>
     
-    <!-- Novo container de título estilizado -->
+    <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
-        <h2 class="catalogo-titulo">Seja bem vinda!</h2>
-        <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
+        <h2 class="catalogo-titulo">SEJA BEM VINDA!</h2>
+        
+        <!-- Carrossel horizontal para categorias -->
+        <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev">❮</button>
+            <div class="carrossel-h-container">
+                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
+                    <!-- Os slides serão adicionados dinamicamente -->
+                </div>
+            </div>
+            <button class="carrossel-h-next">❯</button>
+        </div>
     </div>
-    
+        
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
@@ -751,6 +832,7 @@
             <option value="lowestPrice">Menor Preço</option>
         </select>
     </div>
+    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
@@ -861,6 +943,7 @@
         let cart = [];
         let modalAbortController = null;
         let currentCategory = '';
+        let isCategoryChanging = false; // Controle para evitar cliques durante mudança de categoria
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -981,6 +1064,7 @@
 
         // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
+            event.preventDefault();
             event.stopPropagation(); // Evita que a modal abra
             addToCart(codigo, descricao, preco, imagem);
         }
@@ -1248,10 +1332,18 @@
                     tab.textContent = categoria.name;
                     tab.dataset.diretorio = categoria.diretorio;
                     tab.onclick = () => {
+                        if (isCategoryChanging) return; // Ignora clique se já estiver mudando de categoria
+                        isCategoryChanging = true; // Define flag de mudança
+                        
                         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                         tab.classList.add('active');
                         loadImages(categoria.diretorio, categoria.name);
                         scrollToActiveTab();
+                        
+                        // Reseta a flag após um curto intervalo
+                        setTimeout(() => {
+                            isCategoryChanging = false;
+                        }, 300);
                     };
                     tabs.appendChild(tab);
                 });
@@ -1452,11 +1544,13 @@
                     console.error(`Erro ao carregar imagem: ${file.download_url}`);
                     img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
                 };
-                img.onload = () => console.log(`Imagem carregada: ${file.download_url}`);
-                img.onclick = () => showModal(file.download_url, codigo, indexInAll);
+                img.onclick = (e) => {
+                    e.preventDefault(); // Previne comportamento padrão
+                    showModal(file.download_url, codigo, indexInAll);
+                };
 
                 const logo = document.createElement('img');
-                logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+                logo.src = 'imagens/logo.png';
                 logo.className = 'logo-watermark';
                 logo.alt = 'Logo';
 
@@ -1592,6 +1686,38 @@
             displayPage(currentPage, new Set());
         }
 
+        // Função para mostrar modal de um item do carrossel
+        function showModalFromCarousel(item) {
+            if (!item || !item.src) return;
+            
+            resetZoomAndPan();
+            
+            // Configurar a modal com as informações do item
+            document.getElementById('modalImg').src = item.src;
+            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
+            
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${item.descricao}</div>
+                <div class="preco">${item.preco}</div>
+            `;
+            
+            // Adicionar a logo watermark
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            captureArea.appendChild(logo);
+            
+            // Exibir a modal
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+        }
+
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
@@ -1640,7 +1766,7 @@
             document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
 
             const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png'; // Certifique-se de ter essa imagem no diretório
+            logo.src = 'imagens/logo.png';
             logo.className = 'logo-watermark';
             logo.alt = 'Logo';
             captureArea.appendChild(logo);
@@ -1746,13 +1872,6 @@
             modalContent.addEventListener('touchend', (e) => {
                 if (e.touches.length === 0) {
                     isDragging = false;
-                    if (scale === 1) {
-                        const touchEndX = e.changedTouches[0].screenX;
-                        const timeDiff = Date.now() - touchStartTime;
-                        if (timeDiff < 300) {
-                            handleSwipe(touchStartX, touchEndX);
-                        }
-                    }
                 }
             }, { signal });
         }
@@ -1814,23 +1933,6 @@
             if (scaledHeight <= containerRect.height) translateY = 0;
         }
 
-        function handleSwipe(touchStartX, touchEndX) {
-            const swipeThreshold = 50;
-            if (touchEndX < touchStartX - swipeThreshold && currentModalIndex < currentVisibleFiles.length - 1) {
-                currentModalIndex++;
-                const nextFile = currentVisibleFiles[currentModalIndex];
-                const codigo = nextFile.codigo || nextFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            } else if (touchEndX > touchStartX + swipeThreshold && currentModalIndex > 0) {
-                currentModalIndex--;
-                const prevFile = currentVisibleFiles[currentModalIndex];
-                const codigo = prevFile.codigo || prevFile.name.split('.')[0];
-                resetZoomAndPan();
-                updateModalContent(codigo);
-            }
-        }
-
         function requestItem() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
@@ -1868,11 +1970,148 @@
             }
         }
 
+        // Função para inicializar o carrossel horizontal
+        async function initHorizontalCarousel() {
+            try {
+                // Carregar categorias do arquivo JSON
+                const response = await fetch('CategoriasCarrossel.json');
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                
+                const categorias = await response.json();
+                if (!categorias || categorias.length === 0) {
+                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
+                    return;
+                }
+                
+                const wrapper = document.getElementById('carrossel-h-wrapper');
+                wrapper.innerHTML = '';
+                
+                // Função para obter todas as imagens de cada categoria
+                async function getCategoryImages(categoryName, limit = 30) {
+                    // Buscar a categoria nas categorias ativas
+                    const categoryFound = categoriasAtivas.find(cat => 
+                        cat.name.toLowerCase() === categoryName.toLowerCase());
+                        
+                    if (!categoryFound) {
+                        return [];
+                    }
+                    
+                    try {
+                        // Tentar carregar produtos da categoria para obter imagens
+                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
+                        const response = await fetch(jsonUrl);
+                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                        
+                        const data = await response.json();
+                        if (!data.produtos || data.produtos.length === 0) {
+                            return [];
+                        }
+                        
+                        // Pegar até 'limit' produtos da categoria
+                        const products = data.produtos.slice(0, limit);
+                        
+                        // Mapear para o formato que precisamos
+                        return products.map(produto => ({
+                            src: `${produto.pastaFotos}${produto.imagem}`,
+                            codigo: produto.codigo,
+                            categoryName: categoryName,
+                            diretorio: categoryFound.diretorio,
+                            descricao: produto.descricao,
+                            preco: formatarPreco(produto.preco)
+                        }));
+                        
+                    } catch (error) {
+                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
+                        return [];
+                    }
+                }
+                
+                // Obter todas as imagens de todas as categorias
+                let allImages = [];
+                for (const categoria of categorias) {
+                    const images = await getCategoryImages(categoria.nome);
+                    allImages = allImages.concat(images);
+                }
+                
+                // Criar slides para cada imagem
+                allImages.forEach(image => {
+                    const slideElement = document.createElement('div');
+                    slideElement.className = 'carrossel-h-slide';
+                    slideElement.innerHTML = `
+                        <img src="${image.src}" alt="${image.categoryName}" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-h-category-name">${image.categoryName}</div>
+                    `;
+                    
+                    // Adicionar evento de clique para abrir o modal
+                    slideElement.addEventListener('click', () => {
+                        showModalFromCarousel(image);
+                    });
+                    
+                    wrapper.appendChild(slideElement);
+                });
+                
+                // Configurar comportamento do carrossel
+                let currentPosition = 0;
+                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
+                
+                // Função para atualizar a posição do carrossel
+                function updateCarouselPosition() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (!slides.length) return;
+                    
+                    const slideWidth = slides[0].offsetWidth;
+                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+                }
+                
+                // Funções de navegação
+                function nextSlide() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (currentPosition < slides.length - slidesPerView) {
+                        currentPosition++;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                function prevSlide() {
+                    if (currentPosition > 0) {
+                        currentPosition--;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                // Configurar botões de navegação
+                const prevBtn = document.querySelector('.carrossel-h-prev');
+                const nextBtn = document.querySelector('.carrossel-h-next');
+                
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    prevSlide();
+                });
+                
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nextSlide();
+                });
+                
+                // Atualizar tamanho dos slides quando a janela é redimensionada
+                window.addEventListener('resize', updateCarouselPosition);
+                
+                // Inicializar carrossel
+                updateCarouselPosition();
+                
+            } catch (error) {
+                console.error("Erro ao inicializar carrossel horizontal:", error);
+            }
+        }
+
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
+            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
