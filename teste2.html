@@ -529,12 +529,14 @@
             cursor: not-allowed;
         }
         .fale-conosco-btn, .instagram-btn {
-            background-color: #e8d5a9; /* Dourado suave e elegante */
-            color: white;
+            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
+            color: #7d6c3b; /* Cor do texto mais escura para contraste */
             padding: 15px;
             text-align: center;
             text-decoration: none;
-            display: block;
+            display: flex; /* Mudança para flex para melhor alinhamento */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
             font-size: 16px;
             border: none;
             cursor: pointer;
@@ -543,16 +545,24 @@
             border-radius: 0;
             font-weight: bold;
             transition: background-color 0.3s;
-            margin-bottom: 0;
+            margin: 0; /* Zeramos as margens */
             box-sizing: border-box;
             position: relative;
             z-index: 10;
+            height: 55px; /* Altura fixa para garantir consistência */
         }
         .fale-conosco-btn {
-            border-bottom: 2px solid rgba(255,255,255,0.2);
+            border-top: 3px solid white; /* Borda branca na parte superior */
         }
         .fale-conosco-btn:hover, .instagram-btn:hover {
             background-color: #dbc990; /* Dourado mais escuro para hover */
+        }
+        .fale-conosco-btn img, .instagram-btn img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px; /* Espaçamento consistente */
+            display: inline-block;
+            vertical-align: middle;
         }
 
         /* Estilos modificados para a sacola de compras */
