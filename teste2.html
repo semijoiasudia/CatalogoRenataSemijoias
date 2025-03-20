@@ -548,7 +548,7 @@
             justify-content: center;
             gap: 10px;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 40px; /* Aumentado de 20px para 40px */
         }
         .pagination button {
             padding: 8px 16px;
@@ -654,6 +654,7 @@
             font-weight: bold;
             border: 3px solid white; /* Adiciona o círculo branco */
             box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
+            pointer-events: none; /* Permite cliques passarem pelo contador para o elemento pai */
         }
         .cart-modal {
             display: none;
@@ -902,8 +903,8 @@
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
             <i>🛍️</i>
+            <div class="cart-counter" id="cartCounter">0</div>
         </div>
-        <div class="cart-counter" id="cartCounter">0</div>
         <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
     <div class="navigation-controls">
