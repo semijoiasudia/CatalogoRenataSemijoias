@@ -132,8 +132,8 @@
         .carrossel-h-category-name {
             position: absolute;
             top: 10px;
-            right: 10px;
-            left: auto;
+            left: 10px;
+            right: auto;
             bottom: auto;
             transform: none;
             background: rgba(212, 175, 55, 0.8);
@@ -1987,7 +1987,7 @@
                 wrapper.innerHTML = '';
                 
                 // Função para obter todas as imagens de cada categoria
-                async function getCategoryImages(categoryName, limit = 10) {
+                async function getCategoryImages(categoryName, limit = 30) {
                     // Buscar a categoria nas categorias ativas
                     const categoryFound = categoriasAtivas.find(cat => 
                         cat.name.toLowerCase() === categoryName.toLowerCase());
