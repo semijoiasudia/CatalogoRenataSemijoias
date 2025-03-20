@@ -1267,7 +1267,9 @@
                 
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
-
+                // Ordenar as categorias por nome antes de criar as abas
+                categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
+                
                 // Criar abas para cada categoria ativa
                 categoriasAtivas.forEach(categoria => {
                     const tab = document.createElement('button');
