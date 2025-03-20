@@ -25,7 +25,7 @@
         
         /* Novo container da logo */
         .logo-container {
-            padding: 15px 0;
+            padding: 8px 0;
             background: linear-gradient(135deg, #f8f8f8, #ffffff);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 10px;
@@ -49,8 +49,8 @@
             box-sizing: border-box;
         }
         .catalogo-titulo {
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 15px;
+            font-weight: normal;
             color: #333;
             margin: 0;
             padding: 5px 0;
@@ -74,52 +74,47 @@
             margin: 5px auto;
         }
         
-        /* Estilos do carrossel atualizados */
-        .carrossel-container {
+        /* Estilos do carrossel horizontal */
+        .carrossel-horizontal {
+            display: flex;
+            align-items: center;
             width: 100%;
-            overflow: hidden;
+            margin: 15px 0;
             position: relative;
-            margin: 15px 0 25px;
-            border-radius: 8px;
         }
-
-        .carrossel-wrapper {
+        
+        .carrossel-h-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 10px;
+        }
+        
+        .carrossel-h-wrapper {
             display: flex;
             transition: transform 0.5s ease;
         }
-
-        .carrossel-slide {
+        
+        .carrossel-h-slide {
             flex: 0 0 100%;
-            position: relative;
+            padding: 0 5px;
+            box-sizing: border-box;
             cursor: pointer;
-            text-align: center;
-            height: 250px; /* Altura fixa para todos os slides */
-            overflow: hidden;
-            border-radius: 8px;
+            position: relative;
         }
-
-        .carrossel-slide img {
-            width: 130%; /* 30% maior que o tamanho padrão */
-            height: 100%;
+        
+        .carrossel-h-slide img {
+            width: 100%;
+            height: 250px;
             object-fit: cover;
-            transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
+            border-radius: 8px;
             transition: transform 0.3s ease;
         }
-
-        .carrossel-slide:hover img {
-            transform: translateX(-11.5%) scale(1.05); /* Efeito de zoom suave */
+        
+        .carrossel-h-slide:hover img {
+            transform: scale(1.05);
         }
-
-        .carrossel-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .carrossel-prev, .carrossel-next {
+        
+        .carrossel-h-prev, .carrossel-h-next {
             background: rgba(255,255,255,0.7);
             border: none;
             border-radius: 50%;
@@ -128,21 +123,23 @@
             font-size: 20px;
             cursor: pointer;
             transition: background 0.3s;
-            margin: 0 10px;
             z-index: 2;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-
-        .carrossel-prev:hover, .carrossel-next:hover {
+        
+        .carrossel-h-prev:hover, .carrossel-h-next:hover {
             background: rgba(255,255,255,0.9);
         }
-
-        .carrossel-category-name {
+        
+        .carrossel-h-category-name {
             position: absolute;
             top: 10px;
-            left: 15px;
+            right: 10px;
+            left: auto;
+            bottom: auto;
+            transform: none;
             background: rgba(212, 175, 55, 0.8);
             color: white;
             padding: 4px 12px;
@@ -151,43 +148,7 @@
             border-radius: 20px;
             z-index: 3;
         }
-
-        .carrossel-dots {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            z-index: 2;
-        }
-
-        .carrossel-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .carrossel-dot.active {
-            background: white;
-            transform: scale(1.2);
-        }
-
-        /* Responsividade */
-        @media (min-width: 768px) {
-            .carrossel-container {
-                max-width: 90%;
-                margin: 15px auto 25px;
-            }
-            
-            .carrossel-slide {
-                height: 300px; /* Altura maior para telas maiores */
-            }
-        }
-        
+               
         h1 {
             margin: 20px 0;
             font-size: 24px;
@@ -839,25 +800,20 @@
     
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
-        <h2 class="catalogo-titulo">Seja bem vinda!</h2>
+        <h2 class="catalogo-titulo">SEJA BEM VINDA!</h2>
         
-        <!-- Carrossel de categorias dentro do container -->
-        <div id="categorias-carrossel" class="carrossel-container">
-            <div class="carrossel-wrapper" id="carrossel-wrapper">
-                <!-- Os slides serão adicionados dinamicamente -->
+        <!-- Carrossel horizontal para categorias -->
+        <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev">❮</button>
+            <div class="carrossel-h-container">
+                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
+                    <!-- Os slides serão adicionados dinamicamente -->
+                </div>
             </div>
-            <div class="carrossel-controls">
-                <button class="carrossel-prev">❮</button>
-                <button class="carrossel-next">❯</button>
-            </div>
-            <div class="carrossel-category-name" id="carrossel-category-name"></div>
-            <div class="carrossel-dots" id="carrossel-dots"></div>
+            <button class="carrossel-h-next">❯</button>
         </div>
     </div>
-    
-    <!-- Texto explicativo movido para baixo do carrossel -->
-    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp</p>
-    
+        
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
@@ -880,6 +836,7 @@
             <option value="lowestPrice">Menor Preço</option>
         </select>
     </div>
+    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
@@ -1733,19 +1690,19 @@
             displayPage(currentPage, new Set());
         }
 
-        // Função para mostrar um modal diretamente de um slide do carrossel
-        function showModalFromCarousel(slide) {
-            if (!slide || !slide.imageUrl) return;
+        // Função para mostrar modal de um item do carrossel
+        function showModalFromCarousel(item) {
+            if (!item || !item.src) return;
             
             resetZoomAndPan();
             
-            // Configurar a modal com as informações do slide
-            document.getElementById('modalImg').src = slide.imageUrl;
-            document.getElementById('modalCodigo').textContent = `COD: ${slide.codigo}`;
+            // Configurar a modal com as informações do item
+            document.getElementById('modalImg').src = item.src;
+            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
             
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${slide.descricao}</div>
-                <div class="preco">${slide.preco}</div>
+                <div class="descricao">${item.descricao}</div>
+                <div class="preco">${item.preco}</div>
             `;
             
             // Adicionar a logo watermark
@@ -2017,8 +1974,8 @@
             }
         }
 
-        // Função para criar e inicializar o carrossel de categorias
-        async function initCategoriesCarousel() {
+        // Função para inicializar o carrossel horizontal
+        async function initHorizontalCarousel() {
             try {
                 // Carregar categorias do arquivo JSON
                 const response = await fetch('CategoriasCarrossel.json');
@@ -2026,34 +1983,21 @@
                 
                 const categorias = await response.json();
                 if (!categorias || categorias.length === 0) {
-                    console.warn("Nenhuma categoria encontrada para o carrossel");
+                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
                     return;
                 }
                 
-                // Localizar o container onde o carrossel será inserido
-                const carrosselContainer = document.getElementById('categorias-carrossel');
-                if (!carrosselContainer) {
-                    console.error("Container 'categorias-carrossel' não encontrado");
-                    return;
-                }
+                const wrapper = document.getElementById('carrossel-h-wrapper');
+                wrapper.innerHTML = '';
                 
-                // Limpar o HTML atual do carrossel, se existir
-                const carrosselWrapper = document.getElementById('carrossel-wrapper');
-                if (carrosselWrapper) {
-                    carrosselWrapper.innerHTML = '';
-                }
-                
-                // Array para armazenar todos os slides
-                let allSlides = [];
-                
-                // Função para tentar obter múltiplas imagens de uma categoria
-                async function getCategoryImages(categoryName, limit = 5) {
+                // Função para obter todas as imagens de cada categoria
+                async function getCategoryImages(categoryName, limit = 10) {
                     // Buscar a categoria nas categorias ativas
                     const categoryFound = categoriasAtivas.find(cat => 
                         cat.name.toLowerCase() === categoryName.toLowerCase());
                         
                     if (!categoryFound) {
-                        return [{ src: 'imagens/placeholder.jpg', title: 'Imagem não encontrada', categoryName: categoryName }];
+                        return [];
                     }
                     
                     try {
@@ -2064,171 +2008,105 @@
                         
                         const data = await response.json();
                         if (!data.produtos || data.produtos.length === 0) {
-                            return [{ src: 'imagens/placeholder.jpg', title: 'Nenhum produto nesta categoria', categoryName: categoryName }];
+                            return [];
                         }
                         
-                        // Pegar até 'limit' produtos mais recentes da categoria
+                        // Pegar até 'limit' produtos da categoria
                         const products = data.produtos.slice(0, limit);
                         
                         // Mapear para o formato que precisamos
                         return products.map(produto => ({
                             src: `${produto.pastaFotos}${produto.imagem}`,
-                            title: produto.descricao || 'Produto sem descrição',
                             codigo: produto.codigo,
                             categoryName: categoryName,
                             diretorio: categoryFound.diretorio,
                             descricao: produto.descricao,
-                            preco: formatarPreco(produto.preco),
-                            imageUrl: `${produto.pastaFotos}${produto.imagem}`
+                            preco: formatarPreco(produto.preco)
                         }));
                         
                     } catch (error) {
                         console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
-                        return [{ src: 'imagens/placeholder.jpg', title: 'Erro ao carregar imagens', categoryName: categoryName }];
+                        return [];
                     }
                 }
                 
-                // Carregar imagens para todas as categorias e adicionar ao array de slides
+                // Obter todas as imagens de todas as categorias
+                let allImages = [];
                 for (const categoria of categorias) {
                     const images = await getCategoryImages(categoria.nome);
-                    allSlides = allSlides.concat(images);
+                    allImages = allImages.concat(images);
                 }
                 
-                const wrapper = document.getElementById('carrossel-wrapper');
-                const dotsContainer = document.getElementById('carrossel-dots');
-                const categoryNameElement = document.getElementById('carrossel-category-name');
-                
-                // Limpar elementos existentes
-                wrapper.innerHTML = '';
-                dotsContainer.innerHTML = '';
-                
-                // Adicionar slides para cada imagem
-                allSlides.forEach((slide, index) => {
+                // Criar slides para cada imagem
+                allImages.forEach(image => {
                     const slideElement = document.createElement('div');
-                    slideElement.className = 'carrossel-slide';
+                    slideElement.className = 'carrossel-h-slide';
                     slideElement.innerHTML = `
-                        <img src="${slide.src}" alt="${slide.title}" onerror="this.src='imagens/placeholder.jpg'">
+                        <img src="${image.src}" alt="${image.categoryName}" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-h-category-name">${image.categoryName}</div>
                     `;
+                    
+                    // Adicionar evento de clique para abrir o modal
+                    slideElement.addEventListener('click', () => {
+                        showModalFromCarousel(image);
+                    });
+                    
                     wrapper.appendChild(slideElement);
-                    
-                    // Adicionar dot para a navegação
-                    const dot = document.createElement('div');
-                    dot.className = 'carrossel-dot';
-                    if (index === 0) dot.classList.add('active');
-                    dot.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        goToSlide(index);
-                        restartAutoplay();
-                    });
-                    dotsContainer.appendChild(dot);
-                    
-                    // Adicionar click para abrir o modal ou navegar para a categoria
-                    slideElement.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        showModalFromCarousel(slide);
-                    });
                 });
                 
                 // Configurar comportamento do carrossel
-                let currentSlideIndex = 0;
-                let autoplayInterval;
+                let currentPosition = 0;
+                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
                 
-                // Função para ir para um slide específico
-                function goToSlide(index) {
-                    const slides = document.querySelectorAll('.carrossel-slide');
-                    const dots = document.querySelectorAll('.carrossel-dot');
-                    
+                // Função para atualizar a posição do carrossel
+                function updateCarouselPosition() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
                     if (!slides.length) return;
                     
-                    if (index < 0) index = slides.length - 1;
-                    if (index >= slides.length) index = 0;
-                    
-                    currentSlideIndex = index;
-                    
                     const slideWidth = slides[0].offsetWidth;
-                    wrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
-                    
-                    // Atualizar dots ativos
-                    dots.forEach((dot, i) => {
-                        dot.classList.toggle('active', i === currentSlideIndex);
-                    });
-                    
-                    // Atualizar nome da categoria
-                    if (allSlides[currentSlideIndex]) {
-                        categoryNameElement.textContent = allSlides[currentSlideIndex].categoryName;
-                    }
+                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
                 }
                 
-                // Funções de navegação entre slides
+                // Funções de navegação
                 function nextSlide() {
-                    currentSlideIndex++;
-                    if (currentSlideIndex >= allSlides.length) {
-                        currentSlideIndex = 0; // Volta para o primeiro slide após o último
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (currentPosition < slides.length - slidesPerView) {
+                        currentPosition++;
+                        updateCarouselPosition();
                     }
-                    goToSlide(currentSlideIndex);
                 }
                 
                 function prevSlide() {
-                    currentSlideIndex--;
-                    if (currentSlideIndex < 0) {
-                        currentSlideIndex = allSlides.length - 1; // Vai para o último slide antes do primeiro
+                    if (currentPosition > 0) {
+                        currentPosition--;
+                        updateCarouselPosition();
                     }
-                    goToSlide(currentSlideIndex);
                 }
                 
                 // Configurar botões de navegação
-                const prevBtn = document.querySelector('.carrossel-prev');
-                const nextBtn = document.querySelector('.carrossel-next');
+                const prevBtn = document.querySelector('.carrossel-h-prev');
+                const nextBtn = document.querySelector('.carrossel-h-next');
                 
                 prevBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     prevSlide();
-                    restartAutoplay();
                 });
                 
                 nextBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     nextSlide();
-                    restartAutoplay();
                 });
                 
-                // Funções para controlar o autoplay
-                function startAutoplay() {
-                    stopAutoplay(); // Evitar duplicação
-                    autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
-                }
-                
-                function stopAutoplay() {
-                    clearInterval(autoplayInterval);
-                }
-                
-                function restartAutoplay() {
-                    stopAutoplay();
-                    startAutoplay();
-                }
-                
-                // Pausar autoplay ao passar o mouse sobre o carrossel
-                const container = document.querySelector('.carrossel-container');
-                container.addEventListener('mouseenter', stopAutoplay);
-                container.addEventListener('mouseleave', startAutoplay);
-                
-                // Ajustar tamanho dos slides quando a janela é redimensionada
-                function updateSlideWidth() {
-                    goToSlide(currentSlideIndex);
-                }
-                
-                window.addEventListener('resize', updateSlideWidth);
+                // Atualizar tamanho dos slides quando a janela é redimensionada
+                window.addEventListener('resize', updateCarouselPosition);
                 
                 // Inicializar carrossel
-                if (allSlides.length > 0) {
-                    goToSlide(0);
-                    startAutoplay();
-                }
+                updateCarouselPosition();
                 
             } catch (error) {
-                console.error("Erro ao inicializar carrossel:", error);
+                console.error("Erro ao inicializar carrossel horizontal:", error);
             }
         }
 
@@ -2237,7 +2115,7 @@
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
-            await initCategoriesCarousel(); // Inicializar o carrossel de categorias
+            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
