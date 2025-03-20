@@ -74,118 +74,6 @@
             margin: 5px auto;
         }
         
-        /* Estilos do carrossel atualizados */
-        .carrossel-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin: 8px 0 25px;
-            border-radius: 8px;
-        }
-
-        .carrossel-wrapper {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carrossel-slide {
-            flex: 0 0 100%;
-            position: relative;
-            cursor: pointer;
-            text-align: center;
-            height: 250px; /* Altura fixa para todos os slides */
-            overflow: hidden;
-            border-radius: 8px;
-            /*pointer-events: none;*/
-            z-index: 1; /* Garante que o slide esteja acima */
-        }
-
-        .carrossel-slide img {
-            width: 130%; /* 30% maior que o tamanho padrão */
-            height: 100%;
-            object-fit: cover;
-            transform: translateX(-11.5%); /* Centraliza a imagem ampliada */
-            transition: transform 0.3s ease;
-            cursor: pointer; /* Garante que a imagem também tenha o cursor pointer */
-            pointer-events: auto;
-        }
-
-        .carrossel-slide:hover img {
-            transform: translateX(-11.5%); /* Efeito de zoom suave */
-        }
-
-        .carrossel-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            z-index: 5; /* Garante que os controles estejam acima dos slides */
-        }
-        @media (max-width: 768px) {
-            .carrossel-slide {
-                touch-action: manipulation; /* Melhora resposta ao toque */
-            }
-        }
-
-        .carrossel-prev, .carrossel-next {
-            background: rgba(255,255,255,0.7);
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-            margin: 0 10px;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .carrossel-prev:hover, .carrossel-next:hover {
-            background: rgba(255,255,255,0.9);
-        }
-
-        .carrossel-category-name {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            background: rgba(212, 175, 55, 0.8);
-            color: white;
-            padding: 4px 12px;
-            font-weight: bold;
-            font-size: 14px;
-            border-radius: 20px;
-            z-index: 3;
-        }
-
-        .carrossel-dots {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-            z-index: 2;
-        }
-
-        .carrossel-dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .carrossel-dot.active {
-            background: white;
-            transform: scale(1.2);
-        }
-
         /* Estilos do carrossel horizontal */
         .carrossel-horizontal {
             display: flex;
@@ -261,13 +149,8 @@
 
         /* Responsividade */
         @media (min-width: 768px) {
-            .carrossel-container {
-                max-width: 90%;
-                margin: 15px auto 25px;
-            }
-            
-            .carrossel-slide {
-                height: 300px; /* Altura maior para telas maiores */
+            .carrossel-h-slide {
+                flex: 0 0 33.333%;
             }
         }
         
@@ -933,19 +816,6 @@
                 </div>
             </div>
             <button class="carrossel-h-next">❯</button>
-        </div>
-        
-        <!-- Carrossel de categorias dentro do container -->
-        <div id="categorias-carrossel" class="carrossel-container">
-            <div class="carrossel-wrapper" id="carrossel-wrapper">
-                <!-- Os slides serão adicionados dinamicamente -->
-            </div>
-            <div class="carrossel-controls">
-                <button class="carrossel-prev">❮</button>
-                <button class="carrossel-next">❯</button>
-            </div>
-            <div class="carrossel-category-name" id="carrossel-category-name"></div>
-            <div class="carrossel-dots" id="carrossel-dots"></div>
         </div>
     </div>
         
@@ -1825,19 +1695,19 @@
             displayPage(currentPage, new Set());
         }
 
-        // Função para mostrar um modal diretamente de um slide do carrossel
-        function showModalFromCarousel(slide) {
-            if (!slide || !slide.imageUrl) return;
+        // Função para mostrar modal de um item do carrossel
+        function showModalFromCarousel(item) {
+            if (!item || !item.src) return;
             
             resetZoomAndPan();
             
-            // Configurar a modal com as informações do slide
-            document.getElementById('modalImg').src = slide.imageUrl;
-            document.getElementById('modalCodigo').textContent = `COD: ${slide.codigo}`;
+            // Configurar a modal com as informações do item
+            document.getElementById('modalImg').src = item.src;
+            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
             
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${slide.descricao}</div>
-                <div class="preco">${slide.preco}</div>
+                <div class="descricao">${item.descricao}</div>
+                <div class="preco">${item.preco}</div>
             `;
             
             // Adicionar a logo watermark
@@ -2109,246 +1979,6 @@
             }
         }
 
-        // Função para criar e inicializar o carrossel de categorias
-        async function initCategoriesCarousel() {
-            try {
-                // Carregar categorias do arquivo JSON
-                const response = await fetch('CategoriasCarrossel.json');
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                
-                const categorias = await response.json();
-                if (!categorias || categorias.length === 0) {
-                    console.warn("Nenhuma categoria encontrada para o carrossel");
-                    return;
-                }
-                
-                // Localizar o container onde o carrossel será inserido
-                const carrosselContainer = document.getElementById('categorias-carrossel');
-                if (!carrosselContainer) {
-                    console.error("Container 'categorias-carrossel' não encontrado");
-                    return;
-                }
-                
-                // Limpar o HTML atual do carrossel, se existir
-                const carrosselWrapper = document.getElementById('carrossel-wrapper');
-                if (carrosselWrapper) {
-                    carrosselWrapper.innerHTML = '';
-                }
-                
-                // Array para armazenar todos os slides
-                let allSlides = [];
-                
-                // Função para tentar obter múltiplas imagens de uma categoria
-                async function getCategoryImages(categoryName, limit = 5) {
-                    // Buscar a categoria nas categorias ativas
-                    const categoryFound = categoriasAtivas.find(cat => 
-                        cat.name.toLowerCase() === categoryName.toLowerCase());
-                        
-                    if (!categoryFound) {
-                        return [{ src: 'imagens/placeholder.jpg', title: 'Imagem não encontrada', categoryName: categoryName }];
-                    }
-                    
-                    try {
-                        // Tentar carregar produtos da categoria para obter imagens
-                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
-                        const response = await fetch(jsonUrl);
-                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                        
-                        const data = await response.json();
-                        if (!data.produtos || data.produtos.length === 0) {
-                            return [{ src: 'imagens/placeholder.jpg', title: 'Nenhum produto nesta categoria', categoryName: categoryName }];
-                        }
-                        
-                        // Pegar até 'limit' produtos mais recentes da categoria
-                        const products = data.produtos.slice(0, limit);
-                        
-                        // Mapear para o formato que precisamos
-                        return products.map(produto => ({
-                            src: `${produto.pastaFotos}${produto.imagem}`,
-                            title: produto.descricao || 'Produto sem descrição',
-                            codigo: produto.codigo,
-                            categoryName: categoryName,
-                            diretorio: categoryFound.diretorio,
-                            descricao: produto.descricao,
-                            preco: formatarPreco(produto.preco),
-                            imageUrl: `${produto.pastaFotos}${produto.imagem}`
-                        }));
-                        
-                    } catch (error) {
-                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
-                        return [{ src: 'imagens/placeholder.jpg', title: 'Erro ao carregar imagens', categoryName: categoryName }];
-                    }
-                }
-                
-                // Carregar imagens para todas as categorias e adicionar ao array de slides
-                for (const categoria of categorias) {
-                    const images = await getCategoryImages(categoria.nome);
-                    allSlides = allSlides.concat(images);
-                }
-                
-                const wrapper = document.getElementById('carrossel-wrapper');
-                const dotsContainer = document.getElementById('carrossel-dots');
-                const categoryNameElement = document.getElementById('carrossel-category-name');
-                
-                // Limpar elementos existentes
-                wrapper.innerHTML = '';
-                dotsContainer.innerHTML = '';
-                
-                // Adicionar slides para cada imagem
-                allSlides.forEach((slide, index) => {
-                    const slideElement = document.createElement('div');
-                    slideElement.className = 'carrossel-slide';
-                    slideElement.innerHTML = `
-                        <img src="${slide.src}" alt="${slide.title}" onerror="this.src='imagens/placeholder.jpg'">
-                    `;
-                    wrapper.appendChild(slideElement);
-                    
-                    // Adicionar dot para a navegação
-                    const dot = document.createElement('div');
-                    dot.className = 'carrossel-dot';
-                    if (index === 0) dot.classList.add('active');
-                    dot.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        e.stopPropagation(); // Impede a propagação para não abrir o modal
-                        goToSlide(index);
-                        restartAutoplay();
-                    });
-                    dotsContainer.appendChild(dot);
-                    
-                    // Melhorar tratamento de evento de clique no slide
-                    slideElement.onclick = function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        showModalFromCarousel(slide);
-                    };
-                    
-                    // Garantir que a imagem também capture o clique corretamente
-                    const imgElement = slideElement.querySelector('img');
-                    if (imgElement) {
-                        imgElement.onclick = function(e) {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            showModalFromCarousel(slide);
-                        };
-                    }
-                });
-                
-                // Configurar comportamento do carrossel
-                let currentSlideIndex = 0;
-                let autoplayInterval;
-                
-                // Função para ir para um slide específico
-                function goToSlide(index) {
-                    const slides = document.querySelectorAll('.carrossel-slide');
-                    const dots = document.querySelectorAll('.carrossel-dot');
-                    
-                    if (!slides.length) return;
-                    
-                    if (index < 0) index = slides.length - 1;
-                    if (index >= slides.length) index = 0;
-                    
-                    currentSlideIndex = index;
-                    
-                    const slideWidth = slides[0].offsetWidth;
-                    wrapper.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
-                    
-                    // Atualizar dots ativos
-                    dots.forEach((dot, i) => {
-                        dot.classList.toggle('active', i === currentSlideIndex);
-                    });
-                    
-                    // Atualizar nome da categoria
-                    if (allSlides[currentSlideIndex]) {
-                        categoryNameElement.textContent = allSlides[currentSlideIndex].categoryName;
-                    }
-                }
-                
-                // Funções de navegação entre slides
-                function nextSlide() {
-                    currentSlideIndex++;
-                    if (currentSlideIndex >= allSlides.length) {
-                        currentSlideIndex = 0; // Volta para o primeiro slide após o último
-                    }
-                    goToSlide(currentSlideIndex);
-                }
-                
-                function prevSlide() {
-                    currentSlideIndex--;
-                    if (currentSlideIndex < 0) {
-                        currentSlideIndex = allSlides.length - 1; // Vai para o último slide antes do primeiro
-                    }
-                    goToSlide(currentSlideIndex);
-                }
-                
-                // Configurar botões de navegação
-                const prevBtn = document.querySelector('.carrossel-prev');
-                const nextBtn = document.querySelector('.carrossel-next');
-                
-                prevBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    prevSlide();
-                    restartAutoplay();
-                });
-                prevBtn.onclick = function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    prevSlide();
-                    restartAutoplay();
-                };
-                nextBtn.onclick = function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    nextSlide();
-                    restartAutoplay();
-                };
-
-                
-                nextBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    nextSlide();
-                    restartAutoplay();
-                });
-                
-                // Funções para controlar o autoplay
-                function startAutoplay() {
-                    stopAutoplay(); // Evitar duplicação
-                    autoplayInterval = setInterval(nextSlide, 5000); // Muda a cada 5 segundos
-                }
-                
-                function stopAutoplay() {
-                    clearInterval(autoplayInterval);
-                }
-                
-                function restartAutoplay() {
-                    stopAutoplay();
-                    startAutoplay();
-                }
-                
-                // Pausar autoplay ao passar o mouse sobre o carrossel
-                const container = document.querySelector('.carrossel-container');
-                container.addEventListener('mouseenter', stopAutoplay);
-                container.addEventListener('mouseleave', startAutoplay);
-                
-                // Ajustar tamanho dos slides quando a janela é redimensionada
-                function updateSlideWidth() {
-                    goToSlide(currentSlideIndex);
-                }
-                
-                window.addEventListener('resize', updateSlideWidth);
-                
-                // Inicializar carrossel
-                if (allSlides.length > 0) {
-                    goToSlide(0);
-                    startAutoplay();
-                }
-                
-            } catch (error) {
-                console.error("Erro ao inicializar carrossel:", error);
-            }
-        }
-
         // Função para inicializar o carrossel horizontal
         async function initHorizontalCarousel() {
             try {
@@ -2365,70 +1995,69 @@
                 const wrapper = document.getElementById('carrossel-h-wrapper');
                 wrapper.innerHTML = '';
                 
-                // Função para obter uma imagem representativa de cada categoria
-                async function getCategoryImage(categoryName) {
+                // Função para obter todas as imagens de cada categoria
+                async function getCategoryImages(categoryName, limit = 10) {
                     // Buscar a categoria nas categorias ativas
                     const categoryFound = categoriasAtivas.find(cat => 
                         cat.name.toLowerCase() === categoryName.toLowerCase());
                         
                     if (!categoryFound) {
-                        return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                        return [];
                     }
                     
                     try {
-                        // Tentar carregar produtos da categoria para obter uma imagem
+                        // Tentar carregar produtos da categoria para obter imagens
                         const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
                         const response = await fetch(jsonUrl);
                         if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                         
                         const data = await response.json();
                         if (!data.produtos || data.produtos.length === 0) {
-                            return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                            return [];
                         }
                         
-                        // Pegar o primeiro produto da categoria
-                        const produto = data.produtos[0];
+                        // Pegar até 'limit' produtos da categoria
+                        const products = data.produtos.slice(0, limit);
                         
-                        return {
+                        // Mapear para o formato que precisamos
+                        return products.map(produto => ({
                             src: `${produto.pastaFotos}${produto.imagem}`,
+                            codigo: produto.codigo,
                             categoryName: categoryName,
-                            diretorio: categoryFound.diretorio
-                        };
+                            diretorio: categoryFound.diretorio,
+                            descricao: produto.descricao,
+                            preco: formatarPreco(produto.preco)
+                        }));
                         
                     } catch (error) {
-                        console.warn(`Erro ao carregar imagem para categoria ${categoryName}:`, error);
-                        return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
+                        return [];
                     }
                 }
                 
-                // Criar slides para cada categoria
+                // Obter todas as imagens de todas as categorias
+                let allImages = [];
                 for (const categoria of categorias) {
-                    const slideInfo = await getCategoryImage(categoria.nome);
-                    
+                    const images = await getCategoryImages(categoria.nome);
+                    allImages = allImages.concat(images);
+                }
+                
+                // Criar slides para cada imagem
+                allImages.forEach(image => {
                     const slideElement = document.createElement('div');
                     slideElement.className = 'carrossel-h-slide';
                     slideElement.innerHTML = `
-                        <img src="${slideInfo.src}" alt="${categoria.nome}" onerror="this.src='imagens/placeholder.jpg'">
-                        <div class="carrossel-h-category-name">${categoria.nome}</div>
+                        <img src="${image.src}" alt="${image.categoryName}" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-h-category-name">${image.categoryName}</div>
                     `;
                     
-                    // Adicionar evento de clique para navegar até a categoria
+                    // Adicionar evento de clique para abrir o modal
                     slideElement.addEventListener('click', () => {
-                        // Encontrar e ativar a tab correspondente à categoria
-                        const tabElement = findTabByText(categoria.nome);
-                        if (tabElement) {
-                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                            tabElement.classList.add('active');
-                            
-                            // Carregar as imagens da categoria
-                            const diretorio = tabElement.dataset.diretorio;
-                            loadImages(diretorio, categoria.nome);
-                            scrollToActiveTab();
-                        }
+                        showModalFromCarousel(image);
                     });
                     
                     wrapper.appendChild(slideElement);
-                }
+                });
                 
                 // Configurar comportamento do carrossel
                 let currentPosition = 0;
@@ -2491,8 +2120,7 @@
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
-            await initCategoriesCarousel(); // Inicializar o carrossel de categorias vertical
-            await initHorizontalCarousel(); // Inicializar o novo carrossel horizontal
+            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
