@@ -128,6 +128,18 @@
             pointer-events: none;
         }
         
+        .carrossel-h-slide .logo-watermark {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 1px;
+        }
+        
         .carrossel-h-slide:hover img {
             transform: scale(1.05);
         }
@@ -2150,6 +2162,7 @@
                     slideElement.innerHTML = `
                         <img src="${image.src}" alt="${image.categoryName}" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
                         <div class="carrossel-h-category-name">${image.categoryName}</div>
+                        <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
                     `;
                     
                     // Adicionar evento de clique para abrir o modal
