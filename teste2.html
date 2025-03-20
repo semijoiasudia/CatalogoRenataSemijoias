@@ -186,6 +186,79 @@
             transform: scale(1.2);
         }
 
+        /* Estilos do carrossel horizontal */
+        .carrossel-horizontal {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .carrossel-h-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 10px;
+        }
+        
+        .carrossel-h-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carrossel-h-slide {
+            flex: 0 0 50%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .carrossel-h-slide img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .carrossel-h-slide:hover img {
+            transform: scale(1.05);
+        }
+        
+        .carrossel-h-prev, .carrossel-h-next {
+            background: rgba(255,255,255,0.7);
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carrossel-h-prev:hover, .carrossel-h-next:hover {
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .carrossel-h-category-name {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(212, 175, 55, 0.8);
+            color: white;
+            padding: 4px 12px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 3;
+        }
+
         /* Responsividade */
         @media (min-width: 768px) {
             .carrossel-container {
@@ -850,6 +923,17 @@
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">SEJA BEM VINDA!</h2>
+        
+        <!-- Carrossel horizontal para categorias -->
+        <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev">❮</button>
+            <div class="carrossel-h-container">
+                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
+                    <!-- Os slides serão adicionados dinamicamente -->
+                </div>
+            </div>
+            <button class="carrossel-h-next">❯</button>
+        </div>
         
         <!-- Carrossel de categorias dentro do container -->
         <div id="categorias-carrossel" class="carrossel-container">
@@ -2265,12 +2349,150 @@
             }
         }
 
+        // Função para inicializar o carrossel horizontal
+        async function initHorizontalCarousel() {
+            try {
+                // Carregar categorias do arquivo JSON
+                const response = await fetch('CategoriasCarrossel.json');
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                
+                const categorias = await response.json();
+                if (!categorias || categorias.length === 0) {
+                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
+                    return;
+                }
+                
+                const wrapper = document.getElementById('carrossel-h-wrapper');
+                wrapper.innerHTML = '';
+                
+                // Função para obter uma imagem representativa de cada categoria
+                async function getCategoryImage(categoryName) {
+                    // Buscar a categoria nas categorias ativas
+                    const categoryFound = categoriasAtivas.find(cat => 
+                        cat.name.toLowerCase() === categoryName.toLowerCase());
+                        
+                    if (!categoryFound) {
+                        return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                    }
+                    
+                    try {
+                        // Tentar carregar produtos da categoria para obter uma imagem
+                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
+                        const response = await fetch(jsonUrl);
+                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                        
+                        const data = await response.json();
+                        if (!data.produtos || data.produtos.length === 0) {
+                            return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                        }
+                        
+                        // Pegar o primeiro produto da categoria
+                        const produto = data.produtos[0];
+                        
+                        return {
+                            src: `${produto.pastaFotos}${produto.imagem}`,
+                            categoryName: categoryName,
+                            diretorio: categoryFound.diretorio
+                        };
+                        
+                    } catch (error) {
+                        console.warn(`Erro ao carregar imagem para categoria ${categoryName}:`, error);
+                        return { src: 'imagens/placeholder.jpg', categoryName: categoryName };
+                    }
+                }
+                
+                // Criar slides para cada categoria
+                for (const categoria of categorias) {
+                    const slideInfo = await getCategoryImage(categoria.nome);
+                    
+                    const slideElement = document.createElement('div');
+                    slideElement.className = 'carrossel-h-slide';
+                    slideElement.innerHTML = `
+                        <img src="${slideInfo.src}" alt="${categoria.nome}" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-h-category-name">${categoria.nome}</div>
+                    `;
+                    
+                    // Adicionar evento de clique para navegar até a categoria
+                    slideElement.addEventListener('click', () => {
+                        // Encontrar e ativar a tab correspondente à categoria
+                        const tabElement = findTabByText(categoria.nome);
+                        if (tabElement) {
+                            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                            tabElement.classList.add('active');
+                            
+                            // Carregar as imagens da categoria
+                            const diretorio = tabElement.dataset.diretorio;
+                            loadImages(diretorio, categoria.nome);
+                            scrollToActiveTab();
+                        }
+                    });
+                    
+                    wrapper.appendChild(slideElement);
+                }
+                
+                // Configurar comportamento do carrossel
+                let currentPosition = 0;
+                const slidesPerView = 2; // Número de slides visíveis ao mesmo tempo
+                
+                // Função para atualizar a posição do carrossel
+                function updateCarouselPosition() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (!slides.length) return;
+                    
+                    const slideWidth = slides[0].offsetWidth;
+                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+                }
+                
+                // Funções de navegação
+                function nextSlide() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (currentPosition < slides.length - slidesPerView) {
+                        currentPosition++;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                function prevSlide() {
+                    if (currentPosition > 0) {
+                        currentPosition--;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                // Configurar botões de navegação
+                const prevBtn = document.querySelector('.carrossel-h-prev');
+                const nextBtn = document.querySelector('.carrossel-h-next');
+                
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    prevSlide();
+                });
+                
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nextSlide();
+                });
+                
+                // Atualizar tamanho dos slides quando a janela é redimensionada
+                window.addEventListener('resize', updateCarouselPosition);
+                
+                // Inicializar carrossel
+                updateCarouselPosition();
+                
+            } catch (error) {
+                console.error("Erro ao inicializar carrossel horizontal:", error);
+            }
+        }
+
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
-            await initCategoriesCarousel(); // Inicializar o carrossel de categorias
+            await initCategoriesCarousel(); // Inicializar o carrossel de categorias vertical
+            await initHorizontalCarousel(); // Inicializar o novo carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
