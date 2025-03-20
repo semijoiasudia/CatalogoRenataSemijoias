@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>
+    </script> 
     
     <style>
         body {
@@ -154,42 +154,47 @@
             overflow: hidden;
         }
         .tabs-container {
-            width: 100%;
-            max-width: 1000px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-            padding: 10px 0;
-            margin: 0 auto 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                width: 100%;
+                max-width: 100%; /* Usar 100% da largura do container pai */
+                overflow-x: auto;
+                overflow-y: visible; /* Alterado para visible para não cortar os botões ao crescerem */
+                white-space: nowrap;
+                padding: 5px 0 17px 0; /* Aumentado padding inferior para acomodar o crescimento */
+                margin: 0 0 12px 0;
+                background-color: transparent;
+                border-radius: 0;
+                box-shadow: none;
+                border-bottom: 1px solid rgba(0,0,0,0.06);
         }
         .tabs {
             display: inline-flex;
-            gap: 5px;
+            gap: 8px;
+            padding: 2px; /* Pequeno padding para evitar cortes nas bordas */
         }
         .tab {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 10px 18px;
+            font-size: 15px;
             cursor: pointer;
             border: none;
             border-radius: 8px;
             background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            transition: all 0.2s;
             white-space: nowrap;
-            min-width: 120px;
+            min-width: 100px;
             text-align: center;
         }
         .tab:hover {
-            transform: scale(1.05);
             box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
+            padding: 11px 20px;
+            margin: -1px -2px; /* Compensação para manter alinhamento */
         }
         .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b);
-            font-weight: bold;
+            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor mais escura */
+            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
+            padding: 11px 20px; /* Padding maior que o normal */
+            margin: -1px -2px; /* Compensação para manter alinhamento */
         }
         .tabs-container::-webkit-scrollbar {
             height: 8px;
@@ -208,25 +213,29 @@
         .subcategories {
             display: flex;
             justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
             flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 12px 0;
+            padding: 0 0 12px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
         }
         .subcategories button {
-            padding: 8px 16px;
+            padding: 8px 15px;
             font-size: 14px;
             cursor: pointer;
             border: none;
-            border-radius: 5px;
-            background-color: #6c757d;
-            color: white;
-            transition: background-color 0.3s;
+            border-radius: 6px;
+            background-color: #e9e9e9;
+            color: #555;
+            transition: all 0.2s;
         }
         .subcategories button:hover {
-            background-color: #5a6268;
+            background-color: #d4d4d4;
+            transform: translateY(-1px);
         }
         .subcategories button.active {
-            background-color: #5a6268;
+            background-color: #d4af37;
+            color: white;
             font-weight: bold;
         }
         .filter-container {
@@ -234,23 +243,32 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
-            margin-bottom: 20px;
+            margin: 0;
+            padding-top: 4px;
         }
         .filter-container label {
             font-size: 14px;
-            color: #333;
+            font-weight: 500;
+            color: #555;
         }
         .filter-container select {
-            padding: 8px 16px;
+            padding: 8px 15px;
             font-size: 14px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            background-color: #fff;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
             cursor: pointer;
-            transition: border-color 0.3s;
+            transition: all 0.2s;
+            color: #555;
         }
         .filter-container select:hover {
-            border-color: #b8860b;
+            border-color: #d4af37;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .filter-container select:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
         .gallery {
             display: grid;
@@ -510,13 +528,15 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
-        .fale-conosco-btn {
-            background-color: #28a745;
-            color: white;
+        .fale-conosco-btn, .instagram-btn {
+            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
+            color: #7d6c3b; /* Cor do texto mais escura para contraste */
             padding: 15px;
             text-align: center;
             text-decoration: none;
-            display: block;
+            display: flex; /* Mudança para flex para melhor alinhamento */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
             font-size: 16px;
             border: none;
             cursor: pointer;
@@ -525,13 +545,24 @@
             border-radius: 0;
             font-weight: bold;
             transition: background-color 0.3s;
-            margin-bottom: 0;
+            margin: 0; /* Zeramos as margens */
             box-sizing: border-box;
             position: relative;
             z-index: 10;
+            height: 55px; /* Altura fixa para garantir consistência */
         }
-        .fale-conosco-btn:hover {
-            background-color: #218838;
+        .instagram-btn {
+            border-top: 3px solid white; /* Borda branca na parte superior */
+        }
+        .fale-conosco-btn:hover, .instagram-btn:hover {
+            background-color: #dbc990; /* Dourado mais escuro para hover */
+        }
+        .fale-conosco-btn img, .instagram-btn img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px; /* Espaçamento consistente */
+            display: inline-block;
+            vertical-align: middle;
         }
 
         /* Estilos modificados para a sacola de compras */
@@ -786,6 +817,17 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+        /* Container principal para navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
+            margin: 0 auto 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
+        }
     </style>
 </head>
 <body>
@@ -818,19 +860,20 @@
         <div class="cart-counter" id="cartCounter">0</div>
         <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
-    
-    <div class="tabs-container">
-        <div class="tabs" id="tabs"></div>
-    </div>
-    <div class="subcategories" id="subcategories" style="display: none;"></div>
-    <div class="filter-container">
-        <label for="sortFilter">Ordenar por: </label>
-        <select id="sortFilter" onchange="applySort()">
-            <option value="newest" selected>Mais Novos</option>
-            <option value="oldest">Mais Antigos</option>
-            <option value="highestPrice">Maior Preço</option>
-            <option value="lowestPrice">Menor Preço</option>
-        </select>
+    <div class="navigation-controls">
+        <div class="tabs-container">
+            <div class="tabs" id="tabs"></div>
+        </div>
+        <div class="subcategories" id="subcategories" style="display: none;"></div>
+        <div class="filter-container">
+            <label for="sortFilter">Ordenar por: </label>
+            <select id="sortFilter" onchange="applySort()">
+                <option value="newest" selected>Mais Novos</option>
+                <option value="oldest">Mais Antigos</option>
+                <option value="highestPrice">Maior Preço</option>
+                <option value="lowestPrice">Menor Preço</option>
+            </select>
+        </div>
     </div>
     <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
@@ -924,7 +967,11 @@
     
     <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
         <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
-        Fale Conosco
+        Fale conosco pelo WhatsApp
+    </a>
+    <a href="https://www.instagram.com/renataacessoriosuberlandia/" id="instagramBtn" class="instagram-btn" target="_blank">            
+        <img src="imagens/insta.png" alt="Instagram" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
+        Visite nosso perfil no Instagram
     </a>
     <div id="rodape" class="rodape"></div>
 

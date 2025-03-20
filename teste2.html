@@ -528,13 +528,15 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
-        .fale-conosco-btn {
-            background-color: #28a745;
-            color: white;
+        .fale-conosco-btn, .instagram-btn {
+            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
+            color: #7d6c3b; /* Cor do texto mais escura para contraste */
             padding: 15px;
             text-align: center;
             text-decoration: none;
-            display: block;
+            display: flex; /* Mudança para flex para melhor alinhamento */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
             font-size: 16px;
             border: none;
             cursor: pointer;
@@ -543,13 +545,24 @@
             border-radius: 0;
             font-weight: bold;
             transition: background-color 0.3s;
-            margin-bottom: 0;
+            margin: 0; /* Zeramos as margens */
             box-sizing: border-box;
             position: relative;
             z-index: 10;
+            height: 55px; /* Altura fixa para garantir consistência */
         }
-        .fale-conosco-btn:hover {
-            background-color: #218838;
+        .instagram-btn {
+            border-top: 3px solid white; /* Borda branca na parte superior */
+        }
+        .fale-conosco-btn:hover, .instagram-btn:hover {
+            background-color: #dbc990; /* Dourado mais escuro para hover */
+        }
+        .fale-conosco-btn img, .instagram-btn img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px; /* Espaçamento consistente */
+            display: inline-block;
+            vertical-align: middle;
         }
 
         /* Estilos modificados para a sacola de compras */
@@ -815,30 +828,6 @@
             padding: 15px;
             box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
         }
-        .instagram-btn {
-            background-color: #8a3ab9; /* Cor roxa do Instagram */
-            color: white;
-            padding: 15px;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            max-width: 100%;
-            border-radius: 0;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-bottom: 0;
-            box-sizing: border-box;
-            position: relative;
-            z-index: 10;
-        }
-        
-        .instagram-btn:hover {
-            background-color: #6f2d96; /* Versão mais escura para hover */
-        }
     </style>
 </head>
 <body>
@@ -978,7 +967,7 @@
     
     <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
         <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
-        Fale Conosco
+        Fale conosco pelo WhatsApp
     </a>
     <a href="https://www.instagram.com/renataacessoriosuberlandia/" id="instagramBtn" class="instagram-btn" target="_blank">            
         <img src="imagens/insta.png" alt="Instagram" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
