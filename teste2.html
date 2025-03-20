@@ -154,12 +154,17 @@
             overflow: hidden;
         }
         .tabs-container {
-            padding: 0 0 12px 0;
-            margin: 0 0 12px 0;
-            background-color: transparent;
-            border-radius: 0;
-            box-shadow: none;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+                width: 100%;
+                max-width: 1000px;
+                overflow-x: auto;     /* CRÍTICO para a rolagem horizontal */
+                overflow-y: hidden;
+                white-space: nowrap;
+                padding: 0 0 12px 0;
+                margin: 0 0 12px 0;
+                background-color: transparent;
+                border-radius: 0;
+                box-shadow: none;
+                border-bottom: 1px solid rgba(0,0,0,0.06);
         }
         .tabs {
             display: inline-flex;
