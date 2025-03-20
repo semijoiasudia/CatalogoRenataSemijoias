@@ -155,11 +155,11 @@
         }
         .tabs-container {
                 width: 100%;
-                max-width: 1000px;
-                overflow-x: auto;     /* CRÍTICO para a rolagem horizontal */
-                overflow-y: hidden;
+                max-width: 100%; /* Usar 100% da largura do container pai */
+                overflow-x: auto;
+                overflow-y: visible; /* Alterado para visible para não cortar os botões ao crescerem */
                 white-space: nowrap;
-                padding: 0 0 12px 0;
+                padding: 5px 0 17px 0; /* Aumentado padding inferior para acomodar o crescimento */
                 margin: 0 0 12px 0;
                 background-color: transparent;
                 border-radius: 0;
@@ -168,29 +168,33 @@
         }
         .tabs {
             display: inline-flex;
-            gap: 5px;
+            gap: 8px;
+            padding: 2px; /* Pequeno padding para evitar cortes nas bordas */
         }
         .tab {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 10px 18px;
+            font-size: 15px;
             cursor: pointer;
             border: none;
             border-radius: 8px;
             background: linear-gradient(135deg, #e6c977, #d4af37);
             color: white;
             font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+            transition: all 0.2s;
             white-space: nowrap;
-            min-width: 120px;
+            min-width: 100px;
             text-align: center;
         }
         .tab:hover {
-            transform: scale(1.05);
             box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
+            padding: 11px 20px;
+            margin: -1px -2px; /* Compensação para manter alinhamento */
         }
         .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b);
-            font-weight: bold;
+            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor mais escura */
+            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
+            padding: 11px 20px; /* Padding maior que o normal */
+            margin: -1px -2px; /* Compensação para manter alinhamento */
         }
         .tabs-container::-webkit-scrollbar {
             height: 8px;
@@ -803,12 +807,13 @@
         /* Container principal para navegação */
         .navigation-controls {
             width: 100%;
-            max-width: 1000px;
+            max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
             margin: 0 auto 20px;
             background-color: #f8f8f8;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             padding: 15px;
+            box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
         }
     </style>
 </head>
