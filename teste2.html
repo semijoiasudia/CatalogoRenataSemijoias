@@ -528,8 +528,8 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
-        .fale-conosco-btn {
-            background-color: #28a745;
+        .fale-conosco-btn, .instagram-btn {
+            background-color: #caaa5d; /* Dourado suave e elegante */
             color: white;
             padding: 15px;
             text-align: center;
@@ -548,8 +548,11 @@
             position: relative;
             z-index: 10;
         }
-        .fale-conosco-btn:hover {
-            background-color: #218838;
+        .fale-conosco-btn {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        .fale-conosco-btn:hover, .instagram-btn:hover {
+            background-color: #b89a4d; /* Dourado mais escuro para hover */
         }
 
         /* Estilos modificados para a sacola de compras */
@@ -814,30 +817,6 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             padding: 15px;
             box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
-        }
-        .instagram-btn {
-            background-color: #E1306C; /* Cor rosa-magenta do Instagram */
-            color: white;
-            padding: 15px;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            max-width: 100%;
-            border-radius: 0;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin-bottom: 0;
-            box-sizing: border-box;
-            position: relative;
-            z-index: 10;
-        }
-        
-        .instagram-btn:hover {
-            background-color: #C13584; /* Versão mais escura para hover */
         }
     </style>
 </head>
