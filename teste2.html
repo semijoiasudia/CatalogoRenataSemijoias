@@ -86,7 +86,8 @@
         .carrossel-h-container {
             overflow: hidden;
             width: 100%;
-            margin: 0 10px;
+            margin: 0 auto; /* Centraliza o container */
+            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
         }
         
         .carrossel-h-wrapper {
@@ -100,14 +101,17 @@
             box-sizing: border-box;
             cursor: pointer;
             position: relative;
+            text-align: center; /* Centraliza o conteúdo */
         }
         
         .carrossel-h-slide img {
-            width: 100%;
+            width: 250px;
             height: 250px;
             object-fit: cover;
             border-radius: 8px;
             transition: transform 0.3s ease;
+            display: inline-block; /* Permite centralização */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
         }
         
         .carrossel-h-slide:hover img {
