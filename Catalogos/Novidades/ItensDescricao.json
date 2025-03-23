@@ -62,6 +62,26 @@
       "dataUltimaEntrada": "27/02/2025"
     },
     {
+      "codigo": "4111",
+      "descricao": "COLAR PEROLA BRANCA 45+5CM",
+      "imagem": "4111.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4094",
+      "descricao": "BRINCO ARGOLA CLICK CORACAO P SEGUNDO FURO",
+      "imagem": "4094.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "29,90",
+      "precoConsignado": "42,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/02/2025"
+    },
+    {
       "codigo": "4095",
       "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
       "imagem": "4095.jpg",
@@ -69,26 +89,6 @@
       "preco": "34,90",
       "precoConsignado": "52,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/02/2025"
-    },
-    {
-      "codigo": "4110",
-      "descricao": "BRINCO ARGOLA CLICK 3 FILEIRAS ZIRCONIAS COLORS TAM PP",
-      "imagem": "4110.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/03/2025"
-    },
-    {
-      "codigo": "4093",
-      "descricao": "ANEL FOLHA ORGANICA - TAMANHOS",
-      "imagem": "4093.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/02/2025"
     },
     {
@@ -132,16 +132,6 @@
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "4094",
-      "descricao": "BRINCO ARGOLA CLICK CORACAO P SEGUNDO FURO",
-      "imagem": "4094.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "29,90",
-      "precoConsignado": "42,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/02/2025"
-    },
-    {
       "codigo": "4141",
       "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
       "imagem": "4141.jpg",
@@ -152,14 +142,14 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4111",
-      "descricao": "COLAR PEROLA BRANCA 45+5CM",
-      "imagem": "4111.jpg",
+      "codigo": "4093",
+      "descricao": "ANEL FOLHA ORGANICA - TAMANHOS",
+      "imagem": "4093.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "52,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
+      "dataUltimaEntrada": "26/02/2025"
     },
     {
       "codigo": "4142",
@@ -170,6 +160,16 @@
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4112",
+      "descricao": "BRINCO PEROLAS BRANCAS CASCATA",
+      "imagem": "4112.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4140",
@@ -232,66 +232,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4134",
-      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
-      "imagem": "4134.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4113",
-      "descricao": "BRINCO CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
-      "imagem": "4113.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4132",
-      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
-      "imagem": "4132.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
-      "imagem": "4126.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "4125",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "4125.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "76,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "4116",
-      "descricao": "COLAR DUPLO DE ESFERAS 41/44+5CM",
-      "imagem": "4116.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
       "codigo": "4115",
       "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
       "imagem": "4115.jpg",
@@ -312,14 +252,44 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4112",
-      "descricao": "BRINCO PEROLAS BRANCAS CASCATA",
-      "imagem": "4112.jpg",
+      "codigo": "4116",
+      "descricao": "COLAR DUPLO DE ESFERAS 41/44+5CM",
+      "imagem": "4116.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4125",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "4125.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
+      "codigo": "4126",
+      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "imagem": "4126.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
+      "codigo": "4132",
+      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
+      "imagem": "4132.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4133",
@@ -330,6 +300,26 @@
       "precoConsignado": "102,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4134",
+      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
+      "imagem": "4134.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4113",
+      "descricao": "BRINCO CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
+      "imagem": "4113.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
     }
   ]
 }

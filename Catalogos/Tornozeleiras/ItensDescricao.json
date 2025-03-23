@@ -2,16 +2,6 @@
   "categoria": "TORNOZELEIRA",
   "produtos": [
     {
-      "codigo": "3164",
-      "descricao": "TORNOZELEIRA CORACAO VAZADO E PONTOS DE LUZ",
-      "imagem": "3164.jpg",
-      "pastaFotos": "Catalogos/Tornozeleiras/",
-      "preco": "42,90",
-      "precoConsignado": "62,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/06/2024"
-    },
-    {
       "codigo": "3231",
       "descricao": "TORNOZELEIRA 3 TREVOS DE 4 FOLHAS",
       "imagem": "3231.jpg",
@@ -20,6 +10,16 @@
       "precoConsignado": "62,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "20/06/2024"
+    },
+    {
+      "codigo": "3164",
+      "descricao": "TORNOZELEIRA CORACAO VAZADO E PONTOS DE LUZ",
+      "imagem": "3164.jpg",
+      "pastaFotos": "Catalogos/Tornozeleiras/",
+      "preco": "42,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/06/2024"
     }
   ]
 }
