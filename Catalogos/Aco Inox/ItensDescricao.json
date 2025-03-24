@@ -2,14 +2,14 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4058",
-      "descricao": "INOX BRINCO OVAL ORGANICO",
-      "imagem": "4058.jpg",
+      "codigo": "4065",
+      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
+      "imagem": "4065.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "32,90",
-      "precoConsignado": "54,90",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
+      "dataUltimaEntrada": "20/02/2025"
     },
     {
       "codigo": "4010",
@@ -52,6 +52,16 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
+      "codigo": "4056",
+      "descricao": "INOX BRINCO BORBOLETA CRAVEJADA COLORS",
+      "imagem": "4056.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "24,90",
+      "precoConsignado": "44,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "19/02/2025"
+    },
+    {
       "codigo": "4057",
       "descricao": "INOX BRINCO CORACAO CRAVEJADO COLORS",
       "imagem": "4057.jpg",
@@ -62,32 +72,22 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
+      "codigo": "4058",
+      "descricao": "INOX BRINCO OVAL ORGANICO",
+      "imagem": "4058.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "32,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "19/02/2025"
+    },
+    {
       "codigo": "4059",
       "descricao": "INOX BRINCO TRIO OVAL",
       "imagem": "4059.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "54,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4065",
-      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
-      "imagem": "4065.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "20/02/2025"
-    },
-    {
-      "codigo": "4056",
-      "descricao": "INOX BRINCO BORBOLETA CRAVEJADA COLORS",
-      "imagem": "4056.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "24,90",
-      "precoConsignado": "44,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/02/2025"
     }
