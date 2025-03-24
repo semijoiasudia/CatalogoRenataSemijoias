@@ -2,14 +2,24 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
-      "codigo": "4092",
-      "descricao": "ANEL REGULAVEL FALANGE 2 CORACOES DIAMANTADOS",
-      "imagem": "4092.jpg",
+      "codigo": "4093",
+      "descricao": "ANEL FOLHA ORGANICA - TAMANHOS",
+      "imagem": "4093.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "29,90",
-      "precoConsignado": "44,90",
+      "preco": "52,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/02/2025"
+    },
+    {
+      "codigo": "4110",
+      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
+      "imagem": "4110.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/03/2025"
     },
     {
       "codigo": "4108",
@@ -20,6 +30,16 @@
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/03/2025"
+    },
+    {
+      "codigo": "4148",
+      "descricao": "BRINCO DUO ARGOLA CLICK FILEIRA CRAVEJADA DIAGONAL",
+      "imagem": "4148.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
     },
     {
       "codigo": "4100",
@@ -62,32 +82,42 @@
       "dataUltimaEntrada": "27/02/2025"
     },
     {
-      "codigo": "4095",
-      "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
-      "imagem": "4095.jpg",
+      "codigo": "4111",
+      "descricao": "COLAR PEROLA BRANCA 45+5CM",
+      "imagem": "4111.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4094",
+      "descricao": "BRINCO ARGOLA CLICK CORACAO P SEGUNDO FURO",
+      "imagem": "4094.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "29,90",
+      "precoConsignado": "42,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "26/02/2025"
     },
     {
-      "codigo": "4110",
-      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
-      "imagem": "4110.jpg",
+      "codigo": "4150",
+      "descricao": "BRINCO ARGOLA CLICK SEGUNDO FURO COLORS PP",
+      "imagem": "4150.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/03/2025"
+      "dataUltimaEntrada": "24/03/2025"
     },
     {
-      "codigo": "4093",
-      "descricao": "ANEL FOLHA ORGANICA - TAMANHOS",
-      "imagem": "4093.jpg",
+      "codigo": "4092",
+      "descricao": "ANEL REGULAVEL FALANGE 2 CORACOES DIAMANTADOS",
+      "imagem": "4092.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "74,90",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/02/2025"
     },
@@ -102,6 +132,56 @@
       "dataUltimaEntrada": "26/02/2025"
     },
     {
+      "codigo": "4082",
+      "descricao": "BRINCO TREVO V&C RESINA PRETO - TARRACHA",
+      "imagem": "4082.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/02/2025"
+    },
+    {
+      "codigo": "4152",
+      "descricao": "BRINCO ARGOLA CLICK FILEIRA CRAVEJADA DIAGONAL P",
+      "imagem": "4152.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
+      "codigo": "4149",
+      "descricao": "BRINCO DUO ARGOLA CLICK COLORS P",
+      "imagem": "4149.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "116,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
+      "codigo": "4144",
+      "descricao": "BRINCO TRIO ARGOLA QUADRADA 3 FILEIRAS DE ZIRCONIAS",
+      "imagem": "4144.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/03/2025"
+    },
+    {
+      "codigo": "4151",
+      "descricao": "BRINCO ARGOLA CLICK FILEIRA CRAVEJADA DIAGONAL M",
+      "imagem": "4151.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
       "codigo": "4043",
       "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
       "imagem": "4043.jpg",
@@ -112,13 +192,23 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4143",
-      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
-      "imagem": "4143.jpg",
+      "codigo": "4095",
+      "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
+      "imagem": "4095.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/02/2025"
+    },
+    {
+      "codigo": "4142",
+      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
+      "imagem": "4142.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
       "precoConsignado": "89,90",
-      "banho": "INOX",
+      "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
@@ -132,14 +222,24 @@
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "4094",
-      "descricao": "BRINCO ARGOLA CLICK CORACAO P SEGUNDO FURO",
-      "imagem": "4094.jpg",
+      "codigo": "4112",
+      "descricao": "BRINCO PEROLAS BRANCAS CASCATA",
+      "imagem": "4112.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "29,90",
-      "precoConsignado": "42,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/02/2025"
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4143",
+      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
+      "imagem": "4143.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4141",
@@ -148,26 +248,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
       "precoConsignado": "94,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4111",
-      "descricao": "COLAR PEROLA BRANCA 45+5CM",
-      "imagem": "4111.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4142",
-      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
-      "imagem": "4142.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
@@ -222,14 +302,14 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4135",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRATA",
-      "imagem": "4135.jpg",
+      "codigo": "4115",
+      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
+      "imagem": "4115.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "69,90",
       "precoConsignado": "99,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/03/2025"
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4134",
@@ -242,14 +322,14 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4113",
-      "descricao": "BRINCO CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
-      "imagem": "4113.jpg",
+      "codigo": "4133",
+      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
+      "imagem": "4133.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
+      "preco": "62,90",
+      "precoConsignado": "102,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4132",
@@ -292,16 +372,6 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4115",
-      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
-      "imagem": "4115.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
       "codigo": "4114",
       "descricao": "BRINCO FLOR CRAVEJADA PEROLOA BRANCA",
       "imagem": "4114.jpg",
@@ -312,23 +382,23 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4112",
-      "descricao": "BRINCO PEROLAS BRANCAS CASCATA",
-      "imagem": "4112.jpg",
+      "codigo": "4113",
+      "descricao": "BRINCO CONCHA CRAVEJADA CORACAO PEROLOA BRANCA",
+      "imagem": "4113.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4133",
-      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
-      "imagem": "4133.jpg",
+      "codigo": "4135",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRATA",
+      "imagem": "4135.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
-      "precoConsignado": "102,90",
-      "banho": "Banhado a Ouro",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "INOX",
       "dataUltimaEntrada": "22/03/2025"
     }
   ]
