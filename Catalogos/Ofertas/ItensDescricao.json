@@ -32,6 +32,16 @@
       "dataUltimaEntrada": "17/05/2024"
     },
     {
+      "codigo": "3127",
+      "descricao": "BRINCO EAR CUFF 3 FLORES P",
+      "imagem": "3127.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/05/2024"
+    },
+    {
       "codigo": "3052",
       "descricao": "BRINCO QUADRADO ABAULADO M",
       "imagem": "3052.jpg",
@@ -40,26 +50,6 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/05/2024"
-    },
-    {
-      "codigo": "3154",
-      "descricao": "BRINCO TRIANGULO ORGANICO M",
-      "imagem": "3154.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "29,90",
-      "precoConsignado": "66,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2024"
-    },
-    {
-      "codigo": "2847",
-      "descricao": "CHOKER MINI CORACOES 39+5CM",
-      "imagem": "2847.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "49,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/04/2024"
     },
     {
       "codigo": "3179",
@@ -72,14 +62,24 @@
       "dataUltimaEntrada": "10/06/2024"
     },
     {
-      "codigo": "3127",
-      "descricao": "BRINCO EAR CUFF 3 FLORES P",
-      "imagem": "3127.jpg",
+      "codigo": "2847",
+      "descricao": "CHOKER MINI CORACOES 39+5CM",
+      "imagem": "2847.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "49,90",
+      "preco": "49,90",
+      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/05/2024"
+      "dataUltimaEntrada": "03/04/2024"
+    },
+    {
+      "codigo": "3154",
+      "descricao": "BRINCO TRIANGULO ORGANICO M",
+      "imagem": "3154.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "29,90",
+      "precoConsignado": "66,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/06/2024"
     },
     {
       "codigo": "3018",

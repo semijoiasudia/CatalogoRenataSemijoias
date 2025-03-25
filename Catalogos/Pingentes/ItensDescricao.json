@@ -2,16 +2,6 @@
   "categoria": "PINGENTE",
   "produtos": [
     {
-      "codigo": "3271",
-      "descricao": "PINGENTE FLOR ORGANICA",
-      "imagem": "3271.jpg",
-      "pastaFotos": "Catalogos/Pingentes/",
-      "preco": "36,90",
-      "precoConsignado": "54,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/07/2024"
-    },
-    {
       "codigo": "1497",
       "descricao": "PINGENTE CHANEL CRAV. CRISTAL",
       "imagem": "1497.jpg",
@@ -20,6 +10,16 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "07/08/2023"
+    },
+    {
+      "codigo": "3271",
+      "descricao": "PINGENTE FLOR ORGANICA",
+      "imagem": "3271.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/07/2024"
     },
     {
       "codigo": "3270",

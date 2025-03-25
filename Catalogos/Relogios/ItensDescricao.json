@@ -2,9 +2,9 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "4137",
-      "descricao": "RELOGIO INSP. FUNDO CAFE PULSEIRA ELASTICA",
-      "imagem": "4137.jpg",
+      "codigo": "4015",
+      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
+      "imagem": "4015.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -12,29 +12,39 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4135",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRATA",
-      "imagem": "4135.jpg",
+      "codigo": "4016",
+      "descricao": "RELOGIO DOLUCK ROSE INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "4016.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/02/2025"
+    },
+    {
+      "codigo": "4017",
+      "descricao": "RELOGIO DOLUCK INOX INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "4017.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
       "banho": "INOX",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4043",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
-      "imagem": "4043.jpg",
+      "codigo": "4033",
+      "descricao": "RELOGIO DOLUCK DOURADO PULSEIRA COURO SINTETICO",
+      "imagem": "4033.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4042",
-      "descricao": "RELOGIO REDONDO DIGITAL PRETO",
-      "imagem": "4042.jpg",
+      "codigo": "4135",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRATA",
+      "imagem": "4135.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "69,90",
       "precoConsignado": "99,90",
@@ -52,59 +62,19 @@
       "dataUltimaEntrada": "18/02/2025"
     },
     {
-      "codigo": "4033",
-      "descricao": "RELOGIO DOLUCK DOURADO PULSEIRA COURO SINTETICO",
-      "imagem": "4033.jpg",
+      "codigo": "4043",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
+      "imagem": "4043.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4017",
-      "descricao": "RELOGIO DOLUCK INOX INSPIRACAO PULSEIRA ELASTICA",
-      "imagem": "4017.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4139",
-      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
-      "imagem": "4139.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4015",
-      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
-      "imagem": "4015.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4143",
-      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
-      "imagem": "4143.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4136",
-      "descricao": "RELOGIO FUNDO BRANCO INSP. PULSEIRA ELASTICA",
-      "imagem": "4136.jpg",
+      "codigo": "4137",
+      "descricao": "RELOGIO INSP. FUNDO CAFE PULSEIRA ELASTICA",
+      "imagem": "4137.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -122,9 +92,29 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
+      "codigo": "4139",
+      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
+      "imagem": "4139.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
       "codigo": "4140",
       "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
       "imagem": "4140.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4136",
+      "descricao": "RELOGIO FUNDO BRANCO INSP. PULSEIRA ELASTICA",
+      "imagem": "4136.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -152,14 +142,24 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4016",
-      "descricao": "RELOGIO DOLUCK ROSE INSPIRACAO PULSEIRA ELASTICA",
-      "imagem": "4016.jpg",
+      "codigo": "4143",
+      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
+      "imagem": "4143.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "62,90",
+      "preco": "59,90",
       "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/02/2025"
+      "banho": "INOX",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4042",
+      "descricao": "RELOGIO REDONDO DIGITAL PRETO",
+      "imagem": "4042.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "22/03/2025"
     }
   ]
 }

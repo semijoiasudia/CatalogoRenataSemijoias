@@ -2,14 +2,24 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
-      "codigo": "4143",
-      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
-      "imagem": "4143.jpg",
+      "codigo": "4043",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
+      "imagem": "4043.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4100",
+      "descricao": "BRINCO FORMATO GOTA ABERTA COM ZIRCONIAS CRISTAL",
+      "imagem": "4100.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/02/2025"
     },
     {
       "codigo": "4099",
@@ -82,34 +92,24 @@
       "dataUltimaEntrada": "26/02/2025"
     },
     {
-      "codigo": "4090",
-      "descricao": "ANEL REGULAVEL FIO 2 CORACOES CRISTAL",
-      "imagem": "4090.jpg",
+      "codigo": "4144",
+      "descricao": "BRINCO ARGOLA QUADRADA 3 FILEIRAS DE ZIRCONIAS",
+      "imagem": "4144.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "59,90",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/02/2025"
+      "dataUltimaEntrada": "23/03/2025"
     },
     {
-      "codigo": "4100",
-      "descricao": "BRINCO FORMATO GOTA ABERTA COM ZIRCONIAS CRISTAL",
-      "imagem": "4100.jpg",
+      "codigo": "4082",
+      "descricao": "BRINCO TREVO V&C RESINA PRETO - TARRACHA",
+      "imagem": "4082.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/02/2025"
-    },
-    {
-      "codigo": "4043",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
-      "imagem": "4043.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
+      "dataUltimaEntrada": "22/02/2025"
     },
     {
       "codigo": "4150",
@@ -122,14 +122,14 @@
       "dataUltimaEntrada": "24/03/2025"
     },
     {
-      "codigo": "4144",
-      "descricao": "BRINCO ARGOLA QUADRADA 3 FILEIRAS DE ZIRCONIAS",
-      "imagem": "4144.jpg",
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/03/2025"
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "4148",
@@ -138,6 +138,16 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "84,90",
       "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
+      "codigo": "4149",
+      "descricao": "BRINCO DUO ARGOLA CLICK COLORS P",
+      "imagem": "4149.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "116,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "24/03/2025"
     },
@@ -152,23 +162,13 @@
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "4149",
-      "descricao": "BRINCO DUO ARGOLA CLICK COLORS P",
-      "imagem": "4149.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "116,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/03/2025"
-    },
-    {
-      "codigo": "4141",
-      "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
-      "imagem": "4141.jpg",
+      "codigo": "4143",
+      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
+      "imagem": "4143.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "INOX DOURADO",
+      "precoConsignado": "89,90",
+      "banho": "INOX",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
@@ -192,19 +192,19 @@
       "dataUltimaEntrada": "24/03/2025"
     },
     {
-      "codigo": "4082",
-      "descricao": "BRINCO TREVO V&C RESINA PRETO - TARRACHA",
-      "imagem": "4082.jpg",
+      "codigo": "4090",
+      "descricao": "ANEL REGULAVEL FIO 2 CORACOES CRISTAL",
+      "imagem": "4090.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "39,90",
-      "precoConsignado": "69,90",
+      "preco": "42,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/02/2025"
+      "dataUltimaEntrada": "26/02/2025"
     },
     {
-      "codigo": "4138",
-      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
-      "imagem": "4138.jpg",
+      "codigo": "4140",
+      "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
+      "imagem": "4140.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -212,12 +212,22 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4142",
-      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
-      "imagem": "4142.jpg",
+      "codigo": "4108",
+      "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
+      "imagem": "4108.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/03/2025"
+    },
+    {
+      "codigo": "4141",
+      "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
+      "imagem": "4141.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "94,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
@@ -225,6 +235,16 @@
       "codigo": "4139",
       "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
       "imagem": "4139.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4138",
+      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
+      "imagem": "4138.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -282,14 +302,14 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4132",
-      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
-      "imagem": "4132.jpg",
+      "codigo": "4111",
+      "descricao": "COLAR PEROLA BRANCA 45+5CM",
+      "imagem": "4111.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4126",
@@ -302,14 +322,14 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "4110",
-      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
-      "imagem": "4110.jpg",
+      "codigo": "4125",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "4125.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "44,90",
-      "precoConsignado": "69,90",
+      "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/03/2025"
+      "dataUltimaEntrada": "12/03/2025"
     },
     {
       "codigo": "4116",
@@ -362,44 +382,34 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4111",
-      "descricao": "COLAR PEROLA BRANCA 45+5CM",
-      "imagem": "4111.jpg",
+      "codigo": "4110",
+      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
+      "imagem": "4110.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/03/2025"
+    },
+    {
+      "codigo": "4142",
+      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
+      "imagem": "4142.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4108",
-      "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
-      "imagem": "4108.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/03/2025"
-    },
-    {
-      "codigo": "4140",
-      "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
-      "imagem": "4140.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "64,90",
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4125",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "4125.jpg",
+      "codigo": "4132",
+      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
+      "imagem": "4132.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "76,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/03/2025"
+      "dataUltimaEntrada": "22/03/2025"
     }
   ]
 }
