@@ -2,12 +2,12 @@
   "categoria": "PINGENTE",
   "produtos": [
     {
-      "codigo": "3270",
-      "descricao": "PINGENTE CORACAO CRISTAL G",
-      "imagem": "3270.jpg",
+      "codigo": "3271",
+      "descricao": "PINGENTE FLOR ORGANICA",
+      "imagem": "3271.jpg",
       "pastaFotos": "Catalogos/Pingentes/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "01/07/2024"
     },
@@ -22,12 +22,12 @@
       "dataUltimaEntrada": "07/08/2023"
     },
     {
-      "codigo": "3271",
-      "descricao": "PINGENTE FLOR ORGANICA",
-      "imagem": "3271.jpg",
+      "codigo": "3270",
+      "descricao": "PINGENTE CORACAO CRISTAL G",
+      "imagem": "3270.jpg",
       "pastaFotos": "Catalogos/Pingentes/",
-      "preco": "36,90",
-      "precoConsignado": "54,90",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "01/07/2024"
     }

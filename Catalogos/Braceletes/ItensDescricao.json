@@ -2,16 +2,6 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
-      "codigo": "3657",
-      "descricao": "BRACELETE FIO CRUZADO FINO",
-      "imagem": "3657.jpg",
-      "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/11/2024"
-    },
-    {
       "codigo": "3865",
       "descricao": "BRACELETE FIO DUPLO ",
       "imagem": "3865.jpg",
@@ -40,6 +30,16 @@
       "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/10/2024"
+    },
+    {
+      "codigo": "3657",
+      "descricao": "BRACELETE FIO CRUZADO FINO",
+      "imagem": "3657.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/11/2024"
     }
   ]
 }
