@@ -102,6 +102,16 @@
       "dataUltimaEntrada": "07/10/2024"
     },
     {
+      "codigo": "3945",
+      "descricao": "PIERCING FAKE FIO FINO LISO",
+      "imagem": "3945.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "19,90",
+      "precoConsignado": "29,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/01/2025"
+    },
+    {
       "codigo": "3969",
       "descricao": "PIERCING FAKE 2 FIOS ENTRELACADOS",
       "imagem": "3969.jpg",
@@ -140,16 +150,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "21/02/2024"
-    },
-    {
-      "codigo": "3945",
-      "descricao": "PIERCING FAKE FIO FINO LISO",
-      "imagem": "3945.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "19,90",
-      "precoConsignado": "29,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/01/2025"
     }
   ]
 }
