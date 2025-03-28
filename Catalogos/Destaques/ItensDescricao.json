@@ -2,76 +2,6 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
-      "codigo": "4032",
-      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA ROXO P",
-      "imagem": "4032.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "46,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "3643",
-      "descricao": "CONJUNTO TREVO V&C RESINA PRETO - TARRACHA 41+5CM",
-      "imagem": "3643.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/03/2025"
-    },
-    {
-      "codigo": "3680",
-      "descricao": "CONJUNTO TREVO V&C VERDE BANDEIRA 39+5CM",
-      "imagem": "3680.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/02/2025"
-    },
-    {
-      "codigo": "3793",
-      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
-      "imagem": "3793.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/03/2025"
-    },
-    {
-      "codigo": "3862",
-      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
-      "imagem": "3862.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/12/2024"
-    },
-    {
-      "codigo": "4015",
-      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
-      "imagem": "4015.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "1488",
-      "descricao": "COLAR FIO DE NYLON 3 CORACOES 2 BANHOS 40+5CM",
-      "imagem": "1488.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "96,90",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "10/03/2025"
-    },
-    {
       "codigo": "4031",
       "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA COLORS P",
       "imagem": "4031.jpg",
@@ -92,9 +22,79 @@
       "dataUltimaEntrada": "06/03/2025"
     },
     {
+      "codigo": "4032",
+      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA ROXO P",
+      "imagem": "4032.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "1488",
+      "descricao": "COLAR FIO DE NYLON 3 CORACOES 2 BANHOS 40+5CM",
+      "imagem": "1488.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "96,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "10/03/2025"
+    },
+    {
+      "codigo": "4015",
+      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
+      "imagem": "4015.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3862",
+      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
+      "imagem": "3862.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/12/2024"
+    },
+    {
       "codigo": "4154",
       "descricao": "CONJUNTO TREVO V&C MARROM 39+5CM",
       "imagem": "4154.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
+      "codigo": "3793",
+      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
+      "imagem": "3793.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/03/2025"
+    },
+    {
+      "codigo": "3680",
+      "descricao": "CONJUNTO TREVO V&C VERDE BANDEIRA 39+5CM",
+      "imagem": "3680.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/02/2025"
+    },
+    {
+      "codigo": "3643",
+      "descricao": "CONJUNTO TREVO V&C RESINA PRETO - TARRACHA 41+5CM",
+      "imagem": "3643.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "129,90",
       "precoConsignado": "189,90",

@@ -12,26 +12,6 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "3835",
-      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
-      "imagem": "3835.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "2503",
-      "descricao": "PULSEIRA RIVIERA CRISTAL 3MM FECHO GRAVATA",
-      "imagem": "2503.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "13/02/2025"
-    },
-    {
       "codigo": "2578",
       "descricao": "PULSEIRA CORACOES ENTRELACADOS FECHO GRAVATA",
       "imagem": "2578.jpg",
@@ -40,16 +20,6 @@
       "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "4155",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
-      "imagem": "4155.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "2574",
@@ -62,14 +32,44 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3797",
-      "descricao": "PULSEIRA ESFERA DIAMANTADA VAZADA",
-      "imagem": "3797.jpg",
+      "codigo": "2503",
+      "descricao": "PULSEIRA RIVIERA CRISTAL 3MM FECHO GRAVATA",
+      "imagem": "2503.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
+      "preco": "56,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "08/12/2024"
+      "dataUltimaEntrada": "13/02/2025"
+    },
+    {
+      "codigo": "3838",
+      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
+      "imagem": "3838.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
+    },
+    {
+      "codigo": "3803",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
+      "imagem": "3803.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "56,90",
+      "precoConsignado": "82,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/12/2024"
     },
     {
       "codigo": "3658",
@@ -82,12 +82,22 @@
       "dataUltimaEntrada": "05/11/2024"
     },
     {
-      "codigo": "4125",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "4125.jpg",
+      "codigo": "3797",
+      "descricao": "PULSEIRA ESFERA DIAMANTADA VAZADA",
+      "imagem": "3797.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "08/12/2024"
+    },
+    {
+      "codigo": "4126",
+      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "imagem": "4126.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "44,90",
-      "precoConsignado": "76,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "12/03/2025"
     },
@@ -152,32 +162,22 @@
       "dataUltimaEntrada": "10/06/2024"
     },
     {
-      "codigo": "3803",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
-      "imagem": "3803.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "82,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/12/2024"
-    },
-    {
-      "codigo": "3853",
-      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
-      "imagem": "3853.jpg",
+      "codigo": "3834",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "imagem": "3834.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/12/2024"
+      "dataUltimaEntrada": "14/12/2024"
     },
     {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
-      "imagem": "4126.jpg",
+      "codigo": "4125",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "4125.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "44,90",
-      "precoConsignado": "74,90",
+      "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "12/03/2025"
     },
@@ -192,23 +192,23 @@
       "dataUltimaEntrada": "17/05/2024"
     },
     {
-      "codigo": "3838",
-      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
-      "imagem": "3838.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3834",
-      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
-      "imagem": "3834.jpg",
+      "codigo": "3853",
+      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
+      "imagem": "3853.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3835",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "imagem": "3835.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "14/12/2024"
     },
     {
