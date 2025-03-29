@@ -33,7 +33,7 @@
     },
     {
       "codigo": "4042",
-      "descricao": "RELOGIO REDONDO DIGITAL PRETO",
+      "descricao": "RELOGIO DOLUCK DIGITAL PRETO",
       "imagem": "4042.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "69,90",
@@ -112,16 +112,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4143",
-      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
-      "imagem": "4143.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
       "codigo": "4137",
       "descricao": "RELOGIO INSP. FUNDO CAFE PULSEIRA ELASTICA",
       "imagem": "4137.jpg",
@@ -129,6 +119,16 @@
       "preco": "64,90",
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4143",
+      "descricao": "RELOGIO QUADRADO PRETO FUNDO BRANCO PULSEIRA ELASTICA",
+      "imagem": "4143.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX",
       "dataUltimaEntrada": "22/03/2025"
     },
     {
