@@ -2,6 +2,16 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "3961",
+      "descricao": "CHOKER BARRAS E FLORES VAZADAS 40+5CM",
+      "imagem": "3961.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/01/2025"
+    },
+    {
       "codigo": "3599",
       "descricao": "CHOKER CORACAO CRAVEJADO CRISTAL P 36+5CM",
       "imagem": "3599.jpg",
@@ -12,14 +22,64 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "3961",
-      "descricao": "CHOKER BARRAS E FLORES VAZADAS 40+5CM",
-      "imagem": "3961.jpg",
+      "codigo": "3691",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3691.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "3690",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3690.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/01/2025"
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "3973",
+      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
+      "imagem": "3973.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "84,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
+      "codigo": "3975",
+      "descricao": "CHOKER CRISTAIS LAVANDA E PING DE GOTA 39+5CM",
+      "imagem": "3975.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
+      "codigo": "3976",
+      "descricao": "CHOKER CRISTAIS AQUA E PING DE GOTA 39+5CM",
+      "imagem": "3976.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
+      "codigo": "3260",
+      "descricao": "CHOKER PINGENTES ZIRCONIAS QUADRADAS 46CM",
+      "imagem": "3260.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "39,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/06/2024"
     },
     {
       "codigo": "3660",
@@ -42,94 +102,24 @@
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "3976",
-      "descricao": "CHOKER CRISTAIS AQUA E PING DE GOTA 39+5CM",
-      "imagem": "3976.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/02/2025"
-    },
-    {
-      "codigo": "3975",
-      "descricao": "CHOKER CRISTAIS LAVANDA E PING DE GOTA 39+5CM",
-      "imagem": "3975.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/02/2025"
-    },
-    {
-      "codigo": "3691",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3691.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3973",
-      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
-      "imagem": "3973.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "84,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/02/2025"
-    },
-    {
-      "codigo": "3690",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3690.jpg",
+      "codigo": "4132",
+      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
+      "imagem": "4132.jpg",
       "pastaFotos": "Catalogos/Chokers/",
       "preco": "79,90",
       "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3260",
-      "descricao": "CHOKER PINGENTES ZIRCONIAS QUADRADAS 46CM",
-      "imagem": "3260.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "39,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/06/2024"
-    },
-    {
-      "codigo": "3268",
-      "descricao": "CHOKER ARO FINO",
-      "imagem": "3268.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/07/2024"
-    },
-    {
-      "codigo": "3467",
-      "descricao": "CHOKER PIPOCA 3MM 36+10CM",
-      "imagem": "3467.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "102,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "17/09/2024"
-    },
-    {
-      "codigo": "4134",
-      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
-      "imagem": "4134.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3928",
+      "descricao": "CHOKER NAVETES COLORIDAS 32+10CM",
+      "imagem": "3928.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "76,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/01/2025"
     },
     {
       "codigo": "3829",
@@ -142,26 +132,6 @@
       "dataUltimaEntrada": "13/12/2024"
     },
     {
-      "codigo": "2847",
-      "descricao": "CHOKER MINI CORACOES 39+5CM",
-      "imagem": "2847.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "49,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/04/2024"
-    },
-    {
-      "codigo": "3744",
-      "descricao": "CHOKER PINGENTES NAVETE CRISTAL 41+5CM",
-      "imagem": "3744.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/11/2024"
-    },
-    {
       "codigo": "3491",
       "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
       "imagem": "3491.jpg",
@@ -172,14 +142,24 @@
       "dataUltimaEntrada": "25/03/2025"
     },
     {
-      "codigo": "4132",
-      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
-      "imagem": "4132.jpg",
+      "codigo": "4134",
+      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
+      "imagem": "4134.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3744",
+      "descricao": "CHOKER PINGENTES NAVETE CRISTAL 41+5CM",
+      "imagem": "3744.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/11/2024"
     },
     {
       "codigo": "3885",
@@ -222,14 +202,14 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "3928",
-      "descricao": "CHOKER NAVETES COLORIDAS 32+10CM",
-      "imagem": "3928.jpg",
+      "codigo": "3467",
+      "descricao": "CHOKER PIPOCA 3MM 36+10CM",
+      "imagem": "3467.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "76,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/01/2025"
+      "preco": "69,90",
+      "precoConsignado": "102,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/09/2024"
     }
   ]
 }

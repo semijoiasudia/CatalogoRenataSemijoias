@@ -2,32 +2,12 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4065",
-      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
-      "imagem": "4065.jpg",
+      "codigo": "4055",
+      "descricao": "INOX BRINCO CORACAO RESINA BRANCA CRISTAIS",
+      "imagem": "4055.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "20/02/2025"
-    },
-    {
-      "codigo": "4059",
-      "descricao": "INOX BRINCO TRIO OVAL",
-      "imagem": "4059.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "54,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4058",
-      "descricao": "INOX BRINCO OVAL ORGANICO",
-      "imagem": "4058.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "32,90",
-      "precoConsignado": "54,90",
+      "preco": "24,90",
+      "precoConsignado": "44,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/02/2025"
     },
@@ -42,32 +22,12 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
-      "codigo": "4056",
-      "descricao": "INOX BRINCO BORBOLETA CRAVEJADA COLORS",
-      "imagem": "4056.jpg",
+      "codigo": "4049",
+      "descricao": "INOX BRINCO FLOR DETALHES BRANCOS COM CRISTAIS",
+      "imagem": "4049.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "24,90",
       "precoConsignado": "44,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4055",
-      "descricao": "INOX BRINCO CORACAO RESINA BRANCA CRISTAIS",
-      "imagem": "4055.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "24,90",
-      "precoConsignado": "44,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4053",
-      "descricao": "INOX BRINCO TRIO PONTO DE LUZ QUADRADO",
-      "imagem": "4053.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/02/2025"
     },
@@ -82,12 +42,12 @@
       "dataUltimaEntrada": "14/02/2025"
     },
     {
-      "codigo": "4049",
-      "descricao": "INOX BRINCO FLOR DETALHES BRANCOS COM CRISTAIS",
-      "imagem": "4049.jpg",
+      "codigo": "4058",
+      "descricao": "INOX BRINCO OVAL ORGANICO",
+      "imagem": "4058.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "24,90",
-      "precoConsignado": "44,90",
+      "preco": "32,90",
+      "precoConsignado": "54,90",
       "banho": "INOX",
       "dataUltimaEntrada": "19/02/2025"
     }
