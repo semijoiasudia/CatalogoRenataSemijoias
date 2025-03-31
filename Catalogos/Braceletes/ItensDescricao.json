@@ -2,14 +2,14 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
-      "codigo": "3865",
-      "descricao": "BRACELETE FIO DUPLO ",
-      "imagem": "3865.jpg",
+      "codigo": "3657",
+      "descricao": "BRACELETE FIO CRUZADO FINO",
+      "imagem": "3657.jpg",
       "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/12/2024"
+      "dataUltimaEntrada": "05/11/2024"
     },
     {
       "codigo": "3615",
@@ -22,6 +22,16 @@
       "dataUltimaEntrada": "26/10/2024"
     },
     {
+      "codigo": "3865",
+      "descricao": "BRACELETE FIO DUPLO ",
+      "imagem": "3865.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/12/2024"
+    },
+    {
       "codigo": "3864",
       "descricao": "BRACELETE FIO TORCIDO",
       "imagem": "3864.jpg",
@@ -30,16 +40,6 @@
       "precoConsignado": "134,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/12/2024"
-    },
-    {
-      "codigo": "3657",
-      "descricao": "BRACELETE FIO CRUZADO FINO",
-      "imagem": "3657.jpg",
-      "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/11/2024"
     }
   ]
 }
