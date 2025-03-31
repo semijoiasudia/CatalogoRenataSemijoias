@@ -2,14 +2,14 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4010",
-      "descricao": "INOX PULSEIRA CORACAO VAZADO CRAVEJADO ",
-      "imagem": "4010.jpg",
+      "codigo": "4049",
+      "descricao": "INOX BRINCO FLOR DETALHES BRANCOS COM CRISTAIS",
+      "imagem": "4049.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
+      "preco": "24,90",
+      "precoConsignado": "44,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "14/02/2025"
+      "dataUltimaEntrada": "19/02/2025"
     },
     {
       "codigo": "4058",
@@ -42,14 +42,14 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
-      "codigo": "4049",
-      "descricao": "INOX BRINCO FLOR DETALHES BRANCOS COM CRISTAIS",
-      "imagem": "4049.jpg",
+      "codigo": "4010",
+      "descricao": "INOX PULSEIRA CORACAO VAZADO CRAVEJADO ",
+      "imagem": "4010.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "24,90",
-      "precoConsignado": "44,90",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
+      "dataUltimaEntrada": "14/02/2025"
     }
   ]
 }

@@ -2,14 +2,14 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "3983",
-      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA CRISTAL",
-      "imagem": "3983.jpg",
+      "codigo": "4024",
+      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
+      "imagem": "4024.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "8,00",
-      "precoConsignado": "12,00",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/02/2025"
     },
     {
       "codigo": "3948",
@@ -22,19 +22,9 @@
       "dataUltimaEntrada": "24/01/2025"
     },
     {
-      "codigo": "3979",
-      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
-      "imagem": "3979.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "189,98",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
-    },
-    {
-      "codigo": "3981",
-      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA BOREAL/VERDE",
-      "imagem": "3981.jpg",
+      "codigo": "3983",
+      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA CRISTAL",
+      "imagem": "3983.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "8,00",
       "precoConsignado": "12,00",
@@ -42,9 +32,29 @@
       "dataUltimaEntrada": "11/02/2025"
     },
     {
+      "codigo": "405",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2022"
+    },
+    {
       "codigo": "3982",
       "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA BOREAL/PRETO",
       "imagem": "3982.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "8,00",
+      "precoConsignado": "12,00",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
+    },
+    {
+      "codigo": "3981",
+      "descricao": "BIJUTERIA PULSEIRA STRASS ELASTICA BOREAL/VERDE",
+      "imagem": "3981.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "8,00",
       "precoConsignado": "12,00",
@@ -62,14 +72,14 @@
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4024",
-      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
-      "imagem": "4024.jpg",
+      "codigo": "4118",
+      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
+      "imagem": "4118.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "17/02/2025"
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4123",
@@ -102,6 +112,16 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
+      "codigo": "4117",
+      "descricao": "BIJUTERIA COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
+      "imagem": "4117.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
       "codigo": "4120",
       "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
       "imagem": "4120.jpg",
@@ -122,34 +142,14 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "405",
-      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
-      "imagem": "405.jpg",
+      "codigo": "3979",
+      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
+      "imagem": "3979.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "139,90",
-      "precoConsignado": "179,90",
+      "precoConsignado": "189,98",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2022"
-    },
-    {
-      "codigo": "4117",
-      "descricao": "BIJUTERIA COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
-      "imagem": "4117.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4118",
-      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
-      "imagem": "4118.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
+      "dataUltimaEntrada": "11/02/2025"
     }
   ]
 }
