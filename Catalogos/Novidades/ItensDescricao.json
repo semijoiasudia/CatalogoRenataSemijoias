@@ -22,6 +22,16 @@
       "dataUltimaEntrada": "27/02/2025"
     },
     {
+      "codigo": "4110",
+      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
+      "imagem": "4110.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/03/2025"
+    },
+    {
       "codigo": "4108",
       "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
       "imagem": "4108.jpg",
@@ -60,16 +70,6 @@
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/02/2025"
-    },
-    {
-      "codigo": "4110",
-      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS ZIRCONIAS COLORS TAM PP",
-      "imagem": "4110.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/03/2025"
     },
     {
       "codigo": "4095",
@@ -292,12 +292,12 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4115",
-      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
-      "imagem": "4115.jpg",
+      "codigo": "4116",
+      "descricao": "COLAR DUPLO DE ESFERAS 41/44+5CM",
+      "imagem": "4116.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
     },
@@ -312,22 +312,12 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4114",
-      "descricao": "BRINCO FLOR CRAVEJADA PEROLOA BRANCA",
-      "imagem": "4114.jpg",
+      "codigo": "4115",
+      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
+      "imagem": "4115.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4116",
-      "descricao": "COLAR DUPLO DE ESFERAS 41/44+5CM",
-      "imagem": "4116.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
     },
@@ -352,12 +342,12 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "4133",
-      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
-      "imagem": "4133.jpg",
+      "codigo": "4132",
+      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
+      "imagem": "4132.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
-      "precoConsignado": "102,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
     },
@@ -392,14 +382,24 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4132",
-      "descricao": "CHOKER ELOS CART. 3MM 36+6CM",
-      "imagem": "4132.jpg",
+      "codigo": "4133",
+      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
+      "imagem": "4133.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "62,90",
+      "precoConsignado": "102,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4114",
+      "descricao": "BRINCO FLOR CRAVEJADA PEROLOA BRANCA",
+      "imagem": "4114.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4138",
