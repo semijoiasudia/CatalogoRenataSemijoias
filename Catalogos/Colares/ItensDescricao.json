@@ -2,16 +2,6 @@
   "categoria": "COLAR",
   "produtos": [
     {
-      "codigo": "2045",
-      "descricao": "COLAR GRAVATA TRIANGULO 60CM",
-      "imagem": "2045.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/06/2024"
-    },
-    {
       "codigo": "1504",
       "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
       "imagem": "1504.jpg",
@@ -20,46 +10,6 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/03/2025"
-    },
-    {
-      "codigo": "1501",
-      "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
-      "imagem": "1501.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "69,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/03/2025"
-    },
-    {
-      "codigo": "3296",
-      "descricao": "COLAR CORACAO VERDE ESMERALDA 46CM",
-      "imagem": "3296.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/07/2024"
-    },
-    {
-      "codigo": "3290",
-      "descricao": "COLAR LACO VAZADO AUTISMO 41+5CM",
-      "imagem": "3290.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "29,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/07/2024"
-    },
-    {
-      "codigo": "3317",
-      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
-      "imagem": "3317.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/07/2024"
     },
     {
       "codigo": "440",
@@ -80,6 +30,56 @@
       "precoConsignado": "96,90",
       "banho": "2 BANHOS",
       "dataUltimaEntrada": "10/03/2025"
+    },
+    {
+      "codigo": "2045",
+      "descricao": "COLAR GRAVATA TRIANGULO 60CM",
+      "imagem": "2045.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/06/2024"
+    },
+    {
+      "codigo": "1501",
+      "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
+      "imagem": "1501.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/03/2025"
+    },
+    {
+      "codigo": "3317",
+      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
+      "imagem": "3317.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/07/2024"
+    },
+    {
+      "codigo": "3296",
+      "descricao": "COLAR CORACAO VERDE ESMERALDA 46CM",
+      "imagem": "3296.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/07/2024"
+    },
+    {
+      "codigo": "3290",
+      "descricao": "COLAR LACO VAZADO AUTISMO 41+5CM",
+      "imagem": "3290.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "29,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/07/2024"
     },
     {
       "codigo": "2843",
