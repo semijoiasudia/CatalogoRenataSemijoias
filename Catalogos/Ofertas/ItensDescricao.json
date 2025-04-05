@@ -2,84 +2,14 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
-      "codigo": "3498",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
-      "imagem": "3498.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
-      "codigo": "3209",
-      "descricao": "ANEL REGULAVEL TRABALHADO/FOLHA",
-      "imagem": "3209.jpg",
+      "codigo": "3206",
+      "descricao": "BRINCO TRIANGULO ORGANICO P",
+      "imagem": "3206.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/06/2024"
-    },
-    {
-      "codigo": "2950",
-      "descricao": "COLAR CORACOES CRISTAL 49CM",
-      "imagem": "2950.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "39,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/04/2024"
-    },
-    {
-      "codigo": "2992",
-      "descricao": "ANEL FALANGE REGULAVEL 2 BORBOLETAS",
-      "imagem": "2992.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "54,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2024"
-    },
-    {
-      "codigo": "3010",
-      "descricao": "BRINCO 3 QUADRADOS E PONTO DE LUZ",
-      "imagem": "3010.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/05/2024"
-    },
-    {
-      "codigo": "3052",
-      "descricao": "BRINCO QUADRADO ABAULADO M",
-      "imagem": "3052.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "29,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/05/2024"
-    },
-    {
-      "codigo": "3056",
-      "descricao": "ANEL CORACAO COM FLORES",
-      "imagem": "3056.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/05/2024"
-    },
-    {
-      "codigo": "3072",
-      "descricao": "ANEL REGULAVEL LARGO BORBOLETA VAZADA",
-      "imagem": "3072.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/05/2024"
     },
     {
       "codigo": "3154",
@@ -92,14 +22,54 @@
       "dataUltimaEntrada": "04/06/2024"
     },
     {
-      "codigo": "3206",
-      "descricao": "BRINCO TRIANGULO ORGANICO P",
-      "imagem": "3206.jpg",
+      "codigo": "3072",
+      "descricao": "ANEL REGULAVEL LARGO BORBOLETA VAZADA",
+      "imagem": "3072.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
-      "precoConsignado": "59,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2024"
+      "dataUltimaEntrada": "15/05/2024"
+    },
+    {
+      "codigo": "3056",
+      "descricao": "ANEL CORACAO COM FLORES",
+      "imagem": "3056.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/05/2024"
+    },
+    {
+      "codigo": "3052",
+      "descricao": "BRINCO QUADRADO ABAULADO M",
+      "imagem": "3052.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "29,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/05/2024"
+    },
+    {
+      "codigo": "3010",
+      "descricao": "BRINCO 3 QUADRADOS E PONTO DE LUZ",
+      "imagem": "3010.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/05/2024"
+    },
+    {
+      "codigo": "2950",
+      "descricao": "COLAR CORACOES CRISTAL 49CM",
+      "imagem": "2950.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "39,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/04/2024"
     },
     {
       "codigo": "2843",
@@ -110,6 +80,36 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "23/07/2024"
+    },
+    {
+      "codigo": "3209",
+      "descricao": "ANEL REGULAVEL TRABALHADO/FOLHA",
+      "imagem": "3209.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/06/2024"
+    },
+    {
+      "codigo": "3403",
+      "descricao": "ANEL CORACAO ORGANICO COM PONTO DE LUZ",
+      "imagem": "3403.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/08/2024"
+    },
+    {
+      "codigo": "2992",
+      "descricao": "ANEL FALANGE REGULAVEL 2 BORBOLETAS",
+      "imagem": "2992.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2024"
     },
     {
       "codigo": "3221",
@@ -172,14 +172,14 @@
       "dataUltimaEntrada": "17/07/2024"
     },
     {
-      "codigo": "3329",
-      "descricao": "BRINCO ESFERA LISA G",
-      "imagem": "3329.jpg",
+      "codigo": "3729",
+      "descricao": "BRINCO CORACAO/CORRENTE/CORACAO",
+      "imagem": "3729.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
-      "precoConsignado": "66,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
+      "dataUltimaEntrada": "26/11/2024"
     },
     {
       "codigo": "3378",
@@ -192,16 +192,6 @@
       "dataUltimaEntrada": "10/08/2024"
     },
     {
-      "codigo": "3729",
-      "descricao": "BRINCO CORACAO/CORRENTE/CORACAO",
-      "imagem": "3729.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "29,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/11/2024"
-    },
-    {
       "codigo": "3417",
       "descricao": "COLAR ORGANICO ESCORRIDO VAZADO 46+5CM",
       "imagem": "3417.jpg",
@@ -210,6 +200,16 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "28/08/2024"
+    },
+    {
+      "codigo": "3498",
+      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
+      "imagem": "3498.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "19,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2024"
     },
     {
       "codigo": "3639",
@@ -222,14 +222,14 @@
       "dataUltimaEntrada": "30/10/2024"
     },
     {
-      "codigo": "3403",
-      "descricao": "ANEL CORACAO ORGANICO COM PONTO DE LUZ",
-      "imagem": "3403.jpg",
+      "codigo": "3329",
+      "descricao": "BRINCO ESFERA LISA G",
+      "imagem": "3329.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "19,90",
-      "precoConsignado": "64,90",
+      "preco": "29,90",
+      "precoConsignado": "66,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/08/2024"
+      "dataUltimaEntrada": "23/07/2024"
     }
   ]
 }
