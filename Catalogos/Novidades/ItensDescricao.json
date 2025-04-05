@@ -12,14 +12,14 @@
       "dataUltimaEntrada": "05/04/2025"
     },
     {
-      "codigo": "4200",
-      "descricao": "BRINCO TELA FORMATO FOLHA",
-      "imagem": "4200.jpg",
+      "codigo": "4201",
+      "descricao": "BRINCO GOTA PEROLA BOLD P",
+      "imagem": "4201.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
+      "dataUltimaEntrada": "05/04/2025"
     },
     {
       "codigo": "4133",
@@ -62,16 +62,6 @@
       "dataUltimaEntrada": "28/03/2025"
     },
     {
-      "codigo": "4196",
-      "descricao": "BRINCO LEQUE COM GOTA CRISTAL",
-      "imagem": "4196.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
       "codigo": "4165",
       "descricao": "ANEL REGULAVEL CRAVEJADO E ZIRCONIA RETANGULAR",
       "imagem": "4165.jpg",
@@ -88,6 +78,36 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "39,90",
       "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/04/2025"
+    },
+    {
+      "codigo": "4186",
+      "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
+      "imagem": "4186.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4198",
+      "descricao": "BRINCO GOTA LISA M",
+      "imagem": "4198.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/04/2025"
+    },
+    {
+      "codigo": "4196",
+      "descricao": "BRINCO LEQUE COM GOTA CRISTAL",
+      "imagem": "4196.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/04/2025"
     },
@@ -122,24 +142,24 @@
       "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "4192",
-      "descricao": "BRINCO ORGANICO CIRCULO M",
-      "imagem": "4192.jpg",
+      "codigo": "4187",
+      "descricao": "BRINCO TRIO ARGOLA TRABALHADA PP-P-M",
+      "imagem": "4187.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "4186",
-      "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
-      "imagem": "4186.jpg",
+      "codigo": "4191",
+      "descricao": "BRINCO EAR HOOK INSPIRACAO CRAVEJADO",
+      "imagem": "4191.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/04/2025"
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/04/2025"
     },
     {
       "codigo": "4190",
@@ -172,32 +192,22 @@
       "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "4187",
-      "descricao": "BRINCO TRIO ARGOLA TRABALHADA PP-P-M",
-      "imagem": "4187.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4191",
-      "descricao": "BRINCO EAR HOOK INSPIRACAO CRAVEJADO",
-      "imagem": "4191.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4198",
-      "descricao": "BRINCO GOTA LISA M",
-      "imagem": "4198.jpg",
+      "codigo": "4192",
+      "descricao": "BRINCO ORGANICO CIRCULO M",
+      "imagem": "4192.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "44,90",
       "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/04/2025"
+    },
+    {
+      "codigo": "4200",
+      "descricao": "BRINCO TELA FORMATO FOLHA",
+      "imagem": "4200.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/04/2025"
     }
