@@ -2,14 +2,14 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
-      "codigo": "4031",
-      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA COLORS P",
-      "imagem": "4031.jpg",
+      "codigo": "3793",
+      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
+      "imagem": "3793.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "46,90",
-      "precoConsignado": "72,90",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/02/2025"
+      "dataUltimaEntrada": "24/03/2025"
     },
     {
       "codigo": "1488",
@@ -32,14 +32,14 @@
       "dataUltimaEntrada": "05/02/2025"
     },
     {
-      "codigo": "3793",
-      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
-      "imagem": "3793.jpg",
+      "codigo": "3862",
+      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
+      "imagem": "3862.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/03/2025"
+      "dataUltimaEntrada": "18/12/2024"
     },
     {
       "codigo": "4015",
@@ -50,6 +50,16 @@
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4031",
+      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA COLORS P",
+      "imagem": "4031.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/02/2025"
     },
     {
       "codigo": "4032",
@@ -70,16 +80,6 @@
       "precoConsignado": "189,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "24/03/2025"
-    },
-    {
-      "codigo": "3862",
-      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
-      "imagem": "3862.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/12/2024"
     }
   ]
 }
