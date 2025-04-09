@@ -2,6 +2,26 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "4134",
+      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
+      "imagem": "4134.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3973",
+      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
+      "imagem": "3973.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "84,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
       "codigo": "4115",
       "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
       "imagem": "4115.jpg",
@@ -10,6 +30,16 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "3691",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3691.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/11/2024"
     },
     {
       "codigo": "4109",
@@ -42,16 +72,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "3973",
-      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
-      "imagem": "3973.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "84,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/02/2025"
-    },
-    {
       "codigo": "4186",
       "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
       "imagem": "4186.jpg",
@@ -60,16 +80,6 @@
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/04/2025"
-    },
-    {
-      "codigo": "4134",
-      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
-      "imagem": "4134.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "3260",
@@ -92,16 +102,6 @@
       "dataUltimaEntrada": "29/11/2024"
     },
     {
-      "codigo": "3491",
-      "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
-      "imagem": "3491.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
-    },
-    {
       "codigo": "3928",
       "descricao": "CHOKER NAVETES COLORIDAS 32+10CM",
       "imagem": "3928.jpg",
@@ -110,6 +110,16 @@
       "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "20/01/2025"
+    },
+    {
+      "codigo": "3491",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
+      "imagem": "3491.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "3829",
@@ -179,16 +189,6 @@
       "preco": "79,90",
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3691",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3691.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "20/11/2024"
     },
     {
