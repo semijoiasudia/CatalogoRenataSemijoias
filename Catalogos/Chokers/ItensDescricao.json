@@ -2,14 +2,14 @@
   "categoria": "CHOKER",
   "produtos": [
     {
-      "codigo": "4108",
-      "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
-      "imagem": "4108.jpg",
+      "codigo": "4115",
+      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
+      "imagem": "4115.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/03/2025"
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "4109",
@@ -22,64 +22,14 @@
       "dataUltimaEntrada": "06/03/2025"
     },
     {
-      "codigo": "3829",
-      "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
-      "imagem": "3829.jpg",
+      "codigo": "4108",
+      "descricao": "CHOKER OLHO GREGO AZUL 32+5CM",
+      "imagem": "4108.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "102,90",
-      "precoConsignado": "159,90",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/12/2024"
-    },
-    {
-      "codigo": "4115",
-      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
-      "imagem": "4115.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "3731",
-      "descricao": "CHOKER CORDAO BAIANO 3MM 36+10CM",
-      "imagem": "3731.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "129,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
-    },
-    {
-      "codigo": "3691",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3691.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3690",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3690.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3885",
-      "descricao": "CHOKER TREVO VAZADO 40+5CM",
-      "imagem": "3885.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/12/2024"
+      "dataUltimaEntrada": "06/03/2025"
     },
     {
       "codigo": "4132",
@@ -90,6 +40,26 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3973",
+      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
+      "imagem": "3973.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "84,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
+      "codigo": "4186",
+      "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
+      "imagem": "4186.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/04/2025"
     },
     {
       "codigo": "4134",
@@ -112,26 +82,6 @@
       "dataUltimaEntrada": "28/06/2024"
     },
     {
-      "codigo": "3928",
-      "descricao": "CHOKER NAVETES COLORIDAS 32+10CM",
-      "imagem": "3928.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "76,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/01/2025"
-    },
-    {
-      "codigo": "3599",
-      "descricao": "CHOKER CORACAO CRAVEJADO CRISTAL P 36+5CM",
-      "imagem": "3599.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
       "codigo": "3744",
       "descricao": "CHOKER PINGENTES NAVETE CRISTAL 41+5CM",
       "imagem": "3744.jpg",
@@ -140,16 +90,6 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "29/11/2024"
-    },
-    {
-      "codigo": "3961",
-      "descricao": "CHOKER BARRAS E FLORES VAZADAS 40+5CM",
-      "imagem": "3961.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/01/2025"
     },
     {
       "codigo": "3491",
@@ -162,24 +102,24 @@
       "dataUltimaEntrada": "25/03/2025"
     },
     {
-      "codigo": "4186",
-      "descricao": "CHOKER CORACOES COLORIDOS 41+5CM",
-      "imagem": "4186.jpg",
+      "codigo": "3928",
+      "descricao": "CHOKER NAVETES COLORIDAS 32+10CM",
+      "imagem": "3928.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
+      "preco": "76,90",
+      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/04/2025"
+      "dataUltimaEntrada": "20/01/2025"
     },
     {
-      "codigo": "3975",
-      "descricao": "CHOKER CRISTAIS LAVANDA E PING DE GOTA 39+5CM",
-      "imagem": "3975.jpg",
+      "codigo": "3829",
+      "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
+      "imagem": "3829.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
+      "preco": "102,90",
+      "precoConsignado": "159,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/02/2025"
+      "dataUltimaEntrada": "13/12/2024"
     },
     {
       "codigo": "3976",
@@ -192,11 +132,71 @@
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "3973",
-      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
-      "imagem": "3973.jpg",
+      "codigo": "3599",
+      "descricao": "CHOKER CORACAO CRAVEJADO CRISTAL P 36+5CM",
+      "imagem": "3599.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "84,90",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "3885",
+      "descricao": "CHOKER TREVO VAZADO 40+5CM",
+      "imagem": "3885.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/12/2024"
+    },
+    {
+      "codigo": "3961",
+      "descricao": "CHOKER BARRAS E FLORES VAZADAS 40+5CM",
+      "imagem": "3961.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/01/2025"
+    },
+    {
+      "codigo": "3731",
+      "descricao": "CHOKER CORDAO BAIANO 3MM 36+10CM",
+      "imagem": "3731.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/11/2024"
+    },
+    {
+      "codigo": "3690",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3690.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "3691",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3691.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "3975",
+      "descricao": "CHOKER CRISTAIS LAVANDA E PING DE GOTA 39+5CM",
+      "imagem": "3975.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/02/2025"
