@@ -1,0 +1,65 @@
+{
+  "categoria": "INFANTIL",
+  "produtos": [
+    {
+      "codigo": "4220",
+      "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
+      "imagem": "4220.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4219",
+      "descricao": "CONJUNTO INFANTIL PANDA RESINA 41CM",
+      "imagem": "4219.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
+      "imagem": "4218.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4217",
+      "descricao": "PULSEIRA INFANTIL BORBOLETAS",
+      "imagem": "4217.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4216",
+      "descricao": "INOX CONJUNTO INFANTIL HELLO KITTY 40CM",
+      "imagem": "4216.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4215",
+      "descricao": "INOX CONJUNTO INFANTIL CEREJA 40CM",
+      "imagem": "4215.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/04/2025"
+    }
+  ]
+}
