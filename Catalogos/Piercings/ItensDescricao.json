@@ -2,6 +2,16 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "2521",
+      "descricao": "PIERCING FAKE LISO PINGENTE PONTO DE LUZ",
+      "imagem": "2521.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/02/2024"
+    },
+    {
       "codigo": "3020",
       "descricao": "PIERCING FLECHA",
       "imagem": "3020.jpg",
@@ -22,24 +32,14 @@
       "dataUltimaEntrada": "04/05/2024"
     },
     {
-      "codigo": "2521",
-      "descricao": "PIERCING FAKE LISO PINGENTE PONTO DE LUZ",
-      "imagem": "2521.jpg",
+      "codigo": "3935",
+      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
+      "imagem": "3935.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "34,90",
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/02/2024"
-    },
-    {
-      "codigo": "3945",
-      "descricao": "PIERCING FAKE FIO FINO LISO",
-      "imagem": "3945.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "19,90",
-      "precoConsignado": "29,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/01/2025"
+      "dataUltimaEntrada": "23/01/2025"
     },
     {
       "codigo": "3314",
@@ -50,16 +50,6 @@
       "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/07/2024"
-    },
-    {
-      "codigo": "3935",
-      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
-      "imagem": "3935.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/01/2025"
     },
     {
       "codigo": "3969",
@@ -80,6 +70,16 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "29/10/2024"
+    },
+    {
+      "codigo": "3945",
+      "descricao": "PIERCING FAKE FIO FINO LISO",
+      "imagem": "3945.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "19,90",
+      "precoConsignado": "29,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/01/2025"
     },
     {
       "codigo": "3771",

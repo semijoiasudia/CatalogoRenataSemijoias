@@ -22,6 +22,16 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
+      "codigo": "4126",
+      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "imagem": "4126.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
       "codigo": "2574",
       "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
       "imagem": "2574.jpg",
@@ -50,16 +60,6 @@
       "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
-    },
-    {
-      "codigo": "3074",
-      "descricao": "PULSEIRA 3 CORACOES CRISTAL/CORACOES VAZADOS",
-      "imagem": "3074.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/05/2024"
     },
     {
       "codigo": "4155",
@@ -102,6 +102,16 @@
       "dataUltimaEntrada": "16/12/2024"
     },
     {
+      "codigo": "3185",
+      "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
+      "imagem": "3185.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/06/2024"
+    },
+    {
       "codigo": "3835",
       "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
       "imagem": "3835.jpg",
@@ -112,24 +122,14 @@
       "dataUltimaEntrada": "14/12/2024"
     },
     {
-      "codigo": "3718",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "3718.jpg",
+      "codigo": "3074",
+      "descricao": "PULSEIRA 3 CORACOES CRISTAL/CORACOES VAZADOS",
+      "imagem": "3074.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "39,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "3185",
-      "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
-      "imagem": "3185.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "72,90",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/06/2024"
+      "dataUltimaEntrada": "17/05/2024"
     },
     {
       "codigo": "3834",
@@ -162,16 +162,6 @@
       "dataUltimaEntrada": "08/12/2024"
     },
     {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
-      "imagem": "4126.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
       "codigo": "4003",
       "descricao": "PULSEIRA RIVIERA 2MM CRISTAL",
       "imagem": "4003.jpg",
@@ -180,6 +170,16 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "13/02/2025"
+    },
+    {
+      "codigo": "3718",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "3718.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "12/03/2025"
     },
     {
       "codigo": "3658",

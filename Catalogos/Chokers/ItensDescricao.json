@@ -22,26 +22,6 @@
       "dataUltimaEntrada": "27/11/2024"
     },
     {
-      "codigo": "3690",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3690.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
-      "codigo": "3691",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
-      "imagem": "3691.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "72,90",
-      "precoConsignado": "104,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/11/2024"
-    },
-    {
       "codigo": "3829",
       "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
       "imagem": "3829.jpg",
@@ -62,14 +42,34 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
-      "codigo": "3885",
-      "descricao": "CHOKER TREVO VAZADO 40+5CM",
-      "imagem": "3885.jpg",
+      "codigo": "3691",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3691.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "72,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "3690",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "imagem": "3690.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/12/2024"
+      "dataUltimaEntrada": "20/11/2024"
+    },
+    {
+      "codigo": "4115",
+      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
+      "imagem": "4115.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/03/2025"
     },
     {
       "codigo": "3961",
@@ -122,16 +122,6 @@
       "dataUltimaEntrada": "20/01/2025"
     },
     {
-      "codigo": "3491",
-      "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
-      "imagem": "3491.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
-    },
-    {
       "codigo": "3599",
       "descricao": "CHOKER CORACAO CRAVEJADO CRISTAL P 36+5CM",
       "imagem": "3599.jpg",
@@ -140,6 +130,16 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "3491",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 37+5CM",
+      "imagem": "3491.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "4109",
@@ -152,14 +152,24 @@
       "dataUltimaEntrada": "06/03/2025"
     },
     {
-      "codigo": "4115",
-      "descricao": "CHOKER ELOS TORCIDOS TRABALHADO/LISO 36+5CM",
-      "imagem": "4115.jpg",
+      "codigo": "4134",
+      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
+      "imagem": "4134.jpg",
       "pastaFotos": "Catalogos/Chokers/",
       "preco": "69,90",
-      "precoConsignado": "99,90",
+      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/03/2025"
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3885",
+      "descricao": "CHOKER TREVO VAZADO 40+5CM",
+      "imagem": "3885.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/12/2024"
     },
     {
       "codigo": "4132",
@@ -180,16 +190,6 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/06/2024"
-    },
-    {
-      "codigo": "4134",
-      "descricao": "CHOKER PINGENTES DE CORACAO 36+5CM",
-      "imagem": "4134.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4108",
