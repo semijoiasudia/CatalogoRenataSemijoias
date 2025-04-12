@@ -2,16 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "4155",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
-      "imagem": "4155.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
-    },
-    {
       "codigo": "4217",
       "descricao": "PULSEIRA INFANTIL BORBOLETAS",
       "imagem": "4217.jpg",
@@ -32,16 +22,6 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "2574",
-      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
-      "imagem": "2574.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
       "codigo": "2578",
       "descricao": "PULSEIRA CORACOES ENTRELACADOS FECHO GRAVATA",
       "imagem": "2578.jpg",
@@ -52,14 +32,24 @@
       "dataUltimaEntrada": "05/08/2024"
     },
     {
-      "codigo": "3026",
-      "descricao": "PULSEIRA CORACAO ZIRCONIA/3CORACOES VAZADOS",
-      "imagem": "3026.jpg",
+      "codigo": "2574",
+      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
+      "imagem": "2574.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/05/2024"
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "3658",
@@ -112,6 +102,16 @@
       "dataUltimaEntrada": "14/12/2024"
     },
     {
+      "codigo": "3835",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "imagem": "3835.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
       "codigo": "3074",
       "descricao": "PULSEIRA 3 CORACOES CRISTAL/CORACOES VAZADOS",
       "imagem": "3074.jpg",
@@ -132,14 +132,14 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "3835",
-      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
-      "imagem": "3835.jpg",
+      "codigo": "3853",
+      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
+      "imagem": "3853.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "14/12/2024"
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/12/2024"
     },
     {
       "codigo": "4125",
@@ -162,14 +162,14 @@
       "dataUltimaEntrada": "10/06/2024"
     },
     {
-      "codigo": "3853",
-      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
-      "imagem": "3853.jpg",
+      "codigo": "3026",
+      "descricao": "PULSEIRA CORACAO ZIRCONIA/3CORACOES VAZADOS",
+      "imagem": "3026.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
-      "precoConsignado": "86,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/12/2024"
+      "dataUltimaEntrada": "04/05/2024"
     },
     {
       "codigo": "3913",

@@ -2,64 +2,14 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "3875",
-      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
-      "imagem": "3875.jpg",
+      "codigo": "3730",
+      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
+      "imagem": "3730.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/12/2024"
-    },
-    {
-      "codigo": "3421",
-      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
-      "imagem": "3421.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/11/2024"
-    },
-    {
-      "codigo": "3610",
-      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
-      "imagem": "3610.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "86,90",
+      "preco": "74,90",
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/10/2024"
-    },
-    {
-      "codigo": "3862",
-      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
-      "imagem": "3862.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/12/2024"
-    },
-    {
-      "codigo": "3354",
-      "descricao": "CONJUNTO ORGANICO OVAL VAZADO 51CM",
-      "imagem": "3354.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "02/08/2024"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
+      "dataUltimaEntrada": "27/11/2024"
     },
     {
       "codigo": "4219",
@@ -72,14 +22,24 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "3659",
-      "descricao": "CONJUNTO AMASSADO ORGANICO 45+5CM",
-      "imagem": "3659.jpg",
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
+      "imagem": "4218.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "129,90",
-      "precoConsignado": "179,90",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/11/2024"
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "3862",
+      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
+      "imagem": "3862.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/12/2024"
     },
     {
       "codigo": "3687",
@@ -92,24 +52,24 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3730",
-      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
-      "imagem": "3730.jpg",
+      "codigo": "3418",
+      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
+      "imagem": "3418.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "74,90",
-      "precoConsignado": "119,90",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
+      "dataUltimaEntrada": "30/11/2024"
     },
     {
-      "codigo": "3345",
-      "descricao": "CONJUNTO ZIRCONIA GOTA 8/6MM CRISTAL 46CM",
-      "imagem": "3345.jpg",
+      "codigo": "3421",
+      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
+      "imagem": "3421.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/07/2024"
+      "dataUltimaEntrada": "19/11/2024"
     },
     {
       "codigo": "4221",
@@ -132,14 +92,54 @@
       "dataUltimaEntrada": "12/02/2025"
     },
     {
-      "codigo": "3418",
-      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
-      "imagem": "3418.jpg",
+      "codigo": "3875",
+      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
+      "imagem": "3875.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "159,90",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
+      "dataUltimaEntrada": "24/12/2024"
+    },
+    {
+      "codigo": "3345",
+      "descricao": "CONJUNTO ZIRCONIA GOTA 8/6MM CRISTAL 46CM",
+      "imagem": "3345.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/07/2024"
+    },
+    {
+      "codigo": "3659",
+      "descricao": "CONJUNTO AMASSADO ORGANICO 45+5CM",
+      "imagem": "3659.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/11/2024"
+    },
+    {
+      "codigo": "3354",
+      "descricao": "CONJUNTO ORGANICO OVAL VAZADO 51CM",
+      "imagem": "3354.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "02/08/2024"
+    },
+    {
+      "codigo": "3610",
+      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
+      "imagem": "3610.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "86,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/10/2024"
     }
   ]
 }
