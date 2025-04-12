@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <!-- meta tags de SEO aqui -->
+    <meta name="description" content="Catálogo digital de semijoias e acessórios Renata. Encontre brincos, colares, anéis e muito mais com entrega em Uberlândia e todo Brasil.">
+    <meta name="keywords" content="semijoias, acessórios, brincos, colares, anéis, Uberlândia, Renata Acessórios">
+
     <title>Renata - Semijoias e Acessórios</title>
     
     <!-- Google tag (gtag.js)
@@ -59,8 +64,8 @@
             padding: 5px 5px 8px;
             position: relative;
             background-color: #fcfaf5;
-            border-radius: 0px; /*retirado a borda*/
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Alterado para igualar a sombra do logo-container */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             overflow: hidden;
             box-sizing: border-box;
         }
@@ -82,103 +87,42 @@
             max-width: 600px;
         }
         
-        /* Estilos do carrossel horizontal */
-        .carrossel-horizontal {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: 5px 0;
-            position: relative;
+        /* Grid de categorias (novo estilo) */
+        .categorias-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        
-        .carrossel-h-container {
+
+        .categoria-card {
+            border-radius: 10px;
             overflow: hidden;
-            width: 100%;
-            margin: 0 auto; /* Centraliza o container */
-            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
-            box-sizing: border-box;
-        }
-        
-        .carrossel-h-wrapper {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        
-        .carrossel-h-slide {
-            flex: 0 0 100%;
-            padding: 0 5px;
-            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
             cursor: pointer;
-            position: relative;
-            text-align: center; /* Centraliza o conteúdo */
         }
-        
-        .carrossel-h-slide .slide-image {
-            width: 250px;
-            height: 250px;
+
+        .categoria-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .categoria-card img {
+            width: 100%;
+            height: 180px;
             object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            display: inline-block; /* Permite centralização */
-            margin: 0 auto; /* Centraliza a imagem horizontalmente */
             user-select: none;
             -webkit-touch-callout: none;
             -webkit-user-drag: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            pointer-events: none;
-            aspect-ratio: 1/1; /* Força a proporção 1:1 (quadrada) */
         }
-        
-        .carrossel-h-slide .logo-watermark {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 20%;
-            max-height: 20%;
-            object-fit: contain;
-            z-index: 2;
-            pointer-events: none;
-            border-radius: 1px;
-        }
-        
-        .carrossel-h-slide:hover img {
-            transform: scale(1.05);
-        }
-        
-        .carrossel-h-prev, .carrossel-h-next {
-            background: rgba(255,255,255,0.7);
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .carrossel-h-prev:hover, .carrossel-h-next:hover {
-            background: rgba(255,255,255,0.9);
-        }
-        
-        .carrossel-h-category-name {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: auto;
-            bottom: auto;
-            transform: none;
-            background: rgba(212, 175, 55, 0.8);
-            color: white;
-            padding: 4px 12px;
+
+        .categoria-nome {
+            padding: 12px;
+            background: #f8f8f8;
             font-weight: bold;
-            font-size: 14px;
-            border-radius: 20px;
-            z-index: 3;
+            color: #333;
         }
                
         h1 {
@@ -869,10 +813,21 @@
             max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
             margin: 0 auto 20px;
             background-color: #f8f8f8;
-            border-radius: 0px;
-            box-shadow: none; /*0 2px 8px rgba(0,0,0,0.08);*/
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             padding: 15px;
             box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
+        }
+        .info-text {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .info-text p {
+            margin: 0px 0;
         }
     </style>
 </head>
@@ -883,20 +838,18 @@
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
-    
+    <div class="info-text">
+        <p>Loja em Uberlândia-MG</p>
+        <!--<p>📦 Enviamos para todo Brasil (frete a calcular)</p>
+        <p>📦 Envio para todo Brasil (frete a calcular)</p>-->
+    </div>
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
-        <h2 class="catalogo-titulo">SEJA BEM VINDA!</h2>
+        <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
         
-        <!-- Carrossel horizontal para categorias -->
-        <div class="carrossel-horizontal">
-            <button class="carrossel-h-prev">❮</button>
-            <div class="carrossel-h-container">
-                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
-                    <!-- Os slides serão adicionados dinamicamente -->
-                </div>
-            </div>
-            <button class="carrossel-h-next">❯</button>
+        <!-- Grid de categorias - substituindo o carrossel -->
+        <div class="categorias-grid" id="categorias-grid">
+            <!-- Categorias serão adicionadas dinamicamente -->
         </div>
     </div>
         
@@ -1436,11 +1389,50 @@
             }
         }
 
+        // Função para criar e renderizar o grid de categorias
+        function renderCategoriasGrid() {
+            const categoriasGrid = document.getElementById('categorias-grid');
+            categoriasGrid.innerHTML = '';
+
+            // Ordenar as categorias por nome para exibição
+            categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
+
+            // Criar um card para cada categoria
+            categoriasAtivas.forEach(categoria => {
+                const card = document.createElement('div');
+                card.className = 'categoria-card';
+                
+                // Imagem padrão ou imagem da categoria
+                const imagemSrc = `imagens/${categoria.name.toLowerCase()}.jpg`;
+                
+                card.innerHTML = `
+                    <img src="${imagemSrc}" alt="${categoria.name}" onerror="this.src='imagens/placeholder.jpg'">
+                    <div class="categoria-nome">${categoria.name}</div>
+                `;
+                
+                // Adicionar evento de clique para carregar a categoria
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    const tab = findTabByText(categoria.name);
+                    if (tab) {
+                        tab.classList.add('active');
+                        loadImages(categoria.diretorio, categoria.name);
+                        scrollToActiveTab();
+                    }
+                });
+                
+                categoriasGrid.appendChild(card);
+            });
+        }
+
         // Carregar categorias a partir do JSON
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
+                
+                // Renderizar o grid de categorias
+                renderCategoriasGrid();
                 
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
@@ -1470,26 +1462,14 @@
                     tabs.appendChild(tab);
                 });
 
-                // Carregar a categoria inicial
-                const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = findTabByText(initialCategory);
-                if (initialTab) {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
-                    scrollToActiveTab();
-                } else if (tabs.children.length > 0) {
-                    // Se a categoria inicial não for encontrada, carregar a primeira categoria
-                    const defaultTab = tabs.children[0];
-                    defaultTab.classList.add('active');
-                    console.log('Carregando categoria padrão:', defaultTab.textContent);
-                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
-                    scrollToActiveTab();
-                } else {
-                    console.error('Nenhuma categoria disponível.');
-                    alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
-                }
+                // Não carrega nenhuma categoria específica inicialmente - deixa apenas o grid visível
+                // Ocultando o gallery, subcategorias e ordenação até que uma categoria seja selecionada
+                document.getElementById('gallery').style.display = 'none';
+                document.getElementById('subcategories').style.display = 'none';
+                document.querySelector('.filter-container').style.display = 'none';
+                document.querySelector('.navigation-controls').style.display = 'none';
+                document.querySelector('.catalogo-subtitulo').style.display = 'none';
+                
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
@@ -1509,6 +1489,12 @@
         // Carregar imagens a partir dos produtos de uma categoria
         async function loadImages(categoryDir, categoryName) {
             console.log(`Iniciando loadImages para: ${categoryName} (${categoryDir})`);
+            
+            // Mostrar a galeria e controles de navegação quando uma categoria é selecionada
+            document.getElementById('gallery').style.display = 'grid';
+            document.querySelector('.navigation-controls').style.display = 'block';
+            document.querySelector('.filter-container').style.display = 'flex';
+            document.querySelector('.catalogo-subtitulo').style.display = 'block';
             
             currentCategory = categoryName;
             const banhosNaCategoria = new Set();
@@ -1810,39 +1796,6 @@
             displayPage(currentPage, new Set());
         }
 
-        // Função para mostrar modal de um item do carrossel
-        function showModalFromCarousel(item) {
-            if (!item || !item.src) return;
-            
-            resetZoomAndPan();
-            
-            // Configurar a modal com as informações do item
-            document.getElementById('modalImg').src = item.src;
-            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
-            
-            document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${item.descricao}</div>
-                <div class="preco">${item.preco}</div>
-            `;
-            
-            // Adicionar a logo watermark
-            const captureArea = document.getElementById('captureArea');
-            const existingLogo = captureArea.querySelector('.logo-watermark');
-            if (existingLogo) existingLogo.remove();
-            
-            const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png';
-            logo.className = 'logo-watermark';
-            logo.alt = 'Logo';
-            logo.draggable = false;
-            captureArea.appendChild(logo);
-            
-            // Exibir a modal
-            document.getElementById('imageModal').style.display = 'flex';
-            document.body.classList.add('modal-open');
-            setupModalInteraction();
-        }
-
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
@@ -2096,149 +2049,11 @@
             }
         }
 
-        // Função para inicializar o carrossel horizontal
-        async function initHorizontalCarousel() {
-            try {
-                // Carregar categorias do arquivo JSON
-                const response = await fetch('CategoriasCarrossel.json');
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                
-                const categorias = await response.json();
-                if (!categorias || categorias.length === 0) {
-                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
-                    return;
-                }
-                
-                const wrapper = document.getElementById('carrossel-h-wrapper');
-                wrapper.innerHTML = '';
-                
-                // Função para obter todas as imagens de cada categoria
-                async function getCategoryImages(categoryName, limit = 30) {
-                    // Buscar a categoria nas categorias ativas
-                    const categoryFound = categoriasAtivas.find(cat => 
-                        cat.name.toLowerCase() === categoryName.toLowerCase());
-                        
-                    if (!categoryFound) {
-                        return [];
-                    }
-                    
-                    try {
-                        // Tentar carregar produtos da categoria para obter imagens
-                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
-                        const response = await fetch(jsonUrl);
-                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                        
-                        const data = await response.json();
-                        if (!data.produtos || data.produtos.length === 0) {
-                            return [];
-                        }
-                        
-                        // Pegar até 'limit' produtos da categoria
-                        const products = data.produtos.slice(0, limit);
-                        
-                        // Mapear para o formato que precisamos
-                        return products.map(produto => ({
-                            src: `${produto.pastaFotos}${produto.imagem}`,
-                            codigo: produto.codigo,
-                            categoryName: categoryName,
-                            diretorio: categoryFound.diretorio,
-                            descricao: produto.descricao,
-                            preco: formatarPreco(produto.preco)
-                        }));
-                        
-                    } catch (error) {
-                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
-                        return [];
-                    }
-                }
-                
-                // Obter todas as imagens de todas as categorias
-                let allImages = [];
-                for (const categoria of categorias) {
-                    const images = await getCategoryImages(categoria.nome);
-                    allImages = allImages.concat(images);
-                }
-                
-                // Criar slides para cada imagem
-                allImages.forEach(image => {
-                    const slideElement = document.createElement('div');
-                    slideElement.className = 'carrossel-h-slide';
-                    slideElement.innerHTML = `
-                        <img src="${image.src}" alt="${image.categoryName}" class="slide-image" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
-                        <div class="carrossel-h-category-name">${image.categoryName}</div>
-                        <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
-                    `;
-                    
-                    // Adicionar evento de clique para abrir o modal
-                    slideElement.addEventListener('click', () => {
-                        showModalFromCarousel(image);
-                    });
-                    
-                    wrapper.appendChild(slideElement);
-                });
-                
-                // Configurar comportamento do carrossel
-                let currentPosition = 0;
-                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
-                
-                // Função para atualizar a posição do carrossel
-                function updateCarouselPosition() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (!slides.length) return;
-                    
-                    const slideWidth = slides[0].offsetWidth;
-                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
-                }
-                
-                // Funções de navegação
-                function nextSlide() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (currentPosition < slides.length - slidesPerView) {
-                        currentPosition++;
-                        updateCarouselPosition();
-                    }
-                }
-                
-                function prevSlide() {
-                    if (currentPosition > 0) {
-                        currentPosition--;
-                        updateCarouselPosition();
-                    }
-                }
-                
-                // Configurar botões de navegação
-                const prevBtn = document.querySelector('.carrossel-h-prev');
-                const nextBtn = document.querySelector('.carrossel-h-next');
-                
-                prevBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    prevSlide();
-                });
-                
-                nextBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    nextSlide();
-                });
-                
-                // Atualizar tamanho dos slides quando a janela é redimensionada
-                window.addEventListener('resize', updateCarouselPosition);
-                
-                // Inicializar carrossel
-                updateCarouselPosition();
-                
-            } catch (error) {
-                console.error("Erro ao inicializar carrossel horizontal:", error);
-            }
-        }
-
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
-            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
