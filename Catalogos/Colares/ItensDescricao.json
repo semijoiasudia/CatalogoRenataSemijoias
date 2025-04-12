@@ -2,6 +2,16 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4224",
+      "descricao": "COLAR FIO DE NYLON CORACAO MADREPEROLA 12MM 42+5CM",
+      "imagem": "4224.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/04/2025"
+    },
+    {
       "codigo": "1504",
       "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
       "imagem": "1504.jpg",
@@ -42,54 +52,14 @@
       "dataUltimaEntrada": "04/09/2024"
     },
     {
-      "codigo": "3290",
-      "descricao": "COLAR LACO VAZADO AUTISMO 41+5CM",
-      "imagem": "3290.jpg",
+      "codigo": "3417",
+      "descricao": "COLAR ORGANICO ESCORRIDO VAZADO 46+5CM",
+      "imagem": "3417.jpg",
       "pastaFotos": "Catalogos/Colares/",
       "preco": "29,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/07/2024"
-    },
-    {
-      "codigo": "3317",
-      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
-      "imagem": "3317.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
+      "precoConsignado": "94,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/07/2024"
-    },
-    {
-      "codigo": "2950",
-      "descricao": "COLAR CORACOES CRISTAL 49CM",
-      "imagem": "2950.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "39,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/04/2024"
-    },
-    {
-      "codigo": "4195",
-      "descricao": "COLAR CORACAO LISO 46+5CM",
-      "imagem": "4195.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "54,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "3964",
-      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
-      "imagem": "3964.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "46,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "27/01/2025"
+      "dataUltimaEntrada": "28/08/2024"
     },
     {
       "codigo": "3960",
@@ -102,6 +72,36 @@
       "dataUltimaEntrada": "27/01/2025"
     },
     {
+      "codigo": "3963",
+      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
+      "imagem": "3963.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "52,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/01/2025"
+    },
+    {
+      "codigo": "3290",
+      "descricao": "COLAR LACO VAZADO AUTISMO 41+5CM",
+      "imagem": "3290.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "29,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/07/2024"
+    },
+    {
+      "codigo": "2843",
+      "descricao": "COLAR PING QUADRADO ZIRCONIA CRISTAL 47CM",
+      "imagem": "2843.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
+    },
+    {
       "codigo": "3386",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
       "imagem": "3386.jpg",
@@ -112,34 +112,34 @@
       "dataUltimaEntrada": "05/04/2025"
     },
     {
-      "codigo": "3417",
-      "descricao": "COLAR ORGANICO ESCORRIDO VAZADO 46+5CM",
-      "imagem": "3417.jpg",
+      "codigo": "4195",
+      "descricao": "COLAR CORACAO LISO 46+5CM",
+      "imagem": "4195.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "29,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "28/08/2024"
-    },
-    {
-      "codigo": "4224",
-      "descricao": "COLAR FIO DE NYLON CORACAO MADREPEROLA 12MM 42+5CM",
-      "imagem": "4224.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
+      "preco": "54,90",
       "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/04/2025"
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "4225",
-      "descricao": "COLAR FIO DE NYLON ESP. SANTO P MADREPEROLA 40+6CM",
-      "imagem": "4225.jpg",
+      "codigo": "2950",
+      "descricao": "COLAR CORACOES CRISTAL 49CM",
+      "imagem": "2950.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "72,90",
-      "precoConsignado": "92,90",
+      "preco": "39,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/04/2025"
+      "dataUltimaEntrada": "19/04/2024"
+    },
+    {
+      "codigo": "2902",
+      "descricao": "COLAR CORACOES ENTRELAÇADOS M 46+5CM",
+      "imagem": "2902.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2024"
     },
     {
       "codigo": "2865",
@@ -162,16 +162,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "3963",
-      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
-      "imagem": "3963.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "52,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/01/2025"
-    },
-    {
       "codigo": "440",
       "descricao": "COLAR FIO DE NYLON CORACAO ABAULADO 40+5CM",
       "imagem": "440.jpg",
@@ -182,44 +172,14 @@
       "dataUltimaEntrada": "10/03/2025"
     },
     {
-      "codigo": "3174",
-      "descricao": "COLAR FIO DE NYLON CORACAO MADREPEROLA 41+5CM",
-      "imagem": "3174.jpg",
+      "codigo": "3317",
+      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
+      "imagem": "3317.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/04/2025"
-    },
-    {
-      "codigo": "3720",
-      "descricao": "COLAR CORACAO CRISTAL 8MM 41+5CM",
-      "imagem": "3720.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "3719",
-      "descricao": "COLAR MOEDINHAS 36+9CM",
-      "imagem": "3719.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "4226",
-      "descricao": "COLAR FIO DE NYLON N.S. APARECIDA MADREPEROLA 42+6CM",
-      "imagem": "4226.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "72,90",
-      "precoConsignado": "92,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/04/2025"
+      "dataUltimaEntrada": "20/07/2024"
     },
     {
       "codigo": "3152",
@@ -232,24 +192,64 @@
       "dataUltimaEntrada": "04/06/2024"
     },
     {
-      "codigo": "2843",
-      "descricao": "COLAR PING QUADRADO ZIRCONIA CRISTAL 47CM",
-      "imagem": "2843.jpg",
+      "codigo": "4225",
+      "descricao": "COLAR FIO DE NYLON ESP. SANTO P MADREPEROLA 40+6CM",
+      "imagem": "4225.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "29,90",
-      "precoConsignado": "79,90",
+      "preco": "72,90",
+      "precoConsignado": "92,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
+      "dataUltimaEntrada": "11/04/2025"
     },
     {
-      "codigo": "2902",
-      "descricao": "COLAR CORACOES ENTRELAÇADOS M 46+5CM",
-      "imagem": "2902.jpg",
+      "codigo": "4226",
+      "descricao": "COLAR FIO DE NYLON N.S. APARECIDA MADREPEROLA 42+6CM",
+      "imagem": "4226.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "72,90",
+      "precoConsignado": "92,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2024"
+      "dataUltimaEntrada": "11/04/2025"
+    },
+    {
+      "codigo": "3719",
+      "descricao": "COLAR MOEDINHAS 36+9CM",
+      "imagem": "3719.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/11/2024"
+    },
+    {
+      "codigo": "3720",
+      "descricao": "COLAR CORACAO CRISTAL 8MM 41+5CM",
+      "imagem": "3720.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/11/2024"
+    },
+    {
+      "codigo": "3174",
+      "descricao": "COLAR FIO DE NYLON CORACAO MADREPEROLA 41+5CM",
+      "imagem": "3174.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/04/2025"
+    },
+    {
+      "codigo": "3964",
+      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
+      "imagem": "3964.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "46,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "27/01/2025"
     }
   ]
 }

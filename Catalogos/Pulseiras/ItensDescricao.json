@@ -2,24 +2,14 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "4155",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
-      "imagem": "4155.jpg",
+      "codigo": "4217",
+      "descricao": "PULSEIRA INFANTIL BORBOLETAS",
+      "imagem": "4217.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "114,90",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
-    },
-    {
-      "codigo": "2578",
-      "descricao": "PULSEIRA CORACOES ENTRELACADOS FECHO GRAVATA",
-      "imagem": "2578.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
+      "dataUltimaEntrada": "10/04/2025"
     },
     {
       "codigo": "4220",
@@ -32,14 +22,14 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "4217",
-      "descricao": "PULSEIRA INFANTIL BORBOLETAS",
-      "imagem": "4217.jpg",
+      "codigo": "2578",
+      "descricao": "PULSEIRA CORACOES ENTRELACADOS FECHO GRAVATA",
+      "imagem": "2578.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "39,90",
-      "precoConsignado": "69,90",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
+      "dataUltimaEntrada": "05/08/2024"
     },
     {
       "codigo": "2574",
@@ -50,6 +40,16 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "3658",

@@ -2,14 +2,14 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
-      "imagem": "4218.jpg",
+      "codigo": "3730",
+      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
+      "imagem": "3730.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
+      "dataUltimaEntrada": "27/11/2024"
     },
     {
       "codigo": "4219",
@@ -18,6 +18,16 @@
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "89,90",
       "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
+      "imagem": "4218.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "10/04/2025"
     },
@@ -92,14 +102,14 @@
       "dataUltimaEntrada": "24/12/2024"
     },
     {
-      "codigo": "3730",
-      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
-      "imagem": "3730.jpg",
+      "codigo": "3345",
+      "descricao": "CONJUNTO ZIRCONIA GOTA 8/6MM CRISTAL 46CM",
+      "imagem": "3345.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "74,90",
+      "preco": "79,90",
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
+      "dataUltimaEntrada": "27/07/2024"
     },
     {
       "codigo": "3659",
@@ -112,14 +122,14 @@
       "dataUltimaEntrada": "05/11/2024"
     },
     {
-      "codigo": "3345",
-      "descricao": "CONJUNTO ZIRCONIA GOTA 8/6MM CRISTAL 46CM",
-      "imagem": "3345.jpg",
+      "codigo": "3354",
+      "descricao": "CONJUNTO ORGANICO OVAL VAZADO 51CM",
+      "imagem": "3354.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/07/2024"
+      "preco": "119,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "02/08/2024"
     },
     {
       "codigo": "3610",
@@ -130,16 +140,6 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "24/10/2024"
-    },
-    {
-      "codigo": "3354",
-      "descricao": "CONJUNTO ORGANICO OVAL VAZADO 51CM",
-      "imagem": "3354.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "02/08/2024"
     }
   ]
 }

@@ -2,9 +2,9 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4122",
-      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
-      "imagem": "4122.jpg",
+      "codigo": "4123",
+      "descricao": "BIJUTERIA COLAR CRISTAIS PRETO 2,5MM 39+7CM",
+      "imagem": "4123.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -12,24 +12,24 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4027",
-      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
-      "imagem": "4027.jpg",
+      "codigo": "4174",
+      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
+      "imagem": "4174.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "17/02/2025"
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/04/2025"
     },
     {
-      "codigo": "405",
-      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
-      "imagem": "405.jpg",
+      "codigo": "4175",
+      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE TURMALINA 45+5CM",
+      "imagem": "4175.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "179,90",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2022"
+      "dataUltimaEntrada": "01/04/2025"
     },
     {
       "codigo": "4117",
@@ -62,9 +62,9 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4121",
-      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE PINK/VERDE 2,5MM 39+7CM",
-      "imagem": "4121.jpg",
+      "codigo": "4120",
+      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
+      "imagem": "4120.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -72,9 +72,9 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4123",
-      "descricao": "BIJUTERIA COLAR CRISTAIS PRETO 2,5MM 39+7CM",
-      "imagem": "4123.jpg",
+      "codigo": "4122",
+      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
+      "imagem": "4122.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -82,24 +82,24 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4174",
-      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
-      "imagem": "4174.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4175",
-      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE TURMALINA 45+5CM",
-      "imagem": "4175.jpg",
+      "codigo": "4022",
+      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
+      "imagem": "4022.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "89,90",
-      "precoConsignado": "129,90",
+      "precoConsignado": "149,90",
+      "banho": "RÓDIO",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "405",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/04/2025"
+      "dataUltimaEntrada": "03/10/2022"
     },
     {
       "codigo": "4181",
@@ -132,6 +132,16 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
+      "codigo": "4027",
+      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
+      "imagem": "4027.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
       "codigo": "3979",
       "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
       "imagem": "3979.jpg",
@@ -152,19 +162,9 @@
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4022",
-      "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
-      "imagem": "4022.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "89,90",
-      "precoConsignado": "149,90",
-      "banho": "RÓDIO",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "4120",
-      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
-      "imagem": "4120.jpg",
+      "codigo": "4121",
+      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE PINK/VERDE 2,5MM 39+7CM",
+      "imagem": "4121.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
