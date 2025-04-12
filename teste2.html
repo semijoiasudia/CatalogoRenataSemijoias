@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script> -->
+    </script>
     
     <style>
         body {
@@ -87,43 +87,7 @@
             max-width: 600px;
         }
         
-        /* Grid de categorias (novo estilo) */
-        .categorias-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
 
-        .categoria-card {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
-            cursor: pointer;
-        }
-
-        .categoria-card:hover {
-            transform: translateY(-3px);
-        }
-
-        .categoria-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            user-select: none;
-            -webkit-touch-callout: none;
-            -webkit-user-drag: none;
-        }
-
-        .categoria-nome {
-            padding: 12px;
-            background: #f8f8f8;
-            font-weight: bold;
-            color: #333;
-        }
                
         h1 {
             margin: 20px 0;
@@ -846,11 +810,6 @@
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
-        
-        <!-- Grid de categorias - substituindo o carrossel -->
-        <div class="categorias-grid" id="categorias-grid">
-            <!-- Categorias serão adicionadas dinamicamente -->
-        </div>
     </div>
         
     <!-- Ícone da Sacola (à esquerda) -->
@@ -1389,50 +1348,13 @@
             }
         }
 
-        // Função para criar e renderizar o grid de categorias
-        function renderCategoriasGrid() {
-            const categoriasGrid = document.getElementById('categorias-grid');
-            categoriasGrid.innerHTML = '';
 
-            // Ordenar as categorias por nome para exibição
-            categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
-
-            // Criar um card para cada categoria
-            categoriasAtivas.forEach(categoria => {
-                const card = document.createElement('div');
-                card.className = 'categoria-card';
-                
-                // Imagem padrão ou imagem da categoria
-                const imagemSrc = `imagens/${categoria.name.toLowerCase()}.jpg`;
-                
-                card.innerHTML = `
-                    <img src="${imagemSrc}" alt="${categoria.name}" onerror="this.src='imagens/placeholder.jpg'">
-                    <div class="categoria-nome">${categoria.name}</div>
-                `;
-                
-                // Adicionar evento de clique para carregar a categoria
-                card.addEventListener('click', () => {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    const tab = findTabByText(categoria.name);
-                    if (tab) {
-                        tab.classList.add('active');
-                        loadImages(categoria.diretorio, categoria.name);
-                        scrollToActiveTab();
-                    }
-                });
-                
-                categoriasGrid.appendChild(card);
-            });
-        }
 
         // Carregar categorias a partir do JSON
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
-                
-                // Renderizar o grid de categorias
-                renderCategoriasGrid();
                 
                 const tabs = document.getElementById('tabs');
                 tabs.innerHTML = '';
@@ -1462,13 +1384,23 @@
                     tabs.appendChild(tab);
                 });
 
-                // Não carrega nenhuma categoria específica inicialmente - deixa apenas o grid visível
-                // Ocultando o gallery, subcategorias e ordenação até que uma categoria seja selecionada
+                // Mostrar a navegação de categorias imediatamente
+                document.querySelector('.navigation-controls').style.display = 'block';
+                
+                // Ocultando apenas a galeria e subcategorias até que uma categoria seja selecionada
                 document.getElementById('gallery').style.display = 'none';
                 document.getElementById('subcategories').style.display = 'none';
                 document.querySelector('.filter-container').style.display = 'none';
-                document.querySelector('.navigation-controls').style.display = 'none';
                 document.querySelector('.catalogo-subtitulo').style.display = 'none';
+                
+                // Selecionar a primeira categoria por padrão
+                if (tabs.children.length > 0) {
+                    const defaultTab = tabs.children[0];
+                    defaultTab.classList.add('active');
+                    console.log('Carregando categoria padrão:', defaultTab.textContent);
+                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
+                    scrollToActiveTab();
+                }
                 
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
@@ -1492,7 +1424,6 @@
             
             // Mostrar a galeria e controles de navegação quando uma categoria é selecionada
             document.getElementById('gallery').style.display = 'grid';
-            document.querySelector('.navigation-controls').style.display = 'block';
             document.querySelector('.filter-container').style.display = 'flex';
             document.querySelector('.catalogo-subtitulo').style.display = 'block';
             
