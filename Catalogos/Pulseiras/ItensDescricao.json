@@ -2,24 +2,14 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "4217",
-      "descricao": "PULSEIRA INFANTIL BORBOLETAS",
-      "imagem": "4217.jpg",
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "39,90",
-      "precoConsignado": "69,90",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4220",
-      "descricao": "PULSEIRA INFANTIL PANDA RESINA",
-      "imagem": "4220.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "76,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "2578",
@@ -32,6 +22,26 @@
       "dataUltimaEntrada": "05/08/2024"
     },
     {
+      "codigo": "4220",
+      "descricao": "PULSEIRA INFANTIL PANDA RESINA",
+      "imagem": "4220.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4217",
+      "descricao": "PULSEIRA INFANTIL BORBOLETAS",
+      "imagem": "4217.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
       "codigo": "2574",
       "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
       "imagem": "2574.jpg",
@@ -40,16 +50,6 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "4155",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
-      "imagem": "4155.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "3658",
