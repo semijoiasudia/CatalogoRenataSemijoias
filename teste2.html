@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>
+    </script> -->
     
     <style>
         body {
@@ -1393,13 +1393,25 @@
                 document.querySelector('.filter-container').style.display = 'none';
                 document.querySelector('.catalogo-subtitulo').style.display = 'none';
                 
-                // Selecionar a primeira categoria por padrão
-                if (tabs.children.length > 0) {
+                // Carregar a categoria inicial
+                const initialCategory = getQueryParam('categoria') || 'Brincos';
+                const initialTab = findTabByText(initialCategory);
+                if (initialTab) {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    initialTab.classList.add('active');
+                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
+                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
+                    scrollToActiveTab();
+                } else if (tabs.children.length > 0) {
+                    // Se a categoria inicial não for encontrada, carregar a primeira categoria
                     const defaultTab = tabs.children[0];
                     defaultTab.classList.add('active');
                     console.log('Carregando categoria padrão:', defaultTab.textContent);
                     loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
                     scrollToActiveTab();
+                } else {
+                    console.error('Nenhuma categoria disponível.');
+                    alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
                 
             } catch (error) {
