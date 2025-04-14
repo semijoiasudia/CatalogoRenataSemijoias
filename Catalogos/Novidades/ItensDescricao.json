@@ -2,6 +2,26 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4234",
+      "descricao": "PULSEIRA FITA 4MM",
+      "imagem": "4234.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4233",
+      "descricao": "CHOKER FITA 4MM 37+10CM",
+      "imagem": "4233.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "102,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
       "codigo": "4201",
       "descricao": "BRINCO GOTA PEROLA BOLD P",
       "imagem": "4201.jpg",
