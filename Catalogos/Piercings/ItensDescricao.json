@@ -2,22 +2,22 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "3020",
-      "descricao": "PIERCING FLECHA",
-      "imagem": "3020.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/05/2024"
-    },
-    {
       "codigo": "3019",
       "descricao": "PIERCING FLOR COM PONTO DE LUZ",
       "imagem": "3019.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "29,90",
       "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/05/2024"
+    },
+    {
+      "codigo": "3020",
+      "descricao": "PIERCING FLECHA",
+      "imagem": "3020.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "39,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/05/2024"
     },

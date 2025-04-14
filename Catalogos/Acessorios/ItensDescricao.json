@@ -2,11 +2,21 @@
   "categoria": "ACESSORIO",
   "produtos": [
     {
+      "codigo": "4244",
+      "descricao": "ACESSORIO CINTO MOEDAS ELASTICO FURINHOS 73 A 110CM",
+      "imagem": "4244.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "COR OURO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
       "codigo": "4243",
       "descricao": "ACESSORIO CINTO MOEDAS ELASTICO ORGANICO 73 A 110CM",
       "imagem": "4243.jpg",
       "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "59,90",
+      "preco": "64,90",
       "precoConsignado": "89,90",
       "banho": "COR OURO",
       "dataUltimaEntrada": "14/04/2025"
@@ -22,6 +32,16 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
+      "codigo": "4245",
+      "descricao": "ACESSORIO CINTO MOEDAS ELASTICO FURINHOS 73 A 110CM",
+      "imagem": "4245.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "COR PRATA",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
       "codigo": "4227",
       "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
       "imagem": "4227.jpg",
@@ -30,16 +50,6 @@
       "precoConsignado": "109,90",
       "banho": "2 BANHOS",
       "dataUltimaEntrada": "11/04/2025"
-    },
-    {
-      "codigo": "4244",
-      "descricao": "ACESSORIO CINTO MOEDAS ELASTICO FURINHOS 73 A 110CM",
-      "imagem": "4244.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "COR OURO",
-      "dataUltimaEntrada": "14/04/2025"
     }
   ]
 }

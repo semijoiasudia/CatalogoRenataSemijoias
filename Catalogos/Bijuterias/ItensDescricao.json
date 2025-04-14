@@ -12,6 +12,16 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
+      "codigo": "4120",
+      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
+      "imagem": "4120.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
       "codigo": "4119",
       "descricao": "BIJUTERIA COLAR CRISTAIS TRANPARENTE 4MM 38+5CM",
       "imagem": "4119.jpg",
@@ -35,16 +45,6 @@
       "codigo": "4118",
       "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
       "imagem": "4118.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
-      "codigo": "4120",
-      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
-      "imagem": "4120.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -132,9 +132,9 @@
       "dataUltimaEntrada": "01/04/2025"
     },
     {
-      "codigo": "4183",
-      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
-      "imagem": "4183.jpg",
+      "codigo": "4181",
+      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
+      "imagem": "4181.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "40,00",
       "precoConsignado": "66,00",
@@ -142,9 +142,9 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
-      "codigo": "4181",
-      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
-      "imagem": "4181.jpg",
+      "codigo": "4183",
+      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
+      "imagem": "4183.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "40,00",
       "precoConsignado": "66,00",
