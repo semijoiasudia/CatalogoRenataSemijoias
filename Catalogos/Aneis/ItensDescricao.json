@@ -2,6 +2,16 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "3653",
+      "descricao": "ANEL FALANGE 3 FIOS 2 ESFERAS",
+      "imagem": "3653.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/11/2024"
+    },
+    {
       "codigo": "3817",
       "descricao": "ANEL 3 ZIRCONIAS E CRAVEJADO AO REDOR TAMANHOS",
       "imagem": "3817.jpg",
@@ -62,26 +72,6 @@
       "dataUltimaEntrada": "28/03/2025"
     },
     {
-      "codigo": "3292",
-      "descricao": "ANEL LACO TRABALHADO TAMANHOS",
-      "imagem": "3292.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "19,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/07/2024"
-    },
-    {
-      "codigo": "3653",
-      "descricao": "ANEL FALANGE 3 FIOS 2 ESFERAS",
-      "imagem": "3653.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/11/2024"
-    },
-    {
       "codigo": "4164",
       "descricao": "ANEL REGULAVEL LISO LEVE ONDA",
       "imagem": "4164.jpg",
@@ -92,16 +82,6 @@
       "dataUltimaEntrada": "28/03/2025"
     },
     {
-      "codigo": "3318",
-      "descricao": "ANEL REGULAVEL FIO CRUZADO",
-      "imagem": "3318.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/07/2024"
-    },
-    {
       "codigo": "4165",
       "descricao": "ANEL REGULAVEL CRAVEJADO E ZIRCONIA RETANGULAR",
       "imagem": "4165.jpg",
@@ -110,6 +90,26 @@
       "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/03/2025"
+    },
+    {
+      "codigo": "3292",
+      "descricao": "ANEL LACO TRABALHADO TAMANHOS",
+      "imagem": "3292.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "19,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/07/2024"
+    },
+    {
+      "codigo": "3318",
+      "descricao": "ANEL REGULAVEL FIO CRUZADO",
+      "imagem": "3318.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "20/07/2024"
     },
     {
       "codigo": "3331",
@@ -170,6 +170,16 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3406",
+      "descricao": "ANEL REGULAVEL QUADRADO COM PONTO DE LUZ",
+      "imagem": "3406.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "52,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "19/08/2024"
     },
     {
       "codigo": "3583",
@@ -272,16 +282,6 @@
       "dataUltimaEntrada": "25/01/2025"
     },
     {
-      "codigo": "3406",
-      "descricao": "ANEL REGULAVEL QUADRADO COM PONTO DE LUZ",
-      "imagem": "3406.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "52,90",
-      "precoConsignado": "76,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "19/08/2024"
-    },
-    {
       "codigo": "3362",
       "descricao": "ANEL REGULAVEL CORACAO ORGANICO G",
       "imagem": "3362.jpg",
@@ -302,12 +302,12 @@
       "dataUltimaEntrada": "13/06/2024"
     },
     {
-      "codigo": "2990",
-      "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES VAZADOS",
-      "imagem": "2990.jpg",
+      "codigo": "2992",
+      "descricao": "ANEL FALANGE REGULAVEL 2 BORBOLETAS",
+      "imagem": "2992.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "36,90",
-      "precoConsignado": "49,90",
+      "preco": "19,90",
+      "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2024"
     },
@@ -382,12 +382,12 @@
       "dataUltimaEntrada": "06/06/2024"
     },
     {
-      "codigo": "2992",
-      "descricao": "ANEL FALANGE REGULAVEL 2 BORBOLETAS",
-      "imagem": "2992.jpg",
+      "codigo": "2990",
+      "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES VAZADOS",
+      "imagem": "2990.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "19,90",
-      "precoConsignado": "54,90",
+      "preco": "36,90",
+      "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2024"
     },
@@ -402,16 +402,6 @@
       "dataUltimaEntrada": "13/06/2024"
     },
     {
-      "codigo": "2600",
-      "descricao": "ANEL REGULAVEL BARRA/PONTO DE LUZ CRISTAL",
-      "imagem": "2600.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
       "codigo": "3213",
       "descricao": "ANEL FALANGE CRUZ TRABALHADA",
       "imagem": "3213.jpg",
@@ -420,6 +410,16 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/06/2024"
+    },
+    {
+      "codigo": "2600",
+      "descricao": "ANEL REGULAVEL BARRA/PONTO DE LUZ CRISTAL",
+      "imagem": "2600.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "05/08/2024"
     },
     {
       "codigo": "1077",
