@@ -2,16 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4221",
-      "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
-      "imagem": "4221.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
       "codigo": "3345",
       "descricao": "CONJUNTO ZIRCONIA GOTA 8/6MM CRISTAL 46CM",
       "imagem": "3345.jpg",
@@ -20,6 +10,16 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/07/2024"
+    },
+    {
+      "codigo": "3610",
+      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
+      "imagem": "3610.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "86,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/10/2024"
     },
     {
       "codigo": "3659",
@@ -32,6 +32,16 @@
       "dataUltimaEntrada": "05/11/2024"
     },
     {
+      "codigo": "3984",
+      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 41+9CM",
+      "imagem": "3984.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/02/2025"
+    },
+    {
       "codigo": "3354",
       "descricao": "CONJUNTO ORGANICO OVAL VAZADO 51CM",
       "imagem": "3354.jpg",
@@ -40,6 +50,26 @@
       "precoConsignado": "159,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "02/08/2024"
+    },
+    {
+      "codigo": "4221",
+      "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
+      "imagem": "4221.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "3875",
+      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
+      "imagem": "3875.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/12/2024"
     },
     {
       "codigo": "3730",
@@ -62,26 +92,6 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3862",
-      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
-      "imagem": "3862.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/12/2024"
-    },
-    {
-      "codigo": "3610",
-      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
-      "imagem": "3610.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "86,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/10/2024"
-    },
-    {
       "codigo": "4219",
       "descricao": "CONJUNTO INFANTIL PANDA RESINA 41CM",
       "imagem": "4219.jpg",
@@ -92,24 +102,24 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "3984",
-      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 41+9CM",
-      "imagem": "3984.jpg",
+      "codigo": "4218",
+      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
+      "imagem": "4218.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "72,90",
+      "precoConsignado": "112,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/02/2025"
+      "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "3418",
-      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
-      "imagem": "3418.jpg",
+      "codigo": "3862",
+      "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
+      "imagem": "3862.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "109,90",
-      "precoConsignado": "159,90",
+      "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
+      "dataUltimaEntrada": "18/12/2024"
     },
     {
       "codigo": "3421",
@@ -122,24 +132,14 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3875",
-      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
-      "imagem": "3875.jpg",
+      "codigo": "3418",
+      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
+      "imagem": "3418.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/12/2024"
-    },
-    {
-      "codigo": "4218",
-      "descricao": "CONJUNTO INFANTIL BORBOLETA PINK 35CM",
-      "imagem": "4218.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "72,90",
-      "precoConsignado": "112,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
+      "dataUltimaEntrada": "30/11/2024"
     }
   ]
 }
