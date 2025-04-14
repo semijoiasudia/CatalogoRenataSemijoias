@@ -2,6 +2,36 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4239",
+      "descricao": "COLAR MINI CORACOES CHAPINHAS 46+5CM",
+      "imagem": "4239.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4238",
+      "descricao": "PULSEIRA NAVETE AZUL E 2 PONTOS DE LUZ CRISTAL",
+      "imagem": "4238.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4237",
+      "descricao": "PULSEIRA 7 CORACOES COLORS",
+      "imagem": "4237.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
       "codigo": "4236",
       "descricao": "COLAR CORACAO CONCAVO TORTO CRAVEJADO 47+5CM",
       "imagem": "4236.jpg",
@@ -250,6 +280,16 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/04/2025"
+    },
+    {
+      "codigo": "3216",
+      "descricao": "CHOKER MINI CORACOES CHAPINHAS 37+5CM",
+      "imagem": "3216.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "46,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
     }
   ]
 }
