@@ -2,9 +2,39 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4211",
-      "descricao": "INOX BRINCO TREVO PRETO M",
-      "imagem": "4211.jpg",
+      "codigo": "4216",
+      "descricao": "INOX CONJUNTO INFANTIL HELLO KITTY 40CM",
+      "imagem": "4216.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4255",
+      "descricao": "INOX BRACELETE 5 TREVOS PRETOS",
+      "imagem": "4255.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4044",
+      "descricao": "INOX COLAR INSP. JOANINHA/TREVO/CORACAO 44+5CM",
+      "imagem": "4044.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/04/2025"
+    },
+    {
+      "codigo": "4209",
+      "descricao": "INOX BRINCO TREVO VERMELHO M",
+      "imagem": "4209.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "29,90",
       "precoConsignado": "42,90",
@@ -12,54 +42,14 @@
       "dataUltimaEntrada": "09/04/2025"
     },
     {
-      "codigo": "4204",
-      "descricao": "INOX COLAR INSP. JOANINHA/TREVO/CORACAO 44+5CM",
-      "imagem": "4204.jpg",
+      "codigo": "4179",
+      "descricao": "INOX BRINCO ARGOLA TRIPLA RETANGULAR",
+      "imagem": "4179.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "08/04/2025"
-    },
-    {
-      "codigo": "4170",
-      "descricao": "INOX COLAR BORBOLETA RESINA PEROLADA 40+5CM",
-      "imagem": "4170.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
       "banho": "INOX",
       "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4222",
-      "descricao": "INOX COLAR URSINHO CRAVEJADO INOX DOURADO 50CM",
-      "imagem": "4222.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "11/04/2025"
-    },
-    {
-      "codigo": "4002",
-      "descricao": "INOX BRACELETE TREVOS PRETOS - MADREPEROLA E VAZADO",
-      "imagem": "4002.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "09/04/2025"
-    },
-    {
-      "codigo": "4065",
-      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
-      "imagem": "4065.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "20/02/2025"
     },
     {
       "codigo": "4215",
@@ -72,14 +62,14 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "4171",
-      "descricao": "INOX COLAR 2 CORACOES 41+5CM",
-      "imagem": "4171.jpg",
+      "codigo": "4214",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS TREVOS",
+      "imagem": "4214.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "01/04/2025"
+      "dataUltimaEntrada": "09/04/2025"
     },
     {
       "codigo": "4213",
@@ -92,9 +82,9 @@
       "dataUltimaEntrada": "09/04/2025"
     },
     {
-      "codigo": "4209",
-      "descricao": "INOX BRINCO TREVO VERMELHO M",
-      "imagem": "4209.jpg",
+      "codigo": "4211",
+      "descricao": "INOX BRINCO TREVO PRETO M",
+      "imagem": "4211.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "29,90",
       "precoConsignado": "42,90",
@@ -122,104 +112,14 @@
       "dataUltimaEntrada": "08/04/2025"
     },
     {
-      "codigo": "4214",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS TREVOS",
-      "imagem": "4214.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "09/04/2025"
-    },
-    {
-      "codigo": "4176",
-      "descricao": "INOX BRINCO TRIO ARGOLA LISA",
-      "imagem": "4176.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4228",
-      "descricao": "INOX BRACELETE TREVO BRANCO E RESINA BRANCA",
-      "imagem": "4228.jpg",
+      "codigo": "4222",
+      "descricao": "INOX COLAR URSINHO CRAVEJADO INOX DOURADO 50CM",
+      "imagem": "4222.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "74,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "11/04/2025"
-    },
-    {
-      "codigo": "4229",
-      "descricao": "INOX BRACELETE TREVO BRANCO E PONTO DE LUZ",
-      "imagem": "4229.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "11/04/2025"
-    },
-    {
-      "codigo": "4230",
-      "descricao": "INOX ANEL TREVO BRANCO INSP. - TAMANHOS",
-      "imagem": "4230.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "22,90",
-      "precoConsignado": "39,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "12/04/2025"
-    },
-    {
-      "codigo": "4179",
-      "descricao": "INOX BRINCO ARGOLA TRIPLA RETANGULAR",
-      "imagem": "4179.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "01/04/2025"
-    },
-    {
-      "codigo": "4231",
-      "descricao": "INOX ANEL TREVO PRETO INSP. - TAMANHOS",
-      "imagem": "4231.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "22,90",
-      "precoConsignado": "39,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "12/04/2025"
-    },
-    {
-      "codigo": "4058",
-      "descricao": "INOX BRINCO OVAL ORGANICO",
-      "imagem": "4058.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "32,90",
-      "precoConsignado": "54,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4055",
-      "descricao": "INOX BRINCO CORACAO RESINA BRANCA CRISTAIS",
-      "imagem": "4055.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "24,90",
-      "precoConsignado": "44,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "4216",
-      "descricao": "INOX CONJUNTO INFANTIL HELLO KITTY 40CM",
-      "imagem": "4216.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "10/04/2025"
     },
     {
       "codigo": "4012",
@@ -232,6 +132,46 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
+      "codigo": "4055",
+      "descricao": "INOX BRINCO CORACAO RESINA BRANCA CRISTAIS",
+      "imagem": "4055.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "24,90",
+      "precoConsignado": "44,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "19/02/2025"
+    },
+    {
+      "codigo": "4170",
+      "descricao": "INOX COLAR BORBOLETA RESINA PEROLADA 40+5CM",
+      "imagem": "4170.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "01/04/2025"
+    },
+    {
+      "codigo": "4171",
+      "descricao": "INOX COLAR 2 CORACOES 41+5CM",
+      "imagem": "4171.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "01/04/2025"
+    },
+    {
+      "codigo": "4176",
+      "descricao": "INOX BRINCO TRIO ARGOLA LISA",
+      "imagem": "4176.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "01/04/2025"
+    },
+    {
       "codigo": "4178",
       "descricao": "INOX BRINCO ARGOLA TRIPLA TUBULAR",
       "imagem": "4178.jpg",
@@ -242,14 +182,124 @@
       "dataUltimaEntrada": "01/04/2025"
     },
     {
-      "codigo": "4044",
+      "codigo": "4204",
       "descricao": "INOX COLAR INSP. JOANINHA/TREVO/CORACAO 44+5CM",
-      "imagem": "4044.jpg",
+      "imagem": "4204.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "08/04/2025"
+    },
+    {
+      "codigo": "4230",
+      "descricao": "INOX ANEL TREVO BRANCO INSP. - TAMANHOS",
+      "imagem": "4230.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "22,90",
+      "precoConsignado": "39,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "12/04/2025"
+    },
+    {
+      "codigo": "4002",
+      "descricao": "INOX BRACELETE TREVOS PRETOS - MADREPEROLA E VAZADO",
+      "imagem": "4002.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "09/04/2025"
+    },
+    {
+      "codigo": "4231",
+      "descricao": "INOX ANEL TREVO PRETO INSP. - TAMANHOS",
+      "imagem": "4231.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "22,90",
+      "precoConsignado": "39,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "12/04/2025"
+    },
+    {
+      "codigo": "4251",
+      "descricao": "INOX BRACELETE CORACAO PRETO E MADREPEROLA",
+      "imagem": "4251.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4252",
+      "descricao": "INOX BRACELETE CIRCULO PRETO E ALGARISMOS INSP",
+      "imagem": "4252.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4253",
+      "descricao": "INOX BRACELETE INSP CIRCULOS PRETOS COM PEDRAS",
+      "imagem": "4253.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4229",
+      "descricao": "INOX BRACELETE TREVO BRANCO E PONTO DE LUZ",
+      "imagem": "4229.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "11/04/2025"
+    },
+    {
+      "codigo": "4228",
+      "descricao": "INOX BRACELETE TREVO BRANCO E RESINA BRANCA",
+      "imagem": "4228.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "11/04/2025"
+    },
+    {
+      "codigo": "4058",
+      "descricao": "INOX BRINCO OVAL ORGANICO",
+      "imagem": "4058.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "32,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "19/02/2025"
+    },
+    {
+      "codigo": "4254",
+      "descricao": "INOX BRACELETE 5 TREVOS PRETOS",
+      "imagem": "4254.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4065",
+      "descricao": "INOX COLAR DUPLO INSPIRACAO 38+5CM",
+      "imagem": "4065.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "49,90",
       "precoConsignado": "79,90",
       "banho": "INOX",
-      "dataUltimaEntrada": "08/04/2025"
+      "dataUltimaEntrada": "20/02/2025"
     }
   ]
 }
