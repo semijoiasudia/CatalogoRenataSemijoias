@@ -112,16 +112,6 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "405",
-      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
-      "imagem": "405.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2022"
-    },
-    {
       "codigo": "4024",
       "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
       "imagem": "4024.jpg",
@@ -150,6 +140,16 @@
       "precoConsignado": "66,00",
       "banho": "2 BANHOS",
       "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "405",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2022"
     },
     {
       "codigo": "4027",

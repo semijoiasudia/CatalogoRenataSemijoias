@@ -2,6 +2,16 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4221",
+      "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
+      "imagem": "4221.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
       "codigo": "3862",
       "descricao": "CONJUNTO TREVO VAZADO COM PONTO DE LUZ 42+10CM",
       "imagem": "3862.jpg",
@@ -72,16 +82,6 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "4221",
-      "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
-      "imagem": "4221.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
       "codigo": "3687",
       "descricao": "CONJUNTO COSTELA DE ADAO 41+7CM",
       "imagem": "3687.jpg",
@@ -92,16 +92,6 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3418",
-      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
-      "imagem": "3418.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
-    },
-    {
       "codigo": "3730",
       "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
       "imagem": "3730.jpg",
@@ -110,6 +100,16 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/11/2024"
+    },
+    {
+      "codigo": "3418",
+      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
+      "imagem": "3418.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/11/2024"
     },
     {
       "codigo": "3421",
