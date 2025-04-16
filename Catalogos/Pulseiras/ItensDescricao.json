@@ -2,46 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "4237",
-      "descricao": "PULSEIRA 7 CORACOES COLORS",
-      "imagem": "4237.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "99,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4238",
-      "descricao": "PULSEIRA NAVETE AZUL E 2 PONTOS DE LUZ CRISTAL",
-      "imagem": "4238.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "3913",
-      "descricao": "PULSEIRA TELA 3MM",
-      "imagem": "3913.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "08/01/2025"
-    },
-    {
-      "codigo": "4240",
-      "descricao": "PULSEIRA 3 CRISTAIS TRANSPARENTES E BOLINHAS",
-      "imagem": "4240.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "886",
       "descricao": "PULSEIRA CORDÃO BAIANO 4MM",
       "imagem": "886.jpg",
@@ -52,14 +12,64 @@
       "dataUltimaEntrada": "28/11/2024"
     },
     {
-      "codigo": "4241",
-      "descricao": "PULSEIRA CART E CORACAO VERDE CLARO",
-      "imagem": "4241.jpg",
+      "codigo": "3853",
+      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
+      "imagem": "3853.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3838",
+      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
+      "imagem": "3838.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "3718",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "3718.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
+      "codigo": "3835",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "imagem": "3835.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "3797",
+      "descricao": "PULSEIRA ESFERA DIAMANTADA VAZADA",
+      "imagem": "3797.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "08/12/2024"
+    },
+    {
+      "codigo": "4155",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
+      "imagem": "4155.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "25/03/2025"
     },
     {
       "codigo": "2578",
@@ -82,6 +92,36 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
+      "codigo": "3803",
+      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
+      "imagem": "3803.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "56,90",
+      "precoConsignado": "82,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/12/2024"
+    },
+    {
+      "codigo": "3834",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "imagem": "3834.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "4220",
+      "descricao": "PULSEIRA INFANTIL PANDA RESINA",
+      "imagem": "4220.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
       "codigo": "4003",
       "descricao": "PULSEIRA RIVIERA 2MM CRISTAL",
       "imagem": "4003.jpg",
@@ -102,14 +142,14 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "3797",
-      "descricao": "PULSEIRA ESFERA DIAMANTADA VAZADA",
-      "imagem": "3797.jpg",
+      "codigo": "4125",
+      "descricao": "PULSEIRA MOEDINHAS",
+      "imagem": "4125.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "08/12/2024"
+      "preco": "44,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/03/2025"
     },
     {
       "codigo": "4126",
@@ -122,56 +162,6 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
-      "codigo": "4125",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "4125.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "76,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "3803",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
-      "imagem": "3803.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "82,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/12/2024"
-    },
-    {
-      "codigo": "4155",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS 6MM",
-      "imagem": "4155.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "25/03/2025"
-    },
-    {
-      "codigo": "3834",
-      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
-      "imagem": "3834.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3835",
-      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
-      "imagem": "3835.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
       "codigo": "3185",
       "descricao": "PULSEIRA PINGENTE CORACAO TRABALHADO",
       "imagem": "3185.jpg",
@@ -182,14 +172,64 @@
       "dataUltimaEntrada": "10/06/2024"
     },
     {
-      "codigo": "3718",
-      "descricao": "PULSEIRA MOEDINHAS",
-      "imagem": "3718.jpg",
+      "codigo": "3074",
+      "descricao": "PULSEIRA 3 CORACOES CRISTAL/CORACOES VAZADOS",
+      "imagem": "3074.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "39,90",
-      "precoConsignado": "69,90",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/05/2024"
+    },
+    {
+      "codigo": "4237",
+      "descricao": "PULSEIRA 7 CORACOES COLORS",
+      "imagem": "4237.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "99,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4238",
+      "descricao": "PULSEIRA NAVETE AZUL E 2 PONTOS DE LUZ CRISTAL",
+      "imagem": "4238.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4240",
+      "descricao": "PULSEIRA 3 CRISTAIS TRANSPARENTES E BOLINHAS",
+      "imagem": "4240.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4241",
+      "descricao": "PULSEIRA CART E CORACAO VERDE CLARO",
+      "imagem": "4241.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "3913",
+      "descricao": "PULSEIRA TELA 3MM",
+      "imagem": "3913.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "12/03/2025"
+      "dataUltimaEntrada": "08/01/2025"
     },
     {
       "codigo": "3026",
@@ -200,46 +240,6 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/05/2024"
-    },
-    {
-      "codigo": "3838",
-      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
-      "imagem": "3838.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "4220",
-      "descricao": "PULSEIRA INFANTIL PANDA RESINA",
-      "imagem": "4220.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "76,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "3853",
-      "descricao": "PULSEIRA TIFFANYS 6MM COLORIDAS",
-      "imagem": "3853.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/12/2024"
-    },
-    {
-      "codigo": "3074",
-      "descricao": "PULSEIRA 3 CORACOES CRISTAL/CORACOES VAZADOS",
-      "imagem": "3074.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/05/2024"
     }
   ]
 }
