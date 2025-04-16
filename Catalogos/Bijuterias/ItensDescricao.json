@@ -2,9 +2,9 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4120",
-      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
-      "imagem": "4120.jpg",
+      "codigo": "4119",
+      "descricao": "BIJUTERIA COLAR CRISTAIS TRANPARENTE 4MM 38+5CM",
+      "imagem": "4119.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -42,16 +42,6 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
-      "codigo": "4183",
-      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
-      "imagem": "4183.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "02/04/2025"
-    },
-    {
       "codigo": "4027",
       "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
       "imagem": "4027.jpg",
@@ -82,9 +72,9 @@
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4184",
-      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
-      "imagem": "4184.jpg",
+      "codigo": "4183",
+      "descricao": "BIJUTERIA BRACELETE MAXI FORMATO FOLHAS 2 BANHOS",
+      "imagem": "4183.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "40,00",
       "precoConsignado": "66,00",
@@ -92,9 +82,19 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
-      "codigo": "4117",
-      "descricao": "BIJUTERIA COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
-      "imagem": "4117.jpg",
+      "codigo": "3979",
+      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
+      "imagem": "3979.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "189,98",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
+    },
+    {
+      "codigo": "4118",
+      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
+      "imagem": "4118.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -102,9 +102,9 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4119",
-      "descricao": "BIJUTERIA COLAR CRISTAIS TRANPARENTE 4MM 38+5CM",
-      "imagem": "4119.jpg",
+      "codigo": "4120",
+      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
+      "imagem": "4120.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -142,16 +142,6 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "3979",
-      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
-      "imagem": "3979.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "189,98",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
-    },
-    {
       "codigo": "405",
       "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
       "imagem": "405.jpg",
@@ -162,9 +152,19 @@
       "dataUltimaEntrada": "03/10/2022"
     },
     {
-      "codigo": "4118",
-      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
-      "imagem": "4118.jpg",
+      "codigo": "4184",
+      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
+      "imagem": "4184.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4117",
+      "descricao": "BIJUTERIA COLAR CRISTAIS TERRACOTA 4MM 38+5CM",
+      "imagem": "4117.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
