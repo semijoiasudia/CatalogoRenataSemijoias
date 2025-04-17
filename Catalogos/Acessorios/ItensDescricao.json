@@ -12,16 +12,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4227",
-      "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
-      "imagem": "4227.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "11/04/2025"
-    },
-    {
       "codigo": "4242",
       "descricao": "ACESSORIO CINTO MOEDAS PRATEADO ELASTICO 75 A 110CM",
       "imagem": "4242.jpg",
@@ -90,6 +80,16 @@
       "precoConsignado": "79,90",
       "banho": "COR OURO",
       "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4227",
+      "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
+      "imagem": "4227.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "11/04/2025"
     }
   ]
 }
