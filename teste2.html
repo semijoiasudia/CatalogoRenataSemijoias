@@ -28,10 +28,10 @@
             overflow-x: hidden;
         }
         
-        /* Novo container da logo */
+        /* Novo container da logo - Fundo alterado para branco */
         .logo-container {
             padding: 8px 0;
-            background: linear-gradient(135deg, #f8f8f8, #ffffff);
+            background: #ffffff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 10px;
             position: relative; /* Para que o overlay fique posicionado corretamente */
@@ -56,14 +56,26 @@
             z-index: 2;
         }
         
-        /* Título estilizado mais elegante */
+        /* Texto da localização posicionado no topo direito */
+        .location-text {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 13px;
+            color: #666;
+            font-weight: normal;
+            text-align: right;
+            line-height: 1.3;
+        }
+        
+        /* Título estilizado mais elegante - Fundo alterado para branco */
         .catalogo-container {
             width: 100%;
             max-width: 100%;
             margin: 0 auto 5px;
             padding: 5px 5px 8px;
             position: relative;
-            background-color: #fcfaf5;
+            background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             overflow: hidden;
@@ -87,7 +99,104 @@
             max-width: 600px;
         }
         
-
+        /* Estilos do carrossel horizontal */
+        .carrossel-horizontal {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 5px 0;
+            position: relative;
+        }
+        
+        .carrossel-h-container {
+            overflow: hidden;
+            width: 100%;
+            margin: 0 auto; /* Centraliza o container */
+            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
+            box-sizing: border-box;
+        }
+        
+        .carrossel-h-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carrossel-h-slide {
+            flex: 0 0 100%;
+            padding: 0 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            position: relative;
+            text-align: center; /* Centraliza o conteúdo */
+        }
+        
+        .carrossel-h-slide .slide-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0; /* Removido border-radius */
+            transition: transform 0.3s ease;
+            display: inline-block; /* Permite centralização */
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
+            aspect-ratio: 1/1; /* Força a proporção 1:1 (quadrada) */
+        }
+        
+        .carrossel-h-slide .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 0; /* Removido border-radius */
+        }
+        
+        .carrossel-h-slide:hover img {
+            transform: scale(1.05);
+        }
+        
+        .carrossel-h-prev, .carrossel-h-next {
+            background: rgba(255,255,255,0.7);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carrossel-h-prev:hover, .carrossel-h-next:hover {
+            background: rgba(255,255,255,0.9);
+        }
+        
+        .carrossel-h-category-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: auto;
+            bottom: auto;
+            transform: none;
+            background: rgba(212, 175, 55, 0.8);
+            color: white;
+            padding: 4px 12px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 3;
+        }
                
         h1 {
             margin: 20px 0;
@@ -97,105 +206,65 @@
         .modal-open {
             overflow: hidden;
         }
-        .tabs-container {
-                width: 100%;
-                max-width: 100%; /* Usar 100% da largura do container pai */
-                overflow-x: auto;
-                overflow-y: visible; /* Alterado para visible para não cortar os botões ao crescerem */
-                white-space: nowrap;
-                padding: 5px 0 17px 0; /* Aumentado padding inferior para acomodar o crescimento */
-                margin: 0 0 12px 0;
-                background-color: transparent;
-                border-radius: 0;
-                box-shadow: none;
-                border-bottom: 1px solid rgba(0,0,0,0.06);
+
+        /* Container para controles de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
         }
-        .tabs {
-            display: inline-flex;
-            gap: 8px;
-            padding: 2px; /* Pequeno padding para evitar cortes nas bordas */
-        }
-        .tab {
-            padding: 10px 18px;
-            font-size: 15px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            color: white;
-            font-weight: bold;
-            transition: all 0.2s;
-            white-space: nowrap;
-            min-width: 100px;
-            text-align: center;
-        }
-        .tab:hover {
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px;
-            margin: -1px -2px; /* Compensação para manter alinhamento */
-        }
-        .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor mais escura */
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px; /* Padding maior que o normal */
-            margin: -1px -2px; /* Compensação para manter alinhamento */
-        }
-        .tabs-container::-webkit-scrollbar {
-            height: 8px;
-        }
-        .tabs-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb {
-            background: #e6c977;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #d4af37;
-        }
-        .subcategories {
+
+        /* Estilo para os dropdowns de navegação - layout modificado */
+        .filter-row {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 0 0 12px 0;
-            padding: 0 0 12px 0;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
             border-bottom: 1px solid rgba(0,0,0,0.06);
         }
-        .subcategories button {
-            padding: 8px 15px;
-            font-size: 14px;
-            cursor: pointer;
-            border: none;
-            border-radius: 6px;
-            background-color: #e9e9e9;
-            color: #555;
-            transition: all 0.2s;
-        }
-        .subcategories button:hover {
-            background-color: #d4d4d4;
-            transform: translateY(-1px);
-        }
-        .subcategories button.active {
-            background-color: #d4af37;
-            color: white;
-            font-weight: bold;
-        }
-        .filter-container {
+        
+        .filter-group {
             display: flex;
-            justify-content: center;
             align-items: center;
-            gap: 10px;
-            margin: 0;
-            padding-top: 4px;
         }
-        .filter-container label {
+        
+        /* Modificado: Label padrão para segundo e terceiro dropdown */
+        .filter-label {
             font-size: 14px;
             font-weight: 500;
             color: #555;
+            margin-right: 10px;
+            white-space: nowrap;
+            width: 160px; /* Largura fixa para alinhar todos os labels */
+            text-align: left;
         }
-        .filter-container select {
+        
+        /* NOVO: Grupo especial para o primeiro dropdown com label acima */
+        .filter-group-category {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        /* NOVO: Label específico para o primeiro dropdown (categoria) */
+        .filter-label-category {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        /* Select padrão para segundo e terceiro dropdown */
+        .filter-select {
             padding: 8px 15px;
             font-size: 14px;
             border-radius: 6px;
@@ -204,16 +273,33 @@
             cursor: pointer;
             transition: all 0.2s;
             color: #555;
+            min-width: 200px; /* Largura para segundo e terceiro selects */
         }
-        .filter-container select:hover {
+        
+        /* NOVO: Select específico para o primeiro dropdown (categoria) */
+        .filter-select-category {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+            width: 100%; /* Dropdown de categoria ocupa toda a largura */
+        }
+        
+        .filter-select:hover, .filter-select-category:hover {
             border-color: #d4af37;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .filter-container select:focus {
+        
+        .filter-select:focus, .filter-select-category:focus {
             outline: none;
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -236,13 +322,13 @@
             position: relative;
             width: 100%;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
         }
         .gallery .img-container img {
             width: 100%;
             height: auto;
             cursor: pointer;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
             transition: transform 0.2s;
             user-select: none;
             -webkit-touch-callout: none;
@@ -259,7 +345,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 0; /* Removido border-radius */
         }
         .gallery .content-wrapper {
             flex: 1;
@@ -347,7 +433,7 @@
         .modal img {
             max-width: 100%;
             max-height: 65vh;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
             user-select: none;
             -webkit-touch-callout: none;
             -webkit-user-drag: none;
@@ -363,7 +449,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 0; /* Removido border-radius */
         }
         .modal-codigo {
             position: absolute;
@@ -442,7 +528,7 @@
         .rodape {
             margin-top: 20px;
             padding: 10px;
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; /* Mantido original */
             text-align: center;
             font-size: 14px;
             color: #555;
@@ -607,7 +693,7 @@
             width: 60px;
             height: 60px;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 0; /* Removido border-radius */
             margin-right: 10px;
             user-select: none;
             -webkit-touch-callout: none;
@@ -676,7 +762,7 @@
         .cart-summary {
             margin-top: 20px;
             padding: 15px;
-            background-color: #f8f9fa;
+            background-color: #ffffff; /* Alterado para branco */
             border-radius: 8px;
         }
         .cart-total-line {
@@ -771,45 +857,34 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-        /* Container principal para navegação */
-        .navigation-controls {
-            width: 100%;
-            max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
-            margin: 0 auto 20px;
-            background-color: #f8f8f8;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 15px;
-            box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
-        }
-        .info-text {
-            text-align: center;
-            margin: 10px 0;
-            font-size: 14px;
-            color: #555;
-            line-height: 1.5;
-        }
-        
-        .info-text p {
-            margin: 0px 0;
-        }
+        #banhoSelectContainer { margin-left: auto; }
+        #sortFilterContainer { margin-left: auto; }
     </style>
 </head>
 <body>
-    <!-- Novo container da logo -->
+    <!-- Novo container da logo com texto da localização no canto superior direito -->
     <div class="logo-container">
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
+        <!-- Texto da localização posicionado no canto superior direito -->
+        <div class="location-text">Loja em<br>Uberlândia-MG</div>
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
-    <div class="info-text">
-        <p>Loja em Uberlândia-MG</p>
-        <!--<p>📦 Enviamos para todo Brasil (frete a calcular)</p>
-        <p>📦 Envio para todo Brasil (frete a calcular)</p>-->
-    </div>
+    
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
+        
+        <!-- Carrossel horizontal para categorias -->
+        <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev">❮</button>
+            <div class="carrossel-h-container">
+                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
+                    <!-- Os slides serão adicionados dinamicamente -->
+                </div>
+            </div>
+            <button class="carrossel-h-next">❯</button>
+        </div>
     </div>
         
     <!-- Ícone da Sacola (à esquerda) -->
@@ -820,21 +895,42 @@
         </div>
         <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
-    <div class="navigation-controls">
-        <div class="tabs-container">
-            <div class="tabs" id="tabs"></div>
+    
+    <div class="navigation-controls" id="navigation-controls">
+        <!-- MODIFICADO: Primeiro dropdown com label acima -->
+        <div class="filter-row">
+            <div class="filter-group-category">
+                <label for="categorySelect" class="filter-label-category">Selecione a categoria:</label>
+                <select id="categorySelect" class="filter-select-category" onchange="handleCategoryChange()">
+                    <!-- Opções serão preenchidas pelo JavaScript -->
+                </select>
+            </div>
         </div>
-        <div class="subcategories" id="subcategories" style="display: none;"></div>
-        <div class="filter-container">
-            <label for="sortFilter">Ordenar por: </label>
-            <select id="sortFilter" onchange="applySort()">
-                <option value="newest" selected>Mais Novos</option>
-                <option value="oldest">Mais Antigos</option>
-                <option value="highestPrice">Maior Preço</option>
-                <option value="lowestPrice">Menor Preço</option>
-            </select>
+        
+        <!-- Segundo dropdown não modificado -->
+        <div class="filter-row" id="banhoSelectContainer" style="display: none;">
+            <div class="filter-group">
+                <label for="banhoSelect" class="filter-label">Selecione o banho ou a cor:</label>
+                <select id="banhoSelect" class="filter-select" onchange="handleBanhoChange()">
+                    <!-- Opções serão preenchidas pelo JavaScript -->
+                </select>
+            </div>
+        </div>
+        
+        <!-- Terceiro dropdown não modificado -->
+        <div class="filter-row">
+            <div class="filter-group">
+                <label for="sortFilter" class="filter-label">Ordenar por:</label>
+                <select id="sortFilter" class="filter-select" onchange="applySort()">
+                    <option value="newest" selected>Mais Novos</option>
+                    <option value="oldest">Mais Antigos</option>
+                    <option value="highestPrice">Maior Preço</option>
+                    <option value="lowestPrice">Menor Preço</option>
+                </select>
+            </div>
         </div>
     </div>
+    
     <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
@@ -1348,96 +1444,138 @@
             }
         }
 
+        // MODIFICADO: Função de tratamento de mudança de categoria com rolagem
+        function handleCategoryChange() {
+            const categorySelect = document.getElementById('categorySelect');
+            const selectedOption = categorySelect.options[categorySelect.selectedIndex];
+            const categoryDir = selectedOption.dataset.diretorio;
+            const categoryName = selectedOption.textContent;
 
+            if (isCategoryChanging) return; // Ignora ação se já estiver mudando de categoria
+            isCategoryChanging = true;
 
-        // Carregar categorias a partir do JSON
+            console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+            loadImages(categoryDir, categoryName);
+
+            // NOVO: Rolar até o elemento de navegação
+            const navigationControls = document.getElementById('navigation-controls');
+            setTimeout(() => {
+                navigationControls.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+
+            // Reseta a flag após um curto intervalo
+            setTimeout(() => {
+                isCategoryChanging = false;
+            }, 300);
+        }
+
+        // Manipular mudança de banho via dropdown
+        function handleBanhoChange() {
+            const banhoSelect = document.getElementById('banhoSelect');
+            const selectedBanho = banhoSelect.value;
+            
+            console.log(`Banho selecionado: ${selectedBanho}`);
+            filterByBanho(selectedBanho);
+        }
+
+        // Carregar categorias a partir do JSON e preencher o dropdown de categorias
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
                 
-                const tabs = document.getElementById('tabs');
-                tabs.innerHTML = '';
+                const categorySelect = document.getElementById('categorySelect');
+                categorySelect.innerHTML = '';
 
-                // Ordenar as categorias por nome antes de criar as abas
+                // Ordenar as categorias por nome antes de criar as opções
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
-                // Criar abas para cada categoria ativa
+                
+                // Criar opções para cada categoria ativa
                 categoriasAtivas.forEach(categoria => {
-                    const tab = document.createElement('button');
-                    tab.className = 'tab';
-                    tab.textContent = categoria.name;
-                    tab.dataset.diretorio = categoria.diretorio;
-                    tab.onclick = () => {
-                        if (isCategoryChanging) return; // Ignora clique se já estiver mudando de categoria
-                        isCategoryChanging = true; // Define flag de mudança
-                        
-                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-                        loadImages(categoria.diretorio, categoria.name);
-                        scrollToActiveTab();
-                        
-                        // Reseta a flag após um curto intervalo
-                        setTimeout(() => {
-                            isCategoryChanging = false;
-                        }, 300);
-                    };
-                    tabs.appendChild(tab);
+                    const option = document.createElement('option');
+                    option.value = categoria.name;
+                    option.textContent = categoria.name;
+                    option.dataset.diretorio = categoria.diretorio;
+                    categorySelect.appendChild(option);
                 });
 
-                // Mostrar a navegação de categorias imediatamente
-                document.querySelector('.navigation-controls').style.display = 'block';
-                
-                // Ocultando apenas a galeria e subcategorias até que uma categoria seja selecionada
-                document.getElementById('gallery').style.display = 'none';
-                document.getElementById('subcategories').style.display = 'none';
-                document.querySelector('.filter-container').style.display = 'none';
-                document.querySelector('.catalogo-subtitulo').style.display = 'none';
-                
                 // Carregar a categoria inicial
                 const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = findTabByText(initialCategory);
-                if (initialTab) {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
-                    scrollToActiveTab();
-                } else if (tabs.children.length > 0) {
+                let initialOption = null;
+                
+                // Procurar a opção correspondente à categoria inicial
+                for (let i = 0; i < categorySelect.options.length; i++) {
+                    if (categorySelect.options[i].textContent.trim().toLowerCase() === initialCategory.toLowerCase()) {
+                        initialOption = categorySelect.options[i];
+                        categorySelect.selectedIndex = i;
+                        break;
+                    }
+                }
+                
+                if (initialOption) {
+                    console.log('Carregando categoria inicial:', initialOption.textContent.trim());
+                    loadImages(initialOption.dataset.diretorio, initialOption.textContent.trim());
+                } else if (categorySelect.options.length > 0) {
                     // Se a categoria inicial não for encontrada, carregar a primeira categoria
-                    const defaultTab = tabs.children[0];
-                    defaultTab.classList.add('active');
-                    console.log('Carregando categoria padrão:', defaultTab.textContent);
-                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
-                    scrollToActiveTab();
+                    categorySelect.selectedIndex = 0;
+                    const defaultOption = categorySelect.options[0];
+                    console.log('Carregando categoria padrão:', defaultOption.textContent);
+                    loadImages(defaultOption.dataset.diretorio, defaultOption.textContent.trim());
                 } else {
                     console.error('Nenhuma categoria disponível.');
                     alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
-                
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
             }
         }
 
-        function findTabByText(categoryName) {
-            const tabs = document.querySelectorAll('.tab');
-            for (let tab of tabs) {
-                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                    return tab;
-                }
+        // Preencher o dropdown de banhos com as opções disponíveis
+        function preencherDropdownBanhos(banhosNaCategoria) {
+            const banhoSelect = document.getElementById('banhoSelect');
+            const banhoSelectContainer = document.getElementById('banhoSelectContainer');
+            banhoSelect.innerHTML = '';
+            
+            if (banhosNaCategoria.size === 0) {
+                banhoSelectContainer.style.display = 'none';
+                return;
             }
-            return null;
+            
+            banhoSelectContainer.style.display = 'flex';
+            
+            // Adicionar opção "Todos"
+            const optionTodos = document.createElement('option');
+            optionTodos.value = 'todos';
+            optionTodos.textContent = 'Todos';
+            banhoSelect.appendChild(optionTodos);
+            
+            // Adicionar opções para cada banho disponível
+            const banhosArray = Array.from(banhosNaCategoria);
+            banhosArray.sort(); // Ordenar alfabeticamente
+            
+            banhosArray.forEach(banho => {
+                if (banho && banho !== '') {
+                    const option = document.createElement('option');
+                    option.value = banho;
+                    
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    
+                    option.textContent = displayText;
+                    banhoSelect.appendChild(option);
+                }
+            });
+            
+            // Resetar para "Todos"
+            banhoSelect.value = 'todos';
         }
 
         // Carregar imagens a partir dos produtos de uma categoria
         async function loadImages(categoryDir, categoryName) {
             console.log(`Iniciando loadImages para: ${categoryName} (${categoryDir})`);
-            
-            // Mostrar a galeria e controles de navegação quando uma categoria é selecionada
-            document.getElementById('gallery').style.display = 'grid';
-            document.querySelector('.filter-container').style.display = 'flex';
-            document.querySelector('.catalogo-subtitulo').style.display = 'block';
             
             currentCategory = categoryName;
             const banhosNaCategoria = new Set();
@@ -1478,7 +1616,7 @@
                 });
 
                 displayPage(currentPage, banhosNaCategoria);
-                criarBotoesSubcategorias(banhosNaCategoria);
+                preencherDropdownBanhos(banhosNaCategoria);
                 console.log('Imagens carregadas com sucesso para:', categoryName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
@@ -1693,50 +1831,43 @@
             console.log('Ordenação aplicada:', currentSort);
         }
 
-        function criarBotoesSubcategorias(banhosNaCategoria) {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = '';
-
-            if (banhosNaCategoria.size === 0) {
-                subcategoriesDiv.style.display = 'none';
-                return;
-            }
-
-            subcategoriesDiv.style.display = 'flex';
-
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.dataset.banho = 'todos';
-            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
-            botaoTodos.onclick = () => filterByBanho('todos');
-            subcategoriesDiv.appendChild(botaoTodos);
-
-            banhosNaCategoria.forEach(banho => {
-                if (banho && banho !== '') {
-                    const botaoBanho = document.createElement('button');
-                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    if (banho === '2 banhos') {
-                        displayText = '2 Banhos';
-                    }
-                    botaoBanho.textContent = displayText;
-                    botaoBanho.dataset.banho = banho;
-                    botaoBanho.className = currentBanho === banho ? 'active' : '';
-                    botaoBanho.onclick = () => filterByBanho(banho);
-                    subcategoriesDiv.appendChild(botaoBanho);
-                }
-            });
-        }
-
         function filterByBanho(banho) {
             currentBanho = banho;
             currentPage = 1;
-            
-            // Atualizar visualmente o botão ativo
-            document.querySelectorAll('#subcategories button').forEach(button => {
-                button.classList.toggle('active', button.dataset.banho === banho);
-            });
-            
             displayPage(currentPage, new Set());
+        }
+
+        // Função para mostrar modal de um item do carrossel
+        function showModalFromCarousel(item) {
+            if (!item || !item.src) return;
+            
+            resetZoomAndPan();
+            
+            // Configurar a modal com as informações do item
+            document.getElementById('modalImg').src = item.src;
+            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
+            
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${item.descricao}</div>
+                <div class="preco">${item.preco}</div>
+            `;
+            
+            // Adicionar a logo watermark
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+            
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            logo.draggable = false;
+            captureArea.appendChild(logo);
+            
+            // Exibir a modal
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
         }
 
         function showModal(src, codigo, index) {
@@ -1980,15 +2111,140 @@
             }
         }
 
-        function scrollToActiveTab() {
-            const activeTab = document.querySelector('.tab.active');
-            if (activeTab) {
-                const tabRect = activeTab.getBoundingClientRect();
-                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
-                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
-                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
-
-                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
+        // Função para inicializar o carrossel horizontal
+        async function initHorizontalCarousel() {
+            try {
+                // Carregar categorias do arquivo JSON
+                const response = await fetch('CategoriasCarrossel.json');
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                
+                const categorias = await response.json();
+                if (!categorias || categorias.length === 0) {
+                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
+                    return;
+                }
+                
+                const wrapper = document.getElementById('carrossel-h-wrapper');
+                wrapper.innerHTML = '';
+                
+                // Função para obter todas as imagens de cada categoria
+                async function getCategoryImages(categoryName, limit = 30) {
+                    // Buscar a categoria nas categorias ativas
+                    const categoryFound = categoriasAtivas.find(cat => 
+                        cat.name.toLowerCase() === categoryName.toLowerCase());
+                        
+                    if (!categoryFound) {
+                        return [];
+                    }
+                    
+                    try {
+                        // Tentar carregar produtos da categoria para obter imagens
+                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
+                        const response = await fetch(jsonUrl);
+                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                        
+                        const data = await response.json();
+                        if (!data.produtos || data.produtos.length === 0) {
+                            return [];
+                        }
+                        
+                        // Pegar até 'limit' produtos da categoria
+                        const products = data.produtos.slice(0, limit);
+                        
+                        // Mapear para o formato que precisamos
+                        return products.map(produto => ({
+                            src: `${produto.pastaFotos}${produto.imagem}`,
+                            codigo: produto.codigo,
+                            categoryName: categoryName,
+                            diretorio: categoryFound.diretorio,
+                            descricao: produto.descricao,
+                            preco: formatarPreco(produto.preco)
+                        }));
+                        
+                    } catch (error) {
+                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
+                        return [];
+                    }
+                }
+                
+                // Obter todas as imagens de todas as categorias
+                let allImages = [];
+                for (const categoria of categorias) {
+                    const images = await getCategoryImages(categoria.nome);
+                    allImages = allImages.concat(images);
+                }
+                
+                // Criar slides para cada imagem
+                allImages.forEach(image => {
+                    const slideElement = document.createElement('div');
+                    slideElement.className = 'carrossel-h-slide';
+                    slideElement.innerHTML = `
+                        <img src="${image.src}" alt="${image.categoryName}" class="slide-image" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
+                        <div class="carrossel-h-category-name">${image.categoryName}</div>
+                        <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
+                    `;
+                    
+                    // Adicionar evento de clique para abrir o modal
+                    slideElement.addEventListener('click', () => {
+                        showModalFromCarousel(image);
+                    });
+                    
+                    wrapper.appendChild(slideElement);
+                });
+                
+                // Configurar comportamento do carrossel
+                let currentPosition = 0;
+                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
+                
+                // Função para atualizar a posição do carrossel
+                function updateCarouselPosition() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (!slides.length) return;
+                    
+                    const slideWidth = slides[0].offsetWidth;
+                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+                }
+                
+                // Funções de navegação
+                function nextSlide() {
+                    const slides = document.querySelectorAll('.carrossel-h-slide');
+                    if (currentPosition < slides.length - slidesPerView) {
+                        currentPosition++;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                function prevSlide() {
+                    if (currentPosition > 0) {
+                        currentPosition--;
+                        updateCarouselPosition();
+                    }
+                }
+                
+                // Configurar botões de navegação
+                const prevBtn = document.querySelector('.carrossel-h-prev');
+                const nextBtn = document.querySelector('.carrossel-h-next');
+                
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    prevSlide();
+                });
+                
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    nextSlide();
+                });
+                
+                // Atualizar tamanho dos slides quando a janela é redimensionada
+                window.addEventListener('resize', updateCarouselPosition);
+                
+                // Inicializar carrossel
+                updateCarouselPosition();
+                
+            } catch (error) {
+                console.error("Erro ao inicializar carrossel horizontal:", error);
             }
         }
 
@@ -1997,6 +2253,7 @@
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega
             await loadCategories(); // Carregar categorias já usa o JSON correto
+            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
