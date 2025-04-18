@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>-->
+    </script>
     
     <style>
         body {
@@ -87,7 +87,7 @@
             max-width: 600px;
         }
         
-        /* INÍCIO - Estilos do carrossel de novidades */
+        /* NOVOS ESTILOS: Carrossel de Novidades */
         .novidades-container {
             width: 100%;
             max-width: 100%;
@@ -100,14 +100,16 @@
             overflow: hidden;
             box-sizing: border-box;
         }
+        
         .novidades-titulo {
             font-size: 22px;
             font-weight: bold;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             text-align: center;
             position: relative;
         }
+        
         .novidades-titulo:after {
             content: '';
             display: block;
@@ -116,15 +118,7 @@
             background: linear-gradient(135deg, #e6c977, #d4af37);
             margin: 8px auto 0;
         }
-        .novidades-subtitulo {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 15px;
-            text-align: center;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        
         .carousel-container {
             width: 100%;
             overflow: hidden;
@@ -132,6 +126,7 @@
             padding: 5px;
             max-width: 100%;
         }
+        
         .carousel-items {
             display: flex;
             transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -139,28 +134,20 @@
             padding: 5px 0;
             width: 100%;
         }
+        
         .carousel-item {
+            flex: 0 0 calc(25% - 10px);
             min-width: calc(25% - 10px);
-            max-width: calc(25% - 10px);
             padding: 0 5px;
             box-sizing: border-box;
             transition: all 0.3s ease;
+            position: relative;
         }
+        
         .carousel-item:hover {
             transform: translateY(-5px);
         }
-        @media (max-width: 768px) {
-            .carousel-item {
-                min-width: calc(50% - 10px);
-                max-width: calc(50% - 10px);
-            }
-        }
-        @media (max-width: 480px) {
-            .carousel-item {
-                min-width: calc(100% - 10px);
-                max-width: calc(100% - 10px);
-            }
-        }
+        
         .carousel-item .inner {
             background-color: white;
             border-radius: 12px;
@@ -172,17 +159,20 @@
             transition: box-shadow 0.3s ease;
             border: 1px solid rgba(0,0,0,0.03);
         }
+        
         .carousel-item .inner:hover {
             box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
+        
         .carousel-item .img-container {
             position: relative;
             overflow: hidden;
             width: 100%;
-            padding-top: 100%; /* Aspecto 1:1 */
-            height: auto;
+            padding-top: 100%; /* Aspecto 1:1 (quadrado) */
+            height: 0;
         }
-        .carousel-item .img-container img {
+        
+        .carousel-item .img-container img.slide-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -197,68 +187,43 @@
             -ms-user-select: none;
             pointer-events: none;
         }
-        .carousel-item .img-container img:hover {
+        
+        .carousel-item .img-container img.slide-image:hover {
             transform: scale(1.05);
         }
-        .carousel-item .carousel-codigo {
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 3px 6px;
-            border-radius: 3px;
-            font-size: 12px;
-            font-weight: bold;
-            z-index: 2;
-        }
-        .carousel-item .tag-novidade {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            z-index: 2;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+        
         .carousel-item .logo-watermark {
             position: absolute;
             bottom: 10px;
             right: 10px;
             width: 20%;
-            max-height: 20%;
+            height: auto;
+            max-width: 40px;
+            max-height: 40px;
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
             border-radius: 1px;
         }
-        .carousel-item .content {
-            padding: 15px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .carousel-item .description {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 8px;
-            line-height: 1.3;
-            flex-grow: 1;
-        }
-        .carousel-item .preco {
-            font-size: 16px;
+        
+        .carousel-item .carrossel-h-category-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(212, 175, 55, 0.8);
+            color: white;
+            padding: 4px 12px;
             font-weight: bold;
-            color: #000;
-            margin-top: auto;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 3;
         }
+        
         .carousel-nav {
             text-align: center;
             margin-top: 20px;
         }
+        
         .carousel-dot {
             display: inline-block;
             width: 10px;
@@ -269,19 +234,23 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+        
         .carousel-dot.active {
             background-color: #d4af37;
         }
+        
         .carousel-controls {
             position: absolute;
             top: 50%;
             width: 100%;
             transform: translateY(-50%);
-            z-index: 2;
+            z-index: 10;
             display: flex;
             justify-content: space-between;
             pointer-events: none;
+            left: 0;
         }
+        
         .carousel-control {
             width: 40px;
             height: 40px;
@@ -296,116 +265,41 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             transition: background-color 0.3s;
             pointer-events: auto;
+            border: none;
         }
+        
         .carousel-control:hover {
             background-color: rgba(255, 255, 255, 0.9);
         }
+        
         .carousel-control.prev {
             margin-left: 5px;
         }
+        
         .carousel-control.next {
             margin-right: 5px;
         }
-        /* FIM - Estilos do carrossel de novidades */
         
-        /* Estilos do carrossel horizontal existente */
-        .carrossel-horizontal {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: 5px 0;
-            position: relative;
+        /* Responsividade do carrossel */
+        @media (max-width: 768px) {
+            .carousel-item {
+                flex: 0 0 calc(50% - 10px);
+                min-width: calc(50% - 10px);
+            }
         }
         
-        .carrossel-h-container {
-            overflow: hidden;
-            width: 100%;
-            margin: 0 auto; /* Centraliza o container */
-            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
-            box-sizing: border-box;
+        @media (max-width: 480px) {
+            .carousel-item {
+                flex: 0 0 calc(100% - 10px);
+                min-width: calc(100% - 10px);
+            }
+            
+            /* Garante que o item fica centralizado em dispositivos móveis */
+            .carousel-items {
+                justify-content: center;
+            }
         }
-        
-        .carrossel-h-wrapper {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        
-        .carrossel-h-slide {
-            flex: 0 0 100%;
-            padding: 0 5px;
-            box-sizing: border-box;
-            cursor: pointer;
-            position: relative;
-            text-align: center; /* Centraliza o conteúdo */
-        }
-        
-        .carrossel-h-slide .slide-image {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-            display: inline-block; /* Permite centralização */
-            margin: 0 auto; /* Centraliza a imagem horizontalmente */
-            user-select: none;
-            -webkit-touch-callout: none;
-            -webkit-user-drag: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            pointer-events: none;
-            aspect-ratio: 1/1; /* Força a proporção 1:1 (quadrada) */
-        }
-        
-        .carrossel-h-slide .logo-watermark {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 20%;
-            max-height: 20%;
-            object-fit: contain;
-            z-index: 2;
-            pointer-events: none;
-            border-radius: 1px;
-        }
-        
-        .carrossel-h-slide:hover img {
-            transform: scale(1.05);
-        }
-        
-        .carrossel-h-prev, .carrossel-h-next {
-            background: rgba(255,255,255,0.7);
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: background 0.3s;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .carrossel-h-prev:hover, .carrossel-h-next:hover {
-            background: rgba(255,255,255,0.9);
-        }
-        
-        .carrossel-h-category-name {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: auto;
-            bottom: auto;
-            transform: none;
-            background: rgba(212, 175, 55, 0.8);
-            color: white;
-            padding: 4px 12px;
-            font-weight: bold;
-            font-size: 14px;
-            border-radius: 20px;
-            z-index: 3;
-        }
+        /* FIM DOS NOVOS ESTILOS */
                
         h1 {
             margin: 20px 0;
@@ -1126,41 +1020,13 @@
         <p>📦 Envio para todo Brasil (frete a calcular)</p>-->
     </div>
     
-    <!-- NOVO: Seção de Novidades (Carrossel) -->
-    <div class="novidades-container">
-        <h2 class="novidades-titulo">Novidades e Reposições</h2>
-        <p class="novidades-subtitulo">Confira os itens que chegaram nos últimos 30 dias</p>
-        
-        <div class="carousel-container">
-            <div class="carousel-controls">
-                <div class="carousel-control prev" onclick="moveCarousel(-1)">❮</div>
-                <div class="carousel-control next" onclick="moveCarousel(1)">❯</div>
-            </div>
-            <div class="carousel-items" id="novidades-carousel">
-                <!-- Os itens do carrossel serão adicionados via JavaScript -->
-            </div>
-        </div>
-        <div class="carousel-nav" id="carousel-nav">
-            <!-- Os indicadores de navegação serão adicionados via JavaScript -->
-        </div>
-    </div>
-    
     <!-- Título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
-        
-        <!-- Carrossel horizontal para categorias -->
-        <div class="carrossel-horizontal">
-            <button class="carrossel-h-prev">❮</button>
-            <div class="carrossel-h-container">
-                <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
-                    <!-- Os slides serão adicionados dinamicamente -->
-                </div>
-            </div>
-            <button class="carrossel-h-next">❯</button>
-        </div>
     </div>
-        
+    
+    <!-- Nova seção do carrossel será adicionada dinamicamente aqui via JavaScript -->
+    
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
@@ -1301,10 +1167,9 @@
         let currentCategory = '';
         let isCategoryChanging = false; // Controle para evitar cliques durante mudança de categoria
 
-        // NOVO: Variáveis para o carrossel de novidades
-        let recentItems = []; // Para armazenar itens recentes para o carrossel
+        // NOVOS: Variáveis para o carrossel
         let carouselPosition = 0;
-        let carouselItemsPerPage = 4; // Itens visíveis por página no carrossel
+        let carouselItemsPerPage = 4; // Padrão para desktop
         let carouselAutoplayInterval = null;
 
         // Configurações de entrega
@@ -1327,305 +1192,6 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
-
-        // NOVO: Funções para o carrossel de novidades
-        // Carregar itens recentes (novidades e reposições)
-        async function loadRecentItems() {
-            recentItems = [];
-            const thirtyDaysAgo = new Date();
-            thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-            
-            // Mostrar indicador de carregamento
-            const carousel = document.getElementById('novidades-carousel');
-            carousel.innerHTML = '<div class="carousel-item" style="width:100%;"><div class="inner" style="padding:20px;text-align:center;"><div>Carregando novidades...</div></div></div>';
-            
-            try {
-                // Para cada categoria ativa, buscar os itens recentes
-                for (const categoria of categoriasAtivas) {
-                    try {
-                        // Buscar os produtos da categoria
-                        const produtos = await loadProductsForCategory(categoria.diretorio, categoria.name);
-                        
-                        // Filtrar apenas os produtos com data de entrada nos últimos 30 dias
-                        produtos.forEach(produto => {
-                            if (produto.dataUltimaEntrada) {
-                                // Converter data do formato DD/MM/AAAA para objeto Date
-                                const parts = produto.dataUltimaEntrada.split('/');
-                                if (parts.length === 3) {
-                                    const itemDate = new Date(parts[2], parts[1] - 1, parts[0]);
-                                    
-                                    // Verificar se o item é recente (menos de 30 dias)
-                                    if (itemDate >= thirtyDaysAgo) {
-                                        const imagePath = `${produto.pastaFotos}${produto.imagem}`;
-                                        
-                                        recentItems.push({
-                                            codigo: produto.codigo,
-                                            descricao: produto.descricao,
-                                            preco: formatarPreco(produto.preco),
-                                            banho: produto.banho.toLowerCase(),
-                                            dataEntrada: produto.dataUltimaEntrada,
-                                            categoria: categoria.name,
-                                            imageUrl: imagePath,
-                                            date: itemDate
-                                        });
-                                    }
-                                }
-                            }
-                        });
-                    } catch (error) {
-                        console.error(`Erro ao carregar itens da categoria ${categoria.name}:`, error);
-                    }
-                }
-                
-                // Ordenar por data de entrada (mais recente primeiro)
-                recentItems.sort((a, b) => b.date - a.date);
-                
-                // Exibir itens no carrossel
-                renderCarousel();
-                startCarouselAutoplay();
-                
-                console.log(`Carregados ${recentItems.length} itens recentes`);
-            } catch (error) {
-                console.error("Erro ao carregar itens recentes:", error);
-                const carousel = document.getElementById('novidades-carousel');
-                carousel.innerHTML = '<div class="carousel-item" style="width:100%;"><div class="inner" style="padding:20px;text-align:center;"><div>Não foi possível carregar as novidades</div></div></div>';
-            }
-        }
-
-        // Renderizar o carrossel de novidades
-        function renderCarousel() {
-            const container = document.getElementById('novidades-carousel');
-            container.innerHTML = '';
-            
-            if (recentItems.length === 0) {
-                const noItems = document.createElement('div');
-                noItems.className = 'carousel-item';
-                noItems.innerHTML = `
-                    <div class="inner">
-                        <div class="content">
-                            <p>Não há novidades recentes.</p>
-                        </div>
-                    </div>
-                `;
-                container.appendChild(noItems);
-                return;
-            }
-            
-            // Criar elementos do carrossel
-            recentItems.forEach((item, index) => {
-                const itemElement = document.createElement('div');
-                itemElement.className = 'carousel-item';
-                
-                itemElement.innerHTML = `
-                    <div class="inner">
-                        <div class="img-container">
-                            <div class="carousel-codigo">COD: ${item.codigo}</div>
-                            <div class="tag-novidade">Novo</div>
-                            <img src="${item.imageUrl}" alt="${item.descricao}" draggable="false">
-                            <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
-                        </div>
-                        <div class="content">
-                            <div class="description">${item.descricao}</div>
-                            <div class="preco">${item.preco}</div>
-                        </div>
-                    </div>
-                `;
-                
-                // Adicionar evento de clique para abrir o modal
-                itemElement.querySelector('.img-container').addEventListener('click', () => {
-                    showModalFromCarousel(index);
-                });
-                
-                container.appendChild(itemElement);
-            });
-            
-            // Criar indicadores de navegação
-            updateCarouselDots();
-            
-            // Posicionar o carrossel na primeira página
-            updateCarouselPosition();
-        }
-        
-        // Atualizar os pontos de navegação do carrossel
-        function updateCarouselDots() {
-            const container = document.getElementById('novidades-carousel');
-            const items = container.querySelectorAll('.carousel-item');
-            const numPages = Math.ceil(items.length / carouselItemsPerPage);
-            const dotsContainer = document.getElementById('carousel-nav');
-            dotsContainer.innerHTML = '';
-            
-            // Limitar o número de pontos visíveis para não sobrecarregar visualmente
-            const maxDotsVisible = 7;
-            const showAllDots = numPages <= maxDotsVisible;
-            
-            if (showAllDots) {
-                // Mostrar todos os pontos normalmente
-                for (let i = 0; i < numPages; i++) {
-                    const dot = document.createElement('span');
-                    dot.className = 'carousel-dot' + (i === carouselPosition ? ' active' : '');
-                    dot.onclick = () => {
-                        carouselPosition = i;
-                        updateCarouselPosition();
-                        updateCarouselDots();
-                    };
-                    dotsContainer.appendChild(dot);
-                }
-            } else {
-                // Mostrar versão simplificada com elipses
-                const halfVisible = Math.floor(maxDotsVisible / 2);
-                
-                // Sempre mostrar o primeiro ponto
-                addDot(0);
-                
-                // Lógica para determinar quais pontos mostrar
-                if (carouselPosition <= halfVisible) {
-                    // Próximo do início - mostrar os primeiros pontos
-                    for (let i = 1; i < maxDotsVisible - 1; i++) {
-                        addDot(i);
-                    }
-                    addEllipsis();
-                } else if (carouselPosition >= numPages - halfVisible - 1) {
-                    // Próximo do fim - mostrar os últimos pontos
-                    addEllipsis();
-                    for (let i = numPages - maxDotsVisible + 1; i < numPages - 1; i++) {
-                        addDot(i);
-                    }
-                } else {
-                    // No meio - mostrar pontos ao redor da posição atual
-                    addEllipsis();
-                    for (let i = carouselPosition - 1; i <= carouselPosition + 1; i++) {
-                        addDot(i);
-                    }
-                    addEllipsis();
-                }
-                
-                // Sempre mostrar o último ponto
-                addDot(numPages - 1);
-            }
-            
-            // Função auxiliar para adicionar um ponto
-            function addDot(position) {
-                const dot = document.createElement('span');
-                dot.className = 'carousel-dot' + (position === carouselPosition ? ' active' : '');
-                dot.onclick = () => {
-                    carouselPosition = position;
-                    updateCarouselPosition();
-                    updateCarouselDots();
-                };
-                dotsContainer.appendChild(dot);
-            }
-            
-            // Função auxiliar para adicionar elipses
-            function addEllipsis() {
-                const ellipsis = document.createElement('span');
-                ellipsis.className = 'carousel-dot-ellipsis';
-                ellipsis.innerHTML = '&hellip;';
-                ellipsis.style.margin = '0 5px';
-                ellipsis.style.color = '#999';
-                ellipsis.style.cursor = 'default';
-                dotsContainer.appendChild(ellipsis);
-            }
-        }
-        
-        // Mover o carrossel para a posição atual
-        function updateCarouselPosition() {
-            const container = document.getElementById('novidades-carousel');
-            const items = container.querySelectorAll('.carousel-item');
-            
-            // Ajustar responsivamente a quantidade de itens por página
-            if (window.innerWidth <= 480) {
-                carouselItemsPerPage = 1;
-            } else if (window.innerWidth <= 768) {
-                carouselItemsPerPage = 2;
-            } else {
-                carouselItemsPerPage = 4;
-            }
-            
-            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
-            
-            // Garantir que a posição esteja dentro dos limites
-            if (carouselPosition < 0) carouselPosition = 0;
-            if (carouselPosition >= totalPages) carouselPosition = totalPages - 1;
-            
-            // Calcular a posição de deslocamento
-            const offset = -carouselPosition * (100 / carouselItemsPerPage);
-            container.style.transform = `translateX(${offset}%)`;
-            
-            // Atualizar os pontos de navegação
-            const dots = document.querySelectorAll('.carousel-dot');
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === carouselPosition);
-            });
-        }
-        
-        // Mover o carrossel (direção: -1 para esquerda, 1 para direita)
-        function moveCarousel(direction) {
-            const container = document.getElementById('novidades-carousel');
-            const items = container.querySelectorAll('.carousel-item');
-            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
-            
-            carouselPosition += direction;
-            
-            // Loop circular
-            if (carouselPosition < 0) carouselPosition = totalPages - 1;
-            if (carouselPosition >= totalPages) carouselPosition = 0;
-            
-            updateCarouselPosition();
-            updateCarouselDots();
-        }
-        
-        // Iniciar o autoplay do carrossel
-        function startCarouselAutoplay() {
-            // Limpar intervalo anterior se existir
-            if (carouselAutoplayInterval) {
-                clearInterval(carouselAutoplayInterval);
-            }
-            
-            // Iniciar novo intervalo
-            carouselAutoplayInterval = setInterval(() => {
-                moveCarousel(1); // Move para a direita a cada intervalo
-            }, 5000); // Muda a cada 5 segundos
-        }
-        
-        // Parar o autoplay do carrossel
-        function stopCarouselAutoplay() {
-            if (carouselAutoplayInterval) {
-                clearInterval(carouselAutoplayInterval);
-                carouselAutoplayInterval = null;
-            }
-        }
-        
-        // Abrir modal a partir do carrossel
-        function showModalFromCarousel(index) {
-            const item = recentItems[index];
-            resetZoomAndPan();
-            
-            document.getElementById('modalImg').src = item.imageUrl;
-            document.getElementById('modalCodigo').textContent = `COD: ${item.codigo}`;
-            document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${item.descricao}</div>
-                <div class="preco">${item.preco}</div>
-            `;
-            
-            // Adicionar a logo watermark
-            const captureArea = document.getElementById('captureArea');
-            const existingLogo = captureArea.querySelector('.logo-watermark');
-            if (existingLogo) existingLogo.remove();
-            
-            const logo = document.createElement('img');
-            logo.src = 'imagens/logo.png';
-            logo.className = 'logo-watermark';
-            logo.alt = 'Logo';
-            logo.draggable = false;
-            captureArea.appendChild(logo);
-            
-            document.getElementById('imageModal').style.display = 'flex';
-            document.body.classList.add('modal-open');
-            setupModalInteraction();
-            
-            // Parar autoplay do carrossel quando abrir o modal
-            stopCarouselAutoplay();
-        }
 
         // Proteção global contra download de imagens
         document.addEventListener('DOMContentLoaded', function() {
@@ -1766,7 +1332,7 @@
                 option.addEventListener('change', updateDeliveryOption);
             });
             
-            // Parar autoplay do carrossel quando abrir o modal do carrinho
+            // Parar autoplay do carrossel
             stopCarouselAutoplay();
         }
 
@@ -2062,6 +1628,9 @@
                     console.error('Nenhuma categoria disponível.');
                     alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
+                
+                // Após carregar as categorias, inicializar o carrossel
+                await initHorizontalCarousel();
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
@@ -2382,6 +1951,25 @@
             displayPage(currentPage, new Set());
         }
 
+        // NOVA FUNÇÃO: Mostrar modal a partir do carrossel
+        function showModalFromCarousel(categoryName) {
+            // Encontrar e clicar na aba correspondente
+            const tab = findTabByText(categoryName);
+            if (tab) {
+                tab.click();
+                // Rolar para o topo da galeria
+                setTimeout(() => {
+                    const gallery = document.getElementById('gallery');
+                    if (gallery) {
+                        gallery.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            }
+            
+            // Parar autoplay do carrossel
+            stopCarouselAutoplay();
+        }
+
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
@@ -2391,7 +1979,7 @@
             setupModalInteraction();
             document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
             
-            // Parar autoplay do carrossel quando abrir o modal
+            // Parar autoplay do carrossel
             stopCarouselAutoplay();
         }
 
@@ -2405,7 +1993,7 @@
                 modalAbortController = null;
             }
             
-            // Reiniciar autoplay do carrossel quando fechar o modal
+            // Reiniciar autoplay do carrossel
             startCarouselAutoplay();
         }
 
@@ -2641,7 +2229,7 @@
             }
         }
 
-        // Função para inicializar o carrossel horizontal
+        // NOVA FUNÇÃO: Inicializar o carrossel horizontal no novo estilo
         async function initHorizontalCarousel() {
             try {
                 // Carregar categorias do arquivo JSON
@@ -2654,8 +2242,30 @@
                     return;
                 }
                 
-                const wrapper = document.getElementById('carrossel-h-wrapper');
-                wrapper.innerHTML = '';
+                // Adicionar o novo container do carrossel após o container de título
+                const catalogoContainer = document.querySelector('.catalogo-container');
+                
+                // Criar novo carrossel
+                const novoCarrossel = document.createElement('div');
+                novoCarrossel.className = 'novidades-container';
+                novoCarrossel.innerHTML = `
+                    <h2 class="novidades-titulo">Novidades e Reposições</h2>
+                    <div class="carousel-container">
+                        <div class="carousel-controls">
+                            <button class="carousel-control prev">❮</button>
+                            <button class="carousel-control next">❯</button>
+                        </div>
+                        <div class="carousel-items" id="carrossel-h-wrapper">
+                            <!-- Os itens serão adicionados dinamicamente -->
+                        </div>
+                    </div>
+                    <div class="carousel-nav" id="carousel-nav">
+                        <!-- Os pontos serão adicionados dinamicamente -->
+                    </div>
+                `;
+                
+                // Inserir o carrossel após o container de título
+                catalogoContainer.after(novoCarrossel);
                 
                 // Função para obter todas as imagens de cada categoria
                 async function getCategoryImages(categoryName, limit = 30) {
@@ -2678,17 +2288,30 @@
                             return [];
                         }
                         
-                        // Pegar até 'limit' produtos da categoria
-                        const products = data.produtos.slice(0, limit);
+                        // Filtrar apenas produtos recentes (últimos 30 dias)
+                        const thirtyDaysAgo = new Date();
+                        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+                        
+                        const recentProducts = data.produtos.filter(produto => {
+                            if (produto.dataUltimaEntrada) {
+                                const parts = produto.dataUltimaEntrada.split('/');
+                                if (parts.length === 3) {
+                                    const itemDate = new Date(parts[2], parts[1] - 1, parts[0]);
+                                    return itemDate >= thirtyDaysAgo;
+                                }
+                            }
+                            return false; // Se não tiver data ou for mal formatada, não inclui
+                        });
+                        
+                        // Pegar até 'limit' produtos da categoria (limitando apenas aos recentes)
+                        const products = recentProducts.slice(0, limit);
                         
                         // Mapear para o formato que precisamos
                         return products.map(produto => ({
                             src: `${produto.pastaFotos}${produto.imagem}`,
                             codigo: produto.codigo,
                             categoryName: categoryName,
-                            diretorio: categoryFound.diretorio,
-                            descricao: produto.descricao,
-                            preco: formatarPreco(produto.preco)
+                            diretorio: categoryFound.diretorio
                         }));
                         
                     } catch (error) {
@@ -2705,96 +2328,84 @@
                 }
                 
                 // Criar slides para cada imagem
+                const wrapper = document.getElementById('carrossel-h-wrapper');
+                wrapper.innerHTML = '';
+                
                 allImages.forEach(image => {
                     const slideElement = document.createElement('div');
-                    slideElement.className = 'carrossel-h-slide';
+                    slideElement.className = 'carousel-item';
                     slideElement.innerHTML = `
-                        <img src="${image.src}" alt="${image.categoryName}" class="slide-image" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
-                        <div class="carrossel-h-category-name">${image.categoryName}</div>
-                        <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
+                        <div class="inner">
+                            <div class="img-container">
+                                <div class="carrossel-h-category-name">${image.categoryName}</div>
+                                <img src="${image.src}" alt="${image.categoryName}" class="slide-image" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
+                                <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
+                            </div>
+                        </div>
                     `;
                     
-                    // Adicionar evento de clique para abrir o modal
+                    // Adicionar evento de clique para abrir categoria
                     slideElement.addEventListener('click', () => {
-                        showModalFromCarousel(image);
+                        // Encontrar e clicar na aba correspondente
+                        const tab = findTabByText(image.categoryName);
+                        if (tab) {
+                            tab.click();
+                            // Rolar para o topo da galeria
+                            setTimeout(() => {
+                                const gallery = document.getElementById('gallery');
+                                if (gallery) {
+                                    gallery.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }, 100);
+                        }
                     });
                     
                     wrapper.appendChild(slideElement);
                 });
                 
-                // Configurar comportamento do carrossel
-                let currentPosition = 0;
-                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
+                // Ajustar responsivamente a quantidade de itens por página
+                updateCarouselItemsPerPage();
                 
-                // Função para atualizar a posição do carrossel
-                function updateCarouselPosition() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (!slides.length) return;
-                    
-                    const slideWidth = slides[0].offsetWidth;
-                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
-                }
-                
-                // Funções de navegação
-                function nextSlide() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (currentPosition < slides.length - slidesPerView) {
-                        currentPosition++;
-                        updateCarouselPosition();
-                    }
-                }
-                
-                function prevSlide() {
-                    if (currentPosition > 0) {
-                        currentPosition--;
-                        updateCarouselPosition();
-                    }
-                }
+                // Criar os pontos de navegação
+                createCarouselDots();
                 
                 // Configurar botões de navegação
-                const prevBtn = document.querySelector('.carrossel-h-prev');
-                const nextBtn = document.querySelector('.carrossel-h-next');
+                const prevBtn = novoCarrossel.querySelector('.carousel-control.prev');
+                const nextBtn = novoCarrossel.querySelector('.carousel-control.next');
                 
                 prevBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    prevSlide();
+                    moveCarousel(-1);
                 });
                 
                 nextBtn.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
-                    nextSlide();
+                    moveCarousel(1);
                 });
                 
-                // Atualizar tamanho dos slides quando a janela é redimensionada
-                window.addEventListener('resize', updateCarouselPosition);
-                
-                // Inicializar carrossel
+                // Posicionar o carrossel na primeira página
                 updateCarouselPosition();
                 
+                // Iniciar autoplay
+                startCarouselAutoplay();
+                
+                // Adicionar listener para redimensionamento da janela
+                window.addEventListener('resize', () => {
+                    updateCarouselItemsPerPage();
+                    createCarouselDots(); // Recriar pontos quando o número de itens por página mudar
+                    updateCarouselPosition();
+                });
+                
+                console.log('Carrossel horizontal inicializado com sucesso');
             } catch (error) {
                 console.error("Erro ao inicializar carrossel horizontal:", error);
             }
         }
-
-        window.onload = async () => {
-            console.log('Iniciando carregamento da página');
-            loadCart(); // Carregar carrinho salvo
-            loadDeliveryConfig(); // Carregar configurações de entrega
-            await loadCategories(); // Carregar categorias já usa o JSON correto
-            await loadRecentItems(); // Carregar e exibir itens recentes no carrossel de novidades
-            await initHorizontalCarousel(); // Inicializar o carrossel horizontal
-            loadRodape();
-            setupFaleConoscoButton();
-            updateCartCounter(); // Atualizar contador do carrinho
-            
-            // Configurar listeners para as opções de entrega
-            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
-                option.addEventListener('change', updateDeliveryOption);
-            });
-            
-            // Definir quantidade inicial de itens por página do carrossel com base na largura
+        
+        // Ajustar responsivamente a quantidade de itens por página
+        function updateCarouselItemsPerPage() {
             if (window.innerWidth <= 480) {
                 carouselItemsPerPage = 1;
             } else if (window.innerWidth <= 768) {
@@ -2802,18 +2413,117 @@
             } else {
                 carouselItemsPerPage = 4;
             }
+        }
+        
+        // Criar pontos de navegação
+        function createCarouselDots() {
+            const container = document.getElementById('carrossel-h-wrapper');
+            if (!container) return;
             
-            // Adicionar listener para redimensionamento da janela
-            window.addEventListener('resize', () => {
-                // Ajustar carrossel de acordo com o tamanho da tela
-                if (window.innerWidth <= 480) {
-                    carouselItemsPerPage = 1;
-                } else if (window.innerWidth <= 768) {
-                    carouselItemsPerPage = 2;
-                } else {
-                    carouselItemsPerPage = 4;
-                }
-                updateCarouselPosition();
+            const items = container.querySelectorAll('.carousel-item');
+            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
+            const dotsContainer = document.getElementById('carousel-nav');
+            
+            if (!dotsContainer) return;
+            
+            dotsContainer.innerHTML = '';
+            
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('span');
+                dot.className = 'carousel-dot' + (i === carouselPosition ? ' active' : '');
+                dot.addEventListener('click', () => {
+                    carouselPosition = i;
+                    updateCarouselPosition();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        // Mover o carrossel (direção: -1 para esquerda, 1 para direita)
+        function moveCarousel(direction) {
+            const container = document.getElementById('carrossel-h-wrapper');
+            if (!container) return;
+            
+            const items = container.querySelectorAll('.carousel-item');
+            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
+            
+            carouselPosition += direction;
+            
+            // Loop circular
+            if (carouselPosition < 0) carouselPosition = totalPages - 1;
+            if (carouselPosition >= totalPages) carouselPosition = 0;
+            
+            updateCarouselPosition();
+        }
+        
+        // Atualizar a posição do carrossel
+        function updateCarouselPosition() {
+            const container = document.getElementById('carrossel-h-wrapper');
+            if (!container) return;
+            
+            const items = container.querySelectorAll('.carousel-item');
+            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
+            
+            // Garantir que a posição esteja dentro dos limites
+            if (carouselPosition < 0) carouselPosition = 0;
+            if (carouselPosition >= totalPages) carouselPosition = totalPages - 1;
+            
+            // Calcular a largura percentual de cada item
+            const itemWidth = 100 / carouselItemsPerPage;
+            
+            // Calcular o deslocamento baseado na posição atual e no número de itens visíveis
+            const offset = -carouselPosition * itemWidth * carouselItemsPerPage;
+            
+            // Aplicar transformação com percentual para garantir responsividade
+            container.style.transform = `translateX(${offset}%)`;
+            
+            // Atualizar os pontos de navegação
+            updateCarouselDots();
+        }
+        
+        // Atualizar os pontos de navegação
+        function updateCarouselDots() {
+            const dotsContainer = document.getElementById('carousel-nav');
+            if (!dotsContainer) return;
+            
+            const dots = dotsContainer.querySelectorAll('.carousel-dot');
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === carouselPosition);
+            });
+        }
+        
+        // Iniciar autoplay do carrossel
+        function startCarouselAutoplay() {
+            if (carouselAutoplayInterval) {
+                clearInterval(carouselAutoplayInterval);
+            }
+            
+            carouselAutoplayInterval = setInterval(() => {
+                moveCarousel(1);
+            }, 5000); // Mudar slide a cada 5 segundos
+        }
+        
+        // Parar autoplay do carrossel
+        function stopCarouselAutoplay() {
+            if (carouselAutoplayInterval) {
+                clearInterval(carouselAutoplayInterval);
+                carouselAutoplayInterval = null;
+            }
+        }
+
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            loadCart(); // Carregar carrinho salvo
+            loadDeliveryConfig(); // Carregar configurações de entrega
+            await loadCategories(); // Carregar categorias e inicializar carrossel
+            loadRodape();
+            setupFaleConoscoButton();
+            updateCartCounter(); // Atualizar contador do carrinho
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
             });
             
             // Proteção global para todas as imagens
@@ -2834,5 +2544,5 @@
             console.log('Carregamento da página concluído');
         };
     </script>
-    </body>
+</body>
 </html>
