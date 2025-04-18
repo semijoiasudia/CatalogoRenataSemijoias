@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script> -->
+    </script>
     
     <style>
         body {
@@ -54,6 +54,16 @@
             width: 100%;
             height: 100%;
             z-index: 2;
+        }
+        
+        /* Texto da localização posicionado no topo direito */
+        .location-text {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 13px;
+            color: #666;
+            font-weight: normal;
         }
         
         /* Título estilizado mais elegante - Fundo alterado para branco */
@@ -195,86 +205,44 @@
             overflow: hidden;
         }
 
-        /* Estilo para os dropdowns de navegação */
-        .category-select-container {
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-        .category-select-label {
-            font-size: 14px;
-            font-weight: 500;
-            color: #555;
-            margin-right: 10px;
-        }
-        .category-select {
-            padding: 10px 18px;
-            font-size: 15px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            background-color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #555;
-            min-width: 200px;
-        }
-        .category-select:hover {
-            border-color: #d4af37;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .category-select:focus {
-            outline: none;
-            border-color: #d4af37;
-            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        /* Container para controles de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
         }
 
-        /* Estilo para dropdown de banhos (subcategorias) */
-        .banho-select-container {
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-        .banho-select-label {
-            font-size: 14px;
-            font-weight: 500;
-            color: #555;
-            margin-right: 10px;
-        }
-        .banho-select {
-            padding: 8px 15px;
-            font-size: 14px;
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
-            background-color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #555;
-            min-width: 180px;
-        }
-        .banho-select:hover {
-            border-color: #d4af37;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .banho-select:focus {
-            outline: none;
-            border-color: #d4af37;
-            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
-        }
-
-        .filter-container {
+        /* Estilo para os dropdowns de navegação - layout modificado */
+        .filter-row {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            gap: 10px;
-            margin: 0;
-            padding-top: 4px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
         }
-        .filter-container label {
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
+        }
+        
+        .filter-label {
             font-size: 14px;
             font-weight: 500;
             color: #555;
+            margin-right: 10px;
+            white-space: nowrap;
+            width: 160px; /* Largura fixa para alinhar todos os labels */
+            text-align: left;
         }
-        .filter-container select {
+        
+        .filter-select {
             padding: 8px 15px;
             font-size: 14px;
             border-radius: 6px;
@@ -283,16 +251,20 @@
             cursor: pointer;
             transition: all 0.2s;
             color: #555;
+            min-width: 200px; /* Largura fixa para todos os selects */
         }
-        .filter-container select:hover {
+        
+        .filter-select:hover {
             border-color: #d4af37;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .filter-container select:focus {
+        
+        .filter-select:focus {
             outline: none;
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -850,42 +822,18 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-        /* Container principal para navegação - Fundo alterado para branco */
-        .navigation-controls {
-            width: 100%;
-            max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
-            margin: 0 auto 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 15px;
-            box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
-        }
-        .info-text {
-            text-align: center;
-            margin: 10px 0;
-            font-size: 14px;
-            color: #555;
-            line-height: 1.5;
-        }
-        
-        .info-text p {
-            margin: 0px 0;
-        }
     </style>
 </head>
 <body>
-    <!-- Novo container da logo -->
+    <!-- Novo container da logo com texto da localização no canto superior direito -->
     <div class="logo-container">
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
+        <!-- Texto da localização posicionado no canto superior direito -->
+        <div class="location-text">Loja em Uberlândia-MG</div>
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
-    <div class="info-text">
-        <p>Loja em Uberlândia-MG</p>
-        <!--<p>📦 Enviamos para todo Brasil (frete a calcular)</p>
-        <p>📦 Envio para todo Brasil (frete a calcular)</p>-->
-    </div>
+    
     <!-- Novo container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
@@ -910,33 +858,40 @@
         </div>
         <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
+    
     <div class="navigation-controls">
-        <!-- Substituição dos botões de categorias por um dropdown -->
-        <div class="category-select-container">
-            <label for="categorySelect" class="category-select-label">Selecione a categoria: </label>
-            <select id="categorySelect" class="category-select" onchange="handleCategoryChange()">
-                <!-- Opções serão preenchidas pelo JavaScript -->
-            </select>
+        <!-- Reorganização dos filtros com layout consistente -->
+        <div class="filter-row">
+            <div class="filter-group">
+                <label for="categorySelect" class="filter-label">Selecione a categoria:</label>
+                <select id="categorySelect" class="filter-select" onchange="handleCategoryChange()">
+                    <!-- Opções serão preenchidas pelo JavaScript -->
+                </select>
+            </div>
         </div>
         
-        <!-- Substituição dos botões de banhos (subcategorias) por um dropdown -->
-        <div class="banho-select-container" id="banhoSelectContainer" style="display: none;">
-            <label for="banhoSelect" class="banho-select-label">Selecione o banho: </label>
-            <select id="banhoSelect" class="banho-select" onchange="handleBanhoChange()">
-                <!-- Opções serão preenchidas pelo JavaScript -->
-            </select>
+        <div class="filter-row" id="banhoSelectContainer" style="display: none;">
+            <div class="filter-group">
+                <label for="banhoSelect" class="filter-label">Selecione o banho:</label>
+                <select id="banhoSelect" class="filter-select" onchange="handleBanhoChange()">
+                    <!-- Opções serão preenchidas pelo JavaScript -->
+                </select>
+            </div>
         </div>
         
-        <div class="filter-container">
-            <label for="sortFilter">Ordenar por: </label>
-            <select id="sortFilter" onchange="applySort()">
-                <option value="newest" selected>Mais Novos</option>
-                <option value="oldest">Mais Antigos</option>
-                <option value="highestPrice">Maior Preço</option>
-                <option value="lowestPrice">Menor Preço</option>
-            </select>
+        <div class="filter-row">
+            <div class="filter-group">
+                <label for="sortFilter" class="filter-label">Ordenar por:</label>
+                <select id="sortFilter" class="filter-select" onchange="applySort()">
+                    <option value="newest" selected>Mais Novos</option>
+                    <option value="oldest">Mais Antigos</option>
+                    <option value="highestPrice">Maior Preço</option>
+                    <option value="lowestPrice">Menor Preço</option>
+                </select>
+            </div>
         </div>
     </div>
+    
     <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
