@@ -259,7 +259,7 @@
             font-weight: 500;
             color: #555;
             margin-bottom: 8px;
-            text-align: left;
+            text-align: center;
             width: 100%;
         }
         
@@ -857,6 +857,8 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+        #banhoSelectContainer { margin-left: auto; }
+        #sortFilterContainer { margin-left: auto; }
     </style>
 </head>
 <body>
@@ -908,7 +910,7 @@
         <!-- Segundo dropdown não modificado -->
         <div class="filter-row" id="banhoSelectContainer" style="display: none;">
             <div class="filter-group">
-                <label for="banhoSelect" class="filter-label">Selecione o banho:</label>
+                <label for="banhoSelect" class="filter-label">Selecione o banho ou a cor:</label>
                 <select id="banhoSelect" class="filter-select" onchange="handleBanhoChange()">
                     <!-- Opções serão preenchidas pelo JavaScript -->
                 </select>
