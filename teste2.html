@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>
+    </script> -->
     
     <style>
         body {
@@ -234,6 +234,7 @@
             align-items: center;
         }
         
+        /* Modificado: Label padrão para segundo e terceiro dropdown */
         .filter-label {
             font-size: 14px;
             font-weight: 500;
@@ -244,6 +245,25 @@
             text-align: left;
         }
         
+        /* NOVO: Grupo especial para o primeiro dropdown com label acima */
+        .filter-group-category {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        /* NOVO: Label específico para o primeiro dropdown (categoria) */
+        .filter-label-category {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+            text-align: left;
+            width: 100%;
+        }
+        
+        /* Select padrão para segundo e terceiro dropdown */
         .filter-select {
             padding: 8px 15px;
             font-size: 14px;
@@ -253,15 +273,28 @@
             cursor: pointer;
             transition: all 0.2s;
             color: #555;
-            min-width: 200px; /* Largura fixa para todos os selects */
+            min-width: 200px; /* Largura para segundo e terceiro selects */
         }
         
-        .filter-select:hover {
+        /* NOVO: Select específico para o primeiro dropdown (categoria) */
+        .filter-select-category {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+            width: 100%; /* Dropdown de categoria ocupa toda a largura */
+        }
+        
+        .filter-select:hover, .filter-select-category:hover {
             border-color: #d4af37;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
-        .filter-select:focus {
+        .filter-select:focus, .filter-select-category:focus {
             outline: none;
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
@@ -861,17 +894,18 @@
         <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
     </div>
     
-    <div class="navigation-controls">
-        <!-- Reorganização dos filtros com layout consistente -->
+    <div class="navigation-controls" id="navigation-controls">
+        <!-- MODIFICADO: Primeiro dropdown com label acima -->
         <div class="filter-row">
-            <div class="filter-group">
-                <label for="categorySelect" class="filter-label">Selecione a categoria:</label>
-                <select id="categorySelect" class="filter-select" onchange="handleCategoryChange()">
+            <div class="filter-group-category">
+                <label for="categorySelect" class="filter-label-category">Selecione a categoria:</label>
+                <select id="categorySelect" class="filter-select-category" onchange="handleCategoryChange()">
                     <!-- Opções serão preenchidas pelo JavaScript -->
                 </select>
             </div>
         </div>
         
+        <!-- Segundo dropdown não modificado -->
         <div class="filter-row" id="banhoSelectContainer" style="display: none;">
             <div class="filter-group">
                 <label for="banhoSelect" class="filter-label">Selecione o banho:</label>
@@ -881,6 +915,7 @@
             </div>
         </div>
         
+        <!-- Terceiro dropdown não modificado -->
         <div class="filter-row">
             <div class="filter-group">
                 <label for="sortFilter" class="filter-label">Ordenar por:</label>
@@ -1407,7 +1442,7 @@
             }
         }
 
-        // Manipular mudança de categoria via dropdown
+        // MODIFICADO: Função de tratamento de mudança de categoria com rolagem
         function handleCategoryChange() {
             const categorySelect = document.getElementById('categorySelect');
             const selectedOption = categorySelect.options[categorySelect.selectedIndex];
@@ -1419,6 +1454,12 @@
 
             console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
             loadImages(categoryDir, categoryName);
+
+            // NOVO: Rolar até o elemento de navegação
+            const navigationControls = document.getElementById('navigation-controls');
+            setTimeout(() => {
+                navigationControls.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
 
             // Reseta a flag após um curto intervalo
             setTimeout(() => {
