@@ -2,12 +2,32 @@
   "categoria": "BRINCO",
   "produtos": [
     {
-      "codigo": "3475",
-      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO CRISTAL",
-      "imagem": "3475.jpg",
+      "codigo": "3470",
+      "descricao": "BRINCO CORACAO PIXELS CRISTAL",
+      "imagem": "3470.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
+      "preco": "46,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3455",
+      "descricao": "BRINCO MEIA ESFERA MARTELADA P",
+      "imagem": "3455.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/09/2024"
+    },
+    {
+      "codigo": "3476",
+      "descricao": "BRINCO OVAL ORGANICO VAZADO TRABALHADO P",
+      "imagem": "3476.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
     },
@@ -22,36 +42,6 @@
       "dataUltimaEntrada": "06/11/2024"
     },
     {
-      "codigo": "3474",
-      "descricao": "BRINCO LEQUE M",
-      "imagem": "3474.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3473",
-      "descricao": "BRINCO PINGENTE FLOR ROSA VAZADA",
-      "imagem": "3473.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3470",
-      "descricao": "BRINCO CORACAO PIXELS CRISTAL",
-      "imagem": "3470.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "46,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
       "codigo": "3669",
       "descricao": "BRINCO ARGOLA ELOS INSPIRACAO TIFFANY",
       "imagem": "3669.jpg",
@@ -60,6 +50,36 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "07/11/2024"
+    },
+    {
+      "codigo": "3503",
+      "descricao": "BRINCO QUADRADO CRAVEJADO COLORS P",
+      "imagem": "3503.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2024"
+    },
+    {
+      "codigo": "3475",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO CRISTAL",
+      "imagem": "3475.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3474",
+      "descricao": "BRINCO LEQUE M",
+      "imagem": "3474.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
     },
     {
       "codigo": "3471",
@@ -72,64 +92,14 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
-      "codigo": "3469",
-      "descricao": "BRINCO EAR CUFF 5 PEDRAS COLORS",
-      "imagem": "3469.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3468",
-      "descricao": "BRINCO MEIA ARGOLA CRAVEJADA 3 FILEIRAS",
-      "imagem": "3468.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3670",
-      "descricao": "BRINCO ARGOLA ELOS INSPIRACAO TIFFANY",
-      "imagem": "3670.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "07/11/2024"
-    },
-    {
-      "codigo": "3675",
-      "descricao": "BRINCO FLOR M ORGANICA COM PONTO DE LUZ",
-      "imagem": "3675.jpg",
+      "codigo": "3439",
+      "descricao": "BRINCO DUO PONTO DE LUZ QUADRADO 6/8MM",
+      "imagem": "3439.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "54,90",
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/11/2024"
-    },
-    {
-      "codigo": "3506",
-      "descricao": "BRINCO CORACAO COM ESPIRITO SANTO CRAVEJADO",
-      "imagem": "3506.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
-    },
-    {
-      "codigo": "3454",
-      "descricao": "BRINCO GOTA LISA ALONGADA M",
-      "imagem": "3454.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/09/2024"
+      "dataUltimaEntrada": "04/09/2024"
     },
     {
       "codigo": "3452",
@@ -162,6 +132,16 @@
       "dataUltimaEntrada": "07/09/2024"
     },
     {
+      "codigo": "3454",
+      "descricao": "BRINCO GOTA LISA ALONGADA M",
+      "imagem": "3454.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/09/2024"
+    },
+    {
       "codigo": "3443",
       "descricao": "BRINCO ESFERA LISA 6MM",
       "imagem": "3443.jpg",
@@ -172,24 +152,54 @@
       "dataUltimaEntrada": "04/09/2024"
     },
     {
-      "codigo": "3439",
-      "descricao": "BRINCO DUO PONTO DE LUZ QUADRADO 6/8MM",
-      "imagem": "3439.jpg",
+      "codigo": "3469",
+      "descricao": "BRINCO EAR CUFF 5 PEDRAS COLORS",
+      "imagem": "3469.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3670",
+      "descricao": "BRINCO ARGOLA ELOS INSPIRACAO TIFFANY",
+      "imagem": "3670.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "07/11/2024"
+    },
+    {
+      "codigo": "3468",
+      "descricao": "BRINCO MEIA ARGOLA CRAVEJADA 3 FILEIRAS",
+      "imagem": "3468.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3675",
+      "descricao": "BRINCO FLOR M ORGANICA COM PONTO DE LUZ",
+      "imagem": "3675.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "54,90",
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/09/2024"
+      "dataUltimaEntrada": "07/11/2024"
     },
     {
-      "codigo": "3455",
-      "descricao": "BRINCO MEIA ESFERA MARTELADA P",
-      "imagem": "3455.jpg",
+      "codigo": "3473",
+      "descricao": "BRINCO PINGENTE FLOR ROSA VAZADA",
+      "imagem": "3473.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "39,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/09/2024"
+      "dataUltimaEntrada": "18/09/2024"
     },
     {
       "codigo": "3554",
@@ -202,14 +212,14 @@
       "dataUltimaEntrada": "07/10/2024"
     },
     {
-      "codigo": "3523",
-      "descricao": "BRINCO TRIO GOTA VAZADA PP/P/M",
-      "imagem": "3523.jpg",
+      "codigo": "3498",
+      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
+      "imagem": "3498.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
+      "preco": "19,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/10/2024"
+      "dataUltimaEntrada": "03/10/2024"
     },
     {
       "codigo": "3527",
@@ -262,14 +272,14 @@
       "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3501",
-      "descricao": "BRINCO GOTA BOLD M",
-      "imagem": "3501.jpg",
+      "codigo": "3521",
+      "descricao": "BRINCO CIRCULO CRAVEJADO COLORS P",
+      "imagem": "3521.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "69,90",
-      "precoConsignado": "98,90",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
+      "dataUltimaEntrada": "05/10/2024"
     },
     {
       "codigo": "3553",
@@ -282,13 +292,13 @@
       "dataUltimaEntrada": "07/10/2024"
     },
     {
-      "codigo": "3518",
-      "descricao": "BRINCO ARGOLINHA DUPLA 2 PONTOS DE LUZ P",
-      "imagem": "3518.jpg",
+      "codigo": "3519",
+      "descricao": "BRINCO ARGOLA CLICK ZIRCONIA RETANGULAR P",
+      "imagem": "3519.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Prata",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/10/2024"
     },
     {
@@ -362,24 +372,14 @@
       "dataUltimaEntrada": "06/10/2024"
     },
     {
-      "codigo": "3498",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE G",
-      "imagem": "3498.jpg",
+      "codigo": "3501",
+      "descricao": "BRINCO GOTA BOLD M",
+      "imagem": "3501.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "19,90",
-      "precoConsignado": "59,90",
+      "preco": "69,90",
+      "precoConsignado": "98,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
-      "codigo": "3476",
-      "descricao": "BRINCO OVAL ORGANICO VAZADO TRABALHADO P",
-      "imagem": "3476.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/09/2024"
+      "dataUltimaEntrada": "04/04/2025"
     },
     {
       "codigo": "3477",
@@ -412,6 +412,16 @@
       "dataUltimaEntrada": "18/09/2024"
     },
     {
+      "codigo": "3497",
+      "descricao": "BRINCO TREVO ESMALTADO VERDE P",
+      "imagem": "3497.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "36,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2024"
+    },
+    {
       "codigo": "3633",
       "descricao": "BRINCO MAO DE FATIMA",
       "imagem": "3633.jpg",
@@ -432,34 +442,14 @@
       "dataUltimaEntrada": "30/10/2024"
     },
     {
-      "codigo": "3521",
-      "descricao": "BRINCO CIRCULO CRAVEJADO COLORS P",
-      "imagem": "3521.jpg",
+      "codigo": "3523",
+      "descricao": "BRINCO TRIO GOTA VAZADA PP/P/M",
+      "imagem": "3523.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/10/2024"
-    },
-    {
-      "codigo": "3497",
-      "descricao": "BRINCO TREVO ESMALTADO VERDE P",
-      "imagem": "3497.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "36,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
-    },
-    {
-      "codigo": "3519",
-      "descricao": "BRINCO ARGOLA CLICK ZIRCONIA RETANGULAR P",
-      "imagem": "3519.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/10/2024"
+      "dataUltimaEntrada": "05/10/2024"
     },
     {
       "codigo": "3600",
@@ -472,14 +462,24 @@
       "dataUltimaEntrada": "20/10/2024"
     },
     {
-      "codigo": "3503",
-      "descricao": "BRINCO QUADRADO CRAVEJADO COLORS P",
-      "imagem": "3503.jpg",
+      "codigo": "3642",
+      "descricao": "BRINCO ARGOLA 3 FIOS E 2 PONTOS DE LUZ",
+      "imagem": "3642.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
+      "preco": "49,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2024"
+      "dataUltimaEntrada": "30/10/2024"
+    },
+    {
+      "codigo": "3506",
+      "descricao": "BRINCO CORACAO COM ESPIRITO SANTO CRAVEJADO",
+      "imagem": "3506.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/10/2024"
     },
     {
       "codigo": "3508",
@@ -522,14 +522,14 @@
       "dataUltimaEntrada": "04/10/2024"
     },
     {
-      "codigo": "3642",
-      "descricao": "BRINCO ARGOLA 3 FIOS E 2 PONTOS DE LUZ",
-      "imagem": "3642.jpg",
+      "codigo": "3518",
+      "descricao": "BRINCO ARGOLINHA DUPLA 2 PONTOS DE LUZ P",
+      "imagem": "3518.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/10/2024"
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/10/2024"
     },
     {
       "codigo": "3631",
@@ -542,24 +542,24 @@
       "dataUltimaEntrada": "29/10/2024"
     },
     {
-      "codigo": "3238",
-      "descricao": "BRINCO FIO VENEZIANA E TREVO INSPIRACAO",
-      "imagem": "3238.jpg",
+      "codigo": "3251",
+      "descricao": "BRINCO TREVO CRISTAL AZUL TIFFANY",
+      "imagem": "3251.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "46,90",
-      "precoConsignado": "72,90",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/06/2024"
+      "dataUltimaEntrada": "27/06/2024"
     },
     {
-      "codigo": "3328",
-      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO COLORS",
-      "imagem": "3328.jpg",
+      "codigo": "3283",
+      "descricao": "BRINCO PONTO DE LUZ 5MM",
+      "imagem": "3283.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "76,90",
+      "preco": "26,90",
+      "precoConsignado": "42,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
+      "dataUltimaEntrada": "03/07/2024"
     },
     {
       "codigo": "3220",
@@ -568,16 +568,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/06/2024"
-    },
-    {
-      "codigo": "3221",
-      "descricao": "BRINCO BORBOLETA CRAVEJADA COLORS",
-      "imagem": "3221.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "29,90",
-      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "15/06/2024"
     },
@@ -612,6 +602,16 @@
       "dataUltimaEntrada": "16/06/2024"
     },
     {
+      "codigo": "3226",
+      "descricao": "BRINCO CORACAO CRAVEJADO CRISTAL E COLORS",
+      "imagem": "3226.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/06/2024"
+    },
+    {
       "codigo": "3204",
       "descricao": "BRINCO FLOR ORQUIDEA M",
       "imagem": "3204.jpg",
@@ -622,14 +622,14 @@
       "dataUltimaEntrada": "13/06/2024"
     },
     {
-      "codigo": "3228",
-      "descricao": "BRINCO ARVORE DA VIDA CRAVEJADA COLORS",
-      "imagem": "3228.jpg",
+      "codigo": "3238",
+      "descricao": "BRINCO FIO VENEZIANA E TREVO INSPIRACAO",
+      "imagem": "3238.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
+      "dataUltimaEntrada": "22/06/2024"
     },
     {
       "codigo": "3199",
@@ -640,16 +640,6 @@
       "precoConsignado": "102,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "11/06/2024"
-    },
-    {
-      "codigo": "3251",
-      "descricao": "BRINCO TREVO CRISTAL AZUL TIFFANY",
-      "imagem": "3251.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/06/2024"
     },
     {
       "codigo": "3254",
@@ -712,12 +702,22 @@
       "dataUltimaEntrada": "03/07/2024"
     },
     {
-      "codigo": "3226",
-      "descricao": "BRINCO CORACAO CRAVEJADO CRISTAL E COLORS",
-      "imagem": "3226.jpg",
+      "codigo": "3328",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO COLORS",
+      "imagem": "3328.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
-      "precoConsignado": "74,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
+    },
+    {
+      "codigo": "3228",
+      "descricao": "BRINCO ARVORE DA VIDA CRAVEJADA COLORS",
+      "imagem": "3228.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "16/06/2024"
     },
@@ -912,14 +912,14 @@
       "dataUltimaEntrada": "19/08/2024"
     },
     {
-      "codigo": "3364",
-      "descricao": "BRINCO TRIO CORACAO CRAVEJADO CRISTAL",
-      "imagem": "3364.jpg",
+      "codigo": "3282",
+      "descricao": "BRINCO PONTO DE LUZ 6MM",
+      "imagem": "3282.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
+      "dataUltimaEntrada": "03/07/2024"
     },
     {
       "codigo": "3377",
@@ -972,14 +972,14 @@
       "dataUltimaEntrada": "10/08/2024"
     },
     {
-      "codigo": "3282",
-      "descricao": "BRINCO PONTO DE LUZ 6MM",
-      "imagem": "3282.jpg",
+      "codigo": "3351",
+      "descricao": "BRINCO TREVO CRAVEJADO P",
+      "imagem": "3351.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/07/2024"
+      "dataUltimaEntrada": "02/08/2024"
     },
     {
       "codigo": "3398",
@@ -992,14 +992,14 @@
       "dataUltimaEntrada": "19/08/2024"
     },
     {
-      "codigo": "3344",
-      "descricao": "BRINCO 2 CORACOES VAZADO E CRAVEJADO",
-      "imagem": "3344.jpg",
+      "codigo": "3348",
+      "descricao": "BRINCO ARGOLA CLICK P LARGA",
+      "imagem": "3348.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/07/2024"
+      "preco": "42,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "02/08/2024"
     },
     {
       "codigo": "3402",
@@ -1092,16 +1092,6 @@
       "dataUltimaEntrada": "18/07/2024"
     },
     {
-      "codigo": "3438",
-      "descricao": "BRINCO DUO PONTO DE LUZ QUADRADO 5/6MM",
-      "imagem": "3438.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "46,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/09/2024"
-    },
-    {
       "codigo": "3287",
       "descricao": "BRINCO DUO PONTO DE LUZ 6/8MM",
       "imagem": "3287.jpg",
@@ -1162,14 +1152,14 @@
       "dataUltimaEntrada": "17/07/2024"
     },
     {
-      "codigo": "3351",
-      "descricao": "BRINCO TREVO CRAVEJADO P",
-      "imagem": "3351.jpg",
+      "codigo": "3364",
+      "descricao": "BRINCO TRIO CORACAO CRAVEJADO CRISTAL",
+      "imagem": "3364.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "54,90",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/08/2024"
+      "dataUltimaEntrada": "05/08/2024"
     },
     {
       "codigo": "3313",
@@ -1182,14 +1172,14 @@
       "dataUltimaEntrada": "18/07/2024"
     },
     {
-      "codigo": "3348",
-      "descricao": "BRINCO ARGOLA CLICK P LARGA",
-      "imagem": "3348.jpg",
+      "codigo": "3438",
+      "descricao": "BRINCO DUO PONTO DE LUZ QUADRADO 5/6MM",
+      "imagem": "3438.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "62,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "02/08/2024"
+      "preco": "46,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/09/2024"
     },
     {
       "codigo": "3326",
@@ -1252,14 +1242,14 @@
       "dataUltimaEntrada": "23/07/2024"
     },
     {
-      "codigo": "3283",
-      "descricao": "BRINCO PONTO DE LUZ 5MM",
-      "imagem": "3283.jpg",
+      "codigo": "3344",
+      "descricao": "BRINCO 2 CORACOES VAZADO E CRAVEJADO",
+      "imagem": "3344.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "26,90",
-      "precoConsignado": "42,90",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/07/2024"
+      "dataUltimaEntrada": "26/07/2024"
     },
     {
       "codigo": "3312",
@@ -1352,6 +1342,16 @@
       "dataUltimaEntrada": "21/02/2025"
     },
     {
+      "codigo": "4074",
+      "descricao": "BRINCO ARGOLINHA ESTRELA PP",
+      "imagem": "4074.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/02/2025"
+    },
+    {
       "codigo": "3712",
       "descricao": "BRINCO TRIO GOTA CRAVEJADA CRISTAL",
       "imagem": "3712.jpg",
@@ -1360,16 +1360,6 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "22/11/2024"
-    },
-    {
-      "codigo": "4063",
-      "descricao": "BRINCO TRIO CORACAO / ESTRELA / LUA PP",
-      "imagem": "4063.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "20/02/2025"
     },
     {
       "codigo": "4062",
@@ -1692,14 +1682,14 @@
       "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "4074",
-      "descricao": "BRINCO ARGOLINHA ESTRELA PP",
-      "imagem": "4074.jpg",
+      "codigo": "4063",
+      "descricao": "BRINCO TRIO CORACAO / ESTRELA / LUA PP",
+      "imagem": "4063.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "21/02/2025"
+      "dataUltimaEntrada": "20/02/2025"
     },
     {
       "codigo": "4159",
@@ -1832,36 +1822,6 @@
       "dataUltimaEntrada": "04/04/2025"
     },
     {
-      "codigo": "3729",
-      "descricao": "BRINCO CORACAO/CORRENTE/CORACAO",
-      "imagem": "3729.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "29,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "3895",
-      "descricao": "BRINCO ARGOLA 2 FILEIRAS ZIRCONIAS COLORIDAS",
-      "imagem": "3895.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "06/01/2025"
-    },
-    {
-      "codigo": "3842",
-      "descricao": "BRINCO DUO TRANQUETA PONTO DE LUZ PINK",
-      "imagem": "3842.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
       "codigo": "3845",
       "descricao": "BRINCO BORBOLETA P CRAVEJADA COLORS",
       "imagem": "3845.jpg",
@@ -1870,96 +1830,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3873",
-      "descricao": "BRINCO FLOR 3 PETALAS E PONTO DE LUZ",
-      "imagem": "3873.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "62,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/12/2024"
-    },
-    {
-      "codigo": "3848",
-      "descricao": "BRINCO TRANQUETA PONTO DE LUZ ROSA",
-      "imagem": "3848.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "54,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/12/2024"
-    },
-    {
-      "codigo": "3740",
-      "descricao": "BRINCO FLOR E 7 PONTOS DE LUZ",
-      "imagem": "3740.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "28/11/2024"
-    },
-    {
-      "codigo": "3851",
-      "descricao": "BRINCO DUO FLOR FOSCA",
-      "imagem": "3851.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/12/2024"
-    },
-    {
-      "codigo": "3716",
-      "descricao": "BRINCO PONTO DE LUZ 5MM",
-      "imagem": "3716.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "26,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "26/11/2024"
-    },
-    {
-      "codigo": "3779",
-      "descricao": "BRINCO TRIO REDONDO CRAVEJADO COLORS",
-      "imagem": "3779.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/12/2024"
-    },
-    {
-      "codigo": "3855",
-      "descricao": "BRINCO NOSSA SENHORA P CRAVEJADA AZUL",
-      "imagem": "3855.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,00",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/12/2024"
-    },
-    {
-      "codigo": "3767",
-      "descricao": "BRINCO GOTA E 2 FIOS",
-      "imagem": "3767.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/04/2025"
-    },
-    {
-      "codigo": "3756",
-      "descricao": "BRINCO VIRGULA TELINHA G",
-      "imagem": "3756.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
     },
     {
       "codigo": "3753",
@@ -1972,6 +1842,46 @@
       "dataUltimaEntrada": "30/11/2024"
     },
     {
+      "codigo": "3798",
+      "descricao": "BRINCO BORBOLETA LISA E CRAVAJA CRISTAL",
+      "imagem": "3798.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/12/2024"
+    },
+    {
+      "codigo": "3873",
+      "descricao": "BRINCO FLOR 3 PETALAS E PONTO DE LUZ",
+      "imagem": "3873.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/12/2024"
+    },
+    {
+      "codigo": "3740",
+      "descricao": "BRINCO FLOR E 7 PONTOS DE LUZ",
+      "imagem": "3740.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/11/2024"
+    },
+    {
+      "codigo": "3841",
+      "descricao": "BRINCO DUO TRANQUETA PONTO DE LUZ ROSA",
+      "imagem": "3841.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
       "codigo": "3870",
       "descricao": "BRINCO EAR CUFF CORACOES LISOS E CRAVEJADOS",
       "imagem": "3870.jpg",
@@ -1980,6 +1890,36 @@
       "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "20/12/2024"
+    },
+    {
+      "codigo": "3729",
+      "descricao": "BRINCO CORACAO/CORRENTE/CORACAO",
+      "imagem": "3729.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "29,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/11/2024"
+    },
+    {
+      "codigo": "3756",
+      "descricao": "BRINCO VIRGULA TELINHA G",
+      "imagem": "3756.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/11/2024"
+    },
+    {
+      "codigo": "3848",
+      "descricao": "BRINCO TRANQUETA PONTO DE LUZ ROSA",
+      "imagem": "3848.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/12/2024"
     },
     {
       "codigo": "3849",
@@ -1992,12 +1932,62 @@
       "dataUltimaEntrada": "15/12/2024"
     },
     {
-      "codigo": "3883",
-      "descricao": "BRINCO LEQUE",
-      "imagem": "3883.jpg",
+      "codigo": "3851",
+      "descricao": "BRINCO DUO FLOR FOSCA",
+      "imagem": "3851.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3855",
+      "descricao": "BRINCO NOSSA SENHORA P CRAVEJADA AZUL",
+      "imagem": "3855.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,00",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "18/12/2024"
+    },
+    {
+      "codigo": "3716",
+      "descricao": "BRINCO PONTO DE LUZ 5MM",
+      "imagem": "3716.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "26,90",
+      "precoConsignado": "39,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/11/2024"
+    },
+    {
+      "codigo": "3714",
+      "descricao": "BRINCO GOTA TELINHA VAZADA G",
+      "imagem": "3714.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/11/2024"
+    },
+    {
+      "codigo": "3842",
+      "descricao": "BRINCO DUO TRANQUETA PONTO DE LUZ PINK",
+      "imagem": "3842.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "3879",
+      "descricao": "BRINCO FLOR ORGANICA COM PONTO DE LUZ",
+      "imagem": "3879.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "29/12/2024"
     },
@@ -2042,16 +2032,6 @@
       "dataUltimaEntrada": "06/01/2025"
     },
     {
-      "codigo": "3841",
-      "descricao": "BRINCO DUO TRANQUETA PONTO DE LUZ ROSA",
-      "imagem": "3841.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
       "codigo": "3887",
       "descricao": "BRINCO BARRA / FIO / BARRA TORCIDA",
       "imagem": "3887.jpg",
@@ -2062,14 +2042,14 @@
       "dataUltimaEntrada": "30/12/2024"
     },
     {
-      "codigo": "3874",
-      "descricao": "BRINCO FLOR 3 PETALAS E PONTO DE LUZ",
-      "imagem": "3874.jpg",
+      "codigo": "3895",
+      "descricao": "BRINCO ARGOLA 2 FILEIRAS ZIRCONIAS COLORIDAS",
+      "imagem": "3895.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "22/12/2024"
+      "dataUltimaEntrada": "06/01/2025"
     },
     {
       "codigo": "3881",
@@ -2082,34 +2062,44 @@
       "dataUltimaEntrada": "29/12/2024"
     },
     {
-      "codigo": "3879",
-      "descricao": "BRINCO FLOR ORGANICA COM PONTO DE LUZ",
-      "imagem": "3879.jpg",
+      "codigo": "3779",
+      "descricao": "BRINCO TRIO REDONDO CRAVEJADO COLORS",
+      "imagem": "3779.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "59,90",
+      "preco": "64,90",
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/12/2024"
+    },
+    {
+      "codigo": "3767",
+      "descricao": "BRINCO GOTA E 2 FIOS",
+      "imagem": "3767.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/04/2025"
+    },
+    {
+      "codigo": "3874",
+      "descricao": "BRINCO FLOR 3 PETALAS E PONTO DE LUZ",
+      "imagem": "3874.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "22/12/2024"
+    },
+    {
+      "codigo": "3883",
+      "descricao": "BRINCO LEQUE",
+      "imagem": "3883.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "29/12/2024"
-    },
-    {
-      "codigo": "3798",
-      "descricao": "BRINCO BORBOLETA LISA E CRAVAJA CRISTAL",
-      "imagem": "3798.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/12/2024"
-    },
-    {
-      "codigo": "3714",
-      "descricao": "BRINCO GOTA TELINHA VAZADA G",
-      "imagem": "3714.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/11/2024"
     }
   ]
 }
