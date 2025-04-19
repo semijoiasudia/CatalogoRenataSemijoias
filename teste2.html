@@ -1511,9 +1511,6 @@
             const categoryDir = selectedOption.dataset.diretorio;
             const categoryName = selectedOption.textContent;
 
-            if (isCategoryChanging) return; // Ignora ação se já estiver mudando de categoria
-            isCategoryChanging = true;
-
             console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
             loadImages(categoryDir, categoryName);
 
