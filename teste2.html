@@ -1105,7 +1105,6 @@
         let cart = [];
         let modalAbortController = null;
         let currentCategory = '';
-        let isCategoryChanging = false; // Controle para evitar cliques durante mudança de categoria
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1518,11 +1517,6 @@
             setTimeout(() => {
                 navigationControls.scrollIntoView({ behavior: 'smooth' });
             }, 100);
-
-            // Reseta a flag após um curto intervalo
-            setTimeout(() => {
-                isCategoryChanging = false;
-            }, 300);
         }
 
         // Carregar categorias a partir do JSON e preencher o dropdown de categorias
