@@ -115,13 +115,7 @@
             max-width: 310px; /* Um pouco mais que a largura da imagem para os paddings */
             box-sizing: border-box;
             scroll-snap-type: x mandatory;
-            scrollbar-width: none; /* Esconde scrollbar no Firefox */
-            -ms-overflow-style: none; /* Esconde scrollbar no IE/Edge */
-        }
-        
-        /* Esconde a barra de rolagem no Chrome, Safari e Opera */
-        .carrossel-h-container::-webkit-scrollbar {
-            display: none;
+            /* Removidas as linhas que escondem a scrollbar */
         }
         
         .carrossel-h-wrapper {
@@ -230,7 +224,7 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            /* Removida a linha separadora */
         }
         
         .filter-group {
@@ -310,9 +304,10 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 8px;
-            margin: 0 0 12px 0;
-            padding: 0 0 12px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            margin: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            padding: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            width: 100%; /* Garantir que ocupe a largura total */
+            text-align: center; /* Reforço para centralização */
         }
         .subcategories button {
             padding: 8px 15px;
@@ -340,7 +335,7 @@
             align-items: center;
             gap: 10px;
             margin: 0;
-            padding-top: 4px;
+            padding-top: 0px;
         }
         .filter-container label {
             font-size: 14px;
@@ -944,11 +939,13 @@
         
         <!-- Carrossel horizontal para categorias -->
         <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev" onclick="prevCarrosselSlide()">←</button>
             <div class="carrossel-h-container">
                 <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
                     <!-- Os slides serão adicionados dinamicamente -->
                 </div>
             </div>
+            <button class="carrossel-h-next" onclick="nextCarrosselSlide()">→</button>
         </div>
     </div>
         
@@ -972,9 +969,8 @@
             </div>
         </div>
         
-        <!-- Subcategorias (banhos) como botões -->
+        <!-- Subcategorias (banhos) como botões - Removido o label -->
         <div class="filter-group-category">
-            <label class="filter-label-category">Selecione o banho:</label>
             <div class="subcategories" id="subcategories" style="display: none;"></div>
         </div>
         
@@ -1153,6 +1149,19 @@
                 }
             });
         });
+
+        // Funções para navegação do carrossel horizontal
+        function prevCarrosselSlide() {
+            const container = document.querySelector('.carrossel-h-container');
+            const slideWidth = document.querySelector('.carrossel-h-slide')?.offsetWidth || 300;
+            container.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        }
+        
+        function nextCarrosselSlide() {
+            const container = document.querySelector('.carrossel-h-container');
+            const slideWidth = document.querySelector('.carrossel-h-slide')?.offsetWidth || 300;
+            container.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
 
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
@@ -1524,7 +1533,7 @@
                 navigationControls.scrollIntoView({ behavior: 'smooth' });
             }, 100);
             setTimeout(() => {
-                isCategoryChanging = false; // ❌ Excluir
+                isCategoryChanging = false;
             }, 300);
         }
 
@@ -2251,10 +2260,6 @@
                     
                     wrapper.appendChild(slideElement);
                 });
-                
-                // Não precisamos mais de controles com JavaScript já que usamos rolagem nativa
-                // O carrossel funciona com gestos de swipe automaticamente graças a
-                // overflow-x: scroll e scroll-snap-type: x mandatory
                 
             } catch (error) {
                 console.error("Erro ao inicializar carrossel horizontal:", error);
