@@ -2201,6 +2201,13 @@
                         if (!data.produtos || data.produtos.length === 0) {
                             return [];
                         }
+                        //ordena o carrossel para exibir os itens com entrada mais recente primeiro
+                        const produtosOrdenados = data.produtos.sort((a, b) => {
+                            // Exemplo: ordenação por data (mais novos primeiro)
+                            const dateA = new Date(a.dataUltimaEntrada.split('/').reverse().join('-'));
+                            const dateB = new Date(b.dataUltimaEntrada.split('/').reverse().join('-'));
+                            return dateB - dateA;
+                        });
                         
                         // Pegar até 'limit' produtos da categoria
                         const products = data.produtos.slice(0, limit);
