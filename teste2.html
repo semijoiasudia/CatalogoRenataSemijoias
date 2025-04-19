@@ -59,7 +59,7 @@
         /* Texto da localização posicionado no topo direito */
         .location-text {
             position: absolute;
-            botton: 20px;
+            bottom: 8px;
             right: 15px;
             font-size: 13px;
             color: #666;
@@ -1105,6 +1105,7 @@
         let cart = [];
         let modalAbortController = null;
         let currentCategory = '';
+        let isCategoryChanging = false;
 
         // Configurações de entrega
         const deliveryConfig = {
@@ -1126,6 +1127,7 @@
         let isDragging = false;
         let touchStartX = 0;
         let touchStartTime = 0;
+        
 
         // Proteção global contra download de imagens
         document.addEventListener('DOMContentLoaded', function() {
@@ -1508,15 +1510,22 @@
             const selectedOption = categorySelect.options[categorySelect.selectedIndex];
             const categoryDir = selectedOption.dataset.diretorio;
             const categoryName = selectedOption.textContent;
-
+            
+            if (isCategoryChanging) return; // Ignora ação se já estiver mudando de categoria
+            isCategoryChanging = true;
+            
             console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
             loadImages(categoryDir, categoryName);
 
             // NOVO: Rolar até o elemento de navegação
             const navigationControls = document.getElementById('navigation-controls');
+            
             setTimeout(() => {
                 navigationControls.scrollIntoView({ behavior: 'smooth' });
             }, 100);
+            setTimeout(() => {
+                isCategoryChanging = false; // ❌ Excluir
+            }, 300);
         }
 
         // Carregar categorias a partir do JSON e preencher o dropdown de categorias
