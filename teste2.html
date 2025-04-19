@@ -109,11 +109,19 @@
         }
         
         .carrossel-h-container {
-            overflow: hidden;
+            overflow-x: scroll;
             width: 100%;
             margin: 0 auto; /* Centraliza o container */
             max-width: 310px; /* Um pouco mais que a largura da imagem para os paddings */
             box-sizing: border-box;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none; /* Esconde scrollbar no Firefox */
+            -ms-overflow-style: none; /* Esconde scrollbar no IE/Edge */
+        }
+        
+        /* Esconde a barra de rolagem no Chrome, Safari e Opera */
+        .carrossel-h-container::-webkit-scrollbar {
+            display: none;
         }
         
         .carrossel-h-wrapper {
@@ -128,6 +136,7 @@
             cursor: pointer;
             position: relative;
             text-align: center; /* Centraliza o conteúdo */
+            scroll-snap-align: center;
         }
         
         .carrossel-h-slide .slide-image {
@@ -941,13 +950,11 @@
         
         <!-- Carrossel horizontal para categorias -->
         <div class="carrossel-horizontal">
-            <button class="carrossel-h-prev">❮</button>
             <div class="carrossel-h-container">
                 <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
                     <!-- Os slides serão adicionados dinamicamente -->
                 </div>
             </div>
-            <button class="carrossel-h-next">❯</button>
         </div>
     </div>
         
@@ -972,7 +979,10 @@
         </div>
         
         <!-- Subcategorias (banhos) como botões -->
-        <div class="subcategories" id="subcategories" style="display: none;"></div>
+        <div class="filter-group-category">
+            <label class="filter-label-category">Selecione o banho:</label>
+            <div class="subcategories" id="subcategories" style="display: none;"></div>
+        </div>
         
         <!-- Filtro de ordenação estilizado como no segundo arquivo -->
         <div class="filter-container">
@@ -2241,56 +2251,9 @@
                     wrapper.appendChild(slideElement);
                 });
                 
-                // Configurar comportamento do carrossel
-                let currentPosition = 0;
-                const slidesPerView = 1; // Número de slides visíveis ao mesmo tempo
-                
-                // Função para atualizar a posição do carrossel
-                function updateCarouselPosition() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (!slides.length) return;
-                    
-                    const slideWidth = slides[0].offsetWidth;
-                    wrapper.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
-                }
-                
-                // Funções de navegação
-                function nextSlide() {
-                    const slides = document.querySelectorAll('.carrossel-h-slide');
-                    if (currentPosition < slides.length - slidesPerView) {
-                        currentPosition++;
-                        updateCarouselPosition();
-                    }
-                }
-                
-                function prevSlide() {
-                    if (currentPosition > 0) {
-                        currentPosition--;
-                        updateCarouselPosition();
-                    }
-                }
-                
-                // Configurar botões de navegação
-                const prevBtn = document.querySelector('.carrossel-h-prev');
-                const nextBtn = document.querySelector('.carrossel-h-next');
-                
-                prevBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    prevSlide();
-                });
-                
-                nextBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    nextSlide();
-                });
-                
-                // Atualizar tamanho dos slides quando a janela é redimensionada
-                window.addEventListener('resize', updateCarouselPosition);
-                
-                // Inicializar carrossel
-                updateCarouselPosition();
+                // Não precisamos mais de controles com JavaScript já que usamos rolagem nativa
+                // O carrossel funciona com gestos de swipe automaticamente graças a
+                // overflow-x: scroll e scroll-snap-type: x mandatory
                 
             } catch (error) {
                 console.error("Erro ao inicializar carrossel horizontal:", error);
