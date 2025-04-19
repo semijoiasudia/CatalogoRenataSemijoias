@@ -112,7 +112,7 @@
             overflow: hidden;
             width: 100%;
             margin: 0 auto; /* Centraliza o container */
-            max-width: 260px; /* Um pouco mais que a largura da imagem para os paddings */
+            max-width: 310px; /* Um pouco mais que a largura da imagem para os paddings */
             box-sizing: border-box;
         }
         
@@ -131,8 +131,8 @@
         }
         
         .carrossel-h-slide .slide-image {
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
             border-radius: 0; /* Removido border-radius */
             transition: transform 0.3s ease;
@@ -219,63 +219,85 @@
             box-sizing: border-box;
         }
 
-        /* Estilos para as abas de categorias */
-        .tabs-container {
-            width: 100%;
-            max-width: 100%;
-            overflow-x: auto;
-            overflow-y: visible;
-            white-space: nowrap;
-            padding: 5px 0 17px 0;
-            margin: 0 0 12px 0;
-            background-color: transparent;
-            border-radius: 0;
-            box-shadow: none;
+        /* Estilo para os dropdowns de navegação - layout modificado */
+        .filter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
             border-bottom: 1px solid rgba(0,0,0,0.06);
         }
-        .tabs {
-            display: inline-flex;
-            gap: 8px;
-            padding: 2px;
+        
+        .filter-group {
+            display: flex;
+            align-items: center;
         }
-        .tab {
-            padding: 10px 18px;
-            font-size: 15px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            color: white;
-            font-weight: bold;
-            transition: all 0.2s;
+        
+        /* Modificado: Label padrão para segundo e terceiro dropdown */
+        .filter-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            margin-right: 10px;
             white-space: nowrap;
-            min-width: 100px;
+            width: 160px; /* Largura fixa para alinhar todos os labels */
+            text-align: left;
+        }
+        
+        /* NOVO: Grupo especial para o primeiro dropdown com label acima */
+        .filter-group-category {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        
+        /* NOVO: Label específico para o primeiro dropdown (categoria) */
+        .filter-label-category {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
             text-align: center;
+            width: 100%;
         }
-        .tab:hover {
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px;
-            margin: -1px -2px;
+        
+        /* Select padrão para segundo e terceiro dropdown */
+        .filter-select {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+            min-width: 200px; /* Largura para segundo e terceiro selects */
         }
-        .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b);
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px;
-            margin: -1px -2px;
+        
+        /* NOVO: Select específico para o primeiro dropdown (categoria) */
+        .filter-select-category {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+            width: 100%; /* Dropdown de categoria ocupa toda a largura */
         }
-        .tabs-container::-webkit-scrollbar {
-            height: 8px;
+        
+        .filter-select:hover, .filter-select-category:hover {
+            border-color: #d4af37;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-        .tabs-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb {
-            background: #e6c977;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #d4af37;
+        
+        .filter-select:focus, .filter-select-category:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
 
         /* Novo estilo para os botões de subcategorias (banhos) */
@@ -341,8 +363,7 @@
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
-
-        /* Estilos restantes mantidos iguais */
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -900,6 +921,8 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+        #banhoSelectContainer { margin-left: auto; }
+        #sortFilterContainer { margin-left: auto; }
     </style>
 </head>
 <body>
@@ -938,9 +961,14 @@
     </div>
     
     <div class="navigation-controls" id="navigation-controls">
-        <!-- Abas de categorias -->
-        <div class="tabs-container">
-            <div class="tabs" id="tabs"></div>
+        <!-- MODIFICADO: Primeiro dropdown com label acima -->
+        <div class="filter-row">
+            <div class="filter-group-category">
+                <label for="categorySelect" class="filter-label-category">Selecione a categoria:</label>
+                <select id="categorySelect" class="filter-select-category" onchange="handleCategoryChange()">
+                    <!-- Opções serão preenchidas pelo JavaScript -->
+                </select>
+            </div>
         </div>
         
         <!-- Subcategorias (banhos) como botões -->
@@ -1471,57 +1499,74 @@
             }
         }
 
-        // Carregar categorias a partir do JSON
+        // MODIFICADO: Função de tratamento de mudança de categoria com rolagem
+        function handleCategoryChange() {
+            const categorySelect = document.getElementById('categorySelect');
+            const selectedOption = categorySelect.options[categorySelect.selectedIndex];
+            const categoryDir = selectedOption.dataset.diretorio;
+            const categoryName = selectedOption.textContent;
+
+            if (isCategoryChanging) return; // Ignora ação se já estiver mudando de categoria
+            isCategoryChanging = true;
+
+            console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+            loadImages(categoryDir, categoryName);
+
+            // NOVO: Rolar até o elemento de navegação
+            const navigationControls = document.getElementById('navigation-controls');
+            setTimeout(() => {
+                navigationControls.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+
+            // Reseta a flag após um curto intervalo
+            setTimeout(() => {
+                isCategoryChanging = false;
+            }, 300);
+        }
+
+        // Carregar categorias a partir do JSON e preencher o dropdown de categorias
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
                 
-                const tabs = document.getElementById('tabs');
-                tabs.innerHTML = '';
+                const categorySelect = document.getElementById('categorySelect');
+                categorySelect.innerHTML = '';
 
-                // Ordenar as categorias por nome antes de criar as abas
+                // Ordenar as categorias por nome antes de criar as opções
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
                 
-                // Criar abas para cada categoria ativa
+                // Criar opções para cada categoria ativa
                 categoriasAtivas.forEach(categoria => {
-                    const tab = document.createElement('button');
-                    tab.className = 'tab';
-                    tab.textContent = categoria.name;
-                    tab.dataset.diretorio = categoria.diretorio;
-                    tab.onclick = () => {
-                        if (isCategoryChanging) return; // Ignora clique se já estiver mudando de categoria
-                        isCategoryChanging = true; // Define flag de mudança
-                        
-                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-                        loadImages(categoria.diretorio, categoria.name);
-                        scrollToActiveTab();
-                        
-                        // Reseta a flag após um curto intervalo
-                        setTimeout(() => {
-                            isCategoryChanging = false;
-                        }, 300);
-                    };
-                    tabs.appendChild(tab);
+                    const option = document.createElement('option');
+                    option.value = categoria.name;
+                    option.textContent = categoria.name;
+                    option.dataset.diretorio = categoria.diretorio;
+                    categorySelect.appendChild(option);
                 });
 
                 // Carregar a categoria inicial
                 const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = findTabByText(initialCategory);
-                if (initialTab) {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
-                    scrollToActiveTab();
-                } else if (tabs.children.length > 0) {
+                let initialOption = null;
+                
+                // Procurar a opção correspondente à categoria inicial
+                for (let i = 0; i < categorySelect.options.length; i++) {
+                    if (categorySelect.options[i].textContent.trim().toLowerCase() === initialCategory.toLowerCase()) {
+                        initialOption = categorySelect.options[i];
+                        categorySelect.selectedIndex = i;
+                        break;
+                    }
+                }
+                
+                if (initialOption) {
+                    console.log('Carregando categoria inicial:', initialOption.textContent.trim());
+                    loadImages(initialOption.dataset.diretorio, initialOption.textContent.trim());
+                } else if (categorySelect.options.length > 0) {
                     // Se a categoria inicial não for encontrada, carregar a primeira categoria
-                    const defaultTab = tabs.children[0];
-                    defaultTab.classList.add('active');
-                    console.log('Carregando categoria padrão:', defaultTab.textContent);
-                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
-                    scrollToActiveTab();
+                    categorySelect.selectedIndex = 0;
+                    const defaultOption = categorySelect.options[0];
+                    console.log('Carregando categoria padrão:', defaultOption.textContent);
+                    loadImages(defaultOption.dataset.diretorio, defaultOption.textContent.trim());
                 } else {
                     console.error('Nenhuma categoria disponível.');
                     alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
@@ -1532,26 +1577,43 @@
             }
         }
 
-        function findTabByText(categoryName) {
-            const tabs = document.querySelectorAll('.tab');
-            for (let tab of tabs) {
-                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                    return tab;
+        // Função para criar os botões de subcategorias (banhos)
+        function criarBotoesSubcategorias(banhosNaCategoria) {
+            const subcategoriesDiv = document.getElementById('subcategories');
+            subcategoriesDiv.innerHTML = '';
+
+            if (banhosNaCategoria.size === 0) {
+                subcategoriesDiv.style.display = 'none';
+                return;
+            }
+
+            subcategoriesDiv.style.display = 'flex';
+
+            const botaoTodos = document.createElement('button');
+            botaoTodos.textContent = 'Todos';
+            botaoTodos.dataset.banho = 'todos';
+            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
+            botaoTodos.onclick = () => filterByBanho('todos');
+            subcategoriesDiv.appendChild(botaoTodos);
+
+            // Ordenar os banhos alfabeticamente
+            const banhosArray = Array.from(banhosNaCategoria);
+            banhosArray.sort();
+
+            banhosArray.forEach(banho => {
+                if (banho && banho !== '') {
+                    const botaoBanho = document.createElement('button');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    botaoBanho.textContent = displayText;
+                    botaoBanho.dataset.banho = banho;
+                    botaoBanho.className = currentBanho === banho ? 'active' : '';
+                    botaoBanho.onclick = () => filterByBanho(banho);
+                    subcategoriesDiv.appendChild(botaoBanho);
                 }
-            }
-            return null;
-        }
-
-        function scrollToActiveTab() {
-            const activeTab = document.querySelector('.tab.active');
-            if (activeTab) {
-                const tabRect = activeTab.getBoundingClientRect();
-                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
-                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
-                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
-
-                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
-            }
+            });
         }
 
         // Carregar imagens a partir dos produtos de uma categoria
@@ -1603,45 +1665,6 @@
                 console.error("Erro ao carregar imagens:", error);
                 alert(`Erro ao carregar imagens da categoria ${categoryName}: ${error.message}`);
             }
-        }
-
-        // Função para criar os botões de subcategorias (banhos)
-        function criarBotoesSubcategorias(banhosNaCategoria) {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = '';
-
-            if (banhosNaCategoria.size === 0) {
-                subcategoriesDiv.style.display = 'none';
-                return;
-            }
-
-            subcategoriesDiv.style.display = 'flex';
-
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.dataset.banho = 'todos';
-            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
-            botaoTodos.onclick = () => filterByBanho('todos');
-            subcategoriesDiv.appendChild(botaoTodos);
-
-            // Ordenar os banhos alfabeticamente
-            const banhosArray = Array.from(banhosNaCategoria);
-            banhosArray.sort();
-
-            banhosArray.forEach(banho => {
-                if (banho && banho !== '') {
-                    const botaoBanho = document.createElement('button');
-                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    if (banho === '2 banhos') {
-                        displayText = '2 Banhos';
-                    }
-                    botaoBanho.textContent = displayText;
-                    botaoBanho.dataset.banho = banho;
-                    botaoBanho.className = currentBanho === banho ? 'active' : '';
-                    botaoBanho.onclick = () => filterByBanho(banho);
-                    subcategoriesDiv.appendChild(botaoBanho);
-                }
-            });
         }
 
         function getFilteredFiles() {
