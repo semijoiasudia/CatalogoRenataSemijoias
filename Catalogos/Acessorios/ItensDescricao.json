@@ -2,16 +2,6 @@
   "categoria": "ACESSORIO",
   "produtos": [
     {
-      "codigo": "4242",
-      "descricao": "ACESSORIO CINTO MOEDAS PRATEADO ELASTICO 75 A 110CM",
-      "imagem": "4242.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "COR PRATA",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4243",
       "descricao": "ACESSORIO CINTO MOEDAS ELASTICO ORGANICO 73 A 110CM",
       "imagem": "4243.jpg",
@@ -20,6 +10,26 @@
       "precoConsignado": "89,90",
       "banho": "COR OURO",
       "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4250",
+      "descricao": "ACESSORIO CINTO ELASTICO MOEDAS PEQUENAS 71 A 110CM",
+      "imagem": "4250.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "COR OURO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4227",
+      "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
+      "imagem": "4227.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "11/04/2025"
     },
     {
       "codigo": "4244",
@@ -72,24 +82,14 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4250",
-      "descricao": "ACESSORIO CINTO ELASTICO MOEDAS PEQUENAS 71 A 110CM",
-      "imagem": "4250.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "COR OURO",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4227",
-      "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
-      "imagem": "4227.jpg",
+      "codigo": "4242",
+      "descricao": "ACESSORIO CINTO MOEDAS PRATEADO ELASTICO 75 A 110CM",
+      "imagem": "4242.jpg",
       "pastaFotos": "Catalogos/Acessorios/",
       "preco": "69,90",
       "precoConsignado": "109,90",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "11/04/2025"
+      "banho": "COR PRATA",
+      "dataUltimaEntrada": "14/04/2025"
     }
   ]
 }
