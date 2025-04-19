@@ -115,11 +115,8 @@
             max-width: 310px; /* Um pouco mais que a largura da imagem para os paddings */
             box-sizing: border-box;
             scroll-snap-type: x mandatory;
-            /* Removida a linha que esconde a scrollbar no Firefox */
-            /* Removida a linha que esconde a scrollbar no IE/Edge */
+            /* Removidas as linhas que escondem a scrollbar */
         }
-        
-        /* Removida a regra que esconde a barra de rolagem no Chrome, Safari e Opera */
         
         .carrossel-h-wrapper {
             display: flex;
@@ -1278,27 +1275,6 @@
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
             });
-            
-            // Proteção global contra download de imagens
-            document.addEventListener('contextmenu', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-            
-            document.addEventListener('dragstart', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-            
-            console.log('Carregamento da página concluído');
-        };ções de entrega
-            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
-                option.addEventListener('change', updateDeliveryOption);
-            });
         }
 
         // Fechar a modal da sacola
@@ -2283,10 +2259,6 @@
                     
                     wrapper.appendChild(slideElement);
                 });
-                
-                // Não precisamos mais de controles com JavaScript já que usamos rolagem nativa
-                // O carrossel funciona com gestos de swipe automaticamente graças a
-                // overflow-x: scroll e scroll-snap-type: x mandatory
                 
             } catch (error) {
                 console.error("Erro ao inicializar carrossel horizontal:", error);
