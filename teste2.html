@@ -115,14 +115,11 @@
             max-width: 310px; /* Um pouco mais que a largura da imagem para os paddings */
             box-sizing: border-box;
             scroll-snap-type: x mandatory;
-            scrollbar-width: none; /* Esconde scrollbar no Firefox */
-            -ms-overflow-style: none; /* Esconde scrollbar no IE/Edge */
+            /* Removida a linha que esconde a scrollbar no Firefox */
+            /* Removida a linha que esconde a scrollbar no IE/Edge */
         }
         
-        /* Esconde a barra de rolagem no Chrome, Safari e Opera */
-        .carrossel-h-container::-webkit-scrollbar {
-            display: none;
-        }
+        /* Removida a regra que esconde a barra de rolagem no Chrome, Safari e Opera */
         
         .carrossel-h-wrapper {
             display: flex;
@@ -230,7 +227,7 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 12px;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            /* Removida a linha separadora */
         }
         
         .filter-group {
@@ -312,7 +309,7 @@
             gap: 8px;
             margin: 0 0 12px 0;
             padding: 0 0 12px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            /* Removida a linha separadora */
         }
         .subcategories button {
             padding: 8px 15px;
@@ -944,11 +941,13 @@
         
         <!-- Carrossel horizontal para categorias -->
         <div class="carrossel-horizontal">
+            <button class="carrossel-h-prev" onclick="prevCarrosselSlide()">←</button>
             <div class="carrossel-h-container">
                 <div class="carrossel-h-wrapper" id="carrossel-h-wrapper">
                     <!-- Os slides serão adicionados dinamicamente -->
                 </div>
             </div>
+            <button class="carrossel-h-next" onclick="nextCarrosselSlide()">→</button>
         </div>
     </div>
         
@@ -972,9 +971,8 @@
             </div>
         </div>
         
-        <!-- Subcategorias (banhos) como botões -->
+        <!-- Subcategorias (banhos) como botões - Removido o label -->
         <div class="filter-group-category">
-            <label class="filter-label-category">Selecione o banho:</label>
             <div class="subcategories" id="subcategories" style="display: none;"></div>
         </div>
         
@@ -1154,6 +1152,19 @@
             });
         });
 
+        // Funções para navegação do carrossel horizontal
+        function prevCarrosselSlide() {
+            const container = document.querySelector('.carrossel-h-container');
+            const slideWidth = document.querySelector('.carrossel-h-slide')?.offsetWidth || 300;
+            container.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        }
+        
+        function nextCarrosselSlide() {
+            const container = document.querySelector('.carrossel-h-container');
+            const slideWidth = document.querySelector('.carrossel-h-slide')?.offsetWidth || 300;
+            container.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        }
+
         // Carregar configurações de entrega do arquivo config.ini (simulado)
         function loadDeliveryConfig() {
             // Aqui normalmente seria feito o carregamento do arquivo config.ini
@@ -1264,6 +1275,27 @@
             document.body.classList.add('modal-open');
             
             // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+            
+            // Proteção global contra download de imagens
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            document.addEventListener('dragstart', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            console.log('Carregamento da página concluído');
+        };ções de entrega
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
             });
@@ -1524,7 +1556,7 @@
                 navigationControls.scrollIntoView({ behavior: 'smooth' });
             }, 100);
             setTimeout(() => {
-                isCategoryChanging = false; // ❌ Excluir
+                isCategoryChanging = false;
             }, 300);
         }
 
