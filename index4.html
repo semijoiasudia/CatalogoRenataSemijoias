@@ -1017,69 +1017,48 @@
             });
         });
 
-        // Carregar configurações de entrega do arquivo config.ini
+        // Carregar configurações do arquivo config.ini
         function loadDeliveryConfig() {
-            try {
-                // Tenta carregar config.ini, mas não espera pela resposta
-                fetch("config.ini")
-                    .then(response => {
-                        if (!response.ok) {
-                            console.warn("Arquivo config.ini não encontrado, usando valores padrão.");
-                            return null;
+            fetch("config.ini")
+                .then(response => response.ok ? response.text() : null)
+                .then(text => {
+                    if (!text) return;
+                    
+                    const lines = text.split('\n');
+                    let currentSection = "";
+                    
+                    for (const line of lines) {
+                        const trimmedLine = line.trim();
+                        
+                        // Identificar seção [Seção]
+                        if (trimmedLine.startsWith('[') && trimmedLine.endsWith(']')) {
+                            currentSection = trimmedLine.substring(1, trimmedLine.length - 1);
+                            continue;
                         }
-                        return response.text();
-                    })
-                    .then(text => {
-                        if (!text) return;
                         
-                        const lines = text.split('\n');
-                        let currentSection = "";
-                        
-                        // Processar cada linha do arquivo config.ini
-                        for (const line of lines) {
-                            // Verificar se é uma linha de seção [Seção]
-                            if (line.trim().startsWith('[') && line.trim().endsWith(']')) {
-                                currentSection = line.trim().substring(1, line.trim().length - 1);
-                                continue;
-                            }
+                        // Processar configurações chave=valor
+                        if (trimmedLine.includes('=')) {
+                            const [key, rawValue] = trimmedLine.split('=').map(part => part.trim());
+                            // Remover aspas simples ou duplas
+                            const value = rawValue.replace(/^['"]|['"]$/g, '');
                             
-                            // Processar linhas com chave=valor
-                            if (line.includes('=')) {
-                                const [key, rawValue] = line.split('=').map(part => part.trim());
-                                // Remover aspas simples ou duplas do valor
-                                const value = rawValue.replace(/^['"]|['"]$/g, '');
-                                
-                                // Configuração da categoria inicial (na seção [Geral])
-                                if (currentSection === "Geral" && key === 'CategoriaInicial') {
-                                    categoriaInicial = value;
-                                    console.log(`Categoria inicial do config.ini: ${categoriaInicial}`);
+                            // Configurações específicas por seção
+                            if (currentSection === "Entrega") {
+                                if (key === 'FreteUberlandia') {
+                                    deliveryConfig.freteUberlandia = parseFloat(value);
+                                } else if (key === 'FreteOutrasCidades') {
+                                    deliveryConfig.freteOutrasCidades = value;
                                 }
-                                
-                                // Configurações de entrega (na seção [Entrega])
-                                if (currentSection === "Entrega" || currentSection === "") {
-                                    if (key === 'FreteUberlandia') {
-                                        deliveryConfig.freteUberlandia = parseFloat(value);
-                                    }
-                                    if (key === 'FreteOutrasCidades') {
-                                        deliveryConfig.freteOutrasCidades = value;
-                                    }
+                            } else if (currentSection === "Geral") {
+                                if (key === 'CategoriaInicial') {
+                                    categoriaInicial = value;
+                                    console.log(`Categoria inicial: ${categoriaInicial}`);
                                 }
                             }
                         }
-                    })
-                    .catch(error => {
-                        console.error("Erro ao processar config.ini:", error);
-                    });
-            } catch (error) {
-                console.error("Erro ao carregar config.ini:", error);
-            }
-            
-            // Sempre logar os valores, independente de ter carregado ou não
-            console.log("Valores de configuração (padrão ou do config.ini):", {
-                categoriaInicial,
-                freteUberlandia: deliveryConfig.freteUberlandia,
-                freteOutrasCidades: deliveryConfig.freteOutrasCidades
-            });
+                    }
+                })
+                .catch(error => console.warn("Erro ao processar config.ini:", error));
         }
 
         // Atualizar opção de entrega selecionada
@@ -1180,6 +1159,12 @@
 
         // Exibir a modal da sacola
         function openCartModal() {
+            // Atualizar valores de entrega do config.ini
+            document.querySelector('label[for="deliveryUberlandia"] + .delivery-price').textContent = 
+                `R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+            document.querySelector('label[for="deliveryOther"] + .delivery-price').textContent = 
+                deliveryConfig.freteOutrasCidades;
+                
             renderCartItems();
             document.getElementById('cartModal').style.display = 'flex';
             document.body.classList.add('modal-open');
@@ -2055,6 +2040,21 @@
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            
+            // Aguardar um pequeno intervalo para garantir que o config.ini foi carregado
+            setTimeout(() => {
+                // Atualizar valores de entrega na interface
+                const freteUberlandiaEl = document.querySelector('label[for="deliveryUberlandia"] + .delivery-price');
+                const freteOutrasCidadesEl = document.querySelector('label[for="deliveryOther"] + .delivery-price');
+                
+                if (freteUberlandiaEl) {
+                    freteUberlandiaEl.textContent = `R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+                }
+                if (freteOutrasCidadesEl) {
+                    freteOutrasCidadesEl.textContent = deliveryConfig.freteOutrasCidades;
+                }
+            }, 500);
+            
             await loadCategories(); // Carregar categorias
             loadRodape();
             setupFaleConoscoButton();
