@@ -28,13 +28,13 @@
             overflow-x: hidden;
         }
         
-        /* Novo container da logo - Fundo alterado para branco */
+        /* Container da logo - Fundo branco */
         .logo-container {
             padding: 8px 0;
             background: #ffffff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 10px;
-            position: relative; /* Para que o overlay fique posicionado corretamente */
+            position: relative;
         }
         .logo-container img {
             max-width: 140px;
@@ -127,7 +127,6 @@
             align-items: center;
             margin-bottom: 12px;
             padding-bottom: 12px;
-            /* Removida a linha separadora */
         }
         
         .filter-group {
@@ -135,18 +134,7 @@
             align-items: center;
         }
         
-        /* Modificado: Label padrão para segundo e terceiro dropdown */
-        .filter-label {
-            font-size: 14px;
-            font-weight: 500;
-            color: #555;
-            margin-right: 10px;
-            white-space: nowrap;
-            width: 160px; /* Largura fixa para alinhar todos os labels */
-            text-align: left;
-        }
-        
-        /* NOVO: Grupo especial para o primeiro dropdown com label acima */
+        /* Grupo especial para o primeiro dropdown com label acima */
         .filter-group-category {
             display: flex;
             flex-direction: column;
@@ -154,7 +142,7 @@
             width: 100%;
         }
         
-        /* NOVO: Label específico para o primeiro dropdown (categoria) */
+        /* Label específico para o primeiro dropdown (categoria) */
         .filter-label-category {
             font-size: 14px;
             font-weight: 500;
@@ -164,20 +152,7 @@
             width: 100%;
         }
         
-        /* Select padrão para segundo e terceiro dropdown */
-        .filter-select {
-            padding: 8px 15px;
-            font-size: 14px;
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
-            background-color: white;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #555;
-            min-width: 200px; /* Largura para segundo e terceiro selects */
-        }
-        
-        /* NOVO: Select específico para o primeiro dropdown (categoria) */
+        /* Select específico para o primeiro dropdown (categoria) */
         .filter-select-category {
             padding: 8px 15px;
             font-size: 14px;
@@ -190,12 +165,12 @@
             width: 100%; /* Dropdown de categoria ocupa toda a largura */
         }
         
-        .filter-select:hover, .filter-select-category:hover {
+        .filter-select-category:hover {
             border-color: #d4af37;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
-        .filter-select:focus, .filter-select-category:focus {
+        .filter-select-category:focus {
             outline: none;
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
@@ -827,7 +802,7 @@
     </style>
 </head>
 <body>
-    <!-- Novo container da logo com texto da localização no canto superior direito -->
+    <!-- Container da logo com texto da localização no canto superior direito -->
     <div class="logo-container">
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
         <!-- Texto da localização posicionado no canto superior direito -->
@@ -836,7 +811,7 @@
         <div class="logo-protection"></div>
     </div>
     
-    <!-- Novo container de título estilizado mais discreto -->
+    <!-- Container de título estilizado mais discreto -->
     <div class="catalogo-container">
         <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
     </div>
@@ -847,11 +822,11 @@
             <i>🛍️</i>
             <div class="cart-counter" id="cartCounter">0</div>
         </div>
-        <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
+        <div class="cart-label">Sacola</div> <!-- Elemento para o texto -->
     </div>
     
     <div class="navigation-controls" id="navigation-controls">
-        <!-- MODIFICADO: Primeiro dropdown com label acima -->
+        <!-- Primeiro dropdown com label acima -->
         <div class="filter-row">
             <div class="filter-group-category">
                 <label for="categorySelect" class="filter-label-category">Selecione a categoria:</label>
@@ -861,12 +836,12 @@
             </div>
         </div>
         
-        <!-- Subcategorias (banhos) como botões - Removido o label -->
+        <!-- Subcategorias (banhos) como botões -->
         <div class="filter-group-category">
             <div class="subcategories" id="subcategories" style="display: none;"></div>
         </div>
         
-        <!-- Filtro de ordenação estilizado como no segundo arquivo -->
+        <!-- Filtro de ordenação -->
         <div class="filter-container">
             <label for="sortFilter">Ordenar por: </label>
             <select id="sortFilter" onchange="applySort()">
@@ -906,7 +881,7 @@
         </div>
     </div>
     
-    <!-- Modal da Sacola (Modificada) -->
+    <!-- Modal da Sacola -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <span class="close" onclick="closeCartModal()">×</span>
@@ -995,12 +970,13 @@
         let currentCategory = '';
         let isCategoryChanging = false;
 
-        // Configurações de entrega
+        // Configurações globais
         const deliveryConfig = {
             freteUberlandia: 13.00,
             freteOutrasCidades: "A Calcular"
         };
-
+        
+        let categoriaInicial = "Brincos"; // Valor padrão de fallback
         let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
 
         const PHONE_NUMBER = '5534997622408';
@@ -1014,7 +990,6 @@
         let startY = 0;
         let isDragging = false;
         let touchStartX = 0;
-        let touchStartTime = 0;
         
 
         // Proteção global contra download de imagens
@@ -1042,11 +1017,69 @@
             });
         });
 
-        // Carregar configurações de entrega do arquivo config.ini (simulado)
+        // Carregar configurações de entrega do arquivo config.ini
         function loadDeliveryConfig() {
-            // Aqui normalmente seria feito o carregamento do arquivo config.ini
-            // Como estamos simulando, vamos apenas usar os valores já definidos
-            console.log("Configurações de entrega carregadas:", deliveryConfig);
+            try {
+                // Tenta carregar config.ini, mas não espera pela resposta
+                fetch("config.ini")
+                    .then(response => {
+                        if (!response.ok) {
+                            console.warn("Arquivo config.ini não encontrado, usando valores padrão.");
+                            return null;
+                        }
+                        return response.text();
+                    })
+                    .then(text => {
+                        if (!text) return;
+                        
+                        const lines = text.split('\n');
+                        let currentSection = "";
+                        
+                        // Processar cada linha do arquivo config.ini
+                        for (const line of lines) {
+                            // Verificar se é uma linha de seção [Seção]
+                            if (line.trim().startsWith('[') && line.trim().endsWith(']')) {
+                                currentSection = line.trim().substring(1, line.trim().length - 1);
+                                continue;
+                            }
+                            
+                            // Processar linhas com chave=valor
+                            if (line.includes('=')) {
+                                const [key, rawValue] = line.split('=').map(part => part.trim());
+                                // Remover aspas simples ou duplas do valor
+                                const value = rawValue.replace(/^['"]|['"]$/g, '');
+                                
+                                // Configuração da categoria inicial (na seção [Geral])
+                                if (currentSection === "Geral" && key === 'CategoriaInicial') {
+                                    categoriaInicial = value;
+                                    console.log(`Categoria inicial do config.ini: ${categoriaInicial}`);
+                                }
+                                
+                                // Configurações de entrega (na seção [Entrega])
+                                if (currentSection === "Entrega" || currentSection === "") {
+                                    if (key === 'FreteUberlandia') {
+                                        deliveryConfig.freteUberlandia = parseFloat(value);
+                                    }
+                                    if (key === 'FreteOutrasCidades') {
+                                        deliveryConfig.freteOutrasCidades = value;
+                                    }
+                                }
+                            }
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Erro ao processar config.ini:", error);
+                    });
+            } catch (error) {
+                console.error("Erro ao carregar config.ini:", error);
+            }
+            
+            // Sempre logar os valores, independente de ter carregado ou não
+            console.log("Valores de configuração (padrão ou do config.ini):", {
+                categoriaInicial,
+                freteUberlandia: deliveryConfig.freteUberlandia,
+                freteOutrasCidades: deliveryConfig.freteOutrasCidades
+            });
         }
 
         // Atualizar opção de entrega selecionada
@@ -1343,7 +1376,7 @@
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
         }
 
-        // Carregar categorias ativas do novo arquivo JSON
+        // Carregar categorias ativas do arquivo JSON
         async function loadCategoriasAtivas() {
             try {
                 const response = await fetch(categoriasAtivasUrl);
@@ -1392,7 +1425,7 @@
             }
         }
 
-        // MODIFICADO: Função de tratamento de mudança de categoria com rolagem
+        // Função de tratamento de mudança de categoria com rolagem
         function handleCategoryChange() {
             const categorySelect = document.getElementById('categorySelect');
             const selectedOption = categorySelect.options[categorySelect.selectedIndex];
@@ -1405,7 +1438,7 @@
             console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
             loadImages(categoryDir, categoryName);
 
-            // NOVO: Rolar até o elemento de navegação
+            // Rolar até o elemento de navegação
             const navigationControls = document.getElementById('navigation-controls');
             
             setTimeout(() => {
@@ -1437,8 +1470,11 @@
                     categorySelect.appendChild(option);
                 });
 
-                // Carregar a categoria inicial
-                const initialCategory = getQueryParam('categoria') || 'Brincos';
+                // Carregar a categoria inicial seguindo a ordem de prioridade:
+                // 1. Parâmetro na URL
+                // 2. Valor do config.ini
+                // 3. Valor padrão "Brincos"
+                const initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
                 let initialOption = null;
                 
                 // Procurar a opção correspondente à categoria inicial
@@ -1467,6 +1503,12 @@
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
             }
+        }
+
+        // Função para obter parâmetros da URL
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
         }
 
         // Função para criar os botões de subcategorias (banhos)
@@ -1623,11 +1665,6 @@
             currentVisibleFiles = filtered;
             return filtered;
         }
-        
-        function getQueryParam(name) {
-           const urlParams = new URLSearchParams(window.location.search);
-           return urlParams.get(name);
-        }
 
         function displayPage(page, banhosNaCategoria) {
             console.log('Exibindo página:', page);
@@ -1716,9 +1753,6 @@
             });
 
             updatePagination();
-            document.querySelectorAll('.gallery img').forEach(img => {
-                img.addEventListener('contextmenu', (e) => e.preventDefault());
-            });
         }
 
         function updatePagination() {
@@ -1785,7 +1819,6 @@
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
             setupModalInteraction();
-            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
         }
 
         function closeModal() {
@@ -1893,7 +1926,6 @@
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
-                    touchStartTime = Date.now();
                     if (scale > 1) {
                         isDragging = true;
                         startX = e.touches[0].clientX - translateX;
@@ -2022,8 +2054,8 @@
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
-            loadDeliveryConfig(); // Carregar configurações de entrega
-            await loadCategories(); // Carregar categorias já usa o JSON correto
+            loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            await loadCategories(); // Carregar categorias
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
@@ -2033,20 +2065,7 @@
                 option.addEventListener('change', updateDeliveryOption);
             });
             
-            // Proteção global contra download de imagens
-            document.addEventListener('contextmenu', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-            
-            document.addEventListener('dragstart', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
+            // Proteção global contra download de imagens já configurada no DOMContentLoaded
             
             console.log('Carregamento da página concluído');
         };
