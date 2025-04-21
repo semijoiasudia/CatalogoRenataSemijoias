@@ -120,63 +120,7 @@
             box-sizing: border-box;
         }
 
-        /* Estilo para os dropdowns de navegação - layout modificado */
-        .filter-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            padding-bottom: 12px;
-        }
-        
-        .filter-group {
-            display: flex;
-            align-items: center;
-        }
-        
-        /* Grupo especial para o primeiro dropdown com label acima */
-        .filter-group-category {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-        }
-        
-        /* Label específico para o primeiro dropdown (categoria) */
-        .filter-label-category {
-            font-size: 14px;
-            font-weight: 500;
-            color: #555;
-            margin-bottom: 8px;
-            text-align: center;
-            width: 100%;
-        }
-        
-        /* Select específico para o primeiro dropdown (categoria) */
-        .filter-select-category {
-            padding: 8px 15px;
-            font-size: 14px;
-            border-radius: 6px;
-            border: 1px solid #e0e0e0;
-            background-color: #f8f5ed;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #555;
-            width: 100%; /* Dropdown de categoria ocupa toda a largura */
-        }
-        
-        .filter-select-category:hover {
-            border-color: #d4af37;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        
-        .filter-select-category:focus {
-            outline: none;
-            border-color: #d4af37;
-            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
-        }
-
-        /* Novo estilo para os botões de subcategorias (banhos) */
+        /* Estilos para os subcategorias (banhos) como botões */
         .subcategories {
             display: flex;
             justify-content: center;
@@ -238,6 +182,194 @@
             outline: none;
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Estilos da barra de busca */
+        .search-container {
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .search-input {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            padding-right: 50px; /* Espaço para o botão de busca */
+        }
+        
+        .search-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background-color: #d5c7a3;
+            color: #4a4a4a;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+        
+        .search-btn:hover {
+            background-color: #f8f5ed;
+        }
+        
+        /* Container de categorias */
+        .categories-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+            position: relative;
+            margin-top: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Estilos dos Botões de Categoria */
+        .category-btn {
+            background: white;
+            border: 2px solid #f8f5ed;
+            color: #888888; 
+            border-radius: 30px;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* Estados dos Botões */
+        .category-btn.active,
+        .category-btn:hover {
+            background: #f8f5ed;
+            color: #4a4a4a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Efeito de Pressão ao Clicar */
+        .category-btn:active {
+            transform: translateY(1px);
+            transition: transform 0.1s;
+        }
+        
+        /* Efeito de Gradiente nas Bordas */
+        .category-btn::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, 
+                #f8f5ed, 
+                #d5c7a3, 
+                #f8f5ed);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .category-btn:hover::after {
+            opacity: 0.3;
+        }
+        
+        /* Setas de Navegação */
+        .scroll-arrow-btn {
+            background: #f8f5ed;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #4a4a4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .scroll-left {
+            left: 0;
+        }
+        
+        .scroll-right {
+            right: 0;
+        }
+        
+        .scroll-arrow-btn:hover {
+            transform: translateY(-50%) scale(1.1);
+            background: #d5c7a3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Ícones */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.125em;
+            margin-right: 0.5rem;
+        }
+        
+        .icon-gem::before {
+            content: '💎';
+        }
+        
+        .icon-left::before {
+            content: '◀';
+        }
+        
+        .icon-right::before {
+            content: '▶';
+        }
+        
+        .d-none {
+            display: none !important;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .category-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+                margin: 0 0.3rem;
+            }
+            
+            .scroll-arrow-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
         }
         
         .gallery {
@@ -825,32 +957,40 @@
         <div class="cart-label">Sacola</div> <!-- Elemento para o texto -->
     </div>
     
-    <div class="navigation-controls" id="navigation-controls">
-        <!-- Primeiro dropdown com label acima -->
-        <div class="filter-row">
-            <div class="filter-group-category">
-                <label for="categorySelect" class="filter-label-category">Selecione a categoria:</label>
-                <select id="categorySelect" class="filter-select-category" onchange="handleCategoryChange()">
-                    <!-- Opções serão preenchidas pelo JavaScript -->
-                </select>
-            </div>
+    <!-- Campo de busca -->
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
+        <button id="search-button" class="search-btn">🔍</button>
+    </div>
+    
+    <!-- Navegação com botões de categoria -->
+    <div class="categories-nav position-relative">
+        <!-- Botões de navegação para scroll -->
+        <button class="scroll-arrow-btn scroll-left d-none" id="scroll-left">◀</button>
+        
+        <div id="categories-container" class="d-inline-flex px-3 mx-auto">
+            <!-- Botão "Todos" -->
+            <button class="category-btn active" data-category="todos">
+                <span class="icon icon-gem"></span> Todos
+            </button>
+            <!-- Outras categorias serão carregadas dinamicamente -->
         </div>
         
-        <!-- Subcategorias (banhos) como botões -->
-        <div class="filter-group-category">
-            <div class="subcategories" id="subcategories" style="display: none;"></div>
-        </div>
-        
-        <!-- Filtro de ordenação -->
-        <div class="filter-container">
-            <label for="sortFilter">Ordenar por: </label>
-            <select id="sortFilter" onchange="applySort()">
-                <option value="newest" selected>Mais Novos</option>
-                <option value="oldest">Mais Antigos</option>
-                <option value="highestPrice">Maior Preço</option>
-                <option value="lowestPrice">Menor Preço</option>
-            </select>
-        </div>
+        <button class="scroll-arrow-btn scroll-right d-none" id="scroll-right">▶</button>
+    </div>
+    
+    <!-- Subcategorias (banhos) como botões -->
+    <div class="subcategories" id="subcategories" style="display: none;"></div>
+    
+    <!-- Filtro de ordenação -->
+    <div class="filter-container">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
     </div>
     
     <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
@@ -961,6 +1101,7 @@
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
+        let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
         let currentBanho = 'todos';
         let currentSort = 'newest';
         let currentModalIndex = 0;
@@ -991,6 +1132,11 @@
         let isDragging = false;
         let touchStartX = 0;
         
+        // Variáveis para o scroll horizontal de categorias
+        let categoriesContainer = document.getElementById('categories-container');
+        let scrollLeftBtn = document.getElementById('scroll-left');
+        let scrollRightBtn = document.getElementById('scroll-right');
+        let scrollAmount = 300;
 
         // Proteção global contra download de imagens
         document.addEventListener('DOMContentLoaded', function() {
@@ -1015,6 +1161,12 @@
                     return false;
                 }
             });
+            
+            // Configurar funcionalidade de busca
+            setupSearchFunctionality();
+            
+            // Configurar botões de categoria e scroll
+            setupCategoryButtons();
         });
 
         // Carregar configurações do arquivo config.ini
@@ -1059,6 +1211,162 @@
                     }
                 })
                 .catch(error => console.warn("Erro ao processar config.ini:", error));
+        }
+        
+        // Configurar os botões de categoria
+        function setupCategoryButtons() {
+            // Configurar botão "Todos"
+            const todosButton = document.querySelector('.category-btn[data-category="todos"]');
+            if (todosButton) {
+                todosButton.addEventListener('click', function() {
+                    // Remover classe 'active' de todos os botões
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    // Adicionar classe 'active' ao botão "Todos"
+                    this.classList.add('active');
+                    
+                    // Resetar banho para 'todos'
+                    currentBanho = 'todos';
+                    currentCategory = 'todos';
+                    
+                    // Exibir todos os produtos
+                    allFiles = [...allProducts]; // Copiar todos os produtos para allFiles
+                    displayPage(1, new Set());
+                    
+                    // Centralizar o botão na área visível
+                    centerButtonInView(this);
+                });
+            }
+            
+            // Configurar botões de scroll
+            setupScrollButtons();
+        }
+        
+        // Função para centralizar um botão na área visível
+        function centerButtonInView(button) {
+            if (!button) return;
+            
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+        }
+        
+        // Configurar os botões de scroll horizontal
+        function setupScrollButtons() {
+            if (!categoriesContainer || !scrollLeftBtn || !scrollRightBtn) {
+                return;
+            }
+            
+            // Função para verificar e atualizar visibilidade dos botões de scroll
+            function updateScrollButtonsVisibility() {
+                // Mostrar botão esquerdo apenas se houver conteúdo à esquerda para scrollar
+                if (categoriesContainer.scrollLeft > 0) {
+                    scrollLeftBtn.classList.remove('d-none');
+                } else {
+                    scrollLeftBtn.classList.add('d-none');
+                }
+                
+                // Mostrar botão direito apenas se houver mais conteúdo à direita
+                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth;
+                if (categoriesContainer.scrollLeft < maxScrollLeft - 10) { // 10px tolerance
+                    scrollRightBtn.classList.remove('d-none');
+                } else {
+                    scrollRightBtn.classList.add('d-none');
+                }
+            }
+            
+            // Adicionar eventos aos botões
+            scrollLeftBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            scrollRightBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            // Verificar visibilidade inicial
+            updateScrollButtonsVisibility();
+            
+            // Adicionar listener para atualizar visibilidade durante o scroll
+            categoriesContainer.addEventListener('scroll', updateScrollButtonsVisibility);
+            
+            // Atualizar quando a janela for redimensionada
+            window.addEventListener('resize', updateScrollButtonsVisibility);
+        }
+        
+        // Configurar a funcionalidade de busca
+        function setupSearchFunctionality() {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            
+            if (!searchInput || !searchButton) return;
+            
+            searchButton.addEventListener('click', function() {
+                searchProducts(searchInput.value);
+            });
+            
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchProducts(searchInput.value);
+                }
+            });
+        }
+        
+        // Função para buscar produtos
+        function searchProducts(query) {
+            if (!query || query.trim() === '') {
+                return;
+            }
+            
+            query = query.trim().toLowerCase();
+            console.log('Buscando produtos:', query);
+            
+            // Definir onde procurar: em todas as categorias ou apenas na atual
+            let searchSource = (currentCategory === 'todos') ? allProducts : allFiles;
+            
+            // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
+            const filteredFiles = searchSource.filter(file => {
+                const codigo = file.codigo || file.name.split('.')[0];
+                const item = descricoes[codigo] || {};
+                
+                return (
+                    (item.descricao && item.descricao.toLowerCase().includes(query)) ||
+                    (codigo && codigo.toLowerCase().includes(query)) ||
+                    (item.banho && item.banho.toLowerCase().includes(query))
+                );
+            });
+            
+            // Se não encontrou resultados, informar
+            if (filteredFiles.length === 0) {
+                showNotification("Nenhum produto encontrado para esta busca");
+                return;
+            }
+            
+            // Resetar para página 1
+            currentPage = 1;
+            
+            // Atualizar a visualização com os resultados da busca
+            allFiles = filteredFiles;
+            currentVisibleFiles = filteredFiles;
+            displayPage(currentPage, new Set());
+            
+            // Mostrar mensagem de resultados
+            showNotification(`Exibindo ${filteredFiles.length} resultados para "${query}"`);
         }
 
         // Atualizar opção de entrega selecionada
@@ -1159,12 +1467,6 @@
 
         // Exibir a modal da sacola
         function openCartModal() {
-            // Atualizar valores de entrega do config.ini
-            document.querySelector('label[for="deliveryUberlandia"] + .delivery-price').textContent = 
-                `R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
-            document.querySelector('label[for="deliveryOther"] + .delivery-price').textContent = 
-                deliveryConfig.freteOutrasCidades;
-                
             renderCartItems();
             document.getElementById('cartModal').style.display = 'flex';
             document.body.classList.add('modal-open');
@@ -1378,6 +1680,47 @@
             }
         }
 
+        // Função para carregar todos os produtos de todas as categorias
+        async function loadAllProducts() {
+            console.log('Carregando todos os produtos de todas as categorias');
+            allProducts = []; // Limpar array global
+            
+            // Array de promessas para carregar todas as categorias
+            const loadPromises = categoriasAtivas.map(async (categoria) => {
+                const categoryDir = categoria.diretorio;
+                const categoryName = categoria.name;
+                try {
+                    const produtos = await loadProductsForCategory(categoryDir, categoryName);
+                    
+                    // Converter produtos para o formato esperado
+                    const formattedProducts = produtos.map(produto => {
+                        const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                        return {
+                            name: produto.imagem,
+                            path: imagePath,
+                            download_url: imagePath,
+                            codigo: produto.codigo,
+                            category: categoryName
+                        };
+                    });
+                    
+                    return formattedProducts;
+                } catch (error) {
+                    console.error(`Erro ao carregar produtos da categoria ${categoryName}:`, error);
+                    return [];
+                }
+            });
+            
+            // Aguardar todas as promessas serem resolvidas
+            const productsArrays = await Promise.all(loadPromises);
+            
+            // Juntar todos os produtos em um único array
+            allProducts = productsArrays.flat();
+            
+            console.log(`Total de produtos carregados: ${allProducts.length}`);
+            return allProducts;
+        }
+
         // Carregar produtos para uma categoria específica através do seu JSON
         async function loadProductsForCategory(categoryDir, categoryName) {
             try {
@@ -1389,9 +1732,6 @@
                 
                 const data = await response.json();
                 console.log(`Carregados ${data.produtos.length} produtos da categoria ${data.categoria || categoryName}`);
-                
-                // Limpar descrições anteriores e adicionar novos produtos
-                descricoes = {};
                 
                 // Adicionar os produtos ao objeto descricoes
                 data.produtos.forEach(produto => {
@@ -1410,79 +1750,89 @@
             }
         }
 
-        // Função de tratamento de mudança de categoria com rolagem
-        function handleCategoryChange() {
-            const categorySelect = document.getElementById('categorySelect');
-            const selectedOption = categorySelect.options[categorySelect.selectedIndex];
-            const categoryDir = selectedOption.dataset.diretorio;
-            const categoryName = selectedOption.textContent;
-            
-            if (isCategoryChanging) return; // Ignora ação se já estiver mudando de categoria
-            isCategoryChanging = true;
-            
-            console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
-            loadImages(categoryDir, categoryName);
-
-            // Rolar até o elemento de navegação
-            const navigationControls = document.getElementById('navigation-controls');
-            
-            setTimeout(() => {
-                navigationControls.scrollIntoView({ behavior: 'smooth' });
-            }, 100);
-            setTimeout(() => {
-                isCategoryChanging = false;
-            }, 300);
-        }
-
-        // Carregar categorias a partir do JSON e preencher o dropdown de categorias
+        // Modificar a função loadCategories para criar botões em vez do dropdown
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
                 
-                const categorySelect = document.getElementById('categorySelect');
-                categorySelect.innerHTML = '';
-
-                // Ordenar as categorias por nome antes de criar as opções
+                // Vamos substituir o dropdown pelo container de botões
+                const categoriesContainer = document.getElementById('categories-container');
+                
+                // Manter o botão "Todos" que já está no container
+                
+                // Ordenar as categorias por nome antes de criar os botões
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
                 
-                // Criar opções para cada categoria ativa
+                // Criar botões para cada categoria ativa
                 categoriasAtivas.forEach(categoria => {
-                    const option = document.createElement('option');
-                    option.value = categoria.name;
-                    option.textContent = categoria.name;
-                    option.dataset.diretorio = categoria.diretorio;
-                    categorySelect.appendChild(option);
+                    const button = document.createElement('button');
+                    button.className = 'category-btn';
+                    button.innerHTML = `<span class="icon icon-gem"></span> ${categoria.name}`;
+                    button.dataset.category = categoria.name;
+                    button.dataset.diretorio = categoria.diretorio;
+                    
+                    button.addEventListener('click', function() {
+                        // Remover classe 'active' de todos os botões
+                        document.querySelectorAll('.category-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                        
+                        // Adicionar classe 'active' ao botão clicado
+                        this.classList.add('active');
+                        
+                        // Centralizar o botão na área visível
+                        centerButtonInView(this);
+                        
+                        // Carregar imagens da categoria selecionada
+                        const categoryDir = this.dataset.diretorio;
+                        const categoryName = this.textContent.replace('💎 ', '');
+                        
+                        console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+                        loadImages(categoryDir, categoryName);
+                        
+                        // Resetar banho para 'todos'
+                        currentBanho = 'todos';
+                    });
+                    
+                    categoriesContainer.appendChild(button);
                 });
+
+                // Carregar todos os produtos de todas as categorias
+                await loadAllProducts();
 
                 // Carregar a categoria inicial seguindo a ordem de prioridade:
                 // 1. Parâmetro na URL
                 // 2. Valor do config.ini
                 // 3. Valor padrão "Brincos"
                 const initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
-                let initialOption = null;
+                let initialButton = null;
                 
-                // Procurar a opção correspondente à categoria inicial
-                for (let i = 0; i < categorySelect.options.length; i++) {
-                    if (categorySelect.options[i].textContent.trim().toLowerCase() === initialCategory.toLowerCase()) {
-                        initialOption = categorySelect.options[i];
-                        categorySelect.selectedIndex = i;
+                // Procurar o botão correspondente à categoria inicial
+                for (const button of document.querySelectorAll('.category-btn')) {
+                    if (button.textContent.trim().replace('💎 ', '').toLowerCase() === initialCategory.toLowerCase() && 
+                        button.dataset.category !== 'todos') {
+                        initialButton = button;
                         break;
                     }
                 }
                 
-                if (initialOption) {
-                    console.log('Carregando categoria inicial:', initialOption.textContent.trim());
-                    loadImages(initialOption.dataset.diretorio, initialOption.textContent.trim());
-                } else if (categorySelect.options.length > 0) {
-                    // Se a categoria inicial não for encontrada, carregar a primeira categoria
-                    categorySelect.selectedIndex = 0;
-                    const defaultOption = categorySelect.options[0];
-                    console.log('Carregando categoria padrão:', defaultOption.textContent);
-                    loadImages(defaultOption.dataset.diretorio, defaultOption.textContent.trim());
+                if (initialButton) {
+                    console.log('Carregando categoria inicial:', initialButton.textContent.trim().replace('💎 ', ''));
+                    // Simular clique no botão
+                    initialButton.click();
                 } else {
-                    console.error('Nenhuma categoria disponível.');
-                    alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
+                    // Se a categoria inicial não for encontrada, carregar "Todos"
+                    const todosButton = document.querySelector('.category-btn[data-category="todos"]');
+                    if (todosButton) {
+                        todosButton.click();
+                    } else if (document.querySelector('.category-btn')) {
+                        // Ou a primeira categoria disponível
+                        document.querySelector('.category-btn').click();
+                    } else {
+                        console.error('Nenhuma categoria disponível.');
+                        alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
+                    }
                 }
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
@@ -2040,21 +2390,6 @@
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
-            
-            // Aguardar um pequeno intervalo para garantir que o config.ini foi carregado
-            setTimeout(() => {
-                // Atualizar valores de entrega na interface
-                const freteUberlandiaEl = document.querySelector('label[for="deliveryUberlandia"] + .delivery-price');
-                const freteOutrasCidadesEl = document.querySelector('label[for="deliveryOther"] + .delivery-price');
-                
-                if (freteUberlandiaEl) {
-                    freteUberlandiaEl.textContent = `R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
-                }
-                if (freteOutrasCidadesEl) {
-                    freteOutrasCidadesEl.textContent = deliveryConfig.freteOutrasCidades;
-                }
-            }, 500);
-            
             await loadCategories(); // Carregar categorias
             loadRodape();
             setupFaleConoscoButton();
