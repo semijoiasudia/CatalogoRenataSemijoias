@@ -1115,29 +1115,14 @@
         
         // Função para centralizar um botão na área visível
         function centerButtonInView(button) {
-            const categoriesContainer = document.getElementById('categories-container');
-            if (!categoriesContainer) return;
+            if (!button) return;
             
-            // Calcular o centro do botão e o centro do container
-            const containerWidth = categoriesContainer.offsetWidth;
-            const buttonWidth = button.offsetWidth;
-            const buttonOffsetLeft = button.offsetLeft;
-            
-            // Calcular a posição de scroll que centralizará o botão
-            const targetScrollPosition = buttonOffsetLeft - (containerWidth / 2) + (buttonWidth / 2);
-            
-            // Aplicar a rolagem suave
-            categoriesContainer.scrollTo({
-                left: targetScrollPosition,
-                behavior: 'smooth'
+            // Usar o método nativo scrollIntoView com opção 'center'
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
             });
-            
-            // Forçar atualização da visibilidade dos botões de scroll após a centralização
-            setTimeout(function() {
-                if (typeof updateScrollButtonsVisibility === 'function') {
-                    updateScrollButtonsVisibility();
-                }
-            }, 400);
         }
         
         // Função para configurar os botões de scroll horizontal para categorias
