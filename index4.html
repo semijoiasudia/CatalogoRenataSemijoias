@@ -218,7 +218,7 @@
             right: 0;
             top: 0;
             height: 100%;
-            background-color: #d5c7a3;
+            background-color: #f8f5ed;
             color: #4a4a4a;
             border: none;
             border-radius: 0 4px 4px 0;
@@ -227,7 +227,7 @@
         }
         
         .search-btn:hover {
-            background-color: #f8f5ed;
+            background-color: #e8e8e8;
         }
         
         /* Container de categorias */
@@ -948,6 +948,9 @@
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
+    <div class="catalogo-container">
+        <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
+    </div>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -980,11 +983,17 @@
         <button class="scroll-arrow-btn scroll-right d-none" id="scroll-right">▶</button>
     </div>
     
-    <!-- Subcategorias (banhos) como botões -->
-    <div class="subcategories" id="subcategories" style="display: none;"></div>
+    <!-- Subcategorias (banhos) como dropdown -->
+    <div class="filter-container" style="margin-top: 20px; margin-bottom: 20px;">
+        <label for="banhoFilter">Selecionar o banho: </label>
+        <select id="banhoFilter" onchange="filterByBanhoDropdown()">
+            <option value="todos" selected>Todos</option>
+            <!-- Outras opções de banho serão adicionadas dinamicamente -->
+        </select>
+    </div>
     
     <!-- Filtro de ordenação -->
-    <div class="filter-container">
+    <div class="filter-container" style="margin-bottom: 30px;">
         <label for="sortFilter">Ordenar por: </label>
         <select id="sortFilter" onchange="applySort()">
             <option value="newest" selected>Mais Novos</option>
@@ -1847,43 +1856,47 @@
            return urlParams.get(name);
         }
 
-        // Função para criar os botões de subcategorias (banhos)
-        function criarBotoesSubcategorias(banhosNaCategoria) {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = '';
-
-            if (banhosNaCategoria.size === 0) {
-                subcategoriesDiv.style.display = 'none';
-                return;
+        // Função para criar o dropdown de banhos
+        function criarDropdownBanhos(banhosNaCategoria) {
+            const banhoFilter = document.getElementById('banhoFilter');
+            
+            // Limpar opções existentes exceto a primeira (Todos)
+            while (banhoFilter.options.length > 1) {
+                banhoFilter.remove(1);
             }
 
-            subcategoriesDiv.style.display = 'flex';
-
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.dataset.banho = 'todos';
-            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
-            botaoTodos.onclick = () => filterByBanho('todos');
-            subcategoriesDiv.appendChild(botaoTodos);
+            if (banhosNaCategoria.size === 0) {
+                return;
+            }
 
             // Ordenar os banhos alfabeticamente
             const banhosArray = Array.from(banhosNaCategoria);
             banhosArray.sort();
 
+            // Adicionar opções ao dropdown
             banhosArray.forEach(banho => {
                 if (banho && banho !== '') {
-                    const botaoBanho = document.createElement('button');
+                    const option = document.createElement('option');
                     let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
                     if (banho === '2 banhos') {
                         displayText = '2 Banhos';
                     }
-                    botaoBanho.textContent = displayText;
-                    botaoBanho.dataset.banho = banho;
-                    botaoBanho.className = currentBanho === banho ? 'active' : '';
-                    botaoBanho.onclick = () => filterByBanho(banho);
-                    subcategoriesDiv.appendChild(botaoBanho);
+                    option.textContent = displayText;
+                    option.value = banho;
+                    banhoFilter.appendChild(option);
                 }
             });
+            
+            // Definir valor atual
+            banhoFilter.value = currentBanho;
+        }
+
+        // Função para filtrar por banho usando o dropdown
+        function filterByBanhoDropdown() {
+            const banhoFilter = document.getElementById('banhoFilter');
+            currentBanho = banhoFilter.value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
         }
 
         // Carregar imagens a partir dos produtos de uma categoria
@@ -1929,7 +1942,7 @@
                 });
 
                 displayPage(currentPage, banhosNaCategoria);
-                criarBotoesSubcategorias(banhosNaCategoria);
+                criarDropdownBanhos(banhosNaCategoria);
                 console.log('Imagens carregadas com sucesso para:', categoryName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
