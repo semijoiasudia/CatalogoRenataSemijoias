@@ -2,138 +2,1170 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Carrossel Quadrado 300px</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Semijoias</title>
+    
+    <!-- CSS incorporado -->
     <style>
-        .carousel {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 20px auto;
-        }
-
-        .carousel__viewport {
-            display: flex;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-            list-style: none;
+        /* Reset básico e estilos globais */
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-        }
-
-        .carousel__slide {
-            flex: 0 0 300px;
-            scroll-snap-align: center;
-            position: relative;
-            height: 300px;
-        }
-
-        .carousel__snapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .carousel__snapper img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .descricao-produto {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px;
-            width: 100%;
             box-sizing: border-box;
-            font-size: 14px;
         }
-
-        .carousel__navigation-button {
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.5;
+            color: #212529;
+        }
+        
+        /* Variáveis de cores */
+        :root {
+            --cor-primaria: #f8f5ed;
+            --cor-secundaria: #d5c7a3; 
+            --dark-color: #4a4a4a;
+            --light-color: #f8f9fa;
+        }
+        
+        /* Utilitários do Bootstrap que precisamos */
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media (min-width: 576px) {
+            .container {
+                max-width: 540px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                max-width: 720px;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                max-width: 960px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        
+        .col-12, .col-md-4, .col-md-6, .col-md-8, .col-lg-3 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .col-md-4 {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+            .col-md-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .col-md-8 {
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
+            }
+            .mx-auto {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+        }
+        
+        /* Utilidades de espaçamento */
+        .mb-3 { margin-bottom: 1rem !important; }
+        .mb-4 { margin-bottom: 1.5rem !important; }
+        .mt-5 { margin-top: 3rem !important; }
+        .py-3 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+        .px-3 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        
+        /* Classes de alinhamento */
+        .text-center { text-align: center !important; }
+        .align-items-center { align-items: center !important; }
+        .justify-content-center { justify-content: center !important; }
+        .d-flex { display: flex !important; }
+        .d-inline-flex { display: inline-flex !important; }
+        .d-none { display: none !important; }
+        
+        @media (min-width: 768px) {
+            .d-md-flex {
+                display: flex !important;
+            }
+        }
+        
+        /* Formulários e inputs */
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
             background-color: #fff;
-            border: 2px solid #333;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
         }
-
-        .carousel__prev, .carousel__next {
+        
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        
+        /* Alertas */
+        .alert {
+            position: relative;
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+        
+        .alert-info {
+            color: #0c5460;
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+        }
+        
+        .alert-warning {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        
+        /* Estilo do logo */
+        .logo {
+            max-height: 100px;
+            width: auto;
+        }
+        
+        /* Ícones básicos (substitutos para Font Awesome) */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.125em;
+            margin-right: 0.5rem;
+        }
+        
+        .icon-search::before {
+            content: '🔍';
+        }
+        
+        .icon-grid::before {
+            content: '▤';
+        }
+        
+        .icon-gem::before {
+            content: '💎';
+        }
+        
+        .icon-left::before {
+            content: '◀';
+        }
+        
+        .icon-right::before {
+            content: '▶';
+        }
+        
+        /* Estilos da barra de busca */
+        .search-container {
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        
+        .search-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background-color: var(--cor-secundaria);
+            color: var(--dark-color);
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .search-btn:hover {
+            background-color: var(--cor-primaria);
+            color: var(--dark-color);
+        }
+        
+        /* Container de categorias */
+        .categories-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        /* Estilos dos Botões de Categoria */
+        .category-btn {
+            background: white;
+            border: 2px solid var(--cor-primaria);
+            color: var(--cor-primaria);
+            border-radius: 30px;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Estados dos Botões */
+        .category-btn.active,
+        .category-btn:hover {
+            background: var(--cor-primaria);
+            color: var(--dark-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Efeito de Pressão ao Clicar */
+        .category-btn:active {
+            transform: translateY(1px);
+            transition: transform 0.1s;
+        }
+        
+        /* Ícones nos Botões */
+        .category-btn .icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .category-btn:hover .icon {
+            transform: rotate(15deg);
+        }
+        
+        /* Setas de Navegação */
+        .scroll-arrow-btn {
+            background: var(--cor-primaria);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            transition: all 0.2s ease;
+            cursor: pointer;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255,255,255,0.8);
-            color: #333;
-            padding: 8px 12px;
-            border-radius: 50%;
-            text-decoration: none;
+            z-index: 10;
+        }
+        
+        .scroll-left {
+            left: 0;
+        }
+        
+        .scroll-right {
+            right: 0;
+        }
+        
+        .scroll-arrow-btn:hover {
+            transform: translateY(-50%) scale(1.1);
+            background: var(--cor-secundaria);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Efeito de Gradiente nas Bordas */
+        .category-btn::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, 
+                var(--cor-primaria), 
+                var(--cor-secundaria), 
+                var(--cor-primaria));
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .category-btn:hover::after {
+            opacity: 0.3;
+        }
+        
+        /* Estilos de cards de produtos */
+        .product-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 4px; 
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            background-color: white;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .product-img-container {
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fbfbfb;
+        }
+        
+        .product-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-code {
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 5px;
+        }
+        
+        .product-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            height: 40px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        
+        .product-price {
+            font-size: 1.2rem;
+            color: var(--dark-color);
             font-weight: bold;
         }
-
-        .carousel__prev { left: -40px; }
-        .carousel__next { right: -40px; }
-
-        @media (hover: hover) {
-            .carousel__snapper {
-                animation-name: tonext, snap;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
+        
+        .product-bath {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        
+        /* Estilos do modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1050;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        
+        .modal.show {
+            display: block;
+        }
+        
+        .modal-dialog {
+            position: relative;
+            width: auto;
+            margin: 0.5rem auto;
+            max-width: 800px;
+        }
+        
+        .modal-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #fff;
+            background-clip: padding-box;
+            border-radius: 0.3rem;
+            outline: 0;
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            border-top-left-radius: 0.3rem;
+            border-top-right-radius: 0.3rem;
+        }
+        
+        .modal-title {
+            margin-bottom: 0;
+            line-height: 1.5;
+            font-size: 1.25rem;
+        }
+        
+        .btn-close {
+            background: transparent;
+            border: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        
+        .modal-body {
+            position: relative;
+            flex: 1 1 auto;
+            padding: 1rem;
+        }
+        
+        .modal-product-image {
+            max-height: 300px;
+            max-width: 100%;
+            object-fit: contain;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .modal-product-details {
+            margin-top: 20px;
+        }
+        
+        .modal-product-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .modal-product-code {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .modal-product-price {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .modal-product-bath {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Loading spinner */
+        .spinner-border {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            vertical-align: text-bottom;
+            border: 0.25em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+        }
+        
+        @keyframes spinner-border {
+            to { transform: rotate(360deg); }
+        }
+        
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        #loading-indicator {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .product-img-container {
+                height: 150px;
+            }
+            
+            .category-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+                margin: 0 0.3rem;
+            }
+            
+            .scroll-arrow-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .product-title {
+                font-size: 0.9rem;
+                height: 35px;
+            }
+            
+            .product-price {
+                font-size: 1rem;
+            }
+            
+            .product-bath {
+                font-size: 0.8rem;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Produtos em Destaque</h1>
-    
-    <section class="carousel" aria-label="Galeria">
-        <ol class="carousel__viewport"></ol>
-        <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list"></ol>
-        </aside>
-    </section>
+    <header class="container-fluid">
+        <div class="row py-3 align-items-center">
+            <div class="col-12 text-center">
+                <img src="imagens/logo.png" alt="Logo da Loja" class="logo">
+            </div>
+        </div>
+    </header>
 
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto">
+                <div class="search-container">
+                    <input type="text" id="search-input" class="form-control" placeholder="Buscar produtos...">
+                    <button id="search-button" class="btn search-btn">
+                        <span class="icon icon-search"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="categories-nav position-relative">
+                    <!-- Botões de navegação para scroll -->
+                    <button class="scroll-arrow-btn scroll-left d-none" id="scroll-left">
+                        <span class="icon icon-left"></span>
+                    </button>
+                    
+                    <div id="categories-container" class="d-inline-flex px-3 mx-auto">
+                        <!-- Categorias serão carregadas aqui via JavaScript -->
+                        <button class="category-btn active" data-category="all">
+                            <span class="icon icon-grid"></span> Todos
+                        </button>
+                    </div>
+                    
+                    <button class="scroll-arrow-btn scroll-right d-none" id="scroll-right">
+                        <span class="icon icon-right"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 id="category-title" class="text-center mb-4">Todos os Produtos</h2>
+        
+        <div id="loading-indicator" class="d-none">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <p>Carregando produtos...</p>
+        </div>
+        
+        <div id="products-container" class="row">
+            <!-- Produtos serão carregados aqui via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal para visualização detalhada do produto -->
+    <div class="modal" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detalhes do Produto</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Fechar">×</button>
+                </div>
+                <div class="modal-body" id="modal-product-details">
+                    <!-- Detalhes do produto serão carregados aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid mt-5 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>© 2025 Catálogo de Semijoias. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
-    fetch('Catalogos/Destaques/ItensDescricao.json')
-        .then(response => response.json())
-        .then(data => {
-            const produtos = data.produtos;
-            const viewport = document.querySelector('.carousel__viewport');
-            const navList = document.querySelector('.carousel__navigation-list');
+        // Variáveis globais
+        let allProducts = []; // Armazenará todos os produtos carregados
+        let currentCategory = 'all'; // Categoria atual selecionada
+        let activeCategories = []; // Lista de categorias ativas
+        let scrollAmount = 300; // Quantidade de scroll horizontal
+        let productModal; // Referência ao modal
 
-            produtos.forEach((produto, index) => {
-                const slideId = `carousel__slide${index + 1}`;
-                const totalSlides = produtos.length;
-
-                const slide = document.createElement('li');
-                slide.id = slideId;
-                slide.className = 'carousel__slide';
-                slide.tabIndex = 0;
-
-                slide.innerHTML = `
-                    <div class="carousel__snapper">
-                        <img src="${produto.pastaFotos}${produto.imagem}" 
-                             alt="${produto.descricao}">
-                        <div class="descricao-produto">
-                            <p>${produto.descricao}</p>
-                            <p>💵 R$ ${produto.preco}</p>
-                        </div>
-                        <a href="#carousel__slide${index === 0 ? totalSlides : index}" 
-                           class="carousel__prev">‹</a>
-                        <a href="#carousel__slide${(index + 2) > totalSlides ? 1 : index + 2}" 
-                           class="carousel__next">›</a>
-                    </div>`;
-
-                viewport.appendChild(slide);
-
-                const navItem = document.createElement('li');
-                navItem.className = "carousel__navigation-item";
-                navItem.innerHTML = `<a href="#${slideId}" class="carousel__navigation-button"></a>`;
-                navList.appendChild(navItem);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar o modal
+            productModal = {
+                modal: document.getElementById('productModal'),
+                show: function() {
+                    this.modal.classList.add('show');
+                },
+                hide: function() {
+                    this.modal.classList.remove('show');
+                }
+            };
+            
+            // Configurar botão de fechar do modal
+            document.querySelector('.btn-close').addEventListener('click', function() {
+                productModal.hide();
             });
+            
+            // Fechar modal ao clicar fora dele
+            window.addEventListener('click', function(event) {
+                if (event.target === productModal.modal) {
+                    productModal.hide();
+                }
+            });
+            
+            // Carregar categorias ativas do arquivo JSON
+            loadActiveCategories();
+            
+            // Configurar o evento de busca
+            setupSearch();
+            
+            // Configurar os botões de navegação de categorias
+            setupCategoryScrollButtons();
+            
+            // Adicionar o botão "Todos" para mostrar todos os produtos
+            const allButton = document.querySelector('.category-btn[data-category="all"]');
+            if (allButton) {
+                allButton.addEventListener('click', function() {
+                    currentCategory = 'all';
+                    document.getElementById('category-title').textContent = 'Todos os Produtos';
+                    displayProducts(allProducts);
+                    
+                    // Remover classe 'active' de todos os botões
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    // Adicionar classe 'active' ao botão "Todos"
+                    this.classList.add('active');
+                });
+            }
         });
+
+        // Função para carregar categorias ativas do arquivo JSON
+        function loadActiveCategories() {
+            showLoading(true);
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'CategoriasAtivas.json', true);
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            activeCategories = JSON.parse(xhr.responseText);
+                            // Processar categorias
+                            loadCategories(activeCategories);
+                            // Carregar produtos de todas as categorias
+                            loadAllProducts(activeCategories);
+                        } catch (error) {
+                            console.error('Erro ao processar arquivo de categorias:', error);
+                            handleCategoriesError();
+                        }
+                    } else {
+                        console.error('Erro ao carregar arquivo de categorias:', xhr.status);
+                        handleCategoriesError();
+                    }
+                }
+            };
+            
+            xhr.onerror = function() {
+                console.error('Erro de rede ao carregar as categorias');
+                handleCategoriesError();
+            };
+            
+            xhr.send();
+        }
+
+        // Função para lidar com erro ao carregar categorias
+        function handleCategoriesError() {
+            document.getElementById('categories-container').innerHTML = `
+                <div class="alert alert-danger" role="alert">
+                    Erro ao carregar categorias. Verifique se o arquivo CategoriasAtivas.json existe na raiz do projeto.
+                </div>
+            `;
+            showLoading(false);
+        }
+
+        // Configurar a funcionalidade de busca
+        function setupSearch() {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            
+            searchButton.addEventListener('click', function() {
+                searchProducts(searchInput.value);
+            });
+            
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchProducts(searchInput.value);
+                }
+            });
+            
+            // Limpar a busca quando o campo estiver vazio
+            searchInput.addEventListener('input', function() {
+                if (this.value === '') {
+                    filterProductsByCategory(currentCategory);
+                }
+            });
+        }
+
+        // Função para carregar todos os produtos de todas as categorias
+        function loadAllProducts(categories) {
+            showLoading(true);
+            allProducts = []; // Limpar a lista de produtos
+            
+            let loadedCategories = 0;
+            const totalCategories = categories.length;
+            
+            categories.forEach(category => {
+                const categoryDirectory = getCategoryDirectory(category);
+                const categoryName = getCategoryFolderName(category);
+                
+                loadCategoryProducts(categoryName, function(products) {
+                    if (products && products.length > 0) {
+                        // Adicionar a categoria a cada produto
+                        products.forEach(product => {
+                            product.category = categoryName;
+                            product.displayName = category.name;
+                        });
+                        
+                        // Adicionar produtos à lista global
+                        allProducts = allProducts.concat(products);
+                    }
+                    
+                    loadedCategories++;
+                    
+                    // Quando todas as categorias forem carregadas
+                    if (loadedCategories === totalCategories) {
+                        showLoading(false);
+                        if (allProducts.length > 0) {
+                            // Formatar descrições dos produtos (primeira letra maiúscula, resto minúsculo)
+                            allProducts.forEach(product => {
+                                if (product.descricao) {
+                                    product.descricao = capitalizeFirstLetter(product.descricao);
+                                }
+                            });
+                            
+                            displayProducts(allProducts);
+                        } else {
+                            handleEmptyProductList();
+                        }
+                    }
+                });
+            });
+            
+            // Se nenhum arquivo for carregado em tempo hábil
+            setTimeout(function() {
+                if (allProducts.length === 0) {
+                    showLoading(false);
+                    handleEmptyProductList();
+                }
+            }, 5000); // 5 segundos de timeout
+        }
+
+        // Função para obter o diretório da categoria
+        function getCategoryDirectory(category) {
+            return category.diretorio;
+        }
+
+        // Função para obter o nome da pasta da categoria
+        function getCategoryFolderName(category) {
+            // Extrair o nome da pasta do diretório completo
+            const parts = category.diretorio.split('/');
+            return parts[parts.length - 1];
+        }
+
+        // Função para capitalizar a primeira letra e deixar o resto minúsculo
+        function capitalizeFirstLetter(string) {
+            if (!string) return string;
+            return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        }
+
+        // Função para lidar com a lista de produtos vazia
+        function handleEmptyProductList() {
+            document.getElementById('products-container').innerHTML = `
+                <div class="col-12 text-center">
+                    <div class="alert alert-warning" role="alert">
+                        Nenhum produto encontrado. Verifique se os arquivos JSON estão corretos na estrutura de pastas.
+                    </div>
+                    <p>Exemplo de estrutura esperada:</p>
+                    <pre>Catalogos/Braceletes/ItensDescricao.json</pre>
+                </div>
+            `;
+        }
+
+        // Função para carregar produtos de uma categoria específica
+        function loadCategoryProducts(category, callback) {
+            const xhr = new XMLHttpRequest();
+            const url = `Catalogos/${category}/ItensDescricao.json`;
+            
+            xhr.open('GET', url, true);
+            
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            const data = JSON.parse(xhr.responseText);
+                            if (data && data.produtos && Array.isArray(data.produtos)) {
+                                callback(data.produtos);
+                            } else {
+                                console.error(`Estrutura de dados inválida na categoria ${category}`);
+                                callback([]);
+                            }
+                        } catch (error) {
+                            console.error(`Erro ao processar JSON da categoria ${category}:`, error);
+                            callback([]);
+                        }
+                    } else {
+                        console.error(`Erro ao carregar arquivo JSON da categoria ${category}:`, xhr.status);
+                        callback([]);
+                    }
+                }
+            };
+            
+            xhr.onerror = function() {
+                console.error(`Erro de rede ao carregar a categoria ${category}`);
+                callback([]);
+            };
+            
+            xhr.send();
+        }
+
+        // Função para carregar as categorias
+        function loadCategories(categories) {
+            const categoriesContainer = document.getElementById('categories-container');
+            
+            categories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'category-btn';
+                
+                // Adicionar ícone e texto ao botão
+                button.innerHTML = `
+                    <span class="icon icon-gem"></span> ${category.name}
+                `;
+                
+                button.dataset.category = getCategoryFolderName(category);
+                
+                button.addEventListener('click', function() {
+                    // Remover classe 'active' de todos os botões
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Adicionar classe 'active' ao botão clicado
+                    this.classList.add('active');
+                    
+                    const selectedCategory = this.dataset.category;
+                    currentCategory = selectedCategory;
+                    
+                    // Atualizar o título da categoria
+                    document.getElementById('category-title').textContent = category.name;
+                    
+                    // Filtrar e exibir produtos da categoria selecionada
+                    filterProductsByCategory(selectedCategory);
+                    
+                    // Limpar campo de busca
+                    document.getElementById('search-input').value = '';
+                });
+                
+                categoriesContainer.appendChild(button);
+            });
+        }
+
+        // Função para filtrar produtos por categoria
+        function filterProductsByCategory(category) {
+            if (category === 'all') {
+                displayProducts(allProducts);
+            } else {
+                const filteredProducts = allProducts.filter(product => product.category === category);
+                displayProducts(filteredProducts);
+            }
+        }
+
+        // Função para buscar produtos
+        function searchProducts(query) {
+            if (!query || query.trim() === '') {
+                // Se a busca estiver vazia, mostrar produtos da categoria atual
+                filterProductsByCategory(currentCategory);
+                return;
+            }
+            
+            query = query.trim().toLowerCase();
+            
+            // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
+            let searchResults;
+            
+            if (currentCategory === 'all') {
+                // Buscar em todos os produtos
+                searchResults = allProducts.filter(product => 
+                    (product.descricao && product.descricao.toLowerCase().includes(query)) ||
+                    (product.codigo && product.codigo.toLowerCase().includes(query)) ||
+                    (product.banho && product.banho.toLowerCase().includes(query))
+                );
+            } else {
+                // Buscar apenas na categoria atual
+                searchResults = allProducts.filter(product => 
+                    product.category === currentCategory && 
+                    ((product.descricao && product.descricao.toLowerCase().includes(query)) ||
+                     (product.codigo && product.codigo.toLowerCase().includes(query)) ||
+                     (product.banho && product.banho.toLowerCase().includes(query)))
+                );
+            }
+            
+            // Atualizar o título para mostrar os resultados da busca
+            document.getElementById('category-title').textContent = 
+                `Resultados da busca: "${query}" (${searchResults.length} produtos)`;
+            
+            displayProducts(searchResults);
+        }
+
+        // Função para exibir os produtos
+        function displayProducts(products) {
+            const productsContainer = document.getElementById('products-container');
+            productsContainer.innerHTML = '';
+            
+            if (!products || products.length === 0) {
+                productsContainer.innerHTML = `
+                    <div class="col-12 text-center">
+                        <div class="alert alert-info" role="alert">
+                            Nenhum produto encontrado.
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+            
+            products.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'col-6 col-md-4 col-lg-3 mb-4';
+                
+                // Determinar o caminho da imagem
+                const imagePath = product.pastaFotos ? 
+                    product.pastaFotos + product.imagem : 
+                    `Catalogos/${product.category}/${product.codigo}.jpg`;
+                
+                productCard.innerHTML = `
+                    <div class="product-card" data-product-id="${product.codigo}">
+                        <div class="product-img-container">
+                            <img src="${imagePath}" alt="${product.descricao}" class="product-img" 
+                                 onerror="this.src='imagens/produto-sem-foto.png'">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-code">Cód: ${product.codigo}</div>
+                            <div class="product-title">${product.descricao}</div>
+                            <div class="product-price">R$ ${product.preco}</div>
+                            <div class="product-bath">${product.banho ? capitalizeFirstLetter(product.banho) : 'Banho não especificado'}</div>
+                        </div>
+                    </div>
+                `;
+                
+                // Adicionar evento de clique para abrir o modal
+                const card = productCard.querySelector('.product-card');
+                card.addEventListener('click', function() {
+                    openProductModal(product);
+                });
+                
+                productsContainer.appendChild(productCard);
+            });
+        }
+
+        // Função para abrir o modal com detalhes do produto
+        function openProductModal(product) {
+            const modalTitle = document.getElementById('productModalLabel');
+            const modalBody = document.getElementById('modal-product-details');
+            
+            modalTitle.textContent = product.descricao;
+            
+            // Determinar o caminho da imagem
+            const imagePath = product.pastaFotos ? 
+                product.pastaFotos + product.imagem : 
+                `Catalogos/${product.category}/${product.codigo}.jpg`;
+            
+            modalBody.innerHTML = `
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <img src="${imagePath}" alt="${product.descricao}" class="modal-product-image" 
+                             onerror="this.src='imagens/produto-sem-foto.png'">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="modal-product-details">
+                            <div class="modal-product-code">Código: ${product.codigo}</div>
+                            <div class="modal-product-title">${product.descricao}</div>
+                            <div class="modal-product-price">R$ ${product.preco}</div>
+                            <div class="modal-product-bath">${product.banho ? capitalizeFirstLetter(product.banho) : 'Banho não especificado'}</div>
+                            ${product.precoConsignado ? `<div class="modal-product-consigned">Preço Consignado: R$ ${product.precoConsignado}</div>` : ''}
+                            ${product.dataUltimaEntrada ? `<div class="modal-product-date">Data de Entrada: ${product.dataUltimaEntrada}</div>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            productModal.show();
+        }
+
+        // Função para mostrar/ocultar o indicador de carregamento
+        function showLoading(show) {
+            const loadingIndicator = document.getElementById('loading-indicator');
+            if (show) {
+                loadingIndicator.classList.remove('d-none');
+            } else {
+                loadingIndicator.classList.add('d-none');
+            }
+        }
+        
+        // Função para configurar os botões de scroll horizontal para categorias
+        function setupCategoryScrollButtons() {
+            const categoriesContainer = document.getElementById('categories-container');
+            const scrollLeftBtn = document.getElementById('scroll-left');
+            const scrollRightBtn = document.getElementById('scroll-right');
+            
+            // Verificar se os elementos existem
+            if (!categoriesContainer || !scrollLeftBtn || !scrollRightBtn) {
+                return;
+            }
+            
+            // Função para verificar e atualizar visibilidade dos botões de scroll
+            function updateScrollButtonsVisibility() {
+                // Mostrar botão esquerdo apenas se houver conteúdo à esquerda para scrollar
+                if (categoriesContainer.scrollLeft > 0) {
+                    scrollLeftBtn.classList.remove('d-none');
+                } else {
+                    scrollLeftBtn.classList.add('d-none');
+                }
+                
+                // Mostrar botão direito apenas se houver mais conteúdo à direita
+                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth;
+                if (categoriesContainer.scrollLeft < maxScrollLeft - 10) { // 10px tolerance
+                    scrollRightBtn.classList.remove('d-none');
+                } else {
+                    scrollRightBtn.classList.add('d-none');
+                }
+            }
+            
+            // Adicionar eventos aos botões
+            scrollLeftBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            scrollRightBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            // Verificar visibilidade inicial
+            updateScrollButtonsVisibility();
+            
+            // Adicionar listener para atualizar visibilidade durante o scroll
+            categoriesContainer.addEventListener('scroll', updateScrollButtonsVisibility);
+            
+            // Atualizar quando a janela for redimensionada
+            window.addEventListener('resize', updateScrollButtonsVisibility);
+        }
     </script>
 </body>
 </html>
