@@ -28,11 +28,10 @@
             overflow-x: hidden;
         }
         
-        /* Container da logo - Fundo branco */
+        /* Container da logo - Sem bordas e sombras */
         .logo-container {
             padding: 8px 0;
-            background: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: transparent;
             margin-bottom: 10px;
             position: relative;
         }
@@ -189,10 +188,11 @@
             position: relative;
             margin-bottom: 20px;
             margin-top: 10px;
-            width: 100%;
+            width: 90%; /* Reduzido de 100% para 90% */
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
         }
         
         .search-input {
@@ -210,6 +210,7 @@
             border-radius: 0.25rem;
             transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
             padding-right: 50px; /* Espaço para o botão de busca */
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
         }
         
         .search-btn {
@@ -369,6 +370,11 @@
                 width: 35px;
                 height: 35px;
                 font-size: 0.9rem;
+            }
+            
+            .search-container {
+                width: 95%; /* Aumentar um pouco em telas menores */
+                padding: 0 10px; /* Adicionar um pouco de padding */
             }
         }
         
@@ -943,11 +949,6 @@
         <div class="logo-protection"></div>
     </div>
     
-    <!-- Container de título estilizado mais discreto -->
-    <div class="catalogo-container">
-        <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
-    </div>
-        
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
         <div class="cart-icon" onclick="openCartModal()">
