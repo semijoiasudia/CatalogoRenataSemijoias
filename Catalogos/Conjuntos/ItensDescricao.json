@@ -12,6 +12,16 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
+      "codigo": "3421",
+      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
+      "imagem": "3421.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/11/2024"
+    },
+    {
       "codigo": "4219",
       "descricao": "CONJUNTO INFANTIL PANDA RESINA 41CM",
       "imagem": "4219.jpg",
@@ -40,16 +50,6 @@
       "precoConsignado": "159,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "02/08/2024"
-    },
-    {
-      "codigo": "3418",
-      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
-      "imagem": "3418.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
     },
     {
       "codigo": "3862",
@@ -82,6 +82,16 @@
       "dataUltimaEntrada": "12/02/2025"
     },
     {
+      "codigo": "3730",
+      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
+      "imagem": "3730.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/11/2024"
+    },
+    {
       "codigo": "3875",
       "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
       "imagem": "3875.jpg",
@@ -90,16 +100,6 @@
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "24/12/2024"
-    },
-    {
-      "codigo": "3421",
-      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
-      "imagem": "3421.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/11/2024"
     },
     {
       "codigo": "3345",
@@ -132,14 +132,14 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3730",
-      "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
-      "imagem": "3730.jpg",
+      "codigo": "3418",
+      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
+      "imagem": "3418.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "74,90",
-      "precoConsignado": "119,90",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
+      "dataUltimaEntrada": "30/11/2024"
     }
   ]
 }
