@@ -970,7 +970,7 @@
     </div>
     
     <!-- Filtro de ordenação -->
-    <div class="filter-container" style="margin-bottom: 30px;">
+    <div class="filter-container" style="margin-bottom: 20px;">
         <label for="sortFilter">Ordenar por: </label>
         <select id="sortFilter" onchange="applySort()">
             <option value="newest" selected>Mais Novos</option>
@@ -1152,6 +1152,11 @@
             // Configurar botões de categoria e scroll
             setupCategoryButtons();
         });
+
+        function capitalizarPrimeiraLetra(texto) {
+            if (!texto) return texto;
+            return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
+        }
 
         // Carregar configurações do arquivo config.ini
         function loadDeliveryConfig() {
@@ -1928,7 +1933,7 @@
 
                 const desc = document.createElement('div');
                 desc.className = 'description';
-                desc.textContent = descricao;
+                desc.textContent = capitalizarPrimeiraLetra(descricao);
 
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
@@ -2065,7 +2070,7 @@
             captureArea.appendChild(logo);
 
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${descricao}</div>
+                <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
