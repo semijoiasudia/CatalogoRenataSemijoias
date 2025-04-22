@@ -26,6 +26,7 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: #f8f9fa;
         }
         
         /* Container da logo - Sem bordas e sombras */
@@ -286,7 +287,7 @@
             height: 40px;
             border-radius: 50%;
             color: #4a4a4a;
-            display: none !important; /* Inicialmente oculto */
+            display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16);
@@ -296,10 +297,6 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 10;
-        }
-        
-        .scroll-arrow-btn.show {
-            display: flex !important; /* Classe para exibir quando necessário */
         }
         
         .scroll-left {
@@ -356,12 +353,6 @@
                 padding: 0.6rem 1.5rem;
                 font-size: 0.9rem;
                 margin: 0 0.3rem;
-            }
-            
-            .scroll-arrow-btn {
-                width: 35px;
-                height: 35px;
-                font-size: 0.9rem;
             }
             
             .search-container {
@@ -954,16 +945,11 @@
     <!-- Campo de busca -->
     <div class="search-container">
         <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
-                    <button id="search-button" class="search-btn" style="font-size: 18px;">🔍</button>
+        <button id="search-button" class="search-btn">🔍</button>
     </div>
     
     <!-- Navegação com botões de categoria -->
     <div class="categories-nav position-relative">
-        <!-- Botões de navegação para scroll -->
-        <button class="scroll-arrow-btn scroll-left" id="scroll-left">
-            <span class="icon-left"></span>
-        </button>
-        
         <div id="categories-container" class="d-inline-flex px-3 mx-auto">
             <!-- Botão "Todos" -->
             <button class="category-btn active" data-category="todos">
@@ -971,10 +957,6 @@
             </button>
             <!-- Outras categorias serão carregadas dinamicamente -->
         </div>
-        
-        <button class="scroll-arrow-btn scroll-right" id="scroll-right">
-            <span class="icon-right"></span>
-        </button>
     </div>
     
     <!-- Subcategorias (banhos) como dropdown -->
@@ -1136,11 +1118,8 @@
         let isDragging = false;
         let touchStartX = 0;
         
-        // Variáveis para o scroll horizontal de categorias
+        // Variável para o container de categorias
         let categoriesContainer = document.getElementById('categories-container');
-        let scrollLeftBtn = document.getElementById('scroll-left');
-        let scrollRightBtn = document.getElementById('scroll-right');
-        let scrollAmount = 300;
 
         // Proteção global contra download de imagens
         document.addEventListener('DOMContentLoaded', function() {
@@ -1242,9 +1221,6 @@
                     centerButtonInView(this);
                 });
             }
-            
-            // Configurar botões de scroll
-            setupScrollButtons();
         }
         
         // Função para centralizar um botão na área visível
@@ -1256,56 +1232,6 @@
                 block: 'nearest',
                 inline: 'center'
             });
-        }
-        
-        // Configurar os botões de scroll horizontal
-        function setupScrollButtons() {
-            categoriesContainer = document.getElementById('categories-container');
-            scrollLeftBtn = document.getElementById('scroll-left');
-            scrollRightBtn = document.getElementById('scroll-right');
-            
-            if (!categoriesContainer || !scrollLeftBtn || !scrollRightBtn) {
-                return;
-            }
-            
-            // Função para verificar e atualizar visibilidade dos botões de scroll
-            function updateScrollButtonsVisibility() {
-                const needsScroll = categoriesContainer.scrollWidth > categoriesContainer.clientWidth;
-                
-                // Adiciona/remove classe .show ao invés de manipular display diretamente
-                scrollLeftBtn.classList.toggle('show', needsScroll && categoriesContainer.scrollLeft > 5);
-                scrollRightBtn.classList.toggle('show', needsScroll && categoriesContainer.scrollLeft < (categoriesContainer.scrollWidth - categoriesContainer.clientWidth - 5));
-            }
-            
-            // Adicionar eventos aos botões
-            scrollLeftBtn.addEventListener('click', function() {
-                categoriesContainer.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
-                
-                // Verificar visibilidade após o scroll
-                setTimeout(updateScrollButtonsVisibility, 350);
-            });
-            
-            scrollRightBtn.addEventListener('click', function() {
-                categoriesContainer.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
-                
-                // Verificar visibilidade após o scroll
-                setTimeout(updateScrollButtonsVisibility, 350);
-            });
-            
-            // Verificar visibilidade inicial
-            updateScrollButtonsVisibility();
-            
-            // Adicionar listener para atualizar visibilidade durante o scroll
-            categoriesContainer.addEventListener('scroll', updateScrollButtonsVisibility);
-            
-            // Atualizar quando a janela for redimensionada
-            window.addEventListener('resize', updateScrollButtonsVisibility);
         }
         
         // Configurar a funcionalidade de busca
@@ -2366,6 +2292,13 @@
             // Se a imagem não estiver ampliada, centraliza
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         }
 
         function setupFaleConoscoButton() {
