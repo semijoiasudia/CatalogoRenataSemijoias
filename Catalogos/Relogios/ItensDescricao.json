@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "4139",
-      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
-      "imagem": "4139.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
       "codigo": "4271",
       "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA INOX",
       "imagem": "4271.jpg",
@@ -20,6 +10,16 @@
       "precoConsignado": "99,90",
       "banho": "INOX",
       "dataUltimaEntrada": "18/04/2025"
+    },
+    {
+      "codigo": "4139",
+      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
+      "imagem": "4139.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4142",
@@ -32,16 +32,6 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "4043",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
-      "imagem": "4043.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
       "codigo": "4140",
       "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
       "imagem": "4140.jpg",
@@ -50,16 +40,6 @@
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4015",
-      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
-      "imagem": "4015.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "09/04/2025"
     },
     {
       "codigo": "4138",
@@ -80,6 +60,16 @@
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "09/04/2025"
+    },
+    {
+      "codigo": "4043",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO GRAFITE",
+      "imagem": "4043.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "4038",
@@ -120,6 +110,16 @@
       "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/02/2025"
+    },
+    {
+      "codigo": "4015",
+      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
+      "imagem": "4015.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "09/04/2025"
     },
     {
       "codigo": "4141",

@@ -2,36 +2,6 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4027",
-      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
-      "imagem": "4027.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "3979",
-      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
-      "imagem": "3979.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "189,98",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "11/02/2025"
-    },
-    {
-      "codigo": "4122",
-      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
-      "imagem": "4122.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "NIQUEL FREE",
-      "dataUltimaEntrada": "09/03/2025"
-    },
-    {
       "codigo": "4121",
       "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE PINK/VERDE 2,5MM 39+7CM",
       "imagem": "4121.jpg",
@@ -42,9 +12,19 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4120",
-      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
-      "imagem": "4120.jpg",
+      "codigo": "4024",
+      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
+      "imagem": "4024.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "4122",
+      "descricao": "BIJUTERIA COLAR CRISTAIS DEGRADE VERDE/AZUL 2,5MM 39+7CM",
+      "imagem": "4122.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -72,39 +52,9 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4028",
-      "descricao": "BIJUTERIA BRACELETE FORMATO GOTAS VAZADAS",
-      "imagem": "4028.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "40,00",
-      "precoConsignado": "66,00",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "4024",
-      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
-      "imagem": "4024.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "405",
-      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
-      "imagem": "405.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/10/2022"
-    },
-    {
-      "codigo": "4118",
-      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
-      "imagem": "4118.jpg",
+      "codigo": "4123",
+      "descricao": "BIJUTERIA COLAR CRISTAIS PRETO 2,5MM 39+7CM",
+      "imagem": "4123.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -112,19 +62,9 @@
       "dataUltimaEntrada": "09/03/2025"
     },
     {
-      "codigo": "4005",
-      "descricao": "BIJUTERIA COLAR PRATA MAXI PEDRAS ORGANICAS ",
-      "imagem": "4005.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "14/02/2025"
-    },
-    {
-      "codigo": "4123",
-      "descricao": "BIJUTERIA COLAR CRISTAIS PRETO 2,5MM 39+7CM",
-      "imagem": "4123.jpg",
+      "codigo": "4120",
+      "descricao": "BIJUTERIA COLAR CRISTAIS CINZA 4MM 38+5CM",
+      "imagem": "4120.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "29,90",
       "precoConsignado": "49,90",
@@ -142,19 +82,89 @@
       "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4174",
-      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
-      "imagem": "4174.jpg",
+      "codigo": "4027",
+      "descricao": "BIJUTERIA BRACELETE FORMAS GEOMETRICAS 2 BANHOS",
+      "imagem": "4027.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "01/04/2025"
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "17/02/2025"
     },
     {
-      "codigo": "4184",
-      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
-      "imagem": "4184.jpg",
+      "codigo": "4028",
+      "descricao": "BIJUTERIA BRACELETE FORMATO GOTAS VAZADAS",
+      "imagem": "4028.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/02/2025"
+    },
+    {
+      "codigo": "405",
+      "descricao": "BIJUTERIA CONJUNTO DIEZ VERDE MENTA",
+      "imagem": "405.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/10/2022"
+    },
+    {
+      "codigo": "4128",
+      "descricao": "BIJUTERIA COLAR MAXI PEDRAS ORGANICAS ",
+      "imagem": "4128.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/03/2025"
+    },
+    {
+      "codigo": "4005",
+      "descricao": "BIJUTERIA COLAR PRATA MAXI PEDRAS ORGANICAS ",
+      "imagem": "4005.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "14/02/2025"
+    },
+    {
+      "codigo": "4118",
+      "descricao": "BIJUTERIA COLAR CRISTAIS VERDE 4MM 38+5CM",
+      "imagem": "4118.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "NIQUEL FREE",
+      "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "3979",
+      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
+      "imagem": "3979.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "139,90",
+      "precoConsignado": "189,98",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "11/02/2025"
+    },
+    {
+      "codigo": "4265",
+      "descricao": "BIJUTERIA CONJUNTO ARO E BRINCO FLOR PRATA E DOURADO",
+      "imagem": "4265.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "16/04/2025"
+    },
+    {
+      "codigo": "4181",
+      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
+      "imagem": "4181.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "40,00",
       "precoConsignado": "66,00",
@@ -172,9 +182,9 @@
       "dataUltimaEntrada": "02/04/2025"
     },
     {
-      "codigo": "4181",
-      "descricao": "BIJUTERIA BRACELETE MAXI RETANGULAR 2 BANHOS",
-      "imagem": "4181.jpg",
+      "codigo": "4184",
+      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
+      "imagem": "4184.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
       "preco": "40,00",
       "precoConsignado": "66,00",
@@ -192,24 +202,14 @@
       "dataUltimaEntrada": "01/04/2025"
     },
     {
-      "codigo": "4265",
-      "descricao": "BIJUTERIA CONJUNTO ARO E BRINCO FLOR PRATA E DOURADO",
-      "imagem": "4265.jpg",
+      "codigo": "4174",
+      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
+      "imagem": "4174.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "16/04/2025"
-    },
-    {
-      "codigo": "4267",
-      "descricao": "BIJUTERIA CHOCKER PEROLAS E GOTA CRISTAL 39+5CM",
-      "imagem": "4267.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/04/2025"
+      "dataUltimaEntrada": "01/04/2025"
     },
     {
       "codigo": "4268",
@@ -222,14 +222,14 @@
       "dataUltimaEntrada": "16/04/2025"
     },
     {
-      "codigo": "4128",
-      "descricao": "BIJUTERIA COLAR MAXI PEDRAS ORGANICAS ",
-      "imagem": "4128.jpg",
+      "codigo": "4267",
+      "descricao": "BIJUTERIA CHOCKER PEROLAS E GOTA CRISTAL 39+5CM",
+      "imagem": "4267.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "29,90",
-      "precoConsignado": "79,90",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "15/03/2025"
+      "dataUltimaEntrada": "16/04/2025"
     }
   ]
 }
