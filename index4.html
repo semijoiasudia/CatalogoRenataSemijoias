@@ -315,22 +315,31 @@
         /* Ícones */
         .icon {
             display: inline-block;
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.125em;
-            margin-right: 0.5rem;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
         }
         
-        .icon-gem::before {
-            content: '💎';
+        .icon-gem {
+            background: url('imagens/diamante.png') no-repeat center;
+            background-size: contain;
         }
         
-        .icon-left::before {
-            content: '◀';
+        .icon-left {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-esquerda.png') no-repeat center;
+            background-size: contain;
         }
         
-        .icon-right::before {
-            content: '▶';
+        .icon-right {
+            display: inline-block; 
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-direita.png') no-repeat center;
+            background-size: contain;
         }
         
         .d-none {
@@ -947,7 +956,9 @@
     <!-- Navegação com botões de categoria -->
     <div class="categories-nav position-relative">
         <!-- Botões de navegação para scroll -->
-        <button class="scroll-arrow-btn scroll-left d-none" id="scroll-left">◀</button>
+        <button class="scroll-arrow-btn scroll-left" id="scroll-left">
+            <span class="icon-left"></span>
+        </button>
         
         <div id="categories-container" class="d-inline-flex px-3 mx-auto">
             <!-- Botão "Todos" -->
@@ -957,7 +968,9 @@
             <!-- Outras categorias serão carregadas dinamicamente -->
         </div>
         
-        <button class="scroll-arrow-btn scroll-right d-none" id="scroll-right">▶</button>
+        <button class="scroll-arrow-btn scroll-right" id="scroll-right">
+            <span class="icon-right"></span>
+        </button>
     </div>
     
     <!-- Subcategorias (banhos) como dropdown -->
@@ -1243,6 +1256,10 @@
         
         // Configurar os botões de scroll horizontal
         function setupScrollButtons() {
+            categoriesContainer = document.getElementById('categories-container');
+            scrollLeftBtn = document.getElementById('scroll-left');
+            scrollRightBtn = document.getElementById('scroll-right');
+            
             if (!categoriesContainer || !scrollLeftBtn || !scrollRightBtn) {
                 return;
             }
@@ -1773,7 +1790,7 @@
                         
                         // Carregar imagens da categoria selecionada
                         const categoryDir = this.dataset.diretorio;
-                        const categoryName = this.textContent.replace('💎 ', '');
+                        const categoryName = this.textContent.replace('<span class="icon icon-gem"></span> ', '');
                         
                         console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
                         loadImages(categoryDir, categoryName);
@@ -1797,7 +1814,11 @@
                 
                 // Procurar o botão correspondente à categoria inicial
                 for (const button of document.querySelectorAll('.category-btn')) {
-                    if (button.textContent.trim().replace('💎 ', '').toLowerCase() === initialCategory.toLowerCase() && 
+                    const buttonText = button.querySelector('.icon-gem') ? 
+                        button.textContent.trim().replace('Todos', '') : 
+                        button.textContent.trim();
+                    
+                    if (buttonText.toLowerCase() === initialCategory.toLowerCase() && 
                         button.dataset.category !== 'todos') {
                         initialButton = button;
                         break;
@@ -1805,7 +1826,7 @@
                 }
                 
                 if (initialButton) {
-                    console.log('Carregando categoria inicial:', initialButton.textContent.trim().replace('💎 ', ''));
+                    console.log('Carregando categoria inicial:', initialButton.textContent.trim());
                     // Simular clique no botão
                     initialButton.click();
                 } else {
