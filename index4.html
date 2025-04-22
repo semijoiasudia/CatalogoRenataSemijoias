@@ -1,139 +1,2421 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Carrossel Quadrado 300px</title>
-    <style>
-        .carousel {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 20px auto;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
-        .carousel__viewport {
-            display: flex;
-            overflow-x: scroll;
-            scroll-snap-type: x mandatory;
-            list-style: none;
+    <!-- meta tags de SEO aqui -->
+    <meta name="description" content="Catálogo digital de semijoias e acessórios Renata. Encontre brincos, colares, anéis e muito mais com entrega em Uberlândia e todo Brasil.">
+    <meta name="keywords" content="semijoias, acessórios, brincos, colares, anéis, Uberlândia, Renata Acessórios">
+
+    <title>Renata - Semijoias e Acessórios</title>
+    
+    <!-- Google tag (gtag.js)-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZJK53CRZJF');
+    </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            height: 100%;
+            overflow-x: hidden;
         }
-
-        .carousel__slide {
-            flex: 0 0 300px;
-            scroll-snap-align: center;
+        
+        /* Container da logo - Sem bordas e sombras */
+        .logo-container {
+            padding: 8px 0;
+            background: transparent;
+            margin-bottom: 10px;
             position: relative;
-            height: 300px;
         }
-
-        .carousel__snapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
+        .logo-container img {
+            max-width: 140px;
+            height: auto;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            pointer-events: none;
         }
-
-        .carousel__snapper img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .descricao-produto {
+        /* Overlay para proteger a logo */
+        .logo-protection {
             position: absolute;
-            bottom: 0;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px;
+            top: 0;
+            left: 0;
             width: 100%;
-            box-sizing: border-box;
+            height: 100%;
+            z-index: 2;
+        }
+        
+        /* Texto da localização posicionado no topo direito */
+        .location-text {
+            position: absolute;
+            bottom: 12px;
+            right: 15px;
+            font-size: 13px;
+            color: #666;
+            font-weight: normal;
+            text-align: right;
+            line-height: 1.3;
+        }
+        
+        /* Removido estilos de container e título do catálogo */
+        /* Texto explicativo movido para fora do container */
+        .catalogo-subtitulo {
             font-size: 14px;
+            color: #666;
+            margin: 5px auto 15px;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .modal-open {
+            overflow: hidden;
         }
 
-        .carousel__navigation-button {
+        /* Container para controles de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Estilos para os subcategorias (banhos) como botões */
+        .subcategories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            padding: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            width: 100%; /* Garantir que ocupe a largura total */
+            text-align: center; /* Reforço para centralização */
+        }
+        .subcategories button {
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            background-color: #ffffff; /* Cor branca conforme solicitado */
+            color: #555;
+            transition: all 0.2s;
+        }
+        .subcategories button:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-1px);
+        }
+        .subcategories button.active {
+            background-color: #f8f5ed;
+            color: #333;
+        }
+
+        /* Novo estilo para o filtro de ordenação */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding-top: 0px;
+        }
+        .filter-container label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+        }
+        .filter-container select {
+            padding: 8px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #e0e0e0;
+            background-color: #f8f5ed;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #555;
+        }
+        .filter-container select:hover {
+            border-color: #d4af37;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .filter-container select:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Estilos da barra de busca */
+        .search-container {
+            position: relative;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            width: 90%; /* Reduzido de 100% para 90% */
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
+        }
+        
+        .search-input {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
             background-color: #fff;
-            border: 2px solid #333;
-            border-radius: 50%;
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            padding-right: 50px; /* Espaço para o botão de busca */
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
         }
-
-        .carousel__prev, .carousel__next {
+        
+        .search-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background-color: #f8f5ed;
+            color: #4a4a4a;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+        
+        .search-btn:hover {
+            background-color: #e8e8e8;
+        }
+        
+        /* Container de categorias */
+        .categories-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+            position: relative;
+            margin-top: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Estilos dos Botões de Categoria */
+        .category-btn {
+            background: white;
+            border: 2px solid #f8f5ed;
+            color: #888888; 
+            border-radius: 30px;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* Estados dos Botões */
+        .category-btn.active,
+        .category-btn:hover {
+            background: #f8f5ed;
+            color: #4a4a4a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Efeito de Pressão ao Clicar */
+        .category-btn:active {
+            transform: translateY(1px);
+            transition: transform 0.1s;
+        }
+        
+        /* Efeito de Gradiente nas Bordas */
+        .category-btn::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, 
+                #f8f5ed, 
+                #d5c7a3, 
+                #f8f5ed);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .category-btn:hover::after {
+            opacity: 0.3;
+        }
+        
+        /* Setas de Navegação */
+        .scroll-arrow-btn {
+            background: #f8f5ed;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #4a4a4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            transition: all 0.2s ease;
+            cursor: pointer;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255,255,255,0.8);
-            color: #333;
-            padding: 8px 12px;
-            border-radius: 50%;
-            text-decoration: none;
-            font-weight: bold;
+            z-index: 10;
         }
-
-        .carousel__prev { left: -40px; }
-        .carousel__next { right: -40px; }
-
-        @media (hover: hover) {
-            .carousel__snapper {
-                animation-name: tonext, snap;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
+        
+        .scroll-left {
+            left: 0;
+        }
+        
+        .scroll-right {
+            right: 0;
+        }
+        
+        .scroll-arrow-btn:hover {
+            transform: translateY(-50%) scale(1.1);
+            background: #d5c7a3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Ícones */
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        .icon-gem {
+            background: url('imagens/diamante.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .icon-left {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-esquerda.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .icon-right {
+            display: inline-block; 
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-direita.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .d-none {
+            display: none !important;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .category-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+                margin: 0 0.3rem;
+            }
+            
+            .scroll-arrow-btn {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+            
+            .search-container {
+                width: 95%; /* Aumentar um pouco em telas menores */
+                padding: 0 10px; /* Adicionar um pouco de padding */
             }
         }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            max-width: 900px;
+            margin: auto;
+            padding: 10px;
+            margin-bottom: 40px; /* Adiciona espaço abaixo da galeria mesmo quando não há paginação */
+        }
+        .gallery .item {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            max-width: 180px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery .img-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 0; /* Removido border-radius */
+        }
+        .gallery .img-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 0; /* Removido border-radius */
+            transition: transform 0.2s;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .gallery .img-container img:hover {
+            transform: scale(1.05);
+        }
+        .gallery .img-container .logo-watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 0; /* Removido border-radius */
+        }
+        .gallery .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .gallery .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            white-space: normal;
+        }
+        .gallery .preco {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+        }
+        .gallery .codigo {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .add-to-cart-gallery {
+            width: 100%;
+            margin-top: 15px;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #000;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+        .add-to-cart-gallery:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+        .add-to-cart-gallery img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            overflow: auto;
+        }
+        .modal-content {
+            position: relative;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 90%;
+            max-height: 90%;
+            overflow: hidden;
+            transform-origin: center center;
+            transition: transform 0.1s ease-out;
+            touch-action: none;
+        }
+        .capture-area {
+            position: relative;
+        }
+        .modal img {
+            max-width: 100%;
+            max-height: 65vh;
+            border-radius: 0; /* Removido border-radius */
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        .modal .logo-watermark {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            width: 20%;
+            max-height: 20%;
+            object-fit: contain;
+            z-index: 2;
+            pointer-events: none;
+            border-radius: 0; /* Removido border-radius */
+        }
+        .modal-codigo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
+        }
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+        }
+        .close:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+        .modal-info {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+        .modal-info .descricao {
+            font-size: 16px;
+        }
+        .modal-info .preco {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .modal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        .request-btn, .add-to-cart-btn {
+            width: 100%;
+            margin: 0;
+            color: #333;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #f5f5f5;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .request-btn:hover, .add-to-cart-btn:hover {
+            background-color: #e8e8e8;
+        }
+        .rodape {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa; /* Mantido original */
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            border-top: 1px solid #ddd;
+        }
+        .rodape-text {
+            margin: 0;
+            padding: 5px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Aumentado de 20px para 40px */
+        }
+        .pagination button {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .pagination button:hover {
+            background-color: #5a6268;
+        }
+        .pagination button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .fale-conosco-btn, .instagram-btn {
+            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
+            color: #7d6c3b; /* Cor do texto mais escura para contraste */
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: flex; /* Mudança para flex para melhor alinhamento */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin: 0; /* Zeramos as margens */
+            box-sizing: border-box;
+            position: relative;
+            z-index: 10;
+            height: 55px; /* Altura fixa para garantir consistência */
+        }
+        .instagram-btn {
+            border-top: 3px solid white; /* Borda branca na parte superior */
+        }
+        .fale-conosco-btn:hover, .instagram-btn:hover {
+            background-color: #dbc990; /* Dourado mais escuro para hover */
+        }
+        .fale-conosco-btn img, .instagram-btn img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px; /* Espaçamento consistente */
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Estilos modificados para a sacola de compras */
+        .cart-icon-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 900;
+            display: flex;
+            flex-direction: column; /* Alterado para coluna para empilhar os elementos */
+            align-items: center;
+        }
+        .cart-icon {
+            position: relative; /* Para manter o contador posicionado corretamente */
+            background: linear-gradient(135deg, #e6c977, #d4af37);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .cart-label {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #333;
+        }
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+        .cart-counter {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #dc3545;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+            border: 3px solid white; /* Adiciona o círculo branco */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Sombra sutil para destacar */
+            pointer-events: none; /* Permite cliques passarem pelo contador para o elemento pai */
+        }
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+        .cart-content {
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .cart-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .cart-items {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 0; /* Removido border-radius */
+            margin-right: 10px;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+            text-align: left;
+        }
+        .cart-item-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .cart-item-codigo {
+            font-size: 12px;
+            color: #666;
+        }
+        .cart-item-price {
+            font-weight: bold;
+            color: #000;
+        }
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .cart-quantity {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .quantity-btn {
+            background-color: #ddd;
+            border: none;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        .quantity-input {
+            width: 30px;
+            text-align: center;
+            margin: 0 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .remove-item {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff; /* Alterado para branco */
+            border-radius: 8px;
+        }
+        .cart-total-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .cart-total {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cart-delivery-options {
+            margin-top: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .delivery-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .delivery-option input {
+            margin-right: 10px;
+        }
+        .delivery-option label {
+            font-size: 14px;
+        }
+        .delivery-price {
+            margin-left: auto;
+            font-weight: bold;
+        }
+        .cart-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .cart-clear, .cart-checkout {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .cart-clear {
+            background-color: #6c757d;
+            color: white;
+        }
+        .cart-checkout {
+            background-color: #28a745;
+            color: white;
+        }
+        .cart-clear:hover {
+            background-color: #5a6268;
+        }
+        .cart-checkout:hover {
+            background-color: #218838;
+        }
+        .empty-cart-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-style: italic;
+        }
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            z-index: 1002;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        #banhoSelectContainer { margin-left: auto; }
+        #sortFilterContainer { margin-left: auto; }
     </style>
 </head>
 <body>
-    <h1>Produtos em Destaque</h1>
+    <!-- Container da logo com texto da localização no canto superior direito -->
+    <div class="logo-container">
+        <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
+        <!-- Texto da localização posicionado no canto superior direito -->
+        <div class="location-text">Loja em<br>Uberlândia-MG</div>
+        <!-- Overlay para proteção extra contra cliques na logo -->
+        <div class="logo-protection"></div>
+    </div>
+    <h2 style="font-size: 16px; font-weight: normal; color: #333; margin: 10px 0 15px; padding: 0; text-align: center;">Seja bem vinda ao nosso Catálogo Online!</h2>
     
-    <section class="carousel" aria-label="Galeria">
-        <ol class="carousel__viewport"></ol>
-        <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list"></ol>
-        </aside>
-    </section>
+    <!-- Ícone da Sacola (à esquerda) -->
+    <div class="cart-icon-container">
+        <div class="cart-icon" onclick="openCartModal()">
+            <i>🛍️</i>
+            <div class="cart-counter" id="cartCounter">0</div>
+        </div>
+        <div class="cart-label">Sacola</div> <!-- Elemento para o texto -->
+    </div>
+    
+    <!-- Campo de busca -->
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
+        <button id="search-button" class="search-btn">🔍</button>
+    </div>
+    
+    <!-- Navegação com botões de categoria -->
+    <div class="categories-nav position-relative">
+        <!-- Botões de navegação para scroll -->
+        <button class="scroll-arrow-btn scroll-left" id="scroll-left">
+            <span class="icon-left"></span>
+        </button>
+        
+        <div id="categories-container" class="d-inline-flex px-3 mx-auto">
+            <!-- Botão "Todos" -->
+            <button class="category-btn active" data-category="todos">
+                <span class="icon icon-gem"></span> Todos
+            </button>
+            <!-- Outras categorias serão carregadas dinamicamente -->
+        </div>
+        
+        <button class="scroll-arrow-btn scroll-right" id="scroll-right">
+            <span class="icon-right"></span>
+        </button>
+    </div>
+    
+    <!-- Subcategorias (banhos) como dropdown -->
+    <div class="filter-container" style="margin-top: -10px; margin-bottom: 10px;">
+        <label for="banhoFilter">Selecionar o banho: </label>
+        <select id="banhoFilter" onchange="filterByBanhoDropdown()">
+            <option value="todos" selected>Todos</option>
+            <!-- Outras opções de banho serão adicionadas dinamicamente -->
+        </select>
+    </div>
+    
+    <!-- Filtro de ordenação -->
+    <div class="filter-container" style="margin-bottom: 30px;">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
+    </div>
+    
+    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
+    <div class="gallery" id="gallery"></div>
+    <div class="pagination" id="pagination"></div>
+    
+    <!-- Notificação de Adição ao Carrinho -->
+    <div class="notification" id="notification"></div>
+    
+    <!-- Modal de Imagem -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content" id="modalContent">
+            <span class="close" onclick="closeModal()">×</span>
+            <div class="capture-area" id="captureArea">
+                <div class="modal-codigo" id="modalCodigo"></div>
+                <img id="modalImg" draggable="false">
+            </div>
+            <div class="modal-info" id="modalInfo"></div>
+            <div class="modal-buttons">
+                <button class="add-to-cart-btn" onclick="addToCartFromModal()">
+                    <i>🛍️</i> Adicionar à Sacola
+                </button>
+                <button class="request-btn" onclick="requestItem()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
+                    Solicitar este Item
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal da Sacola -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close" onclick="closeCartModal()">×</span>
+            <div class="cart-title">Minha Sacola</div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </div>
+            
+            <!-- Opções de entrega -->
+            <div class="cart-delivery-options" id="deliveryOptions">
+                <div class="delivery-title">Opções de Entrega:</div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryUberlandia" name="deliveryOption" value="uberlandia" checked>
+                    <label for="deliveryUberlandia">Entrega em Uberlândia</label>
+                    <span class="delivery-price">R$ 13,00</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="deliveryOther" name="deliveryOption" value="other">
+                    <label for="deliveryOther">Entrega em outras cidades</label>
+                    <span class="delivery-price">A Calcular</span>
+                </div>
+                <div class="delivery-option">
+                    <input type="radio" id="pickupStore" name="deliveryOption" value="pickup">
+                    <label for="pickupStore">Retirar na loja</label>
+                    <span class="delivery-price">Grátis</span>
+                </div>
+            </div>
+            
+            <!-- Resumo do carrinho -->
+            <div class="cart-summary">
+                <div class="cart-total-line">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-total-line">
+                    <span>Frete:</span>
+                    <span id="cartShipping">R$ 13,00</span>
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <div style="text-align: right;">
+                        <span id="cartTotal">R$ 0,00</span>
+                        <div style="font-size: 14px; font-weight: normal; color: #28a745;">à vista</div>
+                    </div>
+                </div>
+                <div style="font-size: 12px; font-style: italic; color: #666; text-align: right; margin-top: 8px;">
+                    *consultar valores para parcelar*
+                </div>
+                
+            </div>
+            
+            <div class="cart-actions">
+                <button class="cart-clear" onclick="clearCart()">Limpar Sacola</button>
+                <button class="cart-checkout" onclick="checkoutCart()">
+                    <img src="imagens/whats.png" alt="WhatsApp" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 4px;">
+                    Enviar Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
+        <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
+        Fale conosco pelo WhatsApp
+    </a>
+    <a href="https://www.instagram.com/renataacessoriosuberlandia/" id="instagramBtn" class="instagram-btn" target="_blank">            
+        <img src="imagens/insta.png" alt="Instagram" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
+        Visite nosso perfil no Instagram
+    </a>
+    <div id="rodape" class="rodape"></div>
 
     <script>
-    fetch('Catalogos/Destaques/ItensDescricao.json')
-        .then(response => response.json())
-        .then(data => {
-            const produtos = data.produtos;
-            const viewport = document.querySelector('.carousel__viewport');
-            const navList = document.querySelector('.carousel__navigation-list');
+        const categoriasAtivasUrl = "CategoriasAtivas.json";
+        let categoriasAtivas = [];
+        let descricoes = {};
+        
+        const itemsPerPage = 20;
+        let currentPage = 1;
+        let allFiles = [];
+        let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
+        let currentBanho = 'todos';
+        let currentSort = 'newest';
+        let currentModalIndex = 0;
+        let currentVisibleFiles = [];
+        let cart = [];
+        let modalAbortController = null;
+        let currentCategory = '';
+        let isCategoryChanging = false;
 
-            produtos.forEach((produto, index) => {
-                const slideId = `carousel__slide${index + 1}`;
-                const totalSlides = produtos.length;
+        // Configurações globais
+        const deliveryConfig = {
+            freteUberlandia: 13.00,
+            freteOutrasCidades: "A Calcular"
+        };
+        
+        let categoriaInicial = "Brincos"; // Valor padrão de fallback
+        let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
 
-                const slide = document.createElement('li');
-                slide.id = slideId;
-                slide.className = 'carousel__slide';
-                slide.tabIndex = 0;
+        const PHONE_NUMBER = '5534997622408';
 
-                slide.innerHTML = `
-                    <div class="carousel__snapper">
-                        <img src="${produto.pastaFotos}${produto.imagem}" 
-                             alt="${produto.descricao}">
-                        <div class="descricao-produto">
-                            <p>${produto.descricao}</p>
-                            <p>💵 R$ ${produto.preco}</p>
-                        </div>
-                        <a href="#carousel__slide${index === 0 ? totalSlides : index}" 
-                           class="carousel__prev">‹</a>
-                        <a href="#carousel__slide${(index + 2) > totalSlides ? 1 : index + 2}" 
-                           class="carousel__next">›</a>
-                    </div>`;
+        let scale = 1;
+        let minScale = 1;
+        let maxScale = 5;
+        let translateX = 0;
+        let translateY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+        let touchStartX = 0;
+        
+        // Variáveis para o scroll horizontal de categorias
+        let categoriesContainer = document.getElementById('categories-container');
+        let scrollLeftBtn = document.getElementById('scroll-left');
+        let scrollRightBtn = document.getElementById('scroll-right');
+        let scrollAmount = 300;
 
-                viewport.appendChild(slide);
-
-                const navItem = document.createElement('li');
-                navItem.className = "carousel__navigation-item";
-                navItem.innerHTML = `<a href="#${slideId}" class="carousel__navigation-button"></a>`;
-                navList.appendChild(navItem);
+        // Proteção global contra download de imagens
+        document.addEventListener('DOMContentLoaded', function() {
+            // Proteção para a logo no topo
+            const logoImg = document.querySelector('.logo-container img');
+            if (logoImg) {
+                logoImg.addEventListener('contextmenu', (e) => e.preventDefault());
+                logoImg.addEventListener('dragstart', (e) => e.preventDefault());
+            }
+            
+            // Proteção global para todas as imagens
+            document.addEventListener('contextmenu', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
             });
+            
+            document.addEventListener('dragstart', function(e) {
+                if (e.target.tagName === 'IMG') {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+            
+            // Configurar funcionalidade de busca
+            setupSearchFunctionality();
+            
+            // Configurar botões de categoria e scroll
+            setupCategoryButtons();
         });
+
+        // Carregar configurações do arquivo config.ini
+        function loadDeliveryConfig() {
+            fetch("config.ini")
+                .then(response => response.ok ? response.text() : null)
+                .then(text => {
+                    if (!text) return;
+                    
+                    const lines = text.split('\n');
+                    let currentSection = "";
+                    
+                    for (const line of lines) {
+                        const trimmedLine = line.trim();
+                        
+                        // Identificar seção [Seção]
+                        if (trimmedLine.startsWith('[') && trimmedLine.endsWith(']')) {
+                            currentSection = trimmedLine.substring(1, trimmedLine.length - 1);
+                            continue;
+                        }
+                        
+                        // Processar configurações chave=valor
+                        if (trimmedLine.includes('=')) {
+                            const [key, rawValue] = trimmedLine.split('=').map(part => part.trim());
+                            // Remover aspas simples ou duplas
+                            const value = rawValue.replace(/^['"]|['"]$/g, '');
+                            
+                            // Configurações específicas por seção
+                            if (currentSection === "Entrega") {
+                                if (key === 'FreteUberlandia') {
+                                    deliveryConfig.freteUberlandia = parseFloat(value);
+                                } else if (key === 'FreteOutrasCidades') {
+                                    deliveryConfig.freteOutrasCidades = value;
+                                }
+                            } else if (currentSection === "Geral") {
+                                if (key === 'CategoriaInicial') {
+                                    categoriaInicial = value;
+                                    console.log(`Categoria inicial: ${categoriaInicial}`);
+                                }
+                            }
+                        }
+                    }
+                })
+                .catch(error => console.warn("Erro ao processar config.ini:", error));
+        }
+        
+        // Configurar os botões de categoria
+        function setupCategoryButtons() {
+            // Configurar botão "Todos"
+            const todosButton = document.querySelector('.category-btn[data-category="todos"]');
+            if (todosButton) {
+                todosButton.addEventListener('click', function() {
+                    // Remover classe 'active' de todos os botões
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    // Adicionar classe 'active' ao botão "Todos"
+                    this.classList.add('active');
+                    
+                    // Resetar banho para 'todos'
+                    currentBanho = 'todos';
+                    currentCategory = 'todos';
+                    
+                    // Exibir todos os produtos
+                    allFiles = [...allProducts]; // Copiar todos os produtos para allFiles
+                    displayPage(1, new Set());
+                    
+                    // Centralizar o botão na área visível
+                    centerButtonInView(this);
+                });
+            }
+            
+            // Configurar botões de scroll
+            setupScrollButtons();
+        }
+        
+        // Função para centralizar um botão na área visível
+        function centerButtonInView(button) {
+            if (!button) return;
+            
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+        }
+        
+        // Configurar os botões de scroll horizontal
+        function setupScrollButtons() {
+            categoriesContainer = document.getElementById('categories-container');
+            scrollLeftBtn = document.getElementById('scroll-left');
+            scrollRightBtn = document.getElementById('scroll-right');
+            
+            if (!categoriesContainer || !scrollLeftBtn || !scrollRightBtn) {
+                return;
+            }
+            
+            // Função para verificar e atualizar visibilidade dos botões de scroll
+            function updateScrollButtonsVisibility() {
+                // Mostrar botão esquerdo apenas se houver conteúdo à esquerda para scrollar
+                if (categoriesContainer.scrollLeft > 0) {
+                    scrollLeftBtn.classList.remove('d-none');
+                } else {
+                    scrollLeftBtn.classList.add('d-none');
+                }
+                
+                // Mostrar botão direito apenas se houver mais conteúdo à direita
+                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth;
+                if (categoriesContainer.scrollLeft < maxScrollLeft - 10) { // 10px tolerance
+                    scrollRightBtn.classList.remove('d-none');
+                } else {
+                    scrollRightBtn.classList.add('d-none');
+                }
+            }
+            
+            // Adicionar eventos aos botões
+            scrollLeftBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            scrollRightBtn.addEventListener('click', function() {
+                categoriesContainer.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Verificar visibilidade após o scroll
+                setTimeout(updateScrollButtonsVisibility, 350);
+            });
+            
+            // Verificar visibilidade inicial
+            updateScrollButtonsVisibility();
+            
+            // Adicionar listener para atualizar visibilidade durante o scroll
+            categoriesContainer.addEventListener('scroll', updateScrollButtonsVisibility);
+            
+            // Atualizar quando a janela for redimensionada
+            window.addEventListener('resize', updateScrollButtonsVisibility);
+        }
+        
+        // Configurar a funcionalidade de busca
+        function setupSearchFunctionality() {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            
+            if (!searchInput || !searchButton) return;
+            
+            searchButton.addEventListener('click', function() {
+                searchProducts(searchInput.value);
+            });
+            
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchProducts(searchInput.value);
+                }
+            });
+        }
+        
+        // Função para buscar produtos
+        function searchProducts(query) {
+            if (!query || query.trim() === '') {
+                return;
+            }
+            
+            query = query.trim().toLowerCase();
+            console.log('Buscando produtos:', query);
+            
+            // Definir onde procurar: em todas as categorias ou apenas na atual
+            let searchSource = (currentCategory === 'todos') ? allProducts : allFiles;
+            
+            // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
+            const filteredFiles = searchSource.filter(file => {
+                const codigo = file.codigo || file.name.split('.')[0];
+                const item = descricoes[codigo] || {};
+                
+                return (
+                    (item.descricao && item.descricao.toLowerCase().includes(query)) ||
+                    (codigo && codigo.toLowerCase().includes(query)) ||
+                    (item.banho && item.banho.toLowerCase().includes(query))
+                );
+            });
+            
+            // Se não encontrou resultados, informar
+            if (filteredFiles.length === 0) {
+                showNotification("Nenhum produto encontrado para esta busca");
+                return;
+            }
+            
+            // Resetar para página 1
+            currentPage = 1;
+            
+            // Atualizar a visualização com os resultados da busca
+            allFiles = filteredFiles;
+            currentVisibleFiles = filteredFiles;
+            displayPage(currentPage, new Set());
+            
+            // Mostrar mensagem de resultados
+            showNotification(`Exibindo ${filteredFiles.length} resultados para "${query}"`);
+        }
+
+        // Atualizar opção de entrega selecionada
+        function updateDeliveryOption() {
+            const deliveryOptions = document.getElementsByName('deliveryOption');
+            for (const option of deliveryOptions) {
+                if (option.checked) {
+                    selectedDeliveryOption = option.value;
+                    break;
+                }
+            }
+            updateCartTotals();
+        }
+
+        // Calcular valor do frete
+        function getShippingCost() {
+            switch (selectedDeliveryOption) {
+                case 'uberlandia':
+                    return deliveryConfig.freteUberlandia;
+                case 'pickup':
+                    return 0;
+                default:
+                    return 0; // "A Calcular" é tratado como 0 para cálculos
+            }
+        }
+
+        // Carregar carrinho do localStorage ao iniciar
+        function loadCart() {
+            const savedCart = localStorage.getItem('semijoiasCart');
+            if (savedCart) {
+                cart = JSON.parse(savedCart);
+                updateCartCounter();
+            }
+        }
+
+        // Salvar carrinho no localStorage
+        function saveCart() {
+            localStorage.setItem('semijoiasCart', JSON.stringify(cart));
+            updateCartCounter();
+        }
+
+        // Atualizar contador de itens no carrinho
+        function updateCartCounter() {
+            const counter = document.getElementById('cartCounter');
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            counter.textContent = totalItems;
+            
+            // Se o carrinho estiver vazio, esconder o contador
+            if (totalItems === 0) {
+                counter.style.display = 'none';
+            } else {
+                counter.style.display = 'flex';
+            }
+        }
+
+        // Adicionar item ao carrinho
+        function addToCart(codigo, descricao, preco, imagem) {
+            const precoNumber = getNumericPrice(preco);
+            
+            // Verificar se o item já está no carrinho
+            const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
+            
+            if (existingItemIndex > -1) {
+                // Incrementar quantidade se já existir
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                // Adicionar novo item
+                cart.push({
+                    codigo,
+                    descricao,
+                    preco,
+                    precoNumber,
+                    imagem,
+                    quantity: 1
+                });
+            }
+            
+            saveCart();
+            showNotification(`Item adicionado à sacola: ${codigo}`);
+        }
+
+        // Adicionar à sacola a partir da modal
+        function addToCartFromModal() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const descricao = document.querySelector('.modal-info .descricao').textContent;
+            const preco = document.querySelector('.modal-info .preco').textContent;
+            const imagem = document.getElementById('modalImg').src;
+            
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Adicionar à sacola a partir da galeria
+        function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
+            event.preventDefault();
+            event.stopPropagation(); // Evita que a modal abra
+            addToCart(codigo, descricao, preco, imagem);
+        }
+
+        // Exibir a modal da sacola
+        function openCartModal() {
+            renderCartItems();
+            document.getElementById('cartModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+        }
+
+        // Fechar a modal da sacola
+        function closeCartModal() {
+            document.getElementById('cartModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+        }
+
+        // Atualizar os totais do carrinho
+        function updateCartTotals() {
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            const shipping = getShippingCost();
+            let total = subtotal;
+            
+            // Só adiciona o frete se não for "A Calcular" (outras cidades)
+            if (selectedDeliveryOption === 'uberlandia' || selectedDeliveryOption === 'pickup') {
+                total += shipping;
+            }
+            
+            document.getElementById('cartSubtotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            
+            // Atualizar texto do frete
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartShipping').textContent = deliveryConfig.freteOutrasCidades;
+            } else {
+                document.getElementById('cartShipping').textContent = `R$ ${shipping.toFixed(2).replace('.', ',')}`;
+            }
+            
+            // Para o total, se for "outras cidades", indicamos que o valor é parcial
+            if (selectedDeliveryOption === 'other') {
+                document.getElementById('cartTotal').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete`;
+            } else {
+                document.getElementById('cartTotal').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+            }
+        }
+
+        // Renderizar itens do carrinho
+        function renderCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = '';
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<div class="empty-cart-message">Sua sacola está vazia</div>';
+                updateCartTotals();
+                return;
+            }
+            
+            cart.forEach((item, index) => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <img src="${item.imagem}" alt="${item.descricao}" class="cart-item-img" draggable="false">
+                    <div class="cart-item-info">
+                        <div class="cart-item-title">${item.descricao}</div>
+                        <div class="cart-item-codigo">Código: ${item.codigo}</div>
+                        <div class="cart-item-price">${item.preco}</div>
+                    </div>
+                    <div class="cart-item-actions">
+                        <div class="cart-quantity">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, -1)">-</button>
+                            <input type="number" class="quantity-input" value="${item.quantity}" min="1" onchange="updateItemQuantityManual(${index}, this.value)">
+                            <button class="quantity-btn" onclick="updateItemQuantity(${index}, 1)">+</button>
+                        </div>
+                        <button class="remove-item" onclick="removeCartItem(${index})">×</button>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(itemElement);
+            });
+            
+            updateCartTotals();
+        }
+
+        // Atualizar quantidade de um item
+        function updateItemQuantity(index, change) {
+            cart[index].quantity += change;
+            
+            if (cart[index].quantity < 1) {
+                cart[index].quantity = 1;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Atualizar quantidade manualmente via input
+        function updateItemQuantityManual(index, value) {
+            const quantity = parseInt(value);
+            if (isNaN(quantity) || quantity < 1) {
+                cart[index].quantity = 1;
+            } else {
+                cart[index].quantity = quantity;
+            }
+            
+            saveCart();
+            renderCartItems();
+        }
+
+        // Remover item do carrinho
+        function removeCartItem(index) {
+            cart.splice(index, 1);
+            saveCart();
+            renderCartItems();
+        }
+
+        // Limpar sacola
+        function clearCart() {
+            if (confirm('Tem certeza que deseja limpar a sacola?')) {
+                cart = [];
+                saveCart();
+                renderCartItems();
+                showNotification('Sacola limpa com sucesso');
+            }
+        }
+
+        // Finalizar pedido
+        function checkoutCart() {
+            if (cart.length === 0) {
+                alert('Sua sacola está vazia');
+                return;
+            }
+            
+            let message = '*Novo Pedido*\n\n';
+            
+            // Adicionar itens
+            cart.forEach(item => {
+                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
+            });
+            
+            // Adicionar subtotal
+            const subtotal = cart.reduce((sum, item) => sum + (item.precoNumber * item.quantity), 0);
+            message += `\n*Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+            
+            // Adicionar opção de entrega selecionada
+            let deliveryText = '';
+            switch(selectedDeliveryOption) {
+                case 'uberlandia':
+                    deliveryText = `Entrega em Uberlândia: R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${(subtotal + deliveryConfig.freteUberlandia).toFixed(2).replace('.', ',')}*`;
+                    break;
+                case 'other':
+                    deliveryText = `Entrega em outra cidade: ${deliveryConfig.freteOutrasCidades}`;
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total parcial: R$ ${subtotal.toFixed(2).replace('.', ',')} + Frete*`;
+                    break;
+                case 'pickup':
+                    deliveryText = 'Retirada na loja: Grátis';
+                    message += `\n*${deliveryText}*`;
+                    message += `\n*Total: R$ ${subtotal.toFixed(2).replace('.', ',')}*`;
+                    break;
+            }
+            
+            // Adicionar mensagem final
+            message += '\n\nOlá, gostaria de fazer este pedido.';
+            
+            // Abrir WhatsApp
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Exibir notificação
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.style.display = 'block';
+            notification.style.opacity = '1';
+            
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 300);
+            }, 2000);
+        }
+
+        function formatarPreco(preco) {
+            if (!preco) return "Preço não disponível";
+            const valorNumerico = parseFloat(preco.replace(/[^0-9,]/g, '').replace(',', '.'));
+            if (isNaN(valorNumerico)) return "Preço não disponível";
+            return `R$ ${valorNumerico.toFixed(2).replace('.', ',')}`;
+        }
+
+        function getNumericPrice(preco) {
+            if (!preco || preco === "Preço não disponível") return 0;
+            return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
+        }
+
+        // Carregar categorias ativas do arquivo JSON
+        async function loadCategoriasAtivas() {
+            try {
+                const response = await fetch(categoriasAtivasUrl);
+                if (!response.ok) {
+                    console.warn("Arquivo CategoriasAtivas.json não encontrado, todas as categorias serão exibidas.");
+                    categoriasAtivas = [];
+                    return;
+                }
+                categoriasAtivas = await response.json();
+                console.log('Categorias ativas carregadas:', categoriasAtivas);
+            } catch (error) {
+                console.error("Erro ao carregar categorias ativas:", error);
+                categoriasAtivas = [];
+            }
+        }
+
+        // Função para carregar todos os produtos de todas as categorias
+        async function loadAllProducts() {
+            console.log('Carregando todos os produtos de todas as categorias');
+            allProducts = []; // Limpar array global
+            
+            // Array de promessas para carregar todas as categorias
+            const loadPromises = categoriasAtivas.map(async (categoria) => {
+                const categoryDir = categoria.diretorio;
+                const categoryName = categoria.name;
+                try {
+                    const produtos = await loadProductsForCategory(categoryDir, categoryName);
+                    
+                    // Converter produtos para o formato esperado
+                    const formattedProducts = produtos.map(produto => {
+                        const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                        return {
+                            name: produto.imagem,
+                            path: imagePath,
+                            download_url: imagePath,
+                            codigo: produto.codigo,
+                            category: categoryName
+                        };
+                    });
+                    
+                    return formattedProducts;
+                } catch (error) {
+                    console.error(`Erro ao carregar produtos da categoria ${categoryName}:`, error);
+                    return [];
+                }
+            });
+            
+            // Aguardar todas as promessas serem resolvidas
+            const productsArrays = await Promise.all(loadPromises);
+            
+            // Juntar todos os produtos em um único array
+            allProducts = productsArrays.flat();
+            
+            console.log(`Total de produtos carregados: ${allProducts.length}`);
+            return allProducts;
+        }
+
+        // Carregar produtos para uma categoria específica através do seu JSON
+        async function loadProductsForCategory(categoryDir, categoryName) {
+            try {
+                const jsonUrl = `${categoryDir}/ItensDescricao.json`;
+                console.log(`Carregando produtos de: ${jsonUrl}`);
+                
+                const response = await fetch(jsonUrl);
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                
+                const data = await response.json();
+                console.log(`Carregados ${data.produtos.length} produtos da categoria ${data.categoria || categoryName}`);
+                
+                // Adicionar os produtos ao objeto descricoes
+                data.produtos.forEach(produto => {
+                    descricoes[produto.codigo] = {
+                        descricao: produto.descricao,
+                        preco: formatarPreco(produto.preco),
+                        banho: produto.banho.toLowerCase(),
+                        dataUltimaEntrada: produto.dataUltimaEntrada
+                    };
+                });
+                
+                return data.produtos;
+            } catch (error) {
+                console.error(`Erro ao carregar produtos da categoria ${categoryName}: ${error}`);
+                return [];
+            }
+        }
+
+        // Modificar a função loadCategories para criar botões em vez do dropdown
+        async function loadCategories() {
+            console.log('Iniciando loadCategories');
+            try {
+                await loadCategoriasAtivas();
+                
+                // Vamos substituir o dropdown pelo container de botões
+                const categoriesContainer = document.getElementById('categories-container');
+                
+                // Manter o botão "Todos" que já está no container
+                
+                // Ordenar as categorias por nome antes de criar os botões
+                categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
+                
+                // Criar botões para cada categoria ativa
+                categoriasAtivas.forEach(categoria => {
+                    const button = document.createElement('button');
+                    button.className = 'category-btn';
+                    button.innerHTML = `<span class="icon icon-gem"></span> ${categoria.name}`;
+                    button.dataset.category = categoria.name;
+                    button.dataset.diretorio = categoria.diretorio;
+                    
+                    button.addEventListener('click', function() {
+                        // Remover classe 'active' de todos os botões
+                        document.querySelectorAll('.category-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
+                        
+                        // Adicionar classe 'active' ao botão clicado
+                        this.classList.add('active');
+                        
+                        // Centralizar o botão na área visível
+                        centerButtonInView(this);
+                        
+                        // Carregar imagens da categoria selecionada
+                        const categoryDir = this.dataset.diretorio;
+                        const categoryName = this.textContent.replace('<span class="icon icon-gem"></span> ', '');
+                        
+                        console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+                        loadImages(categoryDir, categoryName);
+                        
+                        // Resetar banho para 'todos'
+                        currentBanho = 'todos';
+                    });
+                    
+                    categoriesContainer.appendChild(button);
+                });
+
+                // Carregar todos os produtos de todas as categorias
+                await loadAllProducts();
+
+                // Carregar a categoria inicial seguindo a ordem de prioridade:
+                // 1. Parâmetro na URL
+                // 2. Valor do config.ini
+                // 3. Valor padrão "Brincos"
+                const initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
+                let initialButton = null;
+                
+                // Procurar o botão correspondente à categoria inicial
+                for (const button of document.querySelectorAll('.category-btn')) {
+                    const buttonText = button.querySelector('.icon-gem') ? 
+                        button.textContent.trim().replace('Todos', '') : 
+                        button.textContent.trim();
+                    
+                    if (buttonText.toLowerCase() === initialCategory.toLowerCase() && 
+                        button.dataset.category !== 'todos') {
+                        initialButton = button;
+                        break;
+                    }
+                }
+                
+                if (initialButton) {
+                    console.log('Carregando categoria inicial:', initialButton.textContent.trim());
+                    // Simular clique no botão
+                    initialButton.click();
+                } else {
+                    // Se a categoria inicial não for encontrada, carregar "Todos"
+                    const todosButton = document.querySelector('.category-btn[data-category="todos"]');
+                    if (todosButton) {
+                        todosButton.click();
+                    } else if (document.querySelector('.category-btn')) {
+                        // Ou a primeira categoria disponível
+                        document.querySelector('.category-btn').click();
+                    } else {
+                        console.error('Nenhuma categoria disponível.');
+                        alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
+                    }
+                }
+            } catch (error) {
+                console.error("Erro ao carregar categorias:", error);
+                alert(`Erro ao carregar categorias: ${error.message}`);
+            }
+        }
+
+        // Função para obter parâmetros da URL
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
+        }
+
+        // Função para criar o dropdown de banhos
+        function criarDropdownBanhos(banhosNaCategoria) {
+            const banhoFilter = document.getElementById('banhoFilter');
+            
+            // Limpar opções existentes exceto a primeira (Todos)
+            while (banhoFilter.options.length > 1) {
+                banhoFilter.remove(1);
+            }
+
+            if (banhosNaCategoria.size === 0) {
+                return;
+            }
+
+            // Ordenar os banhos alfabeticamente
+            const banhosArray = Array.from(banhosNaCategoria);
+            banhosArray.sort();
+
+            // Adicionar opções ao dropdown
+            banhosArray.forEach(banho => {
+                if (banho && banho !== '') {
+                    const option = document.createElement('option');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    option.textContent = displayText;
+                    option.value = banho;
+                    banhoFilter.appendChild(option);
+                }
+            });
+            
+            // Definir valor atual
+            banhoFilter.value = currentBanho;
+        }
+
+        // Função para filtrar por banho usando o dropdown
+        function filterByBanhoDropdown() {
+            const banhoFilter = document.getElementById('banhoFilter');
+            currentBanho = banhoFilter.value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+        }
+
+        // Carregar imagens a partir dos produtos de uma categoria
+        async function loadImages(categoryDir, categoryName) {
+            console.log(`Iniciando loadImages para: ${categoryName} (${categoryDir})`);
+            
+            currentCategory = categoryName;
+            const banhosNaCategoria = new Set();
+            currentPage = 1;
+            currentBanho = 'todos';
+
+            try {
+                // Carregar produtos da categoria
+                const produtos = await loadProductsForCategory(categoryDir, categoryName);
+                
+                if (produtos.length === 0) {
+                    console.warn(`Nenhum produto encontrado para a categoria ${categoryName}`);
+                    allFiles = [];
+                    displayPage(currentPage, banhosNaCategoria);
+                    return;
+                }
+                
+                // Converter produtos para o formato esperado pelas funções existentes
+                allFiles = produtos.map(produto => {
+                    const imagePath = `${produto.pastaFotos}${produto.imagem}`;
+                    return {
+                        name: produto.imagem,
+                        path: imagePath,
+                        download_url: imagePath,
+                        codigo: produto.codigo
+                    };
+                });
+                
+                // Coletar banhos únicos na categoria
+                produtos.forEach(produto => {
+                    if (produto.banho) {
+                        let normalizedBanho = produto.banho.toLowerCase();
+                        if (normalizedBanho.includes('2 banhos')) {
+                            normalizedBanho = '2 banhos';
+                        }
+                        banhosNaCategoria.add(normalizedBanho);
+                    }
+                });
+
+                displayPage(currentPage, banhosNaCategoria);
+                criarDropdownBanhos(banhosNaCategoria);
+                console.log('Imagens carregadas com sucesso para:', categoryName);
+            } catch (error) {
+                console.error("Erro ao carregar imagens:", error);
+                alert(`Erro ao carregar imagens da categoria ${categoryName}: ${error.message}`);
+            }
+        }
+
+        function getFilteredFiles() {
+            console.log('Filtrando arquivos com currentBanho:', currentBanho, 'e currentSort:', currentSort);
+            let filtered = allFiles.filter(file => {
+                if (!file.name.endsWith('.jpg') && !file.name.endsWith('.png')) return false;
+                const codigo = file.codigo || file.name.split('.')[0];
+                const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
+                return currentBanho === 'todos' || banho === currentBanho;
+            });
+        
+            filtered.sort((a, b) => {
+                const codigoA = a.codigo || a.name.split('.')[0];
+                const codigoB = b.codigo || b.name.split('.')[0];
+                const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
+                const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
+                const dataA = descricoes[codigoA]?.dataUltimaEntrada || "";
+                const dataB = descricoes[codigoB]?.dataUltimaEntrada || "";
+        
+                // Função auxiliar para comparar datas no formato DD/MM/AAAA
+                const compararDatas = (dataA, dataB, ordemCrescente = false) => {
+                    if (!dataA && !dataB) return 0;
+                    if (!dataA) return ordemCrescente ? -1 : 1;
+                    if (!dataB) return ordemCrescente ? 1 : -1;
+                    
+                    // Converter datas no formato DD/MM/AAAA para comparação
+                    const [diaA, mesA, anoA] = dataA.split('/');
+                    const [diaB, mesB, anoB] = dataB.split('/');
+                    const dateStrA = `${anoA}-${mesA}-${diaA}`;
+                    const dateStrB = `${anoB}-${mesB}-${diaB}`;
+                    
+                    // Comparar datas
+                    return ordemCrescente ? 
+                        dateStrA.localeCompare(dateStrB) : // Crescente (mais antigo primeiro)
+                        dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
+                };
+        
+                switch (currentSort) {
+                    case 'newest':
+                        // Ordenar pela data mais recente primeiro
+                        const resultNewest = compararDatas(dataA, dataB, false);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultNewest !== 0 ? resultNewest : 
+                               codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
+                    case 'oldest':
+                        // Ordenar pela data mais antiga primeiro
+                        const resultOldest = compararDatas(dataA, dataB, true);
+                        // Se datas iguais ou inexistentes, usa o código como desempate
+                        return resultOldest !== 0 ? resultOldest : 
+                               codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                        
+                    case 'highestPrice':
+                        return precoB - precoA || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
+                    case 'lowestPrice':
+                        return precoA - precoB || codigoB.localeCompare(codigoA, undefined, { numeric: true });
+                        
+                    default:
+                        return 0;
+                }
+            });
+        
+            currentVisibleFiles = filtered;
+            return filtered;
+        }
+
+        function displayPage(page, banhosNaCategoria) {
+            console.log('Exibindo página:', page);
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const filteredFiles = getFilteredFiles();
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedFiles = filteredFiles.slice(start, end);
+            console.log('Itens a exibir:', paginatedFiles.length);
+
+            if (paginatedFiles.length === 0) {
+                gallery.innerHTML = '<div style="text-align: center; padding: 20px; color: #666;">Nenhum produto encontrado nesta categoria</div>';
+                updatePagination();
+                return;
+            }
+
+            paginatedFiles.forEach(file => {
+                const codigo = file.codigo || file.name.split('.')[0];
+                const { descricao, preco, banho } = descricoes[codigo] || { 
+                    descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    preco: "Preço não disponível",
+                    banho: ""
+                };
+                const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
+
+                const item = document.createElement('div');
+                item.className = 'item';
+                item.dataset.banho = banho || 'todos';
+
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'img-container';
+
+                const img = document.createElement('img');
+                img.src = file.download_url;
+                img.alt = descricao || 'Imagem do produto';
+                img.draggable = false;
+                img.onerror = () => {
+                    console.error(`Erro ao carregar imagem: ${file.download_url}`);
+                    img.src = 'imagens/placeholder.jpg'; // Imagem alternativa em caso de erro
+                };
+                img.onclick = (e) => {
+                    e.preventDefault(); // Previne comportamento padrão
+                    showModal(file.download_url, codigo, indexInAll);
+                };
+
+                const logo = document.createElement('img');
+                logo.src = 'imagens/logo.png';
+                logo.className = 'logo-watermark';
+                logo.alt = 'Logo';
+                logo.draggable = false;
+
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(logo);
+
+                const codigoElement = document.createElement('div');
+                codigoElement.className = 'codigo';
+                codigoElement.textContent = `COD: ${codigo}`;
+
+                const contentWrapper = document.createElement('div');
+                contentWrapper.className = 'content-wrapper';
+
+                const desc = document.createElement('div');
+                desc.className = 'description';
+                desc.textContent = descricao;
+
+                const precoElement = document.createElement('div');
+                precoElement.className = 'preco';
+                precoElement.textContent = preco;
+
+                // Botão de adicionar à sacola com ícone e texto
+                const addToCartBtn = document.createElement('button');
+                addToCartBtn.className = 'add-to-cart-gallery';
+                addToCartBtn.innerHTML = '<img src="imagens/sacola.png" alt="Sacola"> Adicionar à Sacola';
+                addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
+
+                contentWrapper.appendChild(desc);
+                contentWrapper.appendChild(precoElement);
+
+                item.appendChild(imgContainer);
+                item.appendChild(codigoElement);
+                item.appendChild(contentWrapper);
+                item.appendChild(addToCartBtn);
+                
+                gallery.appendChild(item);
+            });
+
+            updatePagination();
+        }
+
+        function updatePagination() {
+            const filteredFiles = getFilteredFiles();
+            const totalPages = Math.ceil(filteredFiles.length / itemsPerPage);
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+
+            if (totalPages <= 1) {
+                paginationDiv.style.display = 'none';
+                return;
+            }
+
+            paginationDiv.style.display = 'flex';
+
+            const prevButton = document.createElement('button');
+            prevButton.textContent = 'Anterior';
+            prevButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            prevButton.disabled = currentPage === 1;
+            paginationDiv.appendChild(prevButton);
+
+            const nextButton = document.createElement('button');
+            nextButton.textContent = 'Próxima';
+            nextButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayPage(currentPage, new Set());
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            };
+            nextButton.disabled = currentPage === totalPages;
+            paginationDiv.appendChild(nextButton);
+        }
+
+        function applySort() {
+            currentSort = document.getElementById('sortFilter').value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            console.log('Ordenação aplicada:', currentSort);
+        }
+
+        function filterByBanho(banho) {
+            currentBanho = banho;
+            currentPage = 1;
+            
+            // Atualizar visualmente o botão ativo
+            document.querySelectorAll('#subcategories button').forEach(button => {
+                button.classList.toggle('active', button.dataset.banho === banho);
+            });
+            
+            displayPage(currentPage, new Set());
+        }
+
+        function showModal(src, codigo, index) {
+            currentModalIndex = index;
+            resetZoomAndPan();
+            updateModalContent(codigo);
+            document.getElementById('imageModal').style.display = 'flex';
+            document.body.classList.add('modal-open');
+            setupModalInteraction();
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+            document.body.classList.remove('modal-open');
+            resetZoomAndPan();
+            
+            if (modalAbortController) {
+                modalAbortController.abort();
+                modalAbortController = null;
+            }
+        }
+
+        function resetZoomAndPan() {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateModalTransform();
+        }
+
+        function updateModalContent(codigo) {
+            const file = currentVisibleFiles[currentModalIndex];
+            if (!file) return;
+
+            const src = file.download_url;
+            codigo = file.codigo || file.name.split('.')[0];
+
+            const { descricao, preco } = descricoes[codigo] || { 
+                descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                preco: "Preço não disponível"
+            };
+
+            const captureArea = document.getElementById('captureArea');
+            const existingLogo = captureArea.querySelector('.logo-watermark');
+            if (existingLogo) existingLogo.remove();
+
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+
+            const logo = document.createElement('img');
+            logo.src = 'imagens/logo.png';
+            logo.className = 'logo-watermark';
+            logo.alt = 'Logo';
+            logo.draggable = false;
+            captureArea.appendChild(logo);
+
+            document.getElementById('modalInfo').innerHTML = `
+                <div class="descricao">${descricao}</div>
+                <div class="preco">${preco}</div>
+            `;
+            updateModalTransform();
+        }
+
+        function updateModalTransform() {
+            const modalContent = document.getElementById('modalContent');
+            modalContent.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+        }
+
+        function setupModalInteraction() {
+            const modalContent = document.getElementById('modalContent');
+            
+            // Remove listeners anteriores
+            if (modalAbortController) {
+                modalAbortController.abort();
+            }
+            
+            modalAbortController = new AbortController();
+            const signal = modalAbortController.signal;
+        
+            let startDist = 0;
+            let lastX = 0;
+            let lastY = 0;
+        
+            // Wheel event para zoom
+            modalContent.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY * -0.01;
+                adjustScale(delta);
+            }, { signal });
+        
+            // Mouse events para arrastar
+            modalContent.addEventListener('mousedown', (e) => {
+                if (scale > 1) {
+                    isDragging = true;
+                    startX = e.clientX - translateX;
+                    startY = e.clientY - translateY;
+                }
+            }, { signal });
+        
+            document.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    e.preventDefault();
+                    translateX = e.clientX - startX;
+                    translateY = e.clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { signal });
+        
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            }, { signal });
+        
+            // Touch events
+            modalContent.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    if (scale > 1) {
+                        isDragging = true;
+                        startX = e.touches[0].clientX - translateX;
+                        startY = e.touches[0].clientY - translateY;
+                    }
+                } else if (e.touches.length === 2) {
+                    startDist = getDistance(e.touches);
+                    lastX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    lastY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                }
+            }, { passive: false, signal });
+        
+            modalContent.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && isDragging) {
+                    translateX = e.touches[0].clientX - startX;
+                    translateY = e.touches[0].clientY - startY;
+                    clampTranslation();
+                    updateModalTransform();
+                } else if (e.touches.length === 2) {
+                    const newDist = getDistance(e.touches);
+                    const scaleChange = newDist / startDist;
+                    adjustScale((scaleChange - 1) * 2);
+                    startDist = newDist;
+        
+                    const newX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                    const newY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                    translateX += (newX - lastX) / scale;
+                    translateY += (newY - lastY) / scale;
+                    lastX = newX;
+                    lastY = newY;
+                    clampTranslation();
+                    updateModalTransform();
+                }
+            }, { passive: false, signal });
+        
+            modalContent.addEventListener('touchend', (e) => {
+                if (e.touches.length === 0) {
+                    isDragging = false;
+                }
+            }, { signal });
+        }
+
+        function adjustScale(delta) {
+            // Se estiver tentando diminuir (delta negativo) e já estiver no tamanho mínimo, não permitir
+            if (delta < 0 && scale <= minScale) {
+                scale = minScale; // Garante que a escala seja exatamente 1 nesse caso
+                return; // Não prossegue com o zoom out
+            }
+            
+            // Caso contrário, aplica o zoom normalmente
+            scale += delta;
+            
+            // Garante que a escala esteja dentro dos limites permitidos
+            scale = Math.max(minScale, Math.min(maxScale, scale));
+            
+            // Se a escala estiver muito próxima do mínimo, ajusta para exatamente o mínimo
+            if (scale < minScale + 0.05) {
+                scale = minScale;
+            }
+            
+            clampTranslation();
+            updateModalTransform();
+        }
+
+        function getDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+
+        function clampTranslation() {
+            const modalContent = document.getElementById('modalContent');
+            const modal = document.getElementById('imageModal');
+            const modalRect = modalContent.getBoundingClientRect();
+            const containerRect = modal.getBoundingClientRect();
+            
+            // Cálculo do tamanho escalado da imagem
+            const scaledWidth = modalRect.width * scale;
+            const scaledHeight = modalRect.height * scale;
+            
+            // Calcula quanto a imagem pode se mover em cada direção
+            // Fórmula corrigida para evitar que a imagem desapareça completamente
+            const maxX = Math.max(0, (scaledWidth - containerRect.width) / (2 * scale));
+            const maxY = Math.max(0, (scaledHeight - containerRect.height) / (2 * scale));
+            
+            // Garante uma área mínima visível da imagem (25% da largura/altura)
+            const minVisibleRatio = 0.25;
+            const effectiveMaxX = Math.min(maxX, (modalRect.width * (1 - minVisibleRatio)) / 2);
+            const effectiveMaxY = Math.min(maxY, (modalRect.height * (1 - minVisibleRatio)) / 2);
+            
+            // Limita a translação dentro dos valores permitidos
+            translateX = Math.max(-effectiveMaxX, Math.min(effectiveMaxX, translateX));
+            translateY = Math.max(-effectiveMaxY, Math.min(effectiveMaxY, translateY));
+            
+            // Se a imagem não estiver ampliada, centraliza
+            if (scaledWidth <= containerRect.width) translateX = 0;
+            if (scaledHeight <= containerRect.height) translateY = 0;
+        }
+
+        function requestItem() {
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
+            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function setupFaleConoscoButton() {
+            const faleConoscoBtn = document.getElementById('faleConoscoBtn');
+            faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
+
+        async function loadRodape() {
+            try {
+                const response = await fetch("rodape.txt");
+                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+                const text = await response.text();
+                const formattedText = text.replace(/\n/g, '<br>');
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">${formattedText}</p>`;
+            } catch (error) {
+                console.error("Erro ao carregar rodapé:", error);
+                document.getElementById("rodape").innerHTML = `<p class="rodape-text">© 2025 Renata - Semijoias e Acessórios. Todos os direitos reservados.</p>`;
+            }
+        }
+
+        window.onload = async () => {
+            console.log('Iniciando carregamento da página');
+            loadCart(); // Carregar carrinho salvo
+            loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            await loadCategories(); // Carregar categorias
+            loadRodape();
+            setupFaleConoscoButton();
+            updateCartCounter(); // Atualizar contador do carrinho
+            
+            // Configurar listeners para as opções de entrega
+            document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
+                option.addEventListener('change', updateDeliveryOption);
+            });
+            
+            // Proteção global contra download de imagens já configurada no DOMContentLoaded
+            
+            console.log('Carregamento da página concluído');
+        };
     </script>
 </body>
 </html>
