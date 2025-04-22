@@ -286,7 +286,7 @@
             height: 40px;
             border-radius: 50%;
             color: #4a4a4a;
-            display: flex;
+            display: none !important; /* Inicialmente oculto */
             align-items: center;
             justify-content: center;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16);
@@ -296,6 +296,10 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 10;
+        }
+        
+        .scroll-arrow-btn.show {
+            display: flex !important; /* Classe para exibir quando necessário */
         }
         
         .scroll-left {
@@ -956,7 +960,7 @@
     <!-- Navegação com botões de categoria -->
     <div class="categories-nav position-relative">
         <!-- Botões de navegação para scroll -->
-        <button class="scroll-arrow-btn scroll-left" id="scroll-left" style="display: flex;">
+        <button class="scroll-arrow-btn scroll-left" id="scroll-left">
             <span class="icon-left"></span>
         </button>
         
@@ -968,7 +972,7 @@
             <!-- Outras categorias serão carregadas dinamicamente -->
         </div>
         
-        <button class="scroll-arrow-btn scroll-right" id="scroll-right" style="display: flex;">
+        <button class="scroll-arrow-btn scroll-right" id="scroll-right">
             <span class="icon-right"></span>
         </button>
     </div>
@@ -1266,29 +1270,11 @@
             
             // Função para verificar e atualizar visibilidade dos botões de scroll
             function updateScrollButtonsVisibility() {
-                // Verificar se precisa de scroll horizontal
                 const needsScroll = categoriesContainer.scrollWidth > categoriesContainer.clientWidth;
                 
-                // Se não precisar de scroll, esconder ambos os botões
-                if (!needsScroll) {
-                    scrollLeftBtn.style.display = 'none';
-                    scrollRightBtn.style.display = 'none';
-                    return;
-                }
-                
-                // Controlar visibilidade baseado na posição do scroll
-                if (categoriesContainer.scrollLeft <= 5) { // Uma pequena tolerância
-                    scrollLeftBtn.style.display = 'none';
-                } else {
-                    scrollLeftBtn.style.display = 'flex';
-                }
-                
-                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth - 5;
-                if (categoriesContainer.scrollLeft >= maxScrollLeft) {
-                    scrollRightBtn.style.display = 'none';
-                } else {
-                    scrollRightBtn.style.display = 'flex';
-                }
+                // Adiciona/remove classe .show ao invés de manipular display diretamente
+                scrollLeftBtn.classList.toggle('show', needsScroll && categoriesContainer.scrollLeft > 5);
+                scrollRightBtn.classList.toggle('show', needsScroll && categoriesContainer.scrollLeft < (categoriesContainer.scrollWidth - categoriesContainer.clientWidth - 5));
             }
             
             // Adicionar eventos aos botões
@@ -2380,12 +2366,6 @@
             // Se a imagem não estiver ampliada, centraliza
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
-        }
-        function requestItem() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
-            const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
         }
 
         function setupFaleConoscoButton() {
