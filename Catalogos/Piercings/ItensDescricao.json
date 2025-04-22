@@ -12,24 +12,14 @@
       "dataUltimaEntrada": "24/01/2025"
     },
     {
-      "codigo": "3555",
-      "descricao": "PIERCING FAKE ELOS CORRENTE",
-      "imagem": "3555.jpg",
+      "codigo": "3626",
+      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
+      "imagem": "3626.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "34,90",
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "07/10/2024"
-    },
-    {
-      "codigo": "3020",
-      "descricao": "PIERCING FLECHA",
-      "imagem": "3020.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/05/2024"
+      "dataUltimaEntrada": "29/10/2024"
     },
     {
       "codigo": "3772",
@@ -42,16 +32,6 @@
       "dataUltimaEntrada": "03/12/2024"
     },
     {
-      "codigo": "3626",
-      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
-      "imagem": "3626.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "29/10/2024"
-    },
-    {
       "codigo": "3771",
       "descricao": "PIERCING FAKE GOTA ABAULADA",
       "imagem": "3771.jpg",
@@ -62,6 +42,36 @@
       "dataUltimaEntrada": "03/12/2024"
     },
     {
+      "codigo": "3020",
+      "descricao": "PIERCING FLECHA",
+      "imagem": "3020.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "39,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "04/05/2024"
+    },
+    {
+      "codigo": "3555",
+      "descricao": "PIERCING FAKE ELOS CORRENTE",
+      "imagem": "3555.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/10/2024"
+    },
+    {
+      "codigo": "3543",
+      "descricao": "PIERCING FAKE BORBOLETA LISA",
+      "imagem": "3543.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/10/2024"
+    },
+    {
       "codigo": "3019",
       "descricao": "PIERCING FLOR COM PONTO DE LUZ",
       "imagem": "3019.jpg",
@@ -70,16 +80,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/05/2024"
-    },
-    {
-      "codigo": "3935",
-      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
-      "imagem": "3935.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/01/2025"
     },
     {
       "codigo": "3969",
@@ -122,14 +122,14 @@
       "dataUltimaEntrada": "18/07/2024"
     },
     {
-      "codigo": "3543",
-      "descricao": "PIERCING FAKE BORBOLETA LISA",
-      "imagem": "3543.jpg",
+      "codigo": "3935",
+      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
+      "imagem": "3935.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "34,90",
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/10/2024"
+      "dataUltimaEntrada": "23/01/2025"
     }
   ]
 }

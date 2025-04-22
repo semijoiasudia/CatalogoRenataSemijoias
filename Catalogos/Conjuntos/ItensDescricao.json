@@ -12,16 +12,6 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "3421",
-      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
-      "imagem": "3421.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "19/11/2024"
-    },
-    {
       "codigo": "4219",
       "descricao": "CONJUNTO INFANTIL PANDA RESINA 41CM",
       "imagem": "4219.jpg",
@@ -62,16 +52,6 @@
       "dataUltimaEntrada": "18/12/2024"
     },
     {
-      "codigo": "3610",
-      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
-      "imagem": "3610.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "86,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "24/10/2024"
-    },
-    {
       "codigo": "3984",
       "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 41+9CM",
       "imagem": "3984.jpg",
@@ -82,6 +62,16 @@
       "dataUltimaEntrada": "12/02/2025"
     },
     {
+      "codigo": "3610",
+      "descricao": "CONJUNTO CONJUNTO CORACAO VERDE ESMERALDA 46CM",
+      "imagem": "3610.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "86,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "24/10/2024"
+    },
+    {
       "codigo": "3730",
       "descricao": "CONJUNTO ZIRCONIAS CORACAO CRISTAL 45+5CM",
       "imagem": "3730.jpg",
@@ -90,6 +80,16 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/11/2024"
+    },
+    {
+      "codigo": "3418",
+      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
+      "imagem": "3418.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/11/2024"
     },
     {
       "codigo": "3875",
@@ -132,14 +132,14 @@
       "dataUltimaEntrada": "19/11/2024"
     },
     {
-      "codigo": "3418",
-      "descricao": "CONJUNTO ORGANICO ESCORRIDO VAZADO 47+5CM",
-      "imagem": "3418.jpg",
+      "codigo": "3421",
+      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
+      "imagem": "3421.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "109,90",
-      "precoConsignado": "159,90",
+      "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
+      "dataUltimaEntrada": "19/11/2024"
     }
   ]
 }

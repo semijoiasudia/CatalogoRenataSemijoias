@@ -12,16 +12,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4248",
-      "descricao": "ACESSORIO CINTO ELASTICO FORMATO X 68 A 110CM",
-      "imagem": "4248.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "COR OURO",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4249",
       "descricao": "ACESSORIO CINTO ELASTICO FORMATO DUPLO X 68 A 110CM",
       "imagem": "4249.jpg",
@@ -32,13 +22,23 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4250",
-      "descricao": "ACESSORIO CINTO ELASTICO MOEDAS PEQUENAS 71 A 110CM",
-      "imagem": "4250.jpg",
+      "codigo": "4248",
+      "descricao": "ACESSORIO CINTO ELASTICO FORMATO X 68 A 110CM",
+      "imagem": "4248.jpg",
       "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
       "banho": "COR OURO",
+      "dataUltimaEntrada": "14/04/2025"
+    },
+    {
+      "codigo": "4247",
+      "descricao": "ACESSORIO CINTO MOEDAS ELASTICO ORGANICO 72 A 110CM",
+      "imagem": "4247.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "COR PRATA",
       "dataUltimaEntrada": "14/04/2025"
     },
     {
@@ -72,16 +72,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4247",
-      "descricao": "ACESSORIO CINTO MOEDAS ELASTICO ORGANICO 72 A 110CM",
-      "imagem": "4247.jpg",
-      "pastaFotos": "Catalogos/Acessorios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "COR PRATA",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4227",
       "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
       "imagem": "4227.jpg",
@@ -90,6 +80,16 @@
       "precoConsignado": "109,90",
       "banho": "2 BANHOS",
       "dataUltimaEntrada": "11/04/2025"
+    },
+    {
+      "codigo": "4250",
+      "descricao": "ACESSORIO CINTO ELASTICO MOEDAS PEQUENAS 71 A 110CM",
+      "imagem": "4250.jpg",
+      "pastaFotos": "Catalogos/Acessorios/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "COR OURO",
+      "dataUltimaEntrada": "14/04/2025"
     }
   ]
 }
