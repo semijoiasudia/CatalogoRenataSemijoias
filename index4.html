@@ -931,7 +931,7 @@
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
-    <h2 style="font-size: 16px; font-weight: normal; color: #333; margin: 10px 0 15px; padding: 0; text-align: center;">Seja bem vinda ao nosso Catálogo Online!</h2>
+    <h2 style="font-size: 12px; letter-spacing: 2px; font-weight: normal; color: #333; margin: 30px 0 50px; padding: 0; text-align: center;">SEJA BEM VINDA AO NOSSO CATÁLOGO ONLINE!</h2>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -951,11 +951,7 @@
     <!-- Navegação com botões de categoria -->
     <div class="categories-nav position-relative">
         <div id="categories-container" class="d-inline-flex px-3 mx-auto">
-            <!-- Botão "Todos" -->
-            <button class="category-btn active" data-category="todos">
-                <span class="icon icon-gem"></span> Todos
-            </button>
-            <!-- Outras categorias serão carregadas dinamicamente -->
+            <!-- Categorias serão carregadas dinamicamente -->
         </div>
     </div>
     
@@ -979,7 +975,7 @@
         </select>
     </div>
     
-    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
+    <!--<p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>-->
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
@@ -1198,29 +1194,8 @@
         
         // Configurar os botões de categoria
         function setupCategoryButtons() {
-            // Configurar botão "Todos"
-            const todosButton = document.querySelector('.category-btn[data-category="todos"]');
-            if (todosButton) {
-                todosButton.addEventListener('click', function() {
-                    // Remover classe 'active' de todos os botões
-                    document.querySelectorAll('.category-btn').forEach(btn => {
-                        btn.classList.remove('active');
-                    });
-                    // Adicionar classe 'active' ao botão "Todos"
-                    this.classList.add('active');
-                    
-                    // Resetar banho para 'todos'
-                    currentBanho = 'todos';
-                    currentCategory = 'todos';
-                    
-                    // Exibir todos os produtos
-                    allFiles = [...allProducts]; // Copiar todos os produtos para allFiles
-                    displayPage(1, new Set());
-                    
-                    // Centralizar o botão na área visível
-                    centerButtonInView(this);
-                });
-            }
+            // Não é mais necessário configurar o botão "Todos" pois ele foi removido
+            categoriesContainer = document.getElementById('categories-container');
         }
         
         // Função para centralizar um botão na área visível
@@ -1261,8 +1236,8 @@
             query = query.trim().toLowerCase();
             console.log('Buscando produtos:', query);
             
-            // Definir onde procurar: em todas as categorias ou apenas na atual
-            let searchSource = (currentCategory === 'todos') ? allProducts : allFiles;
+            // Buscar apenas na categoria atual (allFiles)
+            let searchSource = allFiles;
             
             // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
             const filteredFiles = searchSource.filter(file => {
@@ -1605,46 +1580,8 @@
             }
         }
 
-        // Função para carregar todos os produtos de todas as categorias
-        async function loadAllProducts() {
-            console.log('Carregando todos os produtos de todas as categorias');
-            allProducts = []; // Limpar array global
-            
-            // Array de promessas para carregar todas as categorias
-            const loadPromises = categoriasAtivas.map(async (categoria) => {
-                const categoryDir = categoria.diretorio;
-                const categoryName = categoria.name;
-                try {
-                    const produtos = await loadProductsForCategory(categoryDir, categoryName);
-                    
-                    // Converter produtos para o formato esperado
-                    const formattedProducts = produtos.map(produto => {
-                        const imagePath = `${produto.pastaFotos}${produto.imagem}`;
-                        return {
-                            name: produto.imagem,
-                            path: imagePath,
-                            download_url: imagePath,
-                            codigo: produto.codigo,
-                            category: categoryName
-                        };
-                    });
-                    
-                    return formattedProducts;
-                } catch (error) {
-                    console.error(`Erro ao carregar produtos da categoria ${categoryName}:`, error);
-                    return [];
-                }
-            });
-            
-            // Aguardar todas as promessas serem resolvidas
-            const productsArrays = await Promise.all(loadPromises);
-            
-            // Juntar todos os produtos em um único array
-            allProducts = productsArrays.flat();
-            
-            console.log(`Total de produtos carregados: ${allProducts.length}`);
-            return allProducts;
-        }
+        // Função para carregar todos os produtos de todas as categorias - removida pois não é mais necessária
+        // Agora cada categoria é carregada individualmente quando selecionada
 
         // Carregar produtos para uma categoria específica através do seu JSON
         async function loadProductsForCategory(categoryDir, categoryName) {
@@ -1683,8 +1620,7 @@
                 
                 // Vamos substituir o dropdown pelo container de botões
                 const categoriesContainer = document.getElementById('categories-container');
-                
-                // Manter o botão "Todos" que já está no container
+                categoriesContainer.innerHTML = ''; // Limpar o container
                 
                 // Ordenar as categorias por nome antes de criar os botões
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
@@ -1723,9 +1659,6 @@
                     categoriesContainer.appendChild(button);
                 });
 
-                // Carregar todos os produtos de todas as categorias
-                await loadAllProducts();
-
                 // Carregar a categoria inicial seguindo a ordem de prioridade:
                 // 1. Parâmetro na URL
                 // 2. Valor do config.ini
@@ -1736,11 +1669,10 @@
                 // Procurar o botão correspondente à categoria inicial
                 for (const button of document.querySelectorAll('.category-btn')) {
                     const buttonText = button.querySelector('.icon-gem') ? 
-                        button.textContent.trim().replace('Todos', '') : 
+                        button.textContent.trim() : 
                         button.textContent.trim();
                     
-                    if (buttonText.toLowerCase() === initialCategory.toLowerCase() && 
-                        button.dataset.category !== 'todos') {
+                    if (buttonText.toLowerCase() === initialCategory.toLowerCase()) {
                         initialButton = button;
                         break;
                     }
@@ -1750,18 +1682,12 @@
                     console.log('Carregando categoria inicial:', initialButton.textContent.trim());
                     // Simular clique no botão
                     initialButton.click();
+                } else if (document.querySelector('.category-btn')) {
+                    // Se a categoria inicial não for encontrada, carregar a primeira categoria disponível
+                    document.querySelector('.category-btn').click();
                 } else {
-                    // Se a categoria inicial não for encontrada, carregar "Todos"
-                    const todosButton = document.querySelector('.category-btn[data-category="todos"]');
-                    if (todosButton) {
-                        todosButton.click();
-                    } else if (document.querySelector('.category-btn')) {
-                        // Ou a primeira categoria disponível
-                        document.querySelector('.category-btn').click();
-                    } else {
-                        console.error('Nenhuma categoria disponível.');
-                        alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
-                    }
+                    console.error('Nenhuma categoria disponível.');
+                    alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
@@ -2323,7 +2249,7 @@
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
-            await loadCategories(); // Carregar categorias
+            await loadCategories(); // Carregar categorias e a categoria inicial
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
@@ -2332,8 +2258,6 @@
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
             });
-            
-            // Proteção global contra download de imagens já configurada no DOMContentLoaded
             
             console.log('Carregamento da página concluído');
         };
