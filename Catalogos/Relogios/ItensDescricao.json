@@ -12,22 +12,12 @@
       "dataUltimaEntrada": "18/04/2025"
     },
     {
-      "codigo": "4139",
-      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
-      "imagem": "4139.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "4142",
-      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
-      "imagem": "4142.jpg",
+      "codigo": "4141",
+      "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
+      "imagem": "4141.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "94,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     },
@@ -35,6 +25,16 @@
       "codigo": "4140",
       "descricao": "RELOGIO INSP. FUNDO VERMELHO PULSEIRA ELASTICA",
       "imagem": "4140.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4139",
+      "descricao": "RELOGIO INSP. FUNDO ROSA PULSEIRA ELASTICA",
+      "imagem": "4139.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "64,90",
       "precoConsignado": "89,90",
@@ -122,12 +122,12 @@
       "dataUltimaEntrada": "09/04/2025"
     },
     {
-      "codigo": "4141",
-      "descricao": "RELOGIO INSP. CAFE PULSEIRA COURO SINTETICO",
-      "imagem": "4141.jpg",
+      "codigo": "4142",
+      "descricao": "RELOGIO QUADRADO FUNDO PRETO PULSEIRA ELASTICA",
+      "imagem": "4142.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "59,90",
-      "precoConsignado": "94,90",
+      "precoConsignado": "89,90",
       "banho": "INOX DOURADO",
       "dataUltimaEntrada": "22/03/2025"
     }

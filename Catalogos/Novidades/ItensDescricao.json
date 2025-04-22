@@ -2,6 +2,16 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4295",
+      "descricao": "BRINCO TRIO PÉROLA BRANCA",
+      "imagem": "4295.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "22/04/2025"
+    },
+    {
       "codigo": "4294",
       "descricao": "BRINCO TRIO PONTO DE LUZ AZUL CLARO",
       "imagem": "4294.jpg",
