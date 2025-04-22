@@ -950,13 +950,13 @@
     <!-- Campo de busca -->
     <div class="search-container">
         <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
-        <button id="search-button" class="search-btn">🔍</button>
+                    <button id="search-button" class="search-btn" style="font-size: 18px;">🔍</button>
     </div>
     
     <!-- Navegação com botões de categoria -->
     <div class="categories-nav position-relative">
         <!-- Botões de navegação para scroll -->
-        <button class="scroll-arrow-btn scroll-left" id="scroll-left">
+        <button class="scroll-arrow-btn scroll-left" id="scroll-left" style="display: flex;">
             <span class="icon-left"></span>
         </button>
         
@@ -968,7 +968,7 @@
             <!-- Outras categorias serão carregadas dinamicamente -->
         </div>
         
-        <button class="scroll-arrow-btn scroll-right" id="scroll-right">
+        <button class="scroll-arrow-btn scroll-right" id="scroll-right" style="display: flex;">
             <span class="icon-right"></span>
         </button>
     </div>
@@ -1266,19 +1266,28 @@
             
             // Função para verificar e atualizar visibilidade dos botões de scroll
             function updateScrollButtonsVisibility() {
-                // Mostrar botão esquerdo apenas se houver conteúdo à esquerda para scrollar
-                if (categoriesContainer.scrollLeft > 0) {
-                    scrollLeftBtn.classList.remove('d-none');
-                } else {
-                    scrollLeftBtn.classList.add('d-none');
+                // Verificar se precisa de scroll horizontal
+                const needsScroll = categoriesContainer.scrollWidth > categoriesContainer.clientWidth;
+                
+                // Se não precisar de scroll, esconder ambos os botões
+                if (!needsScroll) {
+                    scrollLeftBtn.style.display = 'none';
+                    scrollRightBtn.style.display = 'none';
+                    return;
                 }
                 
-                // Mostrar botão direito apenas se houver mais conteúdo à direita
-                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth;
-                if (categoriesContainer.scrollLeft < maxScrollLeft - 10) { // 10px tolerance
-                    scrollRightBtn.classList.remove('d-none');
+                // Controlar visibilidade baseado na posição do scroll
+                if (categoriesContainer.scrollLeft <= 5) { // Uma pequena tolerância
+                    scrollLeftBtn.style.display = 'none';
                 } else {
-                    scrollRightBtn.classList.add('d-none');
+                    scrollLeftBtn.style.display = 'flex';
+                }
+                
+                const maxScrollLeft = categoriesContainer.scrollWidth - categoriesContainer.clientWidth - 5;
+                if (categoriesContainer.scrollLeft >= maxScrollLeft) {
+                    scrollRightBtn.style.display = 'none';
+                } else {
+                    scrollRightBtn.style.display = 'flex';
                 }
             }
             
@@ -2372,7 +2381,6 @@
             if (scaledWidth <= containerRect.width) translateX = 0;
             if (scaledHeight <= containerRect.height) translateY = 0;
         }
-
         function requestItem() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
