@@ -2,6 +2,16 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4168",
+      "descricao": "BRINCO GOTA ORGANICA ESCORRIDA",
+      "imagem": "4168.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "62,90",
+      "precoConsignado": "92,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/04/2025"
+    },
+    {
       "codigo": "4297",
       "descricao": "BRINCO DUO ARGOLA REDONDA",
       "imagem": "4297.jpg",
@@ -793,7 +803,7 @@
     },
     {
       "codigo": "3845",
-      "descricao": "BRINCO BORBOLETA P CRAVEJADA COLORS",
+      "descricao": "BRINCO BORBOLETA P CRAVEJADA COLORS INFANTIL/ADULTO",
       "imagem": "3845.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "36,90",
