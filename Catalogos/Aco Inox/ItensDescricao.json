@@ -2,6 +2,16 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4302",
+      "descricao": "INOX TORNOZELEIRA 3 BORBOLETAS PRETAS",
+      "imagem": "4302.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "49,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "24/04/2025"
+    },
+    {
       "codigo": "4299",
       "descricao": "INOX PULSEIRA BERLOQUES FIXOS CRUZ E CORACAO 19CM",
       "imagem": "4299.jpg",
