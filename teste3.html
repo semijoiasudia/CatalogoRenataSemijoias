@@ -419,12 +419,13 @@
         }
         .gallery .description {
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 13px; /* Reduzido ligeiramente para acomodar mais texto */
             color: #333;
             word-wrap: break-word;
             overflow-wrap: break-word;
             max-width: 100%;
             white-space: normal;
+            line-height: 1.3; /* Melhorar espaçamento entre linhas */
         }
         .gallery .preco {
             margin-top: 5px;
@@ -556,6 +557,8 @@
         }
         .modal-info .descricao {
             font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 10px;
         }
         .modal-info .preco {
             font-size: 20px;
@@ -941,6 +944,11 @@
         }
         .modal-info .preco-oferta {
             display: inline-block;
+        }
+        .tipo-produto {
+            font-weight: bold;
+            color: #8a8167; /* Cor similar ao tema dourado champagne do site */
+            margin-right: 5px;
         }
         #banhoSelectContainer { margin-left: auto; }
         #sortFilterContainer { margin-left: auto; }
@@ -1388,7 +1396,7 @@
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const descricao = document.querySelector('.modal-info .descricao').textContent;
+            const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
             
             // Obter apenas o preço final (seja oferta ou regular)
             let precoFinal;
@@ -1404,7 +1412,7 @@
             
             const imagem = document.getElementById('modalImg').src;
             
-            addToCart(codigo, descricao, precoFinal, imagem);
+            addToCart(codigo, descricaoCompleta, precoFinal, imagem);
         }
 
         // Adicionar à sacola a partir da galeria
@@ -1689,6 +1697,7 @@
                     
                     descricoes[produto.codigo] = {
                         descricao: produto.descricao,
+                        tipo: produto.tipo || "", // Adicionando o tipo ao objeto
                         preco: precoDisplay,
                         precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
                         isOferta: isOferta,
@@ -1970,10 +1979,11 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, preco, banho } = descricoes[codigo] || { 
+                const { descricao, preco, banho, tipo } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: ""
+                    banho: "",
+                    tipo: ""
                 };
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
@@ -2015,7 +2025,13 @@
 
                 const desc = document.createElement('div');
                 desc.className = 'description';
-                desc.textContent = capitalizarPrimeiraLetra(descricao);
+                
+                // Aqui adicionamos o tipo, caso exista
+                if (tipo && tipo.trim() !== "") {
+                    desc.innerHTML = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
+                } else {
+                    desc.textContent = capitalizarPrimeiraLetra(descricao);
+                }
 
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
@@ -2137,9 +2153,10 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, preco } = descricoes[codigo] || { 
+            const { descricao, preco, tipo } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                preco: "Preço não disponível"
+                preco: "Preço não disponível",
+                tipo: ""
             };
 
             const captureArea = document.getElementById('captureArea');
@@ -2155,6 +2172,14 @@
             logo.alt = 'Logo';
             logo.draggable = false;
             captureArea.appendChild(logo);
+
+            // Aqui adicionamos o tipo, caso exista
+            let descricaoCompleta;
+            if (tipo && tipo.trim() !== "") {
+                descricaoCompleta = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
+            } else {
+                descricaoCompleta = capitalizarPrimeiraLetra(descricao);
+            }
 
             document.getElementById('modalInfo').innerHTML = `
                 <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
