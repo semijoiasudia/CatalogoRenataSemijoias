@@ -1133,7 +1133,7 @@
     },
     {
       "codigo": "3554",
-      "descricao": "BRINCO CACHO DE UVA CRAVEJADO CRISTAL",
+      "descricao": "BRINCO INFANTIL CACHO DE UVA CRAVEJADO CRISTAL",
       "imagem": "3554.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "32,90",
@@ -1143,7 +1143,7 @@
     },
     {
       "codigo": "3553",
-      "descricao": "BRINCO CACHO DE UVA CRAVEJADO CRISTAL",
+      "descricao": "BRINCO INFANTIL CACHO DE UVA CRAVEJADO CRISTAL",
       "imagem": "3553.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "34,90",
@@ -1249,6 +1249,16 @@
       "preco": "44,90",
       "precoConsignado": "69,90",
       "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "04/10/2024"
+    },
+    {
+      "codigo": "3511",
+      "descricao": "BRINCO ARGOLA OVAL 3 PEDRAS COLORS",
+      "imagem": "3511.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/10/2024"
     },
     {
