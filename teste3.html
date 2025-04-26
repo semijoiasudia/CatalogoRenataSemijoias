@@ -17,7 +17,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script> -->
+    </script>-->
     
     <style>
         body {
@@ -26,15 +26,15 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            background-color: #f8f9fa;
         }
         
-        /* Novo container da logo */
+        /* Container da logo - Sem bordas e sombras */
         .logo-container {
             padding: 8px 0;
-            background: linear-gradient(135deg, #f8f8f8, #ffffff);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: transparent;
             margin-bottom: 10px;
-            position: relative; /* Para que o overlay fique posicionado corretamente */
+            position: relative;
         }
         .logo-container img {
             max-width: 140px;
@@ -56,28 +56,19 @@
             z-index: 2;
         }
         
-        /* Título estilizado mais elegante */
-        .catalogo-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto 5px;
-            padding: 5px 5px 8px;
-            position: relative;
-            background-color: #fcfaf5;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        .catalogo-titulo {
-            font-size: 15px;
+        /* Texto da localização posicionado no topo direito */
+        .location-text {
+            position: absolute;
+            bottom: 12px;
+            right: 15px;
+            font-size: 13px;
+            color: #666;
             font-weight: normal;
-            color: #333;
-            margin: 0;
-            padding: 5px 0;
-            text-align: center;
-            position: relative;
+            text-align: right;
+            line-height: 1.3;
         }
+        
+        /* Removido estilos de container e título do catálogo */
         /* Texto explicativo movido para fora do container */
         .catalogo-subtitulo {
             font-size: 14px;
@@ -87,220 +78,6 @@
             max-width: 600px;
         }
         
-        /* NOVOS ESTILOS: Carrossel de Novidades */
-        .novidades-container {
-            width: 100%;
-            max-width: 100%;
-            margin: 0 auto 20px;
-            padding: 15px 5px;
-            position: relative;
-            background-color: #fcfaf5;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-        
-        .novidades-titulo {
-            font-size: 22px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 15px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .novidades-titulo:after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 2px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            margin: 8px auto 0;
-        }
-        
-        .carousel-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            padding: 5px;
-            max-width: 100%;
-        }
-        
-        .carousel-items {
-            display: flex;
-            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-            margin: 0 -5px;
-            padding: 5px 0;
-            width: 100%;
-        }
-        
-        .carousel-item {
-            flex: 0 0 calc(25% - 10px);
-            min-width: calc(25% - 10px);
-            padding: 0 5px;
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .carousel-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .carousel-item .inner {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-            overflow: hidden;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            transition: box-shadow 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-        
-        .carousel-item .inner:hover {
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-        
-        .carousel-item .img-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 100%; /* Aspecto 1:1 (quadrado) */
-            height: 0;
-        }
-        
-        .carousel-item .img-container img.slide-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-            user-select: none;
-            -webkit-touch-callout: none;
-            -webkit-user-drag: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            pointer-events: none;
-        }
-        
-        .carousel-item .img-container img.slide-image:hover {
-            transform: scale(1.05);
-        }
-        
-        .carousel-item .logo-watermark {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            width: 20%;
-            height: auto;
-            max-width: 40px;
-            max-height: 40px;
-            object-fit: contain;
-            z-index: 2;
-            pointer-events: none;
-            border-radius: 1px;
-        }
-        
-        .carousel-item .carrossel-h-category-name {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(212, 175, 55, 0.8);
-            color: white;
-            padding: 4px 12px;
-            font-weight: bold;
-            font-size: 14px;
-            border-radius: 20px;
-            z-index: 3;
-        }
-        
-        .carousel-nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        .carousel-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background-color: #ddd;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .carousel-dot.active {
-            background-color: #d4af37;
-        }
-        
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            transform: translateY(-50%);
-            z-index: 10;
-            display: flex;
-            justify-content: space-between;
-            pointer-events: none;
-            left: 0;
-        }
-        
-        .carousel-control {
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            transition: background-color 0.3s;
-            pointer-events: auto;
-            border: none;
-        }
-        
-        .carousel-control:hover {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .carousel-control.prev {
-            margin-left: 5px;
-        }
-        
-        .carousel-control.next {
-            margin-right: 5px;
-        }
-        
-        /* Responsividade do carrossel */
-        @media (max-width: 768px) {
-            .carousel-item {
-                flex: 0 0 calc(50% - 10px);
-                min-width: calc(50% - 10px);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .carousel-item {
-                flex: 0 0 calc(100% - 10px);
-                min-width: calc(100% - 10px);
-            }
-            
-            /* Garante que o item fica centralizado em dispositivos móveis */
-            .carousel-items {
-                justify-content: center;
-            }
-        }
-        /* FIM DOS NOVOS ESTILOS */
-               
         h1 {
             margin: 20px 0;
             font-size: 24px;
@@ -309,98 +86,57 @@
         .modal-open {
             overflow: hidden;
         }
-        .tabs-container {
-                width: 100%;
-                max-width: 100%; /* Usar 100% da largura do container pai */
-                overflow-x: auto;
-                overflow-y: visible; /* Alterado para visible para não cortar os botões ao crescerem */
-                white-space: nowrap;
-                padding: 5px 0 17px 0; /* Aumentado padding inferior para acomodar o crescimento */
-                margin: 0 0 12px 0;
-                background-color: transparent;
-                border-radius: 0;
-                box-shadow: none;
-                border-bottom: 1px solid rgba(0,0,0,0.06);
+
+        /* Container para controles de navegação */
+        .navigation-controls {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 15px;
+            box-sizing: border-box;
         }
-        .tabs {
-            display: inline-flex;
-            gap: 8px;
-            padding: 2px; /* Pequeno padding para evitar cortes nas bordas */
-        }
-        .tab {
-            padding: 10px 18px;
-            font-size: 15px;
-            cursor: pointer;
-            border: none;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #e6c977, #d4af37);
-            color: white;
-            font-weight: bold;
-            transition: all 0.2s;
-            white-space: nowrap;
-            min-width: 100px;
-            text-align: center;
-        }
-        .tab:hover {
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px;
-            margin: -1px -2px; /* Compensação para manter alinhamento */
-        }
-        .tab.active {
-            background: linear-gradient(135deg, #d4af37, #b8860b); /* Cor mais escura */
-            box-shadow: 0px 4px 8px rgba(230, 201, 119, 0.5);
-            padding: 11px 20px; /* Padding maior que o normal */
-            margin: -1px -2px; /* Compensação para manter alinhamento */
-        }
-        .tabs-container::-webkit-scrollbar {
-            height: 8px;
-        }
-        .tabs-container::-webkit-scrollbar-track {
-            background: #f1f1f1;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb {
-            background: #e6c977;
-            border-radius: 4px;
-        }
-        .tabs-container::-webkit-scrollbar-thumb:hover {
-            background: #d4af37;
-        }
+
+        /* Estilos para os subcategorias (banhos) como botões */
         .subcategories {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 8px;
-            margin: 0 0 12px 0;
-            padding: 0 0 12px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
+            margin: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            padding: 0 0 8px 0; /* Reduzido de 12px para 8px */
+            width: 100%; /* Garantir que ocupe a largura total */
+            text-align: center; /* Reforço para centralização */
         }
         .subcategories button {
             padding: 8px 15px;
             font-size: 14px;
             cursor: pointer;
-            border: none;
+            border: 1px solid #e0e0e0;
             border-radius: 6px;
-            background-color: #e9e9e9;
+            background-color: #ffffff; /* Cor branca conforme solicitado */
             color: #555;
             transition: all 0.2s;
         }
         .subcategories button:hover {
-            background-color: #d4d4d4;
+            background-color: #f5f5f5;
             transform: translateY(-1px);
         }
         .subcategories button.active {
-            background-color: #d4af37;
-            color: white;
-            font-weight: bold;
+            background-color: #f8f5ed;
+            color: #333;
         }
+
+        /* Novo estilo para o filtro de ordenação */
         .filter-container {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
             margin: 0;
-            padding-top: 4px;
+            padding-top: 0px;
         }
         .filter-container label {
             font-size: 14px;
@@ -412,7 +148,7 @@
             font-size: 14px;
             border-radius: 6px;
             border: 1px solid #e0e0e0;
-            background-color: white;
+            background-color: #ffffff;
             cursor: pointer;
             transition: all 0.2s;
             color: #555;
@@ -426,6 +162,206 @@
             border-color: #d4af37;
             box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
         }
+
+        /* Estilos da barra de busca */
+        .search-container {
+            position: relative;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            width: 90%; /* Reduzido de 100% para 90% */
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
+        }
+        
+        .search-input {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            padding-right: 50px; /* Espaço para o botão de busca */
+            box-sizing: border-box; /* Garantir que padding e bordas sejam incluídos na largura */
+        }
+        
+        .search-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background-color: #f8f5ed;
+            color: #4a4a4a;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            padding: 0 15px;
+            cursor: pointer;
+            font-size: 18px; /* Aumentado tamanho da fonte para a lupa */
+        }
+        
+        .search-btn:hover {
+            background-color: #e8e8e8;
+        }
+        
+        /* Container de categorias */
+        .categories-nav {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+            position: relative;
+            margin-top: 10px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Estilos dos Botões de Categoria */
+        .category-btn {
+            background: white;
+            border: 2px solid #f8f5ed;
+            color: #888888; 
+            border-radius: 30px;
+            padding: 0.8rem 2rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            white-space: nowrap;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        /* Estados dos Botões */
+        .category-btn.active,
+        .category-btn:hover {
+            background: #f8f5ed;
+            color: #4a4a4a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        /* Efeito de Pressão ao Clicar */
+        .category-btn:active {
+            transform: translateY(1px);
+            transition: transform 0.1s;
+        }
+        
+        /* Efeito de Gradiente nas Bordas */
+        .category-btn::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 30px;
+            background: linear-gradient(45deg, 
+                #f8f5ed, 
+                #d5c7a3, 
+                #f8f5ed);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .category-btn:hover::after {
+            opacity: 0.3;
+        }
+        
+        /* Setas de Navegação */
+        .scroll-arrow-btn {
+            background: #f8f5ed;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #4a4a4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .scroll-left {
+            left: 0;
+        }
+        
+        .scroll-right {
+            right: 0;
+        }
+        
+        .scroll-arrow-btn:hover {
+            transform: translateY(-50%) scale(1.1);
+            background: #d5c7a3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Ícones */
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        
+        .icon-gem {
+            background: url('imagens/diamante.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .icon-left {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-esquerda.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .icon-right {
+            display: inline-block; 
+            width: 16px;
+            height: 16px;
+            background: url('imagens/seta-direita.png') no-repeat center;
+            background-size: contain;
+        }
+        
+        .d-none {
+            display: none !important;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .category-btn {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+                margin: 0 0.3rem;
+            }
+            
+            .search-container {
+                width: 95%; /* Aumentar um pouco em telas menores */
+                padding: 0 10px; /* Adicionar um pouco de padding */
+            }
+        }
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -443,18 +379,21 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            background-color: #ffffff; /* Adicione esta linha para cor de fundo branca */   
+            padding: 5px; /* Opcional: adicione algum padding para espaçamento interno */
+            border-radius: 5px; /* Opcional: para cantos arredondados */         
         }
         .gallery .img-container {
             position: relative;
             width: 100%;
             overflow: hidden;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
         }
         .gallery .img-container img {
             width: 100%;
             height: auto;
             cursor: pointer;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
             transition: transform 0.2s;
             user-select: none;
             -webkit-touch-callout: none;
@@ -471,7 +410,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 0; /* Removido border-radius */
         }
         .gallery .content-wrapper {
             flex: 1;
@@ -509,8 +448,8 @@
             margin-top: 15px;
             background-color: transparent;
             color: #333;
-            border: 1px solid #000;
-            border-radius: 4px;
+            border: 1px solid #b3b1b1;
+            border-radius: 8px;
             padding: 5px 8px;
             font-size: 12px;
             cursor: pointer;
@@ -559,7 +498,7 @@
         .modal img {
             max-width: 100%;
             max-height: 65vh;
-            border-radius: 8px;
+            border-radius: 0; /* Removido border-radius */
             user-select: none;
             -webkit-touch-callout: none;
             -webkit-user-drag: none;
@@ -575,7 +514,7 @@
             object-fit: contain;
             z-index: 2;
             pointer-events: none;
-            border-radius: 1px; /* Ajuste leve para não cortar os cantos */
+            border-radius: 0; /* Removido border-radius */
         }
         .modal-codigo {
             position: absolute;
@@ -654,7 +593,7 @@
         .rodape {
             margin-top: 20px;
             padding: 10px;
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; /* Mantido original */
             text-align: center;
             font-size: 14px;
             color: #555;
@@ -689,8 +628,8 @@
             cursor: not-allowed;
         }
         .fale-conosco-btn, .instagram-btn {
-            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
-            color: #7d6c3b; /* Cor do texto mais escura para contraste */
+            background-color: #f8f5ed; /* Dourado champagne bem claro e suave */
+            color: #8a8167; /* Cor do texto mais escura para contraste */
             padding: 15px;
             text-align: center;
             text-decoration: none;
@@ -715,7 +654,7 @@
             border-top: 3px solid white; /* Borda branca na parte superior */
         }
         .fale-conosco-btn:hover, .instagram-btn:hover {
-            background-color: #dbc990; /* Dourado mais escuro para hover */
+            background-color: #e8d5a9; /* Dourado mais escuro para hover */
         }
         .fale-conosco-btn img, .instagram-btn img {
             width: 25px;
@@ -737,7 +676,8 @@
         }
         .cart-icon {
             position: relative; /* Para manter o contador posicionado corretamente */
-            background: linear-gradient(135deg, #e6c977, #d4af37);
+            /*background: linear-gradient(135deg, #e6c977, #d4af37);*/
+            background: linear-gradient(135deg, #edd6a1, #e6ca7e); /* Cores mais claras */
             color: white;
             width: 50px;
             height: 50px;
@@ -819,7 +759,7 @@
             width: 60px;
             height: 60px;
             object-fit: cover;
-            border-radius: 4px;
+            border-radius: 0; /* Removido border-radius */
             margin-right: 10px;
             user-select: none;
             -webkit-touch-callout: none;
@@ -888,7 +828,7 @@
         .cart-summary {
             margin-top: 20px;
             padding: 15px;
-            background-color: #f8f9fa;
+            background-color: #ffffff; /* Alterado para branco */
             border-radius: 8px;
         }
         .cart-total-line {
@@ -983,49 +923,39 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-        /* Container principal para navegação */
-        .navigation-controls {
-            width: 100%;
-            max-width: 900px; /* Reduzido de 1000px para 900px para combinar com o resto do layout */
-            margin: 0 auto 20px;
-            background-color: #f8f8f8;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 15px;
-            box-sizing: border-box; /* Garante que padding não ultrapasse a largura máxima */
-        }
-        .info-text {
-            text-align: center;
-            margin: 10px 0;
+        .preco-original {/* Estilos para preços em oferta */
+            text-decoration: line-through;
+            color: #999;
             font-size: 14px;
-            color: #555;
-            line-height: 1.5;
+            display: block;
         }
-        
-        .info-text p {
-            margin: 0px 0;
+        .preco-oferta {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
         }
+        .modal-info .preco-original {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .modal-info .preco-oferta {
+            display: inline-block;
+        }
+        #banhoSelectContainer { margin-left: auto; }
+        #sortFilterContainer { margin-left: auto; }
     </style>
 </head>
 <body>
-    <!-- Novo container da logo -->
+    <!-- Container da logo com texto da localização no canto superior direito -->
     <div class="logo-container">
         <img src="imagens/logo.png" alt="Renata - Semijoias e Acessórios" draggable="false">
+        <!-- Texto da localização posicionado no canto superior direito -->
+        <div class="location-text">Loja em<br>Uberlândia-MG</div>
         <!-- Overlay para proteção extra contra cliques na logo -->
         <div class="logo-protection"></div>
     </div>
-    <div class="info-text">
-        <p>Loja em Uberlândia-MG</p>
-        <!--<p>📦 Enviamos para todo Brasil (frete a calcular)</p>
-        <p>📦 Envio para todo Brasil (frete a calcular)</p>-->
-    </div>
-    
-    <!-- Título estilizado mais discreto -->
-    <div class="catalogo-container">
-        <h2 class="catalogo-titulo">Seja bem vinda ao nosso Catálogo Online!</h2>
-    </div>
-    
-    <!-- Nova seção do carrossel será adicionada dinamicamente aqui via JavaScript -->
+    <h2 style="font-size: 12px; letter-spacing: 2px; font-weight: normal; color: #333; margin: 30px 0 30px; padding: 0; text-align: center;">SEJA BEM VINDA AO NOSSO CATÁLOGO ONLINE!</h2>
     
     <!-- Ícone da Sacola (à esquerda) -->
     <div class="cart-icon-container">
@@ -1033,24 +963,43 @@
             <i>🛍️</i>
             <div class="cart-counter" id="cartCounter">0</div>
         </div>
-        <div class="cart-label">Sacola</div> <!-- Novo elemento para o texto -->
+        <div class="cart-label">Sacola</div> <!-- Elemento para o texto -->
     </div>
-    <div class="navigation-controls">
-        <div class="tabs-container">
-            <div class="tabs" id="tabs"></div>
-        </div>
-        <div class="subcategories" id="subcategories" style="display: none;"></div>
-        <div class="filter-container">
-            <label for="sortFilter">Ordenar por: </label>
-            <select id="sortFilter" onchange="applySort()">
-                <option value="newest" selected>Mais Novos</option>
-                <option value="oldest">Mais Antigos</option>
-                <option value="highestPrice">Maior Preço</option>
-                <option value="lowestPrice">Menor Preço</option>
-            </select>
+    
+    <!-- Campo de busca -->
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
+        <button id="search-button" class="search-btn">🔍</button>
+    </div>
+    
+    <!-- Navegação com botões de categoria -->
+    <div class="categories-nav position-relative">
+        <div id="categories-container" class="d-inline-flex px-3 mx-auto">
+            <!-- Categorias serão carregadas dinamicamente -->
         </div>
     </div>
-    <p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>
+    
+    <!-- Subcategorias (banhos) como dropdown -->
+    <div class="filter-container" style="margin-top: -10px; margin-bottom: 10px;">
+        <label for="banhoFilter">Selecionar o banho: </label>
+        <select id="banhoFilter" onchange="filterByBanhoDropdown()">
+            <option value="todos" selected>Todos</option>
+            <!-- Outras opções de banho serão adicionadas dinamicamente -->
+        </select>
+    </div>
+    
+    <!-- Filtro de ordenação -->
+    <div class="filter-container" style="margin-bottom: 20px;">
+        <label for="sortFilter">Ordenar por: </label>
+        <select id="sortFilter" onchange="applySort()">
+            <option value="newest" selected>Mais Novos</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="highestPrice">Maior Preço</option>
+            <option value="lowestPrice">Menor Preço</option>
+        </select>
+    </div>
+    
+    <!--<p class="catalogo-subtitulo">Selecione seus itens favoritos, adicione à sacola e finalize seu pedido via WhatsApp!</p>-->
     <div class="gallery" id="gallery"></div>
     <div class="pagination" id="pagination"></div>
     
@@ -1078,7 +1027,7 @@
         </div>
     </div>
     
-    <!-- Modal da Sacola (Modificada) -->
+    <!-- Modal da Sacola -->
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <span class="close" onclick="closeCartModal()">×</span>
@@ -1158,6 +1107,7 @@
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
+        let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
         let currentBanho = 'todos';
         let currentSort = 'newest';
         let currentModalIndex = 0;
@@ -1165,19 +1115,15 @@
         let cart = [];
         let modalAbortController = null;
         let currentCategory = '';
-        let isCategoryChanging = false; // Controle para evitar cliques durante mudança de categoria
+        let isCategoryChanging = false;
 
-        // NOVOS: Variáveis para o carrossel
-        let carouselPosition = 0;
-        let carouselItemsPerPage = 4; // Padrão para desktop
-        let carouselAutoplayInterval = null;
-
-        // Configurações de entrega
+        // Configurações globais
         const deliveryConfig = {
             freteUberlandia: 13.00,
             freteOutrasCidades: "A Calcular"
         };
-
+        
+        let categoriaInicial = "Brincos"; // Valor padrão de fallback
         let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
 
         const PHONE_NUMBER = '5534997622408';
@@ -1191,7 +1137,9 @@
         let startY = 0;
         let isDragging = false;
         let touchStartX = 0;
-        let touchStartTime = 0;
+        
+        // Variável para o container de categorias
+        let categoriesContainer = document.getElementById('categories-container');
 
         // Proteção global contra download de imagens
         document.addEventListener('DOMContentLoaded', function() {
@@ -1216,13 +1164,138 @@
                     return false;
                 }
             });
+            
+            // Configurar funcionalidade de busca
+            setupSearchFunctionality();
+            
+            // Configurar botões de categoria e scroll
+            setupCategoryButtons();
         });
 
-        // Carregar configurações de entrega do arquivo config.ini (simulado)
+        function capitalizarPrimeiraLetra(texto) {
+            if (!texto) return texto;
+            return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
+        }
+
+        // Carregar configurações do arquivo config.ini
         function loadDeliveryConfig() {
-            // Aqui normalmente seria feito o carregamento do arquivo config.ini
-            // Como estamos simulando, vamos apenas usar os valores já definidos
-            console.log("Configurações de entrega carregadas:", deliveryConfig);
+            fetch("config.ini")
+                .then(response => response.ok ? response.text() : null)
+                .then(text => {
+                    if (!text) return;
+                    
+                    const lines = text.split('\n');
+                    let currentSection = "";
+                    
+                    for (const line of lines) {
+                        const trimmedLine = line.trim();
+                        
+                        // Identificar seção [Seção]
+                        if (trimmedLine.startsWith('[') && trimmedLine.endsWith(']')) {
+                            currentSection = trimmedLine.substring(1, trimmedLine.length - 1);
+                            continue;
+                        }
+                        
+                        // Processar configurações chave=valor
+                        if (trimmedLine.includes('=')) {
+                            const [key, rawValue] = trimmedLine.split('=').map(part => part.trim());
+                            // Remover aspas simples ou duplas
+                            const value = rawValue.replace(/^['"]|['"]$/g, '');
+                            
+                            // Configurações específicas por seção
+                            if (currentSection === "Entrega") {
+                                if (key === 'FreteUberlandia') {
+                                    deliveryConfig.freteUberlandia = parseFloat(value);
+                                } else if (key === 'FreteOutrasCidades') {
+                                    deliveryConfig.freteOutrasCidades = value;
+                                }
+                            } else if (currentSection === "Geral") {
+                                if (key === 'CategoriaInicial') {
+                                    categoriaInicial = value;
+                                    console.log(`Categoria inicial: ${categoriaInicial}`);
+                                }
+                            }
+                        }
+                    }
+                })
+                .catch(error => console.warn("Erro ao processar config.ini:", error));
+        }
+        
+        // Configurar os botões de categoria
+        function setupCategoryButtons() {
+            // Não é mais necessário configurar o botão "Todos" pois ele foi removido
+            categoriesContainer = document.getElementById('categories-container');
+        }
+        
+        // Função para centralizar um botão na área visível
+        function centerButtonInView(button) {
+            if (!button) return;
+            
+            button.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+        }
+        
+        // Configurar a funcionalidade de busca
+        function setupSearchFunctionality() {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            
+            if (!searchInput || !searchButton) return;
+            
+            searchButton.addEventListener('click', function() {
+                searchProducts(searchInput.value);
+            });
+            
+            searchInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchProducts(searchInput.value);
+                }
+            });
+        }
+        
+        // Função para buscar produtos
+        function searchProducts(query) {
+            if (!query || query.trim() === '') {
+                return;
+            }
+            
+            query = query.trim().toLowerCase();
+            console.log('Buscando produtos:', query);
+            
+            // Buscar apenas na categoria atual (allFiles)
+            let searchSource = allFiles;
+            
+            // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
+            const filteredFiles = searchSource.filter(file => {
+                const codigo = file.codigo || file.name.split('.')[0];
+                const item = descricoes[codigo] || {};
+                
+                return (
+                    (item.descricao && item.descricao.toLowerCase().includes(query)) ||
+                    (codigo && codigo.toLowerCase().includes(query)) ||
+                    (item.banho && item.banho.toLowerCase().includes(query))
+                );
+            });
+            
+            // Se não encontrou resultados, informar
+            if (filteredFiles.length === 0) {
+                showNotification("Nenhum produto encontrado para esta busca! A busca é feita na categoria selecionada!");
+                return;
+            }
+            
+            // Resetar para página 1
+            currentPage = 1;
+            
+            // Atualizar a visualização com os resultados da busca
+            allFiles = filteredFiles;
+            currentVisibleFiles = filteredFiles;
+            displayPage(currentPage, new Set());
+            
+            // Mostrar mensagem de resultados
+            showNotification(`Exibindo ${filteredFiles.length} resultados para "${query}"`);
         }
 
         // Atualizar opção de entrega selecionada
@@ -1280,7 +1353,15 @@
 
         // Adicionar item ao carrinho
         function addToCart(codigo, descricao, preco, imagem) {
-            const precoNumber = getNumericPrice(preco);
+            // Garantir que o preço esteja no formato simples
+            let precoExibicao = preco;
+            
+            // Se ainda tiver "Por:" no texto, remover
+            if (typeof preco === 'string' && preco.includes('Por:')) {
+                precoExibicao = preco.replace('Por: ', '');
+            }
+            
+            const precoNumber = getNumericPrice(precoExibicao);
             
             // Verificar se o item já está no carrinho
             const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
@@ -1293,32 +1374,64 @@
                 cart.push({
                     codigo,
                     descricao,
-                    preco,
+                    preco: precoExibicao, // Usar o preço limpo
                     precoNumber,
                     imagem,
                     quantity: 1
                 });
-            }
-            
-            saveCart();
-            showNotification(`Item adicionado à sacola: ${codigo}`);
+    }
+    
+    saveCart();
+    showNotification(`Item adicionado à sacola: ${codigo}`);
         }
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const descricao = document.querySelector('.modal-info .descricao').textContent;
-            const preco = document.querySelector('.modal-info .preco').textContent;
+            
+            // Obter apenas o preço final (seja oferta ou regular)
+            let precoFinal;
+            
+            // Se for oferta, o preço estará no elemento com classe preco-oferta
+            const precoOfertaElement = document.querySelector('.modal-info .preco-oferta');
+            if (precoOfertaElement) {
+                precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+            } else {
+                // Senão, pegar do elemento .preco normal
+                precoFinal = document.querySelector('.modal-info .preco').textContent;
+            }
+            
             const imagem = document.getElementById('modalImg').src;
             
-            addToCart(codigo, descricao, preco, imagem);
+            addToCart(codigo, descricao, precoFinal, imagem);
         }
 
         // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
             event.preventDefault();
             event.stopPropagation(); // Evita que a modal abra
-            addToCart(codigo, descricao, preco, imagem);
+            
+            // Extrair apenas o preço final (oferta ou regular)
+            let precoFinal;
+            
+            // Verificar se é um item em oferta (preco contém HTML com spans)
+            if (preco.includes('preco-oferta')) {
+                // Criar um elemento temporário para analisar o HTML
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = preco;
+                // Pegar o preço de oferta
+                const precoOfertaElement = tempDiv.querySelector('.preco-oferta');
+                if (precoOfertaElement) {
+                    precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+                } else {
+                    precoFinal = preco; // Fallback
+                }
+            } else {
+                precoFinal = preco; // Preço normal
+            }
+            
+            addToCart(codigo, descricao, precoFinal, imagem);
         }
 
         // Exibir a modal da sacola
@@ -1331,18 +1444,12 @@
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
             });
-            
-            // Parar autoplay do carrossel
-            stopCarouselAutoplay();
         }
 
         // Fechar a modal da sacola
         function closeCartModal() {
             document.getElementById('cartModal').style.display = 'none';
             document.body.classList.remove('modal-open');
-            
-            // Reiniciar autoplay do carrossel
-            startCarouselAutoplay();
         }
 
         // Atualizar os totais do carrinho
@@ -1521,11 +1628,18 @@
         }
 
         function getNumericPrice(preco) {
-            if (!preco || preco === "Preço não disponível") return 0;
+            if (!preco || preco === "Preço não disponível") return 0;    
+            // Extrai apenas o valor numérico após "R$ "
+            const match = preco.match(/R\$ ([0-9,]+)/);
+            if (match && match[1]) {
+                return parseFloat(match[1].replace(',', '.'));
+            }
+            
+            // Fallback
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
         }
 
-        // Carregar categorias ativas do novo arquivo JSON
+        // Carregar categorias ativas do arquivo JSON
         async function loadCategoriasAtivas() {
             try {
                 const response = await fetch(categoriasAtivasUrl);
@@ -1542,6 +1656,9 @@
             }
         }
 
+        // Função para carregar todos os produtos de todas as categorias - removida pois não é mais necessária
+        // Agora cada categoria é carregada individualmente quando selecionada
+
         // Carregar produtos para uma categoria específica através do seu JSON
         async function loadProductsForCategory(categoryDir, categoryName) {
             try {
@@ -1554,14 +1671,27 @@
                 const data = await response.json();
                 console.log(`Carregados ${data.produtos.length} produtos da categoria ${data.categoria || categoryName}`);
                 
-                // Limpar descrições anteriores e adicionar novos produtos
-                descricoes = {};
-                
                 // Adicionar os produtos ao objeto descricoes
                 data.produtos.forEach(produto => {
+                    let precoDisplay;
+                    let precoCarrinho = formatarPreco(produto.precoOferta || produto.preco);
+                    let isOferta = false;
+                    
+                    // Se existir precoOferta, formatar como "De: Por:" para exibição
+                    if (produto.precoOferta) {
+                        const precoOriginal = formatarPreco(produto.preco);
+                        const precoOferta = formatarPreco(produto.precoOferta);
+                        precoDisplay = `<span class="preco-original">De: ${precoOriginal}</span> <span class="preco-oferta">Por: ${precoOferta}</span>`;
+                        isOferta = true;
+                    } else {
+                        precoDisplay = formatarPreco(produto.preco);
+                    }
+                    
                     descricoes[produto.codigo] = {
                         descricao: produto.descricao,
-                        preco: formatarPreco(produto.preco),
+                        preco: precoDisplay,
+                        precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
+                        isOferta: isOferta,
                         banho: produto.banho.toLowerCase(),
                         dataUltimaEntrada: produto.dataUltimaEntrada
                     };
@@ -1574,77 +1704,136 @@
             }
         }
 
-        // Carregar categorias a partir do JSON
+        // Modificar a função loadCategories para criar botões em vez do dropdown
         async function loadCategories() {
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
                 
-                const tabs = document.getElementById('tabs');
-                tabs.innerHTML = '';
-
-                // Ordenar as categorias por nome antes de criar as abas
+                // Vamos substituir o dropdown pelo container de botões
+                const categoriesContainer = document.getElementById('categories-container');
+                categoriesContainer.innerHTML = ''; // Limpar o container
+                
+                // Ordenar as categorias por nome antes de criar os botões
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
-                // Criar abas para cada categoria ativa
+                
+                // Criar botões para cada categoria ativa
                 categoriasAtivas.forEach(categoria => {
-                    const tab = document.createElement('button');
-                    tab.className = 'tab';
-                    tab.textContent = categoria.name;
-                    tab.dataset.diretorio = categoria.diretorio;
-                    tab.onclick = () => {
-                        if (isCategoryChanging) return; // Ignora clique se já estiver mudando de categoria
-                        isCategoryChanging = true; // Define flag de mudança
+                    const button = document.createElement('button');
+                    button.className = 'category-btn';
+                    button.innerHTML = `<span class="icon icon-gem"></span> ${categoria.name}`;
+                    button.dataset.category = categoria.name;
+                    button.dataset.diretorio = categoria.diretorio;
+                    
+                    button.addEventListener('click', function() {
+                        // Remover classe 'active' de todos os botões
+                        document.querySelectorAll('.category-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                        });
                         
-                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                        tab.classList.add('active');
-                        loadImages(categoria.diretorio, categoria.name);
-                        scrollToActiveTab();
+                        // Adicionar classe 'active' ao botão clicado
+                        this.classList.add('active');
                         
-                        // Reseta a flag após um curto intervalo
-                        setTimeout(() => {
-                            isCategoryChanging = false;
-                        }, 300);
-                    };
-                    tabs.appendChild(tab);
+                        // Centralizar o botão na área visível
+                        centerButtonInView(this);
+                        
+                        // Carregar imagens da categoria selecionada
+                        const categoryDir = this.dataset.diretorio;
+                        const categoryName = this.textContent.replace('<span class="icon icon-gem"></span> ', '');
+                        
+                        console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+                        loadImages(categoryDir, categoryName);
+                        
+                        // Resetar banho para 'todos'
+                        currentBanho = 'todos';
+                    });
+                    
+                    categoriesContainer.appendChild(button);
                 });
 
-                // Carregar a categoria inicial
-                const initialCategory = getQueryParam('categoria') || 'Brincos';
-                const initialTab = findTabByText(initialCategory);
-                if (initialTab) {
-                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                    initialTab.classList.add('active');
-                    console.log('Carregando categoria inicial:', initialTab.textContent.trim());
-                    loadImages(initialTab.dataset.diretorio, initialTab.textContent.trim());
-                    scrollToActiveTab();
-                } else if (tabs.children.length > 0) {
-                    // Se a categoria inicial não for encontrada, carregar a primeira categoria
-                    const defaultTab = tabs.children[0];
-                    defaultTab.classList.add('active');
-                    console.log('Carregando categoria padrão:', defaultTab.textContent);
-                    loadImages(defaultTab.dataset.diretorio, defaultTab.textContent.trim());
-                    scrollToActiveTab();
+                // Carregar a categoria inicial seguindo a ordem de prioridade:
+                // 1. Parâmetro na URL
+                // 2. Valor do config.ini
+                // 3. Valor padrão "Brincos"
+                const initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
+                let initialButton = null;
+                
+                // Procurar o botão correspondente à categoria inicial
+                for (const button of document.querySelectorAll('.category-btn')) {
+                    const buttonText = button.querySelector('.icon-gem') ? 
+                        button.textContent.trim() : 
+                        button.textContent.trim();
+                    
+                    if (buttonText.toLowerCase() === initialCategory.toLowerCase()) {
+                        initialButton = button;
+                        break;
+                    }
+                }
+                
+                if (initialButton) {
+                    console.log('Carregando categoria inicial:', initialButton.textContent.trim());
+                    // Simular clique no botão
+                    initialButton.click();
+                } else if (document.querySelector('.category-btn')) {
+                    // Se a categoria inicial não for encontrada, carregar a primeira categoria disponível
+                    document.querySelector('.category-btn').click();
                 } else {
                     console.error('Nenhuma categoria disponível.');
                     alert('Nenhuma categoria disponível. Verifique o arquivo CategoriasAtivas.json.');
                 }
-                
-                // Após carregar as categorias, inicializar o carrossel
-                await initHorizontalCarousel();
             } catch (error) {
                 console.error("Erro ao carregar categorias:", error);
                 alert(`Erro ao carregar categorias: ${error.message}`);
             }
         }
 
-        function findTabByText(categoryName) {
-            const tabs = document.querySelectorAll('.tab');
-            for (let tab of tabs) {
-                if (tab.textContent.trim().toLowerCase() === categoryName.toLowerCase()) {
-                    return tab;
-                }
+        // Função para obter parâmetros da URL
+        function getQueryParam(name) {
+           const urlParams = new URLSearchParams(window.location.search);
+           return urlParams.get(name);
+        }
+
+        // Função para criar o dropdown de banhos
+        function criarDropdownBanhos(banhosNaCategoria) {
+            const banhoFilter = document.getElementById('banhoFilter');
+            
+            // Limpar opções existentes exceto a primeira (Todos)
+            while (banhoFilter.options.length > 1) {
+                banhoFilter.remove(1);
             }
-            return null;
+
+            if (banhosNaCategoria.size === 0) {
+                return;
+            }
+
+            // Ordenar os banhos alfabeticamente
+            const banhosArray = Array.from(banhosNaCategoria);
+            banhosArray.sort();
+
+            // Adicionar opções ao dropdown
+            banhosArray.forEach(banho => {
+                if (banho && banho !== '') {
+                    const option = document.createElement('option');
+                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
+                    if (banho === '2 banhos') {
+                        displayText = '2 Banhos';
+                    }
+                    option.textContent = displayText;
+                    option.value = banho;
+                    banhoFilter.appendChild(option);
+                }
+            });
+            
+            // Definir valor atual
+            banhoFilter.value = currentBanho;
+        }
+
+        // Função para filtrar por banho usando o dropdown
+        function filterByBanhoDropdown() {
+            const banhoFilter = document.getElementById('banhoFilter');
+            currentBanho = banhoFilter.value;
+            currentPage = 1;
+            displayPage(currentPage, new Set());
         }
 
         // Carregar imagens a partir dos produtos de uma categoria
@@ -1690,7 +1879,7 @@
                 });
 
                 displayPage(currentPage, banhosNaCategoria);
-                criarBotoesSubcategorias(banhosNaCategoria);
+                criarDropdownBanhos(banhosNaCategoria);
                 console.log('Imagens carregadas com sucesso para:', categoryName);
             } catch (error) {
                 console.error("Erro ao carregar imagens:", error);
@@ -1762,11 +1951,6 @@
             currentVisibleFiles = filtered;
             return filtered;
         }
-        
-        function getQueryParam(name) {
-           const urlParams = new URLSearchParams(window.location.search);
-           return urlParams.get(name);
-        }
 
         function displayPage(page, banhosNaCategoria) {
             console.log('Exibindo página:', page);
@@ -1831,11 +2015,16 @@
 
                 const desc = document.createElement('div');
                 desc.className = 'description';
-                desc.textContent = descricao;
+                desc.textContent = capitalizarPrimeiraLetra(descricao);
 
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
-                precoElement.textContent = preco;
+                // Se tiver HTML, use innerHTML em vez de textContent
+                if (preco.includes('<span')) {
+                    precoElement.innerHTML = preco;
+                } else {
+                    precoElement.textContent = preco;
+                }
 
                 // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
@@ -1855,9 +2044,6 @@
             });
 
             updatePagination();
-            document.querySelectorAll('.gallery img').forEach(img => {
-                img.addEventListener('contextmenu', (e) => e.preventDefault());
-            });
         }
 
         function updatePagination() {
@@ -1905,40 +2091,6 @@
             console.log('Ordenação aplicada:', currentSort);
         }
 
-        function criarBotoesSubcategorias(banhosNaCategoria) {
-            const subcategoriesDiv = document.getElementById('subcategories');
-            subcategoriesDiv.innerHTML = '';
-
-            if (banhosNaCategoria.size === 0) {
-                subcategoriesDiv.style.display = 'none';
-                return;
-            }
-
-            subcategoriesDiv.style.display = 'flex';
-
-            const botaoTodos = document.createElement('button');
-            botaoTodos.textContent = 'Todos';
-            botaoTodos.dataset.banho = 'todos';
-            botaoTodos.className = currentBanho === 'todos' ? 'active' : '';
-            botaoTodos.onclick = () => filterByBanho('todos');
-            subcategoriesDiv.appendChild(botaoTodos);
-
-            banhosNaCategoria.forEach(banho => {
-                if (banho && banho !== '') {
-                    const botaoBanho = document.createElement('button');
-                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    if (banho === '2 banhos') {
-                        displayText = '2 Banhos';
-                    }
-                    botaoBanho.textContent = displayText;
-                    botaoBanho.dataset.banho = banho;
-                    botaoBanho.className = currentBanho === banho ? 'active' : '';
-                    botaoBanho.onclick = () => filterByBanho(banho);
-                    subcategoriesDiv.appendChild(botaoBanho);
-                }
-            });
-        }
-
         function filterByBanho(banho) {
             currentBanho = banho;
             currentPage = 1;
@@ -1951,25 +2103,6 @@
             displayPage(currentPage, new Set());
         }
 
-        // NOVA FUNÇÃO: Mostrar modal a partir do carrossel
-        function showModalFromCarousel(categoryName) {
-            // Encontrar e clicar na aba correspondente
-            const tab = findTabByText(categoryName);
-            if (tab) {
-                tab.click();
-                // Rolar para o topo da galeria
-                setTimeout(() => {
-                    const gallery = document.getElementById('gallery');
-                    if (gallery) {
-                        gallery.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }, 100);
-            }
-            
-            // Parar autoplay do carrossel
-            stopCarouselAutoplay();
-        }
-
         function showModal(src, codigo, index) {
             currentModalIndex = index;
             resetZoomAndPan();
@@ -1977,10 +2110,6 @@
             document.getElementById('imageModal').style.display = 'flex';
             document.body.classList.add('modal-open');
             setupModalInteraction();
-            document.getElementById('modalImg').addEventListener('contextmenu', (e) => e.preventDefault());
-            
-            // Parar autoplay do carrossel
-            stopCarouselAutoplay();
         }
 
         function closeModal() {
@@ -1992,9 +2121,6 @@
                 modalAbortController.abort();
                 modalAbortController = null;
             }
-            
-            // Reiniciar autoplay do carrossel
-            startCarouselAutoplay();
         }
 
         function resetZoomAndPan() {
@@ -2031,7 +2157,7 @@
             captureArea.appendChild(logo);
 
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${descricao}</div>
+                <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
@@ -2091,7 +2217,6 @@
             modalContent.addEventListener('touchstart', (e) => {
                 if (e.touches.length === 1) {
                     touchStartX = e.touches[0].screenX;
-                    touchStartTime = Date.now();
                     if (scale > 1) {
                         isDragging = true;
                         startX = e.touches[0].clientX - translateX;
@@ -2217,306 +2342,11 @@
             }
         }
 
-        function scrollToActiveTab() {
-            const activeTab = document.querySelector('.tab.active');
-            if (activeTab) {
-                const tabRect = activeTab.getBoundingClientRect();
-                const containerRect = activeTab.parentElement.parentElement.getBoundingClientRect();
-                const scrollLeft = activeTab.parentElement.parentElement.scrollLeft;
-                const tabCenter = tabRect.left + tabRect.width / 2 - containerRect.left + scrollLeft;
-
-                activeTab.parentElement.parentElement.scrollLeft = tabCenter - containerRect.width / 2;
-            }
-        }
-
-        // NOVA FUNÇÃO: Inicializar o carrossel horizontal no novo estilo
-        async function initHorizontalCarousel() {
-            try {
-                // Carregar categorias do arquivo JSON
-                const response = await fetch('CategoriasCarrossel.json');
-                if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                
-                const categorias = await response.json();
-                if (!categorias || categorias.length === 0) {
-                    console.warn("Nenhuma categoria encontrada para o carrossel horizontal");
-                    return;
-                }
-                
-                // Adicionar o novo container do carrossel após o container de título
-                const catalogoContainer = document.querySelector('.catalogo-container');
-                
-                // Criar novo carrossel
-                const novoCarrossel = document.createElement('div');
-                novoCarrossel.className = 'novidades-container';
-                novoCarrossel.innerHTML = `
-                    <h2 class="novidades-titulo">Novidades e Reposições</h2>
-                    <div class="carousel-container">
-                        <div class="carousel-controls">
-                            <button class="carousel-control prev">❮</button>
-                            <button class="carousel-control next">❯</button>
-                        </div>
-                        <div class="carousel-items" id="carrossel-h-wrapper">
-                            <!-- Os itens serão adicionados dinamicamente -->
-                        </div>
-                    </div>
-                    <div class="carousel-nav" id="carousel-nav">
-                        <!-- Os pontos serão adicionados dinamicamente -->
-                    </div>
-                `;
-                
-                // Inserir o carrossel após o container de título
-                catalogoContainer.after(novoCarrossel);
-                
-                // Função para obter todas as imagens de cada categoria
-                async function getCategoryImages(categoryName, limit = 30) {
-                    // Buscar a categoria nas categorias ativas
-                    const categoryFound = categoriasAtivas.find(cat => 
-                        cat.name.toLowerCase() === categoryName.toLowerCase());
-                        
-                    if (!categoryFound) {
-                        return [];
-                    }
-                    
-                    try {
-                        // Tentar carregar produtos da categoria para obter imagens
-                        const jsonUrl = `${categoryFound.diretorio}/ItensDescricao.json`;
-                        const response = await fetch(jsonUrl);
-                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-                        
-                        const data = await response.json();
-                        if (!data.produtos || data.produtos.length === 0) {
-                            return [];
-                        }
-                        
-                        // Filtrar apenas produtos recentes (últimos 30 dias)
-                        const thirtyDaysAgo = new Date();
-                        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-                        
-                        const recentProducts = data.produtos.filter(produto => {
-                            if (produto.dataUltimaEntrada) {
-                                const parts = produto.dataUltimaEntrada.split('/');
-                                if (parts.length === 3) {
-                                    const itemDate = new Date(parts[2], parts[1] - 1, parts[0]);
-                                    return itemDate >= thirtyDaysAgo;
-                                }
-                            }
-                            return false; // Se não tiver data ou for mal formatada, não inclui
-                        });
-                        
-                        // Pegar até 'limit' produtos da categoria (limitando apenas aos recentes)
-                        const products = recentProducts.slice(0, limit);
-                        
-                        // Mapear para o formato que precisamos
-                        return products.map(produto => ({
-                            src: `${produto.pastaFotos}${produto.imagem}`,
-                            codigo: produto.codigo,
-                            categoryName: categoryName,
-                            diretorio: categoryFound.diretorio
-                        }));
-                        
-                    } catch (error) {
-                        console.warn(`Erro ao carregar imagens para categoria ${categoryName}:`, error);
-                        return [];
-                    }
-                }
-                
-                // Obter todas as imagens de todas as categorias
-                let allImages = [];
-                for (const categoria of categorias) {
-                    const images = await getCategoryImages(categoria.nome);
-                    allImages = allImages.concat(images);
-                }
-                
-                // Criar slides para cada imagem
-                const wrapper = document.getElementById('carrossel-h-wrapper');
-                wrapper.innerHTML = '';
-                
-                allImages.forEach(image => {
-                    const slideElement = document.createElement('div');
-                    slideElement.className = 'carousel-item';
-                    slideElement.innerHTML = `
-                        <div class="inner">
-                            <div class="img-container">
-                                <div class="carrossel-h-category-name">${image.categoryName}</div>
-                                <img src="${image.src}" alt="${image.categoryName}" class="slide-image" draggable="false" onerror="this.src='imagens/placeholder.jpg'">
-                                <img src="imagens/logo.png" class="logo-watermark" alt="Logo" draggable="false">
-                            </div>
-                        </div>
-                    `;
-                    
-                    // Adicionar evento de clique para abrir categoria
-                    slideElement.addEventListener('click', () => {
-                        // Encontrar e clicar na aba correspondente
-                        const tab = findTabByText(image.categoryName);
-                        if (tab) {
-                            tab.click();
-                            // Rolar para o topo da galeria
-                            setTimeout(() => {
-                                const gallery = document.getElementById('gallery');
-                                if (gallery) {
-                                    gallery.scrollIntoView({ behavior: 'smooth' });
-                                }
-                            }, 100);
-                        }
-                    });
-                    
-                    wrapper.appendChild(slideElement);
-                });
-                
-                // Ajustar responsivamente a quantidade de itens por página
-                updateCarouselItemsPerPage();
-                
-                // Criar os pontos de navegação
-                createCarouselDots();
-                
-                // Configurar botões de navegação
-                const prevBtn = novoCarrossel.querySelector('.carousel-control.prev');
-                const nextBtn = novoCarrossel.querySelector('.carousel-control.next');
-                
-                prevBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    moveCarousel(-1);
-                });
-                
-                nextBtn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    moveCarousel(1);
-                });
-                
-                // Posicionar o carrossel na primeira página
-                updateCarouselPosition();
-                
-                // Iniciar autoplay
-                startCarouselAutoplay();
-                
-                // Adicionar listener para redimensionamento da janela
-                window.addEventListener('resize', () => {
-                    updateCarouselItemsPerPage();
-                    createCarouselDots(); // Recriar pontos quando o número de itens por página mudar
-                    updateCarouselPosition();
-                });
-                
-                console.log('Carrossel horizontal inicializado com sucesso');
-            } catch (error) {
-                console.error("Erro ao inicializar carrossel horizontal:", error);
-            }
-        }
-        
-        // Ajustar responsivamente a quantidade de itens por página
-        function updateCarouselItemsPerPage() {
-            if (window.innerWidth <= 480) {
-                carouselItemsPerPage = 1;
-            } else if (window.innerWidth <= 768) {
-                carouselItemsPerPage = 2;
-            } else {
-                carouselItemsPerPage = 4;
-            }
-        }
-        
-        // Criar pontos de navegação
-        function createCarouselDots() {
-            const container = document.getElementById('carrossel-h-wrapper');
-            if (!container) return;
-            
-            const items = container.querySelectorAll('.carousel-item');
-            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
-            const dotsContainer = document.getElementById('carousel-nav');
-            
-            if (!dotsContainer) return;
-            
-            dotsContainer.innerHTML = '';
-            
-            for (let i = 0; i < totalPages; i++) {
-                const dot = document.createElement('span');
-                dot.className = 'carousel-dot' + (i === carouselPosition ? ' active' : '');
-                dot.addEventListener('click', () => {
-                    carouselPosition = i;
-                    updateCarouselPosition();
-                });
-                dotsContainer.appendChild(dot);
-            }
-        }
-        
-        // Mover o carrossel (direção: -1 para esquerda, 1 para direita)
-        function moveCarousel(direction) {
-            const container = document.getElementById('carrossel-h-wrapper');
-            if (!container) return;
-            
-            const items = container.querySelectorAll('.carousel-item');
-            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
-            
-            carouselPosition += direction;
-            
-            // Loop circular
-            if (carouselPosition < 0) carouselPosition = totalPages - 1;
-            if (carouselPosition >= totalPages) carouselPosition = 0;
-            
-            updateCarouselPosition();
-        }
-        
-        // Atualizar a posição do carrossel
-        function updateCarouselPosition() {
-            const container = document.getElementById('carrossel-h-wrapper');
-            if (!container) return;
-            
-            const items = container.querySelectorAll('.carousel-item');
-            const totalPages = Math.ceil(items.length / carouselItemsPerPage);
-            
-            // Garantir que a posição esteja dentro dos limites
-            if (carouselPosition < 0) carouselPosition = 0;
-            if (carouselPosition >= totalPages) carouselPosition = totalPages - 1;
-            
-            // Calcular a largura percentual de cada item
-            const itemWidth = 100 / carouselItemsPerPage;
-            
-            // Calcular o deslocamento baseado na posição atual e no número de itens visíveis
-            const offset = -carouselPosition * itemWidth * carouselItemsPerPage;
-            
-            // Aplicar transformação com percentual para garantir responsividade
-            container.style.transform = `translateX(${offset}%)`;
-            
-            // Atualizar os pontos de navegação
-            updateCarouselDots();
-        }
-        
-        // Atualizar os pontos de navegação
-        function updateCarouselDots() {
-            const dotsContainer = document.getElementById('carousel-nav');
-            if (!dotsContainer) return;
-            
-            const dots = dotsContainer.querySelectorAll('.carousel-dot');
-            
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === carouselPosition);
-            });
-        }
-        
-        // Iniciar autoplay do carrossel
-        function startCarouselAutoplay() {
-            if (carouselAutoplayInterval) {
-                clearInterval(carouselAutoplayInterval);
-            }
-            
-            carouselAutoplayInterval = setInterval(() => {
-                moveCarousel(1);
-            }, 5000); // Mudar slide a cada 5 segundos
-        }
-        
-        // Parar autoplay do carrossel
-        function stopCarouselAutoplay() {
-            if (carouselAutoplayInterval) {
-                clearInterval(carouselAutoplayInterval);
-                carouselAutoplayInterval = null;
-            }
-        }
-
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
-            loadDeliveryConfig(); // Carregar configurações de entrega
-            await loadCategories(); // Carregar categorias e inicializar carrossel
+            loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            await loadCategories(); // Carregar categorias e a categoria inicial
             loadRodape();
             setupFaleConoscoButton();
             updateCartCounter(); // Atualizar contador do carrinho
@@ -2524,21 +2354,6 @@
             // Configurar listeners para as opções de entrega
             document.querySelectorAll('input[name="deliveryOption"]').forEach(option => {
                 option.addEventListener('change', updateDeliveryOption);
-            });
-            
-            // Proteção global para todas as imagens
-            document.addEventListener('contextmenu', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-            
-            document.addEventListener('dragstart', function(e) {
-                if (e.target.tagName === 'IMG') {
-                    e.preventDefault();
-                    return false;
-                }
             });
             
             console.log('Carregamento da página concluído');
