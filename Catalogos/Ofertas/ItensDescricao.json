@@ -7,6 +7,7 @@
       "imagem": "3729.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/11/2024"
@@ -17,6 +18,7 @@
       "imagem": "3498.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/10/2024"
@@ -27,6 +29,7 @@
       "imagem": "3417.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "94,90",
       "banho": "Banhado a Prata",
       "dataUltimaEntrada": "28/08/2024"
@@ -37,6 +40,7 @@
       "imagem": "3403.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/08/2024"
@@ -47,9 +51,21 @@
       "imagem": "3378.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "10/08/2024"
+    },
+    {
+      "codigo": "3330",
+      "descricao": "BRINCO PONTO LUZ QUADRADO 8MM",
+      "imagem": "3330.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "29,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "23/07/2024"
     },
     {
       "codigo": "3329",
@@ -57,6 +73,7 @@
       "imagem": "3329.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "66,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "23/07/2024"
@@ -67,6 +84,7 @@
       "imagem": "3312.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024"
@@ -77,9 +95,21 @@
       "imagem": "3311.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "56,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "17/07/2024"
+    },
+    {
+      "codigo": "3300",
+      "descricao": "BRINCO EAR JACKET P. DE LUZ E CORACOES",
+      "imagem": "3300.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "29,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/07/2024"
     },
     {
       "codigo": "3297",
@@ -87,6 +117,7 @@
       "imagem": "3297.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/07/2024"
@@ -97,19 +128,10 @@
       "imagem": "3292.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/07/2024"
-    },
-    {
-      "codigo": "3225",
-      "descricao": "BRINCO GOTA CRAVEJADA CRISTAL",
-      "imagem": "3225.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "29,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
     },
     {
       "codigo": "3209",
@@ -117,6 +139,7 @@
       "imagem": "3209.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/06/2024"
@@ -127,6 +150,7 @@
       "imagem": "3206.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/06/2024"
@@ -137,6 +161,7 @@
       "imagem": "3154.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "66,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/06/2024"
@@ -147,6 +172,7 @@
       "imagem": "3056.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/05/2024"
@@ -157,6 +183,7 @@
       "imagem": "3052.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "29,90",
+      "precoOferta": "29,90",
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/05/2024"
@@ -167,6 +194,7 @@
       "imagem": "2992.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "19,90",
+      "precoOferta": "19,90",
       "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2024"
@@ -177,6 +205,7 @@
       "imagem": "2950.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "39,90",
+      "precoOferta": "39,90",
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/04/2024"
@@ -187,9 +216,21 @@
       "imagem": "2847.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "49,90",
+      "precoOferta": "49,90",
       "precoConsignado": "109,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/04/2024"
+    },
+    {
+      "codigo": "2045",
+      "descricao": "COLAR GRAVATA TRIANGULO 60CM",
+      "imagem": "2045.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "29,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/06/2024"
     }
   ]
 }

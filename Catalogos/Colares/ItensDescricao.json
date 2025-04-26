@@ -2,6 +2,16 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4305",
+      "descricao": "COLAR CORAÇÃO CRISTAL 44+5CM",
+      "imagem": "4305.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "26/04/2025"
+    },
+    {
       "codigo": "1504",
       "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
       "imagem": "1504.jpg",
@@ -276,7 +286,7 @@
       "descricao": "COLAR GRAVATA TRIANGULO 60CM",
       "imagem": "2045.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "54,90",
+      "preco": "29,90",
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "20/06/2024"
