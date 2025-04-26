@@ -4,6 +4,7 @@
     {
       "codigo": "4296",
       "descricao": "BRINCO TRIO ARGOLA REDONDA",
+      "tipo": "Semijoia",
       "imagem": "4296.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "79,90",
@@ -14,6 +15,7 @@
     {
       "codigo": "4290",
       "descricao": "INOX BRINCO TRIO BORBOLETA BRANCA TREVO E PONTO LUZ",
+      "tipo": "Aço Inox",
       "imagem": "4290.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "39,90",
@@ -24,6 +26,7 @@
     {
       "codigo": "4288",
       "descricao": "INOX COLAR CONCHA CRAV. COM PEROLA INOX DOURADO 41+5CM",
+      "tipo": "Aço Inox",
       "imagem": "4288.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "49,90",
@@ -34,6 +37,7 @@
     {
       "codigo": "4284",
       "descricao": "INOX COLAR Y 2 TREVOS E PONTO DE LUZ INOX 45+5CM",
+      "tipo": "Aço Inox",
       "imagem": "4284.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "49,90",
@@ -44,6 +48,7 @@
     {
       "codigo": "4241",
       "descricao": "PULSEIRA CART E CORACAO VERDE CLARO",
+      "tipo": "Semijoia",
       "imagem": "4241.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "49,90",
@@ -54,6 +59,7 @@
     {
       "codigo": "4237",
       "descricao": "PULSEIRA 7 CORACOES COLORS",
+      "tipo": "Semijoia",
       "imagem": "4237.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "59,90",
@@ -62,18 +68,9 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4227",
-      "descricao": "ACESSORIO CINTO MOEDAS 2 BANHOS ELASTICO 75 A 110CM",
-      "imagem": "4227.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "2 BANHOS",
-      "dataUltimaEntrada": "11/04/2025"
-    },
-    {
       "codigo": "4168",
       "descricao": "BRINCO GOTA ORGANICA ESCORRIDA",
+      "tipo": "Semijoia",
       "imagem": "4168.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "62,90",
@@ -84,6 +81,7 @@
     {
       "codigo": "4154",
       "descricao": "CONJUNTO TREVO V&C MARROM 39+5CM",
+      "tipo": "Semijoia",
       "imagem": "4154.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "129,90",
@@ -92,18 +90,9 @@
       "dataUltimaEntrada": "24/03/2025"
     },
     {
-      "codigo": "4015",
-      "descricao": "RELOGIO INSP. FUNDO DOURADO PULSEIRA ELASTICA",
-      "imagem": "4015.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "INOX DOURADO",
-      "dataUltimaEntrada": "09/04/2025"
-    },
-    {
       "codigo": "3680",
       "descricao": "CONJUNTO TREVO V&C VERDE BANDEIRA 39+5CM",
+      "tipo": "Semijoia",
       "imagem": "3680.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "129,90",
