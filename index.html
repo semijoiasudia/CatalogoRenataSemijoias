@@ -10,14 +10,14 @@
 
     <title>Renata - Semijoias e Acessórios</title>
     
-    <!-- Google tag (gtag.js)-->
+    <!-- Google tag (gtag.js)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>
+    </script>-->
     
     <style>
         body {
@@ -419,12 +419,13 @@
         }
         .gallery .description {
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 13px; /* Reduzido ligeiramente para acomodar mais texto */
             color: #333;
             word-wrap: break-word;
             overflow-wrap: break-word;
             max-width: 100%;
             white-space: normal;
+            line-height: 1.3; /* Melhorar espaçamento entre linhas */
         }
         .gallery .preco {
             margin-top: 5px;
@@ -556,6 +557,8 @@
         }
         .modal-info .descricao {
             font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 10px;
         }
         .modal-info .preco {
             font-size: 20px;
@@ -922,6 +925,30 @@
             display: none;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
+        }
+        .preco-original {/* Estilos para preços em oferta */
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+            display: block;
+        }
+        .preco-oferta {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+        }
+        .modal-info .preco-original {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .modal-info .preco-oferta {
+            display: inline-block;
+        }
+        .tipo-produto {
+            font-weight: bold;
+            color: #8a8167; /* Cor similar ao tema dourado champagne do site */
+            margin-right: 5px;
         }
         #banhoSelectContainer { margin-left: auto; }
         #sortFilterContainer { margin-left: auto; }
@@ -1334,7 +1361,15 @@
 
         // Adicionar item ao carrinho
         function addToCart(codigo, descricao, preco, imagem) {
-            const precoNumber = getNumericPrice(preco);
+            // Garantir que o preço esteja no formato simples
+            let precoExibicao = preco;
+            
+            // Se ainda tiver "Por:" no texto, remover
+            if (typeof preco === 'string' && preco.includes('Por:')) {
+                precoExibicao = preco.replace('Por: ', '');
+            }
+            
+            const precoNumber = getNumericPrice(precoExibicao);
             
             // Verificar se o item já está no carrinho
             const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
@@ -1347,32 +1382,64 @@
                 cart.push({
                     codigo,
                     descricao,
-                    preco,
+                    preco: precoExibicao, // Usar o preço limpo
                     precoNumber,
                     imagem,
                     quantity: 1
                 });
-            }
-            
-            saveCart();
-            showNotification(`Item adicionado à sacola: ${codigo}`);
+    }
+    
+    saveCart();
+    showNotification(`Item adicionado à sacola: ${codigo}`);
         }
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const descricao = document.querySelector('.modal-info .descricao').textContent;
-            const preco = document.querySelector('.modal-info .preco').textContent;
+            const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
+            
+            // Obter apenas o preço final (seja oferta ou regular)
+            let precoFinal;
+            
+            // Se for oferta, o preço estará no elemento com classe preco-oferta
+            const precoOfertaElement = document.querySelector('.modal-info .preco-oferta');
+            if (precoOfertaElement) {
+                precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+            } else {
+                // Senão, pegar do elemento .preco normal
+                precoFinal = document.querySelector('.modal-info .preco').textContent;
+            }
+            
             const imagem = document.getElementById('modalImg').src;
             
-            addToCart(codigo, descricao, preco, imagem);
+            addToCart(codigo, descricaoCompleta, precoFinal, imagem);
         }
 
         // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
             event.preventDefault();
             event.stopPropagation(); // Evita que a modal abra
-            addToCart(codigo, descricao, preco, imagem);
+            
+            // Extrair apenas o preço final (oferta ou regular)
+            let precoFinal;
+            
+            // Verificar se é um item em oferta (preco contém HTML com spans)
+            if (preco.includes('preco-oferta')) {
+                // Criar um elemento temporário para analisar o HTML
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = preco;
+                // Pegar o preço de oferta
+                const precoOfertaElement = tempDiv.querySelector('.preco-oferta');
+                if (precoOfertaElement) {
+                    precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+                } else {
+                    precoFinal = preco; // Fallback
+                }
+            } else {
+                precoFinal = preco; // Preço normal
+            }
+            
+            addToCart(codigo, descricao, precoFinal, imagem);
         }
 
         // Exibir a modal da sacola
@@ -1569,7 +1636,14 @@
         }
 
         function getNumericPrice(preco) {
-            if (!preco || preco === "Preço não disponível") return 0;
+            if (!preco || preco === "Preço não disponível") return 0;    
+            // Extrai apenas o valor numérico após "R$ "
+            const match = preco.match(/R\$ ([0-9,]+)/);
+            if (match && match[1]) {
+                return parseFloat(match[1].replace(',', '.'));
+            }
+            
+            // Fallback
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
         }
 
@@ -1607,9 +1681,26 @@
                 
                 // Adicionar os produtos ao objeto descricoes
                 data.produtos.forEach(produto => {
+                    let precoDisplay;
+                    let precoCarrinho = formatarPreco(produto.precoOferta || produto.preco);
+                    let isOferta = false;
+                    
+                    // Se existir precoOferta, formatar como "De: Por:" para exibição
+                    if (produto.precoOferta) {
+                        const precoOriginal = formatarPreco(produto.preco);
+                        const precoOferta = formatarPreco(produto.precoOferta);
+                        precoDisplay = `<span class="preco-original">De: ${precoOriginal}</span> <span class="preco-oferta">Por: ${precoOferta}</span>`;
+                        isOferta = true;
+                    } else {
+                        precoDisplay = formatarPreco(produto.preco);
+                    }
+                    
                     descricoes[produto.codigo] = {
                         descricao: produto.descricao,
-                        preco: formatarPreco(produto.preco),
+                        tipo: produto.tipo || "", // Adicionando o tipo ao objeto
+                        preco: precoDisplay,
+                        precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
+                        isOferta: isOferta,
                         banho: produto.banho.toLowerCase(),
                         dataUltimaEntrada: produto.dataUltimaEntrada
                     };
@@ -1888,10 +1979,11 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, preco, banho } = descricoes[codigo] || { 
+                const { descricao, preco, banho, tipo } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: ""
+                    banho: "",
+                    tipo: ""
                 };
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
@@ -1933,11 +2025,22 @@
 
                 const desc = document.createElement('div');
                 desc.className = 'description';
-                desc.textContent = capitalizarPrimeiraLetra(descricao);
+                
+                // Aqui adicionamos o tipo, caso exista
+                if (tipo && tipo.trim() !== "") {
+                    desc.innerHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>${capitalizarPrimeiraLetra(descricao)}`;
+                } else {
+                    desc.textContent = capitalizarPrimeiraLetra(descricao);
+                }
 
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
-                precoElement.textContent = preco;
+                // Se tiver HTML, use innerHTML em vez de textContent
+                if (preco.includes('<span')) {
+                    precoElement.innerHTML = preco;
+                } else {
+                    precoElement.textContent = preco;
+                }
 
                 // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
@@ -2050,9 +2153,10 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, preco } = descricoes[codigo] || { 
+            const { descricao, preco, tipo } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                preco: "Preço não disponível"
+                preco: "Preço não disponível",
+                tipo: ""
             };
 
             const captureArea = document.getElementById('captureArea');
@@ -2069,8 +2173,22 @@
             logo.draggable = false;
             captureArea.appendChild(logo);
 
+            // Aqui adicionamos o tipo, caso exista
+            let descricaoCompleta;
+            if (tipo && tipo.trim() !== "") {
+                descricaoCompleta = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
+            } else {
+                descricaoCompleta = capitalizarPrimeiraLetra(descricao);
+            }
+
+            let descricaoHTML = '';
+            if (tipo && tipo.trim() !== "") {
+                descricaoHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>`;
+            }
+            descricaoHTML += `<div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>`;
+
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
+                ${descricaoHTML}
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
