@@ -2028,7 +2028,7 @@
                 
                 // Aqui adicionamos o tipo, caso exista
                 if (tipo && tipo.trim() !== "") {
-                    desc.innerHTML = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
+                    desc.innerHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>${capitalizarPrimeiraLetra(descricao)}`;
                 } else {
                     desc.textContent = capitalizarPrimeiraLetra(descricao);
                 }
@@ -2181,8 +2181,14 @@
                 descricaoCompleta = capitalizarPrimeiraLetra(descricao);
             }
 
+            let descricaoHTML = '';
+            if (tipo && tipo.trim() !== "") {
+                descricaoHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>`;
+            }
+            descricaoHTML += `<div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>`;
+
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
+                ${descricaoHTML}
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
