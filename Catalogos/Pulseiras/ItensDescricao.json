@@ -2,6 +2,16 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "3285",
+      "descricao": "PULSEIRA ABENCOADA",
+      "imagem": "3285.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/04/2025"
+    },
+    {
       "codigo": "4304",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO E PONTO DE LUZ 15CM",
       "imagem": "4304.jpg",
