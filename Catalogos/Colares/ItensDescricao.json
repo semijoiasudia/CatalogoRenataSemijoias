@@ -2,6 +2,16 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4305",
       "descricao": "COLAR CORAÇÃO CRISTAL 44+5CM",
       "imagem": "4305.jpg",
@@ -30,6 +40,16 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/04/2025"
+    },
+    {
+      "codigo": "4102",
+      "descricao": "COLAR FIO DE NYLON CORACAO LISO MEDIO 40+6CM",
+      "imagem": "4102.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/04/2025"
     },
     {
       "codigo": "1488",
@@ -122,6 +142,16 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
+      "codigo": "440",
+      "descricao": "COLAR FIO DE NYLON CORACAO ABAULADO 40+5CM",
+      "imagem": "440.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "10/03/2025"
+    },
+    {
       "codigo": "3964",
       "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
       "imagem": "3964.jpg",
@@ -182,6 +212,16 @@
       "dataUltimaEntrada": "26/11/2024"
     },
     {
+      "codigo": "3597",
+      "descricao": "COLAR ELOS OVAIS TRABALHADOS E CORACOES 46+5CM",
+      "imagem": "3597.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/10/2024"
+    },
+    {
       "codigo": "2509",
       "descricao": "COLAR CORACAO CRAVEJADO COLORS P 47+5CM",
       "imagem": "2509.jpg",
@@ -210,6 +250,16 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3342",
+      "descricao": "COLAR CORACAO CRAVEJADO E INFINITO 45CM",
+      "imagem": "3342.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/07/2024"
     },
     {
       "codigo": "3317",

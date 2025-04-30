@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4310",
+      "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4310.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "74,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4296",
       "descricao": "BRINCO TRIO ARGOLA REDONDA",
       "tipo": "Semijoia",
@@ -35,17 +57,6 @@
       "dataUltimaEntrada": "19/04/2025"
     },
     {
-      "codigo": "4241",
-      "descricao": "PULSEIRA CART E CORACAO VERDE CLARO",
-      "tipo": "Semijoia",
-      "imagem": "4241.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4237",
       "descricao": "PULSEIRA 7 CORACOES COLORS",
       "tipo": "Semijoia",
@@ -68,10 +79,10 @@
       "dataUltimaEntrada": "23/04/2025"
     },
     {
-      "codigo": "4154",
-      "descricao": "CONJUNTO TREVO V&C MARROM 39+5CM",
+      "codigo": "3793",
+      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
       "tipo": "Semijoia",
-      "imagem": "4154.jpg",
+      "imagem": "3793.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "129,90",
       "precoConsignado": "189,90",
@@ -99,6 +110,17 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/04/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
     }
   ]
 }

@@ -2,6 +2,36 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4310",
+      "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
+      "imagem": "4310.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "74,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4308",
+      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
+      "imagem": "4308.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "3285",
       "descricao": "PULSEIRA ABENÇOADA",
       "imagem": "3285.jpg",
@@ -30,16 +60,6 @@
       "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "24/04/2025"
-    },
-    {
-      "codigo": "4241",
-      "descricao": "PULSEIRA CART E CORACAO VERDE CLARO",
-      "imagem": "4241.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4240",
@@ -152,16 +172,6 @@
       "dataUltimaEntrada": "16/12/2024"
     },
     {
-      "codigo": "3838",
-      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
-      "imagem": "3838.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/12/2024"
-    },
-    {
       "codigo": "3835",
       "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
       "imagem": "3835.jpg",
@@ -250,6 +260,16 @@
       "precoConsignado": "84,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3259",
+      "descricao": "PULSEIRA FOLHAS 3D",
+      "imagem": "3259.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "28/06/2024"
     },
     {
       "codigo": "3258",
