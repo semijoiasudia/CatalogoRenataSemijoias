@@ -2,6 +2,36 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4313",
+      "descricao": "CONJUNTO GOTA LILÁS CRAVEJADA AO REDOR 44+5CM",
+      "imagem": "4313.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4312",
+      "descricao": "CONJUNTO GOTA ROSA CRAVEJADA AO REDOR 44+5CM",
+      "imagem": "4312.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4311",
+      "descricao": "CONJUNTO GOTA VERDE ESMERALDA CRAVEJADA AO REDOR 44+5CM",
+      "imagem": "4311.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4221",
       "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
       "imagem": "4221.jpg",
