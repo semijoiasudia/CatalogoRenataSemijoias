@@ -2,6 +2,26 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4317",
+      "descricao": "BRINCO ARGOLA CRAVEJADA CURVAS TAM M",
+      "imagem": "4317.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4316",
+      "descricao": "BRINCO CORAÇÃO DESENHADO TAM M",
+      "imagem": "4316.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
       "codigo": "4168",
       "descricao": "BRINCO GOTA ORGANICA ESCORRIDA",
       "imagem": "4168.jpg",

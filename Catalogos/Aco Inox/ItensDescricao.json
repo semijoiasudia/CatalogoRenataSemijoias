@@ -2,6 +2,16 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4299",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS CRUZ E CORACAO 19CM",
+      "imagem": "4299.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "23/04/2025"
+    },
+    {
       "codigo": "4298",
       "descricao": "INOX PULSEIRA BERLOQUES FIXOS ESTRELAS E CORACAO 20+4CM",
       "imagem": "4298.jpg",
@@ -308,16 +318,6 @@
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "34,90",
       "precoConsignado": "56,90",
-      "banho": "INOX",
-      "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "4012",
-      "descricao": "INOX PULSEIRA BERLOQUES FIXOS MÃO 18+5CM",
-      "imagem": "4012.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "34,90",
-      "precoConsignado": "52,90",
       "banho": "INOX",
       "dataUltimaEntrada": "10/04/2025"
     },
