@@ -2,6 +2,36 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4320",
+      "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
+      "imagem": "4320.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4319",
+      "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
+      "imagem": "4319.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4318",
+      "descricao": "BRINCO GOTA ABAULADA CRAVEJADA AO REDOR",
+      "imagem": "4318.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
       "codigo": "4317",
       "descricao": "BRINCO ARGOLA CRAVEJADA CURVAS TAM M",
       "imagem": "4317.jpg",

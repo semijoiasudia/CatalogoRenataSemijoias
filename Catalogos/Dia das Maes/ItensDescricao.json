@@ -2,6 +2,28 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
+      "codigo": "4319",
+      "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4319.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4318",
+      "descricao": "BRINCO GOTA ABAULADA CRAVEJADA AO REDOR",
+      "tipo": "Semijoia",
+      "imagem": "4318.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
       "codigo": "4317",
       "descricao": "BRINCO ARGOLA CRAVEJADA CURVAS TAM M",
       "tipo": "Semijoia",
