@@ -2,6 +2,28 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
+      "codigo": "4315",
+      "descricao": "CONJUNTO ZIRCONIA QUADRADA ROSA 44+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4315.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4314",
+      "descricao": "CONJUNTO ZIRCONIA QUADRADA VERDE 44+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4314.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
       "codigo": "4313",
       "descricao": "CONJUNTO GOTA LILÁS CRAVEJADA AO REDOR 44+5CM",
       "tipo": "Semijoia",
