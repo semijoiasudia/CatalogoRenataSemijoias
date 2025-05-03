@@ -2,6 +2,17 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
       "codigo": "4319",
       "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
       "tipo": "Semijoia",
