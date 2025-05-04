@@ -2,6 +2,83 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4317",
+      "descricao": "BRINCO ARGOLA CRAVEJADA CURVAS TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4317.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4314",
+      "descricao": "CONJUNTO ZIRCONIA QUADRADA VERDE 44+4CM",
+      "tipo": "Semijoia",
+      "imagem": "4314.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "72,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
+    },
+    {
+      "codigo": "4311",
+      "descricao": "CONJUNTO GOTA VERDE ESMERALDA CRAVEJADA AO REDOR 44+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4311.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "179,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4310",
+      "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4310.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "74,90",
+      "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4308",
+      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4308.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4295",
       "descricao": "BRINCO TRIO PÉROLA BRANCA",
       "tipo": "Semijoia",
@@ -112,193 +189,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4201",
-      "descricao": "BRINCO GOTA PEROLA BOLD P",
-      "tipo": "Semijoia",
-      "imagem": "4201.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/04/2025"
-    },
-    {
-      "codigo": "4200",
-      "descricao": "BRINCO TELA FORMATO FOLHA",
-      "tipo": "Semijoia",
-      "imagem": "4200.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4198",
-      "descricao": "BRINCO GOTA LISA M",
-      "tipo": "Semijoia",
-      "imagem": "4198.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4197",
-      "descricao": "BRINCO FLOR ORGANICA P",
-      "tipo": "Semijoia",
-      "imagem": "4197.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4196",
-      "descricao": "BRINCO LEQUE COM GOTA CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4196.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4195",
-      "descricao": "COLAR CORACAO LISO 46+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4195.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "54,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4194",
-      "descricao": "BRINCO PONTO DE LUZ 4MM",
-      "tipo": "Semijoia",
-      "imagem": "4194.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "26,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4193",
-      "descricao": "BRINCO FLOR DIAMANTADA FIO E FLOR",
-      "tipo": "Semijoia",
-      "imagem": "4193.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4192",
-      "descricao": "BRINCO ORGANICO CIRCULO M",
-      "tipo": "Semijoia",
-      "imagem": "4192.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4191",
-      "descricao": "BRINCO EAR HOOK INSPIRACAO CRAVEJADO",
-      "tipo": "Semijoia",
-      "imagem": "4191.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "42,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4190",
-      "descricao": "BRINCO ARGOLA FORMATO LOSANGO G",
-      "tipo": "Semijoia",
-      "imagem": "4190.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4188",
-      "descricao": "BRINCO ARGOLA FINA 1 FILEIRA DE ZIRCONIAS P",
-      "tipo": "Semijoia",
-      "imagem": "4188.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4187",
-      "descricao": "BRINCO TRIO ARGOLA TRABALHADA PP-P-M",
-      "tipo": "Semijoia",
-      "imagem": "4187.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4165",
-      "descricao": "ANEL REGULAVEL CRAVEJADO E ZIRCONIA RETANGULAR",
-      "tipo": "Semijoia",
-      "imagem": "4165.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "56,90",
-      "precoConsignado": "84,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/03/2025"
-    },
-    {
-      "codigo": "4163",
-      "descricao": "ANEL REGULAVEL LISO LEVE ONDA",
-      "tipo": "Semijoia",
-      "imagem": "4163.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/03/2025"
-    },
-    {
-      "codigo": "4161",
-      "descricao": "ANEL REGULAVEL 2 FIOS E CORACAO ABAULADO",
-      "tipo": "Semijoia",
-      "imagem": "4161.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/03/2025"
-    },
-    {
-      "codigo": "4133",
-      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4133.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "62,90",
-      "precoConsignado": "102,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/03/2025"
-    },
-    {
       "codigo": "3767",
       "descricao": "BRINCO GOTA E 2 FIOS",
       "tipo": "Semijoia",
@@ -308,6 +198,28 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/04/2025"
+    },
+    {
+      "codigo": "3285",
+      "descricao": "PULSEIRA ABENÇOADA",
+      "tipo": "Semijoia",
+      "imagem": "3285.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "28/04/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
     },
     {
       "codigo": "3216",
