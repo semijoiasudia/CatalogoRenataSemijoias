@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4322",
+      "descricao": "INOX CONJUNTO TREVO PRETO 46CM",
+      "tipo": "Aço Inox",
+      "imagem": "4322.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
       "codigo": "4321",
       "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
       "tipo": "Semijoia",
