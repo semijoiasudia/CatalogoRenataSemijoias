@@ -2,6 +2,36 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4326",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS CORAÇÃO E NOTA 18+5CM",
+      "imagem": "4326.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4325",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 3 CRUZES 18+5CM",
+      "imagem": "4325.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
+      "codigo": "4324",
+      "descricao": "INOX PULSEIRA BERLOQUES FIXOS 2 CRUZES 18+5CM",
+      "imagem": "4324.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "06/05/2025"
+    },
+    {
       "codigo": "4323",
       "descricao": "INOX CONJUNTO TREVO BRANCO MADREPÉROLA 43+4CM",
       "imagem": "4323.jpg",
