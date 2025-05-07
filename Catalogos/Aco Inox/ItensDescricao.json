@@ -2,12 +2,22 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "4332",
-      "descricao": "INOX BRINCO TRIO TREVO BRANCO PEROLADO",
-      "imagem": "4332.jpg",
+      "codigo": "4334",
+      "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
+      "imagem": "4334.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
+      "codigo": "4333",
+      "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
+      "imagem": "4333.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
       "banho": "INOX",
       "dataUltimaEntrada": "07/05/2025"
     },
