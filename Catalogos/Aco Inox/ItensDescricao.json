@@ -2,6 +2,56 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4332",
+      "descricao": "INOX BRINCO TRIO TREVO BRANCO PEROLADO",
+      "imagem": "4332.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
+      "codigo": "4331",
+      "descricao": "INOX BRINCO TRIO TREVO PRETO",
+      "imagem": "4331.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
+      "codigo": "4330",
+      "descricao": "INOX BRINCO TRIO TREVO E CORAÇÃO",
+      "imagem": "4330.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
+      "codigo": "4328",
+      "descricao": "INOX CONJUNTO TREVO VERMELHO 41+4CM",
+      "imagem": "4328.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
+      "codigo": "4327",
+      "descricao": "INOX CONJUNTO ESFERA LILÁS BRILHANTE 45CM",
+      "imagem": "4327.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "52,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
       "codigo": "4326",
       "descricao": "INOX PULSEIRA BERLOQUES FIXOS CORAÇÃO E NOTA 18+5CM",
       "imagem": "4326.jpg",
