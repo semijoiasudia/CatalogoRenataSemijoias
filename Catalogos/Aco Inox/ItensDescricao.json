@@ -2,6 +2,46 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4338",
+      "descricao": "INOX BRINCO ARGOLA E TREVO PRETO",
+      "imagem": "4338.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4337",
+      "descricao": "INOX BRINCO ARGOLA E TREVO BRANCO",
+      "imagem": "4337.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4336",
+      "descricao": "INOX BRINCO LOSANGOS G",
+      "imagem": "4336.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4335",
+      "descricao": "INOX BRINCO LOSANGOS G",
+      "imagem": "4335.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "07/05/2025"
+    },
+    {
       "codigo": "4334",
       "descricao": "INOX PULSEIRA BORBOLETAS COLORIDAS 18+3CM",
       "imagem": "4334.jpg",
@@ -22,12 +62,12 @@
       "dataUltimaEntrada": "07/05/2025"
     },
     {
-      "codigo": "4330",
-      "descricao": "INOX BRINCO TRIO TREVO E CORAÇÃO",
-      "imagem": "4330.jpg",
+      "codigo": "4332",
+      "descricao": "INOX BRINCO DUO TREVO BRANCO PEROLADO",
+      "imagem": "4332.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
       "banho": "INOX",
       "dataUltimaEntrada": "07/05/2025"
     },

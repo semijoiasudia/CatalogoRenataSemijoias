@@ -2,6 +2,16 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "1504",
+      "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
+      "imagem": "1504.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4225",
       "descricao": "COLAR FIO DE NYLON ESP. SANTO P MADREPEROLA 40+6CM",
       "imagem": "4225.jpg",
@@ -30,16 +40,6 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/04/2025"
-    },
-    {
-      "codigo": "1504",
-      "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
-      "imagem": "1504.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/04/2025"
     },
     {
       "codigo": "1501",
