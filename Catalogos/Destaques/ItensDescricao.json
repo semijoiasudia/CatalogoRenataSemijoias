@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4345",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MANTO AZUL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4345.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "98,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4340",
       "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
       "tipo": "Aço Inox",

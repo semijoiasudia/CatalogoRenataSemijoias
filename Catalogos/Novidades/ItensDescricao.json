@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4345",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MANTO AZUL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4345.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "98,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4343",
       "descricao": "INOX PULSEIRA DUPLA FITA E CORRENTE COM TREVOS 17+5CM",
       "tipo": "Aço Inox",
