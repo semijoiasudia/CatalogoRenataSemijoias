@@ -2,6 +2,16 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "3285",
+      "descricao": "PULSEIRA ABENÇOADA",
+      "imagem": "3285.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4310",
       "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
       "imagem": "4310.jpg",
@@ -30,16 +40,6 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "3285",
-      "descricao": "PULSEIRA ABENÇOADA",
-      "imagem": "3285.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "94,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/04/2025"
     },
     {
       "codigo": "4304",

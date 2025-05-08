@@ -2,6 +2,26 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4340",
+      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
+      "imagem": "4340.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4339",
+      "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
+      "imagem": "4339.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4338",
       "descricao": "INOX BRINCO ARGOLA E TREVO PRETO",
       "imagem": "4338.jpg",
