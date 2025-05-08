@@ -2,6 +2,16 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3847",
+      "descricao": "BRINCO 2 TRIANGULOS 3D - 2 BANHOS",
+      "imagem": "3847.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "2 BANHOS",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4321",
       "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
       "imagem": "4321.jpg",
