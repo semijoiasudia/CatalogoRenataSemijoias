@@ -2,6 +2,36 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4343",
+      "descricao": "INOX PULSEIRA DUPLA FITA E CORRENTE COM TREVOS 17+5CM",
+      "imagem": "4343.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4342",
+      "descricao": "INOX CONJUNTO PEROLA FORMATO GOTA 45CM",
+      "imagem": "4342.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "4341",
+      "descricao": "INOX CONJUNTO OLHO GREGO 45CM",
+      "imagem": "4341.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "08/05/2025"
+    },
+    {
       "codigo": "4340",
       "descricao": "INOX COLAR BOBOLETA COLORS 40+5CM",
       "imagem": "4340.jpg",
