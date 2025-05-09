@@ -2,6 +2,16 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3595",
+      "descricao": "BRINCO TRANQ TREVO TRABALHADO",
+      "imagem": "3595.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "09/05/2025"
+    },
+    {
       "codigo": "3847",
       "descricao": "BRINCO 2 TRIANGULOS 3D - 2 BANHOS",
       "imagem": "3847.jpg",

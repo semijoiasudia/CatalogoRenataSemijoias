@@ -2,16 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "3969",
-      "descricao": "PIERCING FAKE 2 FIOS ENTRELACADOS",
-      "imagem": "3969.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
-      "precoConsignado": "39,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/01/2025"
-    },
-    {
       "codigo": "3945",
       "descricao": "PIERCING FAKE FIO FINO LISO",
       "imagem": "3945.jpg",
@@ -100,16 +90,6 @@
       "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/07/2024"
-    },
-    {
-      "codigo": "3239",
-      "descricao": "PIERCING FAKE LISO/CRAVEJADO/BOLINHAS",
-      "imagem": "3239.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "22/06/2024"
     },
     {
       "codigo": "3020",
