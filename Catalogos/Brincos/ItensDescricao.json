@@ -2,6 +2,16 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4082",
+      "descricao": "BRINCO TREVO V&C RESINA PRETO - TARRACHA",
+      "imagem": "4082.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/05/2025"
+    },
+    {
       "codigo": "3595",
       "descricao": "BRINCO TRANQ TREVO TRABALHADO",
       "imagem": "3595.jpg",
