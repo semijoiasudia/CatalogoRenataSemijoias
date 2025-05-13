@@ -2,6 +2,46 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3344",
+      "descricao": "BRINCO 2 CORACOES VAZADO E CRAVEJADO",
+      "imagem": "3344.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
+      "codigo": "3287",
+      "descricao": "BRINCO DUO PONTO DE LUZ 6/8MM",
+      "imagem": "3287.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
+      "codigo": "3276",
+      "descricao": "BRINCO CORACAO M INCLINADO CRAVEJADO",
+      "imagem": "3276.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
+      "codigo": "2623",
+      "descricao": "BRINCO TRIO ARGOLA RETANGULAR LISO",
+      "imagem": "2623.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
       "codigo": "4082",
       "descricao": "BRINCO TREVO V&C RESINA PRETO - TARRACHA",
       "imagem": "4082.jpg",
@@ -1682,16 +1722,6 @@
       "dataUltimaEntrada": "02/08/2024"
     },
     {
-      "codigo": "3344",
-      "descricao": "BRINCO 2 CORACOES VAZADO E CRAVEJADO",
-      "imagem": "3344.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/07/2024"
-    },
-    {
       "codigo": "3330",
       "descricao": "BRINCO PONTO LUZ QUADRADO 8MM",
       "imagem": "3330.jpg",
@@ -1832,16 +1862,6 @@
       "dataUltimaEntrada": "05/07/2024"
     },
     {
-      "codigo": "3287",
-      "descricao": "BRINCO DUO PONTO DE LUZ 6/8MM",
-      "imagem": "3287.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "03/07/2024"
-    },
-    {
       "codigo": "3283",
       "descricao": "BRINCO PONTO DE LUZ 5MM",
       "imagem": "3283.jpg",
@@ -1878,16 +1898,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "46,90",
       "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/07/2024"
-    },
-    {
-      "codigo": "3276",
-      "descricao": "BRINCO CORACAO M INCLINADO CRAVEJADO",
-      "imagem": "3276.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/07/2024"
     },
@@ -1988,16 +1998,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "39,90",
       "precoConsignado": "62,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/05/2024"
-    },
-    {
-      "codigo": "2623",
-      "descricao": "BRINCO TRIO ARGOLA RETANGULAR LISO",
-      "imagem": "2623.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "69,90",
-      "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/05/2024"
     },
