@@ -2,12 +2,32 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3364",
+      "descricao": "BRINCO TRIO CORACAO CRAVEJADO CRISTAL",
+      "imagem": "3364.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "104,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
       "codigo": "3344",
       "descricao": "BRINCO 2 CORACOES VAZADO E CRAVEJADO",
       "imagem": "3344.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "74,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
+      "codigo": "3328",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO COLORS",
+      "imagem": "3328.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/05/2025"
     },
@@ -28,6 +48,16 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "59,90",
       "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "13/05/2025"
+    },
+    {
+      "codigo": "3228",
+      "descricao": "BRINCO ARVORE DA VIDA CRAVEJADA COLORS",
+      "imagem": "3228.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/05/2025"
     },
@@ -1692,16 +1722,6 @@
       "dataUltimaEntrada": "05/08/2024"
     },
     {
-      "codigo": "3364",
-      "descricao": "BRINCO TRIO CORACAO CRAVEJADO CRISTAL",
-      "imagem": "3364.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
-    },
-    {
       "codigo": "3351",
       "descricao": "BRINCO TREVO CRAVEJADO P",
       "imagem": "3351.jpg",
@@ -1738,16 +1758,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "46,90",
       "precoConsignado": "66,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/07/2024"
-    },
-    {
-      "codigo": "3328",
-      "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO COLORS",
-      "imagem": "3328.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "76,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "23/07/2024"
     },
@@ -1902,16 +1912,6 @@
       "dataUltimaEntrada": "02/07/2024"
     },
     {
-      "codigo": "3228",
-      "descricao": "BRINCO ARVORE DA VIDA CRAVEJADA COLORS",
-      "imagem": "3228.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/06/2024"
-    },
-    {
       "codigo": "3226",
       "descricao": "BRINCO CORACAO CRAVEJADO CRISTAL E COLORS",
       "imagem": "3226.jpg",
@@ -2016,8 +2016,8 @@
       "descricao": "BRINCO CORRENTE E 2 ARGOLAS",
       "imagem": "3000.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "62,90",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/05/2024"
     },
