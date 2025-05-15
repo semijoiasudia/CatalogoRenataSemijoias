@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4354",
+      "descricao": "BRINCO ORGANICO OVAL TAM M",
+      "tipo": "Semijoia",
+      "imagem": "4354.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/05/2025"
+    },
+    {
       "codigo": "3475",
       "descricao": "BRINCO ARGOLA CLICK FORMATO CORACAO CRISTAL",
       "tipo": "Semijoia",
