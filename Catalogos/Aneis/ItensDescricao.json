@@ -2,6 +2,17 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "993",
+      "descricao": "ANEL REGULAVEL CORACAO VAZADO LARGO",
+      "tipo": "Semijoia",
+      "imagem": "993.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/05/2025"
+    },
+    {
       "codigo": "4165",
       "descricao": "ANEL REGULAVEL CRAVEJADO E ZIRCONIA RETANGULAR",
       "tipo": "Semijoia",
@@ -310,6 +321,17 @@
       "dataUltimaEntrada": "13/08/2024"
     },
     {
+      "codigo": "841",
+      "descricao": "ANEL REGULAVEL 3 FILEIRAS",
+      "tipo": "Semijoia",
+      "imagem": "841.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "54,90",
+      "precoConsignado": "76,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "13/08/2024"
+    },
+    {
       "codigo": "3363",
       "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES",
       "tipo": "Semijoia",
@@ -376,6 +398,17 @@
       "dataUltimaEntrada": "08/07/2024"
     },
     {
+      "codigo": "1359",
+      "descricao": "ANEL XUXA FIO QUADRADO - TAMANHOS",
+      "tipo": "Semijoia",
+      "imagem": "1359.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/07/2024"
+    },
+    {
       "codigo": "3213",
       "descricao": "ANEL FALANGE CRUZ TRABALHADA",
       "tipo": "Semijoia",
@@ -394,17 +427,6 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "32,90",
       "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2024"
-    },
-    {
-      "codigo": "3210",
-      "descricao": "ANEL FALANGE REGULAVEL 2 FOLHAS",
-      "tipo": "Semijoia",
-      "imagem": "3210.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "34,90",
-      "precoConsignado": "54,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "13/06/2024"
     },
@@ -484,17 +506,6 @@
       "precoConsignado": "49,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "02/05/2024"
-    },
-    {
-      "codigo": "993",
-      "descricao": "ANEL REGULAVEL LARGO CORACAO VAZADO",
-      "tipo": "Semijoia",
-      "imagem": "993.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/04/2024"
     }
   ]
 }
