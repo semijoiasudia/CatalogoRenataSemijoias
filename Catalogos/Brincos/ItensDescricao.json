@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3313",
+      "descricao": "BRINCO ARGOLINHA CLICK INSPIRAÇÃO CART. M",
+      "tipo": "Semijoia",
+      "imagem": "3313.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "17/05/2025"
+    },
+    {
       "codigo": "4354",
       "descricao": "BRINCO ORGANICO OVAL TAM M",
       "tipo": "Semijoia",
@@ -1091,17 +1102,6 @@
       "dataUltimaEntrada": "18/12/2024"
     },
     {
-      "codigo": "3851",
-      "descricao": "BRINCO DUO FLOR FOSCA",
-      "tipo": "Semijoia",
-      "imagem": "3851.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "16/12/2024"
-    },
-    {
       "codigo": "3848",
       "descricao": "BRINCO TRANQUETA PONTO DE LUZ ROSA",
       "tipo": "Semijoia",
@@ -2048,15 +2048,15 @@
       "dataUltimaEntrada": "18/07/2024"
     },
     {
-      "codigo": "3313",
-      "descricao": "BRINCO ARGOLINHA CLICK INSPIRAÇÃO CART. M",
+      "codigo": "3312",
+      "descricao": "BRINCO MEIA ARGOLA LISA M",
       "tipo": "Semijoia",
-      "imagem": "3313.jpg",
+      "imagem": "3312.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "42,90",
-      "precoConsignado": "62,90",
+      "preco": "49,90",
+      "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "18/07/2024"
+      "dataUltimaEntrada": "17/07/2024"
     },
     {
       "codigo": "3311",

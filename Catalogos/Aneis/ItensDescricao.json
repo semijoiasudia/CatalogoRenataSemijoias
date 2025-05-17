@@ -2,6 +2,28 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "3479",
+      "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
+      "tipo": "Semijoia",
+      "imagem": "3479.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "17/05/2025"
+    },
+    {
+      "codigo": "2092",
+      "descricao": "ANEL REGULAVEL INSPIRAÇÃO CART.",
+      "tipo": "Semijoia",
+      "imagem": "2092.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "16/05/2025"
+    },
+    {
       "codigo": "993",
       "descricao": "ANEL REGULAVEL CORACAO VAZADO LARGO",
       "tipo": "Semijoia",
@@ -32,17 +54,6 @@
       "preco": "49,90",
       "precoConsignado": "74,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "28/03/2025"
-    },
-    {
-      "codigo": "4163",
-      "descricao": "ANEL REGULAVEL LISO LEVE ONDA",
-      "tipo": "Semijoia",
-      "imagem": "4163.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "28/03/2025"
     },
     {
@@ -244,17 +255,6 @@
       "dataUltimaEntrada": "18/10/2024"
     },
     {
-      "codigo": "3479",
-      "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
-      "tipo": "Semijoia",
-      "imagem": "3479.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "18/09/2024"
-    },
-    {
       "codigo": "3472",
       "descricao": "ANEL 2 FIOS E PATINHA",
       "tipo": "Semijoia",
@@ -449,17 +449,6 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2024"
-    },
-    {
-      "codigo": "2092",
-      "descricao": "ANEL REGULAVEL INSP CART.",
-      "tipo": "Semijoia",
-      "imagem": "2092.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/06/2024"
     },
