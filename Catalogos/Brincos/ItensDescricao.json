@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3207",
+      "descricao": "BRINCO ARGOLA LISA/ONDULADA P",
+      "tipo": "Semijoia",
+      "imagem": "3207.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "19/05/2025"
+    },
+    {
       "codigo": "3313",
       "descricao": "BRINCO ARGOLINHA CLICK INSPIRAÇÃO CART. M",
       "tipo": "Semijoia",
