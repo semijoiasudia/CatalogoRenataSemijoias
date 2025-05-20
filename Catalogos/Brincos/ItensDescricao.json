@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3566",
+      "descricao": "BRINCO CORACAO VAZADO P",
+      "tipo": "Semijoia",
+      "imagem": "3566.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "29,90",
+      "precoConsignado": "39,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "20/05/2025"
+    },
+    {
       "codigo": "3207",
       "descricao": "BRINCO ARGOLA LISA/ONDULADA P",
       "tipo": "Semijoia",
@@ -847,17 +858,6 @@
       "precoConsignado": "42,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "20/02/2025"
-    },
-    {
-      "codigo": "4031",
-      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA COLORS P",
-      "tipo": "Semijoia",
-      "imagem": "4031.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "46,90",
-      "precoConsignado": "72,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/02/2025"
     },
     {
       "codigo": "3965",
@@ -2026,17 +2026,6 @@
       "dataUltimaEntrada": "18/07/2024"
     },
     {
-      "codigo": "3312",
-      "descricao": "BRINCO MEIA ARGOLA LISA M",
-      "tipo": "Semijoia",
-      "imagem": "3312.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "64,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "17/07/2024"
-    },
-    {
       "codigo": "3311",
       "descricao": "BRINCO MEIA ARGOLA LISA P 2CM",
       "tipo": "Semijoia",
@@ -2101,17 +2090,6 @@
       "precoConsignado": "42,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "03/07/2024"
-    },
-    {
-      "codigo": "3280",
-      "descricao": "BRINCO ARGOLA M LISA",
-      "tipo": "Semijoia",
-      "imagem": "3280.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "46,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/07/2024"
     },
     {
       "codigo": "3222",
