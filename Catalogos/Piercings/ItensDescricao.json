@@ -2,6 +2,105 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "4364",
+      "descricao": "PIERCING FAKE 2 BARRAS CRAVEJADAS",
+      "tipo": "Semijoia",
+      "imagem": "4364.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4363",
+      "descricao": "PIERCING FAKE 2 BARRAS CRAVEJADAS",
+      "tipo": "Semijoia",
+      "imagem": "4363.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4362",
+      "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
+      "tipo": "Semijoia",
+      "imagem": "4362.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4361",
+      "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
+      "tipo": "Semijoia",
+      "imagem": "4361.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4360",
+      "descricao": "PIERCING FAKE 2 BARRAS",
+      "tipo": "Semijoia",
+      "imagem": "4360.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "26,90",
+      "precoConsignado": "39,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4359",
+      "descricao": "PIERCING FAKE 2 BARRAS",
+      "tipo": "Semijoia",
+      "imagem": "4359.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "26,90",
+      "precoConsignado": "39,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4358",
+      "descricao": "PIERCING FAKE CORAÇÃO VAZADO",
+      "tipo": "Semijoia",
+      "imagem": "4358.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4357",
+      "descricao": "PIERCING FAKE FIO E CRUZ - LADO ESQUERDO",
+      "tipo": "Semijoia",
+      "imagem": "4357.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4356",
+      "descricao": "PIERCING FAKE FIO E CRUZ - LADO ESQUERDO",
+      "tipo": "Semijoia",
+      "imagem": "4356.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
       "codigo": "3945",
       "descricao": "PIERCING FAKE FIO FINO LISO",
       "tipo": "Semijoia",

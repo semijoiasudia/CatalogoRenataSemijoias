@@ -2,6 +2,138 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4376",
+      "descricao": "BRINCO QUADRADO BORDA ARREDONDADA CRAVEJADO CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4376.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "66,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4375",
+      "descricao": "BRINCO QUADRADO BORDA ARREDONDADA CRAVEJADO CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4375.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4374",
+      "descricao": "BRINCO GOTA PINGENTE CIRCULO CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "4374.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "66,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4373",
+      "descricao": "BRINCO GOTA PINGENTE CIRCULO CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "4373.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4372",
+      "descricao": "BRINCO LOSANGO BORDAS CURVAS CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "4372.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4371",
+      "descricao": "BRINCO LOSANGO BORDAS CURVAS CRAVEJADO",
+      "tipo": "Semijoia",
+      "imagem": "4371.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4370",
+      "descricao": "BRINCO GOTA COM CORAÇÃO CRAVEJADO COLORS",
+      "tipo": "Semijoia",
+      "imagem": "4370.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "36,90",
+      "precoConsignado": "56,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4369",
+      "descricao": "BRINCO GOTA COM CORAÇÃO CRAVEJADO COLORS",
+      "tipo": "Semijoia",
+      "imagem": "4369.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4368",
+      "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS",
+      "tipo": "Semijoia",
+      "imagem": "4368.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4367",
+      "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS",
+      "tipo": "Semijoia",
+      "imagem": "4367.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "72,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4366",
+      "descricao": "BRINCO BORBOLETA DUPLA - LISA/CRAVEJADA",
+      "tipo": "Semijoia",
+      "imagem": "4366.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4365",
+      "descricao": "BRINCO BORBOLETA DUPLA - LISA/CRAVEJADA",
+      "tipo": "Semijoia",
+      "imagem": "4365.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
       "codigo": "3566",
       "descricao": "BRINCO CORACAO VAZADO P",
       "tipo": "Semijoia",

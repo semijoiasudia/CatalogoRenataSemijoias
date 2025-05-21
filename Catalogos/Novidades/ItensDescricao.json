@@ -2,6 +2,50 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4381",
+      "descricao": "INOX COLAR INSPIRAÇÃO 5 TREVOS 44+4CM",
+      "tipo": "Aço Inox",
+      "imagem": "4381.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4380",
+      "descricao": "INOX COLAR INSP. PANTERA 44+8CM",
+      "tipo": "Aço Inox",
+      "imagem": "4380.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "34,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4379",
+      "descricao": "INOX COLAR GATINHO GRAVEJADO 45+7CM",
+      "tipo": "Aço Inox",
+      "imagem": "4379.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "34,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4378",
+      "descricao": "INOX COLAR GOTA GRAVEJADA 45+7CM",
+      "tipo": "Aço Inox",
+      "imagem": "4378.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "34,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
       "codigo": "4355",
       "descricao": "CHOKER ESFERA 38+5CM",
       "tipo": "Semijoia",
