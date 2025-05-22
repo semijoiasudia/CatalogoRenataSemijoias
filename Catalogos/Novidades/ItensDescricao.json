@@ -2,6 +2,28 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4384",
+      "descricao": "INOX PULSEIRA DUPLA 3 TREVOS PRETOS",
+      "tipo": "Aço Inox",
+      "imagem": "4384.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/05/2025"
+    },
+    {
+      "codigo": "4383",
+      "descricao": "INOX PULSEIRA DUPLA 3 TREVOS BRANCOS",
+      "tipo": "Aço Inox",
+      "imagem": "4383.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "INOX DOURADO",
+      "dataUltimaEntrada": "22/05/2025"
+    },
+    {
       "codigo": "4381",
       "descricao": "INOX COLAR INSPIRAÇÃO 5 TREVOS 44+4CM",
       "tipo": "Aço Inox",
