@@ -3,7 +3,7 @@
   "produtos": [
     {
       "codigo": "4433",
-      "descricao": "PULSEIRA INFANTIL BORBOLETA PNK",
+      "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia",
       "imagem": "4433.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
@@ -11,6 +11,17 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "3809",
+      "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
+      "tipo": "Semijoia",
+      "imagem": "3809.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/06/2025"
     },
     {
       "codigo": "4412",
@@ -112,6 +123,17 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
       "codigo": "4304",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO E PONTO DE LUZ 15CM",
       "tipo": "Semijoia",
@@ -178,6 +200,17 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
+      "codigo": "4127",
+      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
+      "tipo": "Semijoia",
+      "imagem": "4127.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "39,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "12/03/2025"
+    },
+    {
       "codigo": "4126",
       "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
       "tipo": "Semijoia",
@@ -211,6 +244,17 @@
       "dataUltimaEntrada": "12/03/2025"
     },
     {
+      "codigo": "3972",
+      "descricao": "PULSEIRA BOLINHAS E PEROLAS BARROCAS",
+      "tipo": "Semijoia",
+      "imagem": "3972.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "84,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/02/2025"
+    },
+    {
       "codigo": "3911",
       "descricao": "PULSEIRA TELA 3MM",
       "tipo": "Semijoia",
@@ -231,6 +275,17 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3838",
+      "descricao": "PULSEIRA 3 ZIRCONIAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "3838.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "14/12/2024"
     },
     {
       "codigo": "3835",
@@ -275,17 +330,6 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "18/09/2024"
-    },
-    {
-      "codigo": "3367",
-      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM",
-      "tipo": "Semijoia",
-      "imagem": "3367.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/08/2024"
     },
     {
       "codigo": "3259",

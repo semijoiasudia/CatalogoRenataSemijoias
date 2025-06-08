@@ -2,28 +2,6 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
-      "codigo": "4436",
-      "descricao": "BRINCO EAR HOOK TRIPLO",
-      "tipo": "Semijoia",
-      "imagem": "4436.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "96,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
-    },
-    {
-      "codigo": "4435",
-      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4435.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "169,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
-    },
-    {
       "codigo": "4432",
       "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
@@ -178,6 +156,17 @@
       "dataUltimaEntrada": "26/05/2025"
     },
     {
+      "codigo": "4355",
+      "descricao": "CHOKER ESFERA 38+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4355.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/05/2025"
+    },
+    {
       "codigo": "4354",
       "descricao": "BRINCO ORGANICO OVAL TAM M",
       "tipo": "Semijoia",
@@ -187,6 +176,28 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "15/05/2025"
+    },
+    {
+      "codigo": "4345",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MANTO AZUL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4345.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "98,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/06/2025"
+    },
+    {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
     },
     {
       "codigo": "4314",
@@ -218,17 +229,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "74,90",
       "precoConsignado": "114,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
     },
@@ -299,6 +299,17 @@
       "dataUltimaEntrada": "12/05/2025"
     },
     {
+      "codigo": "3643",
+      "descricao": "CONJUNTO TREVO V&C RESINA PRETO - TARRACHA 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "3643.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/05/2025"
+    },
+    {
       "codigo": "3285",
       "descricao": "PULSEIRA ABENÇOADA",
       "tipo": "Semijoia",
@@ -308,6 +319,17 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "08/05/2025"
+    },
+    {
+      "codigo": "3235",
+      "descricao": "PULSEIRA PAI NOSSO E CRUZ VAZADA FECHO GRAVATA",
+      "tipo": "Semijoia",
+      "imagem": "3235.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
     },
     {
       "codigo": "2124",

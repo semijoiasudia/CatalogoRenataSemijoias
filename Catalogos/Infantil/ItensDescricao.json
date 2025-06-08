@@ -3,7 +3,7 @@
   "produtos": [
     {
       "codigo": "4433",
-      "descricao": "PULSEIRA INFANTIL BORBOLETA PNK",
+      "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia",
       "imagem": "4433.jpg",
       "pastaFotos": "Catalogos/Infantil/",
@@ -108,6 +108,17 @@
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "39,90",
       "precoConsignado": "59,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "4215",
+      "descricao": "INOX CONJUNTO INFANTIL CEREJA 40CM",
+      "tipo": "Aço Inox",
+      "imagem": "4215.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "34,90",
+      "precoConsignado": "56,90",
       "banho": "INOX",
       "dataUltimaEntrada": "10/04/2025"
     },

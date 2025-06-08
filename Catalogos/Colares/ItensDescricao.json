@@ -2,6 +2,39 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4345",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MANTO AZUL 41+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4345.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "64,90",
+      "precoConsignado": "98,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/06/2025"
+    },
+    {
+      "codigo": "1504",
+      "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "1504.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/06/2025"
+    },
+    {
+      "codigo": "440",
+      "descricao": "COLAR FIO DE NYLON CORACAO ABAULADO 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "440.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/06/2025"
+    },
+    {
       "codigo": "3386",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
       "tipo": "Semijoia",
@@ -30,7 +63,7 @@
       "imagem": "4427.jpg",
       "pastaFotos": "Catalogos/Colares/",
       "preco": "62,90",
-      "precoConsignado": "79,90",
+      "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
     },
@@ -189,28 +222,6 @@
       "dataUltimaEntrada": "08/05/2025"
     },
     {
-      "codigo": "1504",
-      "descricao": "COLAR FIO DE NYLON CORACAO TORTO 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "1504.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "08/05/2025"
-    },
-    {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
       "codigo": "4305",
       "descricao": "COLAR CORAÇÃO CRISTAL 44+5CM",
       "tipo": "Semijoia",
@@ -321,17 +332,6 @@
       "dataUltimaEntrada": "14/12/2024"
     },
     {
-      "codigo": "3758",
-      "descricao": "COLAR CORACAO ZIRCONIA ROSA 46CM",
-      "tipo": "Semijoia",
-      "imagem": "3758.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/11/2024"
-    },
-    {
       "codigo": "3735",
       "descricao": "COLAR CORACAO CRAVEJADO E CORACAO LISO 44+6CM",
       "tipo": "Semijoia",
@@ -385,6 +385,17 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/08/2024"
+    },
+    {
+      "codigo": "3342",
+      "descricao": "COLAR CORACAO CRAVEJADO E INFINITO 45CM",
+      "tipo": "Semijoia",
+      "imagem": "3342.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Prata",
+      "dataUltimaEntrada": "26/07/2024"
     },
     {
       "codigo": "3317",
