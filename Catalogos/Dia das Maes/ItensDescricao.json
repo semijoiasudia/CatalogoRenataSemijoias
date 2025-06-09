@@ -2,17 +2,6 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
-      "codigo": "4321",
-      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
-      "tipo": "Semijoia",
-      "imagem": "4321.jpg",
-      "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2025"
-    },
-    {
       "codigo": "4319",
       "descricao": "BRINCO CORAÇÃO GRANDE CRAVEJADO CRISTAL",
       "tipo": "Semijoia",
@@ -97,6 +86,17 @@
       "pastaFotos": "Catalogos/Dia das Maes/",
       "preco": "74,90",
       "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
     },
