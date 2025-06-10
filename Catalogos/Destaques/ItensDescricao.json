@@ -3,7 +3,7 @@
   "produtos": [
     {
       "codigo": "4432",
-      "descricao": "BRINCO TRIO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
+      "descricao": "BRINCO TRIO ARGO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
       "imagem": "4432.jpg",
       "pastaFotos": "Catalogos/Destaques/",
@@ -97,17 +97,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "39,90",
       "precoConsignado": "59,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "26/05/2025"
-    },
-    {
-      "codigo": "4399",
-      "descricao": "BRINCO GOTA LIZA/CRAVEJADA COM PEROLA",
-      "tipo": "Semijoia",
-      "imagem": "4399.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "26/05/2025"
     },
@@ -244,17 +233,6 @@
       "dataUltimaEntrada": "12/05/2025"
     },
     {
-      "codigo": "3643",
-      "descricao": "CONJUNTO TREVO V&C RESINA PRETO - TARRACHA 41+5CM",
-      "tipo": "Semijoia",
-      "imagem": "3643.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/05/2025"
-    },
-    {
       "codigo": "3285",
       "descricao": "PULSEIRA ABENÇOADA",
       "tipo": "Semijoia",
@@ -275,17 +253,6 @@
       "precoConsignado": "119,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "2124",
-      "descricao": "BRINCO TRIO CORACAO CRAVEJADO",
-      "tipo": "Semijoia",
-      "imagem": "2124.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "06/06/2025"
     }
   ]
 }
