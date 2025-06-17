@@ -2,6 +2,39 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4450",
+      "descricao": "PULSEIRA 1 TREVO VERDE 18CM",
+      "tipo": "Semijoia",
+      "imagem": "4450.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4448",
+      "descricao": "PULSEIRA 1 TREVO BRANCO PEROLADO 18CM",
+      "tipo": "Semijoia",
+      "imagem": "4448.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4447",
+      "descricao": "PULSEIRA 1 TREVO PRETO 18CM",
+      "tipo": "Semijoia",
+      "imagem": "4447.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
       "codigo": "4433",
       "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia",
@@ -145,17 +178,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4234",
-      "descricao": "PULSEIRA FITA 4MM",
-      "tipo": "Semijoia",
-      "imagem": "4234.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4220",
       "descricao": "PULSEIRA INFANTIL PANDA RESINA 14+5CM",
       "tipo": "Semijoia",
@@ -175,17 +197,6 @@
       "preco": "39,90",
       "precoConsignado": "69,90",
       "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "12/03/2025"
-    },
-    {
-      "codigo": "4126",
-      "descricao": "PULSEIRA DUPLA ELOS CHAPINHAS",
-      "tipo": "Semijoia",
-      "imagem": "4126.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "44,90",
-      "precoConsignado": "74,90",
-      "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "12/03/2025"
     },
     {
@@ -242,17 +253,6 @@
       "precoConsignado": "86,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3803",
-      "descricao": "PULSEIRA TIFFANYS COLORIDAS",
-      "tipo": "Semijoia",
-      "imagem": "3803.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "56,90",
-      "precoConsignado": "82,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "09/12/2024"
     },
     {
       "codigo": "2574",

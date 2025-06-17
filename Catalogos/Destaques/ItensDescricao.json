@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4441",
+      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "4441.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/06/2025"
+    },
+    {
       "codigo": "4432",
       "descricao": "BRINCO TRIO ARGO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
@@ -22,17 +33,6 @@
       "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4423",
-      "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4423.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
     },
     {
       "codigo": "4420",
@@ -156,17 +156,6 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
       "codigo": "4308",
       "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
       "tipo": "Semijoia",
@@ -198,17 +187,6 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/04/2025"
-    },
-    {
-      "codigo": "4168",
-      "descricao": "BRINCO GOTA ORGANICA ESCORRIDA",
-      "tipo": "Semijoia",
-      "imagem": "4168.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "62,90",
-      "precoConsignado": "92,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "23/04/2025"
     },
     {
       "codigo": "3793",

@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4441",
+      "descricao": "INOX BRACELETE BERLOQUES FIXOS ELEFANTE CHAVE CORAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "4441.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "INOX",
+      "dataUltimaEntrada": "10/06/2025"
+    },
+    {
       "codigo": "4432",
       "descricao": "BRINCO TRIO ARGO CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
@@ -44,17 +55,6 @@
       "precoConsignado": "149,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "05/06/2025"
-    },
-    {
-      "codigo": "4423",
-      "descricao": "CHOKER CORAÇÕES CORES CLARAS 40+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4423.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "04/06/2025"
     },
     {
       "codigo": "4420",
@@ -244,17 +244,6 @@
       "dataUltimaEntrada": "30/04/2025"
     },
     {
-      "codigo": "4309",
-      "descricao": "COLAR ABENÇOADA 52+5CM",
-      "tipo": "Semijoia",
-      "imagem": "4309.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
       "codigo": "4308",
       "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
       "tipo": "Semijoia",
@@ -343,28 +332,6 @@
       "dataUltimaEntrada": "14/04/2025"
     },
     {
-      "codigo": "4234",
-      "descricao": "PULSEIRA FITA 4MM",
-      "tipo": "Semijoia",
-      "imagem": "4234.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "109,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4233",
-      "descricao": "CHOKER FITA 4MM 37+10CM",
-      "tipo": "Semijoia",
-      "imagem": "4233.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "102,90",
-      "precoConsignado": "159,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
       "codigo": "4186",
       "descricao": "CHOKER CORAÇÕES COLORIDOS 41+5CM",
       "tipo": "Semijoia",
@@ -429,17 +396,6 @@
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/05/2025"
-    },
-    {
-      "codigo": "2004",
-      "descricao": "PINGENTE MENINA M 18MM COM CORAÇÃO ZIRCONIA VERMELHA",
-      "tipo": "Semijoia",
-      "imagem": "2004.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "05/06/2025"
     },
     {
       "codigo": "2003",
