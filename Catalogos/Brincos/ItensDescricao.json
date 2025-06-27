@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4497",
+      "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
+      "tipo": "Semijoia",
+      "imagem": "4497.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4474",
       "descricao": "BRINCO GOTA ABAULADA P 15MM",
       "tipo": "Semijoia",
@@ -32,17 +43,6 @@
       "preco": "39,90",
       "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "13/06/2025"
-    },
-    {
-      "codigo": "4471",
-      "descricao": "BRINCO TRIO QUADRADO ZIRCÔNIAS CRISTAL",
-      "tipo": "Semijoia",
-      "imagem": "4471.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
       "dataUltimaEntrada": "13/06/2025"
     },
     {
