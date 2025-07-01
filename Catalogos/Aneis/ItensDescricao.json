@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "4418",
-      "descricao": "ANEL REGULÁVEL BORBOLETA",
-      "tipo": "Semijoia",
-      "imagem": "4418.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "30/05/2025"
-    },
-    {
       "codigo": "4417",
       "descricao": "ANEL REGULÁVEL BORBOLETA",
       "tipo": "Semijoia",
@@ -101,17 +90,6 @@
       "dataUltimaEntrada": "28/03/2025"
     },
     {
-      "codigo": "4161",
-      "descricao": "ANEL REGULAVEL 2 FIOS E CORACAO ABAULADO",
-      "tipo": "Semijoia",
-      "imagem": "4161.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "28/03/2025"
-    },
-    {
       "codigo": "4095",
       "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
       "tipo": "Semijoia",
@@ -189,17 +167,6 @@
       "dataUltimaEntrada": "18/12/2024"
     },
     {
-      "codigo": "3820",
-      "descricao": "ANEL REGULAVEL TRIANGULO LISO E CRAVEJADO",
-      "tipo": "Semijoia",
-      "imagem": "3820.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "56,90",
-      "precoConsignado": "82,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "12/12/2024"
-    },
-    {
       "codigo": "3817",
       "descricao": "ANEL 3 ZIRCONIAS E CRAVEJADO AO REDOR TAMANHOS",
       "tipo": "Semijoia",
@@ -242,28 +209,6 @@
       "precoConsignado": "64,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/08/2024"
-    },
-    {
-      "codigo": "3319",
-      "descricao": "ANEL FALANGE REGULAVEL ESFERA E P. LUZ",
-      "tipo": "Semijoia",
-      "imagem": "3319.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "36,90",
-      "precoConsignado": "52,90",
-      "banho": "Banhado a Prata",
-      "dataUltimaEntrada": "20/07/2024"
-    },
-    {
-      "codigo": "2990",
-      "descricao": "ANEL FALANGE REGULAVEL 2 CORACOES VAZADOS",
-      "tipo": "Semijoia",
-      "imagem": "2990.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "36,90",
-      "precoConsignado": "49,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "02/05/2024"
     }
   ]
 }
