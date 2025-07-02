@@ -2,6 +2,17 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "4132",
+      "descricao": "CHOKER ELOS CART. 3MM 38+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4132.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4476",
       "descricao": "CHOKER CORRENTE E CANUTILHOS 40+5CM",
       "tipo": "Semijoia",
@@ -22,6 +33,17 @@
       "precoConsignado": "129,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "27/05/2025"
+    },
+    {
+      "codigo": "4355",
+      "descricao": "CHOKER ESFERA 38+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4355.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/05/2025"
     },
     {
       "codigo": "4235",
@@ -66,6 +88,17 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/03/2025"
+    },
+    {
+      "codigo": "4109",
+      "descricao": "CHOKER BAGUETES 38+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4109.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "82,90",
+      "precoConsignado": "129,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/03/2025"
     },
     {
       "codigo": "3976",
@@ -123,6 +156,17 @@
       "dataUltimaEntrada": "29/12/2024"
     },
     {
+      "codigo": "3885",
+      "descricao": "CHOKER TREVO VAZADO 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "3885.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "29/12/2024"
+    },
+    {
       "codigo": "3829",
       "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
       "tipo": "Semijoia",
@@ -143,17 +187,6 @@
       "precoConsignado": "99,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "29/11/2024"
-    },
-    {
-      "codigo": "3731",
-      "descricao": "CHOKER CORDAO BAIANO 3MM 36+10CM",
-      "tipo": "Semijoia",
-      "imagem": "3731.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "129,90",
-      "precoConsignado": "179,90",
-      "banho": "Banhado a Ouro",
-      "dataUltimaEntrada": "27/11/2024"
     },
     {
       "codigo": "3722",
@@ -187,6 +220,17 @@
       "precoConsignado": "89,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/11/2024"
+    },
+    {
+      "codigo": "3268",
+      "descricao": "CHOKER ARO FINO",
+      "tipo": "Semijoia",
+      "imagem": "3268.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "01/07/2024"
     }
   ]
 }

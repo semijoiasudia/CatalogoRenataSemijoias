@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4436",
+      "descricao": "BRINCO EAR HOOK TRIPLO",
+      "tipo": "Semijoia",
+      "imagem": "4436.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "96,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4435",
+      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4435.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
       "codigo": "4432",
       "descricao": "BRINCO TRIO ARG CRAVEJADO DE ZIRCÔNIAS INTERNO E EXTERNO",
       "tipo": "Semijoia",
@@ -90,6 +112,17 @@
       "dataUltimaEntrada": "26/05/2025"
     },
     {
+      "codigo": "4355",
+      "descricao": "CHOKER ESFERA 38+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4355.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "15/05/2025"
+    },
+    {
       "codigo": "4354",
       "descricao": "BRINCO ORGANICO OVAL TAM M",
       "tipo": "Semijoia",
@@ -110,6 +143,17 @@
       "precoConsignado": "94,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "07/06/2025"
+    },
+    {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
     },
     {
       "codigo": "4314",
@@ -141,6 +185,17 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "74,90",
       "precoConsignado": "114,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4309",
+      "descricao": "COLAR ABENÇOADA 52+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4309.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "30/04/2025"
     },

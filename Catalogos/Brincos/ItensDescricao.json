@@ -2,6 +2,28 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4521",
+      "descricao": "BRINCO TRIO PONTO DE LUZ FORMATO CORAÇÃO 5/4/3MM",
+      "tipo": "Semijoia",
+      "imagem": "4521.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "3761",
+      "descricao": "BRINCO MEIA ARGOLA ORGANICA - LEVE",
+      "tipo": "Semijoia",
+      "imagem": "3761.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4497",
       "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
       "tipo": "Semijoia",
@@ -242,6 +264,28 @@
       "precoConsignado": "139,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/06/2025"
+    },
+    {
+      "codigo": "4436",
+      "descricao": "BRINCO EAR HOOK TRIPLO",
+      "tipo": "Semijoia",
+      "imagem": "4436.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "96,90",
+      "precoConsignado": "159,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4435",
+      "descricao": "BRINCO EAR CUFF 2 EM 1 GOTAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4435.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "06/06/2025"
     },
     {
       "codigo": "4432",
@@ -627,6 +671,17 @@
       "precoConsignado": "69,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "09/05/2025"
+    },
+    {
+      "codigo": "4321",
+      "descricao": "BRINCO ARGOLA FORMATO CORAÇÃO GRADE",
+      "tipo": "Semijoia",
+      "imagem": "4321.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/05/2025"
     },
     {
       "codigo": "4316",
@@ -1377,6 +1432,17 @@
       "dataUltimaEntrada": "06/10/2024"
     },
     {
+      "codigo": "3523",
+      "descricao": "BRINCO TRIO GOTA VAZADA PP/P/M",
+      "tipo": "Semijoia",
+      "imagem": "3523.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "64,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "05/10/2024"
+    },
+    {
       "codigo": "3521",
       "descricao": "BRINCO CIRCULO CRAVEJADO COLORS P",
       "tipo": "Semijoia",
@@ -1564,6 +1630,17 @@
       "dataUltimaEntrada": "07/09/2024"
     },
     {
+      "codigo": "3451",
+      "descricao": "BRINCO GOTA ORGANICA M",
+      "tipo": "Semijoia",
+      "imagem": "3451.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/09/2024"
+    },
+    {
       "codigo": "3439",
       "descricao": "BRINCO DUO PONTO DE LUZ QUADRADO 6/8MM",
       "tipo": "Semijoia",
@@ -1597,6 +1674,17 @@
       "dataUltimaEntrada": "04/09/2024"
     },
     {
+      "codigo": "3428",
+      "descricao": "BRINCO ARGOLA 2 FILEIRAS CRAVEJADAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "3428.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "30/08/2024"
+    },
+    {
       "codigo": "3424",
       "descricao": "BRINCO RIVIERA CRISTAL E BORBOLETA VAZADA",
       "tipo": "Semijoia",
@@ -1614,7 +1702,7 @@
       "imagem": "3402.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "44,90",
-      "precoConsignado": "69,90",
+      "precoConsignado": "59,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "19/08/2024"
     },
