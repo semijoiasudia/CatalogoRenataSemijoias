@@ -2,6 +2,28 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4526",
+      "descricao": "COLAR ESFERA 46+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4526.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "4525",
+      "descricao": "COLAR ELOS CART. 3MM 45+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4525.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "79,90",
+      "precoConsignado": "124,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4486",
       "descricao": "COLAR DUPLO DE BOLINHAS 36/44+5CM",
       "tipo": "Semijoia",
