@@ -2,6 +2,39 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4530",
+      "descricao": "CONJUNTO INFANTIL CORAÇÃO CRISTAL 35CM",
+      "tipo": "Semijoia",
+      "imagem": "4530.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "79,90",
+      "precoConsignado": "122,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "03/07/2025"
+    },
+    {
+      "codigo": "4507",
+      "descricao": "PULSEIRA INFANTIL ESFERAS 14+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4507.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "4498",
+      "descricao": "CONJUNTO ADULTO/INFANTIL CORAÇÃO VERDE ESMERALDA 40CM",
+      "tipo": "Semijoia",
+      "imagem": "4498.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "27/06/2025"
+    },
+    {
       "codigo": "4497",
       "descricao": "BRINCO INFANTIL MORANGO ESMALTADO",
       "tipo": "Semijoia",

@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4507",
+      "descricao": "PULSEIRA INFANTIL ESFERAS 14+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4507.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4496",
       "descricao": "PULSEIRA INFANTIL BRANCA DE NEVE 14+5CM",
       "tipo": "Semijoia",

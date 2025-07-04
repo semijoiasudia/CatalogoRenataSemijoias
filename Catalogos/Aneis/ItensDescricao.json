@@ -2,6 +2,39 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "4529",
+      "descricao": "ANEL FALANGE REGULÁVEL 2 PONTOS DE LUZ",
+      "tipo": "Semijoia",
+      "imagem": "4529.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "4528",
+      "descricao": "ANEL FALANGE CORAÇÃO TRABALHADO",
+      "tipo": "Semijoia",
+      "imagem": "4528.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "32,90",
+      "precoConsignado": "49,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "4527",
+      "descricao": "ANEL FALANGE REGULÁVEL ESFERA VAZADA",
+      "tipo": "Semijoia",
+      "imagem": "4527.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "29,90",
+      "precoConsignado": "46,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4417",
       "descricao": "ANEL REGULÁVEL BORBOLETA",
       "tipo": "Semijoia",
