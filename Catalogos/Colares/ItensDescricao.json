@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4426",
+      "descricao": "COLAR FACE NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4426.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/07/2025"
+    },
+    {
       "codigo": "4526",
       "descricao": "COLAR ESFERA 46+5CM",
       "tipo": "Semijoia",

@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3868",
+      "descricao": "BRINCO EAR HOOK 3 BARRAS - 2 LISAS 1 CRAVEJADA",
+      "tipo": "Semijoia",
+      "imagem": "3868.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "89,90",
+      "precoConsignado": "142,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/07/2025"
+    },
+    {
       "codigo": "4524",
       "descricao": "BRINCO DUO PONTO DE LUZ CRISTAL 5/6/7MM",
       "tipo": "Semijoia",

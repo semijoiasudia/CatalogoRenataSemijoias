@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4554",
+      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
+      "tipo": "Semijoia",
+      "imagem": "4554.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "RÓDIO BR",
+      "dataUltimaEntrada": "07/07/2025"
+    },
+    {
+      "codigo": "4551",
+      "descricao": "ANEL REGULÁVEL FLORES COM ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia",
+      "imagem": "4551.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "54,90",
+      "precoConsignado": "82,90",
+      "banho": "RÓDIO BR",
+      "dataUltimaEntrada": "07/07/2025"
+    },
+    {
       "codigo": "4436",
       "descricao": "BRINCO EAR HOOK TRIPLO",
       "tipo": "Semijoia",
@@ -33,6 +55,17 @@
       "precoConsignado": "169,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "06/06/2025"
+    },
+    {
+      "codigo": "4426",
+      "descricao": "COLAR FACE NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
+      "tipo": "Semijoia",
+      "imagem": "4426.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/07/2025"
     },
     {
       "codigo": "4420",
@@ -242,6 +275,17 @@
       "precoConsignado": "79,90",
       "banho": "Banhado a Ouro",
       "dataUltimaEntrada": "04/04/2025"
+    },
+    {
+      "codigo": "3868",
+      "descricao": "BRINCO EAR HOOK 3 BARRAS - 2 LISAS 1 CRAVEJADA",
+      "tipo": "Semijoia",
+      "imagem": "3868.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "142,90",
+      "banho": "Banhado a Ouro",
+      "dataUltimaEntrada": "07/07/2025"
     },
     {
       "codigo": "3680",
