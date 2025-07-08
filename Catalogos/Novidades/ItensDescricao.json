@@ -2,6 +2,50 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4559",
+      "descricao": "BRINCO URSINHO CRAVEJADO ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4559.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/07/2025"
+    },
+    {
+      "codigo": "4558",
+      "descricao": "BRINCO URSINHO CRAVEJADO ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4558.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/07/2025"
+    },
+    {
+      "codigo": "4557",
+      "descricao": "BRINCO 3 CORACOES-VAZADO/CORRENTE/LISO/PEROLA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4557.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/07/2025"
+    },
+    {
+      "codigo": "4556",
+      "descricao": "BRINCO CRAVEJADA ZIRCÔNIAS BAGUETE COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4556.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "99,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/07/2025"
+    },
+    {
       "codigo": "4555",
       "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -649,6 +693,17 @@
       "precoConsignado": "142,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/07/2025"
+    },
+    {
+      "codigo": "3749",
+      "descricao": "BRINCO 3 CORACOES-VAZADO/CORRENTE/LISO/PEROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3749.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/07/2025"
     },
     {
       "codigo": "3285",
