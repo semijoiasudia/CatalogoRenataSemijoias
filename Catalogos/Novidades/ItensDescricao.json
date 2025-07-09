@@ -2,10 +2,54 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
-      "codigo": "4559",
+      "codigo": "4564",
+      "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO CORAÇÃO CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4564.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/07/2025"
+    },
+    {
+      "codigo": "4563",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO CRAVEJADA COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4563.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/07/2025"
+    },
+    {
+      "codigo": "4562",
+      "descricao": "BRINCO BAILARINA ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4562.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "09/07/2025"
+    },
+    {
+      "codigo": "4561",
+      "descricao": "BRINCO BAILARINA ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4561.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/07/2025"
+    },
+    {
+      "codigo": "4560",
       "descricao": "BRINCO URSINHO CRAVEJADO ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4559.jpg",
+      "imagem": "4560.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "42,90",
       "precoConsignado": "64,90",
