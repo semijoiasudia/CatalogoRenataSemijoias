@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "1488",
+      "descricao": "COLAR FIO DE NYLON 3 CORACOES 2 BANHOS 40+5CM",
+      "tipo": "Semijoia banhada a 2 Banhos",
+      "imagem": "1488.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "96,90",
+      "banho": "2 Banhos",
+      "dataUltimaEntrada": "09/07/2025"
+    },
+    {
       "codigo": "4426",
       "descricao": "COLAR FACE NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -167,6 +178,28 @@
       "dataUltimaEntrada": "03/06/2025"
     },
     {
+      "codigo": "4421",
+      "descricao": "COLAR FIO DE NYLON PONTO DE LUZ ROSA 6MM 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4421.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/06/2025"
+    },
+    {
+      "codigo": "4408",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO CRISTAL 41+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "4408.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
       "codigo": "4405",
       "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO COLORS 40+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -275,6 +308,17 @@
       "precoConsignado": "89,90",
       "banho": "Prata",
       "dataUltimaEntrada": "04/04/2025"
+    },
+    {
+      "codigo": "4133",
+      "descricao": "COLAR ELOS CART. 2MM 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4133.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/03/2025"
     },
     {
       "codigo": "3963",
