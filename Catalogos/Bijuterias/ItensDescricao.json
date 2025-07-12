@@ -2,15 +2,26 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4268",
-      "descricao": "BIJUTERIA CHOCKER RIVIERA E CORACOES COLORS 37CM",
+      "codigo": "4184",
+      "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
       "tipo": "Bijuteria",
-      "imagem": "4268.jpg",
+      "imagem": "4184.jpg",
       "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "40,00",
+      "precoConsignado": "66,00",
+      "banho": "2 Banhos",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
+      "codigo": "4174",
+      "descricao": "BIJUTERIA CONJUNTO GOTA VERDE ESMERALDA 44+5CM",
+      "tipo": "Bijuteria",
+      "imagem": "4174.jpg",
+      "pastaFotos": "Catalogos/Bijuterias/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/04/2025"
+      "dataUltimaEntrada": "01/04/2025"
     },
     {
       "codigo": "4024",
