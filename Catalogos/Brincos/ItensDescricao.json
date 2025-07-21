@@ -2,6 +2,28 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "4592",
+      "descricao": "BRINCO EAR CUFF PATINHA COM ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4592.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/07/2025"
+    },
+    {
+      "codigo": "4591",
+      "descricao": "BRINCO ARGOLA CLICK PATINHA COM ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4591.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/07/2025"
+    },
+    {
       "codigo": "3330",
       "descricao": "BRINCO PONTO LUZ QUADRADO 8MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -11,6 +33,72 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/07/2025"
+    },
+    {
+      "codigo": "4589",
+      "descricao": "BRINCO TRIO GOTA ABUALADA LISA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4589.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4586",
+      "descricao": "BRINCO MEIA FLOR 3 PÉTALAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4586.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4585",
+      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4585.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4584",
+      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4584.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4583",
+      "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4583.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4582",
+      "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4582.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
     },
     {
       "codigo": "4564",
@@ -1047,17 +1135,6 @@
       "dataUltimaEntrada": "21/02/2025"
     },
     {
-      "codigo": "4074",
-      "descricao": "BRINCO ARGOLINHA ESTRELA PP",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4074.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/02/2025"
-    },
-    {
       "codigo": "4062",
       "descricao": "BRINCO INFANTIL GOLFINHO VAZADO PP",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1450,17 +1527,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "42,90",
       "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2024"
-    },
-    {
-      "codigo": "3537",
-      "descricao": "BRINCO ARGOLA CLICK 5 ZIRCONIAS QUADRADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3537.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "06/10/2024"
     },

@@ -2,6 +2,94 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4592",
+      "descricao": "BRINCO EAR CUFF PATINHA COM ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4592.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/07/2025"
+    },
+    {
+      "codigo": "4591",
+      "descricao": "BRINCO ARGOLA CLICK PATINHA COM ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4591.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/07/2025"
+    },
+    {
+      "codigo": "4589",
+      "descricao": "BRINCO TRIO GOTA ABUALADA LISA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4589.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4586",
+      "descricao": "BRINCO MEIA FLOR 3 PÉTALAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4586.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4585",
+      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4585.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4584",
+      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4584.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4583",
+      "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4583.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4582",
+      "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4582.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
       "codigo": "4564",
       "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO CORAÇÃO CRAVEJADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -66,17 +154,6 @@
       "precoConsignado": "99,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/07/2025"
-    },
-    {
-      "codigo": "4555",
-      "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4555.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "99,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "07/07/2025"
     },
     {
       "codigo": "4546",
