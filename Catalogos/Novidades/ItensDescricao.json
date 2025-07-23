@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4600",
+      "descricao": "COLAR PINGENTE DE MARIA E CRUZ CRISTAL 47CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4600.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/07/2025"
+    },
+    {
       "codigo": "4592",
       "descricao": "BRINCO EAR CUFF PATINHA COM ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -86,6 +97,39 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "59,90",
       "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4581",
+      "descricao": "TORNOZELEIRA FLOR COM MICROZIRCÔNIAS COLORS 22+4CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4581.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4580",
+      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4580.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4578",
+      "descricao": "COLAR ELOS DIAMANTADOS COM ESFERAS PÉROLA E LISA 40+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4578.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "17/07/2025"
     },
