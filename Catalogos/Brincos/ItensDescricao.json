@@ -684,17 +684,6 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
-      "codigo": "4411",
-      "descricao": "BRINCO ESPIRITO SANTO PP",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4411.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/05/2025"
-    },
-    {
       "codigo": "4402",
       "descricao": "BRINCO CORAÇÃO CRAVEJADO E PÉROLA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -721,17 +710,6 @@
       "descricao": "BRINCO QUADRADO BORDA ARREDONDADA CRAVEJADO CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4375.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4373",
-      "descricao": "BRINCO GOTA PINGENTE CIRCULO CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4373.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "79,90",
@@ -1636,7 +1614,7 @@
       "imagem": "3477.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
-      "precoConsignado": "69,90",
+      "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/09/2024"
     },
@@ -1782,6 +1760,17 @@
       "precoConsignado": "76,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2024"
+    },
+    {
+      "codigo": "3325",
+      "descricao": "BRINCO ARGOLA CLICK GOTA CRAVEJADA M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3325.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "42,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2024"
     },
     {
       "codigo": "3311",
