@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
     <!-- meta tags de SEO aqui -->
-    <meta name="description" content="Catálogo digital de semijoias e acessórios Renata Semijoias e Acessórios. Encontre brincos, colares, pulseiras, anéis, piercings, aço inxo e muito mais. Com entrega em Uberlândia e todo Brasil.">
+    <meta name="description" content="Loja de Semijoias em Uberlândia MG. Catálogo digital de semijoias e acessórios Renata Semijoias e Acessórios. Encontre brincos, colares, pulseiras, anéis, piercings, aço inox e muito mais. Entregamos em todo Brasil.">
     <meta name="keywords" content="semijoias, acessórios, brincos, brinco, colares, colar, choker, chokers, anéis, anel, pulseiras, pulseira, piercing, tornozeleira, bolsas, relógios, cintos, aço inox, presente, Uberlândia, Renata Semijoias, joias folheadas, aço inox">
-
     <title>Renata - Semijoias e Acessórios</title>
+
+    <!-- Meta tags Open Graph para redes sociais -->
+    <meta property="og:title" content="Renata Semijoias e Acessórios - Catálogo Online">
+    <meta property="og:description" content="Loja de Semijoias em Uberlândia MG. Catálogo digital de semijoias e acessórios. Encontre brincos, colares, pulseiras, anéis, piercings, aço inox e muito mais. Entregamos em todo Brasil.">
+    <meta property="og:image" content="https://renatasemijoias.com/imagens/logo_otimizada_redes_sociais.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://renatasemijoias.com">
+    <meta property="og:type" content="website">
     
-    <!-- Google tag (gtag.js)
+    <!-- Google tag (gtag.js)-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-ZJK53CRZJF');
-    </script>-->
+    </script>
     
     <style>
         body {
@@ -1131,7 +1139,7 @@
             freteOutrasCidades: "A Calcular"
         };
         
-        let categoriaInicial = "Brincos"; // Valor padrão de fallback
+        let categoriaInicial = "Destaques"; // Valor padrão de fallback
         let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
 
         const PHONE_NUMBER = '5534997622408';
@@ -1186,8 +1194,8 @@
         }
 
         // Carregar configurações do arquivo config.ini
-        async function loadDeliveryConfig() {
-            const response = await fetch("config.ini")
+        function loadDeliveryConfig() {
+            fetch("config.ini")
                 .then(response => response.ok ? response.text() : null)
                 .then(text => {
                     if (!text) return;
@@ -2376,7 +2384,7 @@
         window.onload = async () => {
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
-            await loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
             await loadCategories(); // Carregar categorias e a categoria inicial
             loadRodape();
             setupFaleConoscoButton();
