@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "4613",
+      "descricao": "CONJUNTO FLOR DE ZIRCÔNIAS NAVETE COLORS 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4613.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "174,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/07/2025"
+    },
+    {
       "codigo": "4611",
       "descricao": "COLAR TERÇO NOSSA SENHORA APARECIDA 44CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -113,7 +124,7 @@
     },
     {
       "codigo": "4601",
-      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA",
+      "descricao": "PULSEIRA TERÇO NOSSA SENHORA APARECIDA 18CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4601.jpg",
       "pastaFotos": "Catalogos/Novidades/",
@@ -649,6 +660,17 @@
       "precoConsignado": "96,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/06/2025"
+    },
+    {
+      "codigo": "4451",
+      "descricao": "COLAR CORRENTE VENEZIANA 40CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4451.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/06/2025"
     },
     {
       "codigo": "4450",
