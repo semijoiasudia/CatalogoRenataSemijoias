@@ -2,6 +2,39 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4623",
+      "descricao": "BRINCO ARGOLA CRAVEJADA COLORS COM PINGENTE CORAÇÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4623.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "52,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "25/07/2025"
+    },
+    {
+      "codigo": "4619",
+      "descricao": "BRINCO EAR CUFF 2 FLORES",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4619.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "25/07/2025"
+    },
+    {
+      "codigo": "4618",
+      "descricao": "BRINCO EAR CUFF 2 FLORES",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4618.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "25/07/2025"
+    },
+    {
       "codigo": "4617",
       "descricao": "BRINCO EAR CUFF BORBOLETAS CRAVEJADAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -704,16 +737,6 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/05/2025"
-    },
-    {
-      "codigo": "4398",
-      "descricao": "RELOGIO PALLYJANE REDONDO GRANDE FUNDO BRANCO",
-      "imagem": "4398.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/05/2025"
     },
     {
       "codigo": "4396",

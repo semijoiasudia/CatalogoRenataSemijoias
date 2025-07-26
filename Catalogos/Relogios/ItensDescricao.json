@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "4398",
-      "descricao": "RELOGIO PALLYJANE REDONDO GRANDE FUNDO BRANCO",
-      "imagem": "4398.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/05/2025"
-    },
-    {
       "codigo": "4396",
       "descricao": "RELOGIO PALLYJANE REDONDO GRANDE FUNDO DOURADO",
       "imagem": "4396.jpg",
@@ -37,16 +27,6 @@
       "imagem": "4394.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "64,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "25/05/2025"
-    },
-    {
-      "codigo": "4390",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO DOURADO",
-      "imagem": "4390.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
       "precoConsignado": "99,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "25/05/2025"
