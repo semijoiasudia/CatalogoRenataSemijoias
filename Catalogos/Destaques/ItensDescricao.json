@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4658",
+      "descricao": "BRINCO EAR HOOK X CRAVEJADO E CORAÇÃO LISO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4658.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
+      "codigo": "4657",
+      "descricao": "BRINCO EAR HOOK X CRAVEJADO E CORAÇÃO LISO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4657.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
       "codigo": "4647",
       "descricao": "INOX CONJUNTO 5 TREVOS MADREPÉROLA 45+5CM",
       "tipo": "Aço Inox",
@@ -398,17 +420,6 @@
       "dataUltimaEntrada": "21/07/2025"
     },
     {
-      "codigo": "4595",
-      "descricao": "ANEL REGULÁVEL FORMATO FOLHAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4595.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
       "codigo": "4594",
       "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -461,7 +472,7 @@
       "preco": "69,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
+      "dataUltimaEntrada": "01/08/2025"
     },
     {
       "codigo": "4585",
@@ -526,17 +537,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "59,90",
       "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/07/2025"
-    },
-    {
-      "codigo": "4561",
-      "descricao": "BRINCO BAILARINA ZIRCÔNIAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4561.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/07/2025"
     },
@@ -759,17 +759,6 @@
       "precoConsignado": "124,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/06/2025"
-    },
-    {
-      "codigo": "4475",
-      "descricao": "BRINCO EAR CUFF ESFERAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4475.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "59,90",
-      "precoConsignado": "92,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/06/2025"
     },
     {
       "codigo": "4462",
