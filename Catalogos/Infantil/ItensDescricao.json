@@ -2,6 +2,39 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4656",
+      "descricao": "PULSEIRA INFANTIL ESTRELAS 15CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4656.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "44,90",
+      "precoConsignado": "72,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
+      "codigo": "4651",
+      "descricao": "BRINCO ARGOLA CLICK LAÇO CRITAL PP ADULTO/INFANTIL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4651.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
+      "codigo": "4649",
+      "descricao": "BRINCO CEREJA ESMALTADO ADULTO/INFANTIL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4649.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
       "codigo": "4531",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO CRISTAL 15,5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
