@@ -14,18 +14,6 @@
       "dataUltimaEntrada": "07/05/2025"
     },
     {
-      "codigo": "4208",
-      "descricao": "INOX BRINCO TREVO MADREPEROLA P",
-      "tipo": "Aço Inox",
-      "imagem": "4208.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "24,90",
-      "precoOferta": "19,90",
-      "precoConsignado": "39,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/04/2025"
-    },
-    {
       "codigo": "4184",
       "descricao": "BIJUTERIA BRACELETE MAXI 4 FOLHAS 2 BANHOS",
       "tipo": "Bijuteria",
@@ -70,6 +58,18 @@
       "precoConsignado": "89,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3480",
+      "descricao": "BRINCO CORACAO TEXTURIZADO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3480.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "34,90",
+      "precoOferta": "19,90",
+      "precoConsignado": "49,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "18/09/2024"
     },
     {
       "codigo": "3403",
