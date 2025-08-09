@@ -2,6 +2,50 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "4755",
+      "descricao": "COLAR CORAÇÃO CRAVEJADO COM ARVORE DA VIDA 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4755.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4752",
+      "descricao": "CONJUNTO NOSSA SENHORA MANTO AZUL 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4752.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4751",
+      "descricao": "CONJUNTO ARVORE DA VIDA CRAVEJADO COLORS 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4751.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4750",
+      "descricao": "CONJUNTO CORAÇÃO METADE CRAVEJADO METADE LISO 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4750.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
       "codigo": "4735",
       "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
       "tipo": "Semijoia banhada a Prata",
@@ -24,6 +68,17 @@
       "dataUltimaEntrada": "04/08/2025"
     },
     {
+      "codigo": "4733",
+      "descricao": "BRINCO ARGOLA M LISA SEMIBRILHO 25MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4733.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "04/08/2025"
+    },
+    {
       "codigo": "4731",
       "descricao": "BRINCO MEIA FLOR 4 PÉTALAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -31,6 +86,17 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "44,90",
       "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4730",
+      "descricao": "BRINCO ARGOLA 3 FILEIRAS DE ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4730.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
@@ -418,6 +484,215 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4688",
+      "descricao": "BRINCO FIO ESPIRAL E PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4688.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4687",
+      "descricao": "BRINCO FIO E ESPIRAL",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4687.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4686",
+      "descricao": "BRINCO FIO E ESPIRAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4686.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4685",
+      "descricao": "BRINCO 2 EM 1 DISCO E DISCO VAZADO ORGANICO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4685.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4684",
+      "descricao": "BRINCO 2 EM 1 DISCO E DISCO VAZADO ORGANICO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4684.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4683",
+      "descricao": "BRINCO EAR JACKET PÉROLA BRANCA FIO E ESFERA LISA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4683.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4682",
+      "descricao": "BRINCO FORMATO NAVETE TRABALHADA E PÉROLA AMARELA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4682.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4681",
+      "descricao": "BRINCO FORMATO NAVETE TRABALHADA E PÉROLA AMARELA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4681.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4679",
+      "descricao": "BRINCO DISCO OVAL E DISCO FORMATO FOLHA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4679.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4678",
+      "descricao": "BRINCO EAR JACKET 2 EM 1 - PONTO DE LUZ E 3 FOLHAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4678.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4677",
+      "descricao": "BRINCO EAR JACKET 2 EM 1 - PONTO DE LUZ E 3 FOLHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4677.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4676",
+      "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4676.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4675",
+      "descricao": "BRINCO 3 GOTAS DIAMANTADAS TRABALHADAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4675.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4674",
+      "descricao": "BRINCO ASA ORGÂNICA TAM G",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4674.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "99,00",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4673",
+      "descricao": "BRINCO ASA ORGÂNICA TAM G",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4673.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4672",
+      "descricao": "BRINCO MEIA FOLHA ORGÂNICA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4672.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4671",
+      "descricao": "BRINCO MEIA FOLHA ORGÂNICA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4671.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4669",
+      "descricao": "BRINCO FLOR TRABALHADA 8 PÉTALAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4669.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4667",
+      "descricao": "BRINCO CORACAO M LISO LEVE DOBRA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4667.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
     },
     {
       "codigo": "4658",
