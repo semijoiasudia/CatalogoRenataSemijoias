@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "4629",
-      "descricao": "ANEL REGULÁVEL 3 BORBOLETAS CRAVEJADAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4629.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "4628",
       "descricao": "ANEL REGULÁVEL TREVOS INSPIRAÇÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -57,6 +46,17 @@
       "dataUltimaEntrada": "21/07/2025"
     },
     {
+      "codigo": "4595",
+      "descricao": "ANEL REGULÁVEL FORMATO FOLHAS VAZADAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4595.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/07/2025"
+    },
+    {
       "codigo": "4593",
       "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -66,6 +66,17 @@
       "precoConsignado": "99,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/07/2025"
+    },
+    {
+      "codigo": "4529",
+      "descricao": "ANEL FALANGE REGULÁVEL 2 PONTOS DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4529.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/07/2025"
     },
     {
       "codigo": "4528",
@@ -134,6 +145,17 @@
       "dataUltimaEntrada": "15/05/2025"
     },
     {
+      "codigo": "4180",
+      "descricao": "ANEL SOLITARIO FIO TORCIDO E CORACAO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4180.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/04/2025"
+    },
+    {
       "codigo": "4095",
       "descricao": "ANEL REGULAVEL PATINHA E CORACAO VAZADOS",
       "tipo": "Semijoia banhada a Prata",
@@ -152,6 +174,17 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "52,90",
       "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/02/2025"
+    },
+    {
+      "codigo": "4092",
+      "descricao": "ANEL REGULAVEL FALANGE 2 CORACOES DIAMANTADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4092.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "29,90",
+      "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "26/02/2025"
     },
@@ -189,6 +222,17 @@
       "dataUltimaEntrada": "25/01/2025"
     },
     {
+      "codigo": "3858",
+      "descricao": "ANEL FALANGE FIO TORCIDO CORACAO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3858.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "36,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/12/2024"
+    },
+    {
       "codigo": "3817",
       "descricao": "ANEL 3 ZIRCONIAS E CRAVEJADO AO REDOR TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -209,6 +253,28 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/11/2024"
+    },
+    {
+      "codigo": "3582",
+      "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3582.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/10/2024"
+    },
+    {
+      "codigo": "3581",
+      "descricao": "ANEL REGULAVEL 2 FIOS TREVO CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3581.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "46,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "18/10/2024"
     },
     {
       "codigo": "3403",
