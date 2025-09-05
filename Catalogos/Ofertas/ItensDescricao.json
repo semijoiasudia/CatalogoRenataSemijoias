@@ -2,6 +2,18 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
+      "codigo": "3325",
+      "descricao": "BRINCO ARGOLA CLICK GOTA CRAVEJADA M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3325.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "42,90",
+      "precoOferta": "29,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2024"
+    },
+    {
       "codigo": "3206",
       "descricao": "BRINCO TRIANGULO ORGANICO P",
       "tipo": "Semijoia banhada a Ouro 18k",
