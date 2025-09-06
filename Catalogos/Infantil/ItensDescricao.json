@@ -2,6 +2,50 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4815",
+      "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4815.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4814",
+      "descricao": "CONJUNTO INFANTIL MINNIE ESMALTADO 35+8CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4814.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4813",
+      "descricao": "CONJUNTO INFANTIL FLOR MARGARIDA ESMALTADA 35+8CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4813.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4744",
+      "descricao": "COLAR INFANTIL ARCO-ÍRIS 35CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4744.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "49,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
       "codigo": "4741",
       "descricao": "BRINCO TRIO ESTRELA ZIRCÔNIA CRISTAL ADULTO/INFANTIL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -9,6 +53,17 @@
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "59,90",
       "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4739",
+      "descricao": "CONJUNTO INFANTIL 3 PEDRAS COLORIDAS 35CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4739.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "79,90",
+      "precoConsignado": "124,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2025"
     },
