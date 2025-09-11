@@ -2,6 +2,17 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "4719",
+      "descricao": "CHOKER BOTÕES LISOS 34+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4719.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "64,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4718",
       "descricao": "CHOKER CORDAO BAIANO 2MM 40+4CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -145,6 +156,17 @@
       "dataUltimaEntrada": "27/01/2025"
     },
     {
+      "codigo": "3885",
+      "descricao": "CHOKER TREVO VAZADO 40+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3885.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/12/2024"
+    },
+    {
       "codigo": "3829",
       "descricao": "CHOKER ELOS OVAIS E RETANGULARES 38+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -165,6 +187,17 @@
       "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/11/2024"
+    },
+    {
+      "codigo": "3268",
+      "descricao": "CHOKER ARO FINO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3268.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/07/2024"
     }
   ]
 }
