@@ -72,6 +72,16 @@
       "dataUltimaEntrada": "25/05/2025"
     },
     {
+      "codigo": "4394",
+      "descricao": "RELOGIO PALLYJANE RETANGULAR FUNDO DOURADO",
+      "imagem": "4394.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "25/05/2025"
+    },
+    {
       "codigo": "4393",
       "descricao": "RELOGIO PALLYJANE QUADRADO PEQ. FUNDO BRANCO",
       "imagem": "4393.jpg",
@@ -79,16 +89,6 @@
       "preco": "62,90",
       "precoConsignado": "89,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "25/05/2025"
-    },
-    {
-      "codigo": "4391",
-      "descricao": "RELOGIO PALLYJANE QUADRADO PEQ. FUNDO DOURADO",
-      "imagem": "4391.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "62,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox Dourado",
       "dataUltimaEntrada": "25/05/2025"
     },
     {
@@ -100,6 +100,16 @@
       "precoConsignado": "79,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "4016",
+      "descricao": "RELOGIO DOLUCK ROSE INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "4016.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "59,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/02/2025"
     }
   ]
 }

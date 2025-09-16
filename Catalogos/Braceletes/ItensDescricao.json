@@ -2,6 +2,116 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
+      "codigo": "4895",
+      "descricao": "BRACELETE 2 FLORES ORGÂNICAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4895.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4894",
+      "descricao": "BRACELETE 2 FLORES ORGÂNICAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4894.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4893",
+      "descricao": "BRACELETE TRIPLO LISO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4893.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4892",
+      "descricao": "BRACELETE TRIPLO LISO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4892.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4891",
+      "descricao": "BRACELETE DUPLO EM V",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4891.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "102,90",
+      "precoConsignado": "149,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4890",
+      "descricao": "BRACELETE DUPLO EM V",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4890.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "102,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4889",
+      "descricao": "BRACELETE FIO TORCIDO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4889.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "82,90",
+      "precoConsignado": "122,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4888",
+      "descricao": "BRACELETE FIO TORCIDO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4888.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4887",
+      "descricao": "BRACELETE FIO COM 2 PÉROLAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4887.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "74,90",
+      "precoConsignado": "102,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4886",
+      "descricao": "BRACELETE FIO COM 2 PÉROLAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4886.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "69,90",
+      "precoConsignado": "98,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
       "codigo": "4665",
       "descricao": "BRACELETE FIO COM 1 PINGENTE CRUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -10,6 +120,17 @@
       "preco": "69,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/08/2025"
+    },
+    {
+      "codigo": "4663",
+      "descricao": "BRACELETE FIO FORMATO RAIO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4663.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "02/08/2025"
     },
     {
