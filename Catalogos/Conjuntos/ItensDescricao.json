@@ -2,6 +2,50 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4909",
+      "descricao": "CONJUNTO GOTA ORGÂNICA TRABALHADA 45+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4909.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4908",
+      "descricao": "CONJUNTO GOTA ORGÂNICA TRABALHADA 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4908.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4907",
+      "descricao": "CONJUNTO CORAÇÃO TRABALHADO 45+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4907.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4906",
+      "descricao": "CONJUNTO CORAÇÃO TRABALHADO 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4906.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
       "codigo": "4815",
       "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
