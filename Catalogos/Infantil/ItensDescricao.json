@@ -2,6 +2,17 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "4902",
+      "descricao": "BRINCO INFANTIL GATINHO COM LACINHO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4902.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
       "codigo": "4815",
       "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
