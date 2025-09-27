@@ -2,6 +2,116 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4965",
+      "descricao": "PULSEIRA 4 PÉROLAS BARROCAS BRANCAS 17+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4965.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4964",
+      "descricao": "PULSEIRA 4 PÉROLAS BARROCAS BRANCAS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4964.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4963",
+      "descricao": "PULSEIRA PÉROLOAS AMARELAS 18+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4963.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4962",
+      "descricao": "PULSEIRA PÉROLOAS AMARELAS 18+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4962.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4961",
+      "descricao": "PULSEIRA ESPÍRITO SANTO E PONTOS DE LUZ 17+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4961.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4960",
+      "descricao": "PULSEIRA ESPÍRITO SANTO E PONTOS DE LUZ 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4960.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4959",
+      "descricao": "PULSEIRA ELOS LONGOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4959.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4958",
+      "descricao": "PULSEIRA ELOS LONGOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4958.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4937",
+      "descricao": "PULSEIRA OLHO GREGO / ELOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4937.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4936",
+      "descricao": "PULSEIRA OLHO GREGO / ELOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4936.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "84,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
       "codigo": "4728",
       "descricao": "PULSEIRA TIFFANYS COLORIDAS 5MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -46,17 +156,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4696",
-      "descricao": "PULSEIRA CRUZ CURVA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4696.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "64,90",
-      "precoConsignado": "98,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4690",
       "descricao": "PULSEIRA DUPLA CORAÇÃO CRISTAL E 2 CRUZES",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -97,17 +196,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "62,90",
       "precoConsignado": "98,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
-      "codigo": "4603",
-      "descricao": "PULSEIRA CIGANINHA CORAÇÕES ZIRCONIAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4603.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "64,90",
-      "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/07/2025"
     },
