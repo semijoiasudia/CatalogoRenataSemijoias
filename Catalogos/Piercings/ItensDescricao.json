@@ -2,17 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4637",
-      "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4637.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/07/2025"
-    },
-    {
       "codigo": "3315",
       "descricao": "PIERCING FAKE ZIRCONIAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -90,17 +79,6 @@
       "dataUltimaEntrada": "24/01/2025"
     },
     {
-      "codigo": "3935",
-      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3935.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/01/2025"
-    },
-    {
       "codigo": "3772",
       "descricao": "PIERCING FAKE GOTA ABAULADA",
       "tipo": "Semijoia banhada a Prata",
@@ -145,17 +123,6 @@
       "dataUltimaEntrada": "07/10/2024"
     },
     {
-      "codigo": "3544",
-      "descricao": "PIERCING FAKE BORBOLETA LISA",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3544.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "06/10/2024"
-    },
-    {
       "codigo": "3543",
       "descricao": "PIERCING FAKE BORBOLETA LISA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -176,17 +143,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/05/2024"
-    },
-    {
-      "codigo": "2521",
-      "descricao": "PIERCING FAKE LISO PINGENTE PONTO DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2521.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "32,90",
-      "precoConsignado": "44,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/02/2024"
     }
   ]
 }

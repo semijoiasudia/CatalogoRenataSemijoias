@@ -2,29 +2,6 @@
   "categoria": "OFERTAS",
   "produtos": [
     {
-      "codigo": "4238",
-      "descricao": "PULSEIRA NAVETE AZUL E 2 PONTOS DE LUZ CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4238.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "54,90",
-      "precoOferta": "39,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/04/2025"
-    },
-    {
-      "codigo": "4016",
-      "descricao": "RELOGIO DOLUCK ROSE INSPIRACAO PULSEIRA ELASTICA",
-      "imagem": "4016.jpg",
-      "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "59,90",
-      "precoOferta": "29,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/02/2025"
-    },
-    {
       "codigo": "3975",
       "descricao": "CHOKER CRISTAIS LAVANDA E PING DE GOTA 39+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -32,21 +9,33 @@
       "pastaFotos": "Catalogos/Ofertas/",
       "preco": "69,90",
       "precoOferta": "39,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/02/2025"
     },
     {
-      "codigo": "3026",
-      "descricao": "PULSEIRA CORACAO ZIRCONIA/3CORACOES VAZADOS",
+      "codigo": "3400",
+      "descricao": "BRINCO LACO CRAVEJADO CRISTAL P",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3026.jpg",
+      "imagem": "3400.jpg",
       "pastaFotos": "Catalogos/Ofertas/",
-      "preco": "59,90",
+      "preco": "42,90",
       "precoOferta": "29,90",
-      "precoConsignado": "74,90",
+      "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/05/2024"
+      "dataUltimaEntrada": "19/08/2024"
+    },
+    {
+      "codigo": "3309",
+      "descricao": "BRINCO TREVO PINK",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3309.jpg",
+      "pastaFotos": "Catalogos/Ofertas/",
+      "preco": "44,90",
+      "precoOferta": "19,90",
+      "precoConsignado": "64,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "16/07/2024"
     }
   ]
 }
