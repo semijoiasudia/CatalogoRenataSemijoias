@@ -90,6 +90,17 @@
       "dataUltimaEntrada": "27/09/2025"
     },
     {
+      "codigo": "4708",
+      "descricao": "PULSEIRA ELOS H",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4708.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4705",
       "descricao": "PULSEIRA ELOS CARTIER 3MM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -244,17 +255,6 @@
       "dataUltimaEntrada": "03/06/2025"
     },
     {
-      "codigo": "4409",
-      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4409.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/05/2025"
-    },
-    {
       "codigo": "3812",
       "descricao": "PULSEIRA TREVO V&C RESINA VERDE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -273,17 +273,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "74,90",
       "precoConsignado": "114,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4308",
-      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4308.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "72,90",
-      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/04/2025"
     },
@@ -341,17 +330,6 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/12/2024"
-    },
-    {
-      "codigo": "2574",
-      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2574.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "86,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/09/2024"
     }
   ]
 }

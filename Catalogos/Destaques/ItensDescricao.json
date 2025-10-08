@@ -2,17 +2,6 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
-      "codigo": "4969",
-      "descricao": "BRINCO TRIO ARGOLA CLICK COLORS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4969.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
       "codigo": "4968",
       "descricao": "BRINCO TRIO ARGOLA CLICK COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -233,17 +222,6 @@
       "dataUltimaEntrada": "16/09/2025"
     },
     {
-      "codigo": "4929",
-      "descricao": "COLAR PÉROLAS BARROCAS BRANCAS 41+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4929.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "74,90",
-      "precoConsignado": "109,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
       "codigo": "4928",
       "descricao": "COLAR PÉROLAS BARROCAS BRANCAS 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -262,28 +240,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "64,90",
       "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
-      "codigo": "4926",
-      "descricao": "COLAR PÉROLA AMARELA 6MM 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4926.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "64,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
-      "codigo": "4925",
-      "descricao": "COLAR Y BORBOLETA PRETA 45+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4925.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "84,90",
-      "precoConsignado": "124,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "16/09/2025"
     },
@@ -351,17 +307,6 @@
       "preco": "94,90",
       "precoConsignado": "139,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
-      "codigo": "4918",
-      "descricao": "COLAR GRAVATINHA 2 BARRAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4918.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "102,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/09/2025"
     },
     {
@@ -805,16 +750,6 @@
       "dataUltimaEntrada": "01/09/2025"
     },
     {
-      "codigo": "4832",
-      "descricao": "RELOGIO INSPIRAÇÃO FUNDO DOURADO PULSERIA AÇO - DHP",
-      "imagem": "4832.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "28/08/2025"
-    },
-    {
       "codigo": "4829",
       "descricao": "RELOGIO REDONDO FUNDO PRETO MÉDIO - DHP",
       "imagem": "4829.jpg",
@@ -835,6 +770,17 @@
       "dataUltimaEntrada": "27/08/2025"
     },
     {
+      "codigo": "4821",
+      "descricao": "ANEL REGULÁVEL ASA 4 FIOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4821.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/08/2025"
+    },
+    {
       "codigo": "4820",
       "descricao": "ANEL 3 FIOS E 2 CORAÇÕES VERDE ESMERALDA - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -844,17 +790,6 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
-    },
-    {
-      "codigo": "4814",
-      "descricao": "CONJUNTO INFANTIL MINNIE ESMALTADO 35+8CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4814.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
     },
     {
       "codigo": "4813",
@@ -876,6 +811,17 @@
       "preco": "79,90",
       "precoConsignado": "119,90",
       "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4809",
+      "descricao": "COLAR ELOS E PÉROLA BARROCA 44+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4809.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
     {
@@ -908,6 +854,17 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "42,90",
       "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4792",
+      "descricao": "BRINCO MEIA ARGOLA ORGANICA FORMATO LOSANGO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4792.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -1044,6 +1001,17 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
+      "codigo": "4719",
+      "descricao": "CHOKER BOTÕES LISOS 34+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4719.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4718",
       "descricao": "CHOKER CORDAO BAIANO 2MM 40+4CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -1066,13 +1034,13 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4716",
-      "descricao": "COLAR ESFERA LISA E PÉROLA AMARELA G 48+6CM",
+      "codigo": "4708",
+      "descricao": "PULSEIRA ELOS H",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4716.jpg",
+      "imagem": "4708.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "142,90",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
@@ -1187,6 +1155,17 @@
       "dataUltimaEntrada": "01/08/2025"
     },
     {
+      "codigo": "4653",
+      "descricao": "BRINCO TRIO ARGOLA ZIRCONIAS REDONDAS FRENTE E VERSO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4653.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/08/2025"
+    },
+    {
       "codigo": "4641",
       "descricao": "COLAR CORDÃO 1,5MM 47CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1194,6 +1173,17 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "79,90",
       "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/07/2025"
+    },
+    {
+      "codigo": "4631",
+      "descricao": "BRINCO 2 DISCOS ORGÂNICOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4631.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "104,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/07/2025"
     },
@@ -1229,6 +1219,17 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "25/07/2025"
+    },
+    {
+      "codigo": "4616",
+      "descricao": "BRINCO ARGOLA CLICK ZIRCÔNIAS PONTOS DE LUZ E RETANGULAR",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4616.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/07/2025"
     },
     {
       "codigo": "4614",
@@ -1341,17 +1342,6 @@
       "dataUltimaEntrada": "08/07/2025"
     },
     {
-      "codigo": "4548",
-      "descricao": "BRINCO TREVO CINZA PEROLADO CONTORNO CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4548.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/07/2025"
-    },
-    {
       "codigo": "4546",
       "descricao": "BRINCO LOSANGO ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1394,6 +1384,17 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/06/2025"
+    },
+    {
+      "codigo": "4425",
+      "descricao": "COLAR NOSSA SENHORA MADREPÉROLA 22MM 40+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4425.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/06/2025"
     },
     {
       "codigo": "3898",
