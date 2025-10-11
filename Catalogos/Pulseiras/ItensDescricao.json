@@ -2,6 +2,50 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "5020",
+      "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5020.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
+      "codigo": "5019",
+      "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5019.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
+      "codigo": "5018",
+      "descricao": "PULSEIRA CORRENTE DUPLA E RIVIERA CRISTAL 4MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5018.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
+      "codigo": "5017",
+      "descricao": "PULSEIRA CORRENTE DUPLA E RIVIERA CRISTAL 4MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5017.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
       "codigo": "4965",
       "descricao": "PULSEIRA 4 PÉROLAS BARROCAS BRANCAS 17+5CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -46,28 +90,6 @@
       "dataUltimaEntrada": "27/09/2025"
     },
     {
-      "codigo": "4961",
-      "descricao": "PULSEIRA ESPÍRITO SANTO E PONTOS DE LUZ 17+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4961.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
-      "codigo": "4960",
-      "descricao": "PULSEIRA ESPÍRITO SANTO E PONTOS DE LUZ 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4960.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
       "codigo": "4958",
       "descricao": "PULSEIRA ELOS LONGOS TRABALHADOS 16+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -95,7 +117,7 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4708.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "52,90",
+      "preco": "64,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"

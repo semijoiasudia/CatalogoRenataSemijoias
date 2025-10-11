@@ -2,6 +2,182 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "5054",
+      "descricao": "ANEL REGULÁVEL 2 BORBOLETAS VAZADAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5054.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "72,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "11/10/2025"
+    },
+    {
+      "codigo": "5053",
+      "descricao": "ANEL REGULÁVEL FALANGE CORAÇÃO E PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5053.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "11/10/2025"
+    },
+    {
+      "codigo": "5052",
+      "descricao": "ANEL REGULÁVEL ORGÂNICO FORMATO GOTA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5052.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "11/10/2025"
+    },
+    {
+      "codigo": "5051",
+      "descricao": "ANEL REGULÁVEL CRUZ CRAVEJADA E CORAÇÃO LISO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5051.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5050",
+      "descricao": "ANEL REGULÁVEL CORAÇÃO ORGÂNICO CRAVEJADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5050.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5049",
+      "descricao": "ANEL REGULÁVEL ESFERA CRAVEJADA E CORAÇÃO LISO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5049.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5048",
+      "descricao": "ANEL REGULÁVEL TOPO RETO ZIRCÔNIAS QUADRADAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5048.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5047",
+      "descricao": "ANEL REGULÁVEL LARGO LIXADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5047.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "102,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5046",
+      "descricao": "ANEL REGULAVEL FIO CRUZADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5046.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "10/10/2025"
+    },
+    {
+      "codigo": "5045",
+      "descricao": "ANEL REGULÁVEL 2 BORBOLETAS LISA E CRAVEJADA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5045.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5044",
+      "descricao": "ANEL REGULÁVEL FALANGE 2 CORAÇÕES",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5044.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "34,90",
+      "precoConsignado": "44,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5043",
+      "descricao": "ANEL FIO DUPLO E NÓ - TAMANHOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5043.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5042",
+      "descricao": "ANEL REGULÁVEL 2 CORAÇÕES VAZADOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5042.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5041",
+      "descricao": "ANEL REGULÁVEL 2 ASAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5041.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "64,90",
+      "precoConsignado": "94,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5040",
+      "descricao": "ANEL REGULÁVEL 2 BARRAS CRAVEJADAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5040.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
+      "codigo": "5039",
+      "descricao": "ANEL REGULÁVEL 2 FIOS CRUZADOS ABAULADOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5039.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/10/2025"
+    },
+    {
       "codigo": "4845",
       "descricao": "ANEL ESPÍRITO SANTO - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -90,17 +266,6 @@
       "dataUltimaEntrada": "01/09/2025"
     },
     {
-      "codigo": "4835",
-      "descricao": "ANEL REGULÁVEL 2 PONTAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4835.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "62,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/09/2025"
-    },
-    {
       "codigo": "4834",
       "descricao": "ANEL 2 FIOS E SÃO BENTO - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -110,17 +275,6 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "01/09/2025"
-    },
-    {
-      "codigo": "4821",
-      "descricao": "ANEL REGULÁVEL ASA 4 FIOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4821.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "69,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/08/2025"
     },
     {
       "codigo": "4820",
@@ -163,17 +317,6 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
-      "codigo": "4593",
-      "descricao": "ANEL REGULÁVEL LISO / CRAVEJADO GRANDE",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4593.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "99,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/07/2025"
     },
