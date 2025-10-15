@@ -2,6 +2,17 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "4644",
+      "descricao": "INOX PULSEIRA ESTEIRA COM 2 BERLOQUES",
+      "tipo": "Aço Inox",
+      "imagem": "4644.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2025"
+    },
+    {
       "codigo": "4643",
       "descricao": "INOX PULSEIRA ESTEIRA COM 3 BERLOQUES",
       "tipo": "Aço Inox",
@@ -57,15 +68,15 @@
       "dataUltimaEntrada": "08/05/2025"
     },
     {
-      "codigo": "4289",
-      "descricao": "INOX BRINCO TREVO MADREPEROLA M",
+      "codigo": "4283",
+      "descricao": "INOX COLAR TREVO E CIRCULO ENTRELACADOS INOX 46+5CM",
       "tipo": "Aço Inox",
-      "imagem": "4289.jpg",
+      "imagem": "4283.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "42,90",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/04/2025"
+      "dataUltimaEntrada": "19/04/2025"
     },
     {
       "codigo": "4279",
@@ -156,24 +167,13 @@
       "dataUltimaEntrada": "19/02/2025"
     },
     {
-      "codigo": "4047",
-      "descricao": "INOX BRINCO TREVO MADREPEROLA P",
+      "codigo": "3990",
+      "descricao": "INOX BRACELETE BVLGARI PRETO E BRANCO COM PEDRAS",
       "tipo": "Aço Inox",
-      "imagem": "4047.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "22,90",
-      "precoConsignado": "42,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "19/02/2025"
-    },
-    {
-      "codigo": "3991",
-      "descricao": "INOX BRACELETE INSPIRACAO COM PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "3991.jpg",
+      "imagem": "3990.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
-      "precoConsignado": "64,90",
+      "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "12/02/2025"
     }

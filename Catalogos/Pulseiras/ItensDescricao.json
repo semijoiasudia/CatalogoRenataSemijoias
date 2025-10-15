@@ -2,17 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "5020",
-      "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5020.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "84,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "05/10/2025"
-    },
-    {
       "codigo": "5019",
       "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -21,17 +10,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "5018",
-      "descricao": "PULSEIRA CORRENTE DUPLA E RIVIERA CRISTAL 4MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5018.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025"
     },
     {
@@ -123,6 +101,17 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
+      "codigo": "4707",
+      "descricao": "PULSEIRA DUPLA CORAÇÕES ENTRELAÇADOS E CANUTILHOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4707.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4705",
       "descricao": "PULSEIRA ELOS CARTIER 3MM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -134,6 +123,17 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
+      "codigo": "4703",
+      "descricao": "PULSEIRA MINI ESFERAS FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4703.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "89,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4702",
       "descricao": "PULSEIRA MINI ESFERAS FECHO GRAVATA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -141,6 +141,17 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
       "precoConsignado": "89,89",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
+      "codigo": "4697",
+      "descricao": "PULSEIRA TELA E 4 ESFERAS 16,5+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4697.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "124,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
@@ -266,15 +277,15 @@
       "dataUltimaEntrada": "06/06/2025"
     },
     {
-      "codigo": "3809",
-      "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
+      "codigo": "4403",
+      "descricao": "PULSEIRA 6 CORAÇÕES COLORS 18+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3809.jpg",
+      "imagem": "4403.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/06/2025"
+      "dataUltimaEntrada": "27/05/2025"
     },
     {
       "codigo": "3812",
@@ -288,6 +299,17 @@
       "dataUltimaEntrada": "12/05/2025"
     },
     {
+      "codigo": "4347",
+      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS INSPIRAÇÃO 17+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4347.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/05/2025"
+    },
+    {
       "codigo": "4310",
       "descricao": "PULSEIRA EU MEREÇO TODO AMOR DO MUNDO 16+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -295,6 +317,17 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "74,90",
       "precoConsignado": "114,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/04/2025"
+    },
+    {
+      "codigo": "4308",
+      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4308.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "72,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/04/2025"
     },
@@ -352,6 +385,17 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3834",
+      "descricao": "PULSEIRA BOLINHAS - CORRENTE FIO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3834.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/12/2024"
     }
   ]
 }

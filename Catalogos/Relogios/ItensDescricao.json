@@ -2,14 +2,14 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "4829",
-      "descricao": "RELOGIO REDONDO FUNDO PRETO MÉDIO - DHP",
-      "imagem": "4829.jpg",
+      "codigo": "4830",
+      "descricao": "RELOGIO INSPIRAÇÃO 2 CORES FUNDO BRANCO - DHP",
+      "imagem": "4830.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "99,90",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "27/08/2025"
+      "dataUltimaEntrada": "28/08/2025"
     },
     {
       "codigo": "4828",
@@ -22,13 +22,13 @@
       "dataUltimaEntrada": "27/08/2025"
     },
     {
-      "codigo": "4393",
-      "descricao": "RELOGIO PALLYJANE QUADRADO PEQ. FUNDO BRANCO",
-      "imagem": "4393.jpg",
+      "codigo": "4390",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO DOURADO",
+      "imagem": "4390.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "62,90",
+      "preco": "69,90",
       "precoConsignado": "89,90",
-      "banho": "Inox",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "25/05/2025"
     }
   ]
