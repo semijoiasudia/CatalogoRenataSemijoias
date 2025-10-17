@@ -2,17 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4362",
-      "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4362.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
-      "precoConsignado": "42,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
       "codigo": "4361",
       "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -55,28 +44,6 @@
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "3945",
-      "descricao": "PIERCING FAKE FIO FINO LISO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3945.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "19,90",
-      "precoConsignado": "29,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/01/2025"
-    },
-    {
-      "codigo": "3935",
-      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3935.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/01/2025"
     },
     {
       "codigo": "3771",

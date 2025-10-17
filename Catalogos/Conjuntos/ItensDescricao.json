@@ -2,17 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4907",
-      "descricao": "CONJUNTO CORAÇÃO TRABALHADO 45+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4907.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "13/09/2025"
-    },
-    {
       "codigo": "4815",
       "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -44,28 +33,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
-    },
-    {
-      "codigo": "4760",
-      "descricao": "CONJUNTO TRIÂNGULO 3D 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4760.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
-      "codigo": "4751",
-      "descricao": "CONJUNTO ARVORE DA VIDA CRAVEJADO COLORS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4751.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "79,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
     },
     {
       "codigo": "4739",
@@ -112,17 +79,6 @@
       "dataUltimaEntrada": "27/06/2025"
     },
     {
-      "codigo": "4484",
-      "descricao": "CONJUNTO ORGÂNICO RESINA MADREPÉROLA 46+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4484.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/06/2025"
-    },
-    {
       "codigo": "4483",
       "descricao": "CONJUNTO ORGÂNICO RESINA PRETO 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -138,17 +94,6 @@
       "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4449.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
-    },
-    {
-      "codigo": "4445",
-      "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4445.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "139,90",
       "precoConsignado": "198,90",
@@ -209,6 +154,17 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/11/2024"
+    },
+    {
+      "codigo": "3659",
+      "descricao": "CONJUNTO AMASSADO ORGANICO 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3659.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "179,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/11/2024"
     }
   ]
 }
