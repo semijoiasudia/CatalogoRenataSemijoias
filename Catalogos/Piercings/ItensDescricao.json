@@ -2,28 +2,6 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4361",
-      "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4361.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "32,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4360",
-      "descricao": "PIERCING FAKE 2 BARRAS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4360.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "26,90",
-      "precoConsignado": "39,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
       "codigo": "4359",
       "descricao": "PIERCING FAKE 2 BARRAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -77,28 +55,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/10/2024"
-    },
-    {
-      "codigo": "3543",
-      "descricao": "PIERCING FAKE BORBOLETA LISA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3543.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2024"
-    },
-    {
-      "codigo": "3019",
-      "descricao": "PIERCING FLOR COM PONTO DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3019.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/05/2024"
     }
   ]
 }
