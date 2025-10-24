@@ -2,6 +2,39 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4692",
+      "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4692.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "3579",
+      "descricao": "PULSEIRA ELOS TORCIDOS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3579.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "3578",
+      "descricao": "PULSEIRA ELOS TORCIDOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3578.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
       "codigo": "5157",
       "descricao": "PULSEIRA PINGENTE TREVO CRAVEJADO VERDE 17+5CM",
       "tipo": "Semijoia banhada a Prata",
