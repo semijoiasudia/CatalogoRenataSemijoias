@@ -2,6 +2,28 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "5142",
+      "descricao": "COLAR LEÃO DE JUDÁ CORRENTE GROUMET 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5142.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5141",
+      "descricao": "COLAR LEÃO DE JUDÁ CORRENTE GROUMET 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5141.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
       "codigo": "4568",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -90,17 +112,6 @@
       "dataUltimaEntrada": "16/09/2025"
     },
     {
-      "codigo": "4920",
-      "descricao": "COLAR CORAÇÕES HORIZONTAIS COLORIDOS 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4920.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "109,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
       "codigo": "4438",
       "descricao": "COLAR FIO DE NYLON CORAÇÃO MADREPÉROLA GLOW 15MM 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -156,17 +167,6 @@
       "dataUltimaEntrada": "08/08/2025"
     },
     {
-      "codigo": "4735",
-      "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4735.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "04/08/2025"
-    },
-    {
       "codigo": "4734",
       "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -196,17 +196,6 @@
       "pastaFotos": "Catalogos/Colares/",
       "preco": "89,90",
       "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4710",
-      "descricao": "COLAR DUPLO CORAÇÕES E PING. CORAÇÃO CRAVEJADO 44/50CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4710.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "119,90",
-      "precoConsignado": "184,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },

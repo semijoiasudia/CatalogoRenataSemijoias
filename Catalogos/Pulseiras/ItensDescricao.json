@@ -2,6 +2,171 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "5157",
+      "descricao": "PULSEIRA PINGENTE TREVO CRAVEJADO VERDE 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5157.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5156",
+      "descricao": "PULSEIRA PINGENTE TREVO CRAVEJADO VERDE 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5156.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5155",
+      "descricao": "PULSEIRA CORAÇÃO FÉ E ZIRCÔNIAS CORAÇÃO 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5155.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5154",
+      "descricao": "PULSEIRA CORAÇÃO FÉ E ZIRCÔNIAS CORAÇÃO 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5154.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5153",
+      "descricao": "PULSEIRA 3 PINGENTES GOTA CRISTAL 17+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5153.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5152",
+      "descricao": "PULSEIRA 3 PINGENTES GOTA CRISTAL 17+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5152.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5151",
+      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS E 2 PONTOS DE LUZ 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5151.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "74,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5150",
+      "descricao": "PULSEIRA 3 TREVOS TRABALHADOS E 2 PONTOS DE LUZ 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5150.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "0,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5149",
+      "descricao": "PULSEIRA ELOS TRABALHADOS 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5149.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "62,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5148",
+      "descricao": "PULSEIRA ELOS TRABALHADOS 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5148.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5147",
+      "descricao": "PULSEIRA SÃO BENTO 17+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5147.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5146",
+      "descricao": "PULSEIRA DE MÃO - HAND CHAIN",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5146.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5145",
+      "descricao": "PULSEIRA DE MÃO - HAND CHAIN",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5145.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5144",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E CORAÇÕES ENTRELAÇADOS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5144.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5143",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E CORAÇÕES ENTRELAÇADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5143.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "84,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
       "codigo": "5019",
       "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -96,30 +261,8 @@
       "imagem": "4708.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "64,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4705",
-      "descricao": "PULSEIRA ELOS CARTIER 3MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4705.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "98,00",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4703",
-      "descricao": "PULSEIRA MINI ESFERAS FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4703.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
       "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
     {

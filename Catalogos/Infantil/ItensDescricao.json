@@ -2,6 +2,83 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "5134",
+      "descricao": "BRINCO INFANTIL / ADULTO BORBOLETA PP CRAVEJADA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5134.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "44,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5133",
+      "descricao": "BRINCO INFANTIL / ADULTO BORBOLETA PP CRAVEJADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5133.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "44,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5132",
+      "descricao": "BRINCO INFANTIL BORBOLETA VAZADA COM PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5132.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "42,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5131",
+      "descricao": "BRINCO INFANTIL BORBOLETA VAZADA COM PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5131.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "42,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5129",
+      "descricao": "BRINCO CEREJA LISA COM PONTO DE LUZ INFANTIL / ADULTO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5129.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "34,90",
+      "precoConsignado": "44,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5125",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5125.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5121",
+      "descricao": "BRINCO INFANTIL / ADULTO BAILARINA ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5121.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
       "codigo": "5036",
       "descricao": "BRINCO INFANTIL BAILARINA ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -55,17 +132,6 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/09/2025"
-    },
-    {
-      "codigo": "4815",
-      "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4815.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
     },
     {
       "codigo": "4814",
@@ -330,17 +396,6 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/02/2025"
-    },
-    {
-      "codigo": "3901",
-      "descricao": "BRINCO CORACAO CRAVEJADO COLORS E FLECHA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3901.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "32,90",
-      "precoConsignado": "44,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/01/2025"
     },
     {
       "codigo": "3553",
