@@ -2,6 +2,26 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5208",
+      "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA INOX MAGNÉTICA",
+      "imagem": "5208.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "28/10/2025"
+    },
+    {
+      "codigo": "5207",
+      "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA MAGNÉTICA",
+      "imagem": "5207.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "28/10/2025"
+    },
+    {
       "codigo": "4875",
       "descricao": "RELOGIO RELOGIO DIGITAL RETANGULAR GRANDE UNISSEX PRETO",
       "imagem": "4875.jpg",

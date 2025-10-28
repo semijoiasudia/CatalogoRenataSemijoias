@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "1941",
+      "descricao": "PULSEIRA RIVIERA CRISTAL 3MM FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "1941.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "25/10/2025"
+    },
+    {
       "codigo": "4692",
       "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -178,17 +189,6 @@
       "dataUltimaEntrada": "23/10/2025"
     },
     {
-      "codigo": "5144",
-      "descricao": "PULSEIRA DUPLA BOLINHAS E CORAÇÕES ENTRELAÇADOS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5144.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "23/10/2025"
-    },
-    {
       "codigo": "5143",
       "descricao": "PULSEIRA DUPLA BOLINHAS E CORAÇÕES ENTRELAÇADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -198,17 +198,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/10/2025"
-    },
-    {
-      "codigo": "5019",
-      "descricao": "PULSEIRA 5 PÉROLAS BARROCAS BRANCAS 15+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5019.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
     },
     {
       "codigo": "5017",
