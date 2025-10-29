@@ -2,6 +2,28 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "4359",
+      "descricao": "PIERCING FAKE 2 BARRAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4359.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "26,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4358",
+      "descricao": "PIERCING FAKE CORAÇÃO VAZADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4358.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
       "codigo": "4356",
       "descricao": "PIERCING FAKE FIO E CRUZ - LADO ESQUERDO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,6 +44,17 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/12/2024"
+    },
+    {
+      "codigo": "3626",
+      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3626.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2024"
     },
     {
       "codigo": "3556",
