@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4225",
+      "descricao": "COLAR FIO DE NYLON ESP. SANTO MADREPEROLA 8MM 40+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4225.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "72,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/10/2025"
+    },
+    {
       "codigo": "5142",
       "descricao": "COLAR LEÃO DE JUDÁ CORRENTE GROUMET 45+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -167,17 +178,6 @@
       "dataUltimaEntrada": "08/08/2025"
     },
     {
-      "codigo": "4724",
-      "descricao": "COLAR PINGENTES MOEDAS 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4724.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "124,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4714",
       "descricao": "COLAR DUPLO MINI ESFERAS 46/52+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -211,17 +211,6 @@
       "dataUltimaEntrada": "28/07/2025"
     },
     {
-      "codigo": "4609",
-      "descricao": "COLAR Y CIGANINHA CORAÇÕES COLORIDOS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4609.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "124,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
       "codigo": "1501",
       "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -253,17 +242,6 @@
       "precoConsignado": "124,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/07/2025"
-    },
-    {
-      "codigo": "4486",
-      "descricao": "COLAR DUPLO DE BOLINHAS 36/44+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4486.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "109,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/06/2025"
     },
     {
       "codigo": "4478",

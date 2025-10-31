@@ -2,28 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "4814",
-      "descricao": "CONJUNTO INFANTIL MINNIE ESMALTADO 35+8CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4814.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
-      "codigo": "4813",
-      "descricao": "CONJUNTO INFANTIL FLOR MARGARIDA ESMALTADA 35+8CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4813.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
       "codigo": "4739",
       "descricao": "CONJUNTO INFANTIL 3 PEDRAS COLORIDAS 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -90,24 +68,13 @@
       "dataUltimaEntrada": "10/04/2025"
     },
     {
-      "codigo": "3687",
-      "descricao": "CONJUNTO COSTELA DE ADAO 41+7CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3687.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "74,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/11/2024"
-    },
-    {
       "codigo": "3659",
       "descricao": "CONJUNTO AMASSADO ORGANICO 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "3659.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "129,90",
-      "precoConsignado": "179,90",
+      "preco": "149,90",
+      "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/11/2024"
     }

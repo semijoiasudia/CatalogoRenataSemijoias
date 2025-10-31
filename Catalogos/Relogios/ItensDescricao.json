@@ -2,6 +2,16 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "4826",
+      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO MÉDIO - DHP",
+      "imagem": "4826.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
       "codigo": "5208",
       "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA INOX MAGNÉTICA",
       "imagem": "5208.jpg",
