@@ -2,12 +2,42 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "4826",
-      "descricao": "RELOGIO REDONDO 2 CORES FUNDO BRANCO MÉDIO - DHP",
-      "imagem": "4826.jpg",
+      "codigo": "5277",
+      "descricao": "RELOGIO LEISITE - CHAMPAGNE",
+      "imagem": "5277.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "89,90",
-      "precoConsignado": "109,90",
+      "preco": "60,00",
+      "precoConsignado": "89,90",
+      "banho": " ",
+      "dataUltimaEntrada": "01/11/2025"
+    },
+    {
+      "codigo": "5244",
+      "descricao": "RELOGIO INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "5244.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "98,00",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/10/2025"
+    },
+    {
+      "codigo": "5223",
+      "descricao": "RELOGIO CASIO QUADRADO UNISEX",
+      "imagem": "5223.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5221",
+      "descricao": "RELOGIO INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "5221.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "98,00",
       "banho": "Inox",
       "dataUltimaEntrada": "29/10/2025"
     },
