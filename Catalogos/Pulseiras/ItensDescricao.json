@@ -2,6 +2,17 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4447",
+      "descricao": "PULSEIRA 1 TREVO PRETO 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4447.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/11/2025"
+    },
+    {
       "codigo": "3658",
       "descricao": "PULSEIRA RIVIERA 3MM CRISTAL",
       "tipo": "Semijoia banhada a Prata",
@@ -310,6 +321,17 @@
       "dataUltimaEntrada": "12/06/2025"
     },
     {
+      "codigo": "4448",
+      "descricao": "PULSEIRA 1 TREVO BRANCO PEROLADO 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4448.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/06/2025"
+    },
+    {
       "codigo": "4433",
       "descricao": "PULSEIRA INFANTIL BORBOLETA PINK",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -321,6 +343,17 @@
       "dataUltimaEntrada": "06/06/2025"
     },
     {
+      "codigo": "4409",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4409.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
       "codigo": "4308",
       "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -330,17 +363,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/04/2025"
-    },
-    {
-      "codigo": "4304",
-      "descricao": "PULSEIRA INFANTIL CORAÇÃO E PONTO DE LUZ 15CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4304.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "42,90",
-      "precoConsignado": "64,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/04/2025"
     },
     {
       "codigo": "4303",
@@ -396,6 +418,17 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "2574",
+      "descricao": "PULSEIRA MOEDINHAS FECHO GRAVATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2574.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "86,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/09/2024"
     }
   ]
 }

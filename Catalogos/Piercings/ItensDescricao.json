@@ -2,12 +2,23 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "4358",
-      "descricao": "PIERCING FAKE CORAÇÃO VAZADO",
+      "codigo": "3315",
+      "descricao": "PIERCING FAKE ZIRCONIAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4358.jpg",
+      "imagem": "3315.jpg",
       "pastaFotos": "Catalogos/Piercings/",
-      "preco": "29,90",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
+      "codigo": "4359",
+      "descricao": "PIERCING FAKE 2 BARRAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4359.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "26,90",
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
@@ -22,17 +33,6 @@
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "3771",
-      "descricao": "PIERCING FAKE GOTA ABAULADA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3771.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "39,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/12/2024"
     },
     {
       "codigo": "3626",

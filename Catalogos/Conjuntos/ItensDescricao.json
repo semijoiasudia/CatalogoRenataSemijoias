@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4445",
+      "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4445.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "164,90",
+      "precoConsignado": "210,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/11/2025"
+    },
+    {
       "codigo": "4739",
       "descricao": "CONJUNTO INFANTIL 3 PEDRAS COLORIDAS 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -33,6 +44,17 @@
       "precoConsignado": "99,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "4483",
+      "descricao": "CONJUNTO ORGÂNICO RESINA PRETO 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4483.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "25/06/2025"
     },
     {
       "codigo": "4221",
