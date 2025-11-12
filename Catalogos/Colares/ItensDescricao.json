@@ -2,26 +2,15 @@
   "categoria": "COLAR",
   "produtos": [
     {
-      "codigo": "5142",
-      "descricao": "COLAR LEÃO DE JUDÁ CORRENTE GROUMET 45+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5142.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "23/10/2025"
-    },
-    {
-      "codigo": "5141",
-      "descricao": "COLAR LEÃO DE JUDÁ CORRENTE GROUMET 45+5CM",
+      "codigo": "4926",
+      "descricao": "COLAR PÉROLA AMARELA 6MM 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5141.jpg",
+      "imagem": "4926.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "109,90",
-      "precoConsignado": "169,90",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/10/2025"
+      "dataUltimaEntrada": "11/10/2025"
     },
     {
       "codigo": "4568",
@@ -106,8 +95,8 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4928.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "74,90",
-      "precoConsignado": "109,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/09/2025"
     },
@@ -150,8 +139,8 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4809.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -194,8 +183,8 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4716.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "142,90",
+      "preco": "109,90",
+      "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
     },
@@ -211,6 +200,17 @@
       "dataUltimaEntrada": "28/07/2025"
     },
     {
+      "codigo": "4610",
+      "descricao": "COLAR TERÇO NOSSA SENHORA APARECIDA 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4610.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/07/2025"
+    },
+    {
       "codigo": "1501",
       "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -222,6 +222,17 @@
       "dataUltimaEntrada": "21/07/2025"
     },
     {
+      "codigo": "4526",
+      "descricao": "COLAR ESFERA 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4526.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/07/2025"
+    },
+    {
       "codigo": "4525",
       "descricao": "COLAR ELOS CART. 3MM 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -231,6 +242,28 @@
       "precoConsignado": "124,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/07/2025"
+    },
+    {
+      "codigo": "4482",
+      "descricao": "COLAR PÉROLA 15MM 48+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4482.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "94,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/06/2025"
+    },
+    {
+      "codigo": "4479",
+      "descricao": "COLAR BOLINHAS 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4479.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/06/2025"
     },
     {
       "codigo": "4478",
@@ -266,6 +299,17 @@
       "dataUltimaEntrada": "05/06/2025"
     },
     {
+      "codigo": "4405",
+      "descricao": "COLAR CORAÇÃO ALONGADO CRAVEJADO COLORS 40+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4405.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
       "codigo": "4133",
       "descricao": "COLAR ELOS CART. 2MM 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -277,15 +321,15 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
-      "codigo": "3960",
-      "descricao": "COLAR FLOR ORGANICA 42+5CM",
+      "codigo": "2902",
+      "descricao": "COLAR CORACOES ENTRELAÇADOS M 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3960.jpg",
+      "imagem": "2902.jpg",
       "pastaFotos": "Catalogos/Colares/",
-      "preco": "49,90",
-      "precoConsignado": "79,90",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/01/2025"
+      "dataUltimaEntrada": "10/04/2024"
     }
   ]
 }

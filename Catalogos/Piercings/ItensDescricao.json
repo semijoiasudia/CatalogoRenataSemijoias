@@ -2,23 +2,23 @@
   "categoria": "PIERCING",
   "produtos": [
     {
-      "codigo": "3315",
-      "descricao": "PIERCING FAKE ZIRCONIAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3315.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "39,90",
-      "precoConsignado": "54,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2025"
-    },
-    {
       "codigo": "4359",
       "descricao": "PIERCING FAKE 2 BARRAS",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4359.jpg",
       "pastaFotos": "Catalogos/Piercings/",
       "preco": "26,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "4358",
+      "descricao": "PIERCING FAKE CORAÇÃO VAZADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4358.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "29,90",
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
@@ -35,15 +35,15 @@
       "dataUltimaEntrada": "21/05/2025"
     },
     {
-      "codigo": "3626",
-      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
+      "codigo": "3945",
+      "descricao": "PIERCING FAKE FIO FINO LISO",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3626.jpg",
+      "imagem": "3945.jpg",
       "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
+      "preco": "19,90",
+      "precoConsignado": "29,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/10/2024"
+      "dataUltimaEntrada": "24/01/2025"
     },
     {
       "codigo": "3556",
