@@ -2,6 +2,226 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "5340",
+      "descricao": "CHOKER TIFFANYS COLORS 36+10CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5340.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "64,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5339",
+      "descricao": "CHOKER TIFFANYS COLORS 36+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5339.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5337",
+      "descricao": "CHOKER ELOS OVAIS E ELOS REDONDOS 37+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5337.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5325",
+      "descricao": "CHOKER TIFFANYS CRISTAL 47+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5325.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5324",
+      "descricao": "CHOKER TIFFANYS CRISTAL 47+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5324.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5321",
+      "descricao": "CHOKER ELOS LONGOS E PONTOS DE LUZ CRISTAL 39+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5321.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "72,90",
+      "precoConsignado": "102,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5320",
+      "descricao": "CHOKER ELOS LONGOS E PONTOS DE LUZ CRISTAL 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5320.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "102,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/11/2025"
+    },
+    {
+      "codigo": "5238",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 38+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5238.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5237",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 38+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5237.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5234",
+      "descricao": "CHOKER PINGENTES FLORES 32+7CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5234.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5233",
+      "descricao": "CHOKER PINGENTES FLORES 32+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5233.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5232",
+      "descricao": "CHOKER PINGENTE BORBOLETA VAZADA CRAVEJADA 38+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5232.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5231",
+      "descricao": "CHOKER PINGENTE BORBOLETA VAZADA CRAVEJADA 38+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5231.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5213",
+      "descricao": "CHOKER CORAÇÕES ABAULADOS E BOLINHAS 32+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5213.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "134,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5212",
+      "descricao": "CHOKER ZIRCÔNIAS OVAIS COLORS TONS CLAROS 39+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5212.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5211",
+      "descricao": "CHOKER ZIRCÔNIAS OVAIS COLORS TONS CLAROS 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5211.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5180",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 32+7CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5180.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5179",
+      "descricao": "CHOKER TIFFANYS COLORIDAS 32+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5179.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "96,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5178",
+      "descricao": "CHOKER ELOS CARTIER 5X13MM 37+6CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5178.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5177",
+      "descricao": "CHOKER ELOS CARTIER 5X13MM 37+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5177.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "119,90",
+      "precoConsignado": "184,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
       "codigo": "4930",
       "descricao": "CHOKER BOLINHAS PINGENTE CORAÇÃO CRISTAL 33+10CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -143,6 +363,17 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/02/2025"
+    },
+    {
+      "codigo": "3690",
+      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3690.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2024"
     }
   ]
 }

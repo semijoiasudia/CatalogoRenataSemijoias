@@ -2,6 +2,56 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5440",
+      "descricao": "RELOGIO PALLYJANE RETANGULAR FUNDO BRANCO",
+      "imagem": "5440.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "72,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/11/2025"
+    },
+    {
+      "codigo": "5439",
+      "descricao": "RELOGIO PALLYJANE RETANGULAR FUNDO BRANCO",
+      "imagem": "5439.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "72,90",
+      "precoConsignado": "99,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "09/11/2025"
+    },
+    {
+      "codigo": "5437",
+      "descricao": "RELOGIO DHP REDONDO FUNDO BRANCO",
+      "imagem": "5437.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/11/2025"
+    },
+    {
+      "codigo": "5435",
+      "descricao": "RELOGIO DHP REDONDO FUNDO PRETO",
+      "imagem": "5435.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/11/2025"
+    },
+    {
+      "codigo": "5434",
+      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRETO",
+      "imagem": "5434.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/11/2025"
+    },
+    {
       "codigo": "5277",
       "descricao": "RELOGIO LEISITE - CHAMPAGNE",
       "imagem": "5277.jpg",
