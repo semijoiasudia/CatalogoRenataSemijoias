@@ -2,6 +2,39 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "2552",
+      "descricao": "PIERCING FAKE 2 BARRAS RIVIERA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2552.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
+      "codigo": "4637",
+      "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4637.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/07/2025"
+    },
+    {
+      "codigo": "3315",
+      "descricao": "PIERCING FAKE ZIRCONIAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3315.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/05/2025"
+    },
+    {
       "codigo": "4359",
       "descricao": "PIERCING FAKE 2 BARRAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -35,6 +68,28 @@
       "dataUltimaEntrada": "24/01/2025"
     },
     {
+      "codigo": "3935",
+      "descricao": "PIERCING FAKE LOVE CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3935.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/01/2025"
+    },
+    {
+      "codigo": "3772",
+      "descricao": "PIERCING FAKE GOTA ABAULADA",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3772.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "52,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/12/2024"
+    },
+    {
       "codigo": "3556",
       "descricao": "PIERCING FAKE ELOS CORRENTE",
       "tipo": "Semijoia banhada a Prata",
@@ -65,6 +120,17 @@
       "preco": "34,90",
       "precoConsignado": "49,90",
       "banho": "Prata",
+      "dataUltimaEntrada": "06/10/2024"
+    },
+    {
+      "codigo": "3543",
+      "descricao": "PIERCING FAKE BORBOLETA LISA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3543.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "06/10/2024"
     }
   ]
