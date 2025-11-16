@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "5107",
-      "descricao": "ANEL GOTA ZIRCÔNIA CRISTAL - TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5107.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "59,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
       "codigo": "5106",
       "descricao": "ANEL ZIRCÔNIA BAGUETE E 2 PONTOS DE LUZ - TAMANHOS",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -343,17 +332,6 @@
       "dataUltimaEntrada": "18/10/2025"
     },
     {
-      "codigo": "5071",
-      "descricao": "ANEL 6 FIOS LOSANGO - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5071.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
-    },
-    {
       "codigo": "5070",
       "descricao": "ANEL REGULÁVEL 2 CORAÇÕES VAZADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -504,6 +482,17 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "34,90",
       "precoConsignado": "49,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "11/10/2025"
+    },
+    {
+      "codigo": "5052",
+      "descricao": "ANEL REGULÁVEL ORGÂNICO FORMATO GOTA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5052.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "79,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "11/10/2025"
     },
