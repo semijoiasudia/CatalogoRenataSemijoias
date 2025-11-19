@@ -167,17 +167,6 @@
       "dataUltimaEntrada": "29/10/2025"
     },
     {
-      "codigo": "5180",
-      "descricao": "CHOKER TIFFANYS COLORIDAS 32+7CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5180.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "24/10/2025"
-    },
-    {
       "codigo": "5179",
       "descricao": "CHOKER TIFFANYS COLORIDAS 32+7CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -218,6 +207,17 @@
       "pastaFotos": "Catalogos/Chokers/",
       "preco": "79,90",
       "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "16/09/2025"
+    },
+    {
+      "codigo": "4916",
+      "descricao": "CHOKER ELOS DIAMANTADOS 33+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4916.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/09/2025"
     },
@@ -376,15 +376,26 @@
       "dataUltimaEntrada": "27/01/2025"
     },
     {
-      "codigo": "3690",
-      "descricao": "CHOKER TREVOS LISOS 38+6CM",
+      "codigo": "3744",
+      "descricao": "CHOKER PINGENTES NAVETE CRISTAL 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3690.jpg",
+      "imagem": "3744.jpg",
       "pastaFotos": "Catalogos/Chokers/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
+      "preco": "64,90",
+      "precoConsignado": "99,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2024"
+      "dataUltimaEntrada": "29/11/2024"
+    },
+    {
+      "codigo": "3731",
+      "descricao": "CHOKER CORDAO BAIANO 3MM 36+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3731.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "179,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/11/2024"
     }
   ]
 }

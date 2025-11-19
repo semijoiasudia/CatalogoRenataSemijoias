@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "5440",
-      "descricao": "RELOGIO PALLYJANE RETANGULAR FUNDO BRANCO",
-      "imagem": "5440.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "72,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/11/2025"
-    },
-    {
       "codigo": "5439",
       "descricao": "RELOGIO PALLYJANE RETANGULAR FUNDO BRANCO",
       "imagem": "5439.jpg",
@@ -42,16 +32,6 @@
       "dataUltimaEntrada": "09/11/2025"
     },
     {
-      "codigo": "5434",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO PRETO",
-      "imagem": "5434.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "89,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/11/2025"
-    },
-    {
       "codigo": "5277",
       "descricao": "RELOGIO LEISITE - CHAMPAGNE",
       "imagem": "5277.jpg",
@@ -60,16 +40,6 @@
       "precoConsignado": "89,90",
       "banho": " ",
       "dataUltimaEntrada": "01/11/2025"
-    },
-    {
-      "codigo": "5223",
-      "descricao": "RELOGIO CASIO QUADRADO UNISEX",
-      "imagem": "5223.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "189,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "29/10/2025"
     },
     {
       "codigo": "5221",
@@ -100,6 +70,16 @@
       "precoConsignado": "89,90",
       "banho": "Inox",
       "dataUltimaEntrada": "11/09/2025"
+    },
+    {
+      "codigo": "4830",
+      "descricao": "RELOGIO INSPIRAÇÃO 2 CORES FUNDO BRANCO - DHP",
+      "imagem": "4830.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "28/08/2025"
     },
     {
       "codigo": "4828",

@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "5106",
-      "descricao": "ANEL ZIRCÔNIA BAGUETE E 2 PONTOS DE LUZ - TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5106.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
       "codigo": "5105",
       "descricao": "ANEL ZIRCÔNIA BAGUETE E 2 PONTOS DE LUZ - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -112,17 +101,6 @@
       "dataUltimaEntrada": "19/10/2025"
     },
     {
-      "codigo": "5096",
-      "descricao": "ANEL FIO ONDULADO E 2 FOLHAS CRAVEJADAS -TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5096.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "52,90",
-      "precoConsignado": "74,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
       "codigo": "5095",
       "descricao": "ANEL FIO ONDULADO E 2 FOLHAS CRAVEJADAS -TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -164,17 +142,6 @@
       "preco": "52,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
-    },
-    {
-      "codigo": "5091",
-      "descricao": "ANEL CRAVEJADO COM ZIRCÔNIA GOTA - TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5091.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "72,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "18/10/2025"
     },
     {
@@ -618,17 +585,6 @@
       "dataUltimaEntrada": "04/09/2025"
     },
     {
-      "codigo": "4838",
-      "descricao": "ANEL SOLITÁRIO CRISTAL 4 GARRAS - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4838.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "49,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/09/2025"
-    },
-    {
       "codigo": "4837",
       "descricao": "ANEL FIO OVAL - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -651,6 +607,17 @@
       "dataUltimaEntrada": "01/09/2025"
     },
     {
+      "codigo": "4835",
+      "descricao": "ANEL REGULÁVEL 2 PONTAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4835.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2025"
+    },
+    {
       "codigo": "4834",
       "descricao": "ANEL 2 FIOS E SÃO BENTO - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -662,6 +629,17 @@
       "dataUltimaEntrada": "01/09/2025"
     },
     {
+      "codigo": "4824",
+      "descricao": "ANEL REGULÁVEL 2 CORAÇÕES VAZADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4824.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/08/2025"
+    },
+    {
       "codigo": "4823",
       "descricao": "ANEL SOLITÁRIO CRISTAL 5 GARRAS - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -669,6 +647,17 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "44,90",
       "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/08/2025"
+    },
+    {
+      "codigo": "4821",
+      "descricao": "ANEL REGULÁVEL ASA 4 FIOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4821.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
     },
@@ -794,17 +783,6 @@
       "dataUltimaEntrada": "30/05/2025"
     },
     {
-      "codigo": "4413",
-      "descricao": "ANEL LISO CRAVEJADO BORDAS QUADRADAS - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4413.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2025"
-    },
-    {
       "codigo": "3479",
       "descricao": "ANEL REGULAVEL 2 BARRAS E ZIRCONIAS",
       "tipo": "Semijoia banhada a Prata",
@@ -901,6 +879,17 @@
       "preco": "52,90",
       "precoConsignado": "74,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/10/2024"
+    },
+    {
+      "codigo": "3581",
+      "descricao": "ANEL REGULAVEL 2 FIOS TREVO CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3581.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "46,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "18/10/2024"
     },
     {
