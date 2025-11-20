@@ -2,6 +2,17 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "3731",
+      "descricao": "CHOKER CORDAO BAIANO 3MM 35+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3731.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "149,90",
+      "precoConsignado": "210,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "5340",
       "descricao": "CHOKER TIFFANYS COLORS 36+10CM",
       "tipo": "Semijoia banhada a Prata",
@@ -385,17 +396,6 @@
       "precoConsignado": "99,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/11/2024"
-    },
-    {
-      "codigo": "3731",
-      "descricao": "CHOKER CORDAO BAIANO 3MM 36+10CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3731.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "preco": "129,90",
-      "precoConsignado": "179,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/11/2024"
     }
   ]
 }

@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "5304",
+      "descricao": "PULSEIRA DUPLA COM PINGENTE CORAÇÃO PINK 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5304.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "74,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2025"
+    },
+    {
       "codigo": "5240",
       "descricao": "COLAR ELOS LOSANGOS G 43+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -134,6 +145,94 @@
       "dataUltimaEntrada": "29/10/2025"
     },
     {
+      "codigo": "5198",
+      "descricao": "PULSEIRA ELOS OVAIS GRANDES 16+6CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5198.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "74,90",
+      "precoConsignado": "149,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5197",
+      "descricao": "PULSEIRA ELOS OVAIS GRANDES 16+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5197.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5194",
+      "descricao": "PULSEIRA ELOS ALONGADOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5194.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5187",
+      "descricao": "PULSEIRA PINGENTE MEDALHA COM PAI NOSSO 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5187.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5186",
+      "descricao": "PULSEIRA PINGENTE MEDALHA COM PAI NOSSO 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5186.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5185",
+      "descricao": "PULSEIRA CORAÇÃO COM PAI NOSSO 16+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5185.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "64,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5184",
+      "descricao": "PULSEIRA CORAÇÃO  COM PAI NOSSO 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5184.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5183",
+      "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5183.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
       "codigo": "5179",
       "descricao": "CHOKER TIFFANYS COLORIDAS 32+7CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -251,17 +350,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "59,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
-    },
-    {
-      "codigo": "5089",
-      "descricao": "ANEL REGULÁVEL QUADRADO LISO E CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5089.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/10/2025"
     },
@@ -813,7 +901,18 @@
       "preco": "102,90",
       "precoConsignado": "149,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "16/09/2025"
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "4920",
+      "descricao": "COLAR CORAÇÕES HORIZONTAIS COLORIDOS 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4920.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
     },
     {
       "codigo": "4918",
@@ -1760,6 +1859,28 @@
       "dataUltimaEntrada": "06/06/2025"
     },
     {
+      "codigo": "3731",
+      "descricao": "CHOKER CORDAO BAIANO 3MM 35+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3731.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "149,90",
+      "precoConsignado": "210,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "3619",
+      "descricao": "BRACELETE ORGÂNICO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3619.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "102,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "3580",
       "descricao": "ANEL REGULAVEL LISO ONDULADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1853,10 +1974,10 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "884.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
+      "preco": "72,90",
+      "precoConsignado": "94,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
+      "dataUltimaEntrada": "20/11/2025"
     }
   ]
 }

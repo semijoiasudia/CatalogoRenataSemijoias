@@ -2,6 +2,17 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
+      "codigo": "3619",
+      "descricao": "BRACELETE ORGÂNICO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3619.jpg",
+      "pastaFotos": "Catalogos/Braceletes/",
+      "preco": "102,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "4895",
       "descricao": "BRACELETE 2 FLORES ORGÂNICAS",
       "tipo": "Semijoia banhada a Ródio Branco",
