@@ -2,6 +2,28 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4449",
+      "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4449.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "160,00",
+      "precoConsignado": "198,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/11/2025"
+    },
+    {
+      "codigo": "4446",
+      "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO CHOKER 41CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4446.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "160,00",
+      "precoConsignado": "198,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/11/2025"
+    },
+    {
       "codigo": "4445",
       "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -112,17 +134,6 @@
       "dataUltimaEntrada": "10/08/2025"
     },
     {
-      "codigo": "4814",
-      "descricao": "CONJUNTO INFANTIL MINNIE ESMALTADO 35+8CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4814.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
       "codigo": "4813",
       "descricao": "CONJUNTO INFANTIL FLOR MARGARIDA ESMALTADA 35+8CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -189,17 +200,6 @@
       "dataUltimaEntrada": "25/06/2025"
     },
     {
-      "codigo": "4449",
-      "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4449.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
-    },
-    {
       "codigo": "4221",
       "descricao": "CONJUNTO INFANTIL STITCH RESINA 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -220,17 +220,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
-    },
-    {
-      "codigo": "3875",
-      "descricao": "CONJUNTO GOTA VAZADA P 42+7CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3875.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/12/2024"
     },
     {
       "codigo": "3659",
