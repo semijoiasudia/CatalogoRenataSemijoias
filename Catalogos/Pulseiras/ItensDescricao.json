@@ -2,6 +2,28 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4450",
+      "descricao": "PULSEIRA 1 TREVO VERDE 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4450.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/11/2025"
+    },
+    {
+      "codigo": "4448",
+      "descricao": "PULSEIRA 1 TREVO BRANCO PEROLADO 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4448.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/11/2025"
+    },
+    {
       "codigo": "884",
       "descricao": "PULSEIRA CORDÃO BAIANO 2MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -19,7 +41,7 @@
       "imagem": "5427.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "59,90",
-      "precoConsignado": "89,90",
+      "precoConsignado": "84,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "07/11/2025"
     },
@@ -398,17 +420,6 @@
       "dataUltimaEntrada": "24/10/2025"
     },
     {
-      "codigo": "5186",
-      "descricao": "PULSEIRA PINGENTE MEDALHA COM PAI NOSSO 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5186.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
-    },
-    {
       "codigo": "5185",
       "descricao": "PULSEIRA CORAÇÃO COM PAI NOSSO 16+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -464,17 +475,6 @@
       "dataUltimaEntrada": "24/10/2025"
     },
     {
-      "codigo": "5156",
-      "descricao": "PULSEIRA PINGENTE TREVO CRAVEJADO VERDE 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5156.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/10/2025"
-    },
-    {
       "codigo": "5155",
       "descricao": "PULSEIRA CORAÇÃO FÉ E ZIRCÔNIAS CORAÇÃO 17+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -483,6 +483,17 @@
       "preco": "59,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5152",
+      "descricao": "PULSEIRA 3 PINGENTES GOTA CRISTAL 17+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5152.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/10/2025"
     },
     {
@@ -539,17 +550,6 @@
       "precoConsignado": "129,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "4965",
-      "descricao": "PULSEIRA 4 PÉROLAS BARROCAS BRANCAS 17+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4965.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "52,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
     },
     {
       "codigo": "4963",
@@ -662,17 +662,6 @@
       "dataUltimaEntrada": "01/08/2025"
     },
     {
-      "codigo": "4604",
-      "descricao": "PULSEIRA RIVIERA CRISTAL 2MM FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4604.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "62,90",
-      "precoConsignado": "98,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/07/2025"
-    },
-    {
       "codigo": "4531",
       "descricao": "PULSEIRA INFANTIL CORAÇÃO CRISTAL 15,5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -706,17 +695,6 @@
       "dataUltimaEntrada": "13/06/2025"
     },
     {
-      "codigo": "4448",
-      "descricao": "PULSEIRA 1 TREVO BRANCO PEROLADO 18CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4448.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/06/2025"
-    },
-    {
       "codigo": "3809",
       "descricao": "PULSEIRA TREVO V&C RESINA PRETA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -726,6 +704,39 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/06/2025"
+    },
+    {
+      "codigo": "4409",
+      "descricao": "PULSEIRA DUPLA BOLINHAS E PING DE CORAÇÃO 17+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4409.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/05/2025"
+    },
+    {
+      "codigo": "4403",
+      "descricao": "PULSEIRA 6 CORAÇÕES COLORS 18+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4403.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/05/2025"
+    },
+    {
+      "codigo": "3811",
+      "descricao": "PULSEIRA TREVO V&C RESINA OFF WHITE",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3811.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "84,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/05/2025"
     },
     {
       "codigo": "3285",
@@ -759,17 +770,6 @@
       "precoConsignado": "76,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/04/2025"
-    },
-    {
-      "codigo": "4238",
-      "descricao": "PULSEIRA NAVETE AZUL E 2 PONTOS DE LUZ CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4238.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "54,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/04/2025"
     },
     {
       "codigo": "4220",
