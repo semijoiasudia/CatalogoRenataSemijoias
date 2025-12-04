@@ -2,6 +2,72 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "5646",
+      "descricao": "BRINCO FLOR COM MIOLO OFF WHITE",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5646.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5624",
+      "descricao": "BRINCO 2 GOTAS - 2 BANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5624.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5622",
+      "descricao": "BRINCO GOTA CONVEXA TRABALHADA TAM G",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5622.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5615",
+      "descricao": "BRINCO ASA ORGÂNICA TAM G",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5615.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "102,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5611",
+      "descricao": "BRINCO BASE OVAL E PING OVAL VAZADO MARTELADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5611.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "89,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5610",
+      "descricao": "BRINCO BASE OVAL E PING OVAL VAZADO MARTELADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5610.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "89,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
       "codigo": "5607",
       "descricao": "BRINCO FLOR 2 EM 1 - 2 BANHOS",
       "tipo": "Semijoia banhada a 2 Banhos",
@@ -9,6 +75,17 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "89,90",
       "precoConsignado": "129,90",
+      "banho": "2 Banhos",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5606",
+      "descricao": "BRINCO TRIÂNGULO E LOSANGOS 2 BANHOS",
+      "tipo": "Semijoia banhada a 2 Banhos",
+      "imagem": "5606.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "119,90",
+      "precoConsignado": "159,90",
       "banho": "2 Banhos",
       "dataUltimaEntrada": "22/11/2025"
     },
@@ -120,6 +197,17 @@
       "preco": "32,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5130",
+      "descricao": "BRINCO CEREJA LISA COM PONTO DE LUZ INFANTIL / ADULTO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5130.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "34,90",
+      "precoConsignado": "44,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "19/10/2025"
     },
     {
@@ -343,6 +431,17 @@
       "dataUltimaEntrada": "05/10/2025"
     },
     {
+      "codigo": "5021",
+      "descricao": "BRINCO ARGOLA TRANQUETA PÉROLA GOTA BRANCA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5021.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "34,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
       "codigo": "5015",
       "descricao": "BRINCO BORBOLETA CRAVEJADA ASAS VAZADAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -451,17 +550,6 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/10/2025"
-    },
-    {
-      "codigo": "4968",
-      "descricao": "BRINCO TRIO ARGOLA CLICK COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4968.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
     },
     {
       "codigo": "4966",
@@ -629,17 +717,6 @@
       "dataUltimaEntrada": "27/09/2025"
     },
     {
-      "codigo": "3898",
-      "descricao": "BRINCO PATINHA CRAVEJADA CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3898.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/09/2025"
-    },
-    {
       "codigo": "4913",
       "descricao": "BRINCO ARGOLA TRANQUETA PINGENTE CRISTAL GRANDE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -684,6 +761,17 @@
       "dataUltimaEntrada": "13/09/2025"
     },
     {
+      "codigo": "4896",
+      "descricao": "BRINCO FLOR 5 PÉTALAS TRABALHADAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4896.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
+    },
+    {
       "codigo": "4884",
       "descricao": "BRINCO PÉROLA BRANCA P",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -706,6 +794,17 @@
       "dataUltimaEntrada": "12/09/2025"
     },
     {
+      "codigo": "4877",
+      "descricao": "BRINCO TRIO PÉROLA BRANCA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4877.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "62,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "12/09/2025"
+    },
+    {
       "codigo": "4876",
       "descricao": "BRINCO TRIO PÉROLA BRANCA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -717,6 +816,17 @@
       "dataUltimaEntrada": "12/09/2025"
     },
     {
+      "codigo": "4870",
+      "descricao": "BRINCO TRIO ARGOLA TRANQUETA PINGENTE CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4870.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "11/09/2025"
+    },
+    {
       "codigo": "4866",
       "descricao": "BRINCO TRIO ARGOLA TRANQUETA PINGENTE PÉROLA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -724,6 +834,17 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "69,90",
       "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "11/09/2025"
+    },
+    {
+      "codigo": "4858",
+      "descricao": "BRINCO ARGOLA CLICK FIO TORCIDO TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4858.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "32,90",
+      "precoConsignado": "52,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "11/09/2025"
     },
@@ -750,6 +871,17 @@
       "dataUltimaEntrada": "11/09/2025"
     },
     {
+      "codigo": "4849",
+      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA VERDE CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4849.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "11/09/2025"
+    },
+    {
       "codigo": "4807",
       "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -757,6 +889,17 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "42,90",
       "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4805",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CORAÇÃO LISO INTERNO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4805.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "34,90",
+      "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -900,6 +1043,17 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "42,90",
       "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4765",
+      "descricao": "BRINCO ZIRCÔNIA CORAÇÃO VERDE ESMERALDA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4765.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "32,90",
+      "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -1201,6 +1355,17 @@
       "dataUltimaEntrada": "05/07/2025"
     },
     {
+      "codigo": "4546",
+      "descricao": "BRINCO LOSANGO ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4546.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/07/2025"
+    },
+    {
       "codigo": "4541",
       "descricao": "BRINCO BORBOLETA TRABALHADA P",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1388,6 +1553,17 @@
       "dataUltimaEntrada": "13/06/2025"
     },
     {
+      "codigo": "4461",
+      "descricao": "BRINCO BORBOLETA LISA E CRAVEJADA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4461.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "46,90",
+      "precoConsignado": "72,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/06/2025"
+    },
+    {
       "codigo": "4456",
       "descricao": "BRINCO ARGOLA CLICK OVAL COM 1 ZIRCONIA CRISTAL",
       "tipo": "Semijoia banhada a Prata",
@@ -1452,6 +1628,17 @@
       "precoConsignado": "72,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
+    },
+    {
+      "codigo": "3276",
+      "descricao": "BRINCO CORACAO M INCLINADO CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3276.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/05/2025"
     },
     {
       "codigo": "3595",
@@ -1883,12 +2070,34 @@
       "dataUltimaEntrada": "04/10/2024"
     },
     {
+      "codigo": "3504",
+      "descricao": "BRINCO QUADRADO CRAVEJADO COLORS P",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3504.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/10/2024"
+    },
+    {
       "codigo": "3470",
       "descricao": "BRINCO CORACAO PIXELS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "3470.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "46,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/09/2024"
+    },
+    {
+      "codigo": "3469",
+      "descricao": "BRINCO EAR CUFF 5 PEDRAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3469.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "44,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/09/2024"
@@ -1914,6 +2123,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "04/09/2024"
+    },
+    {
+      "codigo": "3428",
+      "descricao": "BRINCO ARGOLA 2 FILEIRAS CRAVEJADAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3428.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/08/2024"
     },
     {
       "codigo": "3425",
