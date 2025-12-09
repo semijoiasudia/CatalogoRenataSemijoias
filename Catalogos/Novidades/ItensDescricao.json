@@ -2,6 +2,72 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "5743",
+      "descricao": "BRINCO CORAÇÃO VAZADO CRAVEJADO COLORS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5743.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
+      "codigo": "5742",
+      "descricao": "BRINCO CORAÇÃO VAZADO CRAVEJADO COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5742.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
+      "codigo": "5740",
+      "descricao": "BRINCO DUO ARGOLA CLICK LISA TAM P/PP",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5740.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
+      "codigo": "5739",
+      "descricao": "BRINCO DUO ARGOLA CLICK LISA TAM P/PP",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5739.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
+      "codigo": "5738",
+      "descricao": "BRINCO ARGOLA CLICK LISA TAM P",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5738.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
+      "codigo": "5737",
+      "descricao": "BRINCO ARGOLA CLICK LISA TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5737.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/12/2025"
+    },
+    {
       "codigo": "5717",
       "descricao": "BOLSA BOLSA - CREME - TAM P",
       "imagem": "5717.jpg",
@@ -232,15 +298,37 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5668",
-      "descricao": "CONJUNTO CHOKER ARO E BRINCO CARACOL",
+      "codigo": "5652",
+      "descricao": "BRINCO BOTÃO VERDE",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5668.jpg",
+      "imagem": "5652.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "149,90",
-      "precoConsignado": "189,90",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/11/2025"
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5650",
+      "descricao": "BRINCO BOTÃO OFF WHITE",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5650.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5648",
+      "descricao": "BRINCO BOTÃO MARROM CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5648.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
     },
     {
       "codigo": "5646",
@@ -252,6 +340,50 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5644",
+      "descricao": "BRINCO FLOR COM MIOLO MARROM CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5644.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5636",
+      "descricao": "CONJUNTO CHOKER ARO E BRINCO CARACOL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5636.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "149,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5627",
+      "descricao": "BRINCO MEIA FLOR COM PINGENTE VERDE CANDY",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5627.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5625",
+      "descricao": "BRINCO MEIA FLOR COM PINGENTE ROSA CANDY",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5625.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "54,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
     },
     {
       "codigo": "5624",
@@ -282,6 +414,17 @@
       "imagem": "5615.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "102,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2025"
+    },
+    {
+      "codigo": "5612",
+      "descricao": "BRINCO MEIA FLOR COM PÉROLA NO CENTRO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5612.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/11/2025"
@@ -394,6 +537,17 @@
       "preco": "69,90",
       "precoConsignado": "102,00",
       "banho": "Ródio Branco",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "5591",
+      "descricao": "BRINCO ARGOLA TAM P ESFERAS E PÉROLAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5591.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "52,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
     },
     {
@@ -723,6 +877,50 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "79,90",
       "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "15/11/2025"
+    },
+    {
+      "codigo": "5525",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO GOTA ABAULADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5525.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "92,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "15/11/2025"
+    },
+    {
+      "codigo": "5523",
+      "descricao": "BRINCO ARGOLA CLICK CORAÇÕES VAZADOS TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5523.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "15/11/2025"
+    },
+    {
+      "codigo": "5521",
+      "descricao": "BRINCO ARGOLA CLICK TRABALHADA TAM M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5521.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "15/11/2025"
+    },
+    {
+      "codigo": "5519",
+      "descricao": "BRINCO ARGOLA CLICK FUROS HEXAGONOS TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5519.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "42,90",
+      "precoConsignado": "62,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "15/11/2025"
     },
