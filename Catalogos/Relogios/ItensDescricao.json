@@ -2,29 +2,9 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "5704",
-      "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA INOX MAGNÉTICA",
-      "imagem": "5704.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
       "codigo": "5703",
       "descricao": "RELOGIO LEISITE - LILÁS",
       "imagem": "5703.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "60,00",
-      "precoConsignado": "89,90",
-      "banho": " ",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5702",
-      "descricao": "RELOGIO LEISITE - ROSA",
-      "imagem": "5702.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "60,00",
       "precoConsignado": "89,90",
@@ -49,26 +29,6 @@
       "preco": "60,00",
       "precoConsignado": "89,90",
       "banho": " ",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5698",
-      "descricao": "RELOGIO TREVOS VERDE",
-      "imagem": "5698.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5697",
-      "descricao": "RELOGIO TREVOS VERDE",
-      "imagem": "5697.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "94,90",
-      "banho": "Cor Ouro",
       "dataUltimaEntrada": "30/11/2025"
     },
     {
@@ -122,16 +82,6 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5690",
-      "descricao": "RELOGIO REDONDO FUNDO PRETO MÉDIO M2 - DHP",
-      "imagem": "5690.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "99,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
       "codigo": "5689",
       "descricao": "RELOGIO REDONDO PEQUENO FUNDO CINZA - DHP",
       "imagem": "5689.jpg",
@@ -142,32 +92,12 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5687",
-      "descricao": "RELOGIO REDONDO PEQUENO FUNDO DOURADO - DHP",
-      "imagem": "5687.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
       "codigo": "5682",
       "descricao": "RELOGIO INSPIRAÇÃO CART. PRIMEIRA LINHA XUFENG DOURADO",
       "imagem": "5682.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "139,90",
       "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5679",
-      "descricao": "RELOGIO PALLYJANE REDONDO FUNDO CINZA DETALHES",
-      "imagem": "5679.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "89,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/11/2025"
     },
@@ -200,26 +130,6 @@
       "precoConsignado": "98,00",
       "banho": "Inox",
       "dataUltimaEntrada": "29/10/2025"
-    },
-    {
-      "codigo": "5208",
-      "descricao": "RELOGIO RELOGIO DIGITAL PRETO PULSEIRA INOX MAGNÉTICA",
-      "imagem": "5208.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "79,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "28/10/2025"
-    },
-    {
-      "codigo": "4875",
-      "descricao": "RELOGIO RELOGIO DIGITAL RETANGULAR GRANDE UNISSEX PRETO",
-      "imagem": "4875.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "72,90",
-      "precoConsignado": "89,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "11/09/2025"
     }
   ]
 }
