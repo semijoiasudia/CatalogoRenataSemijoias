@@ -2,26 +2,6 @@
   "categoria": "BOLSA",
   "produtos": [
     {
-      "codigo": "5717",
-      "descricao": "BOLSA BOLSA - CREME - TAM P",
-      "imagem": "5717.jpg",
-      "pastaFotos": "Catalogos/Bolsas/",
-      "preco": "49,90",
-      "precoConsignado": "89,90",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
-      "codigo": "5716",
-      "descricao": "BOLSA BOLSA - VERMELHO - TAM P",
-      "imagem": "5716.jpg",
-      "pastaFotos": "Catalogos/Bolsas/",
-      "preco": "49,90",
-      "precoConsignado": "89,90",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
       "codigo": "5715",
       "descricao": "BOLSA KIT 2 BOLSAS - VERMELHO",
       "imagem": "5715.jpg",

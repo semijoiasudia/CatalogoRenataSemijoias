@@ -2,6 +2,28 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "5535",
+      "descricao": "CHOKER CIGANINHA TIFFANYS COLORIDAS 34+10CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5535.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "5534",
+      "descricao": "CHOKER CIGANINHA TIFFANYS COLORIDAS 34+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5534.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "3731",
       "descricao": "CHOKER CORDAO BAIANO 3MM 35+10CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -120,6 +142,17 @@
       "preco": "62,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5214",
+      "descricao": "CHOKER CORAÇÕES ABAULADOS E BOLINHAS 32+7CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5214.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "72,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "29/10/2025"
     },
     {
