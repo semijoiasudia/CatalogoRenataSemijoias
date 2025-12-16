@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "5727",
+      "descricao": "CONJUNTO MEIA FLOR COM ZIRCÔNIA GOTA CRISTAL 40+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5727.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/12/2025"
+    },
+    {
       "codigo": "4449",
       "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,6 +33,50 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/11/2025"
+    },
+    {
+      "codigo": "5663",
+      "descricao": "CONJUNTO RETANGULAR CRISTAL E CRISTAL AO REDOR 45+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5663.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5661",
+      "descricao": "CONJUNTO RETANGULAR VERDE E CRISTAL AO REDOR 45+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5661.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5659",
+      "descricao": "CONJUNTO RETANGULAR VERMELHA CRISTAL AO REDOR 40+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5659.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5640",
+      "descricao": "CONJUNTO OVAL ORGÂNICO 40+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5640.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
     },
     {
       "codigo": "5636",
