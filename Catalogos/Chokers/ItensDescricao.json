@@ -2,6 +2,94 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "5658",
+      "descricao": "CHOKER 3 BOTÕES MARROM 39+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5658.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5657",
+      "descricao": "CHOKER 3 BOTÕES MARROM 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5657.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5656",
+      "descricao": "CHOKER 1 BOTÃO OFF WHITE 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5656.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5655",
+      "descricao": "CHOKER 3 BOTÕES OFF WHITE 39+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5655.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5654",
+      "descricao": "CHOKER 3 BOTÕES OFF WHITE 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5654.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "89,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5638",
+      "descricao": "CHOKER ARO 3MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5638.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "139,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5544",
+      "descricao": "CHOKER CORDAO BAIANO 3MM 35+10CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5544.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "129,90",
+      "precoConsignado": "190,00",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "5542",
+      "descricao": "CHOKER CORDÃO BAIANO 2MM 34+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5542.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "112,00",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "5535",
       "descricao": "CHOKER CIGANINHA TIFFANYS COLORIDAS 34+10CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -33,6 +121,28 @@
       "precoConsignado": "210,00",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "5431",
+      "descricao": "CHOKER ARO ONDULADO TUBO TAM P",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5431.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/11/2025"
+    },
+    {
+      "codigo": "5430",
+      "descricao": "CHOKER ARO ONDULADO TUBO TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5430.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "119,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/11/2025"
     },
     {
       "codigo": "5340",
@@ -396,6 +506,28 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/12/2024"
+    },
+    {
+      "codigo": "3726",
+      "descricao": "CHOKER ARO FIO E 2 ESFERAS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3726.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "84,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "26/11/2024"
+    },
+    {
+      "codigo": "3725",
+      "descricao": "CHOKER ARO FIO E 2 ESFERAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3725.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "preco": "94,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/11/2024"
     },
     {
       "codigo": "3268",
