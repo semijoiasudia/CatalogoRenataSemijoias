@@ -2,6 +2,28 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "5643",
+      "descricao": "COLAR FACE NOSSA SENHORA MADREPÉROLA 22MM 45+4CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5643.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "139,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5642",
+      "descricao": "COLAR ESPÍRITO SANTO MADREPÉROLA 22MM - 45+4CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5642.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "149,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
       "codigo": "4426",
       "descricao": "COLAR FACE NOSSA SENHORA MADREPÉROLA 22MM 45+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -420,6 +442,28 @@
       "dataUltimaEntrada": "29/10/2025"
     },
     {
+      "codigo": "5218",
+      "descricao": "COLAR MEDALHA PAI NOSSO 48+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5218.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "62,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5215",
+      "descricao": "COLAR Y CORAÇÕES TRABALHADOS 46+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5215.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "74,90",
+      "precoConsignado": "114,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
       "codigo": "5210",
       "descricao": "COLAR DUPLO MOEDINHAS 43/66CM",
       "tipo": "Semijoia banhada a Prata",
@@ -429,6 +473,17 @@
       "precoConsignado": "149,90",
       "banho": "Prata",
       "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5205",
+      "descricao": "COLAR CORAÇÃO TRABALHADO E ZIRCÔNIA CRISTAL 42+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5205.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "99,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "5181",
@@ -449,6 +504,17 @@
       "pastaFotos": "Catalogos/Colares/",
       "preco": "89,90",
       "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5168",
+      "descricao": "COLAR PATINHA 45CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5168.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/10/2025"
     },
@@ -539,6 +605,17 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/09/2025"
+    },
+    {
+      "codigo": "4816",
+      "descricao": "COLAR INFANTIL ESTRELA CRISTAL 35CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4816.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "42,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
     },
     {
       "codigo": "4810",
