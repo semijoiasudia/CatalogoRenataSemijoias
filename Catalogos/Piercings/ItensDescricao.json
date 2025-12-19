@@ -2,6 +2,17 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "2552",
+      "descricao": "PIERCING FAKE 2 BARRAS RIVIERA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2552.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
       "codigo": "4637",
       "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
