@@ -2,17 +2,6 @@
   "categoria": "BIJUTERIA",
   "produtos": [
     {
-      "codigo": "4024",
-      "descricao": "BIJUTERIA BRINCO FESTA FLOR E GOTA CRISTAL",
-      "tipo": "Bijuteria",
-      "imagem": "4024.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "69,90",
-      "precoConsignado": "119,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "17/02/2025"
-    },
-    {
       "codigo": "4022",
       "descricao": "BIJUTERIA CHOKER RIVIERA BAGUETE CRISTAL 4MM 46CM",
       "tipo": "Bijuteria",
@@ -22,17 +11,6 @@
       "precoConsignado": "149,90",
       "banho": "Níquel Free",
       "dataUltimaEntrada": "17/02/2025"
-    },
-    {
-      "codigo": "3979",
-      "descricao": "BIJUTERIA CONJUNTO GOTAS VERDE",
-      "tipo": "Bijuteria",
-      "imagem": "3979.jpg",
-      "pastaFotos": "Catalogos/Bijuterias/",
-      "preco": "139,90",
-      "precoConsignado": "189,98",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/02/2025"
     }
   ]
 }
