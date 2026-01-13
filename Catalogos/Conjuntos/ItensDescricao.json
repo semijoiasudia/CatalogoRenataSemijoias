@@ -2,17 +2,6 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
-      "codigo": "5727",
-      "descricao": "CONJUNTO MEIA FLOR COM ZIRCÔNIA GOTA CRISTAL 40+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5727.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "119,90",
-      "precoConsignado": "159,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/12/2025"
-    },
-    {
       "codigo": "5677",
       "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO 41CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -44,6 +33,17 @@
       "precoConsignado": "198,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/11/2025"
+    },
+    {
+      "codigo": "5659",
+      "descricao": "CONJUNTO RETANGULAR VERMELHA CRISTAL AO REDOR 40+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5659.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
     },
     {
       "codigo": "5641",
@@ -154,17 +154,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/10/2025"
-    },
-    {
-      "codigo": "5169",
-      "descricao": "CONJUNTO QUADRADO ABAULADO TAM P 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5169.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "5161",
