@@ -2,6 +2,17 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "5133",
+      "descricao": "BRINCO INFANTIL / ADULTO BORBOLETA PP CRAVEJADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5133.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "44,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
       "codigo": "5132",
       "descricao": "BRINCO INFANTIL BORBOLETA VAZADA COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -77,6 +88,17 @@
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/10/2025"
+    },
+    {
+      "codigo": "4902",
+      "descricao": "BRINCO INFANTIL GATINHO COM LACINHO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4902.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
     },
     {
       "codigo": "4816",
