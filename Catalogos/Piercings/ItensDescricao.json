@@ -2,6 +2,17 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "2552",
+      "descricao": "PIERCING FAKE 2 BARRAS RIVIERA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2552.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
       "codigo": "4637",
       "descricao": "PIERCING FAKE 2 FIOS CRAVEJADOS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -32,17 +43,6 @@
       "preco": "29,90",
       "precoConsignado": "42,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4361",
-      "descricao": "PIERCING FAKE 2 BARRAS E CORAÇÃO - LADO DIREITO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4361.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "32,90",
-      "precoConsignado": "44,90",
-      "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
     },
     {
@@ -110,17 +110,6 @@
       "precoConsignado": "52,90",
       "banho": "Prata",
       "dataUltimaEntrada": "03/12/2024"
-    },
-    {
-      "codigo": "3626",
-      "descricao": "PIERCING FAKE CORACAO COLORS LADO DIR",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3626.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/10/2024"
     },
     {
       "codigo": "3556",

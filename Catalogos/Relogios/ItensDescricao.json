@@ -22,6 +22,16 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
+      "codigo": "5698",
+      "descricao": "RELOGIO TREVOS VERDE",
+      "imagem": "5698.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/11/2025"
+    },
+    {
       "codigo": "5696",
       "descricao": "RELOGIO TREVOS OFF-WHITE",
       "imagem": "5696.jpg",
@@ -42,13 +52,13 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5275",
-      "descricao": "RELOGIO LEISITE - PRETO E FUNDO BRANCO",
-      "imagem": "5275.jpg",
+      "codigo": "5693",
+      "descricao": "RELOGIO REDONDO FUNDO DOURADO - XIOMA",
+      "imagem": "5693.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "60,00",
+      "preco": "69,90",
       "precoConsignado": "89,90",
-      "banho": " ",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/11/2025"
     },
     {
@@ -60,6 +70,16 @@
       "precoConsignado": "98,00",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/10/2025"
+    },
+    {
+      "codigo": "5221",
+      "descricao": "RELOGIO INSPIRACAO PULSEIRA ELASTICA",
+      "imagem": "5221.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "69,90",
+      "precoConsignado": "98,00",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/10/2025"
     }
   ]
 }

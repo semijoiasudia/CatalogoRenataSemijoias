@@ -13,17 +13,6 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "4448",
-      "descricao": "PULSEIRA 1 TREVO BRANCO PEROLADO 18CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4448.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
       "codigo": "884",
       "descricao": "PULSEIRA CORDÃO BAIANO 2MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -33,17 +22,6 @@
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
-    },
-    {
-      "codigo": "4447",
-      "descricao": "PULSEIRA 1 TREVO PRETO 18CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4447.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "59,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/11/2025"
     },
     {
       "codigo": "5349",
@@ -197,6 +175,17 @@
       "preco": "49,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2025"
+    },
+    {
+      "codigo": "5305",
+      "descricao": "PULSEIRA DUPLA COM PINGENTE CORAÇÃO PINK 17+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5305.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "54,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "02/11/2025"
     },
     {
@@ -365,6 +354,17 @@
       "dataUltimaEntrada": "23/10/2025"
     },
     {
+      "codigo": "5153",
+      "descricao": "PULSEIRA 3 PINGENTES GOTA CRISTAL 17+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5153.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "52,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "23/10/2025"
+    },
+    {
       "codigo": "5152",
       "descricao": "PULSEIRA 3 PINGENTES GOTA CRISTAL 17+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -406,17 +406,6 @@
       "preco": "59,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "5018",
-      "descricao": "PULSEIRA CORRENTE DUPLA E RIVIERA CRISTAL 4MM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5018.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "89,90",
-      "precoConsignado": "129,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025"
     },
     {
@@ -596,17 +585,6 @@
       "dataUltimaEntrada": "28/05/2025"
     },
     {
-      "codigo": "3812",
-      "descricao": "PULSEIRA TREVO V&C RESINA VERDE",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3812.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "84,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/05/2025"
-    },
-    {
       "codigo": "3811",
       "descricao": "PULSEIRA TREVO V&C RESINA OFF WHITE",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -693,6 +671,17 @@
       "precoConsignado": "86,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/12/2024"
+    },
+    {
+      "codigo": "3258",
+      "descricao": "PULSEIRA FOLHAS 3D",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3258.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2024"
     }
   ]
 }
