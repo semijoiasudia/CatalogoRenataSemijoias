@@ -2,6 +2,26 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5683",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - 2 BANHOS",
+      "imagem": "5683.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
+      "codigo": "5682",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA",
+      "imagem": "5682.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
       "codigo": "5699",
       "descricao": "RELOGIO LEISITE - PRETO E FUNDO PRETO M2",
       "imagem": "5699.jpg",

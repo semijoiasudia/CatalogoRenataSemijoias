@@ -123,46 +123,6 @@
       "dataUltimaEntrada": "08/12/2025"
     },
     {
-      "codigo": "5715",
-      "descricao": "BOLSA KIT 2 BOLSAS - VERMELHO",
-      "imagem": "5715.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "159,90",
-      "precoConsignado": "189,90",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
-      "codigo": "5714",
-      "descricao": "BOLSA KIT 2 BOLSAS - CREME",
-      "imagem": "5714.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "159,90",
-      "precoConsignado": "189,90",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
-      "codigo": "5713",
-      "descricao": "BOLSA KIT 3 BOLSAS - AVEIA",
-      "imagem": "5713.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "189,90",
-      "precoConsignado": "240,00",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
-      "codigo": "5711",
-      "descricao": "BOLSA KIT 2 BOLSAS - PRETO - M E G",
-      "imagem": "5711.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "149,90",
-      "precoConsignado": "190,00",
-      "banho": " ",
-      "dataUltimaEntrada": "01/12/2025"
-    },
-    {
       "codigo": "5699",
       "descricao": "RELOGIO LEISITE - PRETO E FUNDO PRETO M2",
       "imagem": "5699.jpg",
@@ -191,6 +151,26 @@
       "precoConsignado": "69,90",
       "banho": "Inox",
       "dataUltimaEntrada": "30/11/2025"
+    },
+    {
+      "codigo": "5683",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - 2 BANHOS",
+      "imagem": "5683.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
+      "codigo": "5682",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA",
+      "imagem": "5682.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
     },
     {
       "codigo": "5678",
@@ -446,17 +426,6 @@
       "dataUltimaEntrada": "22/11/2025"
     },
     {
-      "codigo": "5610",
-      "descricao": "BRINCO BASE OVAL E PING OVAL VAZADO MARTELADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5610.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
-    },
-    {
       "codigo": "5609",
       "descricao": "BRINCO 2 DISCOS ORGÂNICOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -508,17 +477,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
-      "codigo": "5587",
-      "descricao": "BRINCO ORGÂNICO OVAL TAM M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5587.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
     },
@@ -1127,6 +1085,17 @@
       "dataUltimaEntrada": "26/12/2025"
     },
     {
+      "codigo": "5372",
+      "descricao": "INOX BRACELETE CABO DE AÇO - SÃO BENTO",
+      "tipo": "Aço Inox",
+      "imagem": "5372.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
       "codigo": "5356",
       "descricao": "CONJUNTO PONTO DE LUZ PINK 6MM 45+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -1476,17 +1445,6 @@
       "preco": "49,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5305",
-      "descricao": "PULSEIRA DUPLA COM PINGENTE CORAÇÃO PINK 17+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5305.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "54,90",
-      "precoConsignado": "89,90",
-      "banho": "Prata",
       "dataUltimaEntrada": "02/11/2025"
     },
     {
@@ -2523,17 +2481,6 @@
       "dataUltimaEntrada": "18/10/2025"
     },
     {
-      "codigo": "5060",
-      "descricao": "ANEL REGULAVEL FIO CRUZADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5060.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
-    },
-    {
       "codigo": "5057",
       "descricao": "ANEL REGULÁVEL 2 FIOS CRUZADOS ABAULADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -3169,17 +3116,6 @@
       "preco": "24,90",
       "precoConsignado": "34,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
-      "codigo": "4943",
-      "descricao": "BRINCO ESPIRITO SANTO PP M2",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4943.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "29,90",
-      "precoConsignado": "46,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "27/09/2025"
     },
     {
@@ -3843,17 +3779,6 @@
       "dataUltimaEntrada": "03/08/2025"
     },
     {
-      "codigo": "4722",
-      "descricao": "COLAR DUPLO CANUTILHOS E ZIRCÔNIA QUADRADA 43/50M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4722.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
       "codigo": "4721",
       "descricao": "CHOKER ELOS E ESFERAS 4MM 36+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -4457,6 +4382,17 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
+    },
+    {
+      "codigo": "3045",
+      "descricao": "BRINCO TRIO ARGOLA TRANCADA M/P/PP",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3045.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/01/2026"
     },
     {
       "codigo": "1941",

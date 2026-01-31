@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3045",
+      "descricao": "BRINCO TRIO ARGOLA TRANCADA M/P/PP",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3045.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/01/2026"
+    },
+    {
       "codigo": "5810",
       "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -255,17 +266,6 @@
       "dataUltimaEntrada": "22/11/2025"
     },
     {
-      "codigo": "5610",
-      "descricao": "BRINCO BASE OVAL E PING OVAL VAZADO MARTELADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5610.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "89,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
-    },
-    {
       "codigo": "5609",
       "descricao": "BRINCO 2 DISCOS ORGÂNICOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -328,17 +328,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
-      "codigo": "5587",
-      "descricao": "BRINCO ORGÂNICO OVAL TAM M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5587.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "69,90",
-      "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
     },
@@ -1355,17 +1344,6 @@
       "dataUltimaEntrada": "27/09/2025"
     },
     {
-      "codigo": "4943",
-      "descricao": "BRINCO ESPIRITO SANTO PP M2",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4943.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "29,90",
-      "precoConsignado": "46,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
       "codigo": "4942",
       "descricao": "BRINCO ESPIRITO SANTO PP M2",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2154,17 +2132,6 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "49,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4369",
-      "descricao": "BRINCO GOTA COM CORAÇÃO CRAVEJADO COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4369.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "39,90",
-      "precoConsignado": "62,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2025"
     },
