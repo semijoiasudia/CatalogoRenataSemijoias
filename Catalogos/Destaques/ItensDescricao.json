@@ -2,6 +2,16 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "5824",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - PRATA",
+      "imagem": "5824.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
       "codigo": "5809",
       "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,16 +32,6 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/01/2026"
-    },
-    {
-      "codigo": "5683",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - 2 BANHOS",
-      "imagem": "5683.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/01/2026"
     },
     {
       "codigo": "5682",
@@ -1284,17 +1284,6 @@
       "preco": "89,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/09/2025"
-    },
-    {
-      "codigo": "4893",
-      "descricao": "BRACELETE TRIPLO LISO",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4893.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "189,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "13/09/2025"
     },
     {

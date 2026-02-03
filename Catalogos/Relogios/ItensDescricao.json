@@ -2,13 +2,63 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "5683",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - 2 BANHOS",
-      "imagem": "5683.jpg",
+      "codigo": "5835",
+      "descricao": "RELOGIO CASIO UNISSEX QUADRADO 1ª LINHA - PRETO",
+      "imagem": "5835.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "159,90",
       "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
+      "banho": "Inox",
+      "dataUltimaEntrada": "02/02/2026"
+    },
+    {
+      "codigo": "5834",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - PRETO",
+      "imagem": "5834.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "02/02/2026"
+    },
+    {
+      "codigo": "5833",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO PRETO",
+      "imagem": "5833.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "02/02/2026"
+    },
+    {
+      "codigo": "5832",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO BRANCO",
+      "imagem": "5832.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "02/02/2026"
+    },
+    {
+      "codigo": "5824",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - PRATA",
+      "imagem": "5824.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
+      "codigo": "5818",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO PULSEIRA 3 VOLTAS",
+      "imagem": "5818.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox",
       "dataUltimaEntrada": "30/01/2026"
     },
     {
@@ -19,6 +69,16 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
+      "codigo": "5224",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO PULSEIRA 2 VOLTAS",
+      "imagem": "5224.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox",
       "dataUltimaEntrada": "30/01/2026"
     },
     {
