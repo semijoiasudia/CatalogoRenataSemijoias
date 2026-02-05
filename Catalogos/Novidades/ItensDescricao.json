@@ -2,6 +2,46 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "5852",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA REDONDO - 2 BANHOS",
+      "imagem": "5852.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "05/02/2026"
+    },
+    {
+      "codigo": "5851",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA QUADRADO",
+      "imagem": "5851.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "05/02/2026"
+    },
+    {
+      "codigo": "5850",
+      "descricao": "RELOGIO REDONDO - PULSEIRA ESTEIRA - FUNDO CINZA - XUF.",
+      "imagem": "5850.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "05/02/2026"
+    },
+    {
+      "codigo": "5849",
+      "descricao": "RELOGIO REDONDO - PULSEIRA ESTEIRA - FUNDO DOURADO - XUF.",
+      "imagem": "5849.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "05/02/2026"
+    },
+    {
       "codigo": "5846",
       "descricao": "INOX BRACELETE OLHOS GREGOS COLORIDOS",
       "tipo": "Aço Inox",
@@ -104,26 +144,6 @@
       "codigo": "5835",
       "descricao": "RELOGIO CASIO UNISSEX QUADRADO 1ª LINHA - PRETO",
       "imagem": "5835.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "02/02/2026"
-    },
-    {
-      "codigo": "5833",
-      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO PRETO",
-      "imagem": "5833.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "02/02/2026"
-    },
-    {
-      "codigo": "5832",
-      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO BRANCO",
-      "imagem": "5832.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "159,90",
       "precoConsignado": "159,90",
@@ -1356,6 +1376,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "94,90",
       "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
+      "codigo": "5470",
+      "descricao": "PIERCING FAKE ZIRCÔNIA QUADRADA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5470.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "32,90",
+      "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/11/2025"
     },
