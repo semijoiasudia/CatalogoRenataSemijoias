@@ -2,6 +2,39 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "5880",
+      "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "5880.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "11/02/2026"
+    },
+    {
+      "codigo": "5676",
+      "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "5676.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "11/02/2026"
+    },
+    {
+      "codigo": "5858",
+      "descricao": "INOX BRINCO TREVO VERDE MALAQUITA",
+      "tipo": "Aço Inox",
+      "imagem": "5858.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "07/02/2026"
+    },
+    {
       "codigo": "5846",
       "descricao": "INOX BRACELETE OLHOS GREGOS COLORIDOS",
       "tipo": "Aço Inox",
@@ -233,6 +266,28 @@
       "dataUltimaEntrada": "21/01/2026"
     },
     {
+      "codigo": "5802",
+      "descricao": "INOX BRINCO TREVO VERMELHO",
+      "tipo": "Aço Inox",
+      "imagem": "5802.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "24,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/01/2026"
+    },
+    {
+      "codigo": "4252",
+      "descricao": "INOX BRACELETE CIRCULO PRETO E ALGARISMOS INSP",
+      "tipo": "Aço Inox",
+      "imagem": "4252.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/12/2025"
+    },
+    {
       "codigo": "5375",
       "descricao": "INOX BRACELETE INSPIRAÇÃO YSL",
       "tipo": "Aço Inox",
@@ -253,6 +308,17 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "14/12/2025"
+    },
+    {
+      "codigo": "5269",
+      "descricao": "INOX BRINCO ARGOLA CLICK INSPIRAÇÃO D.",
+      "tipo": "Aço Inox",
+      "imagem": "5269.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "39,90",
+      "precoConsignado": "54,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/10/2025"
     },
     {
       "codigo": "5253",
