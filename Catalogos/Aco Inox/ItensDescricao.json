@@ -2,6 +2,17 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "5360",
+      "descricao": "INOX CONJUNTO 5 TREVOS PRETO 44+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "5360.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "21/02/2026"
+    },
+    {
       "codigo": "5880",
       "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
       "tipo": "Aço Inox",
@@ -222,6 +233,17 @@
       "dataUltimaEntrada": "14/12/2025"
     },
     {
+      "codigo": "5281",
+      "descricao": "INOX CONJUNTO TREVO LV PRETO 40+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "5281.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "01/11/2025"
+    },
+    {
       "codigo": "5269",
       "descricao": "INOX BRINCO ARGOLA CLICK INSPIRAÇÃO D.",
       "tipo": "Aço Inox",
@@ -253,17 +275,6 @@
       "precoConsignado": "54,90",
       "banho": "Inox",
       "dataUltimaEntrada": "21/05/2025"
-    },
-    {
-      "codigo": "4260",
-      "descricao": "INOX CONJUNTO TREVO CINZA PEROLADO 46CM",
-      "tipo": "Aço Inox",
-      "imagem": "4260.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "15/04/2025"
     },
     {
       "codigo": "4231",

@@ -2,6 +2,66 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5891",
+      "descricao": "RELOGIO DHP REDONDO COM CALENDÁRIO",
+      "imagem": "5891.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
+      "codigo": "5890",
+      "descricao": "RELOGIO DHP REDONDO TAM P - FUNDO BRANCO",
+      "imagem": "5890.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
+      "codigo": "5889",
+      "descricao": "RELOGIO DHP REDONDO TAM P - FUNDO AZUL",
+      "imagem": "5889.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
+      "codigo": "5888",
+      "descricao": "RELOGIO DHP REDONDO TAM P - 2 BANHOS - FUNDO BRANCO",
+      "imagem": "5888.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
+      "codigo": "5887",
+      "descricao": "RELOGIO DHP REDONDO TAM M - 2 BANHOS - FUNDO BRANCO",
+      "imagem": "5887.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
+      "codigo": "5886",
+      "descricao": "RELOGIO DHP QUADRADO FUNDO PRETO",
+      "imagem": "5886.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "17/02/2026"
+    },
+    {
       "codigo": "5885",
       "descricao": "RELOGIO REDONDO PEQUENO - DHP",
       "imagem": "5885.jpg",
@@ -32,19 +92,39 @@
       "dataUltimaEntrada": "13/02/2026"
     },
     {
+      "codigo": "5875",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO CINZA",
+      "imagem": "5875.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "10/02/2026"
+    },
+    {
+      "codigo": "5874",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO DOURADO",
+      "imagem": "5874.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/02/2026"
+    },
+    {
+      "codigo": "5701",
+      "descricao": "RELOGIO LEISITE - AZUL JEANS",
+      "imagem": "5701.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": " ",
+      "dataUltimaEntrada": "07/02/2026"
+    },
+    {
       "codigo": "5703",
       "descricao": "RELOGIO LEISITE - LILÁS",
       "imagem": "5703.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": " ",
-      "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5700",
-      "descricao": "RELOGIO LEISITE - AZUL CLARO M2",
-      "imagem": "5700.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "89,90",
       "precoConsignado": "89,90",
