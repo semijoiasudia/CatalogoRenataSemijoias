@@ -2,6 +2,61 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "5921",
+      "descricao": "INOX CHOKER SÃO BENTO 2 FACES",
+      "tipo": "Aço Inox",
+      "imagem": "5921.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/02/2026"
+    },
+    {
+      "codigo": "5920",
+      "descricao": "INOX PULSEIRA DUPLA MALHA E TREVOS BRANCOS",
+      "tipo": "Aço Inox",
+      "imagem": "5920.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "64,90",
+      "precoConsignado": "64,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/02/2026"
+    },
+    {
+      "codigo": "5919",
+      "descricao": "INOX COLAR PREGO INSPIRAÇÃO CART. 41+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "5919.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "49,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/02/2026"
+    },
+    {
+      "codigo": "5918",
+      "descricao": "INOX COLAR PREGO INSPIRAÇÃO CART. 41+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "5918.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "49,90",
+      "precoConsignado": "49,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/02/2026"
+    },
+    {
+      "codigo": "5910",
+      "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5910.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/02/2026"
+    },
+    {
       "codigo": "5891",
       "descricao": "RELOGIO DHP REDONDO COM CALENDÁRIO",
       "imagem": "5891.jpg",
