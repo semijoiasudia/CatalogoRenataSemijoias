@@ -961,6 +961,22 @@
         #banhoSelectContainer { margin-left: auto; }
         #sortFilterContainer { margin-left: auto; }
 
+        .clear-search-btn {
+            position: absolute;
+            right: 45px;
+            top: 0;
+            height: 100%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #999;
+            padding: 0 8px;
+        }
+        .clear-search-btn:hover {
+            color: #333;
+        }
+
         /* ===== Ocultando os botões para o consignado poder utilizar o site ===== */
         .cart-icon-container { display: none !important; }
         .add-to-cart-gallery { display: none !important; }
@@ -993,6 +1009,7 @@
     <!-- Campo de busca -->
     <div class="search-container">
         <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
+        <button id="clear-search-button" class="clear-search-btn" style="display:none" onclick="clearSearch()">✕</button>
         <button id="search-button" class="search-btn">🔍</button>
     </div>
     
@@ -1131,6 +1148,7 @@
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
+        let allFilesBackup = [];
         let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
         let currentBanho = 'todos';
         let currentSort = 'newest';
@@ -1278,6 +1296,10 @@
                     searchProducts(searchInput.value);
                 }
             });
+            searchInput.addEventListener('input', function() {
+                const clearBtn = document.getElementById('clear-search-button');
+                clearBtn.style.display = this.value ? 'block' : 'none';
+            });
         }
         
         // Função para buscar produtos
@@ -1314,6 +1336,7 @@
             currentPage = 1;
             
             // Atualizar a visualização com os resultados da busca
+            allFilesBackup = [...allFiles]; // salva o original para voltar após cancelar a busca
             allFiles = filteredFiles;
             currentVisibleFiles = filteredFiles;
             displayPage(currentPage, new Set());
@@ -2374,6 +2397,23 @@
         function setupFaleConoscoButton() {
             const faleConoscoBtn = document.getElementById('faleConoscoBtn');
             faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
+
+        function clearSearch() {
+            const searchInput = document.getElementById('search-input');
+            const clearBtn = document.getElementById('clear-search-button');
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+
+            // Restaura o allFiles original e reexibe
+            if (allFilesBackup.length > 0) {
+                allFiles = [...allFilesBackup];
+                allFilesBackup = [];
+            }
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            // Recarrega a categoria atual
+            loadCategory(currentCategory);
         }
 
         async function loadRodape() {
