@@ -2493,14 +2493,14 @@
                 const boxWidth = textMetrics.width + (paddingH * 2);
                 const boxHeight = fontSize + (paddingV * 2);
                 
-                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
                 ctx.beginPath();
-                ctx.roundRect(marginLeft, marginTop, boxWidth, boxHeight, borderRadius);
+                ctx.rect(0, 0, boxWidth, boxHeight, borderRadius);
                 ctx.fill();
                 
                 ctx.fillStyle = 'white';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(`COD: ${codigo}`, marginLeft + paddingH, marginTop + boxHeight / 2);
+                ctx.fillText(`COD: ${codigo}`, paddingH, boxHeight / 2);
                 
                 // Desenhar a logo da Renata como marca d'água
                 const logo = new Image();
