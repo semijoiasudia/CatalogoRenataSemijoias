@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
 
     <!-- meta tags de SEO aqui -->
-    <meta name="description" content="Catálogo digital de semijoias e acessórios Renata. Encontre brincos, colares, anéis e muito mais com entrega em Uberlândia e todo Brasil.">
-    <meta name="keywords" content="semijoias, acessórios, brincos, colares, anéis, Uberlândia, Renata Acessórios">
-
+    <meta name="description" content="Loja de Semijoias em Uberlândia MG. Catálogo digital de semijoias e acessórios Renata Semijoias e Acessórios. Encontre brincos, colares, pulseiras, anéis, piercings, aço inox e muito mais. Entregamos em todo Brasil.">
+    <meta name="keywords" content="semijoias, acessórios, brincos, brinco, colares, colar, choker, chokers, anéis, anel, pulseiras, pulseira, piercing, tornozeleira, bolsas, relógios, cintos, aço inox, presente, Uberlândia, Renata Semijoias, joias folheadas, aço inox">
     <title>Renata - Semijoias e Acessórios</title>
+
+    <!-- Meta tags Open Graph para redes sociais -->
+    <meta property="og:title" content="Renata Semijoias e Acessórios - Catálogo Online">
+    <meta property="og:description" content="Loja de Semijoias em Uberlândia MG. Catálogo digital de semijoias e acessórios. Encontre brincos, colares, pulseiras, anéis, piercings, aço inox e muito mais. Entregamos em todo Brasil.">
+    <meta property="og:image" content="https://renatasemijoias.com/imagens/logo_otimizada_redes_sociais.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://renatasemijoias.com">
+    <meta property="og:type" content="website">
     
     <!-- Google tag (gtag.js)-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJK53CRZJF"></script>
@@ -364,7 +372,7 @@
         
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 12px;
             max-width: 900px;
             margin: auto;
@@ -375,7 +383,7 @@
             text-align: center;
             position: relative;
             width: 100%;
-            max-width: 180px;
+            max-width: 150px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -419,12 +427,13 @@
         }
         .gallery .description {
             margin-top: 10px;
-            font-size: 14px;
+            font-size: 13px; /* Reduzido ligeiramente para acomodar mais texto */
             color: #333;
             word-wrap: break-word;
             overflow-wrap: break-word;
             max-width: 100%;
             white-space: normal;
+            line-height: 1.3; /* Melhorar espaçamento entre linhas */
         }
         .gallery .preco {
             margin-top: 5px;
@@ -454,7 +463,7 @@
             font-size: 12px;
             cursor: pointer;
             transition: all 0.2s;
-            display: flex;
+            display: flex;            
             align-items: center;
             justify-content: center;
             gap: 4px;
@@ -556,6 +565,8 @@
         }
         .modal-info .descricao {
             font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 10px;
         }
         .modal-info .preco {
             font-size: 20px;
@@ -628,8 +639,8 @@
             cursor: not-allowed;
         }
         .fale-conosco-btn, .instagram-btn {
-            background-color: #e8d5a9; /* Dourado champagne bem claro e suave */
-            color: #7d6c3b; /* Cor do texto mais escura para contraste */
+            background-color: #f8f5ed; /* Dourado champagne bem claro e suave */
+            color: #8a8167; /* Cor do texto mais escura para contraste */
             padding: 15px;
             text-align: center;
             text-decoration: none;
@@ -654,7 +665,7 @@
             border-top: 3px solid white; /* Borda branca na parte superior */
         }
         .fale-conosco-btn:hover, .instagram-btn:hover {
-            background-color: #dbc990; /* Dourado mais escuro para hover */
+            background-color: #e8d5a9; /* Dourado mais escuro para hover */
         }
         .fale-conosco-btn img, .instagram-btn img {
             width: 25px;
@@ -923,8 +934,81 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
+        .preco-original {/* Estilos para preços em oferta */
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+            display: block;
+        }
+        .preco-oferta {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+        }
+        .modal-info .preco-original {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .modal-info .preco-oferta {
+            display: inline-block;
+        }
+        .tipo-produto {
+            font-weight: bold;
+            color: #8a8167; /* Cor similar ao tema dourado champagne do site */
+            margin-right: 5px;
+        }
         #banhoSelectContainer { margin-left: auto; }
         #sortFilterContainer { margin-left: auto; }
+
+        .clear-search-btn {
+            position: absolute;
+            right: 45px;
+            top: 0;
+            height: 100%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #999;
+            padding: 0 8px;
+        }
+        .clear-search-btn:hover {
+            color: #333;
+        }
+
+        /* ===== Ocultando os botões para o consignado poder utilizar o site ===== */
+        .cart-icon-container { display: none !important; }
+        .add-to-cart-gallery { display: none !important; }
+        .add-to-cart-btn     { display: none !important; }
+        .request-btn         { display: none !important; }
+        #faleConoscoBtn      { display: none !important; }
+        #instagramBtn        { display: none !important; }
+
+        /* Botão Salvar Imagem */
+        .save-btn {
+            width: 100%;
+            margin: 0;
+            color: white;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+        .save-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body>
@@ -950,6 +1034,7 @@
     <!-- Campo de busca -->
     <div class="search-container">
         <input type="text" id="search-input" class="search-input" placeholder="Buscar produtos...">
+        <button id="clear-search-button" class="clear-search-btn" style="display:none" onclick="clearSearch()">✕</button>
         <button id="search-button" class="search-btn">🔍</button>
     </div>
     
@@ -1003,6 +1088,10 @@
                 <button class="request-btn" onclick="requestItem()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
                     Solicitar este Item
+                </button>
+                <button class="save-btn" onclick="saveImage()">
+                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px;">
+                    Salvar Imagem
                 </button>
             </div>
         </div>
@@ -1088,6 +1177,7 @@
         const itemsPerPage = 20;
         let currentPage = 1;
         let allFiles = [];
+        let allFilesBackup = [];
         let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
         let currentBanho = 'todos';
         let currentSort = 'newest';
@@ -1104,7 +1194,7 @@
             freteOutrasCidades: "A Calcular"
         };
         
-        let categoriaInicial = "Brincos"; // Valor padrão de fallback
+        let categoriaInicial = "Destaques"; // Valor padrão de fallback
         let selectedDeliveryOption = "uberlandia"; // Opção padrão: Uberlândia
 
         const PHONE_NUMBER = '5534997622408';
@@ -1235,6 +1325,10 @@
                     searchProducts(searchInput.value);
                 }
             });
+            searchInput.addEventListener('input', function() {
+                const clearBtn = document.getElementById('clear-search-button');
+                clearBtn.style.display = this.value ? 'block' : 'none';
+            });
         }
         
         // Função para buscar produtos
@@ -1263,7 +1357,7 @@
             
             // Se não encontrou resultados, informar
             if (filteredFiles.length === 0) {
-                showNotification("Nenhum produto encontrado para esta busca");
+                showNotification("Nenhum produto encontrado para esta busca! A busca é feita na categoria selecionada!");
                 return;
             }
             
@@ -1271,6 +1365,7 @@
             currentPage = 1;
             
             // Atualizar a visualização com os resultados da busca
+            allFilesBackup = [...allFiles]; // salva o original para voltar após cancelar a busca
             allFiles = filteredFiles;
             currentVisibleFiles = filteredFiles;
             displayPage(currentPage, new Set());
@@ -1334,7 +1429,15 @@
 
         // Adicionar item ao carrinho
         function addToCart(codigo, descricao, preco, imagem) {
-            const precoNumber = getNumericPrice(preco);
+            // Garantir que o preço esteja no formato simples
+            let precoExibicao = preco;
+            
+            // Se ainda tiver "Por:" no texto, remover
+            if (typeof preco === 'string' && preco.includes('Por:')) {
+                precoExibicao = preco.replace('Por: ', '');
+            }
+            
+            const precoNumber = getNumericPrice(precoExibicao);
             
             // Verificar se o item já está no carrinho
             const existingItemIndex = cart.findIndex(item => item.codigo === codigo);
@@ -1347,32 +1450,64 @@
                 cart.push({
                     codigo,
                     descricao,
-                    preco,
+                    preco: precoExibicao, // Usar o preço limpo
                     precoNumber,
                     imagem,
                     quantity: 1
                 });
-            }
-            
-            saveCart();
-            showNotification(`Item adicionado à sacola: ${codigo}`);
+    }
+    
+    saveCart();
+    showNotification(`Item adicionado à sacola: ${codigo}`);
         }
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
             const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
-            const descricao = document.querySelector('.modal-info .descricao').textContent;
-            const preco = document.querySelector('.modal-info .preco').textContent;
+            const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
+            
+            // Obter apenas o preço final (seja oferta ou regular)
+            let precoFinal;
+            
+            // Se for oferta, o preço estará no elemento com classe preco-oferta
+            const precoOfertaElement = document.querySelector('.modal-info .preco-oferta');
+            if (precoOfertaElement) {
+                precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+            } else {
+                // Senão, pegar do elemento .preco normal
+                precoFinal = document.querySelector('.modal-info .preco').textContent;
+            }
+            
             const imagem = document.getElementById('modalImg').src;
             
-            addToCart(codigo, descricao, preco, imagem);
+            addToCart(codigo, descricaoCompleta, precoFinal, imagem);
         }
 
         // Adicionar à sacola a partir da galeria
         function addToCartFromGallery(event, codigo, descricao, preco, imagem) {
             event.preventDefault();
             event.stopPropagation(); // Evita que a modal abra
-            addToCart(codigo, descricao, preco, imagem);
+            
+            // Extrair apenas o preço final (oferta ou regular)
+            let precoFinal;
+            
+            // Verificar se é um item em oferta (preco contém HTML com spans)
+            if (preco.includes('preco-oferta')) {
+                // Criar um elemento temporário para analisar o HTML
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = preco;
+                // Pegar o preço de oferta
+                const precoOfertaElement = tempDiv.querySelector('.preco-oferta');
+                if (precoOfertaElement) {
+                    precoFinal = precoOfertaElement.textContent.replace('Por: ', '');
+                } else {
+                    precoFinal = preco; // Fallback
+                }
+            } else {
+                precoFinal = preco; // Preço normal
+            }
+            
+            addToCart(codigo, descricao, precoFinal, imagem);
         }
 
         // Exibir a modal da sacola
@@ -1569,7 +1704,14 @@
         }
 
         function getNumericPrice(preco) {
-            if (!preco || preco === "Preço não disponível") return 0;
+            if (!preco || preco === "Preço não disponível") return 0;    
+            // Extrai apenas o valor numérico após "R$ "
+            const match = preco.match(/R\$ ([0-9,]+)/);
+            if (match && match[1]) {
+                return parseFloat(match[1].replace(',', '.'));
+            }
+            
+            // Fallback
             return parseFloat(preco.replace('R$ ', '').replace(',', '.'));
         }
 
@@ -1607,9 +1749,26 @@
                 
                 // Adicionar os produtos ao objeto descricoes
                 data.produtos.forEach(produto => {
+                    let precoDisplay;
+                    let precoCarrinho = formatarPreco(produto.precoOferta || produto.preco);
+                    let isOferta = false;
+                    
+                    // Se existir precoOferta, formatar como "De: Por:" para exibição
+                    if (produto.precoOferta) {
+                        const precoOriginal = formatarPreco(produto.preco);
+                        const precoOferta = formatarPreco(produto.precoOferta);
+                        precoDisplay = `<span class="preco-original">De: ${precoOriginal}</span> <span class="preco-oferta">Por: ${precoOferta}</span>`;
+                        isOferta = true;
+                    } else {
+                        precoDisplay = formatarPreco(produto.preco);
+                    }
+                    
                     descricoes[produto.codigo] = {
                         descricao: produto.descricao,
-                        preco: formatarPreco(produto.preco),
+                        tipo: produto.tipo || "", // Adicionando o tipo ao objeto
+                        preco: precoDisplay,
+                        precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
+                        isOferta: isOferta,
                         banho: produto.banho.toLowerCase(),
                         dataUltimaEntrada: produto.dataUltimaEntrada
                     };
@@ -1888,10 +2047,11 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, preco, banho } = descricoes[codigo] || { 
+                const { descricao, preco, banho, tipo } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
-                    banho: ""
+                    banho: "",
+                    tipo: ""
                 };
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
@@ -1933,11 +2093,22 @@
 
                 const desc = document.createElement('div');
                 desc.className = 'description';
-                desc.textContent = capitalizarPrimeiraLetra(descricao);
+                
+                // Aqui adicionamos o tipo, caso exista
+                if (tipo && tipo.trim() !== "") {
+                    desc.innerHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>${capitalizarPrimeiraLetra(descricao)}`;
+                } else {
+                    desc.textContent = capitalizarPrimeiraLetra(descricao);
+                }
 
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
-                precoElement.textContent = preco;
+                // Se tiver HTML, use innerHTML em vez de textContent
+                if (preco.includes('<span')) {
+                    precoElement.innerHTML = preco;
+                } else {
+                    precoElement.textContent = preco;
+                }
 
                 // Botão de adicionar à sacola com ícone e texto
                 const addToCartBtn = document.createElement('button');
@@ -2050,9 +2221,10 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, preco } = descricoes[codigo] || { 
+            const { descricao, preco, tipo } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
-                preco: "Preço não disponível"
+                preco: "Preço não disponível",
+                tipo: ""
             };
 
             const captureArea = document.getElementById('captureArea');
@@ -2069,8 +2241,22 @@
             logo.draggable = false;
             captureArea.appendChild(logo);
 
+            // Aqui adicionamos o tipo, caso exista
+            let descricaoCompleta;
+            if (tipo && tipo.trim() !== "") {
+                descricaoCompleta = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
+            } else {
+                descricaoCompleta = capitalizarPrimeiraLetra(descricao);
+            }
+
+            let descricaoHTML = '';
+            if (tipo && tipo.trim() !== "") {
+                descricaoHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>`;
+            }
+            descricaoHTML += `<div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>`;
+
             document.getElementById('modalInfo').innerHTML = `
-                <div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>
+                ${descricaoHTML}
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
@@ -2240,6 +2426,113 @@
         function setupFaleConoscoButton() {
             const faleConoscoBtn = document.getElementById('faleConoscoBtn');
             faleConoscoBtn.href = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent('Olá, gostaria de falar com vocês!')}`;
+        }
+
+        function clearSearch() {
+            const searchInput = document.getElementById('search-input');
+            const clearBtn = document.getElementById('clear-search-button');
+            searchInput.value = '';
+            clearBtn.style.display = 'none';
+
+            // Restaura o allFiles original e reexibe
+            if (allFilesBackup.length > 0) {
+                allFiles = [...allFilesBackup];
+                allFilesBackup = [];
+            }
+            currentPage = 1;
+            displayPage(currentPage, new Set());
+            // Recarrega a categoria atual
+            loadCategory(currentCategory);
+        }
+
+        async function saveImage() {
+            try {
+                const modalImg = document.getElementById('modalImg');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                
+                const displayedWidth = modalImg.clientWidth;
+                const displayedHeight = modalImg.clientHeight;
+                
+                const scaleCanvas = 4;
+                const canvasWidth = displayedWidth * scaleCanvas;
+                const canvasHeight = displayedHeight * scaleCanvas;
+                
+                const imgElement = new Image();
+                imgElement.crossOrigin = "anonymous";
+                
+                const file = currentVisibleFiles[currentModalIndex];
+                imgElement.src = file.download_url;
+                
+                await new Promise((resolve, reject) => {
+                    imgElement.onload = resolve;
+                    imgElement.onerror = () => {
+                        imgElement.crossOrigin = null;
+                        imgElement.src = modalImg.src;
+                        imgElement.onload = resolve;
+                        imgElement.onerror = reject;
+                    };
+                });
+                
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+                
+                ctx.drawImage(imgElement, 0, 0, canvasWidth, canvasHeight);
+                
+                // Desenhar o código sobre a imagem
+                const fontSize = 14 * scaleCanvas;
+                const paddingH = 16 * scaleCanvas;
+                const paddingV = 8 * scaleCanvas;
+                const borderRadius = 25 * scaleCanvas;
+                const marginTop = 15 * scaleCanvas;
+                const marginLeft = 15 * scaleCanvas;
+                
+                ctx.font = `bold ${fontSize}px Arial`;
+                const textMetrics = ctx.measureText(`COD: ${codigo}`);
+                const boxWidth = textMetrics.width + (paddingH * 2);
+                const boxHeight = fontSize + (paddingV * 2);
+                
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                ctx.beginPath();
+                ctx.roundRect(marginLeft, marginTop, boxWidth, boxHeight, borderRadius);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(`COD: ${codigo}`, marginLeft + paddingH, marginTop + boxHeight / 2);
+                
+                // Desenhar a logo da Renata como marca d'água
+                const logo = new Image();
+                logo.crossOrigin = "anonymous";
+                logo.src = 'imagens/logo.png';
+                
+                await new Promise((resolve) => {
+                    logo.onload = resolve;
+                    logo.onerror = resolve;
+                });
+                
+                const logoWidth = canvasWidth * 0.20;
+                const logoHeight = (logo.height / logo.width) * logoWidth;
+                const logoMargin = 10 * scaleCanvas;
+                
+                ctx.drawImage(
+                    logo,
+                    canvasWidth - logoWidth - logoMargin,
+                    canvasHeight - logoHeight - logoMargin,
+                    logoWidth,
+                    logoHeight
+                );
+                
+                const link = document.createElement('a');
+                link.download = `peca-${codigo}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+            } catch (error) {
+                console.error("Erro ao salvar imagem:", error);
+                alert("Erro ao salvar a imagem. Tente novamente.");
+            }
         }
 
         async function loadRodape() {
