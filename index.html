@@ -445,7 +445,7 @@
             position: absolute;
             top: 5px;
             left: 5px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.4);
             color: white;
             padding: 3px 6px;
             border-radius: 3px;
@@ -527,12 +527,12 @@
         }
         .modal-codigo {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            background-color: rgba(0, 0, 0, 0.7);
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0, 0, 0, 0.4);
             color: white;
             padding: 8px 16px;
-            border-radius: 25px;
+            border-radius: 0px;
             font-size: 14px;
             font-weight: bold;
             z-index: 2;
@@ -984,6 +984,31 @@
         .request-btn         { display: none !important; }
         #faleConoscoBtn      { display: none !important; }
         #instagramBtn        { display: none !important; }
+
+        /* Botão Salvar Imagem */
+        .save-btn {
+            width: 100%;
+            margin: 0;
+            color: white;
+            padding: 10px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #007bff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+        .save-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body>
@@ -1063,6 +1088,10 @@
                 <button class="request-btn" onclick="requestItem()">
                     <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px;">
                     Solicitar este Item
+                </button>
+                <button class="save-btn" onclick="saveImage()">
+                    <img src="imagens/download.png" alt="Download" style="width: 25px; height: 25px;">
+                    Salvar Imagem
                 </button>
             </div>
         </div>
@@ -2414,6 +2443,96 @@
             displayPage(currentPage, new Set());
             // Recarrega a categoria atual
             loadCategory(currentCategory);
+        }
+
+        async function saveImage() {
+            try {
+                const modalImg = document.getElementById('modalImg');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                
+                const displayedWidth = modalImg.clientWidth;
+                const displayedHeight = modalImg.clientHeight;
+                
+                const scaleCanvas = 4;
+                const canvasWidth = displayedWidth * scaleCanvas;
+                const canvasHeight = displayedHeight * scaleCanvas;
+                
+                const imgElement = new Image();
+                imgElement.crossOrigin = "anonymous";
+                
+                const file = currentVisibleFiles[currentModalIndex];
+                imgElement.src = file.download_url;
+                
+                await new Promise((resolve, reject) => {
+                    imgElement.onload = resolve;
+                    imgElement.onerror = () => {
+                        imgElement.crossOrigin = null;
+                        imgElement.src = modalImg.src;
+                        imgElement.onload = resolve;
+                        imgElement.onerror = reject;
+                    };
+                });
+                
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = canvasWidth;
+                canvas.height = canvasHeight;
+                
+                ctx.drawImage(imgElement, 0, 0, canvasWidth, canvasHeight);
+                
+                // Desenhar o código sobre a imagem
+                const fontSize = 14 * scaleCanvas;
+                const paddingH = 16 * scaleCanvas;
+                const paddingV = 8 * scaleCanvas;
+                const borderRadius = 25 * scaleCanvas;
+                const marginTop = 15 * scaleCanvas;
+                const marginLeft = 15 * scaleCanvas;
+                
+                ctx.font = `bold ${fontSize}px Arial`;
+                const textMetrics = ctx.measureText(`COD: ${codigo}`);
+                const boxWidth = textMetrics.width + (paddingH * 2);
+                const boxHeight = fontSize + (paddingV * 2);
+                
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                ctx.beginPath();
+                ctx.rect(0, 0, boxWidth, boxHeight, borderRadius);
+                ctx.fill();
+                
+                ctx.fillStyle = 'white';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(`COD: ${codigo}`, paddingH, boxHeight / 2);
+                
+                // Desenhar a logo da Renata como marca d'água
+                const logo = new Image();
+                logo.crossOrigin = "anonymous";
+                logo.src = 'imagens/logo.png';
+                
+                await new Promise((resolve) => {
+                    logo.onload = resolve;
+                    logo.onerror = resolve;
+                });
+                
+                const logoWidth = canvasWidth * 0.20;
+                const logoHeight = (logo.height / logo.width) * logoWidth;
+                const logoMargin = 10 * scaleCanvas;
+                
+                ctx.drawImage(
+                    logo,
+                    canvasWidth - logoWidth - logoMargin,
+                    canvasHeight - logoHeight - logoMargin,
+                    logoWidth,
+                    logoHeight
+                );
+                
+                const link = document.createElement('a');
+                link.download = `peca-${codigo}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+            } catch (error) {
+                console.error("Erro ao salvar imagem:", error);
+                alert("Erro ao salvar a imagem. Tente novamente.");
+            }
         }
 
         async function loadRodape() {
