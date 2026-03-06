@@ -341,6 +341,11 @@
         // Coletar dados do formulário
         const formData = new FormData(form);
         
+        // Capturar parâmetro "orig" da URL e adicionar como "Origem"
+        const urlParams = new URLSearchParams(window.location.search);
+        const origem = urlParams.get('orig') || '';
+        formData.append('Origem', origem);
+
         // Enviar dados para o Google Sheets
         fetch(scriptURL, { method: 'POST', body: formData })
             .then(response => {
