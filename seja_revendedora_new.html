@@ -727,7 +727,7 @@
   <!-- NAV -->
   <nav id="mainNav">
     <a href="#" class="nav-brand">
-      <img src="imagens/logo.png" alt="Renata Semijoias & Acessórios" style="height:38px;width:auto;transition:filter 0.4s" id="navLogo">
+      <img src="imagens/logo_branca.png" alt="Renata Semijoias & Acessórios" style="height:38px;width:auto" id="navLogo">
     </a>
     <a href="#formulario" class="nav-cta">Quero ser revendedora</a>
   </nav>
@@ -1286,10 +1286,8 @@
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY > 60;
       nav.classList.toggle('scrolled', scrolled);
-      navLogo.style.filter = scrolled ? 'none' : 'brightness(0) invert(1)';
+      navLogo.src = scrolled ? 'imagens/logo.png' : 'imagens/logo_branca.png';
     });
-    // Estado inicial (página no topo = fundo escuro)
-    navLogo.style.filter = 'brightness(0) invert(1)';
 
     // ── SCROLL REVEAL ────────────────────────────────────────────
     const observer = new IntersectionObserver((entries) => {
