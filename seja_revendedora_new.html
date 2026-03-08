@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seja Revendedora · Renata Semijoias & Acessórios</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --burgundy:   #7B1C3C;
+      --rose:       #B83A5A;
+      --rose-light: #D4607A;
+      --gold:       #C2985A;
+      --gold-light: #E2C080;
+      --cream:      #FBF6EF;
+      --cream-dark: #F3EBE0;
+      --ink:        #2A1A20;
+      --muted:      #7A6570;
+      --white:      #FFFFFF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    /* ── TYPOGRAPHY ─────────────────────────────────────────── */
+    .serif { font-family: 'Cormorant Garamond', serif; }
+
+    /* ── REVEAL ANIMATIONS ──────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(.22,1,.36,1), transform 0.75s cubic-bezier(.22,1,.36,1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ── NAV ────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 18px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background 0.4s, box-shadow 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(251, 246, 239, 0.96);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(194, 152, 90, 0.25);
+    }
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      transition: color 0.4s;
+      text-decoration: none;
+    }
+    nav.scrolled .nav-brand { color: var(--burgundy); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--burgundy); transform: translateY(-1px); }
+
+    /* ── HERO ────────────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--burgundy) 0%, #4A0E22 55%, #1A0810 100%);
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 30% 40%, rgba(194,152,90,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 80% 70%, rgba(184,58,90,0.18) 0%, transparent 65%);
+    }
+    .hero-ornament {
+      width: 48px; height: 1px;
+      background: var(--gold);
+      display: inline-block;
+      vertical-align: middle;
+      opacity: 0.7;
+    }
+    .hero-tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+      display: flex; align-items: center; gap: 14px; justify-content: center;
+      position: relative; z-index: 1;
+    }
+    #hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      position: relative; z-index: 1;
+      margin-bottom: 10px;
+    }
+    #hero h1 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    #hero h1 strong {
+      font-weight: 700;
+      display: block;
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      line-height: 1.7;
+      position: relative; z-index: 1;
+      margin: 28px auto 44px;
+    }
+    .hero-sub strong { color: rgba(255,255,255,0.95); font-weight: 500; }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 16px 40px;
+      border-radius: 2px;
+      text-decoration: none;
+      position: relative; z-index: 1;
+      transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
+      box-shadow: 0 4px 20px rgba(194,152,90,0.35);
+    }
+    .btn-primary:hover {
+      background: var(--white);
+      color: var(--burgundy);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(194,152,90,0.3);
+    }
+    .hero-badges {
+      display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
+      margin-top: 56px;
+      position: relative; z-index: 1;
+    }
+    .hero-badge {
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+    .hero-badge span.dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .scroll-hint {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      z-index: 1;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 0.4; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(0.6); }
+    }
+
+    /* ── GOLD DIVIDER ────────────────────────────────────────── */
+    .gold-divider {
+      display: flex; align-items: center; gap: 16px;
+      margin: 0 auto;
+      max-width: 220px;
+    }
+    .gold-divider::before, .gold-divider::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold));
+    }
+    .gold-divider::after {
+      background: linear-gradient(to left, transparent, var(--gold));
+    }
+    .gold-divider-diamond {
+      width: 6px; height: 6px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ── SECTION WRAPPER ─────────────────────────────────────── */
+    .section-wrap {
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: var(--burgundy);
+      text-align: center;
+      line-height: 1.2;
+    }
+    .section-title em { font-style: italic; color: var(--rose); }
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 12px auto 0;
+    }
+
+    /* ── IMAGE PLACEHOLDER ──────────────────────────────────── */
+    .img-placeholder {
+      width: 100%;
+      background: linear-gradient(135deg, var(--cream-dark), var(--cream));
+      border: 1px dashed rgba(194,152,90,0.4);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      gap: 10px;
+      min-height: 340px;
+    }
+    .img-placeholder svg { opacity: 0.45; }
+    .img-placeholder p { opacity: 0.6; }
+    /* If real image is present, show it */
+    .img-slot { width: 100%; display: block; }
+    .img-slot img { width: 100%; display: block; object-fit: cover; }
+
+    /* ── OPORTUNIDADE CARDS ──────────────────────────────────── */
+    #oportunidade {
+      padding: 96px 0 80px;
+      background: var(--cream);
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 52px;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid rgba(194,152,90,0.2);
+      padding: 36px 28px;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--gold), var(--rose-light));
+    }
+    .card:hover { box-shadow: 0 8px 40px rgba(123,28,60,0.1); transform: translateY(-3px); }
+    .card-icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--cream-dark), var(--cream));
+      border: 1px solid rgba(194,152,90,0.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+      color: var(--gold);
+    }
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      margin-bottom: 10px;
+    }
+    .card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+    .card p strong { color: var(--ink); font-weight: 500; }
+
+    /* ── VANTAGENS ───────────────────────────────────────────── */
+    #vantagens {
+      padding: 80px 0;
+      background: linear-gradient(170deg, #2A1A20 0%, var(--burgundy) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #vantagens::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 70% at 80% 50%, rgba(194,152,90,0.08) 0%, transparent 70%);
+    }
+    #vantagens .section-title { color: var(--white); }
+    #vantagens .section-subtitle { color: rgba(255,255,255,0.55); }
+    .vantagens-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 48px;
+    }
+    .vantagem-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 18px 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(194,152,90,0.18);
+      border-radius: 4px;
+      transition: background 0.25s;
+    }
+    .vantagem-item:hover { background: rgba(255,255,255,0.1); }
+    .vantagem-check {
+      width: 22px; height: 22px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .vantagem-check svg { width: 11px; height: 11px; }
+    .vantagem-item span {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.5;
+    }
+    .vantagem-item span strong { color: var(--white); font-weight: 600; }
+
+    /* ── CARROSSEL ───────────────────────────────────────────── */
+    #galeria { position: relative; background: var(--cream-dark); overflow: hidden; }
+    .carrossel-wrap { position: relative; overflow: hidden; }
+    .carrossel-track {
+      display: flex;
+      transition: transform 0.55s cubic-bezier(.22,1,.36,1);
+    }
+    .carrossel-slide {
+      min-width: 100%; flex-shrink: 0;
+    }
+    .carr-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(251,246,239,0.9);
+      border: 1px solid rgba(194,152,90,0.3);
+      border-radius: 50%;
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      color: var(--burgundy);
+      transition: background 0.2s, transform 0.2s;
+      z-index: 2;
+    }
+    .carr-btn:hover { background: var(--white); transform: translateY(-50%) scale(1.08); }
+    .carr-btn-prev { left: 20px; }
+    .carr-btn-next { right: 20px; }
+    .carr-dots {
+      display: flex; gap: 8px; justify-content: center;
+      padding: 16px 0;
+      background: var(--cream-dark);
+    }
+    .carr-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(123,28,60,0.2);
+      border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .carr-dot.active { background: var(--gold); transform: scale(1.3); }
+
+    /* ── ACCORDION: COMO FUNCIONA ────────────────────────────── */
+    #como-funciona {
+      padding: 96px 0 80px;
+      background: var(--cream);
+    }
+    .accordion-list { margin-top: 48px; }
+    .accordion-item {
+      border: 1px solid rgba(194,152,90,0.22);
+      border-radius: 4px;
+      margin-bottom: 10px;
+      background: var(--white);
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .accordion-item.open { box-shadow: 0 4px 24px rgba(123,28,60,0.08); }
+    .accordion-header {
+      width: 100%;
+      background: none; border: none;
+      padding: 22px 28px;
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      cursor: pointer;
+      text-align: left;
+    }
+    .accordion-header-inner { display: flex; align-items: center; gap: 18px; }
+    .accordion-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 32px;
+    }
+    .accordion-header h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      line-height: 1.2;
+    }
+    .accordion-header p.preview {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .accordion-arrow {
+      width: 28px; height: 28px;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(194,152,90,0.3);
+      border-radius: 50%;
+      color: var(--gold);
+      transition: transform 0.35s, background 0.2s;
+    }
+    .accordion-item.open .accordion-arrow { transform: rotate(180deg); background: var(--gold); color: var(--white); }
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(.22,1,.36,1), padding 0.3s;
+    }
+    .accordion-body-inner {
+      padding: 0 28px 28px;
+      border-top: 1px solid rgba(194,152,90,0.15);
+      padding-top: 20px;
+    }
+    .accordion-body-inner p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .accordion-body-inner ul {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .accordion-body-inner li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .accordion-body-inner li::before {
+      content: '';
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    /* ── COMPARATIVO ─────────────────────────────────────────── */
+    #comparativo {
+      padding: 96px 0 80px;
+      background: var(--cream-dark);
+    }
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 52px;
+    }
+    @media (max-width: 600px) { .compare-grid { grid-template-columns: 1fr; } }
+    .compare-col {
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .compare-header {
+      padding: 18px 24px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .compare-col.before .compare-header {
+      background: #F0E8E8;
+      color: #8B3A3A;
+      border-bottom: 1px solid rgba(139,58,58,0.15);
+    }
+    .compare-col.after .compare-header {
+      background: linear-gradient(90deg, var(--burgundy), var(--rose));
+      color: var(--white);
+    }
+    .compare-body {
+      background: var(--white);
+      border: 1px solid rgba(194,152,90,0.18);
+      border-top: none;
+    }
+    .compare-col.after .compare-body {
+      border-color: rgba(123,28,60,0.2);
+    }
+    .compare-row {
+      padding: 14px 24px;
+      font-size: 0.87rem;
+      line-height: 1.5;
+      display: flex; align-items: flex-start; gap: 10px;
+      border-bottom: 1px solid rgba(194,152,90,0.1);
+    }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-col.before .compare-row { color: #7A4545; }
+    .compare-col.after .compare-row { color: #3A2A2E; }
+    .compare-row .icon { flex-shrink: 0; margin-top: 2px; }
+
+    /* ── COMISSÃO ─────────────────────────────────────────────── */
+    #comissao {
+      padding: 96px 0 80px;
+      background: var(--cream);
+    }
+    .comissao-destaque {
+      text-align: center;
+      margin: 48px 0 56px;
+    }
+    .comissao-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(5rem, 16vw, 9rem);
+      font-weight: 300;
+      line-height: 1;
+      color: var(--burgundy);
+      letter-spacing: -0.02em;
+    }
+    .comissao-num span { color: var(--gold); }
+    .comissao-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+    .comissao-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .comissao-card {
+      background: var(--white);
+      border: 1px solid rgba(194,152,90,0.2);
+      border-radius: 4px;
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .comissao-card-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .comissao-card-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--burgundy);
+    }
+    .comissao-card-desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* ── REQUISITOS ACCORDION ────────────────────────────────── */
+    #requisitos {
+      padding: 0 0 96px;
+      background: var(--cream);
+    }
+    .requisitos-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .requisito-toggle {
+      width: 100%;
+      background: none; border: none;
+      padding: 20px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(194,152,90,0.2);
+    }
+    .requisito-toggle-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--burgundy);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .req-badge {
+      background: var(--gold);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .requisito-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(.22,1,.36,1);
+    }
+    .requisito-body-inner {
+      padding: 20px 0 10px;
+    }
+    .req-list {
+      list-style: none;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .req-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .req-icon {
+      width: 24px; height: 24px;
+      background: linear-gradient(135deg, var(--gold), var(--rose-light));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--white);
+    }
+
+    /* ── FORMULÁRIO ───────────────────────────────────────────── */
+    #formulario {
+      padding: 96px 0;
+      background: linear-gradient(160deg, #2A1A20 0%, var(--burgundy) 60%, #5C1A30 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    #formulario::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 20% 30%, rgba(194,152,90,0.1) 0%, transparent 60%);
+    }
+    .form-header {
+      text-align: center;
+      position: relative; z-index: 1;
+      margin-bottom: 48px;
+    }
+    .form-header .section-title { color: var(--white); }
+    .form-header .section-subtitle { color: rgba(255,255,255,0.6); }
+    .form-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative; z-index: 1;
+    }
+    /* Overriding the original form styles to match our theme */
+    #candidaturaForm {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 6px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 480px) { #candidaturaForm { padding: 24px; } }
+    #candidaturaForm label.block {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted) !important;
+      margin-bottom: 6px !important;
+    }
+    #candidaturaForm input,
+    #candidaturaForm select,
+    #candidaturaForm textarea {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: var(--ink);
+      border-color: rgba(194,152,90,0.3) !important;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    #candidaturaForm input:focus,
+    #candidaturaForm select:focus,
+    #candidaturaForm textarea:focus {
+      border-color: var(--gold) !important;
+      box-shadow: 0 0 0 3px rgba(194,152,90,0.12) !important;
+      outline: none;
+    }
+    #candidaturaForm button[type="submit"] {
+      background: linear-gradient(90deg, var(--burgundy), var(--rose)) !important;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-size: 0.82rem !important;
+      transition: opacity 0.25s, transform 0.2s !important;
+      border-radius: 3px !important;
+    }
+    #candidaturaForm button[type="submit"]:hover:not(:disabled) {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    footer {
+      background: #180B10;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      letter-spacing: 0.06em;
+    }
+    .footer-info {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 20px; }
+      .accordion-header { padding: 18px 20px; }
+      .accordion-body-inner { padding: 0 20px 20px; padding-top: 18px; }
+      .compare-row { padding: 12px 18px; }
+      .compare-header { padding: 14px 18px; }
+      #candidaturaForm { padding: 28px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a href="#" class="nav-brand">Renata Semijoias &amp; Acessórios</a>
+    <a href="#formulario" class="nav-cta">Quero ser revendedora</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-tag">
+      <span class="hero-ornament"></span>
+      Uberlândia · MG
+      <span class="hero-ornament"></span>
+    </div>
+    <h1 class="reveal">
+      <em>Trabalhe no seu tempo.</em>
+      <strong>Ganhe de verdade.</strong>
+    </h1>
+    <p class="hero-sub reveal reveal-delay-1">
+      Comece <strong>sem investir nada</strong> e venda semijoias de qualidade com preço competitivo, suporte completo e comissão de até <strong>40%</strong>.
+    </p>
+    <a href="#formulario" class="btn-primary reveal reveal-delay-2">Quero ser revendedora</a>
+    <div class="hero-badges reveal reveal-delay-3">
+      <span class="hero-badge"><span class="dot"></span> Sem investimento inicial</span>
+      <span class="hero-badge"><span class="dot"></span> Catálogo exclusivo</span>
+      <span class="hero-badge"><span class="dot"></span> Suporte completo</span>
+      <span class="hero-badge"><span class="dot"></span> Até 40% de comissão</span>
+    </div>
+    <div class="scroll-hint">
+      <span>Ver mais</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- IMAGEM PRINCIPAL -->
+  <div class="img-slot">
+    <img src="imagens/maleta_completa.jpg" alt="Maleta completa de semijoias Renata" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:400px\'><svg width=\'48\' height=\'48\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Inserir foto da maleta aqui</p></div>'"/>
+  </div>
+
+  <!-- OPORTUNIDADE -->
+  <section id="oportunidade">
+    <div class="section-wrap">
+      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Conheça a Oportunidade</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Uma chance real para mulheres que querem independência financeira sem abrir mão da flexibilidade.</p>
+
+      <div class="cards-grid">
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Qualidade Garantida</h3>
+          <p>Semijoias banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou <strong>ródio branco</strong>, com tratamento hipoalergênico — livre de níquel. Trabalhamos também com peças em <strong>aço inoxidável</strong> e <strong>relógios</strong>.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3>Peças que Vendem</h3>
+          <p>Trabalhamos apenas com peças atuais e de alto giro. Nada de estoque antigo parado. Mostruário variado e renovado conforme o seu desempenho.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3>Catálogo Completo</h3>
+          <p>Catálogo digital sempre atualizado com fotos profissionais de todas as peças. Compartilhe com suas clientes pelo WhatsApp e venda de qualquer lugar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section id="vantagens">
+    <div class="section-wrap" style="position:relative;z-index:1">
+      <h2 class="section-title reveal">Vantagens para Você</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Tudo o que você precisa para vender com confiança e profissionalismo.</p>
+      <div class="vantagens-grid">
+        <div class="vantagem-item reveal reveal-delay-1">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Produtos de qualidade</strong> com preço competitivo</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-2">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Peças atuais</strong> e fáceis de vender</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-3">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Fotos profissionais</strong> para divulgação</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-4">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Catálogo completo</strong> e organizado</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-1">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span>Clientes pagam em <strong>até 3x sem juros</strong> por link</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-2">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Suporte completo</strong> para revendedoras</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-3">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span><strong>Sem investimento inicial</strong> — comece hoje</span>
+        </div>
+        <div class="vantagem-item reveal reveal-delay-4">
+          <div class="vantagem-check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
+          </div>
+          <span>Localizada em <strong>Uberlândia – MG</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROSSEL -->
+  <section id="galeria">
+    <div class="carrossel-wrap">
+      <div class="carrossel-track" id="carrosselTrack">
+        <div class="carrossel-slide">
+          <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 1</p></div>'"/>
+        </div>
+        <div class="carrossel-slide">
+          <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 2</p></div>'"/>
+        </div>
+        <div class="carrossel-slide">
+          <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 3</p></div>'"/>
+        </div>
+      </div>
+      <button class="carr-btn carr-btn-prev" onclick="carrMove(-1)" aria-label="Anterior">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button class="carr-btn carr-btn-next" onclick="carrMove(1)" aria-label="Próxima">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="carr-dots" id="carrDots">
+      <button class="carr-dot active" onclick="carrGoTo(0)"></button>
+      <button class="carr-dot" onclick="carrGoTo(1)"></button>
+      <button class="carr-dot" onclick="carrGoTo(2)"></button>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA (ACCORDION) -->
+  <section id="como-funciona">
+    <div class="section-wrap">
+      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Como Funciona</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Tudo muito simples. Clique em cada etapa para saber mais.</p>
+
+      <div class="accordion-list">
+
+        <div class="accordion-item reveal reveal-delay-1" id="acc-1">
+          <button class="accordion-header" onclick="toggleAccordion('acc-1')">
+            <div class="accordion-header-inner">
+              <span class="accordion-num">01</span>
+              <div>
+                <h3>Comece sem investir nada</h3>
+                <p class="preview">Você recebe a maleta e começa a vender.</p>
+              </div>
+            </div>
+            <div class="accordion-arrow">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>Você recebe uma maleta com diversas peças selecionadas sem precisar pagar nada antecipadamente. Seu único trabalho é mostrar, encantar e vender.</p>
+              <p>Sem taxa de adesão, sem compra obrigatória, sem risco financeiro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal reveal-delay-2" id="acc-2">
+          <button class="accordion-header" onclick="toggleAccordion('acc-2')">
+            <div class="accordion-header-inner">
+              <span class="accordion-num">02</span>
+              <div>
+                <h3>Venda com suporte completo</h3>
+                <p class="preview">Material profissional para você vender mais.</p>
+              </div>
+            </div>
+            <div class="accordion-arrow">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>Você não está sozinha. Recebe tudo o que precisa para vender com profissionalismo:</p>
+              <ul>
+                <li>Fotos profissionais de todas as peças para divulgação</li>
+                <li>Catálogo digital completo e organizado</li>
+                <li>Sacolinhas e saquinhos para embalagem na entrega</li>
+                <li>Certificado de garantia para as suas clientes</li>
+                <li>Link de pagamento — suas clientes pagam em até 3x sem juros no cartão</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal reveal-delay-3" id="acc-3">
+          <button class="accordion-header" onclick="toggleAccordion('acc-3')">
+            <div class="accordion-header-inner">
+              <span class="accordion-num">03</span>
+              <div>
+                <h3>Acerto mensal simples</h3>
+                <p class="preview">Pague só pelo que vender, após 30 dias.</p>
+              </div>
+            </div>
+            <div class="accordion-arrow">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>Você paga somente pelas peças que vender, após 30 dias — podendo chegar a 40 dias conforme seu desempenho.</p>
+              <p>O pagamento do acerto pode ser parcelado em até 3x sem juros no cartão.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item reveal reveal-delay-4" id="acc-4">
+          <button class="accordion-header" onclick="toggleAccordion('acc-4')">
+            <div class="accordion-header-inner">
+              <span class="accordion-num">04</span>
+              <div>
+                <h3>Crescimento progressivo</h3>
+                <p class="preview">Mais desempenho, mais peças, mais comissão.</p>
+              </div>
+            </div>
+            <div class="accordion-arrow">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>Conforme o seu desempenho, as peças do mostruário são renovadas e ampliadas — você pode escolher as peças que funcionam melhor para o seu perfil e o da sua clientela.</p>
+              <p>A comissão também cresce progressivamente, chegando a até 40% — e com metas acessíveis, ao contrário de outras marcas.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO -->
+  <section id="comparativo">
+    <div class="section-wrap">
+      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Por que a Renata?</h2>
+      <p class="section-subtitle reveal reveal-delay-2">O que as revendedoras nos contam sobre as marcas que deixaram — e o que encontram aqui.</p>
+
+      <div class="compare-grid">
+        <div class="compare-col before reveal reveal-delay-1">
+          <div class="compare-header">⚠️ &nbsp;O que elas sofriam</div>
+          <div class="compare-body">
+            <div class="compare-row"><span class="icon">✗</span> Peças com preço elevado — difíceis de vender</div>
+            <div class="compare-row"><span class="icon">✗</span> Poucas peças e mostruário fechado</div>
+            <div class="compare-row"><span class="icon">✗</span> Sem liberdade de escolha</div>
+            <div class="compare-row"><span class="icon">✗</span> Suporte pós-venda inexistente</div>
+            <div class="compare-row"><span class="icon">✗</span> Qualidade inconsistente</div>
+            <div class="compare-row"><span class="icon">✗</span> Comissão máxima praticamente inalcançável</div>
+          </div>
+        </div>
+        <div class="compare-col after reveal reveal-delay-2">
+          <div class="compare-header">✦ &nbsp;O que oferecemos</div>
+          <div class="compare-body">
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Preço competitivo — foco em peças do dia a dia</div>
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Mostruário amplo, variável por desempenho</div>
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Liberdade de escolher suas peças</div>
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Garantia clara e suporte efetivo</div>
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Qualidade garantida — ouro 18k, hipoalergênico</div>
+            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Comissão máxima fácil de atingir — até 40%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMISSÃO -->
+  <section id="comissao">
+    <div class="section-wrap">
+      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Comissão Progressiva</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Quanto mais você vende, mais você ganha. Simples assim.</p>
+
+      <div class="comissao-destaque reveal">
+        <div class="comissao-num">4<span>0</span><span style="font-size:0.5em;color:var(--gold)">%</span></div>
+        <div class="comissao-label">de comissão máxima</div>
+      </div>
+
+      <div class="comissao-cards">
+        <div class="comissao-card reveal reveal-delay-1">
+          <div class="comissao-card-title">Modelo</div>
+          <div class="comissao-card-value">Progressivo</div>
+          <div class="comissao-card-desc">Cresce conforme seu volume de vendas</div>
+        </div>
+        <div class="comissao-card reveal reveal-delay-2">
+          <div class="comissao-card-title">Diferencial</div>
+          <div class="comissao-card-value">Meta acessível</div>
+          <div class="comissao-card-desc">A comissão máxima é fácil de atingir na prática</div>
+        </div>
+        <div class="comissao-card reveal reveal-delay-3">
+          <div class="comissao-card-title">Prazo de acerto</div>
+          <div class="comissao-card-value">30–40 dias</div>
+          <div class="comissao-card-desc">Conforme o seu desempenho</div>
+        </div>
+        <div class="comissao-card reveal reveal-delay-4">
+          <div class="comissao-card-title">Parcelamento</div>
+          <div class="comissao-card-value">3x sem juros</div>
+          <div class="comissao-card-desc">No cartão, para você e para suas clientes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITOS (ACCORDION) -->
+  <section id="requisitos">
+    <div class="requisitos-wrap">
+      <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px;margin-bottom:8px">O que é preciso?</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Requisitos simples e transparentes.</p>
+
+      <div style="margin-top:36px">
+
+        <button class="requisito-toggle reveal" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Obrigatório</span>
+            CPF sem restrição
+          </span>
+          <div class="accordion-arrow" style="flex-shrink:0">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">O CPF será consultado durante o processo de análise. Candidatas com restrição podem se inscrever, mas a aprovação ficará sujeita a avaliação individual.</p>
+          </div>
+        </div>
+
+        <button class="requisito-toggle reveal reveal-delay-1" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Essencial</span>
+            Interesse genuíno em vendas
+          </span>
+          <div class="accordion-arrow" style="flex-shrink:0">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">Não é preciso ter experiência anterior. Mas é preciso ter vontade real de trabalhar, mostrar as peças e construir sua clientela.</p>
+          </div>
+        </div>
+
+        <button class="requisito-toggle reveal reveal-delay-2" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Importante</span>
+            Comprometimento e responsabilidade
+          </span>
+          <div class="accordion-arrow" style="flex-shrink:0">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">As semijoias da maleta são um bem de confiança. Esperamos cuidado no manuseio, organização nos acertos e pontualidade nos prazos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO (PRESERVADO DO ORIGINAL) -->
+  <section id="formulario">
+    <div class="form-header">
+      <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Seja uma Revendedora</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Preencha o formulário abaixo para se candidatar.<br>Entraremos em contato caso seu perfil seja selecionado.</p>
+    </div>
+
+    <div class="form-wrap reveal reveal-delay-2">
+      <form id="candidaturaForm" class="bg-white text-gray-800 p-6 md:p-8 rounded-xl shadow space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Nome Completo</label>
+                <input type="text" name="Nome" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu nome completo" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">WhatsApp</label>
+                <input type="tel" name="WhatsApp" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="(00) 00000-0000" required />
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">CPF</label>
+            <input type="text" name="CPF" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Informe corretamente seu CPF" required />
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-2 text-sm">Tem restrição em seu CPF? (Sujeito a análise)</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Sim</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Não</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Endereço</label>
+                <input type="text" name="Endereco" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Rua, número" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Bairro</label>
+                <input type="text" name="Bairro" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu bairro" required />
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Profissão</label>
+                <input type="text" name="Profissao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Sua profissão atual" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Estado Civil</label>
+                <select name="EstadoCivil" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                    <option value="">Selecione...</option>
+                    <option value="Solteira">Solteira</option>
+                    <option value="Casada">Casada</option>
+                    <option value="Divorciada">Divorciada</option>
+                    <option value="Viúva">Viúva</option>
+                    <option value="União Estável">União Estável</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-2 text-sm">Possui residência própria?</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="ResidenciaPropria" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Sim</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="ResidenciaPropria" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Não</span>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">Possui outro trabalho? Fale sobre:</label>
+            <textarea name="OutroTrabalho" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Descreva se possui outro trabalho ou digite 'Não' se não possui"></textarea>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">De 0 a 10, qual o seu nível de interesse em buscar uma renda extra com vendas?</label>
+            <select name="NivelInteresse" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                <option value="">Selecione...</option>
+                <option value="0">0 - Nenhum interesse</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10 - Muito interessada</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">Por que você quer ser uma revendedora?</label>
+            <textarea name="Motivacao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Conte um pouco sobre seus objetivos..." required></textarea>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded border border-gray-200">
+            <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" class="mt-1 mr-3 text-pink-600 focus:ring-pink-500" required>
+                <span class="text-sm text-gray-600">Li todas as informações acima e concordo com os requisitos para me tornar revendedora.</span>
+            </label>
+        </div>
+
+        <button type="submit" class="w-full bg-pink-600 text-white font-semibold py-4 rounded hover:bg-pink-700 transition shadow-lg text-lg">
+          Enviar Cadastro
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">Renata Semijoias &amp; Acessórios</div>
+    <div class="footer-info">© 2026 · Uberlândia – MG · Todos os direitos reservados</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // ── NAV SCROLL ──────────────────────────────────────────────
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ── SCROLL REVEAL ────────────────────────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ── ACCORDION ────────────────────────────────────────────────
+    function toggleAccordion(id) {
+      const item = document.getElementById(id);
+      const body = item.querySelector('.accordion-body');
+      const inner = item.querySelector('.accordion-body-inner');
+      const isOpen = item.classList.contains('open');
+      // close all
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.accordion-body').style.maxHeight = '0';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        body.style.maxHeight = inner.scrollHeight + 40 + 'px';
+      }
+    }
+
+    // ── REQUISITOS ACCORDION ─────────────────────────────────────
+    function toggleReq(btn) {
+      const body = btn.nextElementSibling;
+      const inner = body.querySelector('.requisito-body-inner');
+      const arrow = btn.querySelector('.accordion-arrow');
+      const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+      if (isOpen) {
+        body.style.maxHeight = '0';
+        arrow.style.transform = '';
+        arrow.style.background = '';
+        arrow.style.color = '';
+      } else {
+        body.style.maxHeight = inner.scrollHeight + 30 + 'px';
+        arrow.style.transform = 'rotate(180deg)';
+        arrow.style.background = 'var(--gold)';
+        arrow.style.color = 'white';
+      }
+    }
+
+    // ── CARROSSEL ────────────────────────────────────────────────
+    let carrIdx = 0;
+    const carrTotal = 3;
+    const carrTrack = document.getElementById('carrosselTrack');
+    const carrDotEls = document.querySelectorAll('.carr-dot');
+    function carrUpdate() {
+      carrTrack.style.transform = `translateX(-${carrIdx * 100}%)`;
+      carrDotEls.forEach((d, i) => d.classList.toggle('active', i === carrIdx));
+    }
+    function carrMove(dir) {
+      carrIdx = (carrIdx + dir + carrTotal) % carrTotal;
+      carrUpdate();
+    }
+    function carrGoTo(i) { carrIdx = i; carrUpdate(); }
+    setInterval(() => carrMove(1), 5000);
+
+    // ── FORMULÁRIO (ORIGINAL PRESERVADO) ────────────────────────
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
+
+    document.getElementById('candidaturaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+
+      submitBtn.innerHTML = 'Enviando...';
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+      const formData = new FormData(form);
+      const urlParams = new URLSearchParams(window.location.search);
+      const origem = urlParams.get('orig') || '';
+      formData.append('Origem', origem);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then(response => {
+          if (response.ok) return response.json();
+          throw new Error('Erro na resposta do servidor');
+        })
+        .then(data => {
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+          alert('Candidatura enviada com sucesso! Entraremos em contato em breve caso o seu perfil seja selecionado.');
+          form.reset();
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          submitBtn.innerHTML = originalBtnText;
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+          alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+        });
+    });
+  </script>
+
+  <!-- Tailwind apenas para classes utilitárias do formulário original -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+</html>
