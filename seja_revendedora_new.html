@@ -359,44 +359,6 @@
     }
     .vantagem-item span strong { color: var(--white); font-weight: 600; }
 
-    /* ── CARROSSEL ───────────────────────────────────────────── */
-    #galeria { position: relative; background: var(--cream-dark); overflow: hidden; }
-    .carrossel-wrap { position: relative; overflow: hidden; }
-    .carrossel-track {
-      display: flex;
-      transition: transform 0.55s cubic-bezier(.22,1,.36,1);
-    }
-    .carrossel-slide {
-      min-width: 100%; flex-shrink: 0;
-    }
-    .carr-btn {
-      position: absolute; top: 50%; transform: translateY(-50%);
-      background: rgba(251,246,239,0.9);
-      border: 1px solid rgba(194,152,90,0.3);
-      border-radius: 50%;
-      width: 48px; height: 48px;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer;
-      color: var(--burgundy);
-      transition: background 0.2s, transform 0.2s;
-      z-index: 2;
-    }
-    .carr-btn:hover { background: var(--white); transform: translateY(-50%) scale(1.08); }
-    .carr-btn-prev { left: 20px; }
-    .carr-btn-next { right: 20px; }
-    .carr-dots {
-      display: flex; gap: 8px; justify-content: center;
-      padding: 16px 0;
-      background: var(--cream-dark);
-    }
-    .carr-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: rgba(123,28,60,0.2);
-      border: none; cursor: pointer;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .carr-dot.active { background: var(--gold); transform: scale(1.3); }
-
     /* ── ACCORDION: COMO FUNCIONA ────────────────────────────── */
     #como-funciona {
       padding: 96px 0 80px;
@@ -891,33 +853,64 @@
     </div>
   </section>
 
-  <!-- CARROSSEL -->
-  <section id="galeria">
-    <div class="carrossel-wrap">
-      <div class="carrossel-track" id="carrosselTrack">
-        <div class="carrossel-slide">
-          <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 1</p></div>'"/>
-        </div>
-        <div class="carrossel-slide">
-          <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 2</p></div>'"/>
-        </div>
-        <div class="carrossel-slide">
-          <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" style="width:100%;display:block;max-height:600px;object-fit:cover" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:360px\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Foto da maleta 3</p></div>'"/>
-        </div>
+  <!-- CARROSSEL (código original preservado) -->
+  <section class="relative">
+    <div class="relative overflow-hidden">
+      <div id="carrossel" class="flex transition-transform duration-500 ease-in-out">
+        <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" class="w-full flex-shrink-0 block" />
+        <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" class="w-full flex-shrink-0 block" />
+        <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" class="w-full flex-shrink-0 block" />
       </div>
-      <button class="carr-btn carr-btn-prev" onclick="carrMove(-1)" aria-label="Anterior">
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-      </button>
-      <button class="carr-btn carr-btn-next" onclick="carrMove(1)" aria-label="Próxima">
-        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-      </button>
     </div>
-    <div class="carr-dots" id="carrDots">
-      <button class="carr-dot active" onclick="carrGoTo(0)"></button>
-      <button class="carr-dot" onclick="carrGoTo(1)"></button>
-      <button class="carr-dot" onclick="carrGoTo(2)"></button>
+
+    <button onclick="anterior()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+    <button onclick="proximo()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <button onclick="irPara(0)" class="indicador w-3 h-3 rounded-full bg-white shadow transition"></button>
+      <button onclick="irPara(1)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
+      <button onclick="irPara(2)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
     </div>
   </section>
+
+  <script>
+    let indiceAtual = 0;
+    const totalImagens = 3;
+    const carrossel = document.getElementById('carrossel');
+    const indicadores = document.querySelectorAll('.indicador');
+
+    function atualizarCarrossel() {
+      carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
+      indicadores.forEach((ind, i) => {
+        ind.style.backgroundColor = i === indiceAtual ? 'white' : 'rgba(255, 255, 255, 0.5)';
+      });
+    }
+
+    function proximo() {
+      indiceAtual = (indiceAtual + 1) % totalImagens;
+      atualizarCarrossel();
+    }
+
+    function anterior() {
+      indiceAtual = (indiceAtual - 1 + totalImagens) % totalImagens;
+      atualizarCarrossel();
+    }
+
+    function irPara(indice) {
+      indiceAtual = indice;
+      atualizarCarrossel();
+    }
+
+    setInterval(proximo, 5000);
+  </script>
 
   <!-- COMO FUNCIONA (ACCORDION) -->
   <section id="como-funciona">
@@ -1332,22 +1325,6 @@
         arrow.style.color = 'white';
       }
     }
-
-    // ── CARROSSEL ────────────────────────────────────────────────
-    let carrIdx = 0;
-    const carrTotal = 3;
-    const carrTrack = document.getElementById('carrosselTrack');
-    const carrDotEls = document.querySelectorAll('.carr-dot');
-    function carrUpdate() {
-      carrTrack.style.transform = `translateX(-${carrIdx * 100}%)`;
-      carrDotEls.forEach((d, i) => d.classList.toggle('active', i === carrIdx));
-    }
-    function carrMove(dir) {
-      carrIdx = (carrIdx + dir + carrTotal) % carrTotal;
-      carrUpdate();
-    }
-    function carrGoTo(i) { carrIdx = i; carrUpdate(); }
-    setInterval(() => carrMove(1), 5000);
 
     // ── FORMULÁRIO (ORIGINAL PRESERVADO) ────────────────────────
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
