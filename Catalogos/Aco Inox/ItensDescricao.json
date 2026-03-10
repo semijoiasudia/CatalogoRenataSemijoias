@@ -29,8 +29,8 @@
       "tipo": "Aço Inox",
       "imagem": "5969.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "120,00",
-      "precoConsignado": "120,00",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "09/03/2026"
     },
@@ -40,8 +40,8 @@
       "tipo": "Aço Inox",
       "imagem": "5968.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "120,00",
-      "precoConsignado": "120,00",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "09/03/2026"
     },
@@ -87,17 +87,6 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "28/02/2026"
-    },
-    {
-      "codigo": "5926",
-      "descricao": "INOX BRACELETE 2 OLHOS GREGOS - PRETO E CRAVEJADO",
-      "tipo": "Aço Inox",
-      "imagem": "5926.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
       "dataUltimaEntrada": "28/02/2026"
     },
     {
@@ -178,17 +167,6 @@
       "dataUltimaEntrada": "22/02/2026"
     },
     {
-      "codigo": "5892",
-      "descricao": "INOX BRACELETE MAXI VAZADO",
-      "tipo": "Aço Inox",
-      "imagem": "5892.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "120,00",
-      "precoConsignado": "120,00",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "18/02/2026"
-    },
-    {
       "codigo": "5720",
       "descricao": "INOX BRACELETE INSP. 3 TREVOS PRETOS E ZIRCÔNIAS",
       "tipo": "Aço Inox",
@@ -198,6 +176,17 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "09/02/2026"
+    },
+    {
+      "codigo": "5846",
+      "descricao": "INOX BRACELETE OLHOS GREGOS COLORIDOS",
+      "tipo": "Aço Inox",
+      "imagem": "5846.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "02/02/2026"
     },
     {
       "codigo": "5842",
