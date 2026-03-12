@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "5727",
+      "descricao": "CONJUNTO MEIA FLOR COM ZIRCÔNIA GOTA CRISTAL 40+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5727.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/12/2025"
+    },
+    {
       "codigo": "5678",
       "descricao": "CONJUNTO 3 TREVOS - VERDE 41CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -13,28 +24,6 @@
       "dataUltimaEntrada": "29/11/2025"
     },
     {
-      "codigo": "5677",
-      "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO 41CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5677.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "189,90",
-      "precoConsignado": "189,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "29/11/2025"
-    },
-    {
-      "codigo": "4449",
-      "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4449.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "198,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/11/2025"
-    },
-    {
       "codigo": "5660",
       "descricao": "CONJUNTO RETANGULAR VERDE E CRISTAL AO REDOR 40+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -43,6 +32,17 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5641",
+      "descricao": "CONJUNTO OVAL ORGÂNICO 40+4CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5641.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "23/11/2025"
     },
     {
@@ -66,6 +66,17 @@
       "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/11/2025"
+    },
+    {
+      "codigo": "5604",
+      "descricao": "CONJUNTO PEDRA RETANGULAR PRETA CRISTAL AO REDOR 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5604.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/11/2025"
     },
     {
       "codigo": "5426",
@@ -187,6 +198,17 @@
       "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "4908",
+      "descricao": "CONJUNTO GOTA ORGÂNICA TRABALHADA 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4908.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
     },
     {
       "codigo": "4813",

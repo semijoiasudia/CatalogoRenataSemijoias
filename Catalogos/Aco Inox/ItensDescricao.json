@@ -46,28 +46,6 @@
       "dataUltimaEntrada": "09/03/2026"
     },
     {
-      "codigo": "5931",
-      "descricao": "INOX BRACELETE INSPIRAÇÃO PREGO",
-      "tipo": "Aço Inox",
-      "imagem": "5931.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "28/02/2026"
-    },
-    {
-      "codigo": "5930",
-      "descricao": "INOX BRACELETE ESFERAS LISAS E DIAMANTADAS",
-      "tipo": "Aço Inox",
-      "imagem": "5930.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "28/02/2026"
-    },
-    {
       "codigo": "5929",
       "descricao": "INOX BRACELETE CORAÇÕES BRANCOS E CRISTAIS",
       "tipo": "Aço Inox",
@@ -90,25 +68,14 @@
       "dataUltimaEntrada": "28/02/2026"
     },
     {
-      "codigo": "5925",
+      "codigo": "5926",
       "descricao": "INOX BRACELETE 2 OLHOS GREGOS - PRETO E CRAVEJADO",
       "tipo": "Aço Inox",
-      "imagem": "5925.jpg",
+      "imagem": "5926.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "59,90",
       "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "28/02/2026"
-    },
-    {
-      "codigo": "5924",
-      "descricao": "INOX BRACELETE OLHOS GREGOS COLORIDOS",
-      "tipo": "Aço Inox",
-      "imagem": "5924.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "28/02/2026"
     },
     {
@@ -156,15 +123,15 @@
       "dataUltimaEntrada": "22/02/2026"
     },
     {
-      "codigo": "5918",
-      "descricao": "INOX COLAR PREGO INSPIRAÇÃO CART. 41+5CM",
+      "codigo": "5892",
+      "descricao": "INOX BRACELETE MAXI VAZADO",
       "tipo": "Aço Inox",
-      "imagem": "5918.jpg",
+      "imagem": "5892.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/02/2026"
+      "dataUltimaEntrada": "18/02/2026"
     },
     {
       "codigo": "5720",
@@ -176,6 +143,28 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "09/02/2026"
+    },
+    {
+      "codigo": "5861",
+      "descricao": "INOX BRINCO TREVO VERMELHO",
+      "tipo": "Aço Inox",
+      "imagem": "5861.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "07/02/2026"
+    },
+    {
+      "codigo": "5858",
+      "descricao": "INOX BRINCO TREVO VERDE MALAQUITA",
+      "tipo": "Aço Inox",
+      "imagem": "5858.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "07/02/2026"
     },
     {
       "codigo": "5846",
@@ -244,6 +233,17 @@
       "dataUltimaEntrada": "30/01/2026"
     },
     {
+      "codigo": "5246",
+      "descricao": "INOX BRACELETE PREGO INSPIRAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "5246.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
+    },
+    {
       "codigo": "5813",
       "descricao": "INOX BRINCO TRIO HELLO KITTY",
       "tipo": "Aço Inox",
@@ -277,6 +277,17 @@
       "dataUltimaEntrada": "21/01/2026"
     },
     {
+      "codigo": "5803",
+      "descricao": "INOX BRINCO TREVO PRETO",
+      "tipo": "Aço Inox",
+      "imagem": "5803.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "29,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/01/2026"
+    },
+    {
       "codigo": "5802",
       "descricao": "INOX BRINCO TREVO VERMELHO",
       "tipo": "Aço Inox",
@@ -308,6 +319,17 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "30/12/2025"
+    },
+    {
+      "codigo": "5789",
+      "descricao": "INOX BRINCO TRIO TREVO BRANCO PEROLADO",
+      "tipo": "Aço Inox",
+      "imagem": "5789.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "64,90",
+      "precoConsignado": "64,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/12/2025"
     },
     {
       "codigo": "5397",
@@ -365,17 +387,6 @@
       "dataUltimaEntrada": "29/11/2025"
     },
     {
-      "codigo": "5379",
-      "descricao": "INOX BRACELETE 1 TREVO BRANCO PEROLADO",
-      "tipo": "Aço Inox",
-      "imagem": "5379.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "06/11/2025"
-    },
-    {
       "codigo": "5281",
       "descricao": "INOX CONJUNTO TREVO LV PRETO 40+5CM",
       "tipo": "Aço Inox",
@@ -398,24 +409,24 @@
       "dataUltimaEntrada": "31/10/2025"
     },
     {
-      "codigo": "5265",
-      "descricao": "INOX DUO BRINCO BORBOLETA E PONTO DE LUZ",
+      "codigo": "5253",
+      "descricao": "INOX BRINCO TRIO INSP CHAN.",
       "tipo": "Aço Inox",
-      "imagem": "5265.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/10/2025"
-    },
-    {
-      "codigo": "5260",
-      "descricao": "INOX DUO BRINCO TREVO PRETO E TREVO LISO",
-      "tipo": "Aço Inox",
-      "imagem": "5260.jpg",
+      "imagem": "5253.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "39,90",
       "precoConsignado": "39,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/10/2025"
+    },
+    {
+      "codigo": "5252",
+      "descricao": "INOX CONJUNTO GOTA LILÁS 45CM",
+      "tipo": "Aço Inox",
+      "imagem": "5252.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "31/10/2025"
     },
