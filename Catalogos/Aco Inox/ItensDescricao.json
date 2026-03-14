@@ -134,6 +134,17 @@
       "dataUltimaEntrada": "18/02/2026"
     },
     {
+      "codigo": "5880",
+      "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "5880.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "11/02/2026"
+    },
+    {
       "codigo": "5720",
       "descricao": "INOX BRACELETE INSP. 3 TREVOS PRETOS E ZIRCÔNIAS",
       "tipo": "Aço Inox",
@@ -171,6 +182,17 @@
       "descricao": "INOX BRACELETE OLHOS GREGOS COLORIDOS",
       "tipo": "Aço Inox",
       "imagem": "5846.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "02/02/2026"
+    },
+    {
+      "codigo": "5844",
+      "descricao": "INOX BRACELETE 2 TREVOS BRANCOS",
+      "tipo": "Aço Inox",
+      "imagem": "5844.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "59,90",
       "precoConsignado": "59,90",
@@ -226,17 +248,6 @@
       "descricao": "INOX BRACELETE CABO DE AÇO 1 MEDALHA SÃO BENTO",
       "tipo": "Aço Inox",
       "imagem": "5372.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/01/2026"
-    },
-    {
-      "codigo": "5246",
-      "descricao": "INOX BRACELETE PREGO INSPIRAÇÃO",
-      "tipo": "Aço Inox",
-      "imagem": "5246.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "59,90",
       "precoConsignado": "59,90",
@@ -321,28 +332,6 @@
       "dataUltimaEntrada": "30/12/2025"
     },
     {
-      "codigo": "5789",
-      "descricao": "INOX BRINCO TRIO TREVO BRANCO PEROLADO",
-      "tipo": "Aço Inox",
-      "imagem": "5789.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "64,90",
-      "precoConsignado": "64,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "26/12/2025"
-    },
-    {
-      "codigo": "5397",
-      "descricao": "INOX BRINCO TRIO TREVO BRANCO PEROLADO",
-      "tipo": "Aço Inox",
-      "imagem": "5397.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "64,90",
-      "precoConsignado": "64,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "26/12/2025"
-    },
-    {
       "codigo": "5375",
       "descricao": "INOX BRACELETE INSPIRAÇÃO YSL",
       "tipo": "Aço Inox",
@@ -385,6 +374,17 @@
       "precoConsignado": "69,90",
       "banho": "Inox",
       "dataUltimaEntrada": "29/11/2025"
+    },
+    {
+      "codigo": "5416",
+      "descricao": "INOX PULSEIRA GRAVATINHA 2 TREVOS BRANCOS PEROLADOS",
+      "tipo": "Aço Inox",
+      "imagem": "5416.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "06/11/2025"
     },
     {
       "codigo": "5281",
