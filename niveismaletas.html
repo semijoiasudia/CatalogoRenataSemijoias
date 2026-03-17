@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maletas - Níveis de Revendedoras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf8f2;
+      color: #2c2c2a;
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2c2c2a;
+      margin: 0 0 4px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: #888780;
+      margin: 0 0 1.5rem;
+    }
+
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+      font-size: 11px;
+      color: #888780;
+    }
+
+    .legend-bar {
+      display: inline-block;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(to right, #FAEEDA, #412402);
+      border-radius: 2px;
+    }
+
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+
+    .tier-card {
+      background: #ffffff;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .tier-card:hover {
+      border-color: #b4b2a9;
+    }
+
+    .tier-card.destaque {
+      border-color: #BA7517;
+    }
+
+    .tier-header {
+      padding: 14px 16px 10px;
+      border-bottom: 0.5px solid #d3d1c7;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .tier-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2c2c2a;
+      margin: 0;
+    }
+
+    .tier-range {
+      font-size: 12px;
+      color: #888780;
+      margin: 2px 0 0;
+    }
+
+    .tier-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .tier-body {
+      padding: 12px 16px 14px;
+    }
+
+    .progress-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .progress-bar {
+      flex: 1;
+      height: 4px;
+      background: #f1efe8;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 2px;
+    }
+
+    .progress-label {
+      font-size: 11px;
+      color: #888780;
+      white-space: nowrap;
+    }
+
+    .section-label {
+      font-size: 11px;
+      color: #b4b2a9;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0 0 4px;
+    }
+
+    .pieces-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .pieces-num {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .pieces-label {
+      font-size: 13px;
+      color: #888780;
+    }
+
+    .renewal-row {
+      font-size: 12px;
+      color: #888780;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 0.5px solid #d3d1c7;
+    }
+
+    .extras-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .extras-list li {
+      font-size: 12px;
+      color: #888780;
+      padding: 2px 0 2px 14px;
+      position: relative;
+    }
+
+    .extras-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #b4b2a9;
+    }
+
+    /* Badges por nível */
+    .badge-n1 { background: #FAEEDA; color: #633806; }
+    .badge-n2 { background: #FAC775; color: #412402; }
+    .badge-n3 { background: #EF9F27; color: #412402; }
+    .badge-n4 { background: #BA7517; color: #FAEEDA; }
+    .badge-n5 { background: #854F0B; color: #FAEEDA; }
+    .badge-n6 { background: #412402; color: #FAC775; }
+
+    /* Número de peças por nível */
+    .num-n1 { color: #BA7517; }
+    .num-n2 { color: #BA7517; }
+    .num-n3 { color: #854F0B; }
+    .num-n4 { color: #854F0B; }
+    .num-n5 { color: #633806; }
+    .num-n6 { color: #412402; }
+
+    /* Barras por nível */
+    .bar-n1 { background: #FAEEDA; }
+    .bar-n2 { background: #FAC775; }
+    .bar-n3 { background: #EF9F27; }
+    .bar-n4 { background: #BA7517; }
+    .bar-n5 { background: #854F0B; }
+    .bar-n6 { background: #412402; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <h2 class="section-title">Níveis de Maletas</h2>
+    <p class="section-subtitle">Quantidade de peças de acordo com as vendas mensais da revendedora</p>
+
+    <div class="legend">
+      <span class="legend-bar"></span>
+      crescimento da maleta conforme as vendas
+    </div>
+
+    <div class="tier-grid">
+
+      <!-- Nível 1 - Mínima -->
+      <div class="tier-card">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Inicial</p>
+            <p class="tier-range">Vendas: até 7 peças/mês</p>
+          </div>
+          <span class="tier-badge badge-n1">Nível 1</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n1" style="width:17%;"></div></div>
+            <span class="progress-label">17%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n1">30</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova o mínimo de peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+            <li>Entrega</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nível 2 - Extra P -->
+      <div class="tier-card">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Bronze</p>
+            <p class="tier-range">Vendas: 8 a 11 peças/mês</p>
+          </div>
+          <span class="tier-badge badge-n2">Nível 2</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n2" style="width:33%;"></div></div>
+            <span class="progress-label">33%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n2">40</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova algumas peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nível 3 - Pequena -->
+      <div class="tier-card">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Prata</p>
+            <p class="tier-range">Vendas: 12 a 15 peças/mês</p>
+          </div>
+          <span class="tier-badge badge-n3">Nível 3</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n3" style="width:50%;"></div></div>
+            <span class="progress-label">50%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n3">50</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova algumas peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nível 4 - Média -->
+      <div class="tier-card">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Ouro</p>
+            <p class="tier-range">Vendas: 16 a 19 peças/mês</p>
+          </div>
+          <span class="tier-badge badge-n4">Nível 4</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n4" style="width:67%;"></div></div>
+            <span class="progress-label">67%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n4">60</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova algumas peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+            <li>Algumas novidades</li>
+            <li>Escolhe algumas peças</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nível 5 - Grande -->
+      <div class="tier-card">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Diamante</p>
+            <p class="tier-range">Vendas: 20 a 29 peças/mês</p>
+          </div>
+          <span class="tier-badge badge-n5">Nível 5</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n5" style="width:83%;"></div></div>
+            <span class="progress-label">83%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n5">70</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova muitas peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+            <li>Novidades</li>
+            <li>Escolhe todas as peças</li>
+            <li>Complementos durante o mês</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Nível 6 - Extra Grande -->
+      <div class="tier-card destaque">
+        <div class="tier-header">
+          <div>
+            <p class="tier-name">Elite</p>
+            <p class="tier-range">Vendas: 30 peças/mês ou mais</p>
+          </div>
+          <span class="tier-badge badge-n6">Nível 6</span>
+        </div>
+        <div class="tier-body">
+          <div class="progress-bar-wrap">
+            <div class="progress-bar"><div class="progress-fill bar-n6" style="width:100%;"></div></div>
+            <span class="progress-label">100%</span>
+          </div>
+          <p class="section-label">peças na maleta</p>
+          <div class="pieces-row">
+            <span class="pieces-num num-n6">80</span>
+            <span class="pieces-label">peças</span>
+          </div>
+          <div class="renewal-row">Renova muitas peças</div>
+          <p class="section-label">extras</p>
+          <ul class="extras-list">
+            <li>Catálogo</li>
+            <li>Novidades</li>
+            <li>Escolhe todas as peças</li>
+            <li>Complementos durante o mês</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
