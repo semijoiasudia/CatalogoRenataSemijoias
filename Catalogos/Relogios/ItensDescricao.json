@@ -2,6 +2,96 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6002",
+      "descricao": "RELOGIO LINHA FASHION - INSPIRAÇÃO COBRA CRAVEJADO",
+      "imagem": "6002.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6001",
+      "descricao": "RELOGIO LINHA FASHION - OVAL CRAVAJADO",
+      "imagem": "6001.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6000",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
+      "imagem": "6000.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5999",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5999.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5998",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5998.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5997",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. LISO",
+      "imagem": "5997.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5996",
+      "descricao": "RELOGIO REDONDO - NÚMEROS - FUNDO DOURADO - LINHA GOLD",
+      "imagem": "5996.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5995",
+      "descricao": "RELOGIO REDONDO - NÚMEROS - FUNDO PRETO - LINHA GOLD",
+      "imagem": "5995.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5994",
+      "descricao": "RELOGIO REDONDO - NÚMEROS - FUNDO PRETO - LINHA GOLD",
+      "imagem": "5994.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
       "codigo": "5979",
       "descricao": "RELOGIO DHP MALHA ITALIANA - UNISSEX - FUNDO PRETO",
       "imagem": "5979.jpg",
@@ -15,6 +105,16 @@
       "codigo": "5976",
       "descricao": "RELOGIO XUF. REDONDO - FUNDO PRETO - UNISSEX - 2 CORES",
       "imagem": "5976.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/03/2026"
+    },
+    {
+      "codigo": "5975",
+      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
+      "imagem": "5975.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "169,90",
       "precoConsignado": "169,90",

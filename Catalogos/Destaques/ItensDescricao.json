@@ -2,6 +2,16 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6000",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
+      "imagem": "6000.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
       "codigo": "5962",
       "descricao": "BRINCO ARGOLA PREGO CRAVEJADO TAM P ",
       "tipo": "Semijoia banhada a Ouro 18k",
