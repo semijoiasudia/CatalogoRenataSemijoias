@@ -2,13 +2,58 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
-      "codigo": "6000",
-      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
-      "imagem": "6000.jpg",
+      "codigo": "6014",
+      "descricao": "ANEL REGULÁVEL ZIRCONIA CORAÇÃO E CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6014.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6013",
+      "descricao": "ANEL REGULÁVEL DUPLO BOLINHAS E CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6013.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "102,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6012",
+      "descricao": "ANEL REGULÁVEL PONTO DE LUZ E CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6012.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6010",
+      "descricao": "ANEL REGULÁVEL OVAL CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6010.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6009",
+      "descricao": "ANEL REGULÁVEL 3 TREVOS COLORIDOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6009.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/03/2026"
     },
     {
