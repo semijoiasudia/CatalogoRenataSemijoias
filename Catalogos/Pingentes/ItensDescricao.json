@@ -2,13 +2,123 @@
   "categoria": "PINGENTE",
   "produtos": [
     {
+      "codigo": "6031",
+      "descricao": "PINGENTE PONTO DE LUZ CRISTAL M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6031.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/04/2026"
+    },
+    {
+      "codigo": "6030",
+      "descricao": "PINGENTE CORACAO CRAVEJADO E CORACAO LISO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6030.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/04/2026"
+    },
+    {
+      "codigo": "5140",
+      "descricao": "PINGENTE URSINHO COM CORAÇÃO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5140.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "62,90",
+      "precoConsignado": "62,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5139",
+      "descricao": "PINGENTE URSINHO COM CORAÇÃO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5139.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "62,90",
+      "precoConsignado": "62,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "4749",
+      "descricao": "PINGENTE CRUCIFIXO JESUS CRISTO 30MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4749.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "56,90",
+      "precoConsignado": "56,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4748",
+      "descricao": "PINGENTE CRUCIFIXO JESUS CRISTO 30MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4748.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4747",
+      "descricao": "PINGENTE INFANTIL VESTIDO CIND",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4747.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "49,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
+    },
+    {
+      "codigo": "4737",
+      "descricao": "PINGENTE BOTÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4737.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "04/08/2025"
+    },
+    {
+      "codigo": "4736",
+      "descricao": "PINGENTE CORAÇÃO ABAULADO COM ZIRCONIA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4736.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "42,90",
+      "precoConsignado": "42,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "04/08/2025"
+    },
+    {
+      "codigo": "3488",
+      "descricao": "PINGENTE GOTA CRISTAL M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3488.jpg",
+      "pastaFotos": "Catalogos/Pingentes/",
+      "preco": "42,90",
+      "precoConsignado": "42,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/09/2024"
+    },
+    {
       "codigo": "3271",
       "descricao": "PINGENTE FLOR ORGANICA",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "3271.jpg",
       "pastaFotos": "Catalogos/Pingentes/",
-      "preco": "54,90",
-      "precoConsignado": "54,90",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "01/07/2024"
     }

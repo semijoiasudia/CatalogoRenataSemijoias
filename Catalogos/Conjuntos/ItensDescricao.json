@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6022",
+      "descricao": "CONJUNTO CORAÇÃO COM PONTO DE LUZ 48+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6022.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/04/2026"
+    },
+    {
       "codigo": "5727",
       "descricao": "CONJUNTO MEIA FLOR COM ZIRCÔNIA GOTA CRISTAL 40+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -109,6 +120,28 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5165",
+      "descricao": "CONJUNTO CORAÇÃO COM FURINHOS 45CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5165.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "5163",
+      "descricao": "CONJUNTO TREVO PEDRA CRISTAL 45CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5163.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "24/10/2025"
     },
     {
