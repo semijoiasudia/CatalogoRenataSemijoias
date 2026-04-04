@@ -42,16 +42,6 @@
       "dataUltimaEntrada": "31/03/2026"
     },
     {
-      "codigo": "5998",
-      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
-      "imagem": "5998.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
       "codigo": "5997",
       "descricao": "RELOGIO DHP QUADRADO PEQ. LISO",
       "imagem": "5997.jpg",
@@ -120,6 +110,16 @@
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "13/02/2026"
+    },
+    {
+      "codigo": "5877",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO BRANCO",
+      "imagem": "5877.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/02/2026"
     },
     {
       "codigo": "5875",
