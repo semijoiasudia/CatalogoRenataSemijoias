@@ -2,6 +2,94 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6042",
+      "descricao": "INOX BRACELETE INSPIRAÇÃO TIFFANY",
+      "tipo": "Aço Inox",
+      "imagem": "6042.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "06/04/2026"
+    },
+    {
+      "codigo": "6041",
+      "descricao": "INOX BRACELETE INSPIRAÇÃO TIFFANY",
+      "tipo": "Aço Inox",
+      "imagem": "6041.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "06/04/2026"
+    },
+    {
+      "codigo": "6040",
+      "descricao": "CONJUNTO CORAÇÃO VERDE ESMERALDA CRAVEJADO 44+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6040.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "142,90",
+      "precoConsignado": "142,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/04/2026"
+    },
+    {
+      "codigo": "6039",
+      "descricao": "CONJUNTO PEDRA VERDE TURMALINA CRAVEJADA 44+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6039.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/04/2026"
+    },
+    {
+      "codigo": "6035",
+      "descricao": "INOX BRACELETE 5 TREVOS PRETOS",
+      "tipo": "Aço Inox",
+      "imagem": "6035.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "03/04/2026"
+    },
+    {
+      "codigo": "6034",
+      "descricao": "INOX BRACELETE CÍRCULO PRETO E PEDRA CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6034.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "03/04/2026"
+    },
+    {
+      "codigo": "6033",
+      "descricao": "INOX BRACELETE CORAÇÃO PRETO",
+      "tipo": "Aço Inox",
+      "imagem": "6033.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "03/04/2026"
+    },
+    {
+      "codigo": "6032",
+      "descricao": "INOX BRACELETE CORAÇÃO PRETO",
+      "tipo": "Aço Inox",
+      "imagem": "6032.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "03/04/2026"
+    },
+    {
       "codigo": "6031",
       "descricao": "PINGENTE PONTO DE LUZ CRISTAL M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -773,17 +861,6 @@
       "dataUltimaEntrada": "22/02/2026"
     },
     {
-      "codigo": "5893",
-      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5893.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/02/2026"
-    },
-    {
       "codigo": "5892",
       "descricao": "INOX BRACELETE MAXI VAZADO",
       "tipo": "Aço Inox",
@@ -1384,17 +1461,6 @@
       "dataUltimaEntrada": "20/11/2025"
     },
     {
-      "codigo": "5575",
-      "descricao": "BRINCO TRIO TREVO 4 FOLHAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5575.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
       "codigo": "5569",
       "descricao": "BRINCO CORAÇÃO VAZADO PP COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1733,17 +1799,6 @@
       "preco": "44,90",
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/11/2025"
-    },
-    {
-      "codigo": "5491",
-      "descricao": "BRINCO GOTA VAZADA COM ZIRCÔNIA GOTA CRISTAL",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5491.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "14/11/2025"
     },
     {
@@ -2132,17 +2187,6 @@
       "dataUltimaEntrada": "02/11/2025"
     },
     {
-      "codigo": "5302",
-      "descricao": "PULSEIRA CIGANINHA NAVETES COLORIDAS 18+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5302.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
       "codigo": "5300",
       "descricao": "COLAR LONGO ELOS OVAIS 6X3MM 70+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2363,17 +2407,6 @@
       "dataUltimaEntrada": "24/10/2025"
     },
     {
-      "codigo": "5168",
-      "descricao": "COLAR PATINHA 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5168.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "94,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
-    },
-    {
       "codigo": "5167",
       "descricao": "CONJUNTO PATINHA 45CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -2484,6 +2517,17 @@
       "dataUltimaEntrada": "31/03/2026"
     },
     {
+      "codigo": "5140",
+      "descricao": "PINGENTE URSINHO COM CORAÇÃO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5140.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "62,90",
+      "precoConsignado": "62,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "19/10/2025"
+    },
+    {
       "codigo": "5139",
       "descricao": "PINGENTE URSINHO COM CORAÇÃO CRAVEJADO CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2514,17 +2558,6 @@
       "preco": "52,90",
       "precoConsignado": "52,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
-      "codigo": "5134",
-      "descricao": "BRINCO INFANTIL / ADULTO BORBOLETA PP CRAVEJADA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5134.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "44,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "19/10/2025"
     },
     {
@@ -2624,17 +2657,6 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
-      "codigo": "5096",
-      "descricao": "ANEL FIO ONDULADO E 2 FOLHAS CRAVEJADAS -TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5096.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "74,90",
-      "precoConsignado": "74,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "19/10/2025"
     },
     {
@@ -2833,17 +2855,6 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "5025",
-      "descricao": "BRINCO TRIO TREVO PÉROLA AMARELA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5025.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/10/2025"
     },
     {
@@ -3053,17 +3064,6 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
-    },
-    {
-      "codigo": "4939",
-      "descricao": "BRINCO OLHO GREGO BASE ALTA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4939.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "27/09/2025"
     },
     {
@@ -3419,13 +3419,13 @@
       "dataUltimaEntrada": "10/08/2025"
     },
     {
-      "codigo": "4781",
-      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS TAM P",
+      "codigo": "4784",
+      "descricao": "BRINCO EAR CUFF BORBOLETA E ZIRCÔNIAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4781.jpg",
+      "imagem": "4784.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "64,90",
-      "precoConsignado": "64,90",
+      "preco": "74,90",
+      "precoConsignado": "74,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -3549,17 +3549,6 @@
       "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4692",
-      "descricao": "PULSEIRA ELOS E ESFERAS 17+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4692.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "102,90",
-      "precoConsignado": "102,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "4690",
@@ -3782,17 +3771,6 @@
       "dataUltimaEntrada": "17/07/2025"
     },
     {
-      "codigo": "4582",
-      "descricao": "BRINCO CASCATA PÉROLAS E CORAÇÃO",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4582.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "92,90",
-      "precoConsignado": "92,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "17/07/2025"
-    },
-    {
       "codigo": "4538",
       "descricao": "BRINCO ELOS LISO E CRAVEJADO CRISTAL PP",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -3945,17 +3923,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/08/2025"
-    },
-    {
-      "codigo": "3578",
-      "descricao": "PULSEIRA ELOS TORCIDOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3578.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "3284",
