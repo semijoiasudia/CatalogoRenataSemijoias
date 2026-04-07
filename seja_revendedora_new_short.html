@@ -329,7 +329,14 @@
             </div>
             <div>
                 <label class="block text-gray-700 font-medium mb-1 text-sm">WhatsApp</label>
-                <input type="tel" name="WhatsApp" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="(00) 00000-0000" required />
+                <input type="tel" id="whatsappInput" name="WhatsApp"
+                  class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+                  placeholder="(00) 00000-0000"
+                  maxlength="15"
+                  inputmode="numeric"
+                  autocomplete="off"
+                  required />
+                <span id="whatsappErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
             </div>
         </div>
 
@@ -820,6 +827,36 @@
     function irPara(i) { indiceAtual = i; atualizarCarrossel(); }
     setInterval(proximo, 5000);
 
+    // ── TELEFONE: MÁSCARA E VALIDAÇÃO ────────────────────────────
+    function mascaraTelefone(v) {
+      v = v.replace(/\D/g, '').substring(0, 11);
+      if (v.length > 10)     v = v.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+      else if (v.length > 6) v = v.replace(/(\d{2})(\d{4,5})(\d{0,4})/, '($1) $2-$3');
+      else if (v.length > 2) v = v.replace(/(\d{2})(\d+)/, '($1) $2');
+      else if (v.length > 0) v = v.replace(/(\d+)/, '($1');
+      return v;
+    }
+
+    function validarTelefone(v) {
+      return v.replace(/\D/g, '').length >= 10;
+    }
+
+    const whatsappInput = document.getElementById('whatsappInput');
+    const whatsappErro  = document.getElementById('whatsappErro');
+
+    whatsappInput.addEventListener('input', function () {
+      this.value = mascaraTelefone(this.value);
+      whatsappErro.style.display = 'none';
+      this.style.borderColor = '';
+    });
+
+    whatsappInput.addEventListener('blur', function () {
+      const ok = validarTelefone(this.value);
+      whatsappErro.textContent   = ok ? '' : 'Número inválido. Informe DDD + número (mínimo 10 dígitos).';
+      whatsappErro.style.display = ok ? 'none' : 'block';
+      this.style.borderColor     = ok ? '' : '#c0392b';
+    });
+
     // ── CPF: MÁSCARA E VALIDAÇÃO ─────────────────────────────────
     function mascaraCPF(v) {
       v = v.replace(/\D/g, '').substring(0, 11);
@@ -865,6 +902,17 @@
 
     document.getElementById('candidaturaForm').addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // Bloqueia envio se telefone inválido
+      if (!validarTelefone(document.getElementById('whatsappInput').value)) {
+        const inp = document.getElementById('whatsappInput');
+        const err = document.getElementById('whatsappErro');
+        err.textContent   = 'Número inválido. Informe DDD + número (mínimo 10 dígitos).';
+        err.style.display = 'block';
+        inp.style.borderColor = '#c0392b';
+        inp.focus();
+        return;
+      }
 
       // Bloqueia envio se CPF inválido
       if (!validarCPF(document.getElementById('cpfInput').value)) {
