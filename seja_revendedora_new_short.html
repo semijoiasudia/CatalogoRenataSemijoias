@@ -335,7 +335,14 @@
 
         <div>
             <label class="block text-gray-700 font-medium mb-1 text-sm">CPF</label>
-            <input type="text" name="CPF" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Informe corretamente seu CPF" required />
+            <input type="text" id="cpfInput" name="CPF"
+              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+              placeholder="000.000.000-00"
+              maxlength="14"
+              inputmode="numeric"
+              autocomplete="off"
+              required />
+            <span id="cpfErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
         </div>
 
         <div>
@@ -813,11 +820,63 @@
     function irPara(i) { indiceAtual = i; atualizarCarrossel(); }
     setInterval(proximo, 5000);
 
+    // ── CPF: MÁSCARA E VALIDAÇÃO ─────────────────────────────────
+    function mascaraCPF(v) {
+      v = v.replace(/\D/g, '').substring(0, 11);
+      if (v.length > 9)      v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+      else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+      else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+      return v;
+    }
+
+    function validarCPF(cpf) {
+      cpf = cpf.replace(/\D/g, '');
+      if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
+      let soma = 0, resto;
+      for (let i = 1; i <= 9; i++) soma += parseInt(cpf[i - 1]) * (11 - i);
+      resto = (soma * 10) % 11;
+      if (resto === 10 || resto === 11) resto = 0;
+      if (resto !== parseInt(cpf[9])) return false;
+      soma = 0;
+      for (let i = 1; i <= 10; i++) soma += parseInt(cpf[i - 1]) * (12 - i);
+      resto = (soma * 10) % 11;
+      if (resto === 10 || resto === 11) resto = 0;
+      return resto === parseInt(cpf[10]);
+    }
+
+    const cpfInput = document.getElementById('cpfInput');
+    const cpfErro  = document.getElementById('cpfErro');
+
+    cpfInput.addEventListener('input', function () {
+      this.value = mascaraCPF(this.value);
+      cpfErro.style.display = 'none';
+      this.style.borderColor = '';
+    });
+
+    cpfInput.addEventListener('blur', function () {
+      const ok = validarCPF(this.value);
+      cpfErro.textContent  = ok ? '' : 'CPF inválido. Verifique os números digitados.';
+      cpfErro.style.display = ok ? 'none' : 'block';
+      this.style.borderColor = ok ? '' : '#c0392b';
+    });
+
     // ── FORMULÁRIO (ORIGINAL PRESERVADO) ────────────────────────
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
 
     document.getElementById('candidaturaForm').addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // Bloqueia envio se CPF inválido
+      if (!validarCPF(document.getElementById('cpfInput').value)) {
+        const inp = document.getElementById('cpfInput');
+        const err = document.getElementById('cpfErro');
+        err.textContent   = 'CPF inválido. Corrija antes de enviar.';
+        err.style.display = 'block';
+        inp.style.borderColor = '#c0392b';
+        inp.focus();
+        return;
+      }
+
       const form = this;
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
