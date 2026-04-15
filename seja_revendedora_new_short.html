@@ -55,13 +55,6 @@
     .hero-sub { font-size: 1.05rem; font-weight: 300; color: var(--muted); max-width: 520px; line-height: 1.7; position: relative; z-index: 1; margin: 28px auto 44px; }
     .hero-sub strong { color: var(--ink); font-weight: 500; }
 
-    /* ── HERO CTAs ───────────────────────────────────────────── */
-    .hero-ctas { display: flex; gap: 14px; align-items: center; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1; }
-    .btn-primary { display: inline-block; background: var(--gold); color: var(--white); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 16px 40px; border-radius: 2px; text-decoration: none; transition: background 0.25s, transform 0.2s, box-shadow 0.25s; box-shadow: 0 4px 20px rgba(194,152,90,0.35); }
-    .btn-primary:hover { background: var(--white); color: var(--burgundy); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(194,152,90,0.3); }
-    .btn-secondary { display: inline-block; background: transparent; color: var(--burgundy); border: 1px solid rgba(255,255,255,0.35); font-size: 0.82rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 15px 32px; border-radius: 2px; text-decoration: none; transition: background 0.25s, border-color: rgba(123,28,60,0.35); }
-    .btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); color: var(--white); }
-
     .hero-badges { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; margin-top: 56px; position: relative; z-index: 1; }
     .hero-badge { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.8rem; }
     .hero-badge span.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
@@ -193,12 +186,9 @@
       nav { padding: 16px 20px; }
       .detail-panel-header { padding: 20px 22px; }
       .detail-panel-inner { padding: 0 22px 28px; padding-top: 24px; }
-      .scroll-hint { bottom: 10px; }  /* ← aqui dentro */
-      
+      .scroll-hint { bottom: 10px; }
     }
     @media (max-width: 480px) {
-      .hero-ctas { flex-direction: column; width: 100%; }
-      .btn-primary, .btn-secondary { width: 100%; text-align: center; }
       .detail-panel-num { display: none; }
     }
   </style>
@@ -227,11 +217,7 @@
     <p class="hero-sub reveal reveal-delay-1">
       Comece <strong>sem investir nada</strong> e venda semijoias de qualidade com preço competitivo, suporte completo e comissão de até <strong>40%</strong>.
     </p>
-    <div class="hero-ctas reveal reveal-delay-2">
-      <a href="#formulario" class="btn-primary">Quero ser revendedora</a>
-      <a href="#detalhes" class="btn-secondary">Quero ler mais detalhes</a>
-    </div>
-    <div class="hero-badges reveal reveal-delay-3">
+    <div class="hero-badges reveal reveal-delay-2">
       <span class="hero-badge"><span class="dot"></span> Sem investimento inicial</span>
       <span class="hero-badge"><span class="dot"></span> Catálogo exclusivo</span>
       <span class="hero-badge"><span class="dot"></span> Suporte completo</span>
@@ -248,208 +234,7 @@
     <img src="imagens/maleta_completa.jpg" alt="Maleta completa de semijoias Renata" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:400px\'><svg width=\'48\' height=\'48\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Inserir foto da maleta aqui</p></div>'"/>
   </div>
 
-  <!-- TRANSIÇÃO MALETA → REQUISITOS -->
-  <div class="maleta-transition reveal">
-    <div class="gold-divider" style="max-width:180px;margin:0 auto"><div class="gold-divider-diamond"></div></div>
-    <p>Antes de preencher o formulário, verifique se você se enquadra nos requisitos abaixo.</p>
-  </div>
-
-  <!-- REQUISITOS -->
-  <section id="requisitos">
-    <div class="requisitos-wrap">
-      <h2 class="section-title reveal" style="margin-bottom:8px">O que é preciso?</h2>
-      <p class="section-subtitle reveal reveal-delay-1">Requisitos simples e transparentes.</p>
-
-      <div style="margin-top:36px">
-
-        <button class="requisito-toggle reveal" onclick="toggleReq(this)">
-          <span class="requisito-toggle-label">
-            <span class="req-badge">Preferência</span>
-            CPF sem restrição
-          </span>
-          <div class="accordion-arrow">
-            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
-          </div>
-        </button>
-        <div class="requisito-body">
-          <div class="requisito-body-inner">
-            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">O CPF será consultado durante o processo de análise. Candidatas com restrição podem se inscrever, mas a aprovação ficará sujeita a avaliação individual.</p>
-          </div>
-        </div>
-
-        <button class="requisito-toggle reveal reveal-delay-1" onclick="toggleReq(this)">
-          <span class="requisito-toggle-label">
-            <span class="req-badge">Essencial</span>
-            Interesse genuíno em vendas
-          </span>
-          <div class="accordion-arrow">
-            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
-          </div>
-        </button>
-        <div class="requisito-body">
-          <div class="requisito-body-inner">
-            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">Não é preciso ter experiência anterior. Mas é preciso ter vontade real de trabalhar, mostrar as peças e construir sua clientela.</p>
-          </div>
-        </div>
-
-        <button class="requisito-toggle reveal reveal-delay-2" onclick="toggleReq(this)">
-          <span class="requisito-toggle-label">
-            <span class="req-badge">Importante</span>
-            Comprometimento e responsabilidade
-          </span>
-          <div class="accordion-arrow">
-            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
-          </div>
-        </button>
-        <div class="requisito-body">
-          <div class="requisito-body-inner">
-            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">As semijoias da maleta são um bem de confiança. Esperamos cuidado no manuseio, organização nos acertos e pontualidade nos prazos.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FORMULÁRIO (PRESERVADO DO ORIGINAL) -->
-  <section id="formulario">
-    <div class="form-header">
-      <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Seja uma Revendedora</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Preencha o formulário abaixo para se candidatar.<br>Entraremos em contato caso seu perfil seja selecionado.</p>
-    </div>
-
-    <div class="form-wrap reveal reveal-delay-2">
-      <form id="candidaturaForm" class="bg-white text-gray-800 p-6 md:p-8 rounded-xl shadow space-y-6">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">Nome Completo</label>
-                <input type="text" name="Nome" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu nome completo" required />
-            </div>
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">WhatsApp</label>
-                <input type="tel" id="whatsappInput" name="WhatsApp"
-                  class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
-                  placeholder="(00) 00000-0000"
-                  maxlength="15"
-                  inputmode="numeric"
-                  autocomplete="off"
-                  required />
-                <span id="whatsappErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
-            </div>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-1 text-sm">CPF</label>
-            <input type="text" id="cpfInput" name="CPF"
-              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
-              placeholder="000.000.000-00"
-              maxlength="14"
-              inputmode="numeric"
-              autocomplete="off"
-              required />
-            <span id="cpfErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-2 text-sm">Tem restrição em seu CPF? (Sujeito a análise)</label>
-            <div class="flex space-x-4">
-                <label class="flex items-center cursor-pointer">
-                    <input type="radio" name="RestricaoCPF" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
-                    <span>Sim</span>
-                </label>
-                <label class="flex items-center cursor-pointer">
-                    <input type="radio" name="RestricaoCPF" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
-                    <span>Não</span>
-                </label>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">Endereço</label>
-                <input type="text" name="Endereco" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Rua, número" required />
-            </div>
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">Bairro</label>
-                <input type="text" name="Bairro" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu bairro" required />
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">Profissão</label>
-                <input type="text" name="Profissao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Sua profissão atual" required />
-            </div>
-            <div>
-                <label class="block text-gray-700 font-medium mb-1 text-sm">Estado Civil</label>
-                <select name="EstadoCivil" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
-                    <option value="">Selecione...</option>
-                    <option value="Solteira">Solteira</option>
-                    <option value="Casada">Casada</option>
-                    <option value="Divorciada">Divorciada</option>
-                    <option value="Viúva">Viúva</option>
-                    <option value="União Estável">União Estável</option>
-                </select>
-            </div>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-2 text-sm">Possui residência própria?</label>
-            <div class="flex space-x-4">
-                <label class="flex items-center cursor-pointer">
-                    <input type="radio" name="ResidenciaPropria" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
-                    <span>Sim</span>
-                </label>
-                <label class="flex items-center cursor-pointer">
-                    <input type="radio" name="ResidenciaPropria" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
-                    <span>Não</span>
-                </label>
-            </div>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-1 text-sm">Possui outro trabalho? Fale sobre:</label>
-            <textarea name="OutroTrabalho" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Descreva se possui outro trabalho ou digite 'Não' se não possui"></textarea>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-1 text-sm">De 0 a 10, qual o seu nível de interesse em buscar uma renda extra com vendas?</label>
-            <select name="NivelInteresse" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
-                <option value="">Selecione...</option>
-                <option value="0">0 - Nenhum interesse</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10 - Muito interessada</option>
-            </select>
-        </div>
-
-        <div>
-            <label class="block text-gray-700 font-medium mb-1 text-sm">Por que você quer ser uma revendedora?</label>
-            <textarea name="Motivacao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Conte um pouco sobre seus objetivos..." required></textarea>
-        </div>
-
-        <div class="bg-gray-50 p-4 rounded border border-gray-200">
-            <label class="flex items-start cursor-pointer">
-                <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" class="mt-1 mr-3 text-pink-600 focus:ring-pink-500" required>
-                <span class="text-sm text-gray-600">Li os requisitos acima e aceito as condições do programa de revendas.</span>
-            </label>
-        </div>
-
-        <button type="submit" class="w-full bg-pink-600 text-white font-semibold py-4 rounded hover:bg-pink-700 transition shadow-lg text-lg">
-          Enviar Cadastro
-        </button>
-      </form>
-    </div>
-  </section>
+  
 
   <!-- DETALHES COMPLEMENTARES -->
   <section id="detalhes">
@@ -727,6 +512,208 @@
         </div>
 
       </div>
+    </div>
+  </section>
+  
+  <!-- TRANSIÇÃO MALETA → REQUISITOS -->
+  <div class="maleta-transition reveal">
+    <div class="gold-divider" style="max-width:180px;margin:0 auto"><div class="gold-divider-diamond"></div></div>
+    <p>Antes de preencher o formulário, verifique se você se enquadra nos requisitos abaixo.</p>
+  </div>
+
+  <!-- REQUISITOS -->
+  <section id="requisitos">
+    <div class="requisitos-wrap">
+      <h2 class="section-title reveal" style="margin-bottom:8px">O que é preciso?</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Requisitos simples e transparentes.</p>
+
+      <div style="margin-top:36px">
+
+        <button class="requisito-toggle reveal" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Preferência</span>
+            CPF sem restrição
+          </span>
+          <div class="accordion-arrow">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">O CPF será consultado durante o processo de análise. Candidatas com restrição podem se inscrever, mas a aprovação ficará sujeita a avaliação individual.</p>
+          </div>
+        </div>
+
+        <button class="requisito-toggle reveal reveal-delay-1" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Essencial</span>
+            Interesse genuíno em vendas
+          </span>
+          <div class="accordion-arrow">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">Não é preciso ter experiência anterior. Mas é preciso ter vontade real de trabalhar, mostrar as peças e construir sua clientela.</p>
+          </div>
+        </div>
+
+        <button class="requisito-toggle reveal reveal-delay-2" onclick="toggleReq(this)">
+          <span class="requisito-toggle-label">
+            <span class="req-badge">Importante</span>
+            Comprometimento e responsabilidade
+          </span>
+          <div class="accordion-arrow">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+        </button>
+        <div class="requisito-body">
+          <div class="requisito-body-inner">
+            <p style="font-size:.88rem;color:var(--muted);line-height:1.7">As semijoias da maleta são um bem de confiança. Esperamos cuidado no manuseio, organização nos acertos e pontualidade nos prazos.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- FORMULÁRIO -->
+  <section id="formulario">
+    <div class="form-header">
+      <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Seja uma Revendedora</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Preencha o formulário abaixo para se candidatar.<br>Entraremos em contato caso seu perfil seja selecionado.</p>
+    </div>
+
+    <div class="form-wrap reveal reveal-delay-2">
+      <form id="candidaturaForm" class="bg-white text-gray-800 p-6 md:p-8 rounded-xl shadow space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Nome Completo</label>
+                <input type="text" name="Nome" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu nome completo" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">WhatsApp</label>
+                <input type="tel" id="whatsappInput" name="WhatsApp"
+                  class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+                  placeholder="(00) 00000-0000"
+                  maxlength="15"
+                  inputmode="numeric"
+                  autocomplete="off"
+                  required />
+                <span id="whatsappErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">CPF</label>
+            <input type="text" id="cpfInput" name="CPF"
+              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+              placeholder="000.000.000-00"
+              maxlength="14"
+              inputmode="numeric"
+              autocomplete="off"
+              required />
+            <span id="cpfErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-2 text-sm">Tem restrição em seu CPF? (Sujeito a análise)</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Sim</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="RestricaoCPF" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Não</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Endereço</label>
+                <input type="text" name="Endereco" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Rua, número" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Bairro</label>
+                <input type="text" name="Bairro" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Seu bairro" required />
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Profissão</label>
+                <input type="text" name="Profissao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Sua profissão atual" required />
+            </div>
+            <div>
+                <label class="block text-gray-700 font-medium mb-1 text-sm">Estado Civil</label>
+                <select name="EstadoCivil" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                    <option value="">Selecione...</option>
+                    <option value="Solteira">Solteira</option>
+                    <option value="Casada">Casada</option>
+                    <option value="Divorciada">Divorciada</option>
+                    <option value="Viúva">Viúva</option>
+                    <option value="União Estável">União Estável</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-2 text-sm">Possui residência própria?</label>
+            <div class="flex space-x-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="ResidenciaPropria" value="Sim" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Sim</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="ResidenciaPropria" value="Não" class="mr-2 text-pink-600 focus:ring-pink-500" required>
+                    <span>Não</span>
+                </label>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">Possui outro trabalho? Fale sobre:</label>
+            <textarea name="OutroTrabalho" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Descreva se possui outro trabalho ou digite 'Não' se não possui"></textarea>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">De 0 a 10, qual o seu nível de interesse em buscar uma renda extra com vendas?</label>
+            <select name="NivelInteresse" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" required>
+                <option value="">Selecione...</option>
+                <option value="0">0 - Nenhum interesse</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10 - Muito interessada</option>
+            </select>
+        </div>
+
+        <div>
+            <label class="block text-gray-700 font-medium mb-1 text-sm">Por que você quer ser uma revendedora?</label>
+            <textarea name="Motivacao" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" rows="3" placeholder="Conte um pouco sobre seus objetivos..." required></textarea>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded border border-gray-200">
+            <label class="flex items-start cursor-pointer">
+                <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" class="mt-1 mr-3 text-pink-600 focus:ring-pink-500" required>
+                <span class="text-sm text-gray-600">Li os requisitos acima e aceito as condições do programa de revendas.</span>
+            </label>
+        </div>
+
+        <button type="submit" class="w-full bg-pink-600 text-white font-semibold py-4 rounded hover:bg-pink-700 transition shadow-lg text-lg">
+          Enviar Cadastro
+        </button>
+      </form>
     </div>
   </section>
 

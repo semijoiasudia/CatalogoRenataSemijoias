@@ -24,700 +24,172 @@
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); overflow-x: hidden; }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--ink);
-      overflow-x: hidden;
-    }
-
-    /* ── TYPOGRAPHY ─────────────────────────────────────────── */
-    .serif { font-family: 'Cormorant Garamond', serif; }
-
-    /* ── REVEAL ANIMATIONS ──────────────────────────────────── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.75s cubic-bezier(.22,1,.36,1), transform 0.75s cubic-bezier(.22,1,.36,1);
-    }
+    /* ── REVEAL ─────────────────────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s cubic-bezier(.22,1,.36,1), transform 0.75s cubic-bezier(.22,1,.36,1); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
     .reveal-delay-4 { transition-delay: 0.4s; }
-    .reveal-delay-5 { transition-delay: 0.5s; }
 
     /* ── NAV ────────────────────────────────────────────────── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: 18px 40px;
-      display: flex; align-items: center; justify-content: space-between;
-      transition: background 0.4s, box-shadow 0.4s;
-    }
-    nav.scrolled {
-      background: rgba(251, 246, 239, 0.96);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 1px 0 rgba(194, 152, 90, 0.25);
-    }
-    .nav-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--white);
-      letter-spacing: 0.04em;
-      transition: color 0.4s;
-      text-decoration: none;
-    }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; transition: background 0.4s, box-shadow 0.4s; }
+    nav.scrolled { background: rgba(251,246,239,0.96); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(194,152,90,0.25); }
+    .nav-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--white); letter-spacing: 0.04em; transition: color 0.4s; text-decoration: none; }
     nav.scrolled .nav-brand { color: var(--burgundy); }
-    .nav-cta {
-      background: var(--gold);
-      color: var(--white);
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 10px 22px;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: background 0.25s, transform 0.2s;
-    }
-    .nav-cta:hover { background: var(--burgundy); transform: translateY(-1px); }
 
     /* ── HERO ────────────────────────────────────────────────── */
-    #hero {
-      min-height: 100vh;
-      background: linear-gradient(160deg, var(--burgundy) 0%, #4A0E22 55%, #1A0810 100%);
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-align: center;
-      padding: 120px 24px 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    #hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(ellipse 80% 60% at 30% 40%, rgba(194,152,90,0.12) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 80% at 80% 70%, rgba(184,58,90,0.18) 0%, transparent 65%);
-    }
-    .hero-ornament {
-      width: 48px; height: 1px;
-      background: var(--gold);
-      display: inline-block;
-      vertical-align: middle;
-      opacity: 0.7;
-    }
-    .hero-tag {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 24px;
-      display: flex; align-items: center; gap: 14px; justify-content: center;
-      position: relative; z-index: 1;
-    }
-    #hero h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.8rem, 7vw, 5.5rem);
-      font-weight: 300;
-      line-height: 1.1;
-      color: var(--white);
-      position: relative; z-index: 1;
-      margin-bottom: 10px;
-    }
-    #hero h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-    #hero h1 strong {
-      font-weight: 700;
-      display: block;
-    }
-    .hero-sub {
-      font-size: 1.05rem;
-      font-weight: 300;
-      color: rgba(255,255,255,0.75);
-      max-width: 520px;
-      line-height: 1.7;
-      position: relative; z-index: 1;
-      margin: 28px auto 44px;
-    }
-    .hero-sub strong { color: rgba(255,255,255,0.95); font-weight: 500; }
-    .btn-primary {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--white);
-      font-size: 0.82rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 16px 40px;
-      border-radius: 2px;
-      text-decoration: none;
-      position: relative; z-index: 1;
-      transition: background 0.25s, transform 0.2s, box-shadow 0.25s;
-      box-shadow: 0 4px 20px rgba(194,152,90,0.35);
-    }
-    .btn-primary:hover {
-      background: var(--white);
-      color: var(--burgundy);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(194,152,90,0.3);
-    }
-    .hero-badges {
-      display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
-      margin-top: 56px;
-      position: relative; z-index: 1;
-    }
-    .hero-badge {
-      display: flex; align-items: center; gap: 8px;
-      color: rgba(255,255,255,0.6);
-      font-size: 0.8rem;
-      font-weight: 400;
-    }
-    .hero-badge span.dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--gold);
-      flex-shrink: 0;
-    }
-    .scroll-hint {
-      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-      z-index: 1;
-      display: flex; flex-direction: column; align-items: center; gap: 6px;
-      color: rgba(255,255,255,0.35);
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
-    .scroll-line {
-      width: 1px; height: 40px;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
-      animation: scrollPulse 2s ease-in-out infinite;
-    }
-    @keyframes scrollPulse {
-      0%, 100% { opacity: 0.4; transform: scaleY(1); }
-      50% { opacity: 1; transform: scaleY(0.6); }
-    }
+    #hero { min-height: 100vh; background: var(--cream); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 24px 80px; position: relative; overflow: hidden; }
+    /*#hero { min-height: 100vh; background: linear-gradient(160deg, var(--burgundy) 0%, #4A0E22 55%, #1A0810 100%); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 120px 24px 80px; position: relative; overflow: hidden; }*/
+    
+    #hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 30% 40%, rgba(194,152,90,0.12) 0%, transparent 70%), radial-gradient(ellipse 60% 80% at 80% 70%, rgba(184,58,90,0.18) 0%, transparent 65%); }
+    .hero-ornament { width: 48px; height: 1px; background: var(--gold); display: inline-block; vertical-align: middle; opacity: 0.7; }
+    .hero-tag { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; display: flex; align-items: center; gap: 14px; justify-content: center; position: relative; z-index: 1; }
+    #hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 300; line-height: 1.1; color: var(--ink); position: relative; z-index: 1; margin-bottom: 10px; }
+    /**/
+    #hero h1 em { font-style: italic; color: var(--gold-light); }
+    #hero h1 strong { font-weight: 700; display: block; }
+    .hero-sub { font-size: 1.05rem; font-weight: 300; color: var(--muted); max-width: 520px; line-height: 1.7; position: relative; z-index: 1; margin: 28px auto 44px; }
+    .hero-sub strong { color: var(--ink); font-weight: 500; }
 
-    /* ── GOLD DIVIDER ────────────────────────────────────────── */
-    .gold-divider {
-      display: flex; align-items: center; gap: 16px;
-      margin: 0 auto;
-      max-width: 220px;
-    }
-    .gold-divider::before, .gold-divider::after {
-      content: ''; flex: 1; height: 1px;
-      background: linear-gradient(to right, transparent, var(--gold));
-    }
-    .gold-divider::after {
-      background: linear-gradient(to left, transparent, var(--gold));
-    }
-    .gold-divider-diamond {
-      width: 6px; height: 6px;
-      background: var(--gold);
-      transform: rotate(45deg);
-      flex-shrink: 0;
-    }
+    .hero-badges { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; margin-top: 56px; position: relative; z-index: 1; }
+    .hero-badge { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.8rem; }
+    .hero-badge span.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .scroll-hint { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; color: rgba(255,255,255,0.35); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; }
+    .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent); animation: scrollPulse 2s ease-in-out infinite; }
+    @keyframes scrollPulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
 
-    /* ── SECTION WRAPPER ─────────────────────────────────────── */
-    .section-wrap {
-      max-width: 1020px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
-      font-weight: 400;
-      color: var(--burgundy);
-      text-align: center;
-      line-height: 1.2;
-    }
-    .section-title em { font-style: italic; color: var(--rose); }
-    .section-subtitle {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      max-width: 560px;
-      margin: 12px auto 0;
-    }
-
-    /* ── IMAGE PLACEHOLDER ──────────────────────────────────── */
-    .img-placeholder {
-      width: 100%;
-      background: linear-gradient(135deg, var(--cream-dark), var(--cream));
-      border: 1px dashed rgba(194,152,90,0.4);
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      color: var(--gold);
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      gap: 10px;
-      min-height: 340px;
-    }
-    .img-placeholder svg { opacity: 0.45; }
-    .img-placeholder p { opacity: 0.6; }
-    /* If real image is present, show it */
+    /* ── SHARED ─────────────────────────────────────────────── */
+    .gold-divider { display: flex; align-items: center; gap: 16px; margin: 0 auto; max-width: 220px; }
+    .gold-divider::before, .gold-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold)); }
+    .gold-divider::after { background: linear-gradient(to left, transparent, var(--gold)); }
+    .gold-divider-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
+    .section-wrap { max-width: 1020px; margin: 0 auto; padding: 0 24px; }
+    .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 400; color: var(--burgundy); text-align: center; line-height: 1.2; }
+    .section-subtitle { text-align: center; color: var(--muted); font-size: 0.95rem; line-height: 1.7; max-width: 560px; margin: 12px auto 0; }
     .img-slot { width: 100%; display: block; }
     .img-slot img { width: 100%; display: block; object-fit: cover; }
+    .img-placeholder { width: 100%; background: linear-gradient(135deg, var(--cream-dark), var(--cream)); border: 1px dashed rgba(194,152,90,0.4); display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--gold); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; gap: 10px; min-height: 340px; }
+
+    /* ── MALETA TRANSITION ───────────────────────────────────── */
+    .maleta-transition { padding: 52px 24px 0; text-align: center; background: var(--cream); }
+    .maleta-transition p { margin-top: 20px; font-size: 0.92rem; color: var(--muted); max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+
+    /* ── REQUISITOS ─────────────────────────────────────────── */
+    #requisitos { padding: 36px 0 72px; background: var(--cream); }
+    .requisitos-wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+    .requisito-toggle { width: 100%; background: none; border: none; padding: 20px 0; display: flex; align-items: center; justify-content: space-between; cursor: pointer; border-bottom: 1px solid rgba(194,152,90,0.2); }
+    .requisito-toggle-label { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--burgundy); display: flex; align-items: center; gap: 14px; }
+    .req-badge { background: var(--gold); color: var(--white); font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; }
+    .requisito-body { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(.22,1,.36,1); }
+    .requisito-body-inner { padding: 20px 0 10px; }
+    .accordion-arrow { width: 28px; height: 28px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(194,152,90,0.3); border-radius: 50%; color: var(--gold); transition: transform 0.35s, background 0.2s, color 0.2s; }
+
+    /* ── FORMULÁRIO ─────────────────────────────────────────── */
+    #formulario { padding: 96px 0; background: linear-gradient(160deg, #2A1A20 0%, var(--burgundy) 60%, #5C1A30 100%); position: relative; overflow: hidden; }
+    #formulario::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 20% 30%, rgba(194,152,90,0.1) 0%, transparent 60%); }
+    .form-header { text-align: center; position: relative; z-index: 1; margin-bottom: 48px; }
+    .form-header .section-title { color: var(--white); }
+    .form-header .section-subtitle { color: rgba(255,255,255,0.6); }
+    .form-wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    #candidaturaForm { background: var(--white); padding: 40px; border-radius: 6px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    @media (max-width: 480px) { #candidaturaForm { padding: 24px; } }
+    #candidaturaForm label.block { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted) !important; margin-bottom: 6px !important; }
+    #candidaturaForm input, #candidaturaForm select, #candidaturaForm textarea { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--ink); border-color: rgba(194,152,90,0.3) !important; transition: border-color 0.2s, box-shadow 0.2s; }
+    #candidaturaForm input:focus, #candidaturaForm select:focus, #candidaturaForm textarea:focus { border-color: var(--gold) !important; box-shadow: 0 0 0 3px rgba(194,152,90,0.12) !important; outline: none; }
+    #candidaturaForm button[type="submit"] { background: linear-gradient(90deg, var(--burgundy), var(--rose)) !important; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.82rem !important; transition: opacity 0.25s, transform 0.2s !important; border-radius: 3px !important; }
+    #candidaturaForm button[type="submit"]:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+
+    /* ── DETALHES ───────────────────────────────────────────── */
+    #detalhes { padding: 80px 0 96px; background: var(--cream-dark); }
+    .detail-panel { border: 1px solid rgba(194,152,90,0.22); border-radius: 4px; margin-bottom: 10px; background: var(--white); overflow: hidden; transition: box-shadow 0.3s; }
+    .detail-panel.open { box-shadow: 0 6px 32px rgba(123,28,60,0.09); }
+    .detail-panel-header { width: 100%; background: none; border: none; padding: 26px 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px; cursor: pointer; text-align: left; }
+    .detail-panel-header-inner { display: flex; align-items: center; gap: 20px; }
+    .detail-panel-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: rgba(194,152,90,0.4); line-height: 1; min-width: 36px; }
+    .detail-panel-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--burgundy); line-height: 1.2; }
+    .detail-panel-header p.dp-preview { font-size: 0.82rem; color: var(--muted); margin-top: 3px; }
+    .detail-arrow { width: 30px; height: 30px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(194,152,90,0.3); border-radius: 50%; color: var(--gold); transition: transform 0.35s, background 0.2s, color 0.2s; }
+    .detail-panel.open .detail-arrow { transform: rotate(180deg); background: var(--gold); color: var(--white); }
+    .detail-panel-body { max-height: 0; overflow: hidden; transition: max-height 0.55s cubic-bezier(.22,1,.36,1); }
+    .detail-panel-inner { padding: 0 32px 40px; border-top: 1px solid rgba(194,152,90,0.15); padding-top: 32px; }
 
     /* ── OPORTUNIDADE CARDS ──────────────────────────────────── */
-    #oportunidade {
-      padding: 96px 0 80px;
-      background: var(--cream);
-    }
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 52px;
-    }
-    .card {
-      background: var(--white);
-      border: 1px solid rgba(194,152,90,0.2);
-      padding: 36px 28px;
-      border-radius: 4px;
-      position: relative;
-      overflow: hidden;
-      transition: box-shadow 0.3s, transform 0.3s;
-    }
-    .card::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(to right, var(--gold), var(--rose-light));
-    }
-    .card:hover { box-shadow: 0 8px 40px rgba(123,28,60,0.1); transform: translateY(-3px); }
-    .card-icon {
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--cream-dark), var(--cream));
-      border: 1px solid rgba(194,152,90,0.3);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 18px;
-      color: var(--gold);
-    }
-    .card h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--burgundy);
-      margin-bottom: 10px;
-    }
-    .card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 28px; }
+    .card { background: var(--cream); border: 1px solid rgba(194,152,90,0.2); padding: 24px 20px; border-radius: 4px; position: relative; overflow: hidden; }
+    .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, var(--gold), var(--rose-light)); }
+    .card-icon { width: 34px; height: 34px; background: var(--white); border: 1px solid rgba(194,152,90,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; color: var(--gold); }
+    .card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--burgundy); margin-bottom: 8px; }
+    .card p { font-size: 0.86rem; color: var(--muted); line-height: 1.7; }
     .card p strong { color: var(--ink); font-weight: 500; }
 
-    /* ── VANTAGENS ───────────────────────────────────────────── */
-    #vantagens {
-      padding: 80px 0;
-      background: linear-gradient(170deg, #2A1A20 0%, var(--burgundy) 100%);
-      position: relative;
-      overflow: hidden;
-    }
-    #vantagens::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 70% at 80% 50%, rgba(194,152,90,0.08) 0%, transparent 70%);
-    }
-    #vantagens .section-title { color: var(--white); }
-    #vantagens .section-subtitle { color: rgba(255,255,255,0.55); }
-    .vantagens-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 14px;
-      margin-top: 48px;
-    }
-    .vantagem-item {
-      display: flex; align-items: flex-start; gap: 14px;
-      padding: 18px 20px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(194,152,90,0.18);
-      border-radius: 4px;
-      transition: background 0.25s;
-    }
-    .vantagem-item:hover { background: rgba(255,255,255,0.1); }
-    .vantagem-check {
-      width: 22px; height: 22px;
-      background: var(--gold);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .vantagem-check svg { width: 11px; height: 11px; }
-    .vantagem-item span {
-      font-size: 0.88rem;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.5;
-    }
-    .vantagem-item span strong { color: var(--white); font-weight: 600; }
-
-    /* ── ACCORDION: COMO FUNCIONA ────────────────────────────── */
-    #como-funciona {
-      padding: 96px 0 80px;
-      background: var(--cream);
-    }
-    .accordion-list { margin-top: 48px; }
-    .accordion-item {
-      border: 1px solid rgba(194,152,90,0.22);
-      border-radius: 4px;
-      margin-bottom: 10px;
-      background: var(--white);
-      overflow: hidden;
-      transition: box-shadow 0.3s;
-    }
-    .accordion-item.open { box-shadow: 0 4px 24px rgba(123,28,60,0.08); }
-    .accordion-header {
-      width: 100%;
-      background: none; border: none;
-      padding: 22px 28px;
-      display: flex; align-items: center; justify-content: space-between; gap: 16px;
-      cursor: pointer;
-      text-align: left;
-    }
-    .accordion-header-inner { display: flex; align-items: center; gap: 18px; }
-    .accordion-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: var(--gold);
-      line-height: 1;
-      min-width: 32px;
-    }
-    .accordion-header h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--burgundy);
-      line-height: 1.2;
-    }
-    .accordion-header p.preview {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 3px;
-    }
-    .accordion-arrow {
-      width: 28px; height: 28px;
-      flex-shrink: 0;
-      display: flex; align-items: center; justify-content: center;
-      border: 1px solid rgba(194,152,90,0.3);
-      border-radius: 50%;
-      color: var(--gold);
-      transition: transform 0.35s, background 0.2s;
-    }
+    /* ── ACCORDION (como funciona, nested) ───────────────────── */
+    .accordion-list { margin-top: 20px; }
+    .accordion-item { border: 1px solid rgba(194,152,90,0.22); border-radius: 4px; margin-bottom: 8px; background: var(--cream); overflow: hidden; transition: box-shadow 0.3s; }
+    .accordion-item.open { box-shadow: 0 3px 16px rgba(123,28,60,0.07); }
+    .accordion-header { width: 100%; background: none; border: none; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px; cursor: pointer; text-align: left; }
+    .accordion-header-inner { display: flex; align-items: center; gap: 14px; }
+    .accordion-num { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 300; color: var(--gold); line-height: 1; min-width: 26px; }
+    .accordion-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--burgundy); line-height: 1.2; }
+    .accordion-header p.preview { font-size: 0.79rem; color: var(--muted); margin-top: 2px; }
     .accordion-item.open .accordion-arrow { transform: rotate(180deg); background: var(--gold); color: var(--white); }
-    .accordion-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.45s cubic-bezier(.22,1,.36,1), padding 0.3s;
-    }
-    .accordion-body-inner {
-      padding: 0 28px 28px;
-      border-top: 1px solid rgba(194,152,90,0.15);
-      padding-top: 20px;
-    }
-    .accordion-body-inner p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.75;
-      margin-bottom: 12px;
-    }
-    .accordion-body-inner ul {
-      list-style: none;
-      display: flex; flex-direction: column; gap: 8px;
-    }
-    .accordion-body-inner li {
-      display: flex; align-items: flex-start; gap: 10px;
-      font-size: 0.88rem;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-    .accordion-body-inner li::before {
-      content: '';
-      width: 5px; height: 5px; border-radius: 50%;
-      background: var(--gold);
-      flex-shrink: 0;
-      margin-top: 6px;
-    }
+    .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(.22,1,.36,1); }
+    .accordion-body-inner { padding: 0 20px 20px; border-top: 1px solid rgba(194,152,90,0.15); padding-top: 16px; }
+    .accordion-body-inner p { font-size: 0.88rem; color: var(--muted); line-height: 1.75; margin-bottom: 10px; }
+    .accordion-body-inner ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .accordion-body-inner li { display: flex; align-items: flex-start; gap: 9px; font-size: 0.86rem; color: var(--muted); line-height: 1.5; }
+    .accordion-body-inner li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; }
+
+    /* ── VANTAGENS LIGHT ─────────────────────────────────────── */
+    .vantagens-light-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .vantagem-light { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; background: var(--cream); border: 1px solid rgba(194,152,90,0.15); border-radius: 4px; font-size: 0.87rem; color: var(--muted); line-height: 1.5; }
+    .vantagem-light .vcheck { width: 20px; height: 20px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .vantagem-light .vcheck svg { width: 10px; height: 10px; }
+    .vantagem-light strong { color: var(--ink); font-weight: 500; }
+
+    /* ── COMISSÃO ─────────────────────────────────────────────── */
+    .comissao-destaque { text-align: center; margin: 20px 0 28px; }
+    .comissao-num { font-family: 'Cormorant Garamond', serif; font-size: clamp(4rem, 12vw, 7rem); font-weight: 300; line-height: 1; color: var(--burgundy); letter-spacing: -0.02em; }
+    .comissao-num span { color: var(--gold); }
+    .comissao-label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+    .comissao-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+    .comissao-card { background: var(--cream); border: 1px solid rgba(194,152,90,0.2); border-radius: 4px; padding: 20px 16px; text-align: center; }
+    .comissao-card-title { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 7px; }
+    .comissao-card-value { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; color: var(--burgundy); }
+    .comissao-card-desc { font-size: 0.76rem; color: var(--muted); margin-top: 4px; line-height: 1.5; }
 
     /* ── COMPARATIVO ─────────────────────────────────────────── */
-    #comparativo {
-      padding: 96px 0 80px;
-      background: var(--cream-dark);
-    }
-    .compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-top: 52px;
-    }
-    @media (max-width: 600px) { .compare-grid { grid-template-columns: 1fr; } }
-    .compare-col {
-      border-radius: 4px;
-      overflow: hidden;
-    }
-    .compare-header {
-      padding: 18px 24px;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-    }
-    .compare-col.before .compare-header {
-      background: #F0E8E8;
-      color: #8B3A3A;
-      border-bottom: 1px solid rgba(139,58,58,0.15);
-    }
-    .compare-col.after .compare-header {
-      background: linear-gradient(90deg, var(--burgundy), var(--rose));
-      color: var(--white);
-    }
-    .compare-body {
-      background: var(--white);
-      border: 1px solid rgba(194,152,90,0.18);
-      border-top: none;
-    }
-    .compare-col.after .compare-body {
-      border-color: rgba(123,28,60,0.2);
-    }
-    .compare-row {
-      padding: 14px 24px;
-      font-size: 0.87rem;
-      line-height: 1.5;
-      display: flex; align-items: flex-start; gap: 10px;
-      border-bottom: 1px solid rgba(194,152,90,0.1);
-    }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+    @media (max-width: 580px) { .compare-grid { grid-template-columns: 1fr; } }
+    .compare-col { border-radius: 4px; overflow: hidden; }
+    .compare-header { padding: 13px 18px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+    .compare-col.before .compare-header { background: #F0E8E8; color: #8B3A3A; border-bottom: 1px solid rgba(139,58,58,0.15); }
+    .compare-col.after .compare-header { background: linear-gradient(90deg, var(--burgundy), var(--rose)); color: var(--white); }
+    .compare-body { background: var(--cream); border: 1px solid rgba(194,152,90,0.18); border-top: none; }
+    .compare-col.after .compare-body { border-color: rgba(123,28,60,0.2); }
+    .compare-row { padding: 11px 18px; font-size: 0.84rem; line-height: 1.5; display: flex; align-items: flex-start; gap: 8px; border-bottom: 1px solid rgba(194,152,90,0.1); }
     .compare-row:last-child { border-bottom: none; }
     .compare-col.before .compare-row { color: #7A4545; }
     .compare-col.after .compare-row { color: #3A2A2E; }
     .compare-row .icon { flex-shrink: 0; margin-top: 2px; }
 
-    /* ── COMISSÃO ─────────────────────────────────────────────── */
-    #comissao {
-      padding: 96px 0 80px;
-      background: var(--cream);
-    }
-    .comissao-destaque {
-      text-align: center;
-      margin: 48px 0 56px;
-    }
-    .comissao-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(5rem, 16vw, 9rem);
-      font-weight: 300;
-      line-height: 1;
-      color: var(--burgundy);
-      letter-spacing: -0.02em;
-    }
-    .comissao-num span { color: var(--gold); }
-    .comissao-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 8px;
-    }
-    .comissao-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-    }
-    .comissao-card {
-      background: var(--white);
-      border: 1px solid rgba(194,152,90,0.2);
-      border-radius: 4px;
-      padding: 28px 24px;
-      text-align: center;
-    }
-    .comissao-card-title {
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
-    .comissao-card-value {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--burgundy);
-    }
-    .comissao-card-desc {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 6px;
-      line-height: 1.5;
-    }
+    /* ── FOOTER ─────────────────────────────────────────────── */
+    footer { background: #180B10; padding: 36px 24px; text-align: center; }
+    .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; color: var(--gold-light); margin-bottom: 8px; letter-spacing: 0.06em; }
+    .footer-info { font-size: 0.78rem; color: rgba(255,255,255,0.28); letter-spacing: 0.04em; }
 
-    /* ── REQUISITOS ACCORDION ────────────────────────────────── */
-    #requisitos {
-      padding: 0 0 96px;
-      background: var(--cream);
-    }
-    .requisitos-wrap {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-    .requisito-toggle {
-      width: 100%;
-      background: none; border: none;
-      padding: 20px 0;
-      display: flex; align-items: center; justify-content: space-between;
-      cursor: pointer;
-      border-bottom: 1px solid rgba(194,152,90,0.2);
-    }
-    .requisito-toggle-label {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--burgundy);
-      display: flex; align-items: center; gap: 14px;
-    }
-    .req-badge {
-      background: var(--gold);
-      color: var(--white);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      padding: 3px 10px;
-      border-radius: 20px;
-    }
-    .requisito-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(.22,1,.36,1);
-    }
-    .requisito-body-inner {
-      padding: 20px 0 10px;
-    }
-    .req-list {
-      list-style: none;
-      display: flex; flex-direction: column; gap: 12px;
-    }
-    .req-list li {
-      display: flex; align-items: flex-start; gap: 12px;
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-    .req-icon {
-      width: 24px; height: 24px;
-      background: linear-gradient(135deg, var(--gold), var(--rose-light));
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-      color: var(--white);
-    }
-
-    /* ── FORMULÁRIO ───────────────────────────────────────────── */
-    #formulario {
-      padding: 96px 0;
-      background: linear-gradient(160deg, #2A1A20 0%, var(--burgundy) 60%, #5C1A30 100%);
-      position: relative;
-      overflow: hidden;
-    }
-    #formulario::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 20% 30%, rgba(194,152,90,0.1) 0%, transparent 60%);
-    }
-    .form-header {
-      text-align: center;
-      position: relative; z-index: 1;
-      margin-bottom: 48px;
-    }
-    .form-header .section-title { color: var(--white); }
-    .form-header .section-subtitle { color: rgba(255,255,255,0.6); }
-    .form-wrap {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 0 24px;
-      position: relative; z-index: 1;
-    }
-    /* Overriding the original form styles to match our theme */
-    #candidaturaForm {
-      background: var(--white);
-      padding: 40px;
-      border-radius: 6px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-    @media (max-width: 480px) { #candidaturaForm { padding: 24px; } }
-    #candidaturaForm label.block {
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--muted) !important;
-      margin-bottom: 6px !important;
-    }
-    #candidaturaForm input,
-    #candidaturaForm select,
-    #candidaturaForm textarea {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      color: var(--ink);
-      border-color: rgba(194,152,90,0.3) !important;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    #candidaturaForm input:focus,
-    #candidaturaForm select:focus,
-    #candidaturaForm textarea:focus {
-      border-color: var(--gold) !important;
-      box-shadow: 0 0 0 3px rgba(194,152,90,0.12) !important;
-      outline: none;
-    }
-    #candidaturaForm button[type="submit"] {
-      background: linear-gradient(90deg, var(--burgundy), var(--rose)) !important;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      font-size: 0.82rem !important;
-      transition: opacity 0.25s, transform 0.2s !important;
-      border-radius: 3px !important;
-    }
-    #candidaturaForm button[type="submit"]:hover:not(:disabled) {
-      opacity: 0.9;
-      transform: translateY(-1px);
-    }
-
-    /* ── FOOTER ──────────────────────────────────────────────── */
-    footer {
-      background: #180B10;
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .footer-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--gold-light);
-      margin-bottom: 8px;
-      letter-spacing: 0.06em;
-    }
-    .footer-info {
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.28);
-      letter-spacing: 0.04em;
-    }
-
-    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
     @media (max-width: 768px) {
       nav { padding: 16px 20px; }
-      .accordion-header { padding: 18px 20px; }
-      .accordion-body-inner { padding: 0 20px 20px; padding-top: 18px; }
-      .compare-row { padding: 12px 18px; }
-      .compare-header { padding: 14px 18px; }
-      #candidaturaForm { padding: 28px 20px; }
+      .detail-panel-header { padding: 20px 22px; }
+      .detail-panel-inner { padding: 0 22px 28px; padding-top: 24px; }
+      .scroll-hint { bottom: 10px; }
+    }
+    @media (max-width: 480px) {
+      .detail-panel-num { display: none; }
     }
   </style>
 </head>
@@ -727,7 +199,7 @@
   <!-- NAV -->
   <nav id="mainNav">
     <a href="#" class="nav-brand" style="margin:0 auto">
-      <img src="imagens/logo_branca.png" alt="Renata Semijoias e Acessórios" style="height:80px;width:auto" id="navLogo">
+      <img src="imagens/logo.png" alt="Renata Semijoias e Acessórios" style="height:80px;width:auto" id="navLogo">
     </a>
   </nav>
 
@@ -739,14 +211,13 @@
       <span class="hero-ornament"></span>
     </div>
     <h1 class="reveal">
-      <em>Trabalhe no seu tempo.</em><br>
-      <strong>Ganhe de verdade.</strong>
+      <em>Trabalhe no seu tempo.</em><br><br>
+      Ganhe de verdade.
     </h1>
     <p class="hero-sub reveal reveal-delay-1">
       Comece <strong>sem investir nada</strong> e venda semijoias de qualidade com preço competitivo, suporte completo e comissão de até <strong>40%</strong>.
     </p>
-    <a href="#formulario" class="btn-primary reveal reveal-delay-2">Quero ser revendedora</a>
-    <div class="hero-badges reveal reveal-delay-3">
+    <div class="hero-badges reveal reveal-delay-2">
       <span class="hero-badge"><span class="dot"></span> Sem investimento inicial</span>
       <span class="hero-badge"><span class="dot"></span> Catálogo exclusivo</span>
       <span class="hero-badge"><span class="dot"></span> Suporte completo</span>
@@ -763,251 +234,279 @@
     <img src="imagens/maleta_completa.jpg" alt="Maleta completa de semijoias Renata" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'min-height:400px\'><svg width=\'48\' height=\'48\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'1\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><p>Inserir foto da maleta aqui</p></div>'"/>
   </div>
 
-  <!-- OPORTUNIDADE -->
-  <section id="oportunidade">
+  
+
+  <!-- DETALHES COMPLEMENTARES -->
+  <section id="detalhes">
     <div class="section-wrap">
       <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Conheça a Oportunidade</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Uma chance real para mulheres que querem independência financeira sem abrir mão da flexibilidade.</p>
+      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Quer saber mais?</h2>
+      <p class="section-subtitle reveal reveal-delay-2">Abra cada tópico para conhecer todos os detalhes.</p>
 
-      <div class="cards-grid">
-        <div class="card reveal reveal-delay-1">
-          <div class="card-icon">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <h3>Qualidade Garantida</h3>
-          <p>Semijoias banhadas a <strong>ouro 18k</strong>, banhadas a <strong>prata</strong> ou banhadas a <strong>ródio branco</strong>, com tratamento hipoalergênico — livre de níquel. Trabalhamos também com peças em <strong>aço inoxidável</strong> e <strong>relógios</strong>.</p>
-        </div>
-        <div class="card reveal reveal-delay-2">
-          <div class="card-icon">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-          </div>
-          <h3>Peças que Vendem</h3>
-          <p>Trabalhamos apenas com peças atuais e de alto giro. Nada de estoque antigo parado. Mostruário variado e renovado conforme o seu desempenho.</p>
-        </div>
-        <div class="card reveal reveal-delay-3">
-          <div class="card-icon">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-          </div>
-          <h3>Catálogo Completo</h3>
-          <p>Catálogo digital sempre atualizado com fotos profissionais de todas as peças. Compartilhe com suas clientes pelo WhatsApp e venda de qualquer lugar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div style="margin-top:48px">
 
-  <!-- VANTAGENS -->
-  <section id="vantagens">
-    <div class="section-wrap" style="position:relative;z-index:1">
-      <h2 class="section-title reveal">Vantagens para Você</h2>
-      <p class="section-subtitle reveal reveal-delay-1">Tudo o que você precisa para vender com confiança e profissionalismo.</p>
-      <div class="vantagens-grid">
-        <div class="vantagem-item reveal reveal-delay-1">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Produtos de qualidade</strong> com preço competitivo</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-2">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Peças atuais</strong> e fáceis de vender</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-3">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Fotos profissionais</strong> para divulgação</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-4">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Catálogo completo</strong> e organizado</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-1">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span>Clientes pagam em <strong>até 3x sem juros</strong> por link</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-2">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Suporte completo</strong> para revendedoras</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-3">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span><strong>Sem investimento inicial</strong> — comece hoje</span>
-        </div>
-        <div class="vantagem-item reveal reveal-delay-4">
-          <div class="vantagem-check">
-            <svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg>
-          </div>
-          <span>Localizada em <strong>Uberlândia – MG</strong></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CARROSSEL (código original preservado) -->
-  <section class="relative">
-    <div class="relative overflow-hidden">
-      <div id="carrossel" class="flex transition-transform duration-500 ease-in-out">
-        <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" class="w-full flex-shrink-0 block" />
-        <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" class="w-full flex-shrink-0 block" />
-        <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" class="w-full flex-shrink-0 block" />
-      </div>
-    </div>
-
-    <button onclick="anterior()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
-    </button>
-    <button onclick="proximo()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-      </svg>
-    </button>
-
-    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-      <button onclick="irPara(0)" class="indicador w-3 h-3 rounded-full bg-white shadow transition"></button>
-      <button onclick="irPara(1)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
-      <button onclick="irPara(2)" class="indicador w-3 h-3 rounded-full bg-white/50 shadow transition"></button>
-    </div>
-  </section>
-
-  <script>
-    let indiceAtual = 0;
-    const totalImagens = 3;
-    const carrossel = document.getElementById('carrossel');
-    const indicadores = document.querySelectorAll('.indicador');
-
-    function atualizarCarrossel() {
-      carrossel.style.transform = `translateX(-${indiceAtual * 100}%)`;
-      indicadores.forEach((ind, i) => {
-        ind.style.backgroundColor = i === indiceAtual ? 'white' : 'rgba(255, 255, 255, 0.5)';
-      });
-    }
-
-    function proximo() {
-      indiceAtual = (indiceAtual + 1) % totalImagens;
-      atualizarCarrossel();
-    }
-
-    function anterior() {
-      indiceAtual = (indiceAtual - 1 + totalImagens) % totalImagens;
-      atualizarCarrossel();
-    }
-
-    function irPara(indice) {
-      indiceAtual = indice;
-      atualizarCarrossel();
-    }
-
-    setInterval(proximo, 5000);
-  </script>
-
-  <!-- COMO FUNCIONA (ACCORDION) -->
-  <section id="como-funciona">
-    <div class="section-wrap">
-      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Como Funciona</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Tudo muito simples. Clique em cada etapa para saber mais.</p>
-
-      <div class="accordion-list">
-
-        <div class="accordion-item reveal reveal-delay-1" id="acc-1">
-          <button class="accordion-header" onclick="toggleAccordion('acc-1')">
-            <div class="accordion-header-inner">
-              <span class="accordion-num">01</span>
+        <!-- PAINEL 1: CONHEÇA A OPORTUNIDADE -->
+        <div class="detail-panel reveal" id="dp-1">
+          <button class="detail-panel-header" onclick="toggleDetail('dp-1')">
+            <div class="detail-panel-header-inner">
+              <span class="detail-panel-num">01</span>
               <div>
-                <h3>Comece sem investir nada</h3>
-                <p class="preview">Você recebe a maleta e começa a vender.</p>
+                <h3>Conheça a Oportunidade</h3>
+                <p class="dp-preview">Qualidade, variedade e suporte para você vender.</p>
               </div>
             </div>
-            <div class="accordion-arrow">
+            <div class="detail-arrow">
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </div>
           </button>
-          <div class="accordion-body">
-            <div class="accordion-body-inner">
-              <p>Você recebe uma maleta com diversas peças selecionadas sem precisar pagar nada antecipadamente. Seu único trabalho é mostrar, encantar e vender.</p>
-              <p>Sem taxa de adesão, sem compra obrigatória, sem risco financeiro.</p>
+          <div class="detail-panel-body">
+            <div class="detail-panel-inner">
+              <p style="font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:24px">Uma chance real para mulheres que querem independência financeira sem abrir mão da flexibilidade.</p>
+              <div class="cards-grid">
+                <div class="card">
+                  <div class="card-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                  <h3>Qualidade Garantida</h3>
+                  <p>Semijoias banhadas a <strong>ouro 18k</strong>, <strong>prata</strong> ou <strong>ródio branco</strong>, com tratamento hipoalergênico — livre de níquel. Trabalhamos também com <strong>aço inoxidável</strong> e <strong>relógios</strong>.</p>
+                </div>
+                <div class="card">
+                  <div class="card-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+                  <h3>Peças que Vendem</h3>
+                  <p>Trabalhamos apenas com peças atuais e de alto giro. Nada de estoque antigo parado. Mostruário variado e renovado conforme o seu desempenho.</p>
+                </div>
+                <div class="card">
+                  <div class="card-icon"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+                  <h3>Catálogo Completo</h3>
+                  <p>Catálogo digital sempre atualizado com fotos profissionais. Compartilhe com suas clientes pelo WhatsApp e venda de qualquer lugar.</p>
+                </div>
+              </div>
+
+              <!-- CARROSSEL -->
+              <div style="margin-top:32px;position:relative">
+                <div style="overflow:hidden;border-radius:4px">
+                  <div id="carrossel" style="display:flex;transition:transform 0.5s ease-in-out">
+                    <img src="imagens/maleta_completa1.jpg" alt="Maleta 1" style="width:100%;flex-shrink:0;display:block" />
+                    <img src="imagens/maleta_completa2.jpg" alt="Maleta 2" style="width:100%;flex-shrink:0;display:block" />
+                    <img src="imagens/maleta_completa3.jpg" alt="Maleta 3" style="width:100%;flex-shrink:0;display:block" />
+                  </div>
+                </div>
+                <button onclick="anterior()" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15)">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button onclick="proximo()" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.85);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15)">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+                <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px">
+                  <button onclick="irPara(0)" class="indicador" style="width:10px;height:10px;border-radius:50%;background:white;border:none;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.2)"></button>
+                  <button onclick="irPara(1)" class="indicador" style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);border:none;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.2)"></button>
+                  <button onclick="irPara(2)" class="indicador" style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.5);border:none;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,0.2)"></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="accordion-item reveal reveal-delay-2" id="acc-2">
-          <button class="accordion-header" onclick="toggleAccordion('acc-2')">
-            <div class="accordion-header-inner">
-              <span class="accordion-num">02</span>
+        <!-- PAINEL 2: VANTAGENS -->
+        <div class="detail-panel reveal reveal-delay-1" id="dp-2">
+          <button class="detail-panel-header" onclick="toggleDetail('dp-2')">
+            <div class="detail-panel-header-inner">
+              <span class="detail-panel-num">02</span>
               <div>
-                <h3>Venda com suporte completo</h3>
-                <p class="preview">Material profissional para você vender mais.</p>
+                <h3>Vantagens para Você</h3>
+                <p class="dp-preview">Tudo o que você recebe para vender com confiança.</p>
               </div>
             </div>
-            <div class="accordion-arrow">
+            <div class="detail-arrow">
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </div>
           </button>
-          <div class="accordion-body">
-            <div class="accordion-body-inner">
-              <p>Você não está sozinha. Recebe tudo o que precisa para vender com profissionalismo:</p>
-              <ul>
-                <li>Fotos profissionais de todas as peças para divulgação</li>
-                <li>Catálogo digital completo e organizado</li>
-                <li>Sacolinhas e saquinhos para embalagem na entrega</li>
-                <li>Certificado de garantia para as suas clientes</li>
-                <li>Link de pagamento — suas clientes pagam em até 3x sem juros no cartão</li>
-              </ul>
+          <div class="detail-panel-body">
+            <div class="detail-panel-inner">
+              <div class="vantagens-light-grid">
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Produtos de qualidade</strong> com preço competitivo</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Peças atuais</strong> e fáceis de vender</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Fotos profissionais</strong> para divulgação</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Catálogo completo</strong> e organizado</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span>Clientes pagam em <strong>até 3x sem juros</strong> por link</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Suporte completo</strong> para revendedoras</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><strong>Sem investimento inicial</strong> — comece hoje</span></div>
+                <div class="vantagem-light"><div class="vcheck"><svg fill="none" viewBox="0 0 12 12" stroke="white" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span>Localizada em <strong>Uberlândia – MG</strong></span></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="accordion-item reveal reveal-delay-3" id="acc-3">
-          <button class="accordion-header" onclick="toggleAccordion('acc-3')">
-            <div class="accordion-header-inner">
-              <span class="accordion-num">03</span>
+        <!-- PAINEL 3: COMO FUNCIONA -->
+        <div class="detail-panel reveal reveal-delay-2" id="dp-3">
+          <button class="detail-panel-header" onclick="toggleDetail('dp-3')">
+            <div class="detail-panel-header-inner">
+              <span class="detail-panel-num">03</span>
               <div>
-                <h3>Acerto mensal simples</h3>
-                <p class="preview">Pague só pelo que vender, após 30 dias.</p>
+                <h3>Como Funciona</h3>
+                <p class="dp-preview">Do início à comissão, passo a passo.</p>
               </div>
             </div>
-            <div class="accordion-arrow">
+            <div class="detail-arrow">
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </div>
           </button>
-          <div class="accordion-body">
-            <div class="accordion-body-inner">
-              <p>Você paga somente pelas peças que vender, após 30 dias.</p>
-              <p>O pagamento do acerto pode ser parcelado em até 3x sem juros no cartão.</p>
+          <div class="detail-panel-body">
+            <div class="detail-panel-inner">
+              <div class="accordion-list">
+
+                <div class="accordion-item" id="acc-1">
+                  <button class="accordion-header" onclick="toggleAccordion('acc-1')">
+                    <div class="accordion-header-inner">
+                      <span class="accordion-num">01</span>
+                      <div><h3>Comece sem investir nada</h3><p class="preview">Você recebe a maleta e começa a vender.</p></div>
+                    </div>
+                    <div class="accordion-arrow"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></div>
+                  </button>
+                  <div class="accordion-body"><div class="accordion-body-inner">
+                    <p>Você recebe uma maleta com diversas peças selecionadas sem precisar pagar nada antecipadamente. Seu único trabalho é mostrar, encantar e vender.</p>
+                    <p>Sem taxa de adesão, sem compra obrigatória, sem risco financeiro.</p>
+                  </div></div>
+                </div>
+
+                <div class="accordion-item" id="acc-2">
+                  <button class="accordion-header" onclick="toggleAccordion('acc-2')">
+                    <div class="accordion-header-inner">
+                      <span class="accordion-num">02</span>
+                      <div><h3>Venda com suporte completo</h3><p class="preview">Material profissional para você vender mais.</p></div>
+                    </div>
+                    <div class="accordion-arrow"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></div>
+                  </button>
+                  <div class="accordion-body"><div class="accordion-body-inner">
+                    <p>Você não está sozinha. Recebe tudo o que precisa para vender com profissionalismo:</p>
+                    <ul>
+                      <li>Fotos profissionais de todas as peças para divulgação</li>
+                      <li>Catálogo digital completo e organizado</li>
+                      <li>Sacolinhas e saquinhos para embalagem na entrega</li>
+                      <li>Certificado de garantia para as suas clientes</li>
+                      <li>Link de pagamento — suas clientes pagam em até 3x sem juros no cartão</li>
+                    </ul>
+                  </div></div>
+                </div>
+
+                <div class="accordion-item" id="acc-3">
+                  <button class="accordion-header" onclick="toggleAccordion('acc-3')">
+                    <div class="accordion-header-inner">
+                      <span class="accordion-num">03</span>
+                      <div><h3>Acerto mensal simples</h3><p class="preview">Pague só pelo que vender, após 30 dias.</p></div>
+                    </div>
+                    <div class="accordion-arrow"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></div>
+                  </button>
+                  <div class="accordion-body"><div class="accordion-body-inner">
+                    <p>Você paga somente pelas peças que vender, após 30 dias.</p>
+                    <p>O pagamento do acerto pode ser parcelado em até 3x sem juros no cartão.</p>
+                  </div></div>
+                </div>
+
+                <div class="accordion-item" id="acc-4">
+                  <button class="accordion-header" onclick="toggleAccordion('acc-4')">
+                    <div class="accordion-header-inner">
+                      <span class="accordion-num">04</span>
+                      <div><h3>Crescimento progressivo</h3><p class="preview">Mais desempenho, mais peças, mais comissão.</p></div>
+                    </div>
+                    <div class="accordion-arrow"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg></div>
+                  </button>
+                  <div class="accordion-body"><div class="accordion-body-inner">
+                    <p>Conforme o seu desempenho, as peças do mostruário são renovadas e ampliadas — você pode escolher as peças que funcionam melhor para o seu perfil e o da sua clientela.</p>
+                    <p>A comissão também cresce progressivamente, chegando a até 40% — e com metas acessíveis, ao contrário de outras marcas.</p>
+                  </div></div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="accordion-item reveal reveal-delay-4" id="acc-4">
-          <button class="accordion-header" onclick="toggleAccordion('acc-4')">
-            <div class="accordion-header-inner">
-              <span class="accordion-num">04</span>
+        <!-- PAINEL 4: COMISSÃO -->
+        <div class="detail-panel reveal reveal-delay-3" id="dp-4">
+          <button class="detail-panel-header" onclick="toggleDetail('dp-4')">
+            <div class="detail-panel-header-inner">
+              <span class="detail-panel-num">04</span>
               <div>
-                <h3>Crescimento progressivo</h3>
-                <p class="preview">Mais desempenho, mais peças, mais comissão.</p>
+                <h3>Comissão Progressiva</h3>
+                <p class="dp-preview">Quanto mais você vende, mais você ganha.</p>
               </div>
             </div>
-            <div class="accordion-arrow">
+            <div class="detail-arrow">
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
             </div>
           </button>
-          <div class="accordion-body">
-            <div class="accordion-body-inner">
-              <p>Conforme o seu desempenho, as peças do mostruário são renovadas e ampliadas — você pode escolher as peças que funcionam melhor para o seu perfil e o da sua clientela.</p>
-              <p>A comissão também cresce progressivamente, chegando a até 40% — e com metas acessíveis, ao contrário de outras marcas.</p>
+          <div class="detail-panel-body">
+            <div class="detail-panel-inner">
+              <div class="comissao-destaque">
+                <div class="comissao-num">4<span>0</span><span style="font-size:0.5em;color:var(--gold)">%</span></div>
+                <div class="comissao-label">de comissão máxima</div>
+              </div>
+              <div class="comissao-cards">
+                <div class="comissao-card">
+                  <div class="comissao-card-title">Modelo</div>
+                  <div class="comissao-card-value">Progressivo</div>
+                  <div class="comissao-card-desc">Cresce conforme seu volume de vendas</div>
+                </div>
+                <div class="comissao-card">
+                  <div class="comissao-card-title">Diferencial</div>
+                  <div class="comissao-card-value">Meta acessível</div>
+                  <div class="comissao-card-desc">A comissão máxima é fácil de atingir na prática</div>
+                </div>
+                <div class="comissao-card">
+                  <div class="comissao-card-title">Prazo de acerto</div>
+                  <div class="comissao-card-value">30 dias</div>
+                  <div class="comissao-card-desc">Podendo ser de até 40 dias, conforme o seu desempenho</div>
+                </div>
+                <div class="comissao-card">
+                  <div class="comissao-card-title">Parcelamento</div>
+                  <div class="comissao-card-value">3x sem juros</div>
+                  <div class="comissao-card-desc">No cartão, para você e para suas clientes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAINEL 5: POR QUE A RENATA? -->
+        <div class="detail-panel reveal reveal-delay-4" id="dp-5">
+          <button class="detail-panel-header" onclick="toggleDetail('dp-5')">
+            <div class="detail-panel-header-inner">
+              <span class="detail-panel-num">05</span>
+              <div>
+                <h3>Por que a Renata?</h3>
+                <p class="dp-preview">O que nos diferencia de outras marcas.</p>
+              </div>
+            </div>
+            <div class="detail-arrow">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+            </div>
+          </button>
+          <div class="detail-panel-body">
+            <div class="detail-panel-inner">
+              <p style="font-size:.9rem;color:var(--muted);line-height:1.75;margin-bottom:20px">O que as revendedoras nos contam sobre as marcas que deixaram — e o que encontram aqui.</p>
+              <div class="compare-grid">
+                <div class="compare-col before">
+                  <div class="compare-header">⚠️ &nbsp;O que elas sofriam</div>
+                  <div class="compare-body">
+                    <div class="compare-row"><span class="icon">✗</span> Peças com preço elevado — difíceis de vender</div>
+                    <div class="compare-row"><span class="icon">✗</span> Poucas peças e mostruário fechado</div>
+                    <div class="compare-row"><span class="icon">✗</span> Sem liberdade de escolha</div>
+                    <div class="compare-row"><span class="icon">✗</span> Suporte pós-venda inexistente</div>
+                    <div class="compare-row"><span class="icon">✗</span> Qualidade inconsistente</div>
+                    <div class="compare-row"><span class="icon">✗</span> Comissão máxima praticamente inalcançável</div>
+                  </div>
+                </div>
+                <div class="compare-col after">
+                  <div class="compare-header">✦ &nbsp;O que oferecemos</div>
+                  <div class="compare-body">
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Preço competitivo — foco em peças do dia a dia</div>
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Mostruário amplo, variável por desempenho</div>
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Liberdade de escolher suas peças* <br>*De acordo com seu desempenho</div>
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Garantia clara e suporte efetivo</div>
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Qualidade garantida — banho de ouro 18k, hipoalergênico</div>
+                    <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Comissão máxima fácil de atingir — até 40%</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1015,84 +514,18 @@
       </div>
     </div>
   </section>
+  
+  <!-- TRANSIÇÃO MALETA → REQUISITOS -->
+  <div class="maleta-transition reveal">
+    <div class="gold-divider" style="max-width:180px;margin:0 auto"><div class="gold-divider-diamond"></div></div>
+    <p>Antes de preencher o formulário, verifique se você se enquadra nos requisitos abaixo.</p>
+  </div>
 
-  <!-- COMPARATIVO -->
-  <section id="comparativo">
-    <div class="section-wrap">
-      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Por que a Renata?</h2>
-      <p class="section-subtitle reveal reveal-delay-2">O que as revendedoras nos contam sobre as marcas que deixaram — e o que encontram aqui.</p>
-
-      <div class="compare-grid">
-        <div class="compare-col before reveal reveal-delay-1">
-          <div class="compare-header">⚠️ &nbsp;O que elas sofriam</div>
-          <div class="compare-body">
-            <div class="compare-row"><span class="icon">✗</span> Peças com preço elevado — difíceis de vender</div>
-            <div class="compare-row"><span class="icon">✗</span> Poucas peças e mostruário fechado</div>
-            <div class="compare-row"><span class="icon">✗</span> Sem liberdade de escolha</div>
-            <div class="compare-row"><span class="icon">✗</span> Suporte pós-venda inexistente</div>
-            <div class="compare-row"><span class="icon">✗</span> Qualidade inconsistente</div>
-            <div class="compare-row"><span class="icon">✗</span> Comissão máxima praticamente inalcançável</div>
-          </div>
-        </div>
-        <div class="compare-col after reveal reveal-delay-2">
-          <div class="compare-header">✦ &nbsp;O que oferecemos</div>
-          <div class="compare-body">
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Preço competitivo — foco em peças do dia a dia</div>
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Mostruário amplo, variável por desempenho</div>
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Liberdade de escolher suas peças</div>
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Garantia clara e suporte efetivo</div>
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Qualidade garantida — ouro 18k, hipoalergênico</div>
-            <div class="compare-row"><span class="icon" style="color:#C2985A">✓</span> Comissão máxima fácil de atingir — até 40%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMISSÃO -->
-  <section id="comissao">
-    <div class="section-wrap">
-      <div class="gold-divider reveal"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px">Comissão Progressiva</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Quanto mais você vende, mais você ganha. Simples assim.</p>
-
-      <div class="comissao-destaque reveal">
-        <div class="comissao-num">4<span>0</span><span style="font-size:0.5em;color:var(--gold)">%</span></div>
-        <div class="comissao-label">de comissão máxima</div>
-      </div>
-
-      <div class="comissao-cards">
-        <div class="comissao-card reveal reveal-delay-1">
-          <div class="comissao-card-title">Modelo</div>
-          <div class="comissao-card-value">Progressivo</div>
-          <div class="comissao-card-desc">Cresce conforme seu volume de vendas</div>
-        </div>
-        <div class="comissao-card reveal reveal-delay-2">
-          <div class="comissao-card-title">Diferencial</div>
-          <div class="comissao-card-value">Meta acessível</div>
-          <div class="comissao-card-desc">A comissão máxima é fácil de atingir na prática</div>
-        </div>
-        <div class="comissao-card reveal reveal-delay-3">
-          <div class="comissao-card-title">Prazo de acerto</div>
-          <div class="comissao-card-value">30 dias</div>
-          <div class="comissao-card-desc">Podendo ser de até 40 dias, conforme o seu desempenho</div>
-        </div>
-        <div class="comissao-card reveal reveal-delay-4">
-          <div class="comissao-card-title">Parcelamento</div>
-          <div class="comissao-card-value">3x sem juros</div>
-          <div class="comissao-card-desc">No cartão, para você e para suas clientes</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REQUISITOS (ACCORDION) -->
+  <!-- REQUISITOS -->
   <section id="requisitos">
     <div class="requisitos-wrap">
-      <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
-      <h2 class="section-title reveal reveal-delay-1" style="margin-top:28px;margin-bottom:8px">O que é preciso?</h2>
-      <p class="section-subtitle reveal reveal-delay-2">Requisitos simples e transparentes.</p>
+      <h2 class="section-title reveal" style="margin-bottom:8px">O que é preciso?</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Requisitos simples e transparentes.</p>
 
       <div style="margin-top:36px">
 
@@ -1101,7 +534,7 @@
             <span class="req-badge">Preferência</span>
             CPF sem restrição
           </span>
-          <div class="accordion-arrow" style="flex-shrink:0">
+          <div class="accordion-arrow">
             <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </div>
         </button>
@@ -1116,7 +549,7 @@
             <span class="req-badge">Essencial</span>
             Interesse genuíno em vendas
           </span>
-          <div class="accordion-arrow" style="flex-shrink:0">
+          <div class="accordion-arrow">
             <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </div>
         </button>
@@ -1131,7 +564,7 @@
             <span class="req-badge">Importante</span>
             Comprometimento e responsabilidade
           </span>
-          <div class="accordion-arrow" style="flex-shrink:0">
+          <div class="accordion-arrow">
             <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
           </div>
         </button>
@@ -1144,8 +577,7 @@
       </div>
     </div>
   </section>
-
-  <!-- FORMULÁRIO (PRESERVADO DO ORIGINAL) -->
+  <!-- FORMULÁRIO -->
   <section id="formulario">
     <div class="form-header">
       <div class="gold-divider reveal" style="max-width:180px"><div class="gold-divider-diamond"></div></div>
@@ -1163,13 +595,27 @@
             </div>
             <div>
                 <label class="block text-gray-700 font-medium mb-1 text-sm">WhatsApp</label>
-                <input type="tel" name="WhatsApp" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="(00) 00000-0000" required />
+                <input type="tel" id="whatsappInput" name="WhatsApp"
+                  class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+                  placeholder="(00) 00000-0000"
+                  maxlength="15"
+                  inputmode="numeric"
+                  autocomplete="off"
+                  required />
+                <span id="whatsappErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
             </div>
         </div>
 
         <div>
             <label class="block text-gray-700 font-medium mb-1 text-sm">CPF</label>
-            <input type="text" name="CPF" class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition" placeholder="Informe corretamente seu CPF" required />
+            <input type="text" id="cpfInput" name="CPF"
+              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 transition"
+              placeholder="000.000.000-00"
+              maxlength="14"
+              inputmode="numeric"
+              autocomplete="off"
+              required />
+            <span id="cpfErro" style="display:none;color:#c0392b;font-size:0.78rem;margin-top:4px"></span>
         </div>
 
         <div>
@@ -1260,7 +706,7 @@
         <div class="bg-gray-50 p-4 rounded border border-gray-200">
             <label class="flex items-start cursor-pointer">
                 <input type="checkbox" name="ConfirmacaoLeitura" value="Li e concordo" class="mt-1 mr-3 text-pink-600 focus:ring-pink-500" required>
-                <span class="text-sm text-gray-600">Li todas as informações acima e concordo com os requisitos para me tornar revendedora.</span>
+                <span class="text-sm text-gray-600">Li os requisitos acima e aceito as condições do programa de revendas.</span>
             </label>
         </div>
 
@@ -1285,7 +731,7 @@
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY > 60;
       nav.classList.toggle('scrolled', scrolled);
-      navLogo.src = scrolled ? 'imagens/logo.png' : 'imagens/logo_branca.png';
+      navLogo.src = scrolled ? 'imagens/logo.png' : 'imagens/logo.png';
     });
 
     // ── SCROLL REVEAL ────────────────────────────────────────────
@@ -1294,13 +740,27 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // ── ACCORDION ────────────────────────────────────────────────
+    // ── DETAIL PANELS ────────────────────────────────────────────
+    function toggleDetail(id) {
+      const panel = document.getElementById(id);
+      const body = panel.querySelector('.detail-panel-body');
+      const inner = panel.querySelector('.detail-panel-inner');
+      const isOpen = panel.classList.contains('open');
+      if (isOpen) {
+        panel.classList.remove('open');
+        body.style.maxHeight = '0';
+      } else {
+        panel.classList.add('open');
+        body.style.maxHeight = inner.scrollHeight + 80 + 'px';
+      }
+    }
+
+    // ── ACCORDION (Como Funciona, nested) ────────────────────────
     function toggleAccordion(id) {
       const item = document.getElementById(id);
       const body = item.querySelector('.accordion-body');
       const inner = item.querySelector('.accordion-body-inner');
       const isOpen = item.classList.contains('open');
-      // close all
       document.querySelectorAll('.accordion-item').forEach(i => {
         i.classList.remove('open');
         i.querySelector('.accordion-body').style.maxHeight = '0';
@@ -1308,10 +768,19 @@
       if (!isOpen) {
         item.classList.add('open');
         body.style.maxHeight = inner.scrollHeight + 40 + 'px';
+        // expande o painel pai se necessário
+        const dp = item.closest('.detail-panel');
+        if (dp && dp.classList.contains('open')) {
+          setTimeout(() => {
+            const dpBody = dp.querySelector('.detail-panel-body');
+            const dpInner = dp.querySelector('.detail-panel-inner');
+            dpBody.style.maxHeight = dpInner.scrollHeight + 80 + 'px';
+          }, 50);
+        }
       }
     }
 
-    // ── REQUISITOS ACCORDION ─────────────────────────────────────
+    // ── REQUISITOS ───────────────────────────────────────────────
     function toggleReq(btn) {
       const body = btn.nextElementSibling;
       const inner = body.querySelector('.requisito-body-inner');
@@ -1330,11 +799,119 @@
       }
     }
 
+    // ── CARROSSEL ────────────────────────────────────────────────
+    let indiceAtual = 0;
+    const totalImagens = 3;
+
+    function atualizarCarrossel() {
+      const el = document.getElementById('carrossel');
+      const inds = document.querySelectorAll('.indicador');
+      if (el) el.style.transform = `translateX(-${indiceAtual * 100}%)`;
+      inds.forEach((ind, i) => { ind.style.backgroundColor = i === indiceAtual ? 'white' : 'rgba(255,255,255,0.5)'; });
+    }
+    function proximo() { indiceAtual = (indiceAtual + 1) % totalImagens; atualizarCarrossel(); }
+    function anterior() { indiceAtual = (indiceAtual - 1 + totalImagens) % totalImagens; atualizarCarrossel(); }
+    function irPara(i) { indiceAtual = i; atualizarCarrossel(); }
+    setInterval(proximo, 5000);
+
+    // ── TELEFONE: MÁSCARA E VALIDAÇÃO ────────────────────────────
+    function mascaraTelefone(v) {
+      v = v.replace(/\D/g, '').substring(0, 11);
+      if (v.length > 10)     v = v.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+      else if (v.length > 6) v = v.replace(/(\d{2})(\d{4,5})(\d{0,4})/, '($1) $2-$3');
+      else if (v.length > 2) v = v.replace(/(\d{2})(\d+)/, '($1) $2');
+      else if (v.length > 0) v = v.replace(/(\d+)/, '($1');
+      return v;
+    }
+
+    function validarTelefone(v) {
+      return v.replace(/\D/g, '').length >= 10;
+    }
+
+    const whatsappInput = document.getElementById('whatsappInput');
+    const whatsappErro  = document.getElementById('whatsappErro');
+
+    whatsappInput.addEventListener('input', function () {
+      this.value = mascaraTelefone(this.value);
+      whatsappErro.style.display = 'none';
+      this.style.borderColor = '';
+    });
+
+    whatsappInput.addEventListener('blur', function () {
+      const ok = validarTelefone(this.value);
+      whatsappErro.textContent   = ok ? '' : 'Número inválido. Informe DDD + número (mínimo 10 dígitos).';
+      whatsappErro.style.display = ok ? 'none' : 'block';
+      this.style.borderColor     = ok ? '' : '#c0392b';
+    });
+
+    // ── CPF: MÁSCARA E VALIDAÇÃO ─────────────────────────────────
+    function mascaraCPF(v) {
+      v = v.replace(/\D/g, '').substring(0, 11);
+      if (v.length > 9)      v = v.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+      else if (v.length > 6) v = v.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+      else if (v.length > 3) v = v.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+      return v;
+    }
+
+    function validarCPF(cpf) {
+      cpf = cpf.replace(/\D/g, '');
+      if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
+      let soma = 0, resto;
+      for (let i = 1; i <= 9; i++) soma += parseInt(cpf[i - 1]) * (11 - i);
+      resto = (soma * 10) % 11;
+      if (resto === 10 || resto === 11) resto = 0;
+      if (resto !== parseInt(cpf[9])) return false;
+      soma = 0;
+      for (let i = 1; i <= 10; i++) soma += parseInt(cpf[i - 1]) * (12 - i);
+      resto = (soma * 10) % 11;
+      if (resto === 10 || resto === 11) resto = 0;
+      return resto === parseInt(cpf[10]);
+    }
+
+    const cpfInput = document.getElementById('cpfInput');
+    const cpfErro  = document.getElementById('cpfErro');
+
+    cpfInput.addEventListener('input', function () {
+      this.value = mascaraCPF(this.value);
+      cpfErro.style.display = 'none';
+      this.style.borderColor = '';
+    });
+
+    cpfInput.addEventListener('blur', function () {
+      const ok = validarCPF(this.value);
+      cpfErro.textContent  = ok ? '' : 'CPF inválido. Verifique os números digitados.';
+      cpfErro.style.display = ok ? 'none' : 'block';
+      this.style.borderColor = ok ? '' : '#c0392b';
+    });
+
     // ── FORMULÁRIO (ORIGINAL PRESERVADO) ────────────────────────
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
 
     document.getElementById('candidaturaForm').addEventListener('submit', function(e) {
       e.preventDefault();
+
+      // Bloqueia envio se telefone inválido
+      if (!validarTelefone(document.getElementById('whatsappInput').value)) {
+        const inp = document.getElementById('whatsappInput');
+        const err = document.getElementById('whatsappErro');
+        err.textContent   = 'Número inválido. Informe DDD + número (mínimo 10 dígitos).';
+        err.style.display = 'block';
+        inp.style.borderColor = '#c0392b';
+        inp.focus();
+        return;
+      }
+
+      // Bloqueia envio se CPF inválido
+      if (!validarCPF(document.getElementById('cpfInput').value)) {
+        const inp = document.getElementById('cpfInput');
+        const err = document.getElementById('cpfErro');
+        err.textContent   = 'CPF inválido. Corrija antes de enviar.';
+        err.style.display = 'block';
+        inp.style.borderColor = '#c0392b';
+        inp.focus();
+        return;
+      }
+
       const form = this;
       const submitBtn = form.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
@@ -1345,15 +922,14 @@
 
       const formData = new FormData(form);
       const urlParams = new URLSearchParams(window.location.search);
-      const origem = urlParams.get('orig') || '';
-      formData.append('Origem', origem);
+      formData.append('Origem', urlParams.get('orig') || '');
 
       fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => {
           if (response.ok) return response.json();
           throw new Error('Erro na resposta do servidor');
         })
-        .then(data => {
+        .then(() => {
           submitBtn.innerHTML = originalBtnText;
           submitBtn.disabled = false;
           submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
