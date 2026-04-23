@@ -2,36 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6000",
-      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
-      "imagem": "6000.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
-      "codigo": "5999",
-      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
-      "imagem": "5999.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
-      "codigo": "5995",
-      "descricao": "RELOGIO REDONDO - NÚMEROS - FUNDO PRETO - LINHA GOLD",
-      "imagem": "5995.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
       "codigo": "5979",
       "descricao": "RELOGIO DHP MALHA ITALIANA - UNISSEX - FUNDO PRETO",
       "imagem": "5979.jpg",
@@ -92,16 +62,6 @@
       "dataUltimaEntrada": "10/02/2026"
     },
     {
-      "codigo": "5874",
-      "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO DOURADO",
-      "imagem": "5874.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "10/02/2026"
-    },
-    {
       "codigo": "5854",
       "descricao": "RELOGIO INSP. CART. REDONDO - 2 BANHOS - FUNDO BRANCO",
       "imagem": "5854.jpg",
@@ -122,14 +82,14 @@
       "dataUltimaEntrada": "07/02/2026"
     },
     {
-      "codigo": "5682",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA",
-      "imagem": "5682.jpg",
+      "codigo": "5700",
+      "descricao": "RELOGIO LEISITE - AZUL CLARO M2",
+      "imagem": "5700.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "30/01/2026"
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": " ",
+      "dataUltimaEntrada": "30/11/2025"
     },
     {
       "codigo": "5695",
