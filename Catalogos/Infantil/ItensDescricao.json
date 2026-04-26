@@ -13,6 +13,17 @@
       "dataUltimaEntrada": "07/03/2026"
     },
     {
+      "codigo": "5962",
+      "descricao": "BRINCO ARGOLA PREGO CRAVEJADO TAM P ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5962.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "54,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/03/2026"
+    },
+    {
       "codigo": "5960",
       "descricao": "BRINCO BORBOLETA COM PONTO DE LUZ TAM PP",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -66,17 +77,6 @@
       "precoConsignado": "64,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "4902",
-      "descricao": "BRINCO INFANTIL GATINHO COM LACINHO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4902.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "39,90",
-      "precoConsignado": "39,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/09/2025"
     },
     {
       "codigo": "4813",
@@ -253,17 +253,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/10/2024"
-    },
-    {
-      "codigo": "3283",
-      "descricao": "BRINCO PONTO DE LUZ 5MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3283.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "34,90",
-      "precoConsignado": "34,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
     }
   ]
 }

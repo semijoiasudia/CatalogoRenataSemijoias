@@ -2,6 +2,86 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6101",
+      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO DOURADO",
+      "imagem": "6101.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6100",
+      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO BRANCO",
+      "imagem": "6100.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6099",
+      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO PRETO",
+      "imagem": "6099.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6098",
+      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - PULSEIRA PRETA",
+      "imagem": "6098.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6093",
+      "descricao": "RELOGIO CASIO UNISSEX QUADRADO 1ª LINHA - FUNDO ROSA",
+      "imagem": "6093.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "5835",
+      "descricao": "RELOGIO CASIO UNISSEX QUADRADO 1ª LINHA - PRETO",
+      "imagem": "5835.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "5832",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO BRANCO",
+      "imagem": "5832.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "5998",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5998.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
       "codigo": "5979",
       "descricao": "RELOGIO DHP MALHA ITALIANA - UNISSEX - FUNDO PRETO",
       "imagem": "5979.jpg",
