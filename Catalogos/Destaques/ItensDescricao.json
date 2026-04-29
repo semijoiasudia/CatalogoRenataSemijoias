@@ -2,6 +2,94 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6089",
+      "descricao": "BRINCO EAR JACKET PONTO DE LUZ 4 E 8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6089.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "102,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6088",
+      "descricao": "BRINCO ORGÂNICO COM PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6088.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6086",
+      "descricao": "BRINCO ORGÂNICO OVAL LISO E CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6086.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6085",
+      "descricao": "BRINCO DUO ARGOLA CLICK GOTA ABAULADA M/P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6085.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6075",
+      "descricao": "BRINCO DUAS CONCHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6075.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6068",
+      "descricao": "BRINCO FLOR COM PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6068.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6062",
+      "descricao": "BRINCO EAR CUFF RIVIERA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6062.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6057",
+      "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6057.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
       "codigo": "6055",
       "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
       "imagem": "6055.jpg",
