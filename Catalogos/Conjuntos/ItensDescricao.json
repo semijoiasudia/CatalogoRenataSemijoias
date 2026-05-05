@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6105",
+      "descricao": "CONJUNTO PEDRA AZUL CRAVEJADA 39+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6105.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/05/2026"
+    },
+    {
       "codigo": "6040",
       "descricao": "CONJUNTO CORAÇÃO VERDE ESMERALDA CRAVEJADO 44+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,17 +33,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/04/2026"
-    },
-    {
-      "codigo": "6022",
-      "descricao": "CONJUNTO CORAÇÃO COM PONTO DE LUZ 48+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6022.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/04/2026"
     },
     {
       "codigo": "4449",
@@ -88,28 +88,6 @@
       "precoConsignado": "149,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "23/11/2025"
-    },
-    {
-      "codigo": "5604",
-      "descricao": "CONJUNTO PEDRA RETANGULAR PRETA CRISTAL AO REDOR 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5604.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/11/2025"
-    },
-    {
-      "codigo": "5353",
-      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5353.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "124,90",
-      "precoConsignado": "124,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/11/2025"
     },
     {
       "codigo": "5351",
