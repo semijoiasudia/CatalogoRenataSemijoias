@@ -2,37 +2,125 @@
   "categoria": "DIA DAS MAES",
   "produtos": [
     {
-      "codigo": "4321",
-      "descricao": "BRINCO MEIA ARGOLA FORMATO CORAÇÃO GRANDE",
+      "codigo": "6106",
+      "descricao": "COLAR NOSSA SENHORA CRAVEJADA COLORS 48CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4321.jpg",
+      "imagem": "6106.jpg",
       "pastaFotos": "Catalogos/Dia das Maes/",
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/05/2025"
+      "dataUltimaEntrada": "05/05/2026"
     },
     {
-      "codigo": "4316",
-      "descricao": "BRINCO CORAÇÃO DESENHADO TAM M",
+      "codigo": "6105",
+      "descricao": "CONJUNTO PEDRA AZUL CRAVEJADA 39+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4316.jpg",
+      "imagem": "6105.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/05/2026"
+    },
+    {
+      "codigo": "6076",
+      "descricao": "BRINCO BOTÃO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6076.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6072",
+      "descricao": "BRINCO GOTA COM ZIRCONIA DENTRO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6072.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6070",
+      "descricao": "BRINCO FLOR CRAVEJADA COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6070.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6068",
+      "descricao": "BRINCO FLOR COM PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6068.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6064",
+      "descricao": "BRINCO CORAÇÃO E PÉROLA AMARELA 10MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6064.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6060",
+      "descricao": "BRINCO NÓ ENTRELAÇADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6060.jpg",
       "pastaFotos": "Catalogos/Dia das Maes/",
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/05/2025"
+      "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "4308",
-      "descricao": "PULSEIRA RESILIÊNCIA 16+5CM",
+      "codigo": "6040",
+      "descricao": "CONJUNTO CORAÇÃO VERDE ESMERALDA CRAVEJADO 44+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4308.jpg",
+      "imagem": "6040.jpg",
       "pastaFotos": "Catalogos/Dia das Maes/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
+      "preco": "142,90",
+      "precoConsignado": "142,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/04/2025"
+      "dataUltimaEntrada": "05/04/2026"
+    },
+    {
+      "codigo": "6039",
+      "descricao": "CONJUNTO PEDRA VERDE TURMALINA CRAVEJADA 44+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6039.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/04/2026"
+    },
+    {
+      "codigo": "6029",
+      "descricao": "COLAR DUPLO MINI ESFERAS 35/41+9CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6029.jpg",
+      "pastaFotos": "Catalogos/Dia das Maes/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/04/2026"
     }
   ]
 }
