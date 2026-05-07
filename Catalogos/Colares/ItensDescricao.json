@@ -2,6 +2,83 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "6124",
+      "descricao": "COLAR DUPLO ESFERA 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6124.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
+      "codigo": "6123",
+      "descricao": "COLAR CORAÇÃO COM ÁRVORE DA VIDA 47CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6123.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
+      "codigo": "6122",
+      "descricao": "COLAR CORAÇÃO E BORBOLETA CRAVEJADOS 49CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6122.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
+      "codigo": "6121",
+      "descricao": "COLAR ESCAP CRUZ E CORAÇÃO ZIRCÔNIA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6121.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
+      "codigo": "6120",
+      "descricao": "COLAR ESCAP CORAÇÃO E CRUZ ZIRCÔNIA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6120.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
+      "codigo": "6119",
+      "descricao": "COLAR CRUCIFIXO JESUS CRISTO 30MM - 44+4CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "6119.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "06/05/2026"
+    },
+    {
+      "codigo": "6118",
+      "descricao": "COLAR CRUCIFIXO JESUS CRISTO 30MM - 44+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6118.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "06/05/2026"
+    },
+    {
       "codigo": "6106",
       "descricao": "COLAR NOSSA SENHORA CRAVEJADA COLORS 48CM",
       "tipo": "Semijoia banhada a Ouro 18k",
