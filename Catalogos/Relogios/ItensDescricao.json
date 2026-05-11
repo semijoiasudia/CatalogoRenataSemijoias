@@ -12,16 +12,6 @@
       "dataUltimaEntrada": "25/04/2026"
     },
     {
-      "codigo": "6100",
-      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO BRANCO",
-      "imagem": "6100.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
       "codigo": "6099",
       "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO PRETO",
       "imagem": "6099.jpg",
@@ -42,29 +32,9 @@
       "dataUltimaEntrada": "25/04/2026"
     },
     {
-      "codigo": "6097",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO DOURADO",
-      "imagem": "6097.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
       "codigo": "6096",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - PULSEIRA GRAFITE",
       "imagem": "6096.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
-      "codigo": "6095",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO CINZA",
-      "imagem": "6095.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "149,90",
       "precoConsignado": "149,90",
@@ -79,16 +49,6 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
-      "codigo": "6092",
-      "descricao": "RELOGIO CASIO UNISSEX REDONDO 1ª LINHA - FUNDO BRANCO",
-      "imagem": "6092.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
       "dataUltimaEntrada": "25/04/2026"
     },
     {
@@ -150,6 +110,16 @@
       "precoConsignado": "169,90",
       "banho": "Cor Ouro",
       "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "5999",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5999.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
     },
     {
       "codigo": "5996",
