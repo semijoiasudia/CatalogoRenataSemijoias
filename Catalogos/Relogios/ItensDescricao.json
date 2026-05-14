@@ -12,16 +12,6 @@
       "dataUltimaEntrada": "25/04/2026"
     },
     {
-      "codigo": "6099",
-      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO PRETO",
-      "imagem": "6099.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
       "codigo": "6098",
       "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - PULSEIRA PRETA",
       "imagem": "6098.jpg",
@@ -35,16 +25,6 @@
       "codigo": "6096",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - PULSEIRA GRAFITE",
       "imagem": "6096.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
-      "codigo": "6094",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO PRETO",
-      "imagem": "6094.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "149,90",
       "precoConsignado": "149,90",
@@ -102,14 +82,24 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "6052",
-      "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 2 VOLTAS",
-      "imagem": "6052.jpg",
+      "codigo": "6000",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
+      "imagem": "6000.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "169,90",
       "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "21/04/2026"
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "5999",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5999.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
     },
     {
       "codigo": "5996",
@@ -132,6 +122,16 @@
       "dataUltimaEntrada": "09/03/2026"
     },
     {
+      "codigo": "5975",
+      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
+      "imagem": "5975.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/03/2026"
+    },
+    {
       "codigo": "5972",
       "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
       "imagem": "5972.jpg",
@@ -142,6 +142,16 @@
       "dataUltimaEntrada": "09/03/2026"
     },
     {
+      "codigo": "5884",
+      "descricao": "RELOGIO REDONDO PEQUENO - DHP",
+      "imagem": "5884.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "13/02/2026"
+    },
+    {
       "codigo": "5875",
       "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO CINZA",
       "imagem": "5875.jpg",
@@ -149,6 +159,16 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox",
+      "dataUltimaEntrada": "10/02/2026"
+    },
+    {
+      "codigo": "5874",
+      "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO DOURADO",
+      "imagem": "5874.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "10/02/2026"
     },
     {
@@ -179,6 +199,16 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
+      "dataUltimaEntrada": "30/11/2025"
+    },
+    {
+      "codigo": "5275",
+      "descricao": "RELOGIO LEISITE - PRETO E FUNDO BRANCO",
+      "imagem": "5275.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": " ",
       "dataUltimaEntrada": "30/11/2025"
     }
   ]
