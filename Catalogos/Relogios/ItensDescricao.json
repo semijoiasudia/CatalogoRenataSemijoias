@@ -2,32 +2,12 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6101",
-      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO DOURADO",
-      "imagem": "6101.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
       "codigo": "6098",
       "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - PULSEIRA PRETA",
       "imagem": "6098.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "159,90",
       "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
-    },
-    {
-      "codigo": "6096",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - PULSEIRA GRAFITE",
-      "imagem": "6096.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
       "banho": "Inox",
       "dataUltimaEntrada": "25/04/2026"
     },
@@ -140,16 +120,6 @@
       "precoConsignado": "149,90",
       "banho": "Inox",
       "dataUltimaEntrada": "09/03/2026"
-    },
-    {
-      "codigo": "5884",
-      "descricao": "RELOGIO REDONDO PEQUENO - DHP",
-      "imagem": "5884.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "13/02/2026"
     },
     {
       "codigo": "5875",
