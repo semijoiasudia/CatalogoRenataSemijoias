@@ -442,17 +442,6 @@
       "dataUltimaEntrada": "02/11/2025"
     },
     {
-      "codigo": "5240",
-      "descricao": "COLAR ELOS LOSANGOS G 43+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5240.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "29/10/2025"
-    },
-    {
       "codigo": "5229",
       "descricao": "COLAR Y MOEDAS 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -726,6 +715,17 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/12/2024"
+    },
+    {
+      "codigo": "3317",
+      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "3317.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "20/07/2024"
     }
   ]
 }
