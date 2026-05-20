@@ -2,6 +2,46 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6149",
+      "descricao": "RELOGIO GOTA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
+      "imagem": "6149.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6148",
+      "descricao": "RELOGIO GOTA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
+      "imagem": "6148.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6147",
+      "descricao": "RELOGIO COBRA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
+      "imagem": "6147.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6146",
+      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
+      "imagem": "6146.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
       "codigo": "6141",
       "descricao": "INOX BRACELETE ELOS INSP. TIFFANY",
       "tipo": "Aço Inox",
@@ -288,6 +328,16 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
+      "codigo": "6051",
+      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO - LISO 3 VOLTAS",
+      "imagem": "6051.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
       "codigo": "6049",
       "descricao": "COLAR FIO DE NYLON MENINA 39+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -398,17 +448,6 @@
       "dataUltimaEntrada": "31/03/2026"
     },
     {
-      "codigo": "6013",
-      "descricao": "ANEL REGULÁVEL DUPLO BOLINHAS E CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6013.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "102,90",
-      "precoConsignado": "102,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
       "codigo": "6012",
       "descricao": "ANEL REGULÁVEL PONTO DE LUZ E CRAVEJADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -429,17 +468,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/03/2026"
-    },
-    {
-      "codigo": "5962",
-      "descricao": "BRINCO ARGOLA PREGO CRAVEJADO TAM P ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5962.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "54,90",
-      "precoConsignado": "54,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
     },
     {
       "codigo": "5961",
@@ -493,17 +521,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "69,90",
       "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
-    },
-    {
-      "codigo": "5947",
-      "descricao": "BRINCO ARGOLA CLICK COLORS E VERSO ESTRELAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5947.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026"
     },
@@ -629,17 +646,6 @@
       "dataUltimaEntrada": "29/10/2025"
     },
     {
-      "codigo": "5200",
-      "descricao": "TORNOZELEIRA CORAÇÃO VAZADO CRAVEJADO COLORS 23+3CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5200.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "24/10/2025"
-    },
-    {
       "codigo": "5187",
       "descricao": "PULSEIRA PINGENTE MEDALHA COM PAI NOSSO 17+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -728,17 +734,6 @@
       "dataUltimaEntrada": "05/05/2026"
     },
     {
-      "codigo": "5049",
-      "descricao": "ANEL REGULÁVEL ESFERA CRAVEJADA E CORAÇÃO LISO",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5049.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "10/10/2025"
-    },
-    {
       "codigo": "5036",
       "descricao": "BRINCO INFANTIL BAILARINA ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -779,17 +774,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "62,90",
       "precoConsignado": "62,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
-    },
-    {
-      "codigo": "5005",
-      "descricao": "BRINCO CORAÇÃO VAZADO CRAVEJADO E 3 VAZADOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5005.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/10/2025"
     },
@@ -926,17 +910,6 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "4799",
-      "descricao": "BRINCO EAR HOOK 2 BORBOLETAS E CRAVEJADO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4799.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
       "codigo": "4797",
       "descricao": "BRINCO ARGOLA CLICK ZIRCÔNIAS TRIANGULARES CRISTAL TAM M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -944,17 +917,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "109,90",
       "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
-    },
-    {
-      "codigo": "4786",
-      "descricao": "BRINCO EAR HOOK 6 FIOS CRAVEJADOS CRISTAL E COLORS - LUXO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4786.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "189,90",
-      "precoConsignado": "189,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -1012,17 +974,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/08/2025"
-    },
-    {
-      "codigo": "4648",
-      "descricao": "BRINCO GOTAS CRAVEJADAS CRISTAL - LUXO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4648.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/08/2025"
     },
     {
       "codigo": "4619",

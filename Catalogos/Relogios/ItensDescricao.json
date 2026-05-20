@@ -2,6 +2,56 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6149",
+      "descricao": "RELOGIO GOTA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
+      "imagem": "6149.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6148",
+      "descricao": "RELOGIO GOTA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
+      "imagem": "6148.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6147",
+      "descricao": "RELOGIO COBRA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
+      "imagem": "6147.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6146",
+      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
+      "imagem": "6146.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
+      "codigo": "6051",
+      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO - LISO 3 VOLTAS",
+      "imagem": "6051.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "20/05/2026"
+    },
+    {
       "codigo": "6098",
       "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - PULSEIRA PRETA",
       "imagem": "6098.jpg",
@@ -30,16 +80,6 @@
       "precoConsignado": "159,90",
       "banho": "Inox",
       "dataUltimaEntrada": "25/04/2026"
-    },
-    {
-      "codigo": "6000",
-      "descricao": "RELOGIO REDONDO - CRAVEJADO - FUNDO PRETO - 2 BANHOS",
-      "imagem": "6000.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/03/2026"
     },
     {
       "codigo": "5999",
@@ -89,6 +129,16 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/03/2026"
+    },
+    {
+      "codigo": "5973",
+      "descricao": "RELOGIO DHP REDONDO ANALÓGIO E DIGITAL DOURADO",
+      "imagem": "5973.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox",
       "dataUltimaEntrada": "09/03/2026"
     },
     {
