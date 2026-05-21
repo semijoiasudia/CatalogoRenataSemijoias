@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "6108",
-      "descricao": "ANEL REGULÁVEL 2 ASAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6108.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
-    },
-    {
       "codigo": "6107",
       "descricao": "ANEL ONDAS COM PEDRA NAVETE CRISTAL - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -165,17 +154,6 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
-    },
-    {
-      "codigo": "5106",
-      "descricao": "ANEL ZIRCÔNIA BAGUETE E 2 PONTOS DE LUZ - TAMANHOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5106.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "19/10/2025"
     },
     {
       "codigo": "5105",
