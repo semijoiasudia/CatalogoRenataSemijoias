@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "2121",
+      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2121.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2026"
+    },
+    {
       "codigo": "6105",
       "descricao": "CONJUNTO PEDRA AZUL CRAVEJADA 39+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
