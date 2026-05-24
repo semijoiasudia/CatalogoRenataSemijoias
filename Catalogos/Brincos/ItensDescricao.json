@@ -2,6 +2,17 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "6161",
+      "descricao": "BRINCO RETANGULAR CRISTAL E CRISTAL AO REDOR",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6161.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2026"
+    },
+    {
       "codigo": "6088",
       "descricao": "BRINCO ORGÂNICO COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
