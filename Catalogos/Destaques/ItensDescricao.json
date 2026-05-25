@@ -86,17 +86,6 @@
       "dataUltimaEntrada": "20/05/2026"
     },
     {
-      "codigo": "6141",
-      "descricao": "INOX BRACELETE ELOS INSP. TIFFANY",
-      "tipo": "Aço Inox",
-      "imagem": "6141.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "09/05/2026"
-    },
-    {
       "codigo": "6139",
       "descricao": "INOX BRACELETE INSPIRAÇÃO TREVO ZIRCÔNIA CRISTAL",
       "tipo": "Aço Inox",
@@ -438,6 +427,17 @@
       "dataUltimaEntrada": "31/03/2026"
     },
     {
+      "codigo": "5962",
+      "descricao": "BRINCO ARGOLA PREGO CRAVEJADO TAM P ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5962.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "54,90",
+      "precoConsignado": "54,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/03/2026"
+    },
+    {
       "codigo": "5961",
       "descricao": "BRINCO EAR CUFF MINI COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -513,6 +513,27 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/01/2026"
+    },
+    {
+      "codigo": "5805",
+      "descricao": "BRINCO ARGOLA INSPIRAÇÃO CART. - TARRAXA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5805.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "16/01/2026"
+    },
+    {
+      "codigo": "5682",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA",
+      "imagem": "5682.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "30/01/2026"
     },
     {
       "codigo": "5646",
@@ -702,6 +723,17 @@
       "dataUltimaEntrada": "05/10/2025"
     },
     {
+      "codigo": "4983",
+      "descricao": "BRINCO 2 EM 1 EAR JACKET CORAÇÃO ABAULADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4983.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
       "codigo": "4982",
       "descricao": "BRINCO 2 EM 1 EAR JACKET CORAÇÃO ABAULADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -834,15 +866,15 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "4730",
-      "descricao": "BRINCO ARGOLA 3 FILEIRAS DE ZIRCÔNIAS CRISTAL",
+      "codigo": "4849",
+      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA VERDE CLARO",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4730.jpg",
+      "imagem": "4849.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "94,90",
-      "precoConsignado": "94,90",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
+      "dataUltimaEntrada": "11/09/2025"
     },
     {
       "codigo": "4721",
@@ -853,17 +885,6 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4720",
-      "descricao": "CHOKER BOTÕES LISOS 34+10CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4720.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "98,90",
-      "precoConsignado": "98,90",
-      "banho": "Ródio Branco",
       "dataUltimaEntrada": "03/08/2025"
     },
     {
@@ -977,6 +998,17 @@
       "dataUltimaEntrada": "05/07/2025"
     },
     {
+      "codigo": "4526",
+      "descricao": "COLAR ESFERA 47+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4526.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/04/2026"
+    },
+    {
       "codigo": "4445",
       "descricao": "CONJUNTO 3 TREVOS - PRETO CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -997,6 +1029,17 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/02/2026"
+    },
+    {
+      "codigo": "3898",
+      "descricao": "BRINCO PATINHA CRAVEJADA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3898.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/09/2025"
     },
     {
       "codigo": "3284",

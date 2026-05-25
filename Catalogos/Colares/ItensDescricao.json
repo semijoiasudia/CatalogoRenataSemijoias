@@ -189,6 +189,17 @@
       "dataUltimaEntrada": "01/04/2026"
     },
     {
+      "codigo": "4526",
+      "descricao": "COLAR ESFERA 47+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4526.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/04/2026"
+    },
+    {
       "codigo": "4102",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO MEDIO 38+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -273,17 +284,6 @@
       "pastaFotos": "Catalogos/Colares/",
       "preco": "84,90",
       "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/11/2025"
-    },
-    {
-      "codigo": "1501",
-      "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "1501.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/11/2025"
     },
@@ -695,17 +695,6 @@
       "dataUltimaEntrada": "13/06/2025"
     },
     {
-      "codigo": "4444",
-      "descricao": "COLAR FIO DE NYLON PONTO DE LUZ PINK 6MM 41+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4444.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/06/2025"
-    },
-    {
       "codigo": "4421",
       "descricao": "COLAR FIO DE NYLON PONTO DE LUZ ROSA 6MM 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -748,17 +737,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3317",
-      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3317.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "20/07/2024"
     }
   ]
 }
