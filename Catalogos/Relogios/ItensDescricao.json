@@ -2,6 +2,16 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6181",
+      "descricao": "RELOGIO BRACELETE INSPIRAÇÃO REDONDO CRAVEJADO",
+      "imagem": "6181.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
       "codigo": "6149",
       "descricao": "RELOGIO GOTA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
       "imagem": "6149.jpg",
@@ -75,16 +85,6 @@
       "codigo": "5977",
       "descricao": "RELOGIO INSPIRAÇÃO RENTANGULAR - ALGARISMOS - 2 CORES",
       "imagem": "5977.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026"
-    },
-    {
-      "codigo": "5975",
-      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
-      "imagem": "5975.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "169,90",
       "precoConsignado": "169,90",

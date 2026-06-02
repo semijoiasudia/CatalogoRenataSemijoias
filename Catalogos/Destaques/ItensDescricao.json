@@ -2,6 +2,49 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6184",
+      "descricao": "INOX BRACELETE INSPIRAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "6184.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/06/2026"
+    },
+    {
+      "codigo": "6183",
+      "descricao": "INOX BRACELETE 7 CORAÇÕES EM ZIRCÔNIAS",
+      "tipo": "Aço Inox",
+      "imagem": "6183.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
+      "codigo": "6182",
+      "descricao": "INOX BRACELETE TREVO PRETO E PEDRAS PRETAS",
+      "tipo": "Aço Inox",
+      "imagem": "6182.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
+      "codigo": "6181",
+      "descricao": "RELOGIO BRACELETE INSPIRAÇÃO REDONDO CRAVEJADO",
+      "imagem": "6181.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
       "codigo": "6161",
       "descricao": "BRINCO RETANGULAR CRISTAL E CRISTAL AO REDOR",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -247,17 +290,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "79,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
-    },
-    {
-      "codigo": "6068",
-      "descricao": "BRINCO FLOR COM PÉROLA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6068.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026"
     },
@@ -974,17 +1006,6 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4686",
-      "descricao": "BRINCO FIO E ESPIRAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4686.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
     },
     {
       "codigo": "4673",

@@ -2,6 +2,49 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6184",
+      "descricao": "INOX BRACELETE INSPIRAÇÃO",
+      "tipo": "Aço Inox",
+      "imagem": "6184.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/06/2026"
+    },
+    {
+      "codigo": "6183",
+      "descricao": "INOX BRACELETE 7 CORAÇÕES EM ZIRCÔNIAS",
+      "tipo": "Aço Inox",
+      "imagem": "6183.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
+      "codigo": "6182",
+      "descricao": "INOX BRACELETE TREVO PRETO E PEDRAS PRETAS",
+      "tipo": "Aço Inox",
+      "imagem": "6182.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
+      "codigo": "6181",
+      "descricao": "RELOGIO BRACELETE INSPIRAÇÃO REDONDO CRAVEJADO",
+      "imagem": "6181.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
+    },
+    {
       "codigo": "6161",
       "descricao": "BRINCO RETANGULAR CRISTAL E CRISTAL AO REDOR",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -536,17 +579,6 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "6068",
-      "descricao": "BRINCO FLOR COM PÉROLA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6068.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
-    },
-    {
       "codigo": "6064",
       "descricao": "BRINCO CORAÇÃO E PÉROLA AMARELA 10MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -867,16 +899,6 @@
       "codigo": "5977",
       "descricao": "RELOGIO INSPIRAÇÃO RENTANGULAR - ALGARISMOS - 2 CORES",
       "imagem": "5977.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026"
-    },
-    {
-      "codigo": "5975",
-      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
-      "imagem": "5975.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "169,90",
       "precoConsignado": "169,90",
@@ -1617,17 +1639,6 @@
       "dataUltimaEntrada": "20/11/2025"
     },
     {
-      "codigo": "5580",
-      "descricao": "BRINCO ZIRCÔNIA OVAL VERDE CLARO",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5580.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "44,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
       "codigo": "5575",
       "descricao": "BRINCO TRIO TREVO 4 FOLHAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2166,17 +2177,6 @@
       "dataUltimaEntrada": "31/03/2026"
     },
     {
-      "codigo": "5133",
-      "descricao": "BRINCO INFANTIL / ADULTO BORBOLETA PP CRAVEJADA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5133.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "44,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
       "codigo": "5125",
       "descricao": "BRINCO CORAÇÃO CRAVEJADO TAM P",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2703,17 +2703,6 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/08/2025"
-    },
-    {
-      "codigo": "4686",
-      "descricao": "BRINCO FIO E ESPIRAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4686.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
     },
     {
       "codigo": "4673",
