@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6187",
+      "descricao": "INOX CONJUNTO 5 TREVOS PRETOS",
+      "tipo": "Aço Inox",
+      "imagem": "6187.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "02/06/2026"
+    },
+    {
+      "codigo": "6186",
+      "descricao": "INOX CONJUNTO 5 TREVOS VERDE MALAQUITA",
+      "tipo": "Aço Inox",
+      "imagem": "6186.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "02/06/2026"
+    },
+    {
       "codigo": "6184",
       "descricao": "INOX BRACELETE INSPIRAÇÃO TIFFANY",
       "tipo": "Aço Inox",
@@ -43,6 +65,138 @@
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "31/05/2026"
+    },
+    {
+      "codigo": "6179",
+      "descricao": "BRINCO ARGOLA CLICK COLORS PINGENTE FÉ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6179.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "30/05/2026"
+    },
+    {
+      "codigo": "6178",
+      "descricao": "BRINCO TRIÂNGULO TORCIDO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6178.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "104,90",
+      "precoConsignado": "104,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6177",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6177.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6175",
+      "descricao": "BRINCO EAR JACKET MEIA ESFERA E PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6175.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6174",
+      "descricao": "BRINCO COM PINGENTE FORMA ORGÂNICA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6174.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6173",
+      "descricao": "BRINCO DUAS GOTAS CURVAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6173.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6172",
+      "descricao": "BRINCO TRIO ARGOLA CLICK COLORS 1 FILEIRA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6172.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6171",
+      "descricao": "BRINCO ARGOLA CLICK GOTA BOLD TAM M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6171.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6170",
+      "descricao": "BRINCO TRIO ARGOLA CLICK TRIÂNGULO CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6170.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6168",
+      "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO GOTA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6168.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6165",
+      "descricao": "BRINCO DUO ARGOLA CLICK CRAVEJADA COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6165.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "6162",
+      "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6162.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
     },
     {
       "codigo": "6161",
