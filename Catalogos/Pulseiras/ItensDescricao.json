@@ -2,17 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "6113",
-      "descricao": "PULSEIRA BOLINHAS E 2 PINGENTES DE CORAÇÃO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6113.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
-    },
-    {
       "codigo": "6112",
       "descricao": "PULSEIRA ELOS OVAIS 6X3",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -64,17 +53,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "102,90",
       "precoConsignado": "102,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
-      "codigo": "6005",
-      "descricao": "PULSEIRA PINGENTE FÉ CRAVEJADO COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6005.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/03/2026"
     },
@@ -196,28 +174,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "109,90",
       "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5309",
-      "descricao": "PULSEIRA ELOS LONGOS E PONTOS DE LUZ CRISTAL 18+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5309.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5302",
-      "descricao": "PULSEIRA CIGANINHA NAVETES COLORIDAS 18+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5302.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/11/2025"
     },
