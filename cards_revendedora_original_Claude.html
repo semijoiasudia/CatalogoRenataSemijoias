@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja Revendedora · Renata Semijoias</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:       #fdf8f2;
+      --white:    #ffffff;
+      --ink:      #2c2c2a;
+      --muted:    #888780;
+      --border:   #d3d1c7;
+      --border-2: #b4b2a9;
+      --gold-1:   #FAEEDA;
+      --gold-2:   #FAC775;
+      --gold-3:   #EF9F27;
+      --gold-4:   #BA7517;
+      --gold-5:   #854F0B;
+      --gold-6:   #412402;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      padding: 2.5rem 1rem 4rem;
+    }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .page-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .page-header h1 em {
+      font-style: italic;
+      color: var(--gold-4);
+    }
+    .page-header p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .header-rule {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 200px;
+      margin: 16px auto 0;
+    }
+    .header-rule::before,
+    .header-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .header-rule span {
+      width: 5px; height: 5px;
+      background: var(--gold-3);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ── GRID ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 14px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    /* ── CARD BASE ── */
+    .card {
+      background: var(--white);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: var(--border-2); }
+
+    .card-header {
+      padding: 16px 18px 12px;
+      border-bottom: 0.5px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .card-header-left {}
+    .card-number {
+      font-family: 'DM Serif Display', serif;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+    .card-icon {
+      width: 34px; height: 34px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .card-icon svg { width: 17px; height: 17px; }
+
+    .card-body {
+      padding: 14px 18px 18px;
+    }
+
+    /* ── TAGLINE ── */
+    .card-tagline {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    /* ── ITEM ROWS ── */
+    .item-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .item-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    .item-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .item-row strong { color: var(--ink); font-weight: 500; }
+
+    /* ── DIVIDER ── */
+    .card-divider {
+      height: 0.5px;
+      background: var(--border);
+      margin: 12px 0;
+    }
+
+    /* ── HIGHLIGHT NUMBER ── */
+    .highlight-num {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+    .highlight-num .big {
+      font-family: 'DM Serif Display', serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 1;
+      color: var(--gold-4);
+    }
+    .highlight-num .unit {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .highlight-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* ── STEPS ── */
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .step-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .step-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      color: var(--gold-3);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 18px;
+      text-align: right;
+    }
+    .step-text { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+    .step-text strong { color: var(--ink); font-weight: 500; }
+
+    /* ── COMMISSION MINI BARS ── */
+    .comm-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .comm-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .comm-row-label { font-size: 11.5px; color: var(--muted); min-width: 90px; }
+    .comm-bar-wrap {
+      flex: 1;
+      height: 4px;
+      background: #f1efe8;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .comm-bar-fill { height: 100%; border-radius: 2px; }
+    .comm-row-pct { font-size: 11.5px; font-weight: 600; color: var(--gold-5); min-width: 30px; text-align: right; }
+
+    /* ── CARD ACCENT LINES ── */
+    .card.c1 { border-top: 2px solid var(--gold-2); }
+    .card.c2 { border-top: 2px solid var(--gold-3); }
+    .card.c3 { border-top: 2px solid var(--gold-4); }
+    .card.c4 { border-top: 2px solid var(--gold-5); }
+
+    .icon-c1 { background: var(--gold-1); color: var(--gold-5); }
+    .icon-c2 { background: #FEF3E2; color: var(--gold-4); }
+    .icon-c3 { background: #FDE8C3; color: var(--gold-5); }
+    .icon-c4 { background: #F9D9A8; color: var(--gold-6); }
+
+    /* ── FOOTER TAG ── */
+    .card-footer-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--gold-1);
+      color: var(--gold-5);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+
+    /* ── COMPARE MINI ── */
+    .compare-mini {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 2px;
+    }
+    .compare-col-mini { border-radius: 6px; overflow: hidden; }
+    .compare-col-mini .ch {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 9px;
+    }
+    .compare-col-mini.before .ch { background: #F3EDED; color: #9B4A4A; }
+    .compare-col-mini.after .ch  { background: var(--gold-4); color: var(--gold-1); }
+    .compare-col-mini .cb { background: #fafaf8; border: 0.5px solid var(--border); border-top: none; border-radius: 0 0 6px 6px; }
+    .compare-row-mini {
+      font-size: 11.5px;
+      padding: 5px 9px;
+      border-bottom: 0.5px solid var(--border);
+      line-height: 1.4;
+      display: flex;
+      gap: 5px;
+    }
+    .compare-row-mini:last-child { border-bottom: none; }
+    .compare-col-mini.before .compare-row-mini { color: #7A4545; }
+    .compare-col-mini.after .compare-row-mini  { color: #3A2A2E; }
+
+    /* ── PRINT HINT ── */
+    .print-hint {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+    .print-hint button {
+      background: none;
+      border: 0.5px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      margin-top: 6px;
+      transition: border-color .2s, color .2s;
+    }
+    .print-hint button:hover { border-color: var(--gold-4); color: var(--gold-4); }
+
+    @media print {
+      body { background: white; padding: 1rem; }
+      .print-hint { display: none; }
+      .cards-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Seja uma <em>revendedora</em></h1>
+    <p>Renata Semijoias e Acessórios · Uberlândia – MG</p>
+    <div class="header-rule"><span></span></div>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- CARD 1: COMO FUNCIONA -->
+    <div class="card c1">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">01</p>
+          <p class="card-title">Como funciona</p>
+        </div>
+        <div class="card-icon icon-c1">
+          <!-- bag icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-tagline">Você recebe uma maleta com peças selecionadas e começa a vender sem gastar nada.</p>
+        <div class="steps-list">
+          <div class="step-row">
+            <span class="step-num">1</span>
+            <span class="step-text"><strong>Recebe a maleta</strong> com peças prontas para mostrar</span>
+          </div>
+          <div class="step-row">
+            <span class="step-num">2</span>
+            <span class="step-text"><strong>Vende para suas clientes</strong> presencialmente ou pelo WhatsApp</span>
+          </div>
+          <div class="step-row">
+            <span class="step-num">3</span>
+            <span class="step-text"><strong>Acerta após 30 dias</strong> — paga só pelo que vendeu</span>
+          </div>
+          <div class="step-row">
+            <span class="step-num">4</span>
+            <span class="step-text"><strong>Renova a maleta</strong> e cresce de nível conforme as vendas</span>
+          </div>
+        </div>
+        <span class="card-footer-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Sem investimento inicial
+        </span>
+      </div>
+    </div>
+
+    <!-- CARD 2: O QUE VOCÊ RECEBE -->
+    <div class="card c2">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">02</p>
+          <p class="card-title">O que você recebe</p>
+        </div>
+        <div class="card-icon icon-c2">
+          <!-- star icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-tagline">Tudo pronto para você vender com profissionalismo desde o primeiro dia.</p>
+        <div class="item-list">
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Maleta com 30 a 80 peças</strong> conforme seu nível</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Fotos profissionais</strong> de todas as peças</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Catálogo digital</strong> completo e organizado</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Sacolinhas e embalagens</strong> para entrega</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Certificado de garantia</strong> para suas clientes</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-3)"></span><span><strong>Link de pagamento</strong> — até 3× sem juros no cartão</span></div>
+        </div>
+        <span class="card-footer-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Suporte completo
+        </span>
+      </div>
+    </div>
+
+    <!-- CARD 3: COMISSÃO -->
+    <div class="card c3">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">03</p>
+          <p class="card-title">Comissão progressiva</p>
+        </div>
+        <div class="card-icon icon-c3">
+          <!-- trending-up icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="highlight-num">
+          <span class="big">40</span>
+          <span class="unit">% de comissão máxima</span>
+        </div>
+        <p class="highlight-label">Meta acessível — fácil de atingir na prática</p>
+        <div class="comm-rows">
+          <div class="comm-row">
+            <span class="comm-row-label">Nível Inicial</span>
+            <div class="comm-bar-wrap"><div class="comm-bar-fill" style="width:40%;background:var(--gold-2)"></div></div>
+            <span class="comm-row-pct">~20%</span>
+          </div>
+          <div class="comm-row">
+            <span class="comm-row-label">Bronze · Prata</span>
+            <div class="comm-bar-wrap"><div class="comm-bar-fill" style="width:62%;background:var(--gold-3)"></div></div>
+            <span class="comm-row-pct">~28%</span>
+          </div>
+          <div class="comm-row">
+            <span class="comm-row-label">Ouro · Diamante</span>
+            <div class="comm-bar-wrap"><div class="comm-bar-fill" style="width:80%;background:var(--gold-4)"></div></div>
+            <span class="comm-row-pct">~35%</span>
+          </div>
+          <div class="comm-row">
+            <span class="comm-row-label">Elite</span>
+            <div class="comm-bar-wrap"><div class="comm-bar-fill" style="width:100%;background:var(--gold-5)"></div></div>
+            <span class="comm-row-pct">40%</span>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="item-list">
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>Acerto em <strong>30 dias</strong> após as vendas</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>Parcelamento em <strong>até 3× sem juros</strong> no cartão</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4: POR QUE A RENATA? -->
+    <div class="card c4">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">04</p>
+          <p class="card-title">Por que a Renata?</p>
+        </div>
+        <div class="card-icon icon-c4">
+          <!-- shield icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-tagline">O que as revendedoras nos contam sobre o que deixaram para trás.</p>
+        <div class="compare-mini">
+          <div class="compare-col-mini before">
+            <div class="ch">Antes</div>
+            <div class="cb">
+              <div class="compare-row-mini">✗ Preço alto, difícil de vender</div>
+              <div class="compare-row-mini">✗ Poucas peças, sem escolha</div>
+              <div class="compare-row-mini">✗ Meta de comissão impossível</div>
+              <div class="compare-row-mini">✗ Sem suporte pós-venda</div>
+            </div>
+          </div>
+          <div class="compare-col-mini after">
+            <div class="ch">Aqui</div>
+            <div class="cb">
+              <div class="compare-row-mini">✓ Preço acessível, giro fácil</div>
+              <div class="compare-row-mini">✓ Maleta ampla, escolha livre*</div>
+              <div class="compare-row-mini">✓ Até 40% — meta realista</div>
+              <div class="compare-row-mini">✓ Garantia e suporte real</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-divider"></div>
+        <div class="item-list">
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-5)"></span><span>Semijoias com <strong>banho de ouro 18k</strong>, hipoalergênicas</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-5)"></span><span>Localizada em <strong>Uberlândia – MG</strong></span></div>
+        </div>
+        <span class="card-footer-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Qualidade garantida
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="print-hint">
+    <p>Quer imprimir ou salvar como imagem para enviar?</p>
+    <button onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
+  </div>
+
+</body>
+</html>
