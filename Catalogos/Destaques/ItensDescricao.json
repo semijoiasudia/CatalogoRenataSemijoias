@@ -2,6 +2,61 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6194",
+      "descricao": "INOX CONJUNTO BORBOLETA COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6194.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
+      "codigo": "6193",
+      "descricao": "INOX CONJUNTO BORBOLETA VAZADA COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6193.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
+      "codigo": "6192",
+      "descricao": "INOX CONJUNTO I LOVE YOU COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6192.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
+      "codigo": "6191",
+      "descricao": "INOX CONJUNTO CORAÇÃO E GOLFINHO COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6191.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
+      "codigo": "6190",
+      "descricao": "INOX CONJUNTO CORAÇÃO M2 COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6190.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
       "codigo": "6187",
       "descricao": "INOX CONJUNTO 5 TREVOS PRETOS",
       "tipo": "Aço Inox",
@@ -427,17 +482,6 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
-      "codigo": "6059",
-      "descricao": "BRINCO ARGOLA BOLD - CLICK",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6059.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
-    },
-    {
       "codigo": "6056",
       "descricao": "BRINCO TRIO ARGOLINHA CRAVEJADA COLORS PP/P/M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -634,17 +678,6 @@
       "dataUltimaEntrada": "03/03/2026"
     },
     {
-      "codigo": "5956",
-      "descricao": "BRINCO CORAÇÃO VERDE CRAVEJADO CRISTAL AO REDOR",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5956.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
-    },
-    {
       "codigo": "5955",
       "descricao": "BRINCO EAR CUFF 3 CORAÇÕES COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -775,17 +808,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "5587",
-      "descricao": "BRINCO ORGÂNICO OVAL TAM M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5587.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "94,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
     },
     {
       "codigo": "5420",
@@ -929,17 +951,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/05/2026"
-    },
-    {
-      "codigo": "5041",
-      "descricao": "ANEL REGULÁVEL 2 ASAS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5041.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "94,90",
-      "precoConsignado": "94,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "08/10/2025"
     },
     {
       "codigo": "5040",
@@ -1239,17 +1250,6 @@
       "dataUltimaEntrada": "24/07/2025"
     },
     {
-      "codigo": "4585",
-      "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4585.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "94,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
-    },
-    {
       "codigo": "4563",
       "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO CRAVEJADA COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1257,17 +1257,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "89,90",
       "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "09/07/2025"
-    },
-    {
-      "codigo": "4561",
-      "descricao": "BRINCO BAILARINA ZIRCÔNIAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4561.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/07/2025"
     },
@@ -1314,17 +1303,6 @@
       "precoConsignado": "210,00",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/11/2025"
-    },
-    {
-      "codigo": "3573",
-      "descricao": "ANEL REGULAVEL GARRAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3573.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "99,90",
-      "precoConsignado": "99,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
     },
     {
       "codigo": "3284",
