@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6196",
+      "descricao": "INOX ANEL CRAVEJADO COM PONTO DE LUZ CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6196.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "08/06/2026"
+    },
+    {
       "codigo": "6192",
       "descricao": "INOX CONJUNTO I LOVE YOU COM CAIXA",
       "tipo": "Aço Inox",
@@ -22,17 +33,6 @@
       "precoConsignado": "69,90",
       "banho": "Inox",
       "dataUltimaEntrada": "05/06/2026"
-    },
-    {
-      "codigo": "6187",
-      "descricao": "INOX CONJUNTO 5 TREVOS PRETOS",
-      "tipo": "Aço Inox",
-      "imagem": "6187.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026"
     },
     {
       "codigo": "6186",
