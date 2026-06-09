@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "5209",
+      "descricao": "COLAR DUPLO MOEDINHAS 43/66CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5209.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "198,00",
+      "precoConsignado": "198,00",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "4226",
       "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MADREPEROLA 42+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -288,17 +299,6 @@
       "dataUltimaEntrada": "20/11/2025"
     },
     {
-      "codigo": "5538",
-      "descricao": "COLAR RIVIEARA NAVETE CRISTAL 5MM 48CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5538.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "189,90",
-      "precoConsignado": "189,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
       "codigo": "5537",
       "descricao": "COLAR RIVIERA BAGUETE COLORS 6MM 46CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -361,17 +361,6 @@
       "pastaFotos": "Catalogos/Colares/",
       "preco": "129,90",
       "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/11/2025"
-    },
-    {
-      "codigo": "5330",
-      "descricao": "COLAR Y CORAÇÕES CRISTAIS 52+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5330.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/11/2025"
     },
@@ -484,6 +473,17 @@
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/11/2025"
+    },
+    {
+      "codigo": "5228",
+      "descricao": "COLAR ESFERAS 46+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5228.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
     },
     {
       "codigo": "5227",
@@ -616,6 +616,17 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4756",
+      "descricao": "COLAR CIGANINHA NAVETES COLORIDAS 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4756.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "144,90",
+      "precoConsignado": "144,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2025"
     },
     {
       "codigo": "4744",

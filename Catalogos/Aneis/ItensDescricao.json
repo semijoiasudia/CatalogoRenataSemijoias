@@ -2,17 +2,6 @@
   "categoria": "ANEL",
   "produtos": [
     {
-      "codigo": "6108",
-      "descricao": "ANEL REGULÁVEL 2 ASAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6108.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
-    },
-    {
       "codigo": "6107",
       "descricao": "ANEL ONDAS COM PEDRA NAVETE CRISTAL - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -64,17 +53,6 @@
       "pastaFotos": "Catalogos/Aneis/",
       "preco": "119,90",
       "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
-    },
-    {
-      "codigo": "6011",
-      "descricao": "ANEL REGULÁVEL DUPLO COM ONDAS CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6011.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/03/2026"
     },
@@ -178,14 +156,14 @@
       "dataUltimaEntrada": "19/10/2025"
     },
     {
-      "codigo": "5101",
-      "descricao": "ANEL FIO ESFERAS COM ZIRCÔNIAS NO TOPO - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5101.jpg",
+      "codigo": "5100",
+      "descricao": "ANEL GOTA E PONTO DE LUZ CRISTAL - TAMANHOS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5100.jpg",
       "pastaFotos": "Catalogos/Aneis/",
-      "preco": "64,90",
-      "precoConsignado": "64,90",
-      "banho": "Ouro 18k",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "19/10/2025"
     },
     {
@@ -231,6 +209,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025"
+    },
+    {
+      "codigo": "5094",
+      "descricao": "ANEL GOTA ZIRCÔNIA CRISTAL - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5094.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/10/2025"
     },
     {
       "codigo": "5086",
@@ -374,28 +363,6 @@
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "08/10/2025"
-    },
-    {
-      "codigo": "5039",
-      "descricao": "ANEL REGULÁVEL 2 FIOS CRUZADOS ABAULADOS",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5039.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "08/10/2025"
-    },
-    {
-      "codigo": "4844",
-      "descricao": "ANEL SOLITÁRIO FIO TORCIDO CRISTAL - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4844.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/09/2025"
     },
     {
       "codigo": "4843",
