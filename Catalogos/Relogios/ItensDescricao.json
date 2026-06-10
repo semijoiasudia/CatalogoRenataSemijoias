@@ -2,6 +2,46 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6246",
+      "descricao": "RELOGIO MASCULINO FUNDO PRETO",
+      "imagem": "6246.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
+      "codigo": "6245",
+      "descricao": "RELOGIO MASCULINO FUNDO BRANCO",
+      "imagem": "6245.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
+      "codigo": "6244",
+      "descricao": "RELOGIO DIGITAL - UNISSEX - LUZ DE FUNDO",
+      "imagem": "6244.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
+      "codigo": "6241",
+      "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M1 -  MASC.",
+      "imagem": "6241.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
       "codigo": "6240",
       "descricao": "RELOGIO INSPIRAÇÃO REDONDO - ALGARISMOS - 2 CORES",
       "imagem": "6240.jpg",

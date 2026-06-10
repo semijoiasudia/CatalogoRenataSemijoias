@@ -2,6 +2,16 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6244",
+      "descricao": "RELOGIO DIGITAL - UNISSEX - LUZ DE FUNDO",
+      "imagem": "6244.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
       "codigo": "6200",
       "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CRISTAL",
       "tipo": "Semijoia banhada a Prata",
