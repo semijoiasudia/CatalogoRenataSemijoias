@@ -2,6 +2,46 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6207",
+      "descricao": "RELOGIO CASIO UNISSEX - DIGITAL - COM LUZ DE FUNDO",
+      "imagem": "6207.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6206",
+      "descricao": "RELOGIO CALVIN KLEIN - FUNDO PRETO - MASCULINO",
+      "imagem": "6206.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6205",
+      "descricao": "RELOGIO EMPORIO ARMANI - MASCULINO",
+      "imagem": "6205.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6204",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO PRETO ",
+      "imagem": "6204.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6197",
       "descricao": "INOX BRINCO TRIO TREVOS PRETO E BRANCO TAM P",
       "tipo": "Aço Inox",
