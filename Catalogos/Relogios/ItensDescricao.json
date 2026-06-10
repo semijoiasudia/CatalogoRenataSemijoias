@@ -2,6 +2,26 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6240",
+      "descricao": "RELOGIO INSPIRAÇÃO REDONDO - ALGARISMOS - 2 CORES",
+      "imagem": "6240.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
+      "codigo": "6209",
+      "descricao": "RELOGIO CASIO OVAL MÉDIO - FUNDO PRETO",
+      "imagem": "6209.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6208",
       "descricao": "RELOGIO INSPIRAÇÃO - FUNDO PRATA - 2 BANHOS",
       "imagem": "6208.jpg",

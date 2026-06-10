@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6200",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6200.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6192",
       "descricao": "INOX CONJUNTO I LOVE YOU COM CAIXA",
       "tipo": "Aço Inox",

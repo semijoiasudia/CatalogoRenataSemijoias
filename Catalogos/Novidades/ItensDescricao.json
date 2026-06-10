@@ -2,6 +2,37 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6240",
+      "descricao": "RELOGIO INSPIRAÇÃO REDONDO - ALGARISMOS - 2 CORES",
+      "imagem": "6240.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "10/06/2026"
+    },
+    {
+      "codigo": "6236",
+      "descricao": "BRINCO COM PINGENTE FORMA ORGÂNICA",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6236.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6209",
+      "descricao": "RELOGIO CASIO OVAL MÉDIO - FUNDO PRETO",
+      "imagem": "6209.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6208",
       "descricao": "RELOGIO INSPIRAÇÃO - FUNDO PRATA - 2 BANHOS",
       "imagem": "6208.jpg",
@@ -49,6 +80,17 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6200",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6200.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026"
     },
     {
