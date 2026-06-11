@@ -2,14 +2,24 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6246",
-      "descricao": "RELOGIO MASCULINO FUNDO PRETO",
-      "imagem": "6246.jpg",
+      "codigo": "6256",
+      "descricao": "RELOGIO RETANGULAR FUNDO BRANCO",
+      "imagem": "6256.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "10/06/2026"
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "11/06/2026"
+    },
+    {
+      "codigo": "6255",
+      "descricao": "RELOGIO OVAL FUNDO BRANCO COM CORAÇÕES",
+      "imagem": "6255.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "11/06/2026"
     },
     {
       "codigo": "6245",
@@ -178,6 +188,26 @@
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "159,90",
       "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6099",
+      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO PRETO",
+      "imagem": "6099.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "6096",
+      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - PULSEIRA GRAFITE",
+      "imagem": "6096.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
       "banho": "Inox",
       "dataUltimaEntrada": "25/04/2026"
     },

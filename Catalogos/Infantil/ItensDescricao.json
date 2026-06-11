@@ -2,6 +2,17 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "6117",
+      "descricao": "COLAR FIO DE NYLON INFANTIL MINNIE MOUSE 37+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6117.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "06/05/2026"
+    },
+    {
       "codigo": "5966",
       "descricao": "BRINCO 2 CORAÇÕES VAZADOS - LISO E CRAVEJADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -9,6 +20,17 @@
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "49,90",
       "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/03/2026"
+    },
+    {
+      "codigo": "5964",
+      "descricao": "BRINCO TREVO 4 FOLHAS ZIRCÔNIAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5964.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/03/2026"
     },
