@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6256",
-      "descricao": "RELOGIO RETANGULAR FUNDO BRANCO",
-      "imagem": "6256.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "11/06/2026"
-    },
-    {
       "codigo": "6255",
       "descricao": "RELOGIO OVAL FUNDO BRANCO COM CORAÇÕES",
       "imagem": "6255.jpg",
@@ -132,16 +122,6 @@
       "dataUltimaEntrada": "31/05/2026"
     },
     {
-      "codigo": "6148",
-      "descricao": "RELOGIO GOTA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
-      "imagem": "6148.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "20/05/2026"
-    },
-    {
       "codigo": "6147",
       "descricao": "RELOGIO COBRA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
       "imagem": "6147.jpg",
@@ -160,16 +140,6 @@
       "precoConsignado": "169,90",
       "banho": "Cor Ouro",
       "dataUltimaEntrada": "20/05/2026"
-    },
-    {
-      "codigo": "6099",
-      "descricao": "RELOGIO CASIO DIGITAL/ANALÓGICO 1ª LINHA - FUNDO PRETO",
-      "imagem": "6099.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "25/04/2026"
     },
     {
       "codigo": "6096",
