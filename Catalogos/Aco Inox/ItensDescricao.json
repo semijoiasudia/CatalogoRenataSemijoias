@@ -2,26 +2,15 @@
   "categoria": "INOX",
   "produtos": [
     {
-      "codigo": "6192",
-      "descricao": "INOX CONJUNTO I LOVE YOU COM CAIXA",
+      "codigo": "5803",
+      "descricao": "INOX BRINCO TREVO PRETO",
       "tipo": "Aço Inox",
-      "imagem": "6192.jpg",
+      "imagem": "5803.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "05/06/2026"
-    },
-    {
-      "codigo": "6191",
-      "descricao": "INOX CONJUNTO CORAÇÃO E GOLFINHO COM CAIXA",
-      "tipo": "Aço Inox",
-      "imagem": "6191.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "05/06/2026"
+      "preco": "29,90",
+      "precoConsignado": "29,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/06/2026"
     },
     {
       "codigo": "4322",
@@ -33,17 +22,6 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "03/06/2026"
-    },
-    {
-      "codigo": "5858",
-      "descricao": "INOX BRINCO TREVO VERDE MALAQUITA",
-      "tipo": "Aço Inox",
-      "imagem": "5858.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "29,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026"
     },
     {
       "codigo": "5676",
@@ -76,17 +54,6 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/05/2026"
-    },
-    {
-      "codigo": "6137",
-      "descricao": "INOX BRACELETE MADREPÉROLA RETANGULAR",
-      "tipo": "Aço Inox",
-      "imagem": "6137.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
       "dataUltimaEntrada": "09/05/2026"
     },
     {
