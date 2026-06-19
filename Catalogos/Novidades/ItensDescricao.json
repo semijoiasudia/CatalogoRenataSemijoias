@@ -2,6 +2,46 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6266",
+      "descricao": "RELOGIO INSPIRAÇÃO - RETANGULAR - FUNDO DOURADO",
+      "imagem": "6266.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
+      "codigo": "6265",
+      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
+      "imagem": "6265.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
+      "codigo": "6264",
+      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
+      "imagem": "6264.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
+      "codigo": "6263",
+      "descricao": "RELOGIO DIGITAL COM LUZ DE FUNDO - UNISSEX",
+      "imagem": "6263.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
       "codigo": "6255",
       "descricao": "RELOGIO OVAL FUNDO BRANCO COM CORAÇÕES",
       "imagem": "6255.jpg",

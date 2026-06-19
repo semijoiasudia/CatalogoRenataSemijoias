@@ -2,6 +2,36 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6266",
+      "descricao": "RELOGIO INSPIRAÇÃO - RETANGULAR - FUNDO DOURADO",
+      "imagem": "6266.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
+      "codigo": "6265",
+      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
+      "imagem": "6265.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
+      "codigo": "6264",
+      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
+      "imagem": "6264.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
       "codigo": "6254",
       "descricao": "CONJUNTO GOTA PINK CRAVEJADA AO REDOR 45+5CM",
       "tipo": "Semijoia banhada a Prata",
