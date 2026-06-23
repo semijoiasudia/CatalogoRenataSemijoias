@@ -2,10 +2,32 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "6239",
+      "descricao": "BRINCO ARGOLA CLICK COLORS PINGENTE FÉ",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6239.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6235",
       "descricao": "BRINCO DUAS GOTAS CURVAS",
       "tipo": "Semijoia banhada a Prata",
       "imagem": "6235.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6234",
+      "descricao": "BRINCO ARGOLA CLICK GOTA BOLD TAM M",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6234.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "69,90",
       "precoConsignado": "69,90",
@@ -46,6 +68,17 @@
       "dataUltimaEntrada": "09/06/2026"
     },
     {
+      "codigo": "6224",
+      "descricao": "BRINCO TRIO ARGOLA CLICK TRIÂNGULO CRAVEJADO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6224.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6223",
       "descricao": "BRINCO TRIO ARGOLA CLICK QUADRADA/LOSANGO",
       "tipo": "Semijoia banhada a Prata",
@@ -54,6 +87,50 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6222",
+      "descricao": "BRINCO DUO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6222.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6221",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6221.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6220",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO TAM M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6220.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6219",
+      "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO CORAÇÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6219.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/06/2026"
     },
     {
@@ -79,6 +156,17 @@
       "dataUltimaEntrada": "09/06/2026"
     },
     {
+      "codigo": "6215",
+      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA ROSA",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6215.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6214",
       "descricao": "BRINCO CORAÇÃO PEROLA AMARELA M",
       "tipo": "Semijoia banhada a Prata",
@@ -97,6 +185,28 @@
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "119,90",
       "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6211",
+      "descricao": "BRINCO TRIO ARGOLA CLICK COLORS 1 FILEIRA",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6211.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "6203",
+      "descricao": "BRINCO ARGOLA CLICK CORAÇÃO COM PEDRAS CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6203.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026"
     },
