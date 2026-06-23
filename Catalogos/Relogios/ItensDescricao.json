@@ -2,22 +2,52 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6278",
+      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
+      "imagem": "6278.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6275",
+      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
+      "imagem": "6275.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6274",
+      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
+      "imagem": "6274.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6185",
+      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 3 VOLTAS",
+      "imagem": "6185.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
       "codigo": "6266",
       "descricao": "RELOGIO INSPIRAÇÃO - RETANGULAR - FUNDO DOURADO",
       "imagem": "6266.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "179,90",
       "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "19/06/2026"
-    },
-    {
-      "codigo": "6265",
-      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
-      "imagem": "6265.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "19/06/2026"
     },

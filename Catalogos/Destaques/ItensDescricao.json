@@ -2,22 +2,54 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6282",
+      "descricao": "INOX CONJUNTO 5 TREVOS - BRANCO PEROLADO",
+      "tipo": "Aço Inox",
+      "imagem": "6282.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6280",
+      "descricao": "INOX CONJUNTO 5 TREVOS BRANCO PEROLADO 44+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "6280.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6278",
+      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
+      "imagem": "6278.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6275",
+      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
+      "imagem": "6275.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
       "codigo": "6266",
       "descricao": "RELOGIO INSPIRAÇÃO - RETANGULAR - FUNDO DOURADO",
       "imagem": "6266.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "179,90",
       "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "19/06/2026"
-    },
-    {
-      "codigo": "6265",
-      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
-      "imagem": "6265.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "19/06/2026"
     },
@@ -153,17 +185,6 @@
       "dataUltimaEntrada": "09/06/2026"
     },
     {
-      "codigo": "6201",
-      "descricao": "BRINCO EAR CUFF ZIRCÔNIAS CORES ALEATÓRIAS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6201.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
-    },
-    {
       "codigo": "6198",
       "descricao": "BRINCO ARGOLA TRANQUETA COM FLOR COLORS",
       "tipo": "Semijoia banhada a Prata",
@@ -183,6 +204,16 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6185",
+      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 3 VOLTAS",
+      "imagem": "6185.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
       "dataUltimaEntrada": "22/06/2026"
     },
     {
@@ -857,6 +888,17 @@
       "dataUltimaEntrada": "23/11/2025"
     },
     {
+      "codigo": "5644",
+      "descricao": "BRINCO FLOR COM MIOLO MARROM CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5644.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "23/11/2025"
+    },
+    {
       "codigo": "5612",
       "descricao": "BRINCO MEIA FLOR COM PÉROLA NO CENTRO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -866,17 +908,6 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/11/2025"
-    },
-    {
-      "codigo": "5360",
-      "descricao": "INOX CONJUNTO 5 TREVOS PRETO 44+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "5360.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/06/2026"
     },
     {
       "codigo": "5238",
@@ -976,6 +1007,17 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/10/2025"
+    },
+    {
+      "codigo": "5112",
+      "descricao": "BRINCO ORGÂNICO VAZADO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5112.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/10/2025"
     },
     {
       "codigo": "5036",
@@ -1110,6 +1152,17 @@
       "dataUltimaEntrada": "16/09/2025"
     },
     {
+      "codigo": "4879",
+      "descricao": "BRINCO GOTA / FIO E 3 PÉROLAS",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4879.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "12/09/2025"
+    },
+    {
       "codigo": "4866",
       "descricao": "BRINCO TRIO ARGOLA TRANQUETA PINGENTE PÉROLA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1143,6 +1196,17 @@
       "dataUltimaEntrada": "10/08/2025"
     },
     {
+      "codigo": "4797",
+      "descricao": "BRINCO ARGOLA CLICK ZIRCÔNIAS TRIANGULARES CRISTAL TAM M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4797.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
       "codigo": "4786",
       "descricao": "BRINCO EAR HOOK 6 FIOS CRAVEJADOS CRISTAL E COLORS - LUXO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1150,6 +1214,17 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "189,90",
       "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025"
+    },
+    {
+      "codigo": "4780",
+      "descricao": "BRINCO FLOR CRAVEJADA E PÉROLA BRANCA NO CENTRO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4780.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025"
     },
@@ -1185,6 +1260,17 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "01/08/2025"
+    },
+    {
+      "codigo": "4619",
+      "descricao": "BRINCO EAR CUFF 2 FLORES",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4619.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "25/07/2025"
     },
     {
       "codigo": "4614",
