@@ -2,6 +2,149 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "6294",
+      "descricao": "INOX BRACELETE FECHO",
+      "tipo": "Aço Inox",
+      "imagem": "6294.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6293",
+      "descricao": "INOX BRACELETE LAÇO",
+      "tipo": "Aço Inox",
+      "imagem": "6293.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6292",
+      "descricao": "INOX BRACELETE INSP. V",
+      "tipo": "Aço Inox",
+      "imagem": "6292.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6291",
+      "descricao": "INOX BRACELETE PREGO RESINA PRETA E PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6291.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6290",
+      "descricao": "INOX BRACELETE PREGO RESINA BRANCA E PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6290.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6289",
+      "descricao": "INOX BRACELETE PREGO RESINA BRANCA E PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6289.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6288",
+      "descricao": "INOX BRACELETE INSP. CARTIER FINO COM PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "6288.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6287",
+      "descricao": "INOX BRACELETE CRAVEJADO BAGUETES CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6287.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6286",
+      "descricao": "INOX BRACELETE INSP. VALENTINO PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6286.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6285",
+      "descricao": "INOX BRACELETE INSP. VALENTINO PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6285.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6284",
+      "descricao": "INOX BRACELETE X",
+      "tipo": "Aço Inox",
+      "imagem": "6284.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6127",
+      "descricao": "INOX BRACELETE TREVO 5 FOLHAS PRETO ",
+      "tipo": "Aço Inox",
+      "imagem": "6127.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "5376",
+      "descricao": "INOX BRACELETE INSPIRAÇÃO CART.",
+      "tipo": "Aço Inox",
+      "imagem": "5376.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
       "codigo": "6283",
       "descricao": "INOX BRINCO DUO TREVO BRANCO PEROLADO",
       "tipo": "Aço Inox",
@@ -189,17 +332,6 @@
       "dataUltimaEntrada": "02/06/2026"
     },
     {
-      "codigo": "4212",
-      "descricao": "INOX BRINCO TREVO VERDE MALAQUITA P",
-      "tipo": "Aço Inox",
-      "imagem": "4212.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "29,90",
-      "precoConsignado": "29,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026"
-    },
-    {
       "codigo": "6153",
       "descricao": "INOX BRINCO PEDRA OVAL BRANCA",
       "tipo": "Aço Inox",
@@ -233,32 +365,10 @@
       "dataUltimaEntrada": "09/05/2026"
     },
     {
-      "codigo": "6134",
-      "descricao": "INOX ANEL TRIO INSPIRAÇÃO CARTIER - TAMANHOS",
-      "tipo": "Aço Inox",
-      "imagem": "6134.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "07/05/2026"
-    },
-    {
       "codigo": "6132",
       "descricao": "INOX BRACELETE INSPIRAÇÃO TREVO E ZIRCÔNIAS",
       "tipo": "Aço Inox",
       "imagem": "6132.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "07/05/2026"
-    },
-    {
-      "codigo": "6128",
-      "descricao": "INOX BRACELETE INSP. TIFFANY CORAÇÃO E CHAVE",
-      "tipo": "Aço Inox",
-      "imagem": "6128.jpg",
       "pastaFotos": "Catalogos/Aco Inox/",
       "preco": "69,90",
       "precoConsignado": "69,90",
@@ -351,17 +461,6 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/02/2026"
-    },
-    {
-      "codigo": "5918",
-      "descricao": "INOX COLAR PREGO INSPIRAÇÃO CART. 41+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "5918.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
-      "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/02/2026"
     },
     {
