@@ -2,6 +2,16 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6304",
+      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
+      "imagem": "6304.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
       "codigo": "6294",
       "descricao": "INOX BRACELETE FECHO",
       "tipo": "Aço Inox",

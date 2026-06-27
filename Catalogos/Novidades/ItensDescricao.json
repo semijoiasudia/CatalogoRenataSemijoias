@@ -2,6 +2,96 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6304",
+      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
+      "imagem": "6304.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6303",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
+      "imagem": "6303.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6302",
+      "descricao": "RELOGIO REDONDO - BRANCO- PULSEIRA ELASTICA - L. FASHION",
+      "imagem": "6302.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6301",
+      "descricao": "RELOGIO REDONDO - DOURDO - PULSEIRA ELASTICA - L. FASHION",
+      "imagem": "6301.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6300",
+      "descricao": "RELOGIO DIG. E ANALÓGICO LUZ - PULSEIRA BORRACHA MASCULINO",
+      "imagem": "6300.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": " ",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6299",
+      "descricao": "RELOGIO QUADRADO - ALGARISMOS - UNISSEX - LINHA FASHION",
+      "imagem": "6299.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6298",
+      "descricao": "RELOGIO MASCULINO COM DATA - FUNDO CINZA",
+      "imagem": "6298.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6297",
+      "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M5 -  MASC.",
+      "imagem": "6297.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6296",
+      "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M4 -  MASC.",
+      "imagem": "6296.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
       "codigo": "6294",
       "descricao": "INOX BRACELETE FECHO",
       "tipo": "Aço Inox",
@@ -2436,17 +2526,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "72,90",
       "precoConsignado": "72,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
-    },
-    {
-      "codigo": "5064",
-      "descricao": "ANEL REGULÁVEL FALANGE 2 CORAÇÕES",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5064.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "44,90",
-      "precoConsignado": "44,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/10/2025"
     },
