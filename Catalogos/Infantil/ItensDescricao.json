@@ -2,17 +2,6 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
-      "codigo": "6117",
-      "descricao": "COLAR FIO DE NYLON INFANTIL MINNIE MOUSE 37+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6117.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/05/2026"
-    },
-    {
       "codigo": "5966",
       "descricao": "BRINCO 2 CORAÇÕES VAZADOS - LISO E CRAVEJADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -79,13 +68,24 @@
       "dataUltimaEntrada": "07/03/2026"
     },
     {
-      "codigo": "5957",
-      "descricao": "BRINCO CORAÇÃO PINK CRAVEJADO CRISTAL AO REDOR",
+      "codigo": "5956",
+      "descricao": "BRINCO CORAÇÃO VERDE CRAVEJADO CRISTAL AO REDOR",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5957.jpg",
+      "imagem": "5956.jpg",
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "69,90",
       "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026"
+    },
+    {
+      "codigo": "5945",
+      "descricao": "BRINCO ARGOLA CLICK LISA TAM PP 9MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5945.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "32,90",
+      "precoConsignado": "32,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026"
     },
@@ -119,17 +119,6 @@
       "pastaFotos": "Catalogos/Infantil/",
       "preco": "44,90",
       "precoConsignado": "44,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
-    },
-    {
-      "codigo": "5121",
-      "descricao": "BRINCO INFANTIL / ADULTO BAILARINA ZIRCÔNIAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5121.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025"
     },
