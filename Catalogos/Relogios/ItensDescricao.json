@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6303",
-      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
-      "imagem": "6303.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/06/2026"
-    },
-    {
       "codigo": "6301",
       "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA - L. FASHION",
       "imagem": "6301.jpg",
@@ -72,16 +62,6 @@
       "dataUltimaEntrada": "22/06/2026"
     },
     {
-      "codigo": "6276",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
-      "imagem": "6276.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026"
-    },
-    {
       "codigo": "6185",
       "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 3 VOLTAS",
       "imagem": "6185.jpg",
@@ -110,16 +90,6 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "10/06/2026"
-    },
-    {
-      "codigo": "6209",
-      "descricao": "RELOGIO CASIO OVAL MÉDIO - FUNDO PRETO",
-      "imagem": "6209.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/06/2026"
     },
     {
       "codigo": "6181",
