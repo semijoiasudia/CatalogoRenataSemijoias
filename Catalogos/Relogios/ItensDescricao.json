@@ -2,6 +2,16 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5977",
+      "descricao": "RELOGIO INSPIRAÇÃO RETANGULAR - ALGARISMOS - 2 CORES",
+      "imagem": "5977.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
       "codigo": "6300",
       "descricao": "RELOGIO DIG. E ANALÓGICO LUZ - PULSEIRA BORRACHA MASCULINO",
       "imagem": "6300.jpg",
@@ -60,6 +70,16 @@
       "precoConsignado": "169,90",
       "banho": "Cor Ouro",
       "dataUltimaEntrada": "22/06/2026"
+    },
+    {
+      "codigo": "6266",
+      "descricao": "RELOGIO INSP. RETANGULAR - UNISSEX - FUNDO DOURADO",
+      "imagem": "6266.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
     },
     {
       "codigo": "6256",
