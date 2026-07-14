@@ -177,6 +177,17 @@
       "dataUltimaEntrada": "09/06/2026"
     },
     {
+      "codigo": "6190",
+      "descricao": "INOX CONJUNTO CORAÇÃO M2 COM CAIXA",
+      "tipo": "Aço Inox",
+      "imagem": "6190.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "05/06/2026"
+    },
+    {
       "codigo": "6185",
       "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 3 VOLTAS",
       "imagem": "6185.jpg",
@@ -636,28 +647,6 @@
       "dataUltimaEntrada": "03/03/2026"
     },
     {
-      "codigo": "5937",
-      "descricao": "BRINCO TRIO CORAÇÃO VAZADO COM PONTO DE LUZ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5937.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/03/2026"
-    },
-    {
-      "codigo": "5809",
-      "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5809.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/01/2026"
-    },
-    {
       "codigo": "5805",
       "descricao": "BRINCO ARGOLA INSPIRAÇÃO CART. - TARRAXA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -966,17 +955,6 @@
       "dataUltimaEntrada": "24/07/2025"
     },
     {
-      "codigo": "4594",
-      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4594.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "84,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
-    },
-    {
       "codigo": "4563",
       "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO CRAVEJADA COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -986,17 +964,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/07/2025"
-    },
-    {
-      "codigo": "4557",
-      "descricao": "BRINCO 3 CORACOES VAZADO/ CORRENTE/ LISO E PEROLA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4557.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "92,90",
-      "precoConsignado": "92,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "08/07/2025"
     },
     {
       "codigo": "4554",
