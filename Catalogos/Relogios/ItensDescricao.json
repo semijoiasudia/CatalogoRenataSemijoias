@@ -2,6 +2,26 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6359",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER CRAVEJADO",
+      "imagem": "6359.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
+      "codigo": "6278",
+      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
+      "imagem": "6278.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
       "codigo": "6358",
       "descricao": "RELOGIO REDONDO COM NÚMEROS PULSEIRA COURO SINT PRETA",
       "imagem": "6358.jpg",
@@ -35,16 +55,6 @@
       "codigo": "6354",
       "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO BRANCO",
       "imagem": "6354.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/07/2026"
-    },
-    {
-      "codigo": "6353",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO DOURADO",
-      "imagem": "6353.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "179,90",
       "precoConsignado": "179,90",

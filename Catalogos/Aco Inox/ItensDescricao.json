@@ -2,6 +2,28 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "6155",
+      "descricao": "INOX BRACELETE PREGO COM PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6155.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
+      "codigo": "5676",
+      "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "5676.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
       "codigo": "6291",
       "descricao": "INOX BRACELETE PREGO RESINA PRETA E PEDRAS CRISTAL",
       "tipo": "Aço Inox",
@@ -143,17 +165,6 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "03/06/2026"
-    },
-    {
-      "codigo": "5676",
-      "descricao": "INOX BRACELETE INSPIRACAO CART. COM PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "5676.jpg",
-      "pastaFotos": "Catalogos/Aco Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026"
     },
     {
       "codigo": "6183",

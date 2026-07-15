@@ -2,6 +2,16 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6359",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER CRAVEJADO",
+      "imagem": "6359.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
       "codigo": "6358",
       "descricao": "RELOGIO REDONDO COM NÚMEROS PULSEIRA COURO SINT PRETA",
       "imagem": "6358.jpg",
@@ -35,16 +45,6 @@
       "codigo": "6354",
       "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO BRANCO",
       "imagem": "6354.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/07/2026"
-    },
-    {
-      "codigo": "6353",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO DOURADO",
-      "imagem": "6353.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "179,90",
       "precoConsignado": "179,90",
@@ -366,6 +366,16 @@
       "dataUltimaEntrada": "22/06/2026"
     },
     {
+      "codigo": "6278",
+      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
+      "imagem": "6278.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "15/07/2026"
+    },
+    {
       "codigo": "6277",
       "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
       "imagem": "6277.jpg",
@@ -657,17 +667,6 @@
       "dataUltimaEntrada": "21/05/2026"
     },
     {
-      "codigo": "6160",
-      "descricao": "CONJUNTO ORGÂNICO VAZADO 39+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6160.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2026"
-    },
-    {
       "codigo": "6157",
       "descricao": "COLAR URSINHO COM CORAÇÃO CRAVEJADO 40+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -677,6 +676,17 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2026"
+    },
+    {
+      "codigo": "6155",
+      "descricao": "INOX BRACELETE PREGO COM PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6155.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "15/07/2026"
     },
     {
       "codigo": "6150",
@@ -1727,7 +1737,7 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026"
+      "dataUltimaEntrada": "15/07/2026"
     },
     {
       "codigo": "5661",
