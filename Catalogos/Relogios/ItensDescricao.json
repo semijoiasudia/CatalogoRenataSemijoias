@@ -2,6 +2,66 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6358",
+      "descricao": "RELOGIO REDONDO COM NÚMEROS PULSEIRA COURO SINT PRETA",
+      "imagem": "6358.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
+      "codigo": "6357",
+      "descricao": "RELOGIO REDONDO COM ALGARISMOS PULSEIRA COURO SINT MARROM",
+      "imagem": "6357.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
+      "codigo": "6355",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
+      "imagem": "6355.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
+      "codigo": "6354",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO BRANCO",
+      "imagem": "6354.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
+      "codigo": "6353",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO DOURADO",
+      "imagem": "6353.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
+      "codigo": "6352",
+      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
+      "imagem": "6352.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026"
+    },
+    {
       "codigo": "5977",
       "descricao": "RELOGIO INSPIRAÇÃO RETANGULAR - ALGARISMOS - 2 CORES",
       "imagem": "5977.jpg",
