@@ -156,6 +156,17 @@
       "dataUltimaEntrada": "01/04/2026"
     },
     {
+      "codigo": "4526",
+      "descricao": "COLAR ESFERA 47+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4526.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/04/2026"
+    },
+    {
       "codigo": "3386",
       "descricao": "COLAR FIO DE NYLON CORACAO LISO GRANDE 40+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -493,17 +504,6 @@
       "pastaFotos": "Catalogos/Colares/",
       "preco": "129,90",
       "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "16/09/2025"
-    },
-    {
-      "codigo": "4918",
-      "descricao": "COLAR GRAVATINHA 2 BARRAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4918.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/09/2025"
     },

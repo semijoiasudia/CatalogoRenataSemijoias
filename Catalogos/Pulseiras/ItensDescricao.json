@@ -2,17 +2,6 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
-      "codigo": "6338",
-      "descricao": "PULSEIRA ÁRVORE DA VIDA - ELOS GROUMET",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6338.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
       "codigo": "6337",
       "descricao": "PULSEIRA MÃO (HAND CHAIN)",
       "tipo": "Semijoia banhada a Prata",
@@ -32,17 +21,6 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
-      "codigo": "6329",
-      "descricao": "PULSEIRA CÍRCULOS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6329.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
       "dataUltimaEntrada": "28/06/2026"
     },
     {
@@ -112,6 +90,17 @@
       "dataUltimaEntrada": "05/05/2026"
     },
     {
+      "codigo": "6110",
+      "descricao": "PULSEIRA CORRENTE COM BAGUETES",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6110.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/05/2026"
+    },
+    {
       "codigo": "6007",
       "descricao": "PULSEIRA ELOS TRABALHADOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -145,6 +134,17 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
+      "codigo": "4447",
+      "descricao": "PULSEIRA 1 TREVO PRETO 18CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4447.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "94,90",
+      "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/11/2025"
+    },
+    {
       "codigo": "5316",
       "descricao": "PULSEIRA RIVIERA BAGUETE COLORS 4MM 17+4CM",
       "tipo": "Semijoia banhada a Prata",
@@ -176,17 +176,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5197",
-      "descricao": "PULSEIRA ELOS OVAIS GRANDES 16+6CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5197.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "5154",
@@ -242,6 +231,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/06/2025"
+    },
+    {
+      "codigo": "3812",
+      "descricao": "PULSEIRA TREVO V&C RESINA VERDE",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3812.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/05/2025"
     },
     {
       "codigo": "4308",
