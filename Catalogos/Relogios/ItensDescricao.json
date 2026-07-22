@@ -2,6 +2,56 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6095",
+      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO CINZA",
+      "imagem": "6095.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6094",
+      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO PRETO",
+      "imagem": "6094.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6092",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO BRANCO - MÉDIO",
+      "imagem": "6092.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "5832",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO BRANCO - MÉDIO",
+      "imagem": "5832.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "5682",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
+      "imagem": "5682.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
       "codigo": "6359",
       "descricao": "RELOGIO BRACELETE INSP CARTIER CRAVEJADO",
       "imagem": "6359.jpg",
@@ -22,9 +72,9 @@
       "dataUltimaEntrada": "14/07/2026"
     },
     {
-      "codigo": "5977",
-      "descricao": "RELOGIO INSPIRAÇÃO RETANGULAR - ALGARISMOS - 2 CORES",
-      "imagem": "5977.jpg",
+      "codigo": "6353",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO DOURADO",
+      "imagem": "6353.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "179,90",
       "precoConsignado": "179,90",
@@ -72,6 +122,16 @@
       "dataUltimaEntrada": "19/06/2026"
     },
     {
+      "codigo": "6263",
+      "descricao": "RELOGIO DIGITAL COM LUZ DE FUNDO - UNISSEX",
+      "imagem": "6263.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "19/06/2026"
+    },
+    {
       "codigo": "6240",
       "descricao": "RELOGIO INSPIRAÇÃO REDONDO - ALGARISMOS - 2 CORES",
       "imagem": "6240.jpg",
@@ -110,6 +170,16 @@
       "precoConsignado": "159,90",
       "banho": "Inox",
       "dataUltimaEntrada": "25/04/2026"
+    },
+    {
+      "codigo": "5972",
+      "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
+      "imagem": "5972.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "09/03/2026"
     },
     {
       "codigo": "5874",
