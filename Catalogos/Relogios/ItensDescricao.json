@@ -2,6 +2,76 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6366",
+      "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
+      "imagem": "6366.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "23/07/2026"
+    },
+    {
+      "codigo": "6365",
+      "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
+      "imagem": "6365.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "23/07/2026"
+    },
+    {
+      "codigo": "6364",
+      "descricao": "RELOGIO TREVO - PULS. ELÁSTICA - L. FASHION - FUNDO PRATA",
+      "imagem": "6364.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6363",
+      "descricao": "RELOGIO TREVO - PULS. ELÁSTICA - L. FASHION - FUNDO PRETO",
+      "imagem": "6363.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6362",
+      "descricao": "RELOGIO TREVO - PULSEIRA ELÁSTICA - LINHA FASHION ",
+      "imagem": "6362.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6361",
+      "descricao": "RELOGIO CASIO OVAL PEQUENO - PRATA COM FUNDO PRETO",
+      "imagem": "6361.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "6360",
+      "descricao": "RELOGIO CASIO OVAL PEQUENO - PRETO FUNDO BRANCO",
+      "imagem": "6360.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
       "codigo": "6095",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO CINZA",
       "imagem": "6095.jpg",
@@ -149,16 +219,6 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "20/05/2026"
-    },
-    {
-      "codigo": "6146",
-      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
-      "imagem": "6146.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
       "dataUltimaEntrada": "20/05/2026"
     },
     {
