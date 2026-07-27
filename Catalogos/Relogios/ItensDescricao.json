@@ -2,6 +2,16 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6367",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO CINZA - MÉDIO",
+      "imagem": "6367.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/07/2026"
+    },
+    {
       "codigo": "6366",
       "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6366.jpg",
@@ -132,16 +142,6 @@
       "dataUltimaEntrada": "15/07/2026"
     },
     {
-      "codigo": "6354",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO BRANCO",
-      "imagem": "6354.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/07/2026"
-    },
-    {
       "codigo": "6353",
       "descricao": "RELOGIO INSPIRAÇÃO CART. ALGARISMOS - FUNDO DOURADO",
       "imagem": "6353.jpg",
@@ -180,16 +180,6 @@
       "precoConsignado": "169,90",
       "banho": "Inox",
       "dataUltimaEntrada": "27/06/2026"
-    },
-    {
-      "codigo": "6274",
-      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
-      "imagem": "6274.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "22/06/2026"
     },
     {
       "codigo": "6266",
