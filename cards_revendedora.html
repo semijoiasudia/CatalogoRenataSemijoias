@@ -48,7 +48,7 @@
     }
     .page-header h1 em {
       font-style: italic;
-      color: var(--gold-4);
+      color: #9b8925;
     }
     .page-header p {
       font-size: 13px;
@@ -221,24 +221,47 @@
     .comm-rows {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 12px;
     }
+
     .comm-row {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto;
       align-items: center;
-      gap: 8px;
+      column-gap: 10px;
+      row-gap: 5px;
     }
-    .comm-row-label { font-size: 11.5px; color: var(--muted); min-width: 90px; }
+
+    .comm-row-label {
+      grid-column: 1;
+      grid-row: 1;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .comm-row-pct {
+      grid-column: 2;
+      grid-row: 1;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--gold-5);
+      text-align: right;
+    }
+
     .comm-bar-wrap {
-      flex: 1;
-      height: 4px;
+      grid-column: 1 / -1;
+      grid-row: 2;
+      width: 100%;
+      height: 5px;
       background: #f1efe8;
-      border-radius: 2px;
+      border-radius: 3px;
       overflow: hidden;
     }
-    .comm-bar-fill { height: 100%; border-radius: 2px; }
-    .comm-row-pct { font-size: 11.5px; font-weight: 600; color: var(--gold-5); min-width: 30px; text-align: right; }
 
+    .comm-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
     /* ── CARD ACCENT LINES ── */
     .card.c1 { border-top: 2px solid var(--gold-2); }
     .card.c2 { border-top: 2px solid var(--gold-3); }
@@ -322,9 +345,33 @@
       .cards-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
       .card { break-inside: avoid; }
     }
+
+
+    /* ── LOGOMARCA ── */
+    .logo-topo {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto 24px;
+      text-align: right;
+    }
+
+    .logo-topo img {
+      display: block;
+      width: 100px;
+      max-width: 55%;
+      height: auto;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
+
+  <div class="logo-topo">
+    <img
+      src="imagens/logo.png"
+      alt="Renata Semijoias e Acessórios"
+    >
+  </div>
 
   <div class="page-header">
     <h1>Seja uma <em>revendedora</em></h1>
@@ -415,7 +462,7 @@
       <div class="card-header">
         <div class="card-header-left">
           <p class="card-number">03</p>
-          <p class="card-title">Comissão progressiva</p>
+          <p class="card-title">Comissão e Acerto</p>
         </div>
         <div class="card-icon icon-c3">
           <!-- trending-up icon -->
@@ -427,13 +474,12 @@
       </div>
       <div class="card-body">
         <div class="highlight-num">
-          <span class="big">40</span>
-          <span class="unit">% de comissão máxima</span>
+          <span class="unit">Até 40% de comissão.</span>
         </div>
-        <p class="highlight-label">Comissão de acordo com sua venda mensal</p>
+        <p class="highlight-label">de acordo com sua venda mensal</p>
         <div class="comm-rows">
           <div class="comm-row">
-            <span class="comm-row-label">Até 999,99</span>
+            <span class="comm-row-label">Até 999,99 em vendas</span>
             <div class="comm-bar-wrap"><div class="comm-bar-fill" style="width:62%;background:var(--gold-3)"></div></div>        
             <span class="comm-row-pct">30%</span>
           </div>
@@ -450,8 +496,8 @@
         </div>
         <div class="card-divider"></div>
         <div class="item-list">
-          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>Acerto em <strong>30 dias</strong> após as vendas</span></div>
-          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>Parcelamento em <strong>até 3× sem juros</strong> no cartão</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>Acerto feito com  <strong>30 dias</strong> após a entrega da maleta</span></div>
+          <div class="item-row"><span class="item-dot" style="background:var(--gold-4)"></span><span>O pagamento pode ser parcelamento em <strong>até 3× sem juros</strong> no cartão</span></div>
         </div>
       </div>
     </div>
@@ -471,24 +517,26 @@
         </div>
       </div>
       <div class="card-body">
-        <p class="card-tagline">O que as revendedoras nos contam sobre o que deixaram para trás.</p>
+        <p class="card-tagline">O que nossas consultoras nos contam sobre o que deixaram para trás.</p>
         <div class="compare-mini">
           <div class="compare-col-mini before">
-            <div class="ch">Antes</div>
+            <div class="ch">Outras marcas</div>
             <div class="cb">
               <div class="compare-row-mini">✗ Preço alto, difícil de vender</div>
+              <div class="compare-row-mini">✗ Peças que escurecem fácil</div>
               <div class="compare-row-mini">✗ Poucas peças, sem opção de escolha na renovação</div>
-              <div class="compare-row-mini">✗ Meta de comissão impossível de atingir</div>
-              <div class="compare-row-mini">✗ Sem suporte pós-venda</div>
+              <div class="compare-row-mini">✗ Comissão máxima impossível de atingir</div>
+              <div class="compare-row-mini">✗ Sem suporte para vendas e pós vendas</div>
             </div>
           </div>
           <div class="compare-col-mini after">
             <div class="ch">Aqui</div>
             <div class="cb">
               <div class="compare-row-mini">✓ Preço acessível, venda fácil</div>
+              <div class="compare-row-mini">✓ Semijoias de verdade, com qualidade no banho</div>
               <div class="compare-row-mini">✓ Maleta ampla, você escolhe algumas peças na renovação</div>
               <div class="compare-row-mini">✓ Até 40% — comissão máxima alcaçável</div>
-              <div class="compare-row-mini">✓ Garantia e suporte real</div>
+              <div class="compare-row-mini">✓ Garantia e suporte real para você e suas clientes</div>
             </div>
           </div>
         </div>
@@ -504,11 +552,81 @@
       </div>
     </div>
 
-  </div>
 
-  <div class="print-hint">
-    <p>Quer imprimir ou salvar como imagem para enviar?</p>
-    <button onclick="window.print()">🖨️ Imprimir / Salvar PDF</button>
+    <!-- CARD 5: DÚVIDAS FREQUENTES -->
+    <div class="card c1">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">05</p>
+          <p class="card-title">Dúvidas frequentes</p>
+        </div>
+
+        <div class="card-icon icon-c1">
+          <!-- ícone de ajuda -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round"
+               stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M9.1 9a3 3 0 115.5 1.7c-.8 1.1-2.6 1.4-2.6 3.3"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="item-list">
+
+          <div class="item-row">
+            <span class="item-dot"
+                  style="background:var(--gold-3)"></span>
+
+            <span>
+              <strong>Se eu não vender, tenho que pagar algum valor?</strong><br>
+              Não. Você paga somente pelas peças que vender. Se não houver
+              vendas durante o período, basta devolver todas as peças.
+              Não haverá nenhuma cobrança e o contrato será encerrado sem custos.
+            </span>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="item-row">
+            <span class="item-dot"
+                  style="background:var(--gold-3)"></span>
+
+            <span>
+              <strong>Eu posso escolher as peças?</strong><br>
+              A primeira maleta é montada pela nossa equipe, de acordo com
+              a disponibilidade das peças. A partir da segunda maleta, você
+              poderá escolher algumas peças durante a renovação.
+            </span>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="item-row">
+            <span class="item-dot"
+                  style="background:var(--gold-3)"></span>
+
+            <span>
+              <strong>Como é feita a renovação das peças?</strong><br>
+              A cada novo ciclo, renovamos entre 60% e 80% das peças da
+              maleta, trazendo novas opções para você apresentar às suas clientes.
+            </span>
+          </div>
+
+        </div>
+
+        <span class="card-footer-tag">
+          <svg width="11" height="11" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Transparência e segurança
+        </span>
+      </div>
+    </div>
+
   </div>
 
 </body>
