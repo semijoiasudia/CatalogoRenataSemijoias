@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Renata Semijoias e Acessórios</title>
+  <meta
+    name="description"
+    content="Conheça nosso catálogo, saiba como ser uma revendedora e fale com a Renata Semijoias."
+  >
+
+  <!-- Miniatura para WhatsApp e redes sociais -->
+  <meta property="og:type" content="website">
+  <meta
+    property="og:title"
+    content="Renata Semijoias e Acessórios"
+  >
+  <meta
+    property="og:description"
+    content="Catálogo, oportunidade para revendedoras, Instagram e atendimento em um só lugar."
+  >
+  <meta
+    property="og:image"
+    content="https://renatasemijoias.com/imagens/logo_otimizada_redes_sociais.jpg"
+  >
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #fdf8f2;
+      --white: #ffffff;
+      --ink: #2c2c2a;
+      --muted: #7f7c74;
+      --border: #d8d3c8;
+      --gold-1: #faeeda;
+      --gold-2: #fac775;
+      --gold-3: #d9a33b;
+      --gold-4: #b9933f;
+      --gold-5: #80601a;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-width: 320px;
+      min-height: 100vh;
+      background:
+        radial-gradient(
+          circle at 15% 5%,
+          rgba(250, 199, 117, 0.18),
+          transparent 28rem
+        ),
+        radial-gradient(
+          circle at 85% 92%,
+          rgba(185, 147, 63, 0.12),
+          transparent 24rem
+        ),
+        var(--bg);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .page-shell {
+      min-height: 100vh;
+      padding: 36px 18px 28px;
+    }
+
+    .landing {
+      width: min(100%, 860px);
+      margin: 0 auto;
+    }
+
+    .page-header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 132px;
+      height: auto;
+      margin: 0 auto 25px;
+    }
+
+    .welcome {
+      margin-bottom: 9px;
+      color: var(--gold-5);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .page-header h1 {
+      max-width: 650px;
+      margin: 0 auto;
+      font-family: "DM Serif Display", serif;
+      font-size: clamp(2rem, 7vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.08;
+    }
+
+    .page-header h1 em {
+      color: var(--gold-4);
+      font-style: italic;
+    }
+
+    .intro {
+      max-width: 500px;
+      margin: 13px auto 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .header-rule {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 190px;
+      margin: 18px auto 0;
+    }
+
+    .header-rule::before,
+    .header-rule::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .header-rule span {
+      width: 6px;
+      height: 6px;
+      background: var(--gold-3);
+      transform: rotate(45deg);
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .link-card {
+      position: relative;
+      display: flex;
+      min-height: 205px;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-top-width: 3px;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 8px 28px rgba(73, 52, 7, 0.045);
+      color: inherit;
+      text-decoration: none;
+      transition:
+        transform 0.18s ease,
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+    }
+
+    .link-card::after {
+      content: "";
+      position: absolute;
+      right: -55px;
+      bottom: -70px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--gold-1);
+      opacity: 0.42;
+      pointer-events: none;
+    }
+
+    .link-card:hover,
+    .link-card:focus-visible {
+      border-color: var(--gold-3);
+      box-shadow: 0 14px 34px rgba(73, 52, 7, 0.09);
+      outline: none;
+      transform: translateY(-3px);
+    }
+
+    .link-card.c1 {
+      border-top-color: var(--gold-2);
+    }
+
+    .link-card.c2 {
+      border-top-color: var(--gold-3);
+    }
+
+    .link-card.c3 {
+      border-top-color: var(--gold-4);
+    }
+
+    .link-card.c4 {
+      border-top-color: var(--gold-5);
+    }
+
+    .link-card.featured {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(250, 238, 218, 0.75),
+          rgba(255, 255, 255, 0.96) 55%
+        ),
+        var(--white);
+    }
+
+    .card-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .card-eyebrow {
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-family: "DM Serif Display", serif;
+      font-size: 0.69rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .link-card h2 {
+      max-width: 235px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .card-icon {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--gold-1);
+      color: var(--gold-5);
+    }
+
+    .card-icon svg {
+      width: 19px;
+      height: 19px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.7;
+    }
+
+    .card-icon .icon-fill {
+      fill: currentColor;
+      stroke: none;
+    }
+
+    .card-description {
+      position: relative;
+      z-index: 1;
+      max-width: 290px;
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+
+    .card-action {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 18px;
+    }
+
+    .action-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: auto;
+      color: var(--gold-5);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .action-label svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2;
+    }
+
+    .card-badge {
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: var(--gold-1);
+      color: var(--gold-5);
+      font-size: 0.63rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      padding-top: 28px;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: "DM Serif Display", serif;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.68rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        padding: 25px 14px 22px;
+      }
+
+      .brand-logo {
+        width: 118px;
+        margin-bottom: 21px;
+      }
+
+      .page-header {
+        margin-bottom: 24px;
+      }
+
+      .links-grid {
+        grid-template-columns: 1fr;
+        gap: 11px;
+      }
+
+      .link-card {
+        min-height: 0;
+        padding: 17px;
+      }
+
+      .card-description {
+        margin-top: 10px;
+      }
+
+      .card-action {
+        padding-top: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-shell">
+    <section class="landing" aria-labelledby="page-title">
+
+      <header class="page-header">
+        <img
+          class="brand-logo"
+          src="https://renatasemijoias.com/imagens/logo.png"
+          alt="Renata Semijoias e Acessórios"
+        >
+
+        <p class="welcome">Olá, seja bem-vinda! 🌹</p>
+
+        <h1 id="page-title">
+          Tudo sobre a <em>Renata</em> em um só lugar
+        </h1>
+
+        <p class="intro">
+          Escolha abaixo o que deseja conhecer. Será um prazer ter
+          você por aqui.
+        </p>
+
+        <div class="header-rule" aria-hidden="true">
+          <span></span>
+        </div>
+      </header>
+
+      <div class="links-grid">
+
+        <!-- CATÁLOGO -->
+        <a
+          class="link-card c1"
+          href="https://renatasemijoias.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <div class="card-top">
+            <div>
+              <p class="card-eyebrow">Nossas peças</p>
+              <h2>Conheça nosso catálogo</h2>
+            </div>
+
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                <path d="M3 6h18M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </span>
+          </div>
+
+          <p class="card-description">
+            Veja nossas semijoias, acessórios, relógios e novidades
+            disponíveis.
+          </p>
+
+          <div class="card-action">
+            <span class="action-label">
+              Acessar
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- REVENDEDORA -->
+        <a
+          class="link-card c2 featured"
+          href="https://renatasemijoias.com/seja_revendedora"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <div class="card-top">
+            <div>
+              <p class="card-eyebrow">Oportunidade</p>
+              <h2>Seja uma revendedora</h2>
+            </div>
+
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v18M17 7.5C17 5.57 14.76 4 12 4S7 5.57 7 7.5 9.24 11 12 11s5 1.57 5 3.5S14.76 18 12 18s-5-1.57-5-3.5"></path>
+              </svg>
+            </span>
+          </div>
+
+          <p class="card-description">
+            Saiba como funciona, conheça as comissões e faça seu
+            cadastro.
+          </p>
+
+          <div class="card-action">
+            <span class="card-badge">Comece por aqui</span>
+
+            <span class="action-label">
+              Acessar
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+          class="link-card c3"
+          href="https://www.instagram.com/renataacessoriosuberlandia/"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <div class="card-top">
+            <div>
+              <p class="card-eyebrow">Inspiração</p>
+              <h2>Conheça nosso Instagram</h2>
+            </div>
+
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle
+                  class="icon-fill"
+                  cx="17.5"
+                  cy="6.5"
+                  r=".75">
+                </circle>
+              </svg>
+            </span>
+          </div>
+
+          <p class="card-description">
+            Acompanhe lançamentos, combinações e novidades da nossa
+            marca.
+          </p>
+
+          <div class="card-action">
+            <span class="action-label">
+              Acessar
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- WHATSAPP -->
+        <a
+          class="link-card c4"
+          href="https://wa.me/5534997622408?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <div class="card-top">
+            <div>
+              <p class="card-eyebrow">Atendimento</p>
+              <h2>Fale conosco pelo WhatsApp</h2>
+            </div>
+
+            <span class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 8.7 3.9 8.38 8.38 0 0 1 12.5 3h.5a8.48 8.48 0 0 1 8 8Z"></path>
+                <path d="M9 9.25c.5 2.1 1.65 3.25 3.75 3.75"></path>
+              </svg>
+            </span>
+          </div>
+
+          <p class="card-description">
+            Ainda ficou com alguma dúvida? Nossa equipe está à
+            disposição.
+          </p>
+
+          <div class="card-action">
+            <span class="action-label">
+              Acessar
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6"></path>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+
+      <footer>
+        <p>Renata Semijoias e Acessórios</p>
+        <span>Uberlândia – MG</span>
+      </footer>
+
+    </section>
+  </main>
+</body>
+</html>
