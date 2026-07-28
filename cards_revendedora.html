@@ -364,6 +364,174 @@
       height: auto;
       margin: 0 auto;
     }
+
+    /* ── FORMULÁRIO DE CADASTRO ── */
+    /* Faz o card ocupar toda a largura */
+    .form-card {
+      grid-column: 1 / -1;
+    }
+
+    /* Duas colunas no computador */
+    .cadastro-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    /* Campos que ocupam as duas colunas */
+    .form-field.full,
+    .form-consent,
+    .form-privacy,
+    .form-submit,
+    .form-status {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* Campos de texto, listas e caixas de texto */
+    .form-control {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: white;
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--gold-4);
+      box-shadow: 0 0 0 2px rgba(186, 117, 23, 0.15);
+    }
+
+    .form-control.invalid {
+      border-color: #b23b3b;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+    }
+
+    /* Opções Sim e Não */
+    .form-options {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      min-height: 42px;
+    }
+
+    .form-option {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .form-option input,
+    .form-consent input {
+      accent-color: var(--gold-4);
+    }
+
+    /* Mensagens de validação */
+    .form-error {
+      display: none;
+      color: #b23b3b;
+      font-size: 11.5px;
+    }
+
+    /* Confirmação de leitura */
+    .form-consent {
+      padding: 13px;
+      background: var(--gold-1);
+      border-radius: 7px;
+    }
+
+    .form-consent label {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      cursor: pointer;
+    }
+
+    .form-consent input {
+      margin-top: 2px;
+    }
+
+    /* Informação sobre os dados */
+    .form-privacy {
+      color: var(--muted);
+      font-size: 11.5px;
+      text-align: center;
+    }
+
+    /* Botão de envio */
+    .form-submit {
+      padding: 13px;
+      border: none;
+      border-radius: 7px;
+      background: var(--gold-5);
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .form-submit:hover {
+      background: var(--gold-4);
+    }
+
+    .form-submit:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+    /* Resultado do envio */
+    .form-status {
+      display: none;
+      padding: 11px;
+      border-radius: 7px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .form-status.success {
+      display: block;
+      background: #edf7ed;
+      color: #326332;
+    }
+
+    .form-status.error {
+      display: block;
+      background: #fff0f0;
+      color: #8c3030;
+    }
+
+    /* Uma coluna no celular */
+    @media (max-width: 650px) {
+      .cadastro-form {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -628,7 +796,611 @@
       </div>
     </div>
 
-  </div>
+    <!-- CARD 6: FORMULÁRIO DE CADASTRO -->
+    <div class="card c3 form-card" id="cadastro">
+      <div class="card-header">
+        <div class="card-header-left">
+          <p class="card-number">06</p>
+          <p class="card-title">Faça seu cadastro</p>
+        </div>
+
+        <div class="card-icon icon-c3">
+          <!-- ícone de formulário -->
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5h6"/>
+            <path d="M9 3h6a2 2 0 012 2v1h2a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h2V5a2 2 0 012-2z"/>
+            <path d="M8 11h8"/>
+            <path d="M8 15h8"/>
+            <path d="M8 19h5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="card-body">
+              
+        <p class="card-title" style="margin-bottom: 10px;">
+          Requisitos:
+        </p>
+
+        <div class="item-list" style="margin-bottom: 20px;">
+
+          <div class="item-row">
+            <span
+              class="item-dot"
+              style="background: var(--gold-4)">
+            </span>
+
+            <span>
+              <strong>Não possuir restrição no CPF.</strong>
+            </span>
+          </div>
+
+          <div class="item-row">
+            <span
+              class="item-dot"
+              style="background: var(--gold-4)">
+            </span>
+
+            <span>
+              <strong>Ter real interesse na oportunidade.</strong>
+              Caso seu cadastro seja aprovado, entraremos em contato pelo
+              WhatsApp informado. Se não houver retorno, a candidatura será
+              encerrada e não será possível realizar uma nova inscrição.
+            </span>
+          </div>
+
+          <div class="item-row">
+            <span
+              class="item-dot"
+              style="background: var(--gold-4)">
+            </span>
+
+            <span>
+              <strong>Residir em Uberlândia – MG.</strong>
+            </span>
+          </div>
+
+        </div>
+        <div class="card-divider"></div>
+        <p class="card-tagline">
+          Preencha o formulário para se candidatar. Entraremos em
+          contato caso seu perfil seja selecionado.
+        </p>
+
+        <form id="candidaturaForm" class="cadastro-form">
+
+          <!-- Nome -->
+          <div class="form-field">
+            <label class="form-label" for="nomeInput">
+              Nome completo
+            </label>
+
+            <input
+              type="text"
+              id="nomeInput"
+              name="Nome"
+              class="form-control"
+              placeholder="Seu nome completo"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="form-field">
+            <label class="form-label" for="whatsappInput">
+              WhatsApp
+            </label>
+
+            <input
+              type="tel"
+              id="whatsappInput"
+              name="WhatsApp"
+              class="form-control"
+              placeholder="(00) 00000-0000"
+              maxlength="15"
+              inputmode="numeric"
+              autocomplete="tel"
+              required
+            >
+
+            <span
+              id="whatsappErro"
+              class="form-error"
+              aria-live="polite">
+            </span>
+          </div>
+
+          <!-- CPF -->
+          <div class="form-field">
+            <label class="form-label" for="cpfInput">
+              CPF
+            </label>
+
+            <input
+              type="text"
+              id="cpfInput"
+              name="CPF"
+              class="form-control"
+              placeholder="000.000.000-00"
+              maxlength="14"
+              inputmode="numeric"
+              autocomplete="off"
+              required
+            >
+
+            <span
+              id="cpfErro"
+              class="form-error"
+              aria-live="polite">
+            </span>
+          </div>
+
+          <!-- Restrição no CPF -->
+          <div class="form-field">
+            <span class="form-label">
+              Possui restrição no CPF?
+              (O cadastro será analisado individualmente)
+            </span>
+
+            <div class="form-options">
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="RestricaoCPF"
+                  value="Sim"
+                  required
+                >
+                <span>Sim</span>
+              </label>
+
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="RestricaoCPF"
+                  value="Não"
+                  required
+                >
+                <span>Não</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Endereço -->
+          <div class="form-field">
+            <label class="form-label" for="enderecoInput">
+              Endereço
+            </label>
+
+            <input
+              type="text"
+              id="enderecoInput"
+              name="Endereco"
+              class="form-control"
+              placeholder="Rua e número"
+              autocomplete="street-address"
+              required
+            >
+          </div>
+
+          <!-- Bairro -->
+          <div class="form-field">
+            <label class="form-label" for="bairroInput">
+              Bairro
+            </label>
+
+            <input
+              type="text"
+              id="bairroInput"
+              name="Bairro"
+              class="form-control"
+              placeholder="Seu bairro"
+              required
+            >
+          </div>
+
+          <!-- Profissão -->
+          <div class="form-field">
+            <label class="form-label" for="profissaoInput">
+              Profissão
+            </label>
+
+            <input
+              type="text"
+              id="profissaoInput"
+              name="Profissao"
+              class="form-control"
+              placeholder="Sua profissão atual"
+              autocomplete="organization-title"
+              required
+            >
+          </div>
+
+          <!-- Estado civil -->
+          <div class="form-field">
+            <label class="form-label" for="estadoCivilInput">
+              Estado civil
+            </label>
+
+            <select
+              id="estadoCivilInput"
+              name="EstadoCivil"
+              class="form-control"
+              required>
+
+              <option value="">Selecione...</option>
+              <option value="Solteira">Solteira</option>
+              <option value="Casada">Casada</option>
+              <option value="Divorciada">Divorciada</option>
+              <option value="Viúva">Viúva</option>
+              <option value="União Estável">União estável</option>
+            </select>
+          </div>
+
+          <!-- Residência própria -->
+          <div class="form-field full">
+            <span class="form-label">
+              Possui residência própria?
+            </span>
+
+            <div class="form-options">
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="ResidenciaPropria"
+                  value="Sim"
+                  required
+                >
+                <span>Sim</span>
+              </label>
+
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="ResidenciaPropria"
+                  value="Não"
+                  required
+                >
+                <span>Não</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Outro trabalho -->
+          <div class="form-field full">
+            <label class="form-label" for="outroTrabalhoInput">
+              Possui outro trabalho? Fale um pouco sobre ele:
+            </label>
+
+            <textarea
+              id="outroTrabalhoInput"
+              name="OutroTrabalho"
+              class="form-control"
+              rows="3"
+              placeholder="Descreva seu outro trabalho ou digite “Não”">
+            </textarea>
+          </div>
+
+          <!-- Interesse -->
+          <div class="form-field full">
+            <label class="form-label" for="interesseInput">
+              De 0 a 10, qual é o seu nível de interesse em buscar
+              uma renda extra com vendas?
+            </label>
+
+            <select
+              id="interesseInput"
+              name="NivelInteresse"
+              class="form-control"
+              required>
+
+              <option value="">Selecione...</option>
+              <option value="0">0 – Nenhum interesse</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10 – Muito interessada</option>
+            </select>
+          </div>
+
+          <!-- Motivação -->
+          <div class="form-field full">
+            <label class="form-label" for="motivacaoInput">
+              Por que você quer ser uma revendedora?
+            </label>
+
+            <textarea
+              id="motivacaoInput"
+              name="Motivacao"
+              class="form-control"
+              rows="3"
+              placeholder="Conte um pouco sobre seus objetivos"
+              required>
+            </textarea>
+          </div>
+
+          <!-- Confirmação -->
+          <div class="form-consent">
+            <label>
+              <input
+                type="checkbox"
+                name="ConfirmacaoLeitura"
+                value="Li e concordo"
+                required
+              >
+
+              <span>
+                Li as informações desta página, estou de acordo com
+                as condições apresentadas e autorizo o uso dos dados
+                informados para análise da minha candidatura.
+              </span>
+            </label>
+          </div>
+
+          <p class="form-privacy">
+            Seus dados serão utilizados para analisar seu cadastro
+            e entrar em contato com você.
+          </p>
+
+          <button type="submit" class="form-submit">
+            Enviar cadastro
+          </button>
+
+          <p
+            id="formStatus"
+            class="form-status"
+            role="status"
+            aria-live="polite">
+          </p>
+
+        </form>
+      </div>
+    </div> <!--Fim do card 6-->
+
+  </div> <!--Fim de cards-grid -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const formulario = document.getElementById('candidaturaForm');
+      const whatsappInput = document.getElementById('whatsappInput');
+      const whatsappErro = document.getElementById('whatsappErro');
+      const cpfInput = document.getElementById('cpfInput');
+      const cpfErro = document.getElementById('cpfErro');
+      const formStatus = document.getElementById('formStatus');
+
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
+
+      function mascaraTelefone(valor) {
+        valor = valor.replace(/\D/g, '').substring(0, 11);
+
+        if (valor.length > 10) {
+          valor = valor.replace(
+            /(\d{2})(\d{5})(\d{4})/,
+            '($1) $2-$3'
+          );
+        } else if (valor.length > 6) {
+          valor = valor.replace(
+            /(\d{2})(\d{4,5})(\d{0,4})/,
+            '($1) $2-$3'
+          );
+        } else if (valor.length > 2) {
+          valor = valor.replace(
+            /(\d{2})(\d+)/,
+            '($1) $2'
+          );
+        } else if (valor.length > 0) {
+          valor = valor.replace(/(\d+)/, '($1');
+        }
+
+        return valor;
+      }
+
+      function validarTelefone(valor) {
+        return valor.replace(/\D/g, '').length >= 10;
+      }
+
+      function mascaraCPF(valor) {
+        valor = valor.replace(/\D/g, '').substring(0, 11);
+
+        if (valor.length > 9) {
+          valor = valor.replace(
+            /(\d{3})(\d{3})(\d{3})(\d{1,2})/,
+            '$1.$2.$3-$4'
+          );
+        } else if (valor.length > 6) {
+          valor = valor.replace(
+            /(\d{3})(\d{3})(\d{1,3})/,
+            '$1.$2.$3'
+          );
+        } else if (valor.length > 3) {
+          valor = valor.replace(
+            /(\d{3})(\d{1,3})/,
+            '$1.$2'
+          );
+        }
+
+        return valor;
+      }
+
+      function validarCPF(cpf) {
+        cpf = cpf.replace(/\D/g, '');
+
+        if (
+          cpf.length !== 11 ||
+          /^(\d)\1+$/.test(cpf)
+        ) {
+          return false;
+        }
+
+        let soma = 0;
+        let resto;
+
+        for (let i = 1; i <= 9; i++) {
+          soma += parseInt(cpf[i - 1], 10) * (11 - i);
+        }
+
+        resto = (soma * 10) % 11;
+
+        if (resto === 10 || resto === 11) {
+          resto = 0;
+        }
+
+        if (resto !== parseInt(cpf[9], 10)) {
+          return false;
+        }
+
+        soma = 0;
+
+        for (let i = 1; i <= 10; i++) {
+          soma += parseInt(cpf[i - 1], 10) * (12 - i);
+        }
+
+        resto = (soma * 10) % 11;
+
+        if (resto === 10 || resto === 11) {
+          resto = 0;
+        }
+
+        return resto === parseInt(cpf[10], 10);
+      }
+
+      function esconderStatus() {
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+      }
+
+      whatsappInput.addEventListener('input', function () {
+        this.value = mascaraTelefone(this.value);
+        this.classList.remove('invalid');
+        whatsappErro.textContent = '';
+        whatsappErro.style.display = 'none';
+        esconderStatus();
+      });
+
+      whatsappInput.addEventListener('blur', function () {
+        const telefoneValido = validarTelefone(this.value);
+
+        if (!telefoneValido) {
+          this.classList.add('invalid');
+          whatsappErro.textContent =
+            'Número inválido. Informe o DDD e o número.';
+          whatsappErro.style.display = 'block';
+        }
+      });
+
+      cpfInput.addEventListener('input', function () {
+        this.value = mascaraCPF(this.value);
+        this.classList.remove('invalid');
+        cpfErro.textContent = '';
+        cpfErro.style.display = 'none';
+        esconderStatus();
+      });
+
+      cpfInput.addEventListener('blur', function () {
+        const cpfValido = validarCPF(this.value);
+
+        if (!cpfValido) {
+          this.classList.add('invalid');
+          cpfErro.textContent =
+            'CPF inválido. Verifique os números digitados.';
+          cpfErro.style.display = 'block';
+        }
+      });
+
+      formulario.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+        esconderStatus();
+
+        if (!validarTelefone(whatsappInput.value)) {
+          whatsappInput.classList.add('invalid');
+          whatsappErro.textContent =
+            'Número inválido. Informe o DDD e o número.';
+          whatsappErro.style.display = 'block';
+          whatsappInput.focus();
+          return;
+        }
+
+        if (!validarCPF(cpfInput.value)) {
+          cpfInput.classList.add('invalid');
+          cpfErro.textContent =
+            'CPF inválido. Corrija antes de enviar.';
+          cpfErro.style.display = 'block';
+          cpfInput.focus();
+          return;
+        }
+
+        const botao = formulario.querySelector(
+          'button[type="submit"]'
+        );
+
+        const textoOriginal = botao.textContent;
+
+        botao.textContent = 'Enviando...';
+        botao.disabled = true;
+
+        const dados = new FormData(formulario);
+        const parametros = new URLSearchParams(
+          window.location.search
+        );
+
+        dados.append(
+          'Origem',
+          parametros.get('orig') || ''
+        );
+
+        fetch(scriptURL, {
+          method: 'POST',
+          body: dados
+        })
+        .then(function (resposta) {
+          if (!resposta.ok) {
+            throw new Error('Erro na resposta do servidor');
+          }
+
+          return resposta.text();
+        })
+        .then(function () {
+          formulario.reset();
+
+          formStatus.textContent =
+            'Cadastro enviado com sucesso! Entraremos em contato caso seu perfil seja selecionado.';
+
+          formStatus.className =
+            'form-status success';
+
+          formStatus.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        })
+        .catch(function (erro) {
+          console.error(
+            'Erro ao enviar o cadastro:',
+            erro
+          );
+
+          formStatus.textContent =
+            'Não foi possível enviar o cadastro. Verifique sua conexão e tente novamente.';
+
+          formStatus.className =
+            'form-status error';
+        })
+        .finally(function () {
+          botao.textContent = textoOriginal;
+          botao.disabled = false;
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
