@@ -2,6 +2,36 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6384",
+      "descricao": "RELOGIO TOMMY MASCULINO - COM MARCAÇÃO DE DIA",
+      "imagem": "6384.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6375",
+      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO PRETO",
+      "imagem": "6375.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6374",
+      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO DOURADO",
+      "imagem": "6374.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
       "codigo": "6371",
       "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
       "imagem": "6371.jpg",
