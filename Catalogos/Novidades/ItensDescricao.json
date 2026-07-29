@@ -2,6 +2,26 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6368",
+      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO BRANCO PONT DOURADO",
+      "imagem": "6368.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/07/2026"
+    },
+    {
       "codigo": "6367",
       "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO CINZA - MÉDIO",
       "imagem": "6367.jpg",
@@ -2448,6 +2468,17 @@
       "dataUltimaEntrada": "08/08/2025"
     },
     {
+      "codigo": "4686",
+      "descricao": "BRINCO FIO E ESPIRAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4686.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
       "codigo": "4672",
       "descricao": "BRINCO MEIA FOLHA ORGÂNICA",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -2665,7 +2696,7 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/03/2026"
+      "dataUltimaEntrada": "29/07/2026"
     }
   ]
 }
