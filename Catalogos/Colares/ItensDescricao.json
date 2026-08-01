@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "4226",
+      "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MADREPEROLA 42+6CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4226.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6159",
       "descricao": "COLAR FLOR ORGÂNICA 39+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -486,6 +497,17 @@
       "dataUltimaEntrada": "08/08/2025"
     },
     {
+      "codigo": "4724",
+      "descricao": "COLAR PINGENTES MOEDAS 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4724.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "124,90",
+      "precoConsignado": "124,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025"
+    },
+    {
       "codigo": "4642",
       "descricao": "COLAR CORDÃO 1,5MM 47CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -552,6 +574,17 @@
       "dataUltimaEntrada": "22/03/2025"
     },
     {
+      "codigo": "3963",
+      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3963.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "84,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/01/2025"
+    },
+    {
       "codigo": "3831",
       "descricao": "COLAR DUPLO MOEDINHAS E CARTIER 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -561,17 +594,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/12/2024"
-    },
-    {
-      "codigo": "3317",
-      "descricao": "COLAR CORDAO BAIANO 2,5 MM 45+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3317.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "20/07/2024"
     }
   ]
 }

@@ -2,6 +2,28 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "6339",
+      "descricao": "PULSEIRA ÁRVORE DA VIDA - ELOS GROUMET",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6339.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6333",
+      "descricao": "PULSEIRA MEDALHA DE SÃO BENTO E CRUZ",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6333.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
       "codigo": "6326",
       "descricao": "PULSEIRA ELOS TRABALHADOS E CHAPINHAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,17 +44,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/05/2026"
-    },
-    {
-      "codigo": "6007",
-      "descricao": "PULSEIRA ELOS TRABALHADOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6007.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
     },
     {
       "codigo": "6006",
@@ -68,28 +79,6 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5316",
-      "descricao": "PULSEIRA RIVIERA BAGUETE COLORS 4MM 17+4CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5316.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5312",
-      "descricao": "PULSEIRA RIVIERA BAGUETE CRISTAL 4MM 17+4CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "5312.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "104,90",
-      "precoConsignado": "104,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "02/11/2025"
-    },
-    {
       "codigo": "5311",
       "descricao": "PULSEIRA RIVIERA BAGUETE CRISTAL 4MM 17+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -109,6 +98,17 @@
       "preco": "94,90",
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2025"
+    },
+    {
+      "codigo": "5303",
+      "descricao": "PULSEIRA CIGANINHA NAVETES COLORIDAS 18+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5303.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "102,90",
+      "precoConsignado": "102,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "02/11/2025"
     },
     {
