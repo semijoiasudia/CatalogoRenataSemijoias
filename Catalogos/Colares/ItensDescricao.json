@@ -2,6 +2,17 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "6347",
+      "descricao": "COLAR DUPLO COM PONTOS DE LUZ 42/48+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6347.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/06/2026"
+    },
+    {
       "codigo": "4226",
       "descricao": "COLAR FIO DE NYLON NOSSA SENHORA MADREPEROLA 42+6CM",
       "tipo": "Semijoia banhada a Ouro 18k",

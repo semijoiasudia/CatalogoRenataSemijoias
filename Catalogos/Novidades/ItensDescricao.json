@@ -132,6 +132,17 @@
       "dataUltimaEntrada": "22/07/2026"
     },
     {
+      "codigo": "6347",
+      "descricao": "COLAR DUPLO COM PONTOS DE LUZ 42/48+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6347.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "29/06/2026"
+    },
+    {
       "codigo": "6333",
       "descricao": "PULSEIRA MEDALHA DE SÃO BENTO E CRUZ",
       "tipo": "Semijoia banhada a Prata",
@@ -512,17 +523,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "69,90",
       "precoConsignado": "69,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
-    },
-    {
-      "codigo": "6202",
-      "descricao": "BRINCO EAR CUFF 3 CORAÇÕES COLORS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6202.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026"
     },
@@ -1694,17 +1694,6 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026"
-    },
-    {
-      "codigo": "5776",
-      "descricao": "INOX BRACELETE CABO DE AÇO 3 MEDALHAS SÃO BENTO",
-      "tipo": "Aço Inox",
-      "imagem": "5776.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "31/01/2026"
     },
     {
       "codigo": "5744",
