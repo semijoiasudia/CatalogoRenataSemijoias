@@ -1327,7 +1327,13 @@
             });
             searchInput.addEventListener('input', function() {
                 const clearBtn = document.getElementById('clear-search-button');
-                clearBtn.style.display = this.value ? 'block' : 'none';
+                if (this.value) {
+                    clearBtn.style.display = 'block';
+                } else if (allFilesBackup.length > 0) {
+                    clearSearch();
+                } else {
+                    clearBtn.style.display = 'none';
+                }
             });
         }
         
@@ -1340,8 +1346,8 @@
             query = query.trim().toLowerCase();
             console.log('Buscando produtos:', query);
             
-            // Buscar apenas na categoria atual (allFiles)
-            let searchSource = allFiles;
+            // Buscar sempre em todos os produtos da categoria atual
+            let searchSource = allFilesBackup.length > 0 ? allFilesBackup : allFiles;
             
             // Filtrar produtos que contêm o termo de busca na descrição, código ou banho
             const filteredFiles = searchSource.filter(file => {
@@ -1365,7 +1371,9 @@
             currentPage = 1;
             
             // Atualizar a visualização com os resultados da busca
-            allFilesBackup = [...allFiles]; // salva o original para voltar após cancelar a busca
+            if (allFilesBackup.length === 0) {
+                allFilesBackup = [...allFiles]; // salva o original para voltar após cancelar a busca
+            }
             allFiles = filteredFiles;
             currentVisibleFiles = filteredFiles;
             displayPage(currentPage, new Set());
@@ -1921,6 +1929,7 @@
             const banhosNaCategoria = new Set();
             currentPage = 1;
             currentBanho = 'todos';
+            allFilesBackup = [];
 
             try {
                 // Carregar produtos da categoria
@@ -2441,8 +2450,6 @@
             }
             currentPage = 1;
             displayPage(currentPage, new Set());
-            // Recarrega a categoria atual
-            loadCategory(currentCategory);
         }
 
         async function saveImage() {
