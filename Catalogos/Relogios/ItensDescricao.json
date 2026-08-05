@@ -2,6 +2,16 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "5975",
+      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
+      "imagem": "5975.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "05/08/2026"
+    },
+    {
       "codigo": "6384",
       "descricao": "RELOGIO TOMMY MASCULINO - COM MARCAÇÃO DE DIA",
       "imagem": "6384.jpg",
@@ -172,16 +182,6 @@
       "dataUltimaEntrada": "22/07/2026"
     },
     {
-      "codigo": "5832",
-      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO BRANCO - MÉDIO",
-      "imagem": "5832.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
-    },
-    {
       "codigo": "5682",
       "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
       "imagem": "5682.jpg",
@@ -298,16 +298,6 @@
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "169,90",
       "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/06/2026"
-    },
-    {
-      "codigo": "6205",
-      "descricao": "RELOGIO EMPORIO ARMANI - MASCULINO",
-      "imagem": "6205.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "09/06/2026"
     },
