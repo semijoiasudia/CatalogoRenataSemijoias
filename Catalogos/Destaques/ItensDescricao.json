@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6430",
+      "descricao": "TORNOZELEIRA BORBOLETA VAZADA E PINGENTES DE TIFFANYS AZUIS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6430.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "08/08/2026"
+    },
+    {
       "codigo": "6426",
       "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO PRETO",
       "tipo": "Semijoia banhada a Prata",
@@ -368,16 +379,6 @@
       "precoConsignado": "79,90",
       "banho": "Inox",
       "dataUltimaEntrada": "22/06/2026"
-    },
-    {
-      "codigo": "6278",
-      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
-      "imagem": "6278.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "15/07/2026"
     },
     {
       "codigo": "6275",
@@ -791,17 +792,6 @@
       "dataUltimaEntrada": "20/04/2026"
     },
     {
-      "codigo": "6040",
-      "descricao": "CONJUNTO CORAÇÃO VERDE ESMERALDA CRAVEJADO 44+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6040.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "142,90",
-      "precoConsignado": "142,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/04/2026"
-    },
-    {
       "codigo": "6029",
       "descricao": "COLAR DUPLO MINI ESFERAS 35/41+9CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1043,6 +1033,17 @@
       "dataUltimaEntrada": "05/10/2025"
     },
     {
+      "codigo": "4997",
+      "descricao": "BRINCO CORAÇÃO ORGÂNICO G",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4997.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
       "codigo": "4982",
       "descricao": "BRINCO 2 EM 1 EAR JACKET CORAÇÃO ABAULADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1063,6 +1064,17 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4924",
+      "descricao": "COLAR Y BORBOLETA PRETA 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4924.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "16/09/2025"
     },
     {
       "codigo": "4904",
@@ -1173,6 +1185,17 @@
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4547",
+      "descricao": "BRINCO LOSANGO ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "4547.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "62,90",
+      "precoConsignado": "62,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "05/07/2025"
     },
     {
       "codigo": "4526",
