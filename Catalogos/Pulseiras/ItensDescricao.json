@@ -2,6 +2,28 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "6337",
+      "descricao": "PULSEIRA MÃO (HAND CHAIN)",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6337.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
+      "codigo": "5318",
+      "descricao": "PULSEIRA RIVIERA COLORS 2MM 17+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5318.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
       "codigo": "6338",
       "descricao": "PULSEIRA ÁRVORE DA VIDA - ELOS GROUMET",
       "tipo": "Semijoia banhada a Ouro 18k",
