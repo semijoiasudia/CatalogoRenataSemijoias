@@ -2,6 +2,39 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6438",
+      "descricao": "CONJUNTO ZIRCÔNICA GOTA VERMELHO E VERDE 46+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6438.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
+      "codigo": "6437",
+      "descricao": "CONJUNTO PONTO DE LUZ VERDE 7MM 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6437.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
+      "codigo": "6436",
+      "descricao": "CONJUNTO GOTA AZUL TURQUESA BRINCO ARGOLA 45CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6436.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
       "codigo": "6432",
       "descricao": "TORNOZELEIRA ELOS OVAIS E PINGENTE DE CORAÇÃO CRISTAL",
       "tipo": "Semijoia banhada a Prata",
@@ -641,6 +674,17 @@
       "dataUltimaEntrada": "09/08/2026"
     },
     {
+      "codigo": "6336",
+      "descricao": "PULSEIRA MÃO (HAND CHAIN)",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6336.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
       "codigo": "6332",
       "descricao": "PULSEIRA MEDALHA DE SÃO BENTO E CRUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -652,14 +696,14 @@
       "dataUltimaEntrada": "28/06/2026"
     },
     {
-      "codigo": "6329",
-      "descricao": "PULSEIRA CÍRCULOS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6329.jpg",
+      "codigo": "6330",
+      "descricao": "PULSEIRA LOSANGOS TRABALHADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6330.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/06/2026"
     },
     {
@@ -729,17 +773,6 @@
       "dataUltimaEntrada": "08/08/2026"
     },
     {
-      "codigo": "6317",
-      "descricao": "ANEL REGULÁVEL FLOR CRAVEJADA VERDE E CORAÇÃO",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6317.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
       "codigo": "6316",
       "descricao": "ANEL REGULÁVEL FLOR CRAVEJADA VERDE E CORAÇÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -747,6 +780,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "89,90",
       "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6311",
+      "descricao": "ANEL REGULÁVEL TRIPLO LISO LARGO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6311.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/06/2026"
     },
@@ -791,6 +835,16 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
+      "codigo": "6301",
+      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA - L. FASHION",
+      "imagem": "6301.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
       "dataUltimaEntrada": "27/06/2026"
     },
     {
@@ -866,17 +920,6 @@
       "precoConsignado": "69,90",
       "banho": "Inox",
       "dataUltimaEntrada": "26/06/2026"
-    },
-    {
-      "codigo": "6280",
-      "descricao": "INOX CONJUNTO 5 TREVOS BRANCO PEROLADO 44+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "6280.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/06/2026"
     },
     {
       "codigo": "6275",
@@ -973,6 +1016,17 @@
       "dataUltimaEntrada": "10/06/2026"
     },
     {
+      "codigo": "6235",
+      "descricao": "BRINCO DUAS GOTAS CURVAS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6235.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026"
+    },
+    {
       "codigo": "6226",
       "descricao": "BRINCO PONTO DE LUZ 10MM",
       "tipo": "Semijoia banhada a Prata",
@@ -1027,26 +1081,15 @@
       "dataUltimaEntrada": "28/07/2026"
     },
     {
-      "codigo": "6180",
-      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA ROSA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6180.jpg",
+      "codigo": "6183",
+      "descricao": "INOX BRACELETE 7 CORAÇÕES EM ZIRCÔNIAS",
+      "tipo": "Aço Inox",
+      "imagem": "6183.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2026"
-    },
-    {
-      "codigo": "6179",
-      "descricao": "BRINCO ARGOLA CLICK COLORS PINGENTE FÉ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6179.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2026"
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/05/2026"
     },
     {
       "codigo": "6178",
@@ -1104,17 +1147,6 @@
       "dataUltimaEntrada": "29/05/2026"
     },
     {
-      "codigo": "6162",
-      "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6162.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
       "codigo": "6161",
       "descricao": "BRINCO RETANGULAR CRISTAL E CRISTAL AO REDOR",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1122,6 +1154,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "109,90",
       "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2026"
+    },
+    {
+      "codigo": "6160",
+      "descricao": "CONJUNTO ORGÂNICO VAZADO 39+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6160.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/05/2026"
     },
@@ -1289,6 +1332,17 @@
       "dataUltimaEntrada": "07/05/2026"
     },
     {
+      "codigo": "6123",
+      "descricao": "COLAR CORAÇÃO COM ÁRVORE DA VIDA 47CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6123.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
       "codigo": "6122",
       "descricao": "COLAR CORAÇÃO E BORBOLETA CRAVEJADOS 49CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1309,17 +1363,6 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/05/2026"
-    },
-    {
-      "codigo": "6113",
-      "descricao": "PULSEIRA BOLINHAS E 2 PINGENTES DE CORAÇÃO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6113.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
     },
     {
       "codigo": "6110",
@@ -1572,6 +1615,17 @@
       "dataUltimaEntrada": "21/04/2026"
     },
     {
+      "codigo": "6061",
+      "descricao": "BRINCO CORAÇÃO ORGÂNICO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6061.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
       "codigo": "6060",
       "descricao": "BRINCO NÓ ENTRELAÇADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1579,6 +1633,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "79,90",
       "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
+    },
+    {
+      "codigo": "6059",
+      "descricao": "BRINCO ARGOLA BOLD - CLICK",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6059.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026"
     },
@@ -1634,17 +1699,6 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "149,90",
       "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/04/2026"
-    },
-    {
-      "codigo": "6026",
-      "descricao": "COLAR ESFERAS CORRENTE CADEADO 46+9CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6026.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "01/04/2026"
     },
@@ -1811,17 +1865,6 @@
       "dataUltimaEntrada": "07/03/2026"
     },
     {
-      "codigo": "5961",
-      "descricao": "BRINCO EAR CUFF MINI COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5961.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "64,90",
-      "precoConsignado": "64,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
-    },
-    {
       "codigo": "5958",
       "descricao": "BRINCO CORAÇÃO ALONGADO TAM PP COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1884,6 +1927,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "32,90",
       "precoConsignado": "32,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026"
+    },
+    {
+      "codigo": "5942",
+      "descricao": "BRINCO DUO ARGOLA RETANGULAR LISA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5942.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026"
     },
@@ -2161,14 +2215,14 @@
       "dataUltimaEntrada": "23/11/2025"
     },
     {
-      "codigo": "5626",
-      "descricao": "BRINCO MEIA FLOR COM PINGENTE ROSA CANDY",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5626.jpg",
+      "codigo": "5631",
+      "descricao": "BRINCO ARGOLA FIO ONDULADO TAM M - 5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5631.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ródio Branco",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/11/2025"
     },
     {
@@ -2205,6 +2259,17 @@
       "dataUltimaEntrada": "20/11/2025"
     },
     {
+      "codigo": "5589",
+      "descricao": "BRINCO ORGÂNICO FOMATO CONCHA TAM M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5589.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
       "codigo": "5587",
       "descricao": "BRINCO ORGÂNICO OVAL TAM M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2212,6 +2277,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "94,90",
       "precoConsignado": "94,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "20/11/2025"
+    },
+    {
+      "codigo": "5575",
+      "descricao": "BRINCO TRIO TREVO 4 FOLHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5575.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025"
     },
@@ -2249,6 +2325,17 @@
       "dataUltimaEntrada": "20/11/2025"
     },
     {
+      "codigo": "5522",
+      "descricao": "BRINCO ARGOLA CLICK TRABALHADA TAM M",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5522.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "84,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "15/11/2025"
+    },
+    {
       "codigo": "5521",
       "descricao": "BRINCO ARGOLA CLICK TRABALHADA TAM M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2279,17 +2366,6 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "15/11/2025"
-    },
-    {
-      "codigo": "5496",
-      "descricao": "BRINCO ARGOLA FIO SEM TARRAXA TAM M 4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5496.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
       "dataUltimaEntrada": "15/11/2025"
     },
     {
@@ -2324,17 +2400,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "5343",
-      "descricao": "PULSEIRA TIFFANYS VERDE ESMERALDA 16+7CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5343.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/11/2025"
     },
     {
       "codigo": "5318",
@@ -2389,6 +2454,17 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Prata",
+      "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5227",
+      "descricao": "COLAR ESFERAS 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5227.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/10/2025"
     },
     {
@@ -2535,6 +2611,17 @@
       "dataUltimaEntrada": "26/06/2026"
     },
     {
+      "codigo": "5085",
+      "descricao": "ANEL CORAÇÃO CRAVEJADO E ZIRCÔNIA CRISTAL CENTRAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5085.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/10/2025"
+    },
+    {
       "codigo": "5073",
       "descricao": "ANEL BORBOLETA TRABALHADA - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2553,6 +2640,17 @@
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "64,90",
       "precoConsignado": "64,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "05/10/2025"
+    },
+    {
+      "codigo": "5018",
+      "descricao": "PULSEIRA CORRENTE DUPLA E RIVIERA CRISTAL 4MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5018.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025"
     },
@@ -2711,6 +2809,17 @@
       "dataUltimaEntrada": "11/09/2025"
     },
     {
+      "codigo": "4852",
+      "descricao": "BRINCO DUO ZIRCÔNIA CORAÇÃO ROSA CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4852.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "62,90",
+      "precoConsignado": "62,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "11/09/2025"
+    },
+    {
       "codigo": "4840",
       "descricao": "ANEL REGULÁVEL 2 GOTAS ORGÂNICAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2753,17 +2862,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026"
-    },
-    {
-      "codigo": "4672",
-      "descricao": "BRINCO MEIA FOLHA ORGÂNICA",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4672.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "74,90",
-      "precoConsignado": "74,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "02/08/2025"
     },
     {
       "codigo": "4667",
@@ -2887,15 +2985,15 @@
       "dataUltimaEntrada": "29/05/2026"
     },
     {
-      "codigo": "3104",
-      "descricao": "BRINCO TRIO ARGOLAS HEXAGONAIS",
+      "codigo": "3281",
+      "descricao": "BRINCO PONTO DE LUZ 8MM",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3104.jpg",
+      "imagem": "3281.jpg",
       "pastaFotos": "Catalogos/Novidades/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "29/05/2026"
     },
     {
       "codigo": "2710",
@@ -2920,17 +3018,6 @@
       "dataUltimaEntrada": "05/05/2026"
     },
     {
-      "codigo": "1941",
-      "descricao": "PULSEIRA RIVIERA CRISTAL 3MM FECHO GRAVATA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "1941.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/10/2025"
-    },
-    {
       "codigo": "1490",
       "descricao": "BRINCO TRIO CORAÇÕES ABAULADOS ABS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2940,6 +3027,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "1446",
+      "descricao": "BRINCO GOTA ABAULADA LISA M",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "1446.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "102,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026"
     },
     {
       "codigo": "705",

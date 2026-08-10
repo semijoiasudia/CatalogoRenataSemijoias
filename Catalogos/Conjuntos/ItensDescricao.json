@@ -2,6 +2,39 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6438",
+      "descricao": "CONJUNTO ZIRCÔNICA GOTA VERMELHO E VERDE 46+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6438.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
+      "codigo": "6437",
+      "descricao": "CONJUNTO PONTO DE LUZ VERDE 7MM 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6437.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
+      "codigo": "6436",
+      "descricao": "CONJUNTO GOTA AZUL TURQUESA BRINCO ARGOLA 45CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6436.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
+    },
+    {
       "codigo": "3349",
       "descricao": "CONJUNTO PONTO DE LUZ CRISTAL TAM P 47+8CM",
       "tipo": "Semijoia banhada a Prata",
@@ -22,6 +55,17 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "11/06/2026"
+    },
+    {
+      "codigo": "6160",
+      "descricao": "CONJUNTO ORGÂNICO VAZADO 39+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6160.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2026"
     },
     {
       "codigo": "6105",
