@@ -2,16 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "5975",
-      "descricao": "RELOGIO XUF. REDONDO - FUNDO BRANCO - UNISSEX",
-      "imagem": "5975.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "05/08/2026"
-    },
-    {
       "codigo": "6375",
       "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO PRETO",
       "imagem": "6375.jpg",
@@ -172,6 +162,16 @@
       "dataUltimaEntrada": "27/06/2026"
     },
     {
+      "codigo": "6303",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
+      "imagem": "6303.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026"
+    },
+    {
       "codigo": "6301",
       "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA - L. FASHION",
       "imagem": "6301.jpg",
@@ -212,6 +212,16 @@
       "dataUltimaEntrada": "27/06/2026"
     },
     {
+      "codigo": "6277",
+      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
+      "imagem": "6277.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026"
+    },
+    {
       "codigo": "6275",
       "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
       "imagem": "6275.jpg",
@@ -228,16 +238,6 @@
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "179,90",
       "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "19/06/2026"
-    },
-    {
-      "codigo": "6265",
-      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
-      "imagem": "6265.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "19/06/2026"
     },
@@ -272,16 +272,6 @@
       "dataUltimaEntrada": "20/05/2026"
     },
     {
-      "codigo": "6146",
-      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO CRAVEJADO 2 VOLTAS",
-      "imagem": "6146.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "20/05/2026"
-    },
-    {
       "codigo": "5978",
       "descricao": "RELOGIO INSPIRAÇÃO CART. REDONDO - DOURADO",
       "imagem": "5978.jpg",
@@ -289,16 +279,6 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026"
-    },
-    {
-      "codigo": "5972",
-      "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
-      "imagem": "5972.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox",
       "dataUltimaEntrada": "09/03/2026"
     },
     {

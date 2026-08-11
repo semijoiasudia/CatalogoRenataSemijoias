@@ -46,6 +46,17 @@
       "dataUltimaEntrada": "09/08/2026"
     },
     {
+      "codigo": "6254",
+      "descricao": "CONJUNTO GOTA PINK CRAVEJADA AO REDOR 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6254.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "11/06/2026"
+    },
+    {
       "codigo": "6251",
       "descricao": "CONJUNTO FLOR 5 PÉTALAS COLORS 45CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -83,17 +94,6 @@
       "descricao": "CONJUNTO 3 TREVOS - VERDE CHOKER 41CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4449.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "198,90",
-      "precoConsignado": "198,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/11/2025"
-    },
-    {
-      "codigo": "4446",
-      "descricao": "CONJUNTO 3 TREVOS - BRANCO PEROLADO CHOKER 41CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4446.jpg",
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "198,90",
       "precoConsignado": "198,90",
@@ -209,6 +209,17 @@
       "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "3421",
+      "descricao": "CONJUNTO GOTA MARTELADA M 48+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3421.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "19/11/2024"
     }
   ]
 }
