@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6454",
+      "descricao": "BRINCO 2 EM 1 - ESFERA 8MM COM FIO CASCATA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6454.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/08/2026"
+    },
+    {
+      "codigo": "6453",
+      "descricao": "BRINCO ARGOLA CRAVEJADA 3 FILEIRAS COLORS 14MM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6453.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "12/08/2026"
+    },
+    {
       "codigo": "6438",
       "descricao": "CONJUNTO ZIRCÔNICA GOTA VERMELHO E VERDE 46+5CM",
       "tipo": "Semijoia banhada a Prata",
