@@ -2,6 +2,28 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6477",
+      "descricao": "BRINCO BORBOLETA CRAV. COLORS - CORES ALEATÓRIAS - LUXO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6477.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6461",
+      "descricao": "BRINCO CORAÇÃO CRAVEJADO COM ZIRCÔNIAS CRITAL - LUXO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6461.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6454",
       "descricao": "BRINCO 2 EM 1 - ESFERA 8MM COM FIO CASCATA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -630,6 +652,17 @@
       "dataUltimaEntrada": "26/06/2026"
     },
     {
+      "codigo": "6124",
+      "descricao": "COLAR DUPLO ESFERA 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6124.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/05/2026"
+    },
+    {
       "codigo": "6122",
       "descricao": "COLAR CORAÇÃO E BORBOLETA CRAVEJADOS 49CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -814,6 +847,39 @@
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026"
+    },
+    {
+      "codigo": "5952",
+      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS INTERNO E EXTERNO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5952.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026"
+    },
+    {
+      "codigo": "5937",
+      "descricao": "BRINCO TRIO CORAÇÃO VAZADO COM PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5937.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/03/2026"
+    },
+    {
+      "codigo": "5809",
+      "descricao": "BRINCO TRIO ARGOLA CLICK CRAVEJADA 1 FILEIRA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5809.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "16/01/2026"
     },
     {
       "codigo": "5682",
@@ -1068,6 +1134,17 @@
       "dataUltimaEntrada": "02/08/2025"
     },
     {
+      "codigo": "4594",
+      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO E ESFERA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4594.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "84,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/07/2025"
+    },
+    {
       "codigo": "4585",
       "descricao": "BRINCO FLOR PÉTALAS TRABALHADAS E PÉROLA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1077,6 +1154,17 @@
       "precoConsignado": "94,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/07/2025"
+    },
+    {
+      "codigo": "4557",
+      "descricao": "BRINCO 3 CORACOES VAZADO/ CORRENTE/ LISO E PEROLA",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "4557.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "92,90",
+      "precoConsignado": "92,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "08/07/2025"
     },
     {
       "codigo": "4546",
@@ -1132,6 +1220,17 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "3284",
+      "descricao": "BRINCO PONTO DE LUZ 10MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3284.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
     },
     {
       "codigo": "2710",

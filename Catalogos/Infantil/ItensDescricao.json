@@ -2,6 +2,17 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "6464",
+      "descricao": "BRINCO PONTO DE LUZ LILÁS 4MM INFANTIL/ADULTO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6464.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "5985",
       "descricao": "COLAR INFANTIL 3 PEDRAS COLORIDAS 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
