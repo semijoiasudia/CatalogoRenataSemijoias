@@ -488,22 +488,39 @@
             align-items: center;
             z-index: 1000;
             overflow: auto;
+            padding: 10px;
+            box-sizing: border-box;
         }
         .modal-content {
             position: relative;
             background: white;
             padding: 25px;
             border-radius: 8px;
-            max-width: 90%;
-            max-height: 90%;
-            overflow: hidden;
+            max-width: calc(100vw - 20px);
+            max-height: calc(100vh - 20px);
+            max-height: calc(100dvh - 20px);
+            overflow-x: hidden;
+            overflow-y: auto;
+            box-sizing: border-box;
             transform-origin: center center;
             transition: transform 0.1s ease-out;
-            touch-action: none;
+            touch-action: pan-y;
         }
+
+        /*
+          Código e marca d'água precisam acompanhar a largura real da foto.
+          A capture-area passa a "abraçar" a imagem em vez de ocupar toda
+          a largura disponível do modal.
+        */
         .capture-area {
             position: relative;
+            width: fit-content;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 0;
         }
+
         .modal img {
             max-width: 100%;
             max-height: 65vh;
@@ -513,6 +530,15 @@
             -webkit-user-drag: none;
             -moz-user-select: none;
             -ms-user-select: none;
+        }
+
+        .modal #modalImg {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 60vh;
+            object-fit: contain;
         }
         .modal .logo-watermark {
             position: absolute;
@@ -562,6 +588,10 @@
             font-size: 16px;
             color: #333;
             text-align: center;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
         }
         .modal-info .descricao {
             font-size: 16px;
@@ -958,6 +988,50 @@
             color: #8a8167; /* Cor similar ao tema dourado champagne do site */
             margin-right: 5px;
         }
+
+        /* ===== Informações de subcategoria exibíveis ===== */
+        .subcategoria-tag {
+            display: inline-flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 4px 10px;
+            border: 1px solid #e8dcc0;
+            border-radius: 999px;
+            background-color: #f8f5ed;
+            color: #7d7258;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .subcategoria-modal {
+            margin: 14px 0 10px;
+            padding: 12px 14px;
+            background-color: #f8f5ed;
+            border: 1px solid #e8dcc0;
+            border-radius: 8px;
+            text-align: left;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
+        }
+
+        .subcategoria-modal-titulo {
+            margin-bottom: 6px;
+            color: #7d7258;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .subcategoria-modal-descricao {
+            color: #4a4a4a;
+            font-size: 13px;
+            line-height: 1.5;
+            white-space: pre-line;
+        }
         #banhoSelectContainer { margin-left: auto; }
         #sortFilterContainer { margin-left: auto; }
 
@@ -989,14 +1063,14 @@
         .save-btn {
             width: 100%;
             margin: 0;
-            color: white;
+            color: #5f5748;
             padding: 10px 12px;
             border: none;
             border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
-            background-color: #007bff;
+            background-color: #e8dcc0;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             transition: all 0.3s;
             display: flex;
@@ -1009,6 +1083,54 @@
             background-color: #0056b3;
             transform: scale(1.02);
         }
+
+        /* Modal responsivo: smartphones e orientação horizontal */
+        @media (max-width: 768px), (max-height: 600px) {
+            .modal {
+                /*align-items: flex-start;*/
+                padding: 6px;
+            }
+
+            .modal-content {
+                padding: 12px;
+                max-width: calc(100vw - 12px);
+                max-height: calc(100vh - 12px);
+                max-height: calc(100dvh - 12px);
+            }
+
+            .modal #modalImg {
+                max-height: 52vh;
+            }
+
+            .modal .logo-watermark {
+                bottom: 8px;
+                right: 8px;
+            }
+
+            .modal-codigo {
+                padding: 5px 9px;
+                font-size: 12px;
+            }
+
+            .modal-info {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            .modal-info .descricao {
+                font-size: 14px;
+            }
+
+            .subcategoria-modal {
+                margin-top: 10px;
+                padding: 10px 11px;
+            }
+
+            .modal-buttons {
+                margin-top: 8px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -1171,8 +1293,11 @@
 
     <script>
         const categoriasAtivasUrl = "CategoriasAtivas.json";
+        const subcategoriasExibicaoUrl = "SubcategoriasExibicao.json";
+
         let categoriasAtivas = [];
         let descricoes = {};
+        let subcategoriasExibicao = {};
         
         const itemsPerPage = 20;
         let currentPage = 1;
@@ -1246,6 +1371,136 @@
         function capitalizarPrimeiraLetra(texto) {
             if (!texto) return texto;
             return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
+        }
+
+        // Escapa texto antes de inseri-lo via innerHTML
+        function escapeHtml(texto) {
+            return String(texto ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        // O arquivo atual gerado pelo Delphi contém quebras de linha literais
+        // dentro das strings. Isso não é JSON estritamente válido.
+        // Esta função torna a leitura tolerante a esse formato.
+        function corrigirQuebrasDeLinhaDentroDeStringsJSON(texto) {
+            let resultado = '';
+            let dentroDeString = false;
+            let escapado = false;
+
+            for (let i = 0; i < texto.length; i++) {
+                const ch = texto[i];
+
+                if (dentroDeString) {
+                    if (escapado) {
+                        resultado += ch;
+                        escapado = false;
+                        continue;
+                    }
+
+                    if (ch === '\\') {
+                        resultado += ch;
+                        escapado = true;
+                        continue;
+                    }
+
+                    if (ch === '"') {
+                        dentroDeString = false;
+                        resultado += ch;
+                        continue;
+                    }
+
+                    if (ch === '\r') {
+                        if (texto[i + 1] === '\n') i++;
+                        resultado += '\\n';
+                        continue;
+                    }
+
+                    if (ch === '\n') {
+                        resultado += '\\n';
+                        continue;
+                    }
+
+                    resultado += ch;
+                } else {
+                    if (ch === '"') dentroDeString = true;
+                    resultado += ch;
+                }
+            }
+
+            return resultado;
+        }
+
+        async function loadSubcategoriasExibicao() {
+            subcategoriasExibicao = {};
+
+            try {
+                const response = await fetch(subcategoriasExibicaoUrl);
+
+                if (!response.ok) {
+                    console.warn(`${subcategoriasExibicaoUrl} não encontrado. Nenhuma subcategoria será exibida.`);
+                    return;
+                }
+
+                const texto = await response.text();
+                let data;
+
+                try {
+                    data = JSON.parse(texto);
+                } catch (erroJSON) {
+                    console.warn(
+                        'SubcategoriasExibicao.json possui quebras de linha literais. ' +
+                        'Tentando leitura compatível com o arquivo gerado pelo Delphi.',
+                        erroJSON
+                    );
+
+                    data = JSON.parse(corrigirQuebrasDeLinhaDentroDeStringsJSON(texto));
+                }
+
+                if (!data || !Array.isArray(data.subcategorias)) {
+                    console.warn('SubcategoriasExibicao.json não possui a estrutura esperada.');
+                    return;
+                }
+
+                data.subcategorias.forEach(subcategoria => {
+                    if (
+                        subcategoria &&
+                        subcategoria.id !== undefined &&
+                        subcategoria.id !== null &&
+                        subcategoria.nome &&
+                        subcategoria.descricao
+                    ) {
+                        subcategoriasExibicao[String(subcategoria.id)] = {
+                            id: subcategoria.id,
+                            nome: subcategoria.nome,
+                            descricao: subcategoria.descricao
+                        };
+                    }
+                });
+
+                console.log(
+                    'Subcategorias permitidas para exibição:',
+                    Object.keys(subcategoriasExibicao).length
+                );
+            } catch (error) {
+                console.error('Erro ao carregar SubcategoriasExibicao.json:', error);
+                subcategoriasExibicao = {};
+            }
+        }
+
+        function obterSubcategoriaExibivel(subcategoriaId) {
+            if (
+                subcategoriaId === undefined ||
+                subcategoriaId === null ||
+                subcategoriaId === ''
+            ) {
+                return null;
+            }
+
+            return subcategoriasExibicao[String(subcategoriaId)] || null;
         }
 
         // Carregar configurações do arquivo config.ini
@@ -1471,7 +1726,7 @@
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
             const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
             
             // Obter apenas o preço final (seja oferta ou regular)
@@ -1654,7 +1909,7 @@
             
             // Adicionar itens
             cart.forEach(item => {
-                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
+                message += `- ${item.quantity}x ${item.descricao} (Ref.: ${item.codigo}) - ${item.preco}\n`;
             });
             
             // Adicionar subtotal
@@ -1778,7 +2033,16 @@
                         precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
                         isOferta: isOferta,
                         banho: produto.banho.toLowerCase(),
-                        dataUltimaEntrada: produto.dataUltimaEntrada
+                        dataUltimaEntrada: produto.dataUltimaEntrada,
+
+                        // O ItensDescricao.json deve trazer o ID da subcategoria do produto.
+                        // Mantemos algumas variações por compatibilidade.
+                        subcategoriaId:
+                            produto.subcategoriaId ??
+                            produto.subcategoriaID ??
+                            produto.subcategoria_id ??
+                            produto.SUBCATEGORIA_ID ??
+                            null
                     };
                 });
                 
@@ -2056,12 +2320,17 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, preco, banho, tipo } = descricoes[codigo] || { 
+                const { descricao, preco, banho, tipo, subcategoriaId } = descricoes[codigo] || { 
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     preco: "Preço não disponível",
                     banho: "",
-                    tipo: ""
+                    tipo: "",
+                    subcategoriaId: null
                 };
+
+                // Só haverá conteúdo se o ID existir em SubcategoriasExibicao.json.
+                // Portanto, subcategorias com MOSTRAR_DESCRICAO desativado ficam invisíveis.
+                const subcategoriaExibivel = obterSubcategoriaExibivel(subcategoriaId);
                 const indexInAll = currentVisibleFiles.findIndex(f => f.name === file.name);
 
                 const item = document.createElement('div');
@@ -2095,7 +2364,7 @@
 
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
-                codigoElement.textContent = `COD: ${codigo}`;
+                codigoElement.textContent = `Ref.: ${codigo}`;
 
                 const contentWrapper = document.createElement('div');
                 contentWrapper.className = 'content-wrapper';
@@ -2126,6 +2395,16 @@
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
                 contentWrapper.appendChild(desc);
+
+                // Tag da subcategoria: somente para subcategorias presentes
+                // em SubcategoriasExibicao.json.
+                if (subcategoriaExibivel) {
+                    const subcategoriaTag = document.createElement('div');
+                    subcategoriaTag.className = 'subcategoria-tag';
+                    subcategoriaTag.textContent = subcategoriaExibivel.nome;
+                    contentWrapper.appendChild(subcategoriaTag);
+                }
+
                 contentWrapper.appendChild(precoElement);
 
                 item.appendChild(imgContainer);
@@ -2230,18 +2509,21 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, preco, tipo } = descricoes[codigo] || { 
+            const { descricao, preco, tipo, subcategoriaId } = descricoes[codigo] || { 
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                 preco: "Preço não disponível",
-                tipo: ""
+                tipo: "",
+                subcategoriaId: null
             };
+
+            const subcategoriaExibivel = obterSubcategoriaExibivel(subcategoriaId);
 
             const captureArea = document.getElementById('captureArea');
             const existingLogo = captureArea.querySelector('.logo-watermark');
             if (existingLogo) existingLogo.remove();
 
             document.getElementById('modalImg').src = src;
-            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('modalCodigo').textContent = `Ref.: ${codigo}`;
 
             const logo = document.createElement('img');
             logo.src = 'imagens/logo.png';
@@ -2264,8 +2546,20 @@
             }
             descricaoHTML += `<div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>`;
 
+            let subcategoriaHTML = '';
+
+            if (subcategoriaExibivel) {
+                subcategoriaHTML = `
+                    <div class="subcategoria-modal">
+                        <div class="subcategoria-modal-titulo">${escapeHtml(subcategoriaExibivel.nome)}</div>
+                        <div class="subcategoria-modal-descricao">${escapeHtml(subcategoriaExibivel.descricao)}</div>
+                    </div>
+                `;
+            }
+
             document.getElementById('modalInfo').innerHTML = `
                 ${descricaoHTML}
+                ${subcategoriaHTML}
                 <div class="preco">${preco}</div>
             `;
             updateModalTransform();
@@ -2338,7 +2632,13 @@
             }, { passive: false, signal });
         
             modalContent.addEventListener('touchmove', (e) => {
+                // Sem zoom, uma única arrastada deve rolar o conteúdo do modal.
+                if (e.touches.length === 1 && scale <= 1) {
+                    return;
+                }
+
                 e.preventDefault();
+
                 if (e.touches.length === 1 && isDragging) {
                     translateX = e.touches[0].clientX - startX;
                     translateY = e.touches[0].clientY - startY;
@@ -2426,7 +2726,7 @@
         }
 
         function requestItem() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
             const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
@@ -2455,7 +2755,7 @@
         async function saveImage() {
             try {
                 const modalImg = document.getElementById('modalImg');
-                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
                 
                 const displayedWidth = modalImg.clientWidth;
                 const displayedHeight = modalImg.clientHeight;
@@ -2496,7 +2796,7 @@
                 const marginLeft = 15 * scaleCanvas;
                 
                 ctx.font = `bold ${fontSize}px Arial`;
-                const textMetrics = ctx.measureText(`COD: ${codigo}`);
+                const textMetrics = ctx.measureText(`Ref.: ${codigo}`);
                 const boxWidth = textMetrics.width + (paddingH * 2);
                 const boxHeight = fontSize + (paddingV * 2);
                 
@@ -2507,7 +2807,7 @@
                 
                 ctx.fillStyle = 'white';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(`COD: ${codigo}`, paddingH, boxHeight / 2);
+                ctx.fillText(`Ref.: ${codigo}`, paddingH, boxHeight / 2);
                 
                 // Desenhar a logo da Renata como marca d'água
                 const logo = new Image();
@@ -2535,6 +2835,7 @@
                 link.download = `peca-${codigo}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
+                showNotification("Download da imagem iniciado!");
                 
             } catch (error) {
                 console.error("Erro ao salvar imagem:", error);
@@ -2559,6 +2860,7 @@
             console.log('Iniciando carregamento da página');
             loadCart(); // Carregar carrinho salvo
             loadDeliveryConfig(); // Carregar configurações de entrega (inclui categoria inicial)
+            await loadSubcategoriasExibicao(); // Carrega as subcategorias autorizadas a aparecer
             await loadCategories(); // Carregar categorias e a categoria inicial
             loadRodape();
             setupFaleConoscoButton();
