@@ -1,0 +1,29 @@
+﻿{
+  "subcategorias": [
+    {
+      "id": 14,
+      "nome": "Linha Fashion",
+      "descricao": "Relógio indicado para uso ocasional.
+
+Os cuidados recomendados são os mesmos que se deve ter com acessórios folheados, evitando contato excessivo com produtos químicos, suor e água para maior durabilidade.
+
+Obs.:  Para uso diário indicamos a linha Premium, que possuem uma maior resistencia e durabilidade. "
+    },
+    {
+      "id": 15,
+      "nome": "Linha Básica",
+      "descricao": "Relógio indicado para uso ocasional.
+
+Os cuidados recomendados são os mesmos que se deve ter com acessórios folheados, evitando contato excessivo com produtos químicos, suor e água para maior durabilidade.
+
+Obs.:  Para uso diário indicamos a linha Premium, que possuem uma maior resistencia e durabilidade. "
+    },
+    {
+      "id": 18,
+      "nome": "Linha Premium",
+      "descricao": "Relógio indicado para uso diário.
+
+Possui maior resistência e durabilidade."
+    }
+  ]
+}

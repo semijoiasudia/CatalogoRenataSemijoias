@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6478",
+      "descricao": "COLAR MEDALHA ESPÍRITO SANTO VAZADA 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6478.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6477",
       "descricao": "BRINCO BORBOLETA CRAV. COLORS - CORES ALEATÓRIAS - LUXO",
       "tipo": "Semijoia banhada a Prata",
@@ -926,7 +937,7 @@
     },
     {
       "codigo": "6301",
-      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA - L. FASHION",
+      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
       "imagem": "6301.jpg",
       "pastaFotos": "Catalogos/Novidades/",
       "preco": "109,90",

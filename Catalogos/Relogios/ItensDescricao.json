@@ -9,7 +9,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6398",
@@ -19,7 +20,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6375",
@@ -29,7 +31,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6374",
@@ -39,7 +42,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6185",
@@ -59,7 +63,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/07/2026"
+      "dataUltimaEntrada": "27/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6366",
@@ -69,7 +74,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "23/07/2026"
+      "dataUltimaEntrada": "23/07/2026",
+      "subcategoria_id": "15"
     },
     {
       "codigo": "6365",
@@ -79,7 +85,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "23/07/2026"
+      "dataUltimaEntrada": "23/07/2026",
+      "subcategoria_id": "15"
     },
     {
       "codigo": "6364",
@@ -89,7 +96,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6363",
@@ -99,7 +107,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6361",
@@ -109,7 +118,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6360",
@@ -169,7 +179,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/06/2026"
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6303",
@@ -179,17 +190,19 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/06/2026"
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6301",
-      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA - L. FASHION",
+      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
       "imagem": "6301.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "27/06/2026"
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6300",
