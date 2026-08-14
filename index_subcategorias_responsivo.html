@@ -1726,7 +1726,7 @@
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
             const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
             
             // Obter apenas o preço final (seja oferta ou regular)
@@ -1909,7 +1909,7 @@
             
             // Adicionar itens
             cart.forEach(item => {
-                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
+                message += `- ${item.quantity}x ${item.descricao} (Ref.: ${item.codigo}) - ${item.preco}\n`;
             });
             
             // Adicionar subtotal
@@ -2364,7 +2364,7 @@
 
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
-                codigoElement.textContent = `COD: ${codigo}`;
+                codigoElement.textContent = `Ref.: ${codigo}`;
 
                 const contentWrapper = document.createElement('div');
                 contentWrapper.className = 'content-wrapper';
@@ -2523,7 +2523,7 @@
             if (existingLogo) existingLogo.remove();
 
             document.getElementById('modalImg').src = src;
-            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
+            document.getElementById('modalCodigo').textContent = `Ref.: ${codigo}`;
 
             const logo = document.createElement('img');
             logo.src = 'imagens/logo.png';
@@ -2726,7 +2726,7 @@
         }
 
         function requestItem() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
             const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
@@ -2755,7 +2755,7 @@
         async function saveImage() {
             try {
                 const modalImg = document.getElementById('modalImg');
-                const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
+                const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
                 
                 const displayedWidth = modalImg.clientWidth;
                 const displayedHeight = modalImg.clientHeight;
@@ -2796,7 +2796,7 @@
                 const marginLeft = 15 * scaleCanvas;
                 
                 ctx.font = `bold ${fontSize}px Arial`;
-                const textMetrics = ctx.measureText(`COD: ${codigo}`);
+                const textMetrics = ctx.measureText(`Ref.: ${codigo}`);
                 const boxWidth = textMetrics.width + (paddingH * 2);
                 const boxHeight = fontSize + (paddingV * 2);
                 
@@ -2807,7 +2807,7 @@
                 
                 ctx.fillStyle = 'white';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(`COD: ${codigo}`, paddingH, boxHeight / 2);
+                ctx.fillText(`Ref.: ${codigo}`, paddingH, boxHeight / 2);
                 
                 // Desenhar a logo da Renata como marca d'água
                 const logo = new Image();
@@ -2835,6 +2835,7 @@
                 link.download = `peca-${codigo}.png`;
                 link.href = canvas.toDataURL('image/png');
                 link.click();
+                showNotification("Download da imagem iniciado!");
                 
             } catch (error) {
                 console.error("Erro ao salvar imagem:", error);
