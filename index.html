@@ -1080,14 +1080,13 @@
             white-space: nowrap;
         }
         .save-btn:hover {
-            background-color: #0056b3;
+            background-color: #d8c7a1;
             transform: scale(1.02);
         }
 
         /* Modal responsivo: smartphones e orientação horizontal */
         @media (max-width: 768px), (max-height: 600px) {
             .modal {
-                /*align-items: flex-start;*/
                 padding: 6px;
             }
 
@@ -1726,7 +1725,7 @@
 
         // Adicionar à sacola a partir da modal
         function addToCartFromModal() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const descricaoCompleta = document.querySelector('.modal-info .descricao').textContent;
             
             // Obter apenas o preço final (seja oferta ou regular)
@@ -1909,7 +1908,7 @@
             
             // Adicionar itens
             cart.forEach(item => {
-                message += `- ${item.quantity}x ${item.descricao} (Ref.: ${item.codigo}) - ${item.preco}\n`;
+                message += `- ${item.quantity}x ${item.descricao} (COD: ${item.codigo}) - ${item.preco}\n`;
             });
             
             // Adicionar subtotal
@@ -2364,7 +2363,7 @@
 
                 const codigoElement = document.createElement('div');
                 codigoElement.className = 'codigo';
-                codigoElement.textContent = `Ref.: ${codigo}`;
+                codigoElement.textContent = `COD: ${codigo}`;
 
                 const contentWrapper = document.createElement('div');
                 contentWrapper.className = 'content-wrapper';
@@ -2522,8 +2521,11 @@
             const existingLogo = captureArea.querySelector('.logo-watermark');
             if (existingLogo) existingLogo.remove();
 
-            document.getElementById('modalImg').src = src;
-            document.getElementById('modalCodigo').textContent = `Ref.: ${codigo}`;
+            const modalImg = document.getElementById('modalImg');
+            modalImg.crossOrigin = "anonymous";
+            modalImg.src = src;
+
+            document.getElementById('modalCodigo').textContent = `COD: ${codigo}`;
 
             const logo = document.createElement('img');
             logo.src = 'imagens/logo.png';
@@ -2726,7 +2728,7 @@
         }
 
         function requestItem() {
-            const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
+            const codigo = document.getElementById('modalCodigo').textContent.replace('COD: ', '');
             const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;
             const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
@@ -2752,94 +2754,225 @@
             displayPage(currentPage, new Set());
         }
 
-        async function saveImage() {
+        function ehDispositivoIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        }
+
+        function dataURLParaBlob(dataURL) {
+            const partes = dataURL.split(',');
+            const mime = partes[0].match(/:(.*?);/)[1];
+            const binario = atob(partes[1]);
+            const bytes = new Uint8Array(binario.length);
+
+            for (let i = 0; i < binario.length; i++) {
+                bytes[i] = binario.charCodeAt(i);
+            }
+
+            return new Blob([bytes], { type: mime });
+        }
+
+        function abrirImagemParaSalvarNoIOS(blob) {
+            const url = URL.createObjectURL(blob);
+
+            // Como este método é chamado diretamente a partir do toque no botão,
+            // o Safari normalmente permite abrir a nova aba.
+            const novaAba = window.open(url, '_blank');
+
+            // Fallback para navegadores que bloquearem a nova aba.
+            if (!novaAba) {
+                window.location.href = url;
+            }
+
+            showNotification("Use Compartilhar ou mantenha a imagem pressionada para salvar.");
+
+            // Tempo suficiente para a nova aba carregar a imagem.
+            setTimeout(() => {
+                URL.revokeObjectURL(url);
+            }, 60000);
+        }
+
+        function saveImage() {
             try {
                 const modalImg = document.getElementById('modalImg');
-                const codigo = document.getElementById('modalCodigo').textContent.replace('Ref.: ', '');
-                
+                const codigo = document
+                    .getElementById('modalCodigo')
+                    .textContent
+                    .replace('COD: ', '');
+
+                // A imagem já deve estar carregada no modal antes do usuário salvar.
+                if (!modalImg.complete || modalImg.naturalWidth === 0) {
+                    showNotification("Aguarde a imagem terminar de carregar.");
+                    return;
+                }
+
                 const displayedWidth = modalImg.clientWidth;
                 const displayedHeight = modalImg.clientHeight;
-                
+
+                if (displayedWidth <= 0 || displayedHeight <= 0) {
+                    showNotification("Não foi possível preparar a imagem.");
+                    return;
+                }
+
                 const scaleCanvas = 4;
-                const canvasWidth = displayedWidth * scaleCanvas;
-                const canvasHeight = displayedHeight * scaleCanvas;
-                
-                const imgElement = new Image();
-                imgElement.crossOrigin = "anonymous";
-                
-                const file = currentVisibleFiles[currentModalIndex];
-                imgElement.src = file.download_url;
-                
-                await new Promise((resolve, reject) => {
-                    imgElement.onload = resolve;
-                    imgElement.onerror = () => {
-                        imgElement.crossOrigin = null;
-                        imgElement.src = modalImg.src;
-                        imgElement.onload = resolve;
-                        imgElement.onerror = reject;
-                    };
-                });
-                
+                const canvasWidth = Math.round(displayedWidth * scaleCanvas);
+                const canvasHeight = Math.round(displayedHeight * scaleCanvas);
+
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
+
                 canvas.width = canvasWidth;
                 canvas.height = canvasHeight;
-                
-                ctx.drawImage(imgElement, 0, 0, canvasWidth, canvasHeight);
-                
-                // Desenhar o código sobre a imagem
+
+                // Desenha a mesma imagem que já está exibida no modal.
+                // Isso evita fazer um novo download assíncrono somente após o clique,
+                // o que causava problemas no Safari/iOS.
+                ctx.drawImage(
+                    modalImg,
+                    0,
+                    0,
+                    canvasWidth,
+                    canvasHeight
+                );
+
+                // ==============================
+                // Código do produto
+                // ==============================
                 const fontSize = 7 * scaleCanvas;
                 const paddingH = 8 * scaleCanvas;
                 const paddingV = 4 * scaleCanvas;
-                const borderRadius = 25 * scaleCanvas;
-                const marginTop = 15 * scaleCanvas;
-                const marginLeft = 15 * scaleCanvas;
-                
+
+                const textoCodigo = `COD: ${codigo}`;
+
                 ctx.font = `bold ${fontSize}px Arial`;
-                const textMetrics = ctx.measureText(`Ref.: ${codigo}`);
+
+                const textMetrics = ctx.measureText(textoCodigo);
                 const boxWidth = textMetrics.width + (paddingH * 2);
                 const boxHeight = fontSize + (paddingV * 2);
-                
+
                 ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
-                ctx.beginPath();
-                ctx.rect(0, 0, boxWidth, boxHeight, borderRadius);
-                ctx.fill();
-                
+                ctx.fillRect(
+                    0,
+                    0,
+                    boxWidth,
+                    boxHeight
+                );
+
                 ctx.fillStyle = 'white';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(`Ref.: ${codigo}`, paddingH, boxHeight / 2);
-                
-                // Desenhar a logo da Renata como marca d'água
-                const logo = new Image();
-                logo.crossOrigin = "anonymous";
-                logo.src = 'imagens/logo.png';
-                
-                await new Promise((resolve) => {
-                    logo.onload = resolve;
-                    logo.onerror = resolve;
-                });
-                
-                const logoWidth = canvasWidth * 0.20;
-                const logoHeight = (logo.height / logo.width) * logoWidth;
-                const logoMargin = 10 * scaleCanvas;
-                
-                ctx.drawImage(
-                    logo,
-                    canvasWidth - logoWidth - logoMargin,
-                    canvasHeight - logoHeight - logoMargin,
-                    logoWidth,
-                    logoHeight
+                ctx.fillText(
+                    textoCodigo,
+                    paddingH,
+                    boxHeight / 2
                 );
-                
+
+                // ==============================
+                // Marca d'água
+                // ==============================
+                const logo = document.querySelector(
+                    '#captureArea .logo-watermark'
+                );
+
+                if (
+                    logo &&
+                    logo.complete &&
+                    logo.naturalWidth > 0 &&
+                    logo.naturalHeight > 0
+                ) {
+                    const logoWidth = canvasWidth * 0.20;
+                    const logoHeight =
+                        (logo.naturalHeight / logo.naturalWidth) * logoWidth;
+                    const logoMargin = 10 * scaleCanvas;
+
+                    ctx.drawImage(
+                        logo,
+                        canvasWidth - logoWidth - logoMargin,
+                        canvasHeight - logoHeight - logoMargin,
+                        logoWidth,
+                        logoHeight
+                    );
+                }
+
+                // ==============================
+                // Gera o arquivo PNG
+                // ==============================
+                const dataURL = canvas.toDataURL('image/png');
+                const blob = dataURLParaBlob(dataURL);
+                const nomeArquivo = `peca-${codigo}.png`;
+
+                // ==============================
+                // iPhone / iPad
+                // ==============================
+                if (ehDispositivoIOS()) {
+                    const arquivo = new File(
+                        [blob],
+                        nomeArquivo,
+                        { type: 'image/png' }
+                    );
+
+                    // No iOS, o caminho mais confiável é o compartilhamento
+                    // nativo, no qual o usuário pode escolher "Salvar Imagem".
+                    if (
+                        navigator.share &&
+                        navigator.canShare &&
+                        navigator.canShare({ files: [arquivo] })
+                    ) {
+                        showNotification("Escolha “Salvar Imagem” no menu do iPhone.");
+
+                        navigator.share({
+                            files: [arquivo],
+                            title: 'Salvar imagem'
+                        })
+                        .catch((erro) => {
+                            // Cancelar a janela de compartilhamento não é erro.
+                            if (erro && erro.name === 'AbortError') {
+                                return;
+                            }
+
+                            console.error(
+                                "Falha no compartilhamento do iOS:",
+                                erro
+                            );
+
+                            // Se o compartilhamento falhar por outro motivo,
+                            // exibimos a imagem para permitir salvar manualmente.
+                            abrirImagemParaSalvarNoIOS(blob);
+                        });
+
+                        return;
+                    }
+
+                    // iOS sem compartilhamento de arquivos disponível.
+                    abrirImagemParaSalvarNoIOS(blob);
+                    return;
+                }
+
+                // ==============================
+                // Windows, Android e demais navegadores
+                // ==============================
+                const url = URL.createObjectURL(blob);
                 const link = document.createElement('a');
-                link.download = `peca-${codigo}.png`;
-                link.href = canvas.toDataURL('image/png');
+
+                link.href = url;
+                link.download = nomeArquivo;
+
+                document.body.appendChild(link);
                 link.click();
-                showNotification("Download da imagem iniciado!");
-                
+                link.remove();
+
+                setTimeout(() => {
+                    URL.revokeObjectURL(url);
+                }, 1000);
+
+                showNotification("Imagem salva com sucesso!");
+
             } catch (error) {
                 console.error("Erro ao salvar imagem:", error);
-                alert("Erro ao salvar a imagem. Tente novamente.");
+
+                alert(
+                    "Não foi possível salvar a imagem. " +
+                    "Tente novamente."
+                );
             }
         }
 
