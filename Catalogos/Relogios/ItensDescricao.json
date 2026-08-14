@@ -53,7 +53,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/07/2026"
+      "dataUltimaEntrada": "28/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6367",
@@ -139,7 +140,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6094",
@@ -149,7 +151,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6092",
@@ -159,7 +162,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "5682",
@@ -169,7 +173,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6304",
@@ -222,7 +227,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "27/06/2026"
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "15"
     },
     {
       "codigo": "6297",
@@ -232,7 +238,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "27/06/2026"
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6277",
@@ -242,7 +249,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026"
+      "dataUltimaEntrada": "22/06/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6275",
@@ -252,7 +260,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/06/2026"
+      "dataUltimaEntrada": "22/06/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6266",
@@ -262,7 +271,8 @@
       "preco": "179,90",
       "precoConsignado": "179,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "19/06/2026"
+      "dataUltimaEntrada": "19/06/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6147",
@@ -272,7 +282,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "20/05/2026"
+      "dataUltimaEntrada": "20/05/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "5978",
@@ -282,7 +293,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026"
+      "dataUltimaEntrada": "09/03/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "5700",
@@ -292,7 +304,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": " ",
-      "dataUltimaEntrada": "30/11/2025"
+      "dataUltimaEntrada": "30/11/2025",
+      "subcategoria_id": "15"
     },
     {
       "codigo": "5695",
@@ -302,7 +315,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "30/11/2025"
+      "dataUltimaEntrada": "30/11/2025",
+      "subcategoria_id": "15"
     }
   ]
 }
