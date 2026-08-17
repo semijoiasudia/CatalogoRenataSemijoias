@@ -2,6 +2,39 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6489",
+      "descricao": "PIERCING FAKE 4 FIOS E CORRENTE DUPLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6489.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "52,90",
+      "precoConsignado": "52,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/08/2026"
+    },
+    {
+      "codigo": "6488",
+      "descricao": "PIERCING FAKE PÉROLAS BRANCAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6488.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/08/2026"
+    },
+    {
+      "codigo": "6479",
+      "descricao": "CONJUNTO ZIRCÔNIA QUADRADA ROSA 44+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6479.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6478",
       "descricao": "COLAR MEDALHA ESPÍRITO SANTO VAZADA 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -511,17 +544,6 @@
       "dataUltimaEntrada": "09/06/2026"
     },
     {
-      "codigo": "6212",
-      "descricao": "BRINCO DUO ARGOLA CLICK CRAVEJADA COLORS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6212.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
-    },
-    {
       "codigo": "6200",
       "descricao": "BRINCO CORAÇÃO CRAVEJADO COLORS E CRISTAL",
       "tipo": "Semijoia banhada a Prata",
@@ -580,17 +602,6 @@
       "descricao": "BRINCO DUAS GOTAS CURVAS",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "6173.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "6171",
-      "descricao": "BRINCO ARGOLA CLICK GOTA BOLD TAM M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6171.jpg",
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "89,90",
       "precoConsignado": "89,90",
@@ -860,17 +871,6 @@
       "dataUltimaEntrada": "01/04/2026"
     },
     {
-      "codigo": "6025",
-      "descricao": "COLAR Y CANUTILHO 46CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6025.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/04/2026"
-    },
-    {
       "codigo": "6024",
       "descricao": "CHOKER CORAÇÕES E TIFFANYS CRISTAL 37+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1002,17 +1002,6 @@
       "dataUltimaEntrada": "22/11/2025"
     },
     {
-      "codigo": "5602",
-      "descricao": "BRINCO TRIO ARGOLA CLICK QUADRADA CRAVEJADA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5602.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
       "codigo": "5587",
       "descricao": "BRINCO ORGÂNICO OVAL TAM M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1057,17 +1046,6 @@
       "dataUltimaEntrada": "29/10/2025"
     },
     {
-      "codigo": "5227",
-      "descricao": "COLAR ESFERAS 46+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5227.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/10/2025"
-    },
-    {
       "codigo": "5225",
       "descricao": "COLAR LONGO PINGENTES CORAÇÃO COLORS 60+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1099,17 +1077,6 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025"
-    },
-    {
-      "codigo": "5072",
-      "descricao": "ANEL 3 CÍRCULOS VAZADOS - TAMANHOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5072.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "74,90",
-      "precoConsignado": "74,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "18/10/2025"
     },
     {
       "codigo": "5060",
@@ -1220,17 +1187,6 @@
       "precoConsignado": "144,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2025"
-    },
-    {
-      "codigo": "4734",
-      "descricao": "COLAR GOTA ALONGADA ABAULADA LISA 46+6CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4734.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "98,90",
-      "precoConsignado": "98,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/08/2025"
     },
     {
       "codigo": "4720",

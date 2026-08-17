@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6479",
+      "descricao": "CONJUNTO ZIRCÔNIA QUADRADA ROSA 44+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6479.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6438",
       "descricao": "CONJUNTO ZIRCÔNICA GOTA VERMELHO E VERDE 46+5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -112,17 +123,6 @@
       "dataUltimaEntrada": "23/11/2025"
     },
     {
-      "codigo": "5353",
-      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 6MM 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5353.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "124,90",
-      "precoConsignado": "124,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/11/2025"
-    },
-    {
       "codigo": "5351",
       "descricao": "CONJUNTO PONTO DE LUZ VERDE ESMERALDA 6MM 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -220,17 +220,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/06/2025"
-    },
-    {
-      "codigo": "3793",
-      "descricao": "CONJUNTO TREVO V&C OFF WHITE 43+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3793.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "189,90",
-      "precoConsignado": "189,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/05/2025"
     },
     {
       "codigo": "4221",
