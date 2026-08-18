@@ -2,6 +2,28 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6491",
+      "descricao": "CONJUNTO PEDRA OVAL 10X19MM VERDE ÁGUA 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6491.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/08/2026"
+    },
+    {
+      "codigo": "6490",
+      "descricao": "CONJUNTO PEDRA OVAL 10X19MM VERMELHO RUBI 45+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6490.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "17/08/2026"
+    },
+    {
       "codigo": "6479",
       "descricao": "CONJUNTO ZIRCÔNIA QUADRADA ROSA 44+4CM",
       "tipo": "Semijoia banhada a Prata",
