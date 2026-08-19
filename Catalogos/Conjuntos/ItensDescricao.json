@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6495",
+      "descricao": "CONJUNTO ZIRCÔNIA GOTA AZUL MARINHO 8X12MM 46+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6495.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "19/08/2026"
+    },
+    {
       "codigo": "6491",
       "descricao": "CONJUNTO PEDRA OVAL 10X19MM VERDE ÁGUA 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -97,17 +108,6 @@
       "pastaFotos": "Catalogos/Conjuntos/",
       "preco": "179,90",
       "precoConsignado": "179,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/06/2026"
-    },
-    {
-      "codigo": "6251",
-      "descricao": "CONJUNTO FLOR 5 PÉTALAS COLORS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6251.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "11/06/2026"
     },
