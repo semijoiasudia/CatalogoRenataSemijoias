@@ -2,6 +2,72 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "6487",
+      "descricao": "PULSEIRA ELOS OVAIS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6487.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6486",
+      "descricao": "PULSEIRA 3 CORAÇÕES DE CHAPINHA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6486.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6485",
+      "descricao": "PULSEIRA DUPLA MINI BOLINHAS E CORAÇÕES ENTRELAÇADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6485.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6484",
+      "descricao": "PULSEIRA DUPLA COM PINGENTE PAI NOSSO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6484.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6483",
+      "descricao": "PULSEIRA ELOS TRABALHADOS E ESFERA 10MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6483.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6482",
+      "descricao": "PULSEIRA MEDALHA ESPÍRITO SANTO VAZADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6482.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6442",
       "descricao": "PULSEIRA DUPLA ELOS COM BOLINHAS E CORAÇÃO SOLTO",
       "tipo": "Semijoia banhada a Prata",
@@ -54,17 +120,6 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
-      "codigo": "6331",
-      "descricao": "PULSEIRA LOSANGOS TRABALHADOS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6331.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
       "dataUltimaEntrada": "28/06/2026"
     },
     {
@@ -145,17 +200,6 @@
       "dataUltimaEntrada": "30/11/2025"
     },
     {
-      "codigo": "5341",
-      "descricao": "PULSEIRA TIFFANYS CRISTAL 17+6CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5341.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/11/2025"
-    },
-    {
       "codigo": "5311",
       "descricao": "PULSEIRA RIVIERA BAGUETE CRISTAL 4MM 17+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -197,6 +241,17 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ródio Branco",
+      "dataUltimaEntrada": "27/09/2025"
+    },
+    {
+      "codigo": "4936",
+      "descricao": "PULSEIRA OLHO GREGO / ELOS TRABALHADOS 16+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4936.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "27/09/2025"
     },
     {
