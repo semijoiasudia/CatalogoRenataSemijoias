@@ -2937,8 +2937,7 @@
                         showNotification("Escolha “Salvar Imagem” no menu do iPhone.");
 
                         navigator.share({
-                            files: [arquivo],
-                            title: 'Salvar imagem'
+                            files: [arquivo]
                         })
                         .catch((erro) => {
                             // Cancelar a janela de compartilhamento não é erro.
