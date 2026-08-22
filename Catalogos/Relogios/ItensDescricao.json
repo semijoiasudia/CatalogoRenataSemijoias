@@ -53,7 +53,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6185",
@@ -173,7 +174,8 @@
       "preco": "139,90",
       "precoConsignado": "139,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "15/07/2026"
+      "dataUltimaEntrada": "15/07/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "5977",
@@ -183,7 +185,8 @@
       "preco": "179,90",
       "precoConsignado": "179,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/07/2026"
+      "dataUltimaEntrada": "14/07/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6304",
@@ -206,17 +209,6 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "27/06/2026",
       "subcategoria_id": "18"
-    },
-    {
-      "codigo": "6301",
-      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
-      "imagem": "6301.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "14"
     },
     {
       "codigo": "6300",
@@ -262,17 +254,6 @@
       "subcategoria_id": "14"
     },
     {
-      "codigo": "6275",
-      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
-      "imagem": "6275.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/06/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6266",
       "descricao": "RELOGIO INSP. RETANGULAR - UNISSEX - FUNDO DOURADO",
       "imagem": "6266.jpg",
@@ -291,23 +272,13 @@
       "preco": "139,90",
       "precoConsignado": "139,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "11/06/2026"
+      "dataUltimaEntrada": "11/06/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6249",
       "descricao": "RELOGIO CASIO UNISSEX QUADRADO - AZUL",
       "imagem": "6249.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "10/06/2026",
-      "subcategoria_id": "15"
-    },
-    {
-      "codigo": "6248",
-      "descricao": "RELOGIO CASIO UNISSEX QUADRADO - CINZA",
-      "imagem": "6248.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "preco": "109,90",
       "precoConsignado": "109,90",
