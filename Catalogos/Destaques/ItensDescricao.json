@@ -2,6 +2,17 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6514",
+      "descricao": "PULSEIRA TIFFANYS 4MM COLORIDAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6514.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/08/2026"
+    },
+    {
       "codigo": "6507",
       "descricao": "ANEL FOLHAS VAZADAS - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -741,17 +752,6 @@
       "dataUltimaEntrada": "28/07/2026"
     },
     {
-      "codigo": "6178",
-      "descricao": "BRINCO TRIÂNGULO TORCIDO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6178.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "104,90",
-      "precoConsignado": "104,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
       "codigo": "6175",
       "descricao": "BRINCO EAR JACKET MEIA ESFERA E PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -783,39 +783,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "6170",
-      "descricao": "BRINCO TRIO ARGOLA CLICK TRIÂNGULO CRAVEJADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6170.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "6161",
-      "descricao": "BRINCO RETANGULAR CRISTAL E CRISTAL AO REDOR",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6161.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2026"
-    },
-    {
-      "codigo": "6160",
-      "descricao": "CONJUNTO ORGÂNICO VAZADO 39+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6160.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2026"
     },
     {
       "codigo": "6157",
@@ -1046,17 +1013,6 @@
       "dataUltimaEntrada": "07/03/2026"
     },
     {
-      "codigo": "5952",
-      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS INTERNO E EXTERNO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5952.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "89,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
-    },
-    {
       "codigo": "5950",
       "descricao": "BRINCO ARGOLA TRANQUETA COM DUAS GOTAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1197,6 +1153,17 @@
       "precoConsignado": "198,00",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/06/2026"
+    },
+    {
+      "codigo": "5199",
+      "descricao": "TORNOZELEIRA CORAÇÃO VAZADO CRAVEJADO COLORS 23+3CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5199.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "102,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/08/2026"
     },
     {
       "codigo": "5112",
@@ -1441,17 +1408,6 @@
       "dataUltimaEntrada": "09/08/2026"
     },
     {
-      "codigo": "3293",
-      "descricao": "ANEL REGULAVEL FIO DUPLO FINO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3293.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
       "codigo": "3284",
       "descricao": "BRINCO PONTO DE LUZ 10MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1459,17 +1415,6 @@
       "pastaFotos": "Catalogos/Destaques/",
       "preco": "79,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "3202",
-      "descricao": "BRINCO EAR CUFF 3 GOTAS CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3202.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
     },
@@ -1483,17 +1428,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
-    },
-    {
-      "codigo": "2710",
-      "descricao": "BRINCO BARRA VENEZIANA ESFERA M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2710.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
     },
     {
       "codigo": "1488",

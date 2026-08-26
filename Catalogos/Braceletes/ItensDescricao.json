@@ -2,28 +2,6 @@
   "categoria": "BRACELETE",
   "produtos": [
     {
-      "codigo": "5549",
-      "descricao": "BRACELETE 3 FIOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5549.jpg",
-      "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
-      "codigo": "5546",
-      "descricao": "BRACELETE FIO ONDULADO",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5546.jpg",
-      "pastaFotos": "Catalogos/Braceletes/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "20/11/2025"
-    },
-    {
       "codigo": "3619",
       "descricao": "BRACELETE ORGÂNICO",
       "tipo": "Semijoia banhada a Ouro 18k",
