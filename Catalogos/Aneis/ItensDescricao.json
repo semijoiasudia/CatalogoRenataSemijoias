@@ -2,6 +2,17 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "6507",
+      "descricao": "ANEL FOLHAS VAZADAS - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6507.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/08/2026"
+    },
+    {
       "codigo": "6312",
       "descricao": "ANEL REGULÁVEL FALANGE TRIPLO LISO",
       "tipo": "Semijoia banhada a Ouro 18k",
