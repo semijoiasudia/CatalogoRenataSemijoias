@@ -35,17 +35,6 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "6371",
-      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
-      "imagem": "6371.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6367",
       "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO CINZA - MÉDIO",
       "imagem": "6367.jpg",
@@ -265,15 +254,14 @@
       "subcategoria_id": "15"
     },
     {
-      "codigo": "6147",
-      "descricao": "RELOGIO COBRA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
-      "imagem": "6147.jpg",
+      "codigo": "5999",
+      "descricao": "RELOGIO DHP QUADRADO PEQ. CRAVEJADO",
+      "imagem": "5999.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "20/05/2026",
-      "subcategoria_id": "14"
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/03/2026"
     },
     {
       "codigo": "5700",
@@ -283,17 +271,6 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": " ",
-      "dataUltimaEntrada": "30/11/2025",
-      "subcategoria_id": "15"
-    },
-    {
-      "codigo": "5695",
-      "descricao": "RELOGIO AZUL CLARO FUNDO CINZA",
-      "imagem": "5695.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
       "dataUltimaEntrada": "30/11/2025",
       "subcategoria_id": "15"
     }
