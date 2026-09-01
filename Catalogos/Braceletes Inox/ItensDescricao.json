@@ -2,17 +2,6 @@
   "categoria": "BRACELETE INOX",
   "produtos": [
     {
-      "codigo": "6397",
-      "descricao": "BRACELETE INOX BRACELETE TREVO PRETO E PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "6397.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "29/07/2026"
-    },
-    {
       "codigo": "6396",
       "descricao": "BRACELETE INOX BRACELETE TREVO PRETO E CÍRCULOS",
       "tipo": "Aço Inox",
@@ -50,17 +39,6 @@
       "descricao": "BRACELETE INOX BRACELETE 2 MEDALHAS SÃO BENTO",
       "tipo": "Aço Inox",
       "imagem": "6393.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "preco": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
-    },
-    {
-      "codigo": "6392",
-      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
-      "tipo": "Aço Inox",
-      "imagem": "6392.jpg",
       "pastaFotos": "Catalogos/Braceletes Inox/",
       "preco": "59,90",
       "precoConsignado": "59,90",
@@ -352,6 +330,17 @@
       "precoConsignado": "59,90",
       "banho": "Inox",
       "dataUltimaEntrada": "28/02/2026"
+    },
+    {
+      "codigo": "5776",
+      "descricao": "BRACELETE INOX BRACELETE CABO DE AÇO 3 MEDALHAS SÃO BENTO",
+      "tipo": "Aço Inox",
+      "imagem": "5776.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "31/01/2026"
     },
     {
       "codigo": "5799",
