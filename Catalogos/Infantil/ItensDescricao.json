@@ -57,6 +57,17 @@
       "dataUltimaEntrada": "07/03/2026"
     },
     {
+      "codigo": "5957",
+      "descricao": "BRINCO CORAÇÃO PINK CRAVEJADO CRISTAL AO REDOR",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5957.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026"
+    },
+    {
       "codigo": "5945",
       "descricao": "BRINCO ARGOLA CLICK LISA TAM PP 9MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -286,17 +297,6 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/01/2025"
-    },
-    {
-      "codigo": "3553",
-      "descricao": "BRINCO INFANTIL CACHO DE UVA CRAVEJADO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3553.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/10/2024"
     }
   ]
 }
