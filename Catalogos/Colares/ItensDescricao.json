@@ -24,17 +24,6 @@
       "dataUltimaEntrada": "13/08/2026"
     },
     {
-      "codigo": "6447",
-      "descricao": "COLAR DUPLO BOLINHAS E CORAÇÃO SOLTO 35/40 + 12CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6447.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
-    },
-    {
       "codigo": "6445",
       "descricao": "COLAR ELOS CARTIER 2X7 46+4CM",
       "tipo": "Semijoia banhada a Prata",
@@ -376,6 +365,17 @@
       "dataUltimaEntrada": "02/11/2025"
     },
     {
+      "codigo": "5299",
+      "descricao": "COLAR ELOS MINI CARTIER 51+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5299.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "02/11/2025"
+    },
+    {
       "codigo": "5298",
       "descricao": "COLAR ELOS MINI CARTIER 51+4CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -583,17 +583,6 @@
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/03/2025"
-    },
-    {
-      "codigo": "3963",
-      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3963.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "84,90",
-      "precoConsignado": "84,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/01/2025"
     }
   ]
 }
