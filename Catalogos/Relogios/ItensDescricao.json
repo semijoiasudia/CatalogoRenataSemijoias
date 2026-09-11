@@ -2,17 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6398",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO FORMAS GEOMÉTRICAS",
-      "imagem": "6398.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6374",
       "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO DOURADO",
       "imagem": "6374.jpg",
@@ -112,17 +101,6 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "5832",
-      "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO BRANCO - MÉDIO",
-      "imagem": "5832.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "5682",
       "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
       "imagem": "5682.jpg",
@@ -132,17 +110,6 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "18"
-    },
-    {
-      "codigo": "6278",
-      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
-      "imagem": "6278.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "15/07/2026",
-      "subcategoria_id": "14"
     },
     {
       "codigo": "6358",
@@ -176,17 +143,6 @@
       "subcategoria_id": "15"
     },
     {
-      "codigo": "6297",
-      "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M5 -  MASC.",
-      "imagem": "6297.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "6276",
       "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
       "imagem": "6276.jpg",
@@ -194,17 +150,6 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026",
-      "subcategoria_id": "14"
-    },
-    {
-      "codigo": "6274",
-      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
-      "imagem": "6274.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14"
     },
@@ -218,6 +163,16 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "19/06/2026",
       "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6265",
+      "descricao": "RELOGIO TREVO - FUNDO BRANCO",
+      "imagem": "6265.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "19/06/2026"
     },
     {
       "codigo": "6249",
@@ -242,15 +197,14 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "5978",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. REDONDO - DOURADO",
-      "imagem": "5978.jpg",
+      "codigo": "5972",
+      "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
+      "imagem": "5972.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026",
-      "subcategoria_id": "18"
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "09/03/2026"
     },
     {
       "codigo": "5700",
