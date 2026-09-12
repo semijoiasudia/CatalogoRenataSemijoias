@@ -2,17 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6374",
-      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO DOURADO",
-      "imagem": "6374.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "6367",
       "descricao": "RELOGIO CASIO UNISSEX REDONDO - FUNDO CINZA - MÉDIO",
       "imagem": "6367.jpg",
@@ -101,17 +90,6 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "5682",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
-      "imagem": "5682.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "6358",
       "descricao": "RELOGIO REDONDO COM NÚMEROS PULSEIRA COURO SINT PRETA",
       "imagem": "6358.jpg",
@@ -143,13 +121,13 @@
       "subcategoria_id": "15"
     },
     {
-      "codigo": "6276",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
-      "imagem": "6276.jpg",
+      "codigo": "6274",
+      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
+      "imagem": "6274.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14"
     },
