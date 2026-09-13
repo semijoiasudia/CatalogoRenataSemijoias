@@ -57,17 +57,6 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "6360",
-      "descricao": "RELOGIO CASIO OVAL PEQUENO - PRETO FUNDO BRANCO",
-      "imagem": "6360.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "6094",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO PRETO",
       "imagem": "6094.jpg",
@@ -100,6 +89,17 @@
       "dataUltimaEntrada": "14/07/2026"
     },
     {
+      "codigo": "6304",
+      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
+      "imagem": "6304.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6300",
       "descricao": "RELOGIO DIG. E ANALÓGICO LUZ - PULSEIRA BORRACHA MASCULINO",
       "imagem": "6300.jpg",
@@ -121,13 +121,13 @@
       "subcategoria_id": "15"
     },
     {
-      "codigo": "6274",
-      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
-      "imagem": "6274.jpg",
+      "codigo": "6276",
+      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
+      "imagem": "6276.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Ouro",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14"
     },
