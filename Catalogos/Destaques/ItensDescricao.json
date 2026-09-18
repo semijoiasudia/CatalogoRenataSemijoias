@@ -2,6 +2,57 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6572",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6572.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6571",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6571.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6570",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO CINZA",
+      "imagem": "6570.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6569",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6569.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6526",
+      "descricao": "ANEL SOLITÁRIO - FIO COM DUAS PONTAS TORCIDAS - TAMANHO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6526.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/09/2026"
+    },
+    {
       "codigo": "6514",
       "descricao": "PULSEIRA TIFFANYS 4MM COLORIDAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -167,6 +218,17 @@
       "dataUltimaEntrada": "09/08/2026"
     },
     {
+      "codigo": "6425",
+      "descricao": "ANEL REGULÁVEL CORAÇÃO CRAVEJADO ROSA CLARO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6425.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "08/08/2026"
+    },
+    {
       "codigo": "6412",
       "descricao": "BRINCO CORAÇÃO COM DETALHES LISO CRAVEJADO E FLOR",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -178,6 +240,28 @@
       "dataUltimaEntrada": "30/07/2026"
     },
     {
+      "codigo": "6394",
+      "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "6394.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6392",
+      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
+      "tipo": "Aço Inox",
+      "imagem": "6392.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
       "codigo": "6387",
       "descricao": "BRACELETE INOX BRACELETE CRAVEJADO PEDRAS CRISTAL",
       "tipo": "Aço Inox",
@@ -187,6 +271,26 @@
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6375",
+      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO PRETO",
+      "imagem": "6375.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "18/09/2026"
     },
     {
       "codigo": "6361",
@@ -251,6 +355,39 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6329",
+      "descricao": "PULSEIRA CÍRCULOS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6329.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6320",
+      "descricao": "ANEL 4 FIOS EM V - TAMANHOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6320.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6317",
+      "descricao": "ANEL REGULÁVEL FLOR CRAVEJADA VERDE E CORAÇÃO",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6317.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "28/06/2026"
     },
     {
@@ -339,6 +476,17 @@
       "dataUltimaEntrada": "09/08/2026"
     },
     {
+      "codigo": "6162",
+      "descricao": "BRINCO FLOR 5 PÉTALAS CRAVEJADAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6162.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026"
+    },
+    {
       "codigo": "6106",
       "descricao": "COLAR NOSSA SENHORA CRAVEJADA COLORS 48CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -360,15 +508,35 @@
       "dataUltimaEntrada": "22/07/2026"
     },
     {
-      "codigo": "6056",
-      "descricao": "BRINCO TRIO ARGOLINHA CRAVEJADA COLORS PP/P/M",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6056.jpg",
+      "codigo": "6055",
+      "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
+      "imagem": "6055.jpg",
       "pastaFotos": "Catalogos/Destaques/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6051",
+      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO - LISO 3 VOLTAS",
+      "imagem": "6051.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6026",
+      "descricao": "COLAR ESFERAS CORRENTE CADEADO 46+9CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6026.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "01/04/2026"
     },
     {
       "codigo": "5213",

@@ -2,6 +2,61 @@
   "categoria": "BRACELETE INOX",
   "produtos": [
     {
+      "codigo": "6568",
+      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
+      "tipo": "Aço Inox",
+      "imagem": "6568.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6567",
+      "descricao": "BRACELETE INOX BRACELETE TREVO BRANCO E 2 PONTOS DE LUZ",
+      "tipo": "Aço Inox",
+      "imagem": "6567.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6396",
+      "descricao": "BRACELETE INOX BRACELETE TREVO PRETO E CÍRCULOS VAZADOS",
+      "tipo": "Aço Inox",
+      "imagem": "6396.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6392",
+      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
+      "tipo": "Aço Inox",
+      "imagem": "6392.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/09/2026"
+    },
+    {
+      "codigo": "6394",
+      "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "6394.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
       "codigo": "6387",
       "descricao": "BRACELETE INOX BRACELETE CRAVEJADO PEDRAS CRISTAL",
       "tipo": "Aço Inox",
