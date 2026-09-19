@@ -2,6 +2,17 @@
   "categoria": "PIERCING",
   "produtos": [
     {
+      "codigo": "6489",
+      "descricao": "PIERCING FAKE 4 FIOS E CORRENTE DUPLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6489.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "52,90",
+      "precoConsignado": "52,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/08/2026"
+    },
+    {
       "codigo": "6488",
       "descricao": "PIERCING FAKE PÉROLAS BRANCAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -54,6 +65,17 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
+      "codigo": "5463",
+      "descricao": "PIERCING FAKE CORAÇÃO CONTORNO TRABALHADO",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5463.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ródio Branco",
       "dataUltimaEntrada": "14/11/2025"
     },
     {
