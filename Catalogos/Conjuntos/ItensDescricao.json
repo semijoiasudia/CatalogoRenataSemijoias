@@ -2,6 +2,17 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "6540",
+      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 10MM 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6540.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/09/2026"
+    },
+    {
       "codigo": "6539",
       "descricao": "CONJUNTO GOTA ORGÂNICA PLISSADA 42+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -22,6 +33,39 @@
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/09/2026"
+    },
+    {
+      "codigo": "6536",
+      "descricao": "CONJUNTO CHOKER Y COM ZIRCÔNIA GOTA PINK 38+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6536.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/09/2026"
+    },
+    {
+      "codigo": "6503",
+      "descricao": "CONJUNTO PEDRA OVAL VERDE ESMERALDA 8X10MM 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6503.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/08/2026"
+    },
+    {
+      "codigo": "6502",
+      "descricao": "CONJUNTO PEDRA OVAL AZUL TURQUESA 8X10MM 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6502.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "preco": "149,90",
+      "precoConsignado": "149,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/08/2026"
     },
     {
       "codigo": "6495",
@@ -143,17 +187,6 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "11/06/2026"
-    },
-    {
-      "codigo": "6105",
-      "descricao": "CONJUNTO PEDRA AZUL CRAVEJADA 39+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6105.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
     },
     {
       "codigo": "6039",

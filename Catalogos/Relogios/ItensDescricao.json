@@ -2,17 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6371",
-      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
-      "imagem": "6371.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "18/09/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6055",
       "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
       "imagem": "6055.jpg",
@@ -99,17 +88,6 @@
       "banho": "Cor Prata",
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "14"
-    },
-    {
-      "codigo": "6094",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO PRETO",
-      "imagem": "6094.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18"
     },
     {
       "codigo": "5682",
