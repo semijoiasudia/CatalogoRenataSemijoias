@@ -2,28 +2,6 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6055",
-      "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
-      "imagem": "6055.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "18/09/2026",
-      "subcategoria_id": "14"
-    },
-    {
-      "codigo": "6051",
-      "descricao": "RELOGIO COBRA INSP FUNDO DOURADO - LISO 3 VOLTAS",
-      "imagem": "6051.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "18/09/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6543",
       "descricao": "RELOGIO REDONDO DOURADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6543.jpg",
@@ -101,17 +79,6 @@
       "subcategoria_id": "18"
     },
     {
-      "codigo": "6301",
-      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
-      "imagem": "6301.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6277",
       "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
       "imagem": "6277.jpg",
@@ -130,17 +97,6 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026",
-      "subcategoria_id": "14"
-    },
-    {
-      "codigo": "6275",
-      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
-      "imagem": "6275.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Prata",
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14"
     },
@@ -165,17 +121,6 @@
       "banho": "Inox",
       "dataUltimaEntrada": "10/06/2026",
       "subcategoria_id": "15"
-    },
-    {
-      "codigo": "5978",
-      "descricao": "RELOGIO INSPIRAÇÃO CART. REDONDO - DOURADO",
-      "imagem": "5978.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/03/2026",
-      "subcategoria_id": "18"
     },
     {
       "codigo": "5972",

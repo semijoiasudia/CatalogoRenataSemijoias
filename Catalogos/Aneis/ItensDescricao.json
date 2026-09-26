@@ -167,17 +167,6 @@
       "dataUltimaEntrada": "28/06/2026"
     },
     {
-      "codigo": "6309",
-      "descricao": "ANEL CRAVEJADO PINK - TAM 14",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6309.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
-    },
-    {
       "codigo": "6306",
       "descricao": "ANEL DOIS CORAÇÕES E PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -343,17 +332,6 @@
       "dataUltimaEntrada": "04/09/2025"
     },
     {
-      "codigo": "4836",
-      "descricao": "ANEL REGULÁVEL LISO ORGÂNICO ONDULADO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4836.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "preco": "92,90",
-      "precoConsignado": "92,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/09/2025"
-    },
-    {
       "codigo": "4820",
       "descricao": "ANEL 3 FIOS E 2 CORAÇÕES VERDE ESMERALDA - TAMANHOS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -418,6 +396,17 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/12/2024"
+    },
+    {
+      "codigo": "3648",
+      "descricao": "ANEL FIO ONDULADO E TREVO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3648.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "preco": "64,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/10/2024"
     }
   ]
 }
