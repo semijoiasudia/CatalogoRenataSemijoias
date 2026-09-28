@@ -2,6 +2,61 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6572",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6572.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6571",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6571.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6570",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO CINZA",
+      "imagem": "6570.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6569",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6569.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14"
+    },
+    {
       "codigo": "6543",
       "descricao": "RELOGIO REDONDO DOURADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6543.jpg",

@@ -2,6 +2,46 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6572",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6572.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "28/09/2026"
+    },
+    {
+      "codigo": "6571",
+      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
+      "imagem": "6571.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026"
+    },
+    {
+      "codigo": "6570",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO CINZA",
+      "imagem": "6570.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026"
+    },
+    {
+      "codigo": "6569",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6569.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "28/09/2026"
+    },
+    {
       "codigo": "6540",
       "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 10MM 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -310,6 +350,16 @@
       "dataUltimaEntrada": "29/07/2026"
     },
     {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026"
+    },
+    {
       "codigo": "6342",
       "descricao": "CONJUNTO FLOR CRAVEJADA VERDE ESMERALDA 46CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -385,6 +435,17 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6319",
+      "descricao": "ANEL REGULÁVEL TREVO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6319.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "08/08/2026"
     },
     {
       "codigo": "6313",
@@ -560,6 +621,17 @@
       "dataUltimaEntrada": "29/05/2026"
     },
     {
+      "codigo": "6160",
+      "descricao": "CONJUNTO ORGÂNICO VAZADO 39+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6160.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/05/2026"
+    },
+    {
       "codigo": "6155",
       "descricao": "BRACELETE INOX BRACELETE PREGO COM PEDRAS CRISTAL",
       "tipo": "Aço Inox",
@@ -659,6 +731,17 @@
       "dataUltimaEntrada": "01/04/2026"
     },
     {
+      "codigo": "6010",
+      "descricao": "ANEL REGULÁVEL OVAL CRAVEJADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6010.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
       "codigo": "5955",
       "descricao": "BRINCO EAR CUFF 3 CORAÇÕES COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -668,6 +751,17 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026"
+    },
+    {
+      "codigo": "5952",
+      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS INTERNO E EXTERNO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5952.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026"
     },
     {
       "codigo": "5809",
@@ -689,6 +783,17 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026"
+    },
+    {
+      "codigo": "5318",
+      "descricao": "PULSEIRA RIVIERA COLORS 2MM 17+4CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5318.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026"
     },
     {
       "codigo": "5213",

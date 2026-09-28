@@ -74,6 +74,18 @@
       "subcategoria_id": "1"
     },
     {
+      "codigo": "6466",
+      "descricao": "BRINCO TRIO PONTO DE LUZ FORMATO CORAÇÃO 3/4/5MM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6466.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026",
+      "subcategoria_id": "26"
+    },
+    {
       "codigo": "6465",
       "descricao": "BRINCO ARGOLA CLICK LISA ABAULADA 15MM",
       "tipo": "Semijoia banhada a Prata",
@@ -82,7 +94,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "6464",
@@ -97,16 +110,16 @@
       "subcategoria_id": "8"
     },
     {
-      "codigo": "6460",
-      "descricao": "BRINCO TRIO PONTO DE LUZ QUADRADO CRISTAL 3/4/5MM",
+      "codigo": "6462",
+      "descricao": "BRINCO TRIO ARGOLA CLICK LISA FORMATO GOTA",
       "tipo": "Semijoia banhada a Prata",
-      "imagem": "6460.jpg",
+      "imagem": "6462.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "21"
     },
     {
       "codigo": "6223",
@@ -118,7 +131,7 @@
       "precoConsignado": "89,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "21"
     },
     {
       "codigo": "6455",
@@ -167,6 +180,18 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2026",
       "subcategoria_id": "7"
+    },
+    {
+      "codigo": "6433",
+      "descricao": "BRINCO TRIO ESFERAS LISAS 4/5/6MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6433.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/08/2026",
+      "subcategoria_id": "25"
     },
     {
       "codigo": "4946",
@@ -238,7 +263,7 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "6"
+      "subcategoria_id": "8"
     },
     {
       "codigo": "6410",
@@ -250,7 +275,7 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6383",
@@ -277,6 +302,18 @@
       "subcategoria_id": "8"
     },
     {
+      "codigo": "6373",
+      "descricao": "BRINCO TRIO PONTO DE LUZ FORMATO CORAÇÃO 3/4/5MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6373.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "26"
+    },
+    {
       "codigo": "6219",
       "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO CORAÇÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -286,7 +323,7 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "21"
     },
     {
       "codigo": "6056",
@@ -298,7 +335,7 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "22"
     },
     {
       "codigo": "5521",
@@ -309,7 +346,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "4"
     },
     {
       "codigo": "4686",
@@ -320,7 +358,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "6238",
@@ -331,7 +370,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "6235",
@@ -342,7 +382,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6234",
@@ -353,31 +394,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
-    },
-    {
-      "codigo": "6228",
-      "descricao": "BRINCO TRIO PONTO DE LUZ FORMATO CORAÇÃO 6/5/4MM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6228.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "8"
-    },
-    {
-      "codigo": "6227",
-      "descricao": "BRINCO PONTO DE LUZ 8MM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6227.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "preco": "49,90",
-      "precoConsignado": "49,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "2"
     },
     {
       "codigo": "6217",
@@ -388,7 +406,8 @@
       "preco": "134,90",
       "precoConsignado": "134,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "21"
     },
     {
       "codigo": "6215",
@@ -399,7 +418,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "26"
     },
     {
       "codigo": "6214",
@@ -410,7 +430,8 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "6199",
@@ -446,7 +467,7 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "10"
+      "subcategoria_id": "11"
     },
     {
       "codigo": "6174",
@@ -457,7 +478,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "subcategoria_id": "6"
     },
     {
       "codigo": "6173",
@@ -481,7 +503,7 @@
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "26"
     },
     {
       "codigo": "6073",
@@ -492,7 +514,8 @@
       "preco": "102,90",
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "subcategoria_id": "22"
     },
     {
       "codigo": "5955",
@@ -503,7 +526,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "3284",
@@ -518,6 +542,18 @@
       "subcategoria_id": "8"
     },
     {
+      "codigo": "3281",
+      "descricao": "BRINCO PONTO DE LUZ 8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3281.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/05/2026",
+      "subcategoria_id": "8"
+    },
+    {
       "codigo": "3202",
       "descricao": "BRINCO EAR CUFF 3 GOTAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -526,7 +562,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "6161",
@@ -550,7 +587,7 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "8"
     },
     {
       "codigo": "6081",
@@ -561,7 +598,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "6080",
@@ -572,7 +610,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6079",
@@ -583,7 +622,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6075",
@@ -594,7 +634,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6074",
@@ -605,7 +646,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "6072",
@@ -616,7 +658,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "6071",
@@ -627,7 +670,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "6067",
@@ -638,7 +682,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "6066",
@@ -649,7 +694,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "11"
     },
     {
       "codigo": "6065",
@@ -660,7 +706,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6064",
@@ -671,7 +718,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "6060",
@@ -682,7 +730,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "6059",
@@ -693,7 +742,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5781",
@@ -704,7 +754,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "3104",
@@ -715,7 +766,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "21"
     },
     {
       "codigo": "1446",
@@ -726,7 +778,8 @@
       "preco": "102,90",
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5982",
@@ -737,7 +790,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/03/2026"
+      "dataUltimaEntrada": "11/03/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5962",
@@ -748,7 +802,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
+      "dataUltimaEntrada": "07/03/2026",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "5961",
@@ -759,7 +814,8 @@
       "preco": "64,90",
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
+      "dataUltimaEntrada": "07/03/2026",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "5959",
@@ -770,7 +826,20 @@
       "preco": "42,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026"
+      "dataUltimaEntrada": "07/03/2026",
+      "subcategoria_id": "26"
+    },
+    {
+      "codigo": "5958",
+      "descricao": "BRINCO CORAÇÃO ALONGADO TAM PP COM PONTO DE LUZ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5958.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/03/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5953",
@@ -781,7 +850,20 @@
       "preco": "44,90",
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "7"
+    },
+    {
+      "codigo": "5952",
+      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS INTERNO E EXTERNO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5952.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "89,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "5948",
@@ -792,7 +874,8 @@
       "preco": "64,90",
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5945",
@@ -803,7 +886,20 @@
       "preco": "32,90",
       "precoConsignado": "32,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "2"
+    },
+    {
+      "codigo": "5944",
+      "descricao": "BRINCO ARGOLA CLICK LISA 16MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5944.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "74,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5914",
@@ -814,7 +910,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/02/2026"
+      "dataUltimaEntrada": "22/02/2026",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "5901",
@@ -825,7 +922,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "22/02/2026"
+      "dataUltimaEntrada": "22/02/2026",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5810",
@@ -837,7 +935,7 @@
       "precoConsignado": "149,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "16/01/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "22"
     },
     {
       "codigo": "5809",
@@ -849,7 +947,7 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/01/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "22"
     },
     {
       "codigo": "5653",
@@ -860,7 +958,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5652",
@@ -871,7 +970,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5651",
@@ -882,7 +982,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5648",
@@ -893,7 +994,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5647",
@@ -904,7 +1006,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5644",
@@ -915,7 +1018,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "23/11/2025"
+      "dataUltimaEntrada": "23/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5629",
@@ -926,7 +1030,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "5"
     },
     {
       "codigo": "5623",
@@ -937,7 +1042,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5622",
@@ -948,7 +1054,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5621",
@@ -959,7 +1066,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5619",
@@ -970,7 +1078,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5606",
@@ -981,7 +1090,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "2 Banhos",
-      "dataUltimaEntrada": "22/11/2025"
+      "dataUltimaEntrada": "22/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5582",
@@ -992,7 +1102,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
+      "dataUltimaEntrada": "20/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5569",
@@ -1003,7 +1114,8 @@
       "preco": "42,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
+      "dataUltimaEntrada": "20/11/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5526",
@@ -1014,7 +1126,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "26"
     },
     {
       "codigo": "5525",
@@ -1025,7 +1138,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5520",
@@ -1036,7 +1150,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5519",
@@ -1047,7 +1162,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5511",
@@ -1058,7 +1174,20 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "7"
+    },
+    {
+      "codigo": "5507",
+      "descricao": "BRINCO ARGOLA TRANÇADA TAM M 2,5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5507.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5502",
@@ -1069,7 +1198,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "21"
     },
     {
       "codigo": "5496",
@@ -1080,7 +1210,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "15/11/2025"
+      "dataUltimaEntrada": "15/11/2025",
+      "subcategoria_id": "5"
     },
     {
       "codigo": "5494",
@@ -1091,7 +1222,8 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/11/2025"
+      "dataUltimaEntrada": "14/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5460",
@@ -1102,7 +1234,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/11/2025"
+      "dataUltimaEntrada": "14/11/2025",
+      "subcategoria_id": "5"
     },
     {
       "codigo": "5448",
@@ -1113,7 +1246,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/11/2025"
+      "dataUltimaEntrada": "10/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5446",
@@ -1124,7 +1258,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/11/2025"
+      "dataUltimaEntrada": "10/11/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "5419",
@@ -1135,7 +1270,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "07/11/2025"
+      "dataUltimaEntrada": "07/11/2025",
+      "subcategoria_id": "1"
     },
     {
       "codigo": "5175",
@@ -1146,7 +1282,8 @@
       "preco": "104,90",
       "precoConsignado": "104,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "24/10/2025"
+      "dataUltimaEntrada": "24/10/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5173",
@@ -1157,7 +1294,8 @@
       "preco": "114,90",
       "precoConsignado": "114,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "24/10/2025"
+      "dataUltimaEntrada": "24/10/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "5135",
@@ -1168,7 +1306,8 @@
       "preco": "52,90",
       "precoConsignado": "52,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
+      "dataUltimaEntrada": "19/10/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "5131",
@@ -1179,7 +1318,8 @@
       "preco": "42,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025"
+      "dataUltimaEntrada": "19/10/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5109",
@@ -1190,7 +1330,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "19/10/2025"
+      "dataUltimaEntrada": "19/10/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "5033",
@@ -1201,7 +1342,8 @@
       "preco": "44,90",
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5027",
@@ -1212,7 +1354,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5023",
@@ -1223,7 +1366,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5013",
@@ -1246,7 +1390,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4998",
@@ -1257,7 +1402,20 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "7"
+    },
+    {
+      "codigo": "4994",
+      "descricao": "BRINCO ARGOLA TRANQUETA ESPÍRITO SANTO ZIRCÔNIAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4994.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "64,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "4982",
@@ -1268,7 +1426,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "subcategoria_id": "11"
     },
     {
       "codigo": "4957",
@@ -1279,7 +1438,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "6"
     },
     {
       "codigo": "4950",
@@ -1290,7 +1450,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "4945",
@@ -1301,7 +1462,8 @@
       "preco": "34,90",
       "precoConsignado": "34,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4940",
@@ -1312,7 +1474,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4939",
@@ -1323,7 +1486,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4938",
@@ -1334,7 +1498,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4899",
@@ -1345,7 +1510,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "13/09/2025"
+      "dataUltimaEntrada": "13/09/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4884",
@@ -1356,7 +1522,8 @@
       "preco": "44,90",
       "precoConsignado": "44,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/09/2025"
+      "dataUltimaEntrada": "12/09/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "4883",
@@ -1367,7 +1534,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "12/09/2025"
+      "dataUltimaEntrada": "12/09/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "4881",
@@ -1378,7 +1546,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "12/09/2025"
+      "dataUltimaEntrada": "12/09/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "4880",
@@ -1389,7 +1558,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/09/2025"
+      "dataUltimaEntrada": "12/09/2025",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "4857",
@@ -1400,7 +1570,20 @@
       "preco": "72,90",
       "precoConsignado": "72,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "11/09/2025"
+      "dataUltimaEntrada": "11/09/2025",
+      "subcategoria_id": "2"
+    },
+    {
+      "codigo": "4792",
+      "descricao": "BRINCO MEIA ARGOLA ORGANICA FORMATO LOSANGO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4792.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025",
+      "subcategoria_id": "29"
     },
     {
       "codigo": "4782",
@@ -1411,7 +1594,8 @@
       "preco": "102,90",
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "10/08/2025"
+      "dataUltimaEntrada": "10/08/2025",
+      "subcategoria_id": "13"
     },
     {
       "codigo": "4779",
@@ -1422,7 +1606,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "10/08/2025"
+      "dataUltimaEntrada": "10/08/2025",
+      "subcategoria_id": "6"
     },
     {
       "codigo": "4733",
@@ -1433,7 +1618,20 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/08/2025"
+      "dataUltimaEntrada": "04/08/2025",
+      "subcategoria_id": "29"
+    },
+    {
+      "codigo": "4684",
+      "descricao": "BRINCO 2 EM 1 DISCO E DISCO VAZADO ORGANICO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4684.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/08/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4679",
@@ -1444,7 +1642,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/08/2025"
+      "dataUltimaEntrada": "03/08/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4667",
@@ -1455,7 +1654,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/08/2025"
+      "dataUltimaEntrada": "02/08/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4620",
@@ -1466,7 +1666,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "25/07/2025"
+      "dataUltimaEntrada": "25/07/2025",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "4616",
@@ -1477,7 +1678,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/07/2025"
+      "dataUltimaEntrada": "24/07/2025",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "4592",
@@ -1488,7 +1690,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/07/2025"
+      "dataUltimaEntrada": "21/07/2025",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "4583",
@@ -1499,7 +1702,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/07/2025"
+      "dataUltimaEntrada": "17/07/2025",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "4582",
@@ -1510,7 +1714,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "17/07/2025"
+      "dataUltimaEntrada": "17/07/2025",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "4546",
@@ -1521,7 +1726,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/07/2025"
+      "dataUltimaEntrada": "05/07/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4538",
@@ -1532,7 +1738,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/07/2025"
+      "dataUltimaEntrada": "05/07/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4534",
@@ -1543,7 +1750,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/07/2025"
+      "dataUltimaEntrada": "05/07/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4516",
@@ -1554,7 +1762,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/07/2025"
+      "dataUltimaEntrada": "02/07/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4512",
@@ -1565,7 +1774,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "02/07/2025"
+      "dataUltimaEntrada": "02/07/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4511",
@@ -1576,7 +1786,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/07/2025"
+      "dataUltimaEntrada": "02/07/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4503",
@@ -1587,7 +1798,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/07/2025"
+      "dataUltimaEntrada": "01/07/2025",
+      "subcategoria_id": "5"
     },
     {
       "codigo": "4470",
@@ -1598,7 +1810,32 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/06/2025"
+      "dataUltimaEntrada": "13/06/2025",
+      "subcategoria_id": "27"
+    },
+    {
+      "codigo": "4461",
+      "descricao": "BRINCO BORBOLETA LISA E CRAVEJADA CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4461.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "74,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/06/2025",
+      "subcategoria_id": "9"
+    },
+    {
+      "codigo": "4400",
+      "descricao": "BRINCO FOLHAS E PING PÉROLA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4400.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/05/2025",
+      "subcategoria_id": "6"
     },
     {
       "codigo": "4397",
@@ -1609,7 +1846,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "25/05/2025"
+      "dataUltimaEntrada": "25/05/2025",
+      "subcategoria_id": "5"
     },
     {
       "codigo": "4316",
@@ -1620,7 +1858,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/05/2025"
+      "dataUltimaEntrada": "02/05/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4193",
@@ -1631,7 +1870,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/04/2025"
+      "dataUltimaEntrada": "04/04/2025",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "4159",
@@ -1642,7 +1882,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/03/2025"
+      "dataUltimaEntrada": "27/03/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4062",
@@ -1653,7 +1894,8 @@
       "preco": "42,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/02/2025"
+      "dataUltimaEntrada": "20/02/2025",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "3901",
@@ -1664,7 +1906,8 @@
       "preco": "42,90",
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/01/2025"
+      "dataUltimaEntrada": "08/01/2025",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "3870",
@@ -1675,7 +1918,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/12/2024"
+      "dataUltimaEntrada": "20/12/2024",
+      "subcategoria_id": "12"
     },
     {
       "codigo": "3798",
@@ -1686,7 +1930,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/12/2024"
+      "dataUltimaEntrada": "08/12/2024",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "3703",
@@ -1697,18 +1942,20 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2024"
+      "dataUltimaEntrada": "22/11/2024",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "3632",
-      "descricao": "BRINCO MAO DE FATIMA",
+      "descricao": "BRINCO MAO DE FATIMA CRAVEJADA",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "3632.jpg",
       "pastaFotos": "Catalogos/Brincos/",
       "preco": "64,90",
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/10/2024"
+      "dataUltimaEntrada": "30/10/2024",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "3519",
@@ -1719,7 +1966,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/10/2024"
+      "dataUltimaEntrada": "04/10/2024",
+      "subcategoria_id": "2"
     }
   ]
 }
