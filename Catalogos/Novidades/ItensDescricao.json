@@ -2,6 +2,16 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6587",
+      "descricao": "RELOGIO UNISSEX ANALÓGICO E DIGITAL QUADRADO . FUNDO PRETO",
+      "imagem": "6587.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/09/2026"
+    },
+    {
       "codigo": "6586",
       "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M6 -  MASC.",
       "imagem": "6586.jpg",
@@ -442,17 +452,6 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2026"
-    },
-    {
-      "codigo": "6432",
-      "descricao": "TORNOZELEIRA ELOS OVAIS E PINGENTE DE CORAÇÃO CRISTAL",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6432.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "preco": "79,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
       "dataUltimaEntrada": "08/08/2026"
     },
     {

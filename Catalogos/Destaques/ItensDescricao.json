@@ -2,6 +2,16 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6587",
+      "descricao": "RELOGIO UNISSEX ANALÓGICO E DIGITAL QUADRADO . FUNDO PRETO",
+      "imagem": "6587.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/09/2026"
+    },
+    {
       "codigo": "6585",
       "descricao": "RELOGIO CLÁSSICO - OCTOGONAL FUNDO CINZA - FECHO BORBOLETA",
       "imagem": "6585.jpg",

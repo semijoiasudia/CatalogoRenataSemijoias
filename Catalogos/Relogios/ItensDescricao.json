@@ -2,6 +2,17 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6587",
+      "descricao": "RELOGIO UNISSEX ANALÓGICO E DIGITAL QUADRADO . FUNDO PRETO",
+      "imagem": "6587.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "30/09/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6586",
       "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M6 -  MASC.",
       "imagem": "6586.jpg",
