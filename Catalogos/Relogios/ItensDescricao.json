@@ -2,6 +2,39 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6586",
+      "descricao": "RELOGIO DIGITAL E ANALÓGICO LUZ DE FUNDO M6 -  MASC.",
+      "imagem": "6586.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "189,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/09/2026",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6585",
+      "descricao": "RELOGIO CLÁSSICO - OCTOGONAL FUNDO CINZA - FECHO BORBOLETA",
+      "imagem": "6585.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/09/2026",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6584",
+      "descricao": "RELOGIO PULSEIRA COURO SINT PRETA - FUNDO BRANCO",
+      "imagem": "6584.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "29/09/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6357",
       "descricao": "RELOGIO REDONDO COM ALGARISMOS PULSEIRA COURO SINT MARROM",
       "imagem": "6357.jpg",

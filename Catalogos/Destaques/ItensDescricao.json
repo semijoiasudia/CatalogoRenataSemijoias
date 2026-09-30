@@ -2,6 +2,26 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6585",
+      "descricao": "RELOGIO CLÁSSICO - OCTOGONAL FUNDO CINZA - FECHO BORBOLETA",
+      "imagem": "6585.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/09/2026"
+    },
+    {
+      "codigo": "6584",
+      "descricao": "RELOGIO PULSEIRA COURO SINT PRETA - FUNDO BRANCO",
+      "imagem": "6584.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "29/09/2026"
+    },
+    {
       "codigo": "6572",
       "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
       "imagem": "6572.jpg",
