@@ -24,10 +24,32 @@
       "dataUltimaEntrada": "13/08/2026"
     },
     {
+      "codigo": "6484",
+      "descricao": "PULSEIRA DUPLA COM PINGENTE PAI NOSSO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6484.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
       "codigo": "6483",
       "descricao": "PULSEIRA ELOS TRABALHADOS E ESFERA 10MM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "6483.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/08/2026"
+    },
+    {
+      "codigo": "6482",
+      "descricao": "PULSEIRA MEDALHA ESPÍRITO SANTO VAZADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6482.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "109,90",
       "precoConsignado": "109,90",
@@ -65,6 +87,17 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026"
+    },
+    {
+      "codigo": "6329",
+      "descricao": "PULSEIRA CÍRCULOS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6329.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
       "dataUltimaEntrada": "28/06/2026"
     },
     {
@@ -112,6 +145,17 @@
       "dataUltimaEntrada": "05/05/2026"
     },
     {
+      "codigo": "6111",
+      "descricao": "PULSEIRA 3 BARRAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6111.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "05/05/2026"
+    },
+    {
       "codigo": "6110",
       "descricao": "PULSEIRA CORRENTE COM BAGUETES",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -141,6 +185,17 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "preco": "102,90",
       "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "31/03/2026"
+    },
+    {
+      "codigo": "6004",
+      "descricao": "PULSEIRA CORAÇÕES ENTRELAÇADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6004.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/03/2026"
     },
@@ -209,6 +264,17 @@
       "precoConsignado": "76,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025"
+    },
+    {
+      "codigo": "3258",
+      "descricao": "PULSEIRA FOLHAS 3D",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3258.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2024"
     }
   ]
 }
