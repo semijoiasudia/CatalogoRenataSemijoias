@@ -57,6 +57,17 @@
       "dataUltimaEntrada": "18/09/2026"
     },
     {
+      "codigo": "6395",
+      "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
+      "tipo": "Aço Inox",
+      "imagem": "6395.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/07/2026"
+    },
+    {
       "codigo": "6391",
       "descricao": "BRACELETE INOX BRACELETE INSP. V COM PEDRAS",
       "tipo": "Aço Inox",
@@ -97,17 +108,6 @@
       "pastaFotos": "Catalogos/Braceletes Inox/",
       "preco": "59,90",
       "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
-    },
-    {
-      "codigo": "6155",
-      "descricao": "BRACELETE INOX BRACELETE PREGO COM PEDRAS CRISTAL",
-      "tipo": "Aço Inox",
-      "imagem": "6155.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "preco": "69,90",
-      "precoConsignado": "69,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "29/07/2026"
     },
@@ -164,6 +164,17 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
+    },
+    {
+      "codigo": "6285",
+      "descricao": "BRACELETE INOX BRACELETE INSP. VALENTINO PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6285.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "26/06/2026"
     },
     {

@@ -24,6 +24,17 @@
       "dataUltimaEntrada": "14/11/2025"
     },
     {
+      "codigo": "5472",
+      "descricao": "PIERCING FAKE FIO DUPLO CURVADO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5472.jpg",
+      "pastaFotos": "Catalogos/Piercings/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "14/11/2025"
+    },
+    {
       "codigo": "5467",
       "descricao": "PIERCING FAKE PINGENTE CORAÇÃO ABAULADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -44,17 +55,6 @@
       "precoConsignado": "39,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "14/11/2025"
-    },
-    {
-      "codigo": "4360",
-      "descricao": "PIERCING FAKE 2 BARRAS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "4360.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "34,90",
-      "precoConsignado": "34,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "21/05/2025"
     },
     {
       "codigo": "4359",
@@ -88,17 +88,6 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "23/01/2025"
-    },
-    {
-      "codigo": "3772",
-      "descricao": "PIERCING FAKE GOTA ABAULADA",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "3772.jpg",
-      "pastaFotos": "Catalogos/Piercings/",
-      "preco": "52,90",
-      "precoConsignado": "52,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "03/12/2024"
     }
   ]
 }
