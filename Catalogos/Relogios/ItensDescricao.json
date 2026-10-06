@@ -2,6 +2,39 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6599",
+      "descricao": "RELOGIO ESPORTIVO DIGITAL BRANCO",
+      "imagem": "6599.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": " ",
+      "dataUltimaEntrada": "06/10/2026",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6598",
+      "descricao": "RELOGIO ESPORTIVO DIGITAL NUDE",
+      "imagem": "6598.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": " ",
+      "dataUltimaEntrada": "06/10/2026",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6597",
+      "descricao": "RELOGIO ESPORTIVO DIGITAL ROSA",
+      "imagem": "6597.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "139,90",
+      "precoConsignado": "139,90",
+      "banho": " ",
+      "dataUltimaEntrada": "06/10/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6587",
       "descricao": "RELOGIO UNISSEX ANALÓGICO E DIGITAL QUADRADO FUNDO PRETO",
       "imagem": "6587.jpg",
@@ -145,6 +178,17 @@
       "subcategoria_id": "14"
     },
     {
+      "codigo": "6375",
+      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO PRETO",
+      "imagem": "6375.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/07/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6370",
       "descricao": "RELOGIO FUNDO PRETO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6370.jpg",
@@ -189,6 +233,16 @@
       "subcategoria_id": "14"
     },
     {
+      "codigo": "6362",
+      "descricao": "RELOGIO TREVO - PULSEIRA ELÁSTICA - LINHA FASHION ",
+      "imagem": "6362.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "22/07/2026"
+    },
+    {
       "codigo": "6360",
       "descricao": "RELOGIO CASIO OVAL PEQUENO - PRETO FUNDO BRANCO",
       "imagem": "6360.jpg",
@@ -209,17 +263,6 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "18"
-    },
-    {
-      "codigo": "6278",
-      "descricao": "RELOGIO BRACELETE INSP TREVO - FUNDO DOURADO",
-      "imagem": "6278.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "15/07/2026",
-      "subcategoria_id": "14"
     },
     {
       "codigo": "6277",
