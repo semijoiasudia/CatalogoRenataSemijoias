@@ -232,6 +232,17 @@
       "dataUltimaEntrada": "22/07/2026"
     },
     {
+      "codigo": "6361",
+      "descricao": "RELOGIO CASIO OVAL PEQUENO - PRATA COM FUNDO PRETO",
+      "imagem": "6361.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6360",
       "descricao": "RELOGIO CASIO OVAL PEQUENO - PRETO FUNDO BRANCO",
       "imagem": "6360.jpg",
@@ -251,6 +262,17 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6303",
+      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
+      "imagem": "6303.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026",
       "subcategoria_id": "18"
     },
     {
