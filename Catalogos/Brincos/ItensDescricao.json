@@ -2,6 +2,30 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "6606",
+      "descricao": "BRINCO ARGOLA RETANGULAR LISA TAM M 11X13MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6606.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "79,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/10/2026",
+      "subcategoria_id": "2"
+    },
+    {
+      "codigo": "6605",
+      "descricao": "BRINCO ARGOLA RETANGULAR LISA TAM P 8X9MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6605.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "49,90",
+      "precoConsignado": "49,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "08/10/2026",
+      "subcategoria_id": "2"
+    },
+    {
       "codigo": "6596",
       "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO COLORS 14MM",
       "tipo": "Semijoia banhada a Ouro 18k",
