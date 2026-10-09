@@ -2,6 +2,17 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6607",
+      "descricao": "COLAR FIO DE NYLON PONTO DE LUZ 6MM 38+5CM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "6607.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "84,90",
+      "precoConsignado": "84,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "09/10/2026"
+    },
+    {
       "codigo": "6606",
       "descricao": "BRINCO ARGOLA RETANGULAR LISA TAM M 11X13MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1590,7 +1601,7 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "09/10/2026"
     },
     {
       "codigo": "4546",
