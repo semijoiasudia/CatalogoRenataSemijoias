@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Catálogo da Andressa</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <p>Carregando catálogo...</p>
+
+    <script>
+        /*
+         * Esta página reutiliza o catálogo principal para receber todas as
+         * atualizações de produtos. Apenas a logomarca é personalizada.
+         * A largura e a resolução das fotos baixadas permanecem inalteradas.
+         */
+        (async () => {
+            try {
+                const resposta = await fetch('index.html', { cache: 'no-store' });
+
+                if (!resposta.ok) {
+                    throw new Error(`Não foi possível carregar o catálogo (${resposta.status}).`);
+                }
+
+                const catalogo = await resposta.text();
+                const catalogoDaAndressa = catalogo
+                    .replaceAll('imagens/logo.png', 'imagens/LogoAndressa.png')
+                    .replace(
+                        'fetch("rodape.txt")',
+                        'fetch("rodape - Andressa.txt")'
+                    )
+                    .replace(
+                        '<title>Renata - Semijoias e Acessórios</title>',
+                        '<title>Catálogo da Andressa</title>'
+                    );
+
+                document.open();
+                document.write(catalogoDaAndressa);
+                document.close();
+            } catch (erro) {
+                document.body.innerHTML =
+                    '<p>Não foi possível carregar o catálogo. Atualize a página e tente novamente.</p>';
+                console.error(erro);
+            }
+        })();
+    </script>
+</body>
+</html>
