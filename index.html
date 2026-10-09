@@ -674,6 +674,16 @@
             background-color: #cccccc;
             cursor: not-allowed;
         }
+        .pagination-status {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 104px;
+            padding: 8px 12px;
+            color: #6d4e35;
+            font-size: 13px;
+            font-weight: 600;
+        }
         .fale-conosco-btn, .instagram-btn {
             background-color: #f8f5ed; /* Dourado champagne bem claro e suave */
             color: #8a8167; /* Cor do texto mais escura para contraste */
@@ -2991,6 +3001,12 @@
             };
             prevButton.disabled = currentPage === 1;
             paginationDiv.appendChild(prevButton);
+
+            const pageStatus = document.createElement('span');
+            pageStatus.className = 'pagination-status';
+            pageStatus.textContent = `Página ${currentPage} de ${totalPages}`;
+            pageStatus.setAttribute('aria-live', 'polite');
+            paginationDiv.appendChild(pageStatus);
 
             const nextButton = document.createElement('button');
             nextButton.textContent = 'Próxima';
