@@ -2,6 +2,18 @@
   "categoria": "DESTAQUES",
   "produtos": [
     {
+      "codigo": "6613",
+      "descricao": "BRACELETE INOX BRACELETE PRISMA INSPIR. ALTA JOALHERIA",
+      "tipo": "Aço Inox",
+      "imagem": "6613.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6608",
       "descricao": "CONJUNTO FIO DE NYLON PONTO DE LUZ APEROL 8MM 39+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
