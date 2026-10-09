@@ -2,6 +2,19 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "3374",
+      "descricao": "BRINCO EAR JACKET 2 EM 1 - ESFERA E 3 FOLHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3374.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/10/2026",
+      "subcategoria_id": "11",
+      "tags": "#DT#NV#EX"
+    },
+    {
       "codigo": "6606",
       "descricao": "BRINCO ARGOLA RETANGULAR LISA TAM M 11X13MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -11,7 +24,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/10/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV#EX#DT"
     },
     {
       "codigo": "6605",
@@ -23,7 +37,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/10/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "6596",
@@ -35,7 +50,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "06/10/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "2623",
@@ -47,7 +63,8 @@
       "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "06/10/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV"
     },
     {
       "codigo": "1490",
@@ -59,7 +76,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "06/10/2026",
-      "subcategoria_id": "25"
+      "subcategoria_id": "25",
+      "tags": "#NV"
     },
     {
       "codigo": "6563",
@@ -71,7 +89,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/09/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6555",
@@ -83,7 +102,8 @@
       "precoConsignado": "34,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "17/09/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6547",
@@ -95,7 +115,8 @@
       "precoConsignado": "32,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "17/09/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "4688",
@@ -107,7 +128,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/08/2026",
-      "subcategoria_id": "10"
+      "subcategoria_id": "10",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6476",
@@ -119,7 +141,8 @@
       "precoConsignado": "79,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#NV"
     },
     {
       "codigo": "6474",
@@ -131,7 +154,8 @@
       "precoConsignado": "54,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6472",
@@ -143,7 +167,8 @@
       "precoConsignado": "89,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "5"
+      "subcategoria_id": "5",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6471",
@@ -155,7 +180,8 @@
       "precoConsignado": "109,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "25"
+      "subcategoria_id": "25",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6470",
@@ -167,7 +193,8 @@
       "precoConsignado": "89,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6469",
@@ -179,7 +206,8 @@
       "precoConsignado": "109,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "27"
+      "subcategoria_id": "27",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6468",
@@ -191,7 +219,8 @@
       "precoConsignado": "59,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6467",
@@ -203,7 +232,8 @@
       "precoConsignado": "59,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "1"
+      "subcategoria_id": "1",
+      "tags": "#NV"
     },
     {
       "codigo": "6465",
@@ -215,7 +245,8 @@
       "precoConsignado": "79,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "6464",
@@ -227,7 +258,8 @@
       "precoConsignado": "39,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV#IF"
     },
     {
       "codigo": "6462",
@@ -239,7 +271,8 @@
       "precoConsignado": "119,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV"
     },
     {
       "codigo": "6455",
@@ -251,7 +284,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/08/2026",
-      "subcategoria_id": "11"
+      "subcategoria_id": "11",
+      "tags": "#NV"
     },
     {
       "codigo": "6200",
@@ -263,7 +297,8 @@
       "precoConsignado": "129,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/08/2026",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6434",
@@ -275,7 +310,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "4946",
@@ -287,7 +323,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6414",
@@ -299,7 +336,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6413",
@@ -311,7 +349,8 @@
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6410",
@@ -323,7 +362,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV#NV"
     },
     {
       "codigo": "6409",
@@ -335,7 +375,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/07/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6404",
@@ -347,7 +388,8 @@
       "precoConsignado": "74,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#NV"
     },
     {
       "codigo": "6401",
@@ -359,7 +401,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "6383",
@@ -371,7 +414,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6382",
@@ -383,7 +427,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV"
     },
     {
       "codigo": "6377",
@@ -395,7 +440,8 @@
       "precoConsignado": "74,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6376",
@@ -407,7 +453,8 @@
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6373",
@@ -419,7 +466,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "26"
+      "subcategoria_id": "26",
+      "tags": "#NV"
     },
     {
       "codigo": "5735",
@@ -431,7 +479,8 @@
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV"
     },
     {
       "codigo": "5521",
@@ -443,7 +492,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "4"
+      "subcategoria_id": "4",
+      "tags": "#NV"
     },
     {
       "codigo": "6235",
@@ -455,7 +505,8 @@
       "precoConsignado": "69,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6227",
@@ -467,7 +518,8 @@
       "precoConsignado": "49,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6212",
@@ -479,7 +531,8 @@
       "precoConsignado": "119,90",
       "banho": "Prata",
       "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "22"
+      "subcategoria_id": "22",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4401",
@@ -491,7 +544,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/05/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6175",
@@ -539,7 +593,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "26"
+      "subcategoria_id": "26",
+      "tags": "#NV"
     },
     {
       "codigo": "6168",
@@ -551,7 +606,8 @@
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6167",
@@ -575,7 +631,8 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "3284",
@@ -587,7 +644,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#DT#NV"
     },
     {
       "codigo": "3281",
@@ -623,7 +681,8 @@
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "11"
+      "subcategoria_id": "11",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6088",
@@ -683,7 +742,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "6078",
@@ -743,7 +803,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6067",
@@ -779,7 +840,8 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "6059",
@@ -791,7 +853,8 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5982",
@@ -803,7 +866,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "11/03/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "5962",
@@ -815,7 +879,8 @@
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/03/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#IF"
     },
     {
       "codigo": "5961",
@@ -851,7 +916,8 @@
       "precoConsignado": "32,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#IF"
     },
     {
       "codigo": "5942",
@@ -863,7 +929,8 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026",
-      "subcategoria_id": "21"
+      "subcategoria_id": "21",
+      "tags": "#NV"
     },
     {
       "codigo": "5914",
@@ -875,7 +942,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/02/2026",
-      "subcategoria_id": "3"
+      "subcategoria_id": "3",
+      "tags": "#NV"
     },
     {
       "codigo": "5900",
@@ -887,7 +955,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/02/2026",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#NV"
     },
     {
       "codigo": "5653",
@@ -1055,7 +1124,8 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025",
-      "subcategoria_id": "25"
+      "subcategoria_id": "25",
+      "tags": "#NV"
     },
     {
       "codigo": "5569",
@@ -1079,7 +1149,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025",
-      "subcategoria_id": "27"
+      "subcategoria_id": "27",
+      "tags": "#NV"
     },
     {
       "codigo": "5526",
@@ -1223,7 +1294,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025",
-      "subcategoria_id": "8"
+      "subcategoria_id": "8",
+      "tags": "#IF"
     },
     {
       "codigo": "5109",
@@ -1283,7 +1355,8 @@
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/10/2025",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5013",
@@ -1331,7 +1404,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/10/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4994",
@@ -1355,7 +1429,8 @@
       "precoConsignado": "92,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "27/09/2025",
-      "subcategoria_id": "6"
+      "subcategoria_id": "6",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4954",
@@ -1391,7 +1466,8 @@
       "precoConsignado": "34,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "27/09/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#NV"
     },
     {
       "codigo": "4940",
@@ -1487,7 +1563,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/09/2025",
-      "subcategoria_id": "26"
+      "subcategoria_id": "26",
+      "tags": "#NV"
     },
     {
       "codigo": "4857",
@@ -1499,7 +1576,8 @@
       "precoConsignado": "72,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "11/09/2025",
-      "subcategoria_id": "2"
+      "subcategoria_id": "2",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4784",
@@ -1631,7 +1709,8 @@
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "05/07/2025",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4538",
@@ -1763,7 +1842,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/02/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#IF"
     },
     {
       "codigo": "3901",
@@ -1775,7 +1855,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/01/2025",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#IF"
     },
     {
       "codigo": "3870",
@@ -1823,7 +1904,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/10/2024",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#IF"
     },
     {
       "codigo": "3519",

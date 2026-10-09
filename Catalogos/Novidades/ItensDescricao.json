@@ -2,6 +2,18 @@
   "categoria": "NOVIDADES",
   "produtos": [
     {
+      "codigo": "6608",
+      "descricao": "CONJUNTO FIO DE NYLON PONTO DE LUZ APEROL 8MM 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6608.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#NY#DT#EX"
+    },
+    {
       "codigo": "6607",
       "descricao": "COLAR FIO DE NYLON PONTO DE LUZ 6MM 38+5CM",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -10,7 +22,8 @@
       "preco": "84,90",
       "precoConsignado": "84,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "09/10/2026"
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#NY"
     },
     {
       "codigo": "6606",
@@ -21,7 +34,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/10/2026"
+      "dataUltimaEntrada": "08/10/2026",
+      "tags": "#NV#EX#DT"
     },
     {
       "codigo": "6605",
@@ -32,7 +46,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/10/2026"
+      "dataUltimaEntrada": "08/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6599",
@@ -42,7 +57,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": " ",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6598",
@@ -52,7 +68,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": " ",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6597",
@@ -62,7 +79,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": " ",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6596",
@@ -73,7 +91,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6587",
@@ -83,7 +102,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "30/09/2026"
+      "dataUltimaEntrada": "30/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6586",
@@ -93,7 +113,8 @@
       "preco": "189,90",
       "precoConsignado": "189,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "29/09/2026"
+      "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6585",
@@ -103,7 +124,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026"
+      "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6584",
@@ -113,7 +135,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "29/09/2026"
+      "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6572",
@@ -123,7 +146,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "28/09/2026"
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6571",
@@ -133,7 +157,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/09/2026"
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6570",
@@ -143,7 +168,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/09/2026"
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6569",
@@ -153,7 +179,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "28/09/2026"
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6568",
@@ -164,7 +191,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "18/09/2026"
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6567",
@@ -175,7 +203,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "18/09/2026"
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6563",
@@ -186,7 +215,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/09/2026"
+      "dataUltimaEntrada": "17/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6555",
@@ -197,7 +227,8 @@
       "preco": "34,90",
       "precoConsignado": "34,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/09/2026"
+      "dataUltimaEntrada": "17/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6547",
@@ -208,7 +239,8 @@
       "preco": "32,90",
       "precoConsignado": "32,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "17/09/2026"
+      "dataUltimaEntrada": "17/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6543",
@@ -218,7 +250,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "16/09/2026"
+      "dataUltimaEntrada": "16/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6539",
@@ -229,7 +262,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/09/2026"
+      "dataUltimaEntrada": "02/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6538",
@@ -240,7 +274,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/09/2026"
+      "dataUltimaEntrada": "02/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6536",
@@ -251,7 +286,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/09/2026"
+      "dataUltimaEntrada": "02/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6526",
@@ -262,7 +298,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/09/2026"
+      "dataUltimaEntrada": "01/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6525",
@@ -273,7 +310,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/09/2026"
+      "dataUltimaEntrada": "01/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6523",
@@ -284,7 +322,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/08/2026"
+      "dataUltimaEntrada": "31/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6514",
@@ -295,7 +334,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "26/08/2026"
+      "dataUltimaEntrada": "26/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6507",
@@ -306,7 +346,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "26/08/2026"
+      "dataUltimaEntrada": "26/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6503",
@@ -317,7 +358,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/08/2026"
+      "dataUltimaEntrada": "24/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6502",
@@ -328,7 +370,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/08/2026"
+      "dataUltimaEntrada": "24/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6495",
@@ -339,7 +382,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "19/08/2026"
+      "dataUltimaEntrada": "19/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6491",
@@ -350,7 +394,8 @@
       "preco": "189,90",
       "precoConsignado": "189,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026"
+      "dataUltimaEntrada": "17/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6490",
@@ -361,7 +406,8 @@
       "preco": "189,90",
       "precoConsignado": "189,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026"
+      "dataUltimaEntrada": "17/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6489",
@@ -372,7 +418,8 @@
       "preco": "52,90",
       "precoConsignado": "52,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/08/2026"
+      "dataUltimaEntrada": "14/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6487",
@@ -383,7 +430,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6486",
@@ -394,7 +442,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6484",
@@ -405,7 +454,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6483",
@@ -416,7 +466,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6479",
@@ -427,7 +478,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6478",
@@ -438,7 +490,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6476",
@@ -449,7 +502,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6474",
@@ -460,7 +514,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6472",
@@ -471,7 +526,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6471",
@@ -482,7 +538,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6470",
@@ -493,7 +550,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6469",
@@ -504,7 +562,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6468",
@@ -515,7 +574,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6467",
@@ -526,7 +586,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6465",
@@ -537,7 +598,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6464",
@@ -548,7 +610,8 @@
       "preco": "39,90",
       "precoConsignado": "39,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#IF"
     },
     {
       "codigo": "6462",
@@ -559,7 +622,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026"
+      "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6455",
@@ -570,7 +634,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/08/2026"
+      "dataUltimaEntrada": "12/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6438",
@@ -581,7 +646,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6437",
@@ -592,7 +658,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6436",
@@ -603,7 +670,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6434",
@@ -614,7 +682,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6426",
@@ -625,7 +694,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6425",
@@ -636,7 +706,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6424",
@@ -647,7 +718,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6422",
@@ -658,7 +730,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6414",
@@ -669,7 +742,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/07/2026"
+      "dataUltimaEntrada": "30/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6413",
@@ -680,7 +754,8 @@
       "preco": "54,90",
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/07/2026"
+      "dataUltimaEntrada": "30/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6410",
@@ -691,7 +766,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/07/2026"
+      "dataUltimaEntrada": "30/07/2026",
+      "tags": "#NV#NV"
     },
     {
       "codigo": "6409",
@@ -702,7 +778,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/07/2026"
+      "dataUltimaEntrada": "30/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6404",
@@ -713,7 +790,8 @@
       "preco": "74,90",
       "precoConsignado": "74,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6401",
@@ -724,7 +802,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6398",
@@ -734,7 +813,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6393",
@@ -745,7 +825,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "18/09/2026"
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6392",
@@ -756,7 +837,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "18/09/2026"
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6391",
@@ -767,7 +849,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6389",
@@ -778,7 +861,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6383",
@@ -789,7 +873,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6382",
@@ -800,7 +885,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6377",
@@ -811,7 +897,8 @@
       "preco": "74,90",
       "precoConsignado": "74,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6376",
@@ -822,7 +909,8 @@
       "preco": "64,90",
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6375",
@@ -832,7 +920,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6373",
@@ -843,7 +932,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6371",
@@ -853,7 +943,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/09/2026"
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6370",
@@ -863,7 +954,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/07/2026"
+      "dataUltimaEntrada": "28/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6365",
@@ -873,7 +965,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "23/07/2026"
+      "dataUltimaEntrada": "23/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6363",
@@ -883,7 +976,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6361",
@@ -893,7 +987,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6360",
@@ -903,7 +998,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6357",
@@ -913,7 +1009,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026"
+      "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6337",
@@ -924,7 +1021,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6336",
@@ -935,7 +1033,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6328",
@@ -946,7 +1045,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6326",
@@ -957,7 +1057,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6320",
@@ -968,7 +1069,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "28/06/2026"
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6311",
@@ -979,7 +1081,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026"
+      "dataUltimaEntrada": "17/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6295",
@@ -990,7 +1093,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "26/06/2026"
+      "dataUltimaEntrada": "26/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6292",
@@ -1001,7 +1105,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "26/06/2026"
+      "dataUltimaEntrada": "26/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6290",
@@ -1012,7 +1117,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "26/06/2026"
+      "dataUltimaEntrada": "26/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6273",
@@ -1023,7 +1129,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "21/06/2026"
+      "dataUltimaEntrada": "21/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6264",
@@ -1033,7 +1140,8 @@
       "preco": "179,90",
       "precoConsignado": "179,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "29/09/2026"
+      "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6251",
@@ -1044,7 +1152,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/06/2026"
+      "dataUltimaEntrada": "11/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6235",
@@ -1055,7 +1164,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6227",
@@ -1066,7 +1176,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6212",
@@ -1077,7 +1188,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026"
+      "dataUltimaEntrada": "09/06/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6200",
@@ -1088,7 +1200,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6169",
@@ -1099,7 +1212,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6168",
@@ -1110,7 +1224,8 @@
       "preco": "159,90",
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6162",
@@ -1121,7 +1236,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6159",
@@ -1132,7 +1248,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2026"
+      "dataUltimaEntrada": "21/05/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6155",
@@ -1143,7 +1260,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6147",
@@ -1153,7 +1271,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Cor Prata",
-      "dataUltimaEntrada": "20/05/2026"
+      "dataUltimaEntrada": "20/05/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6125",
@@ -1164,7 +1283,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/05/2026"
+      "dataUltimaEntrada": "07/05/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6118",
@@ -1175,7 +1295,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/05/2026"
+      "dataUltimaEntrada": "06/05/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6108",
@@ -1186,7 +1307,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026"
+      "dataUltimaEntrada": "17/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6094",
@@ -1196,7 +1318,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6089",
@@ -1207,7 +1330,8 @@
       "preco": "102,90",
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6079",
@@ -1218,7 +1342,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6071",
@@ -1229,7 +1354,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6064",
@@ -1240,7 +1366,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6059",
@@ -1251,7 +1378,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026"
+      "dataUltimaEntrada": "21/04/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6025",
@@ -1262,7 +1390,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/04/2026"
+      "dataUltimaEntrada": "01/04/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6014",
@@ -1273,7 +1402,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
+      "dataUltimaEntrada": "31/03/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6009",
@@ -1284,7 +1414,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
+      "dataUltimaEntrada": "31/03/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6004",
@@ -1295,7 +1426,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026"
+      "dataUltimaEntrada": "31/03/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5982",
@@ -1306,7 +1438,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/03/2026"
+      "dataUltimaEntrada": "11/03/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5972",
@@ -1316,7 +1449,8 @@
       "preco": "149,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "09/03/2026"
+      "dataUltimaEntrada": "09/03/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5942",
@@ -1327,7 +1461,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026"
+      "dataUltimaEntrada": "03/03/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5927",
@@ -1338,7 +1473,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "28/02/2026"
+      "dataUltimaEntrada": "28/02/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5914",
@@ -1349,7 +1485,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/02/2026"
+      "dataUltimaEntrada": "22/02/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5900",
@@ -1360,7 +1497,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/02/2026"
+      "dataUltimaEntrada": "22/02/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5846",
@@ -1371,7 +1509,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5735",
@@ -1382,7 +1521,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5682",
@@ -1392,7 +1532,8 @@
       "preco": "169,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/07/2026"
+      "dataUltimaEntrada": "22/07/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5676",
@@ -1403,7 +1544,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "15/07/2026"
+      "dataUltimaEntrada": "15/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5573",
@@ -1414,7 +1556,8 @@
       "preco": "109,90",
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
+      "dataUltimaEntrada": "20/11/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "5563",
@@ -1425,7 +1568,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025"
+      "dataUltimaEntrada": "20/11/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "5521",
@@ -1436,7 +1580,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026"
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "5416",
@@ -1447,7 +1592,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Inox",
-      "dataUltimaEntrada": "06/11/2025"
+      "dataUltimaEntrada": "06/11/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "5312",
@@ -1458,7 +1604,8 @@
       "preco": "104,90",
       "precoConsignado": "104,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "02/11/2025"
+      "dataUltimaEntrada": "02/11/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "5213",
@@ -1469,7 +1616,8 @@
       "preco": "134,90",
       "precoConsignado": "134,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/10/2025"
+      "dataUltimaEntrada": "29/10/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5169",
@@ -1480,7 +1628,8 @@
       "preco": "129,90",
       "precoConsignado": "129,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
+      "dataUltimaEntrada": "24/10/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "5060",
@@ -1491,7 +1640,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "14/08/2026"
+      "dataUltimaEntrada": "14/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5015",
@@ -1502,7 +1652,8 @@
       "preco": "62,90",
       "precoConsignado": "62,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4997",
@@ -1513,7 +1664,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/10/2025"
+      "dataUltimaEntrada": "05/10/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4957",
@@ -1524,7 +1676,8 @@
       "preco": "92,90",
       "precoConsignado": "92,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4946",
@@ -1535,7 +1688,8 @@
       "preco": "49,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2026"
+      "dataUltimaEntrada": "08/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "4945",
@@ -1546,7 +1700,8 @@
       "preco": "34,90",
       "precoConsignado": "34,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025"
+      "dataUltimaEntrada": "27/09/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "4876",
@@ -1557,7 +1712,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "12/09/2025"
+      "dataUltimaEntrada": "12/09/2025",
+      "tags": "#NV"
     },
     {
       "codigo": "4857",
@@ -1568,7 +1724,8 @@
       "preco": "72,90",
       "precoConsignado": "72,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "11/09/2025"
+      "dataUltimaEntrada": "11/09/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4743",
@@ -1579,7 +1736,8 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "08/08/2025"
+      "dataUltimaEntrada": "08/08/2025",
+      "tags": "#NV#IF"
     },
     {
       "codigo": "4688",
@@ -1590,7 +1748,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/08/2026"
+      "dataUltimaEntrada": "31/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4568",
@@ -1601,7 +1760,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ródio Branco",
-      "dataUltimaEntrada": "09/10/2026"
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#NY"
     },
     {
       "codigo": "4546",
@@ -1612,7 +1772,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/07/2025"
+      "dataUltimaEntrada": "05/07/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4401",
@@ -1623,7 +1784,8 @@
       "preco": "59,90",
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "30/05/2026"
+      "dataUltimaEntrada": "30/05/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "3828",
@@ -1634,7 +1796,20 @@
       "preco": "69,90",
       "precoConsignado": "69,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "28/06/2026"
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "3374",
+      "descricao": "BRINCO EAR JACKET 2 EM 1 - ESFERA E 3 FOLHAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3374.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#DT#NV#EX"
     },
     {
       "codigo": "3349",
@@ -1645,7 +1820,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026"
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "3284",
@@ -1656,7 +1832,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026"
+      "dataUltimaEntrada": "29/05/2026",
+      "tags": "#DT#NV"
     },
     {
       "codigo": "2623",
@@ -1667,7 +1844,8 @@
       "preco": "139,90",
       "precoConsignado": "139,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "1490",
@@ -1678,7 +1856,8 @@
       "preco": "79,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2026"
+      "dataUltimaEntrada": "06/10/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "1076",
@@ -1689,7 +1868,8 @@
       "preco": "89,90",
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026"
+      "dataUltimaEntrada": "17/08/2026",
+      "tags": "#NV#DT"
     }
   ]
 }
