@@ -48,6 +48,14 @@
                 }
 
                 const catalogo = await resposta.text();
+                const estilosModalAndressa = [
+                    '<style>',
+                    '#imageModal .modal-content { display: flex; flex-direction: column; }',
+                    '#imageModal .modal-content > .close { position: static; order: 1; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; margin-top: 10px; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: transparent; font-size: 0; }',
+                    '#imageModal .modal-content > .close::after { content: "Fechar visualização"; color: #5f5748; font-size: 14px; font-weight: bold; }',
+                    '#imageModal .modal-content > .close:hover { background: #e8dcc0; }',
+                    '</style>'
+                ].join('');
                 const catalogoDaAndressa = catalogo
                     .replaceAll('imagens/logo.png', 'imagens/LogoAndressa.png')
                     .replace(
@@ -57,7 +65,8 @@
                     .replace(
                         '<title>Renata - Semijoias e Acessórios</title>',
                         '<title>Catálogo da Andressa</title>'
-                    );
+                    )
+                    .replace('</head>', `${estilosModalAndressa}</head>`);
 
                 document.open();
                 document.write(catalogoDaAndressa);
