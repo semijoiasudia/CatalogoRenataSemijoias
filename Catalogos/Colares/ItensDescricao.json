@@ -63,7 +63,7 @@
     },
     {
       "codigo": "1501",
-      "descricao": "COLAR FIO DE NYLON CORACAO CRAVEJADO 41+5CM",
+      "descricao": "COLAR FIO DE NYLON CORAÇÃO CRAVEJADO 41+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "1501.jpg",
       "pastaFotos": "Catalogos/Colares/",
@@ -110,6 +110,18 @@
       "tags": "#NY#DT"
     },
     {
+      "codigo": "6498",
+      "descricao": "COLAR N. SRA. APARECIDA CRAVEJADA AZUL E CRISTAL 46+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6498.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/08/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6478",
       "descricao": "COLAR MEDALHA ESPÍRITO SANTO VAZADA 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -120,6 +132,18 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/08/2026",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6447",
+      "descricao": "COLAR DUPLO BOLINHAS E CORAÇÃO SOLTO 35/40 + 12CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6447.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "119,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV"
     },
     {
       "codigo": "6159",
@@ -145,6 +169,17 @@
       "dataUltimaEntrada": "18/05/2026"
     },
     {
+      "codigo": "6144",
+      "descricao": "COLAR BOTÃO TRABALHADO 39+4CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6144.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/05/2026"
+    },
+    {
       "codigo": "6122",
       "descricao": "COLAR CORAÇÃO E BORBOLETA CRAVEJADOS 49CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -154,18 +189,6 @@
       "precoConsignado": "119,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/05/2026"
-    },
-    {
-      "codigo": "6118",
-      "descricao": "COLAR CRUCIFIXO JESUS CRISTO 30MM - 44+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6118.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "preco": "119,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/05/2026",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "6049",
@@ -281,6 +304,17 @@
       "dataUltimaEntrada": "02/11/2025"
     },
     {
+      "codigo": "5297",
+      "descricao": "COLAR ELO PORTUGUÊS 3MM 45+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5297.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "129,90",
+      "precoConsignado": "129,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "02/11/2025"
+    },
+    {
       "codigo": "5296",
       "descricao": "COLAR ELO PORTUGUÊS 3MM 45+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -334,6 +368,17 @@
       "precoConsignado": "149,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "4932",
+      "descricao": "COLAR GRAVATINHA 2 GOTAS ORGANICAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4932.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "134,90",
+      "precoConsignado": "134,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "16/09/2025"
     },
     {
       "codigo": "4928",
@@ -413,6 +458,17 @@
       "precoConsignado": "102,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/03/2025"
+    },
+    {
+      "codigo": "3963",
+      "descricao": "COLAR 3 FLORES VAZADAS 49+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3963.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "preco": "84,90",
+      "precoConsignado": "84,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/01/2025"
     }
   ]
 }

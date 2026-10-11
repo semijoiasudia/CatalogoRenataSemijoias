@@ -2,6 +2,30 @@
   "categoria": "INFANTIL",
   "produtos": [
     {
+      "codigo": "6622",
+      "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS TAM PP",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6622.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#IF"
+    },
+    {
+      "codigo": "6614",
+      "descricao": "BRINCO ARGOLINHA CLICK BORBOLETA VAZADA TAM P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6614.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "64,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/10/2026",
+      "tags": "#NV#IF"
+    },
+    {
       "codigo": "6464",
       "descricao": "BRINCO PONTO DE LUZ LILÁS 4MM INFANTIL/ADULTO",
       "tipo": "Semijoia banhada a Prata",
@@ -11,6 +35,18 @@
       "precoConsignado": "39,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
+      "tags": "#NV#IF"
+    },
+    {
+      "codigo": "5964",
+      "descricao": "BRINCO TREVO 4 FOLHAS ZIRCÔNIAS COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5964.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "07/03/2026",
       "tags": "#NV#IF"
     },
     {
@@ -48,6 +84,18 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025",
       "tags": "#IF"
+    },
+    {
+      "codigo": "4902",
+      "descricao": "BRINCO INFANTIL GATINHO COM LACINHO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4902.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025",
+      "tags": "#IF#NV"
     },
     {
       "codigo": "4813",
