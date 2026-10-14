@@ -194,18 +194,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6375",
-      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO PRETO",
-      "imagem": "6375.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6374",
       "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO DOURADO",
       "imagem": "6374.jpg",
@@ -302,15 +290,27 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6303",
-      "descricao": "RELOGIO REDONDO - CRAVEJADO - ALGARISMOS",
-      "imagem": "6303.jpg",
+      "codigo": "6352",
+      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
+      "imagem": "6352.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
+      "preco": "179,90",
+      "precoConsignado": "179,90",
       "banho": "Inox Dourado",
+      "dataUltimaEntrada": "14/07/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6301",
+      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
+      "imagem": "6301.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "109,90",
+      "precoConsignado": "109,90",
+      "banho": "Cor Ouro",
       "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "18"
+      "subcategoria_id": "14",
+      "tags": "#NV"
     },
     {
       "codigo": "6277",
@@ -323,6 +323,18 @@
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14",
       "tags": "#DT"
+    },
+    {
+      "codigo": "6275",
+      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
+      "imagem": "6275.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "22/06/2026",
+      "subcategoria_id": "14",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6256",
