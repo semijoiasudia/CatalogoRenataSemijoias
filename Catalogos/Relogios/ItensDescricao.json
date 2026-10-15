@@ -14,18 +14,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6598",
-      "descricao": "RELOGIO ESPORTIVO DIGITAL NUDE",
-      "imagem": "6598.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "129,90",
-      "precoConsignado": "129,90",
-      "banho": " ",
-      "dataUltimaEntrada": "06/10/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6597",
       "descricao": "RELOGIO ESPORTIVO DIGITAL ROSA",
       "imagem": "6597.jpg",
@@ -158,18 +146,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6371",
-      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
-      "imagem": "6371.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "159,90",
-      "precoConsignado": "159,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "28/09/2026",
-      "subcategoria_id": "14",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6543",
       "descricao": "RELOGIO REDONDO DOURADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6543.jpg",
@@ -192,18 +168,6 @@
       "dataUltimaEntrada": "29/07/2026",
       "subcategoria_id": "14",
       "tags": "#NV"
-    },
-    {
-      "codigo": "6374",
-      "descricao": "RELOGIO CASIO UNISSEX ANALÓGICO E DIGITAL - FUNDO DOURADO",
-      "imagem": "6374.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "169,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "6370",
@@ -301,18 +265,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6301",
-      "descricao": "RELOGIO REDONDO - DOURADO - PULSEIRA ELASTICA",
-      "imagem": "6301.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "109,90",
-      "precoConsignado": "109,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "14",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6277",
       "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
       "imagem": "6277.jpg",
@@ -335,6 +287,17 @@
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6274",
+      "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
+      "imagem": "6274.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "preco": "169,90",
+      "precoConsignado": "169,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "22/06/2026",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6256",
