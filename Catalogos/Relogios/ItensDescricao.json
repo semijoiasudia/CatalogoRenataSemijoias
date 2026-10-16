@@ -234,12 +234,12 @@
       "descricao": "RELOGIO BRACELETE INSP REDONDO FORMAS GEOMÉTRICAS",
       "imagem": "6398.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
+      "preco": "79,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "29/07/2026",
       "subcategoria_id": "14",
-      "tags": "#NV"
+      "tags": "#NV#BK"
     },
     {
       "codigo": "6370",
@@ -326,18 +326,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6352",
-      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
-      "imagem": "6352.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "preco": "179,90",
-      "precoConsignado": "179,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "14/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6304",
       "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
       "imagem": "6304.jpg",
@@ -354,12 +342,12 @@
       "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
       "imagem": "6277.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
+      "preco": "79,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14",
-      "tags": "#DT"
+      "tags": "#DT#BK"
     },
     {
       "codigo": "6275",
@@ -424,34 +412,36 @@
       "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
       "imagem": "5972.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "149,90",
+      "preco": "79,90",
       "precoConsignado": "149,90",
       "banho": "Inox",
       "dataUltimaEntrada": "09/03/2026",
       "subcategoria_id": "14",
-      "tags": "#NV"
+      "tags": "#BK"
     },
     {
       "codigo": "5874",
       "descricao": "RELOGIO COBRA INSPIRAÇÃO FUNDO DOURADO",
       "imagem": "5874.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "119,90",
+      "preco": "59,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "10/02/2026",
-      "subcategoria_id": "18"
+      "subcategoria_id": "18",
+      "tags": "#BK"
     },
     {
       "codigo": "5700",
       "descricao": "RELOGIO LEISITE - AZUL CLARO M2",
       "imagem": "5700.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "preco": "89,90",
+      "preco": "49,90",
       "precoConsignado": "89,90",
       "banho": " ",
       "dataUltimaEntrada": "30/11/2025",
-      "subcategoria_id": "15"
+      "subcategoria_id": "15",
+      "tags": "#BK"
     }
   ]
 }
