@@ -1,0 +1,17 @@
+﻿{
+  "categoria": "Black Friday",
+  "produtos": [
+    {
+      "codigo": "3703",
+      "descricao": "BRINCO FLOR COM PONTO DE LUZ P",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3703.jpg",
+      "pastaFotos": "Catalogos/Black Friday/",
+      "preco": "39,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/11/2024",
+      "tags": "#BK"
+    }
+  ]
+}
