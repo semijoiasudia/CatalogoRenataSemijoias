@@ -1,5 +1,5 @@
 ﻿{
-  "categoria": "DESTAQUES",
+  "categoria": "Destaques",
   "produtos": [
     {
       "codigo": "6623",
@@ -138,6 +138,28 @@
       "precoConsignado": "159,90",
       "banho": "Cor Ouro",
       "dataUltimaEntrada": "29/09/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6582",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO PRETO",
+      "imagem": "6582.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6581",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO CINZA",
+      "imagem": "6581.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "preco": "159,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "28/09/2026",
       "tags": "#NV#DT"
     },
     {
