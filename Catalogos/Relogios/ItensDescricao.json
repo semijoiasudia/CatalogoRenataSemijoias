@@ -34,6 +34,7 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/09/2026",
+      "subcategoria_id": "18",
       "tags": "#NV"
     },
     {
@@ -45,6 +46,7 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/09/2026",
+      "subcategoria_id": "18",
       "tags": "#NV#DT"
     },
     {
@@ -56,6 +58,7 @@
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "30/09/2026",
+      "subcategoria_id": "18",
       "tags": "#NV#DT"
     },
     {
@@ -331,6 +334,7 @@
       "precoConsignado": "179,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "14/07/2026",
+      "subcategoria_id": "18",
       "tags": "#NV#DT"
     },
     {
@@ -435,7 +439,8 @@
       "preco": "119,90",
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "10/02/2026"
+      "dataUltimaEntrada": "10/02/2026",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "5700",
