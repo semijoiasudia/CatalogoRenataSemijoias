@@ -2,6 +2,18 @@
   "categoria": "Infantil",
   "produtos": [
     {
+      "codigo": "6633",
+      "descricao": "BRINCO ARGOLA COM 2 PINGENTES DE ESTRELA ADULTO/INFANTIL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6633.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "preco": "69,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/10/2026",
+      "tags": "#NV#IF"
+    },
+    {
       "codigo": "6622",
       "descricao": "BRINCO ARGOLA CLICK CRAVEJADA COLORS TAM PP",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -23,18 +35,6 @@
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/10/2026",
-      "tags": "#NV#IF"
-    },
-    {
-      "codigo": "6464",
-      "descricao": "BRINCO PONTO DE LUZ LILÁS 4MM INFANTIL/ADULTO",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6464.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "preco": "39,90",
-      "precoConsignado": "39,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026",
       "tags": "#NV#IF"
     },
     {
