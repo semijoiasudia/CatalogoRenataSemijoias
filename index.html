@@ -1485,6 +1485,24 @@
             line-height: 1.45;
         }
 
+        .gallery .descricao-completa {
+            margin-top: 4px;
+            color: var(--color-gold-dark);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.35;
+            white-space: pre-line;
+        }
+
+        .modal-info .descricao-completa {
+            margin: -5px 0 10px;
+            color: var(--color-gold-dark);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.35;
+            white-space: pre-line;
+        }
+
         .tipo-produto {
             color: var(--color-brand);
             font-size: 11px;
@@ -1679,7 +1697,7 @@
             <div class="location-text">Loja em<br>Uberlândia-MG</div>
             <div class="logo-protection"></div>
         </div>
-        <h2 style="font-size: 12px; letter-spacing: 2px; font-weight: normal; color: #333; margin: 30px 0 0; padding: 0; text-align: center;">SEJA BEM VINDA AO NOSSO CATÁLOGO ONLINE!</h2>
+        <h2 style="font-size: 12px; letter-spacing: 2px; font-weight: normal; color: #333; margin: 30px 0 0; padding: 0; text-align: center;">SEJA BEM VINDA AO NOSSO CATÁLOGO!</h2>
     </header>
     
     <!-- Ícone da Sacola (à esquerda) -->
@@ -2564,8 +2582,8 @@
         }
 
         // A promoção Black Friday só vale quando essa categoria estiver ativa.
-        // Seus códigos são então aplicados às ocorrências do mesmo produto nas
-        // demais categorias do catálogo.
+        // Seus códigos são aplicados às ocorrências do mesmo produto nas demais
+        // categorias do catálogo.
         async function loadBlackFridayCodes() {
             blackFridayCodes = new Set();
 
@@ -2640,6 +2658,7 @@
                     
                     descricoes[produto.codigo] = {
                         descricao: produto.descricao,
+                        descricaoCompleta: produto.descricaoCompleta || "",
                         tipo: produto.tipo || "", // Adicionando o tipo ao objeto
                         preco: precoDisplay,
                         precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
@@ -2935,8 +2954,9 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, preco, precoCarrinho, banho, tipo, subcategoriaId, exclusivo, blackFriday } = descricoes[codigo] || {
+                const { descricao, descricaoCompleta, preco, precoCarrinho, banho, tipo, subcategoriaId, exclusivo, blackFriday } = descricoes[codigo] || {
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                    descricaoCompleta: "",
                     preco: "Preço não disponível",
                     precoCarrinho: "Preço não disponível",
                     banho: "",
@@ -3004,6 +3024,13 @@
                     desc.textContent = capitalizarPrimeiraLetra(descricao);
                 }
 
+                let descricaoCompletaElement = null;
+                if (descricaoCompleta && descricaoCompleta.trim() !== "") {
+                    descricaoCompletaElement = document.createElement('div');
+                    descricaoCompletaElement.className = 'descricao-completa';
+                    descricaoCompletaElement.textContent = descricaoCompleta;
+                }
+
                 const precoElement = document.createElement('div');
                 precoElement.className = 'preco';
                 // Se tiver HTML, use innerHTML em vez de textContent
@@ -3028,6 +3055,10 @@
                 addToCartBtn.onclick = (e) => addToCartFromGallery(e, codigo, descricao, preco, file.download_url);
 
                 contentWrapper.appendChild(desc);
+
+                if (descricaoCompletaElement) {
+                    contentWrapper.appendChild(descricaoCompletaElement);
+                }
 
                 if (exclusivo) {
                     const exclusiveTag = document.createElement('div');
@@ -3158,8 +3189,9 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, preco, precoCarrinho, tipo, subcategoriaId, exclusivo, blackFriday } = descricoes[codigo] || {
+            const { descricao, descricaoCompleta, preco, precoCarrinho, tipo, subcategoriaId, exclusivo, blackFriday } = descricoes[codigo] || {
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
+                descricaoCompleta: "",
                 preco: "Preço não disponível",
                 precoCarrinho: "Preço não disponível",
                 tipo: "",
@@ -3196,19 +3228,14 @@
                 captureArea.appendChild(blackFridayRibbon);
             }
 
-            // Aqui adicionamos o tipo, caso exista
-            let descricaoCompleta;
-            if (tipo && tipo.trim() !== "") {
-                descricaoCompleta = `<span class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</span> ${capitalizarPrimeiraLetra(descricao)}`;
-            } else {
-                descricaoCompleta = capitalizarPrimeiraLetra(descricao);
-            }
-
             let descricaoHTML = '';
             if (tipo && tipo.trim() !== "") {
                 descricaoHTML = `<div class="tipo-produto">${capitalizarPrimeiraLetra(tipo)}</div>`;
             }
             descricaoHTML += `<div class="descricao">${capitalizarPrimeiraLetra(descricao)}</div>`;
+            if (descricaoCompleta && descricaoCompleta.trim() !== "") {
+                descricaoHTML += `<div class="descricao-completa">${escapeHtml(descricaoCompleta)}</div>`;
+            }
 
             let subcategoriaHTML = '';
 
