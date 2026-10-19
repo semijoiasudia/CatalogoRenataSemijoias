@@ -2,6 +2,18 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "5278",
+      "descricao": "INOX PULSEIRA MEDALHA SÃO BENTO",
+      "tipo": "Aço Inox",
+      "imagem": "5278.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "preco": "59,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6273",
       "descricao": "INOX PULSEIRA GOTAS PEROLADAS E CRISTAIS",
       "tipo": "Aço Inox",
