@@ -23,7 +23,8 @@
       "precoConsignado": "104,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "31/08/2026",
-      "tags": "#NV#DT#EX"
+      "tags": "#NV#DT#EX",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "3374",
@@ -35,7 +36,8 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/10/2026",
-      "tags": "#DT#NV#EX"
+      "tags": "#DT#NV#EX",
+      "subcategoria_id": "11"
     }
   ]
 }

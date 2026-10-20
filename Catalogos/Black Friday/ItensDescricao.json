@@ -10,7 +10,8 @@
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV#BK"
+      "tags": "#EB#NV#BK",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "6277",
@@ -21,7 +22,8 @@
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/06/2026",
-      "tags": "#DT#BK"
+      "tags": "#DT#BK",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "5972",
@@ -32,7 +34,8 @@
       "precoConsignado": "149,90",
       "banho": "Inox",
       "dataUltimaEntrada": "09/03/2026",
-      "tags": "#BK"
+      "tags": "#EB#BK",
+      "subcategoria_id": "14"
     },
     {
       "codigo": "5874",
@@ -43,7 +46,8 @@
       "precoConsignado": "119,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "10/02/2026",
-      "tags": "#BK"
+      "tags": "#BK",
+      "subcategoria_id": "18"
     },
     {
       "codigo": "5700",
@@ -54,11 +58,13 @@
       "precoConsignado": "89,90",
       "banho": " ",
       "dataUltimaEntrada": "30/11/2025",
-      "tags": "#BK"
+      "tags": "#EB#BK",
+      "subcategoria_id": "15"
     },
     {
       "codigo": "5558",
       "descricao": "ANEL TREVO TRABALHADO - TAMANHOS",
+      "descricaoCompleta": "Disponível nos tamanhos 16 e 23",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "5558.jpg",
       "pastaFotos": "Catalogos/Black Friday/",
@@ -66,7 +72,7 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/11/2025",
-      "tags": "#BK"
+      "tags": "#EB#BK"
     },
     {
       "codigo": "5104",
@@ -174,7 +180,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/07/2025",
-      "tags": "#IF#BK"
+      "tags": "#IF#BK",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4093",
@@ -198,7 +205,8 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/11/2024",
-      "tags": "#BK"
+      "tags": "#BK",
+      "subcategoria_id": "8"
     }
   ]
 }

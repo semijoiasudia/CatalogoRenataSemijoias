@@ -11,7 +11,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "18/10/2026",
-      "tags": "#NV#IF"
+      "tags": "#NV#IF",
+      "subcategoria_id": "1"
     },
     {
       "codigo": "6622",
@@ -23,7 +24,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/10/2026",
-      "tags": "#NV#IF"
+      "tags": "#NV#IF",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "6614",
@@ -35,7 +37,8 @@
       "precoConsignado": "64,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/10/2026",
-      "tags": "#NV#IF"
+      "tags": "#NV#IF",
+      "subcategoria_id": "4"
     },
     {
       "codigo": "5964",
@@ -47,7 +50,8 @@
       "precoConsignado": "59,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/03/2026",
-      "tags": "#NV#IF"
+      "tags": "#NV#IF",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "5962",
@@ -59,7 +63,8 @@
       "precoConsignado": "54,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/03/2026",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "3"
     },
     {
       "codigo": "5958",
@@ -71,7 +76,8 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/03/2026",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5945",
@@ -83,7 +89,8 @@
       "precoConsignado": "32,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/03/2026",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "2"
     },
     {
       "codigo": "5905",
@@ -95,7 +102,8 @@
       "precoConsignado": "32,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/02/2026",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5898",
@@ -107,7 +115,8 @@
       "precoConsignado": "34,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "22/02/2026",
-      "tags": "#NV#IF"
+      "tags": "#NV#IF",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5897",
@@ -119,7 +128,8 @@
       "precoConsignado": "34,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/02/2026",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "5131",
@@ -131,7 +141,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "8"
     },
     {
       "codigo": "4902",
@@ -143,7 +154,8 @@
       "precoConsignado": "39,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/09/2025",
-      "tags": "#IF#NV"
+      "tags": "#IF#NV",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4813",
@@ -151,11 +163,11 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4813.jpg",
       "pastaFotos": "Catalogos/Infantil/",
-      "precoOferta": "129,90",
+      "precoOferta": "119,90",
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025",
-      "tags": "#IF"
+      "tags": "#IF#EB"
     },
     {
       "codigo": "4747",
@@ -215,7 +227,8 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/07/2025",
-      "tags": "#IF#BK"
+      "tags": "#IF#BK",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4496",
@@ -275,7 +288,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "20/02/2025",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "3901",
@@ -287,7 +301,8 @@
       "precoConsignado": "42,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/01/2025",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "3553",
@@ -299,7 +314,8 @@
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/10/2024",
-      "tags": "#IF"
+      "tags": "#IF",
+      "subcategoria_id": "9"
     }
   ]
 }
