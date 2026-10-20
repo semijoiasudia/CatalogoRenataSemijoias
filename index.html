@@ -1863,6 +1863,7 @@
         let descricoes = {};
         let subcategoriasExibicao = {};
         let blackFridayCodes = new Set();
+        let promocoesAtivasPorCodigo = new Map();
         
         const itemsPerPage = 20;
         let currentPage = 1;
@@ -2581,38 +2582,68 @@
             }
         }
 
-        // A promoção Black Friday só vale quando essa categoria estiver ativa.
-        // Seus códigos são aplicados às ocorrências do mesmo produto nas demais
-        // categorias do catálogo.
-        async function loadBlackFridayCodes() {
-            blackFridayCodes = new Set();
+        function normalizarTipoPreco(tipoPreco) {
+            return String(tipoPreco || 'padrão')
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .trim()
+                .toLowerCase();
+        }
 
-            const categoriaBlackFriday = categoriasAtivas.find(
-                categoria => String(categoria.name || '').trim().toLowerCase() === 'black friday'
+        // Categorias ativas configuradas como oferta fornecem o valor
+        // promocional para todas as ocorrências dos seus produtos no catálogo.
+        async function loadPromocoesAtivas() {
+            blackFridayCodes = new Set();
+            promocoesAtivasPorCodigo = new Map();
+
+            const categoriasPromocionais = categoriasAtivas.filter(
+                categoria => normalizarTipoPreco(categoria.tipoPreco) === 'oferta'
             );
 
-            if (!categoriaBlackFriday) {
-                console.log('Categoria Black Friday inativa; preços e faixas Black Friday não serão exibidos.');
+            if (categoriasPromocionais.length === 0) {
+                console.log('Nenhuma categoria de oferta está ativa.');
                 return;
             }
 
-            try {
-                const response = await fetch(`${categoriaBlackFriday.diretorio}/ItensDescricao.json`);
-                if (!response.ok) {
-                    throw new Error(`Erro HTTP: ${response.status}`);
+            const results = await Promise.allSettled(
+                categoriasPromocionais.map(async (categoria) => {
+                    const response = await fetch(`${categoria.diretorio}/ItensDescricao.json`);
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP: ${response.status}`);
+                    }
+                    return response.json();
+                })
+            );
+
+            results.forEach((result, index) => {
+                const categoria = categoriasPromocionais[index];
+                if (result.status !== 'fulfilled') {
+                    console.warn(`Não foi possível carregar a categoria promocional ${categoria.name}.`);
+                    return;
                 }
 
-                const data = await response.json();
-                data.produtos.forEach((produto) => {
-                    if (/(?:^|#)BK(?:#|$)/.test(String(produto.tags || ''))) {
+                const blackFriday = String(categoria.name || '').trim().toLowerCase() === 'black friday';
+                result.value.produtos.forEach((produto) => {
+                    const codigo = String(produto.codigo);
+                    const promocao = {
+                        precoOferta: produto.precoOferta,
+                        precoConsignado: produto.precoConsignado,
+                        categoria: categoria.name
+                    };
+
+                    // Black Friday tem prioridade caso o mesmo código também
+                    // esteja em outra categoria promocional.
+                    if (!promocoesAtivasPorCodigo.has(codigo) || blackFriday) {
+                        promocoesAtivasPorCodigo.set(codigo, promocao);
+                    }
+
+                    if (blackFriday && /(?:^|#)BK(?:#|$)/.test(String(produto.tags || ''))) {
                         blackFridayCodes.add(String(produto.codigo));
                     }
                 });
-            } catch (error) {
-                console.warn('Não foi possível carregar os produtos Black Friday.', error);
-            }
+            });
 
-            console.log(`Produtos Black Friday identificados: ${blackFridayCodes.size}`);
+            console.log(`Produtos promocionais identificados: ${promocoesAtivasPorCodigo.size}. Black Friday: ${blackFridayCodes.size}.`);
         }
 
         // Função para carregar todos os produtos de todas as categorias - removida pois não é mais necessária
@@ -2632,24 +2663,24 @@
                 
                 // Adicionar os produtos ao objeto descricoes
                 data.produtos.forEach(produto => {
+                    const categoriaAtual = categoriasAtivas.find(
+                        categoria => categoria.diretorio === categoryDir
+                    );
+                    const categoriaEhOferta = normalizarTipoPreco(categoriaAtual?.tipoPreco) === 'oferta';
+                    const promocao = promocoesAtivasPorCodigo.get(String(produto.codigo));
                     const blackFriday = blackFridayCodes.has(String(produto.codigo));
-                    const precoNormal = produto.precoConsignado || produto.preco;
+                    const precoNormal = produto.precoConsignado || promocao?.precoConsignado;
+                    const precoPromocional = promocao?.precoOferta || produto.precoOferta;
+                    const temOferta = categoriaEhOferta || Boolean(promocao);
                     let precoDisplay;
                     let precoCarrinho = formatarPreco(
-                        blackFriday ? produto.preco : (produto.precoOferta || precoNormal)
+                        temOferta && precoPromocional ? precoPromocional : precoNormal
                     );
                     let isOferta = false;
                     
-                    // Black Friday: o preço consignado é o valor anterior e o preço é o valor promocional.
-                    if (blackFriday && produto.precoConsignado) {
-                        const precoOriginal = formatarPreco(produto.precoConsignado);
-                        const precoOferta = formatarPreco(produto.preco);
-                        precoDisplay = `<span class="preco-original">De: ${precoOriginal}</span> <span class="preco-oferta">Por: ${precoOferta}</span>`;
-                        isOferta = true;
-                    // Se existir precoOferta, formatar como "De: Por:" para exibição.
-                    } else if (produto.precoOferta) {
+                    if (temOferta && precoNormal && precoPromocional) {
                         const precoOriginal = formatarPreco(precoNormal);
-                        const precoOferta = formatarPreco(produto.precoOferta);
+                        const precoOferta = formatarPreco(precoPromocional);
                         precoDisplay = `<span class="preco-original">De: ${precoOriginal}</span> <span class="preco-oferta">Por: ${precoOferta}</span>`;
                         isOferta = true;
                     } else {
@@ -2691,7 +2722,7 @@
             console.log('Iniciando loadCategories');
             try {
                 await loadCategoriasAtivas();
-                await loadBlackFridayCodes();
+                await loadPromocoesAtivas();
                 
                 // Vamos substituir o dropdown pelo container de botões
                 const categoriesContainer = document.getElementById('categories-container');
