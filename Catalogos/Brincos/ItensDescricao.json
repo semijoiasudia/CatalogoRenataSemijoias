@@ -613,19 +613,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6218",
-      "descricao": "BRINCO TRIO ARGOLA CLICK FORMATO CORAÇÃO",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6218.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "69,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "21",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6455",
       "descricao": "BRINCO 2 EM 1 - EAR JACKET CORAÇÃO VAZADO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1973,11 +1960,12 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "5448.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "34,90",
+      "precoOferta": "29,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/11/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#EB"
     },
     {
       "codigo": "5446",
@@ -2067,15 +2055,16 @@
     },
     {
       "codigo": "5108",
-      "descricao": "BRINCO PANTERA CRAVEJADO CRISTAL",
+      "descricao": "BRINCO PANTERA CRAVEJADO COM ZIRCÔNIA CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "5108.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "42,90",
+      "precoOferta": "39,90",
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "19/10/2025",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#EB"
     },
     {
       "codigo": "5033",
@@ -2491,7 +2480,7 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "14/07/2025",
       "subcategoria_id": "7",
-      "tags": "#IF#BK"
+      "tags": "#IF#EB"
     },
     {
       "codigo": "4563",
