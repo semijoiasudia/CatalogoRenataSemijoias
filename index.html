@@ -713,7 +713,7 @@
             font-size: 13px;
             font-weight: 600;
         }
-        .fale-conosco-btn, .instagram-btn {
+        .fale-conosco-btn {
             background-color: #f8f5ed; /* Dourado champagne bem claro e suave */
             color: #8a8167; /* Cor do texto mais escura para contraste */
             padding: 15px;
@@ -736,13 +736,10 @@
             z-index: 10;
             height: 55px; /* Altura fixa para garantir consistência */
         }
-        .instagram-btn {
-            border-top: 3px solid white; /* Borda branca na parte superior */
-        }
-        .fale-conosco-btn:hover, .instagram-btn:hover {
+        .fale-conosco-btn:hover {
             background-color: #e8d5a9; /* Dourado mais escuro para hover */
         }
-        .fale-conosco-btn img, .instagram-btn img {
+        .fale-conosco-btn img {
             width: 25px;
             height: 25px;
             margin-right: 8px; /* Espaçamento consistente */
@@ -1135,7 +1132,6 @@
         .add-to-cart-btn     { display: none !important; }
         .request-btn         { display: none !important; }
         #faleConoscoBtn      { display: none !important; }
-        #instagramBtn        { display: none !important; }
 
         /* Botão Salvar Imagem */
         .save-btn {
@@ -1495,8 +1491,12 @@
         }
 
         .gallery .descricao-completa {
-            margin-top: 4px;
-            color: var(--color-gold-dark);
+            margin-top: 6px;
+            padding: 7px 9px;
+            border: 1px solid #e5c987;
+            border-radius: 6px;
+            background: #fff3d6;
+            color: #73542f;
             font-size: 12px;
             font-weight: 600;
             line-height: 1.35;
@@ -1505,7 +1505,11 @@
 
         .modal-info .descricao-completa {
             margin: -5px 0 10px;
-            color: var(--color-gold-dark);
+            padding: 8px 10px;
+            border: 1px solid #e5c987;
+            border-radius: 6px;
+            background: #fff3d6;
+            color: #73542f;
             font-size: 14px;
             font-weight: 600;
             line-height: 1.35;
@@ -1853,10 +1857,6 @@
     <a href="#" id="faleConoscoBtn" class="fale-conosco-btn">            
         <img src="imagens/whats.png" alt="WhatsApp" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
         Fale conosco pelo WhatsApp
-    </a>
-    <a href="https://www.instagram.com/renataacessoriosuberlandia/" id="instagramBtn" class="instagram-btn" target="_blank">            
-        <img src="imagens/insta.png" alt="Instagram" style="width: 25px; height: 25px; vertical-align: middle; margin-right: 4px; margin-left: -5px">    
-        Visite nosso perfil no Instagram
     </a>
     <div id="rodape" class="rodape"></div>
 
