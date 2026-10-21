@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Catálogo da Karen</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Catálogo da Karen">
+    <meta property="og:description" content="Confira o catálogo online da Karen.">
+    <meta property="og:url" content="https://renatasemijoias.com/karen.html">
+    <meta property="og:image" content="https://renatasemijoias.com/imagens/LogoKaren.png">
+    <meta property="og:image:secure_url" content="https://renatasemijoias.com/imagens/LogoKaren.png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Catálogo da Karen">
+    <meta name="twitter:description" content="Confira o catálogo online da Karen.">
+    <meta name="twitter:image" content="https://renatasemijoias.com/imagens/LogoKaren.png">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <p>Carregando catálogo...</p>
+
+    <script>
+        /*
+         * Esta página reutiliza o catálogo principal para receber todas as
+         * atualizações de produtos. Apenas a logomarca e o rodapé são
+         * personalizados para a Karen.
+         */
+        (async () => {
+            try {
+                const resposta = await fetch('index.html', { cache: 'no-store' });
+
+                if (!resposta.ok) {
+                    throw new Error(`Não foi possível carregar o catálogo (${resposta.status}).`);
+                }
+
+                const catalogo = await resposta.text();
+                const estilosModalKaren = [
+                    '<style>',
+                    '#imageModal .modal-content { display: flex; flex-direction: column; }',
+                    '#imageModal .modal-content > .close { position: static; order: 1; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; margin-top: 10px; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: transparent; font-size: 0; }',
+                    '#imageModal .modal-content > .close::after { content: "Fechar visualização"; color: #5f5748; font-size: 14px; font-weight: bold; }',
+                    '#imageModal .modal-content > .close:hover { background: #e8dcc0; }',
+                    '</style>'
+                ].join('');
+                const catalogoDaKaren = catalogo
+                    .replaceAll('imagens/logo.png', 'imagens/LogoKaren.png')
+                    .replace(
+                        'alt="Renata - Semijoias e Acessórios"',
+                        'alt="Catálogo da Karen"'
+                    )
+                    .replace(
+                        'fetch("rodapes/rodape_Renata.txt")',
+                        'fetch("rodapes/rodape_Karen.txt")'
+                    )
+                    .replace(
+                        '© 2025 Renata - Semijoias e Acessórios. Todos os direitos reservados.',
+                        '© 2025 Karen. Todos os direitos reservados.'
+                    )
+                    .replace(
+                        '<title>Renata - Semijoias e Acessórios</title>',
+                        '<title>Catálogo da Karen</title>'
+                    )
+                    .replace('</head>', `${estilosModalKaren}</head>`);
+
+                document.open();
+                document.write(catalogoDaKaren);
+                document.close();
+            } catch (erro) {
+                document.body.innerHTML =
+                    '<p>Não foi possível carregar o catálogo. Atualize a página e tente novamente.</p>';
+                console.error(erro);
+            }
+        })();
+    </script>
+</body>
+</html>
