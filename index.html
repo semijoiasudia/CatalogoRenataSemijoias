@@ -1880,7 +1880,7 @@
         let allFiles = [];
         let allFilesBackup = [];
         let allProducts = []; // Nova variável para armazenar todos os produtos de todas as categorias
-        let currentBanho = 'todos';
+        let currentBanho = normalizarBanho(getQueryParam('banho')) || 'todos';
         let currentSort = 'newest';
         let currentModalIndex = 0;
         let currentVisibleFiles = [];
@@ -2715,7 +2715,7 @@
                         exclusivo: /(?:^|#)EX(?:#|$)/.test(String(produto.tags || '')),
                         blackFriday: blackFriday,
                         esquentaBlack: esquentaBlack,
-                        banho: produto.banho.toLowerCase(),
+                        banho: normalizarBanho(produto.banho),
                         dataUltimaEntrada: produto.dataUltimaEntrada,
 
                         // O ItensDescricao.json deve trazer o ID da subcategoria do produto.
@@ -2776,9 +2776,6 @@
                         
                         console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
                         loadImages(categoryDir, categoryName);
-                        
-                        // Resetar banho para 'todos'
-                        currentBanho = 'todos';
                     });
                     
                     categoriesContainer.appendChild(button);
@@ -2826,6 +2823,16 @@
            return urlParams.get(name);
         }
 
+        function normalizarBanho(banho) {
+            const banhoNormalizado = String(banho || '').trim().toLowerCase();
+            return banhoNormalizado.includes('2 banhos') ? '2 banhos' : banhoNormalizado;
+        }
+
+        function formatarNomeBanho(banho) {
+            if (banho === '2 banhos') return '2 Banhos';
+            return banho.charAt(0).toUpperCase() + banho.slice(1);
+        }
+
         // Função para criar o dropdown de banhos
         function criarDropdownBanhos(banhosNaCategoria) {
             const banhoFilter = document.getElementById('banhoFilter');
@@ -2847,15 +2854,20 @@
             banhosArray.forEach(banho => {
                 if (banho && banho !== '') {
                     const option = document.createElement('option');
-                    let displayText = banho.charAt(0).toUpperCase() + banho.slice(1);
-                    if (banho === '2 banhos') {
-                        displayText = '2 Banhos';
-                    }
-                    option.textContent = displayText;
+                    option.textContent = formatarNomeBanho(banho);
                     option.value = banho;
                     banhoFilter.appendChild(option);
                 }
             });
+
+            // Mantém o banho escolhido pela URL ou pelo usuário, mesmo quando
+            // a categoria atual não possui peças naquele banho.
+            if (currentBanho !== 'todos' && !banhosNaCategoria.has(currentBanho)) {
+                const optionIndisponivel = document.createElement('option');
+                optionIndisponivel.value = currentBanho;
+                optionIndisponivel.textContent = `${formatarNomeBanho(currentBanho)} (sem peças nesta categoria)`;
+                banhoFilter.appendChild(optionIndisponivel);
+            }
             
             // Definir valor atual
             banhoFilter.value = currentBanho;
@@ -2876,7 +2888,6 @@
             currentCategory = categoryName;
             const banhosNaCategoria = new Set();
             currentPage = 1;
-            currentBanho = 'todos';
             allFilesBackup = [];
 
             try {
@@ -2904,10 +2915,7 @@
                 // Coletar banhos únicos na categoria
                 produtos.forEach(produto => {
                     if (produto.banho) {
-                        let normalizedBanho = produto.banho.toLowerCase();
-                        if (normalizedBanho.includes('2 banhos')) {
-                            normalizedBanho = '2 banhos';
-                        }
+                        const normalizedBanho = normalizarBanho(produto.banho);
                         banhosNaCategoria.add(normalizedBanho);
                     }
                 });
@@ -2997,7 +3005,10 @@
             console.log('Itens a exibir:', paginatedFiles.length);
 
             if (paginatedFiles.length === 0) {
-                gallery.innerHTML = '<div style="text-align: center; padding: 20px; color: #666;">Nenhum produto encontrado nesta categoria</div>';
+                const mensagemBanho = currentBanho === 'todos'
+                    ? 'Nenhum produto encontrado nesta categoria'
+                    : `Não há peças no banho de ${formatarNomeBanho(currentBanho)} nesta categoria`;
+                gallery.innerHTML = `<div style="text-align: center; padding: 20px; color: #666;">${mensagemBanho}</div>`;
                 updatePagination();
                 return;
             }
