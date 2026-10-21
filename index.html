@@ -3810,7 +3810,7 @@
 
         async function loadRodape() {
             try {
-                const response = await fetch("rodape.txt");
+                const response = await fetch("rodapes/rodape_Renata.txt");
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 const text = await response.text();
                 const formattedText = text.replace(/\n/g, '<br>');
