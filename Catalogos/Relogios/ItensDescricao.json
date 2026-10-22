@@ -194,18 +194,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6398",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO FORMAS GEOMÉTRICAS",
-      "imagem": "6398.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "subcategoria_id": "14",
-      "tags": "#EB#NV#BK"
-    },
-    {
       "codigo": "6370",
       "descricao": "RELOGIO FUNDO PRETO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6370.jpg",
@@ -254,18 +242,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6360",
-      "descricao": "RELOGIO CASIO OVAL PEQUENO - PRETO FUNDO BRANCO",
-      "imagem": "6360.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "139,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6095",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO CINZA",
       "imagem": "6095.jpg",
@@ -300,6 +276,18 @@
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "18",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6304",
+      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
+      "imagem": "6304.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/06/2026",
+      "subcategoria_id": "18",
+      "tags": "#DT"
     },
     {
       "codigo": "6277",
@@ -358,6 +346,18 @@
       "dataUltimaEntrada": "20/05/2026",
       "subcategoria_id": "14",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "5972",
+      "descricao": "RELOGIO DHP DIGITAL QUADRADO - GRAFITE",
+      "imagem": "5972.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "79,90",
+      "precoConsignado": "149,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "09/03/2026",
+      "subcategoria_id": "14",
+      "tags": "#EB#BK"
     },
     {
       "codigo": "5874",
