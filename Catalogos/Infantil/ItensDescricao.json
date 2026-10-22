@@ -80,19 +80,6 @@
       "subcategoria_id": "8"
     },
     {
-      "codigo": "5945",
-      "descricao": "BRINCO ARGOLA CLICK LISA TAM PP 9MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5945.jpg",
-      "pastaFotos": "Catalogos/Infantil/",
-      "precoOferta": "29,90",
-      "precoConsignado": "32,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/03/2026",
-      "tags": "#IF",
-      "subcategoria_id": "2"
-    },
-    {
       "codigo": "5905",
       "descricao": "BRINCO CORAÇÃO PEROLA AMARELA TAM P",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -132,17 +119,17 @@
       "subcategoria_id": "8"
     },
     {
-      "codigo": "5131",
-      "descricao": "BRINCO INFANTIL BORBOLETA VAZADA COM PONTO DE LUZ",
+      "codigo": "5035",
+      "descricao": "BRINCO INFANTIL BAILARINA ZIRCÔNIAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5131.jpg",
+      "imagem": "5035.jpg",
       "pastaFotos": "Catalogos/Infantil/",
-      "precoOferta": "29,90",
-      "precoConsignado": "42,90",
+      "precoOferta": "39,90",
+      "precoConsignado": "64,90",
       "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025",
-      "tags": "#IF",
-      "subcategoria_id": "8"
+      "dataUltimaEntrada": "05/10/2025",
+      "tags": "#NV#IF#DT",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4902",
@@ -243,6 +230,18 @@
       "tags": "#IF"
     },
     {
+      "codigo": "4495",
+      "descricao": "CONJUNTO INFANTIL BRANCA DE NEVE 40CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4495.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "precoOferta": "109,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/06/2025",
+      "tags": "#IF"
+    },
+    {
       "codigo": "4493",
       "descricao": "CONJUNTO INFANTIL CEREJA ESMALTADO 35CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -277,6 +276,19 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/04/2025",
       "tags": "#IF"
+    },
+    {
+      "codigo": "4077",
+      "descricao": "BRINCO INFANTIL FLOR COM FURO PP",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4077.jpg",
+      "pastaFotos": "Catalogos/Infantil/",
+      "precoOferta": "34,90",
+      "precoConsignado": "39,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/02/2025",
+      "tags": "#IF",
+      "subcategoria_id": "7"
     },
     {
       "codigo": "4062",
