@@ -2,6 +2,18 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "6510",
+      "descricao": "CHOKER ELOS TRABALHADOS E ESFERA 10MM 36+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6510.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "129,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/08/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6126",
       "descricao": "CHOKER BAGUETES E ESFERAS 38+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -11,18 +23,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "07/05/2026"
-    },
-    {
-      "codigo": "6024",
-      "descricao": "CHOKER CORAÇÕES E TIFFANYS CRISTAL 37+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6024.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "precoOferta": "129,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/04/2026",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "5658",
@@ -153,17 +153,6 @@
       "pastaFotos": "Catalogos/Chokers/",
       "precoOferta": "69,90",
       "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "03/02/2025"
-    },
-    {
-      "codigo": "3973",
-      "descricao": "CHOKER RIVIERA CRISTAL 2MM 37+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3973.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "precoOferta": "109,90",
-      "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "03/02/2025"
     }

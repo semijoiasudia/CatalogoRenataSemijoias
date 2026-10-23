@@ -50,18 +50,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6585",
-      "descricao": "RELOGIO CLÁSSICO - OCTOGONAL FUNDO CINZA - FECHO BORBOLETA",
-      "imagem": "6585.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "159,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6584",
       "descricao": "RELOGIO PULSEIRA COURO SINT PRETA - FUNDO BRANCO",
       "imagem": "6584.jpg",
@@ -81,18 +69,6 @@
       "precoOferta": "139,90",
       "precoConsignado": "159,90",
       "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6264",
-      "descricao": "RELOGIO COM DETALHES EM PEDRAS CRISTAL - FUNDO PRETO",
-      "imagem": "6264.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "159,90",
-      "precoConsignado": "179,90",
-      "banho": "Inox",
       "dataUltimaEntrada": "29/09/2026",
       "subcategoria_id": "18",
       "tags": "#NV#DT"
@@ -268,14 +244,15 @@
     {
       "codigo": "5682",
       "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
+      "descricaoCompleta": "Peça com pequeno detalhe na pulseira",
       "imagem": "5682.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "149,90",
+      "precoOferta": "89,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "18",
-      "tags": "#NV#DT"
+      "tags": "#EB"
     },
     {
       "codigo": "6304",
@@ -300,18 +277,6 @@
       "dataUltimaEntrada": "22/06/2026",
       "subcategoria_id": "14",
       "tags": "#DT#BK"
-    },
-    {
-      "codigo": "6275",
-      "descricao": "RELOGIO COBRA INSP CRAVEJADO FUNDO BRANCO - 3 VOLTAS",
-      "imagem": "6275.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "149,90",
-      "precoConsignado": "169,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "22/06/2026",
-      "subcategoria_id": "14",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "6274",
