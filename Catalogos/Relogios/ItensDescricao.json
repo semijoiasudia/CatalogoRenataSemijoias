@@ -134,6 +134,30 @@
       "tags": "#NV#DT"
     },
     {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6055",
+      "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
+      "imagem": "6055.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "169,90",
+      "precoConsignado": "179,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "18/09/2026",
+      "subcategoria_id": "14",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6543",
       "descricao": "RELOGIO REDONDO DOURADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6543.jpg",
@@ -232,15 +256,13 @@
     {
       "codigo": "5682",
       "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - REDONDO - ALGARISMOS",
-      "descricaoCompleta": "Peça com pequeno detalhe na pulseira",
       "imagem": "5682.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "precoOferta": "89,90",
       "precoConsignado": "169,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#EB"
+      "subcategoria_id": "18"
     },
     {
       "codigo": "6304",
@@ -253,18 +275,6 @@
       "dataUltimaEntrada": "27/06/2026",
       "subcategoria_id": "18",
       "tags": "#DT"
-    },
-    {
-      "codigo": "6277",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M2",
-      "imagem": "6277.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "79,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026",
-      "subcategoria_id": "14",
-      "tags": "#DT#BK"
     },
     {
       "codigo": "6274",
