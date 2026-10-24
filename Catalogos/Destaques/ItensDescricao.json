@@ -2,6 +2,18 @@
   "categoria": "Destaques",
   "produtos": [
     {
+      "codigo": "6641",
+      "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - 2 BANHOS",
+      "imagem": "6641.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "24/10/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6637",
       "descricao": "BRINCO CORAÇÃO E PONTO DE LUZ CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -288,18 +300,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6532",
-      "descricao": "COLAR Y 3 ZIRCÔNIAS CORAÇÃO CRISTAL 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6532.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "129,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "01/09/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6526",
       "descricao": "ANEL SOLITÁRIO - FIO COM DUAS PONTAS TORCIDAS - TAMANHO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -541,18 +541,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6478",
-      "descricao": "COLAR MEDALHA ESPÍRITO SANTO VAZADA 45+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6478.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "102,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6472",
       "descricao": "BRINCO ARGOLA FORMATO GOTA LISA TAM M 3,5CM",
       "tipo": "Semijoia banhada a Prata",
@@ -729,19 +717,6 @@
       "subcategoria_id": "22"
     },
     {
-      "codigo": "6400",
-      "descricao": "BRINCO ARGOLA CLICK 2 FILEIRAS CRAVEJADAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6400.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV#DT",
-      "subcategoria_id": "3"
-    },
-    {
       "codigo": "6394",
       "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
       "tipo": "Aço Inox",
@@ -762,18 +737,6 @@
       "precoConsignado": "159,90",
       "banho": "Inox",
       "dataUltimaEntrada": "22/07/2026",
-      "tags": "#NV#DT",
-      "subcategoria_id": "18"
-    },
-    {
-      "codigo": "6357",
-      "descricao": "RELOGIO REDONDO COM ALGARISMOS PULSEIRA COURO SINT MARROM",
-      "imagem": "6357.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "139,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026",
       "tags": "#NV#DT",
       "subcategoria_id": "18"
     },
@@ -1182,19 +1145,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "5967",
-      "descricao": "BRINCO TRIO PONTO DE LUZ CRISTAL 5/6/8MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5967.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "89,90",
-      "precoConsignado": "94,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026",
-      "tags": "#NV#DT",
-      "subcategoria_id": "26"
-    },
-    {
       "codigo": "5807",
       "descricao": "BRINCO ARGOLA LISA - TARRAXA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1230,19 +1180,6 @@
       "banho": "Prata",
       "dataUltimaEntrada": "24/10/2025",
       "tags": "#NV#DT"
-    },
-    {
-      "codigo": "5112",
-      "descricao": "BRINCO ORGÂNICO VAZADO CRAVEJADO CRISTAL",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5112.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "69,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "19/10/2025",
-      "tags": "#NV#DT",
-      "subcategoria_id": "9"
     },
     {
       "codigo": "5087",
@@ -1293,18 +1230,6 @@
       "dataUltimaEntrada": "05/10/2025",
       "tags": "#NV#DT",
       "subcategoria_id": "9"
-    },
-    {
-      "codigo": "4963",
-      "descricao": "PULSEIRA PÉROLOAS AMARELAS 18+5CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "4963.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "74,90",
-      "precoConsignado": "119,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "27/09/2025",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "4955",

@@ -2,6 +2,18 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6641",
+      "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - 2 BANHOS",
+      "imagem": "6641.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "24/10/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6597",
       "descricao": "RELOGIO ESPORTIVO DIGITAL ROSA",
       "imagem": "6597.jpg",
@@ -34,18 +46,6 @@
       "precoConsignado": "169,90",
       "banho": "Inox",
       "dataUltimaEntrada": "30/09/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6357",
-      "descricao": "RELOGIO REDONDO COM ALGARISMOS PULSEIRA COURO SINT MARROM",
-      "imagem": "6357.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "139,90",
-      "precoConsignado": "159,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/09/2026",
       "subcategoria_id": "18",
       "tags": "#NV#DT"
     },

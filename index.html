@@ -1755,6 +1755,7 @@
                         <option value="oldest">Mais antigos</option>
                         <option value="highestPrice">Maior preço</option>
                         <option value="lowestPrice">Menor preço</option>
+                        <option value="campaign" hidden>Ordem da campanha</option>
                     </select>
                 </div>
             </div>
@@ -2775,6 +2776,7 @@
                         const categoryName = this.textContent.replace('<span class="icon icon-gem"></span> ', '');
                         
                         console.log(`Categoria selecionada: ${categoryName} (${categoryDir})`);
+                        atualizarOrdenacaoDaCategoria(categoryName);
                         loadImages(categoryDir, categoryName);
                     });
                     
@@ -2826,6 +2828,58 @@
         function normalizarBanho(banho) {
             const banhoNormalizado = String(banho || '').trim().toLowerCase();
             return banhoNormalizado.includes('2 banhos') ? '2 banhos' : banhoNormalizado;
+        }
+
+        function categoriaUsaOrdemCampanha(nomeCategoria) {
+            const categoriaNormalizada = String(nomeCategoria || '').trim().toLowerCase();
+            return categoriaNormalizada === 'black friday' || categoriaNormalizada === 'esquenta black';
+        }
+
+        function atualizarOrdenacaoDaCategoria(nomeCategoria) {
+            const sortFilter = document.getElementById('sortFilter');
+            const optionCampanha = sortFilter?.querySelector('option[value="campaign"]');
+            const usarOrdemCampanha = categoriaUsaOrdemCampanha(nomeCategoria);
+
+            if (optionCampanha) {
+                optionCampanha.hidden = !usarOrdemCampanha;
+            }
+
+            // Ao entrar em uma campanha, a rotação diária é o padrão.
+            // Uma escolha manual permanece ativa enquanto a pessoa ficar na mesma aba.
+            if (usarOrdemCampanha && currentCategory !== nomeCategoria) {
+                currentSort = 'campaign';
+                if (sortFilter) sortFilter.value = 'campaign';
+            } else if (!usarOrdemCampanha && currentSort === 'campaign') {
+                currentSort = 'newest';
+                if (sortFilter) sortFilter.value = 'newest';
+            }
+        }
+
+        function obterChaveDataBrasilia() {
+            const partes = new Intl.DateTimeFormat('en-US', {
+                timeZone: 'America/Sao_Paulo',
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit'
+            }).formatToParts(new Date());
+            const valores = Object.fromEntries(
+                partes
+                    .filter(parte => parte.type !== 'literal')
+                    .map(parte => [parte.type, parte.value])
+            );
+            return `${valores.year}${valores.month}${valores.day}`;
+        }
+
+        function calcularPontuacaoOrdemCampanha(codigo, chaveData) {
+            const texto = `${chaveData}|${currentCategory}|${codigo}`;
+            let hash = 2166136261;
+
+            for (let indice = 0; indice < texto.length; indice++) {
+                hash ^= texto.charCodeAt(indice);
+                hash = Math.imul(hash, 16777619);
+            }
+
+            return hash >>> 0;
         }
 
         function formatarNomeBanho(banho) {
@@ -2937,10 +2991,21 @@
                 const banho = (descricoes[codigo] && descricoes[codigo].banho) || '';
                 return currentBanho === 'todos' || banho === currentBanho;
             });
+
+            const usarOrdemCampanha =
+                currentSort === 'campaign' && categoriaUsaOrdemCampanha(currentCategory);
+            const chaveDataCampanha = usarOrdemCampanha ? obterChaveDataBrasilia() : '';
         
             filtered.sort((a, b) => {
                 const codigoA = a.codigo || a.name.split('.')[0];
                 const codigoB = b.codigo || b.name.split('.')[0];
+
+                if (usarOrdemCampanha) {
+                    const pontuacaoA = calcularPontuacaoOrdemCampanha(codigoA, chaveDataCampanha);
+                    const pontuacaoB = calcularPontuacaoOrdemCampanha(codigoB, chaveDataCampanha);
+                    return pontuacaoA - pontuacaoB || codigoA.localeCompare(codigoB, undefined, { numeric: true });
+                }
+
                 const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
                 const precoB = getNumericPrice(descricoes[codigoB]?.preco || "0");
                 const dataA = descricoes[codigoA]?.dataUltimaEntrada || "";
@@ -3205,6 +3270,12 @@
 
         function applySort() {
             currentSort = document.getElementById('sortFilter').value;
+
+            if (currentSort === 'campaign' && !categoriaUsaOrdemCampanha(currentCategory)) {
+                currentSort = 'newest';
+                document.getElementById('sortFilter').value = 'newest';
+            }
+
             currentPage = 1;
             displayPage(currentPage, new Set());
             console.log('Ordenação aplicada:', currentSort);
