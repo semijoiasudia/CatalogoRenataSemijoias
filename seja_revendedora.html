@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seja Revendedora · Renata Semijoias</title>
+  <title>Seja Consultora · Renata Semijoias</title>
 
   <meta
     name="description"
@@ -396,6 +396,58 @@
       margin: 0 auto;
     }
 
+    /* ── EXPLICAÇÃO EM ÁUDIO ── */
+    .audio-explanation {
+      max-width: 980px;
+      margin: 0 auto 14px;
+      padding: 17px 18px;
+      background: var(--white);
+      border: 0.5px solid var(--border);
+      border-top: 2px solid var(--gold-3);
+      border-radius: 12px;
+    }
+
+    .audio-explanation-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .audio-explanation-icon {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: var(--gold-1);
+      color: var(--gold-5);
+    }
+
+    .audio-explanation-icon svg { width: 17px; height: 17px; }
+
+    .audio-explanation-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .audio-explanation-text {
+      margin-top: 2px;
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .audio-explanation audio {
+      display: block;
+      width: 100%;
+      height: 42px;
+    }
+
     /* ── FORMULÁRIO DE CADASTRO ── */
     /* Faz o card ocupar toda a largura */
     .form-card {
@@ -483,6 +535,32 @@
       display: none;
       color: #b23b3b;
       font-size: 11.5px;
+    }
+
+    .form-hint {
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+
+    .form-hint strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .form-location-notice {
+      grid-column: 1 / -1;
+      padding: 13px;
+      border: 1px solid #e3c1a6;
+      border-radius: 7px;
+      background: #fff6ed;
+      color: #75451f;
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+
+    .form-details:not([hidden]) {
+      display: contents;
     }
 
     /* Confirmação de leitura */
@@ -575,10 +653,30 @@
   </div>
 
   <div class="page-header">
-    <h1>Seja uma <em>revendedora</em></h1>
+    <h1>Seja uma <em>consultora</em></h1>
     <p>Apenas para Uberlândia – MG</p>
     <div class="header-rule"><span></span></div>
   </div>
+
+  <section class="audio-explanation" aria-labelledby="audioExplanationTitle">
+    <div class="audio-explanation-head">
+      <div class="audio-explanation-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 15.5V8.5a2 2 0 0 1 2-2h2l3-3v17l-3-3H6a2 2 0 0 1-2-2z"/>
+          <path d="M15 9a4 4 0 0 1 0 6"/>
+          <path d="M18 6a8 8 0 0 1 0 12"/>
+        </svg>
+      </div>
+      <div>
+        <h2 class="audio-explanation-title" id="audioExplanationTitle">Prefere ouvir em vez de ler?</h2>
+        <p class="audio-explanation-text">Escute a explicação completa sobre como funciona o nosso programa de consultoras.</p>
+      </div>
+    </div>
+    <audio controls preload="metadata">
+      <source src="audios/sejaConsultora.mp3" type="audio/mpeg">
+      Seu navegador não suporta a reprodução de áudio. Baixe o arquivo para ouvir a explicação.
+    </audio>
+  </section>
 
   <div class="cards-grid">
 
@@ -902,6 +1000,42 @@
 
         <form id="candidaturaForm" class="cadastro-form">
 
+          <div class="form-field full">
+            <span class="form-label">
+              Você reside atualmente em Uberlândia – MG?
+            </span>
+
+            <div class="form-options">
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="ResideUberlandia"
+                  value="Sim"
+                  required
+                  aria-controls="formDetails"
+                >
+                <span>Sim</span>
+              </label>
+
+              <label class="form-option">
+                <input
+                  type="radio"
+                  name="ResideUberlandia"
+                  value="Não"
+                  required
+                  aria-controls="formDetails"
+                >
+                <span>Não</span>
+              </label>
+            </div>
+          </div>
+
+          <p id="formLocationNotice" class="form-location-notice" role="alert" hidden>
+            No momento, nosso programa de revendedoras atende exclusivamente Uberlândia – MG. Por isso, não conseguimos receber cadastros de outras cidades.
+          </p>
+
+          <div id="formDetails" class="form-details" hidden>
+
           <!-- Nome -->
           <div class="form-field">
             <label class="form-label" for="nomeInput">
@@ -942,6 +1076,12 @@
               class="form-error"
               aria-live="polite">
             </span>
+
+            <p class="form-hint">
+              Informe somente o DDD e o número do seu WhatsApp. Não informe o código do Brasil (+55).<br>
+              Exemplo: (34) 99999-9999<br>
+              <strong>Atenção:</strong> confira se o DDD e o número foram informados corretamente antes de enviar. Caso o telefone esteja incompleto ou incorreto, não conseguiremos entrar em contato caso seu cadastro seja aprovado.
+            </p>
           </div>
 
           <!-- CPF -->
@@ -1144,7 +1284,7 @@
           <!-- Motivação -->
           <div class="form-field full">
             <label class="form-label" for="motivacaoInput">
-              Por que você quer ser uma revendedora?
+              Por que você quer ser uma consultora?
             </label>
 
             <textarea
@@ -1167,7 +1307,7 @@
               >
 
               <span>
-                Li as informações desta página, estou de acordo com
+                Li ou ouvi as informações desta página, estou de acordo com
                 as condições apresentadas e autorizo o uso dos dados
                 informados para análise da minha candidatura.
               </span>
@@ -1182,6 +1322,8 @@
           <button type="submit" class="form-submit">
             Enviar cadastro
           </button>
+
+          </div>
 
           <p
             id="formStatus"
@@ -1204,6 +1346,13 @@
       const cpfInput = document.getElementById('cpfInput');
       const cpfErro = document.getElementById('cpfErro');
       const formStatus = document.getElementById('formStatus');
+      const residenciaUberlandia = document.querySelectorAll(
+        'input[name="ResideUberlandia"]'
+      );
+      const formDetails = document.getElementById('formDetails');
+      const formLocationNotice = document.getElementById(
+        'formLocationNotice'
+      );
 
       const scriptURL =
         'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
@@ -1307,6 +1456,33 @@
         formStatus.className = 'form-status';
       }
 
+      function atualizarResidenciaUberlandia() {
+        const resposta = formulario.querySelector(
+          'input[name="ResideUberlandia"]:checked'
+        );
+        const podeCadastrar = resposta && resposta.value === 'Sim';
+        const informouNao = resposta && resposta.value === 'Não';
+
+        formDetails.hidden = !podeCadastrar;
+        formLocationNotice.hidden = !informouNao;
+
+        formDetails.querySelectorAll(
+          'input, select, textarea, button'
+        ).forEach(function (campo) {
+          campo.disabled = !podeCadastrar;
+        });
+
+        if (!podeCadastrar) {
+          esconderStatus();
+        }
+      }
+
+      residenciaUberlandia.forEach(function (opcao) {
+        opcao.addEventListener('change', atualizarResidenciaUberlandia);
+      });
+
+      atualizarResidenciaUberlandia();
+
       whatsappInput.addEventListener('input', function () {
         this.value = mascaraTelefone(this.value);
         this.classList.remove('invalid');
@@ -1399,6 +1575,7 @@
         })
         .then(function () {
           formulario.reset();
+          atualizarResidenciaUberlandia();
 
           formStatus.textContent =
             'Cadastro enviado com sucesso! Entraremos em contato caso seu perfil seja selecionado.';
