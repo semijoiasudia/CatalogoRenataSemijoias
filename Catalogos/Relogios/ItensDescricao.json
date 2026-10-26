@@ -38,18 +38,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6587",
-      "descricao": "RELOGIO UNISSEX ANALÓGICO E DIGITAL QUADRADO FUNDO PRETO",
-      "imagem": "6587.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "149,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "30/09/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6582",
       "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO PRETO",
       "imagem": "6582.jpg",
@@ -122,6 +110,18 @@
       "tags": "#NV#DT"
     },
     {
+      "codigo": "6371",
+      "descricao": "RELOGIO BRACELETE INSP CARTIER LISO",
+      "imagem": "6371.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "28/09/2026",
+      "subcategoria_id": "14",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6055",
       "descricao": "RELOGIO COBRA INSP FUNDO PRETO - LISO 3 VOLTAS",
       "imagem": "6055.jpg",
@@ -182,6 +182,18 @@
       "tags": "#NV"
     },
     {
+      "codigo": "6366",
+      "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
+      "imagem": "6366.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "23/07/2026",
+      "subcategoria_id": "15",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6365",
       "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6365.jpg",
@@ -230,18 +242,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6095",
-      "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO CINZA",
-      "imagem": "6095.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "129,90",
-      "precoConsignado": "149,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "22/07/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6094",
       "descricao": "RELOGIO CASIO MINI QUADRADO 1ª LINHA - FUNDO PRETO",
       "imagem": "6094.jpg",
@@ -277,6 +277,18 @@
       "tags": "#DT"
     },
     {
+      "codigo": "6276",
+      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
+      "imagem": "6276.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "109,90",
+      "precoConsignado": "119,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/06/2026",
+      "subcategoria_id": "14",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6274",
       "descricao": "RELOGIO COBRA INSP FUNDO BRANCO - LISO 2 VOLTAS",
       "imagem": "6274.jpg",
@@ -300,15 +312,16 @@
       "tags": "#DT"
     },
     {
-      "codigo": "6256",
-      "descricao": "RELOGIO RETANGULAR FUNDO BRANCO",
-      "imagem": "6256.jpg",
+      "codigo": "6209",
+      "descricao": "RELOGIO CASIO OVAL MÉDIO - FUNDO PRETO",
+      "imagem": "6209.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "119,90",
-      "precoConsignado": "139,90",
-      "banho": "Cor Prata",
-      "dataUltimaEntrada": "11/06/2026",
-      "subcategoria_id": "18"
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV"
     },
     {
       "codigo": "6147",

@@ -1364,12 +1364,6 @@
         }
       }
 
-      document.addEventListener('visibilitychange', function () {
-        if (document.hidden) {
-          pausarAudio();
-        }
-      });
-
       window.addEventListener('pagehide', pausarAudio);
 
       function mascaraTelefone(valor) {
