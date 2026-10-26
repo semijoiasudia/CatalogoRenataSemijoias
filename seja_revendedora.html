@@ -672,7 +672,7 @@
         <p class="audio-explanation-text">Escute a explicação completa sobre como funciona o nosso programa de consultoras.</p>
       </div>
     </div>
-    <audio controls preload="metadata">
+    <audio id="audioExplicacao" controls preload="metadata">
       <source src="audios/sejaConsultora.mp3" type="audio/mpeg">
       Seu navegador não suporta a reprodução de áudio. Baixe o arquivo para ouvir a explicação.
     </audio>
@@ -1353,9 +1353,24 @@
       const formLocationNotice = document.getElementById(
         'formLocationNotice'
       );
+      const audioExplicacao = document.getElementById('audioExplicacao');
 
       const scriptURL =
         'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
+
+      function pausarAudio() {
+        if (audioExplicacao && !audioExplicacao.paused) {
+          audioExplicacao.pause();
+        }
+      }
+
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          pausarAudio();
+        }
+      });
+
+      window.addEventListener('pagehide', pausarAudio);
 
       function mascaraTelefone(valor) {
         valor = valor.replace(/\D/g, '').substring(0, 11);
