@@ -2,6 +2,45 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "6642",
+      "descricao": "BRINCO TRIO PONTO DE LUZ 3/5/6MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6642.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "59,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "subcategoria_id": "26",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "3287",
+      "descricao": "BRINCO DUO PONTO DE LUZ 6/8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3287.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "subcategoria_id": "26",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "3281",
+      "descricao": "BRINCO PONTO DE LUZ 8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3281.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "subcategoria_id": "8",
+      "tags": "#NV"
+    },
+    {
       "codigo": "5593",
       "descricao": "BRINCO TRIO ARGOLA CLICK ESFERAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1041,19 +1080,6 @@
       "subcategoria_id": "1"
     },
     {
-      "codigo": "6235",
-      "descricao": "BRINCO DUAS GOTAS CURVAS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6235.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "7",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6227",
       "descricao": "BRINCO PONTO DE LUZ 8MM",
       "tipo": "Semijoia banhada a Prata",
@@ -1217,18 +1243,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "3281",
-      "descricao": "BRINCO PONTO DE LUZ 8MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "3281.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/05/2026",
-      "subcategoria_id": "8"
-    },
-    {
       "codigo": "3202",
       "descricao": "BRINCO EAR CUFF 3 GOTAS CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1301,19 +1315,6 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
       "subcategoria_id": "7"
-    },
-    {
-      "codigo": "6079",
-      "descricao": "BRINCO MEDALHA SÃO BENTO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6079.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "7",
-      "tags": "#NV"
     },
     {
       "codigo": "6078",
@@ -2407,19 +2408,6 @@
       "subcategoria_id": "7"
     },
     {
-      "codigo": "4942",
-      "descricao": "BRINCO ESPIRITO SANTO PP M2",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4942.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "29,90",
-      "precoConsignado": "46,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025",
-      "subcategoria_id": "7",
-      "tags": "#NV"
-    },
-    {
       "codigo": "4940",
       "descricao": "BRINCO CORAÇÃO ORGÂNICO M",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2486,11 +2474,12 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "4898.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "69,90",
+      "precoOferta": "49,90",
       "precoConsignado": "79,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/09/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#EB"
     },
     {
       "codigo": "4884",

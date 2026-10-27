@@ -2,6 +2,19 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6642",
+      "descricao": "BRINCO TRIO PONTO DE LUZ 3/5/6MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6642.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "59,90",
+      "precoConsignado": "74,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "tags": "#NV",
+      "subcategoria_id": "26"
+    },
+    {
       "codigo": "6641",
       "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - 2 BANHOS",
       "imagem": "6641.jpg",
@@ -1879,18 +1892,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6276",
-      "descricao": "RELOGIO BRACELETE INSP REDONDO CRAVEJADO M1",
-      "imagem": "6276.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "109,90",
-      "precoConsignado": "119,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "22/06/2026",
-      "tags": "#NV#DT",
-      "subcategoria_id": "14"
-    },
-    {
       "codigo": "6273",
       "descricao": "INOX PULSEIRA GOTAS PEROLADAS E CRISTAIS",
       "tipo": "Aço Inox",
@@ -1901,19 +1902,6 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "21/06/2026",
       "tags": "#NV"
-    },
-    {
-      "codigo": "6235",
-      "descricao": "BRINCO DUAS GOTAS CURVAS",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6235.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/06/2026",
-      "tags": "#NV",
-      "subcategoria_id": "7"
     },
     {
       "codigo": "6227",
@@ -2151,19 +2139,6 @@
       "dataUltimaEntrada": "18/10/2026",
       "tags": "#NV#DT",
       "subcategoria_id": "21"
-    },
-    {
-      "codigo": "6079",
-      "descricao": "BRINCO MEDALHA SÃO BENTO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6079.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/04/2026",
-      "tags": "#NV",
-      "subcategoria_id": "7"
     },
     {
       "codigo": "6077",
@@ -2441,18 +2416,6 @@
       "precoConsignado": "29,90",
       "banho": "Inox",
       "dataUltimaEntrada": "07/02/2026",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "5858",
-      "descricao": "INOX BRINCO TREVO VERDE MALAQUITA",
-      "tipo": "Aço Inox",
-      "imagem": "5858.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "24,90",
-      "precoConsignado": "29,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "02/06/2026",
       "tags": "#NV"
     },
     {
@@ -2833,19 +2796,6 @@
       "subcategoria_id": "7"
     },
     {
-      "codigo": "4942",
-      "descricao": "BRINCO ESPIRITO SANTO PP M2",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4942.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "29,90",
-      "precoConsignado": "46,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025",
-      "tags": "#NV",
-      "subcategoria_id": "7"
-    },
-    {
       "codigo": "4902",
       "descricao": "BRINCO INFANTIL GATINHO COM LACINHO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2907,6 +2857,18 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/08/2025",
       "tags": "#NV#IF"
+    },
+    {
+      "codigo": "4708",
+      "descricao": "PULSEIRA ELOS H",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4708.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "89,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "4688",
@@ -3011,6 +2973,19 @@
       "subcategoria_id": "11"
     },
     {
+      "codigo": "3287",
+      "descricao": "BRINCO DUO PONTO DE LUZ 6/8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3287.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "tags": "#NV",
+      "subcategoria_id": "26"
+    },
+    {
       "codigo": "3284",
       "descricao": "BRINCO PONTO DE LUZ 10MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -3021,6 +2996,19 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "16/10/2026",
       "tags": "#DT#NV",
+      "subcategoria_id": "8"
+    },
+    {
+      "codigo": "3281",
+      "descricao": "BRINCO PONTO DE LUZ 8MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3281.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "tags": "#NV",
       "subcategoria_id": "8"
     },
     {

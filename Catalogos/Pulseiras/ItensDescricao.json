@@ -2,6 +2,18 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "4708",
+      "descricao": "PULSEIRA ELOS H",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4708.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "precoOferta": "89,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "27/10/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6535",
       "descricao": "PULSEIRA DUPLA COM PINGENTE DE CORAÇÃO CRAVEJADO COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
