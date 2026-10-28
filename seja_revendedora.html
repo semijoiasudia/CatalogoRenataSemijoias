@@ -1354,14 +1354,69 @@
         'formLocationNotice'
       );
       const audioExplicacao = document.getElementById('audioExplicacao');
+      let bloqueioTela = null;
+      let bloqueioTelaAtivo = false;
 
       const scriptURL =
         'https://script.google.com/macros/s/AKfycbxIQoqj6hETxm1gDPBJZBbvYbqjlK0dPH9nGp7czCMscAWFY9iQgTBlCv_08COAs4bNBw/exec';
 
+      async function ativarBloqueioTela() {
+        if (
+          !audioExplicacao ||
+          audioExplicacao.paused ||
+          bloqueioTela ||
+          !('wakeLock' in navigator)
+        ) {
+          return;
+        }
+
+        try {
+          const novoBloqueio = await navigator.wakeLock.request('screen');
+          bloqueioTela = novoBloqueio;
+          bloqueioTelaAtivo = true;
+
+          novoBloqueio.addEventListener('release', function () {
+            if (bloqueioTela === novoBloqueio) {
+              bloqueioTela = null;
+            }
+          });
+        } catch (erro) {
+          // Sem suporte ou com bloqueio recusado, o áudio mantém seu comportamento atual.
+          bloqueioTelaAtivo = false;
+        }
+      }
+
+      async function liberarBloqueioTela() {
+        const bloqueioAtual = bloqueioTela;
+        bloqueioTela = null;
+        bloqueioTelaAtivo = false;
+
+        if (bloqueioAtual && !bloqueioAtual.released) {
+          try {
+            await bloqueioAtual.release();
+          } catch (erro) {
+            // O navegador pode já ter liberado o bloqueio ao ocultar a página.
+          }
+        }
+      }
+
       function pausarAudio() {
+        liberarBloqueioTela();
+
         if (audioExplicacao && !audioExplicacao.paused) {
           audioExplicacao.pause();
         }
+      }
+
+      if (audioExplicacao) {
+        audioExplicacao.addEventListener('play', ativarBloqueioTela);
+        audioExplicacao.addEventListener('pause', liberarBloqueioTela);
+
+        document.addEventListener('visibilitychange', function () {
+          if (document.hidden && bloqueioTelaAtivo) {
+            pausarAudio();
+          }
+        });
       }
 
       window.addEventListener('pagehide', pausarAudio);
