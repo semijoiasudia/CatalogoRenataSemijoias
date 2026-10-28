@@ -106,7 +106,7 @@
       text-transform: uppercase;
     }
 
-    .page-header h1 {
+    .page-header h1:not(.welcome) {
       max-width: 650px;
       margin: 0 auto;
       font-family: "DM Serif Display", serif;
@@ -115,7 +115,7 @@
       line-height: 1.08;
     }
 
-    .page-header h1 em {
+    .page-header h1:not(.welcome) em {
       color: var(--gold-4);
       font-style: italic;
     }
@@ -158,6 +158,7 @@
     }
 
     .link-card {
+      --visual-strip: clamp(72px, 24%, 106px);
       position: relative;
       display: flex;
       min-height: 205px;
@@ -188,6 +189,7 @@
       background: var(--gold-1);
       opacity: 0.42;
       pointer-events: none;
+      z-index: 0;
     }
 
     .link-card:hover,
@@ -226,11 +228,12 @@
 
     .card-top {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       gap: 16px;
+      padding-right: calc(var(--visual-strip) + 12px);
     }
 
     .card-eyebrow {
@@ -275,10 +278,50 @@
       stroke: none;
     }
 
+    .card-visual {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: var(--visual-strip);
+      overflow: hidden;
+      border-radius: 0 10px 10px 0;
+      background: var(--gold-1);
+    }
+
+    .card-visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .link-card.c2 .card-visual img,
+    .link-card.c1 .card-visual img {
+      filter: saturate(0.88) sepia(0.06) brightness(1.03);
+    }
+
+    .link-card.c2 .card-visual img {
+      object-position: 48% center;
+    }
+
+    .link-card.c1 .card-visual img {
+      object-position: 56% center;
+    }
+
+    .card-visual::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.58), transparent 42%);
+      pointer-events: none;
+    }
+
     .card-description {
       position: relative;
-      z-index: 1;
-      max-width: 290px;
+      z-index: 2;
+      max-width: min(290px, calc(100% - var(--visual-strip) - 12px));
       margin-top: 15px;
       color: var(--muted);
       font-size: 0.78rem;
@@ -287,13 +330,13 @@
 
     .card-action {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       gap: 12px;
       margin-top: auto;
-      padding-top: 18px;
+      padding: 18px calc(var(--visual-strip) + 12px) 0 0;
     }
 
     .action-label {
@@ -375,7 +418,7 @@
       }
 
       .card-action {
-        padding-top: 14px;
+        padding: 14px calc(var(--visual-strip) + 12px) 0 0;
       }
     }
   </style>
@@ -392,11 +435,11 @@
           alt="Renata Semijoias e Acessórios"
         >
 
-        <p class="welcome">Olá, seja bem-vinda! 🌹</p>
+        <h1 id="page-title" class="welcome">Olá, seja bem-vinda! 🌹</h1>
 
         <p class="intro">
-          Escolha abaixo o que deseja conhecer. É um prazer ter
-          você por aqui.
+          Descubra como funciona a nossa revenda no consignado. Conheça também
+          nossas peças, compre pelo catálogo e acompanhe as novidades.
         </p>
 
         <div class="header-rule" aria-hidden="true">
@@ -418,13 +461,11 @@
               <p class="card-eyebrow">Oportunidade</p>
               <h2>Seja uma consultora</h2>
             </div>
-
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3v18M17 7.5C17 5.57 14.76 4 12 4S7 5.57 7 7.5 9.24 11 12 11s5 1.57 5 3.5S14.76 18 12 18s-5-1.57-5-3.5"></path>
-              </svg>
-            </span>
           </div>
+
+          <span class="card-visual" aria-hidden="true">
+            <img src="imagens/landing-cards/renata-maleta.jpg" alt="">
+          </span>
 
           <p class="card-description">
             100% consignado. Custo zero. Saiba como funciona, conheça as comissões e faça seu
@@ -452,26 +493,23 @@
 
           <div class="card-top">
             <div>
-              <p class="card-eyebrow">Nossas peças</p>
-              <h2>Conheça nosso catálogo</h2>
+              <p class="card-eyebrow">Para você</p>
+              <h2>Compre pelo nosso catálogo</h2>
             </div>
-
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                <path d="M3 6h18M16 10a4 4 0 0 1-8 0"></path>
-              </svg>
-            </span>
           </div>
 
+          <span class="card-visual" aria-hidden="true">
+            <img src="imagens/landing-cards/catalogo-mao-celular.jpg" alt="">
+          </span>
+
           <p class="card-description">
-            Veja nossas semijoias, acessórios, relógios e novidades
-            disponíveis.
+            Veja nossas semijoias, acessórios, relógios e novidades. Escolha
+            suas peças para comprar no varejo.
           </p>
 
           <div class="card-action">
             <span class="action-label">
-              Acessar
+              Ver catálogo
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
@@ -491,20 +529,11 @@
               <p class="card-eyebrow">Inspiração</p>
               <h2>Conheça nosso Instagram</h2>
             </div>
-
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                <circle cx="12" cy="12" r="4"></circle>
-                <circle
-                  class="icon-fill"
-                  cx="17.5"
-                  cy="6.5"
-                  r=".75">
-                </circle>
-              </svg>
-            </span>
           </div>
+
+          <span class="card-visual" aria-hidden="true">
+            <img src="imagens/landing-cards/instagram-perfil-real.jpg" alt="">
+          </span>
 
           <p class="card-description">
             Acompanhe lançamentos, combinações e novidades da nossa
@@ -533,14 +562,11 @@
               <p class="card-eyebrow">Atendimento</p>
               <h2>Fale conosco pelo WhatsApp</h2>
             </div>
-
-            <span class="card-icon">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7A8.38 8.38 0 0 1 4 11.5 8.5 8.5 0 0 1 8.7 3.9 8.38 8.38 0 0 1 12.5 3h.5a8.48 8.48 0 0 1 8 8Z"></path>
-                <path d="M9 9.25c.5 2.1 1.65 3.25 3.75 3.75"></path>
-              </svg>
-            </span>
           </div>
+
+          <span class="card-visual" aria-hidden="true">
+            <img src="imagens/landing-cards/whatsapp-atendimento.jpg" alt="">
+          </span>
 
           <p class="card-description">
             Ainda ficou com alguma dúvida? Nossa equipe está à
