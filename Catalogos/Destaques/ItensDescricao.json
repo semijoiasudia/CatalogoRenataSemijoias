@@ -2,6 +2,18 @@
   "categoria": "Destaques",
   "produtos": [
     {
+      "codigo": "6644",
+      "descricao": "COLAR PINGENTE CORAÇÃO COM PAI NOSSO 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6644.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "102,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6641",
       "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - 2 BANHOS",
       "imagem": "6641.jpg",
@@ -694,18 +706,6 @@
       "subcategoria_id": "8"
     },
     {
-      "codigo": "6445",
-      "descricao": "COLAR ELOS CARTIER 2X7 46+4CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6445.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6440",
       "descricao": "PULSEIRA ELOS 3X1 E PINGENTES DE FLOR",
       "tipo": "Semijoia banhada a Prata",
@@ -1034,18 +1034,6 @@
       "tags": "#DT"
     },
     {
-      "codigo": "6304",
-      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
-      "imagem": "6304.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "149,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/06/2026",
-      "tags": "#DT",
-      "subcategoria_id": "18"
-    },
-    {
       "codigo": "6293",
       "descricao": "BRACELETE INOX BRACELETE LAÇO",
       "tipo": "Aço Inox",
@@ -1094,30 +1082,6 @@
       "dataUltimaEntrada": "09/08/2026",
       "tags": "#NV#DT",
       "subcategoria_id": "9"
-    },
-    {
-      "codigo": "6155",
-      "descricao": "BRACELETE INOX BRACELETE PREGO COM PEDRAS CRISTAL",
-      "tipo": "Aço Inox",
-      "imagem": "6155.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6152",
-      "descricao": "INOX COLAR 5 TREVOS BRANCOS PEROLADO 13MM 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "6152.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "21/05/2026",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "6147",

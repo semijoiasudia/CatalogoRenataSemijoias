@@ -2,6 +2,18 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6647",
+      "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - FUNDO BRANCO",
+      "imagem": "6647.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/10/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6641",
       "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - 2 BANHOS",
       "imagem": "6641.jpg",
@@ -275,18 +287,6 @@
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "22/07/2026",
       "subcategoria_id": "18"
-    },
-    {
-      "codigo": "6304",
-      "descricao": "RELOGIO REDONDO - CLÁSSICO - HORA E MINUTOS",
-      "imagem": "6304.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "149,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "27/06/2026",
-      "subcategoria_id": "18",
-      "tags": "#DT"
     },
     {
       "codigo": "6300",

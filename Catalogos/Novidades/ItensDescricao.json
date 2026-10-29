@@ -2,6 +2,30 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6647",
+      "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - FUNDO BRANCO",
+      "imagem": "6647.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "29/10/2026",
+      "tags": "#NV",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6644",
+      "descricao": "COLAR PINGENTE CORAÇÃO COM PAI NOSSO 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6644.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "102,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6642",
       "descricao": "BRINCO TRIO PONTO DE LUZ 3/5/6MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1286,18 +1310,6 @@
       "subcategoria_id": "8"
     },
     {
-      "codigo": "6445",
-      "descricao": "COLAR ELOS CARTIER 2X7 46+4CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6445.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6440",
       "descricao": "PULSEIRA ELOS 3X1 E PINGENTES DE FLOR",
       "tipo": "Semijoia banhada a Prata",
@@ -1711,19 +1723,6 @@
       "subcategoria_id": "21"
     },
     {
-      "codigo": "6378",
-      "descricao": "BRINCO PONTO DE LUZ 6MM - BASE ALTA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6378.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV",
-      "subcategoria_id": "8"
-    },
-    {
       "codigo": "6377",
       "descricao": "BRINCO PONTO DE LUZ 8MM - BASE ALTA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2119,30 +2118,6 @@
       "subcategoria_id": "26"
     },
     {
-      "codigo": "6155",
-      "descricao": "BRACELETE INOX BRACELETE PREGO COM PEDRAS CRISTAL",
-      "tipo": "Aço Inox",
-      "imagem": "6155.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6152",
-      "descricao": "INOX COLAR 5 TREVOS BRANCOS PEROLADO 13MM 40+5CM",
-      "tipo": "Aço Inox",
-      "imagem": "6152.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "21/05/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6147",
       "descricao": "RELOGIO COBRA INSP FUNDO CINZA CRAVEJADO 2 VOLTAS",
       "imagem": "6147.jpg",
@@ -2403,19 +2378,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "5982",
-      "descricao": "BRINCO TRANQUETA PONTO DE LUZ PINK 6MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5982.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "54,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "11/03/2026",
-      "tags": "#NV",
-      "subcategoria_id": "2"
-    },
-    {
       "codigo": "5964",
       "descricao": "BRINCO TREVO 4 FOLHAS ZIRCÔNIAS COLORS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2618,19 +2580,6 @@
       "dataUltimaEntrada": "20/11/2025",
       "tags": "#NV",
       "subcategoria_id": "25"
-    },
-    {
-      "codigo": "5571",
-      "descricao": "BRINCO BORBOLETA LISA / CRAVEJADA COLORS TAM P",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5571.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "44,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "20/11/2025",
-      "tags": "#NV",
-      "subcategoria_id": "9"
     },
     {
       "codigo": "5563",
@@ -3172,31 +3121,6 @@
       "dataUltimaEntrada": "29/05/2026",
       "tags": "#DT#NV",
       "subcategoria_id": "12"
-    },
-    {
-      "codigo": "2623",
-      "descricao": "BRINCO TRIO ARGOLA RETANGULAR LISA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2623.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "139,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "06/10/2026",
-      "tags": "#NV",
-      "subcategoria_id": "21"
-    },
-    {
-      "codigo": "2121",
-      "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 46+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "2121.jpg",
-      "pastaFotos": "Catalogos/Novidades/",
-      "precoOferta": "89,90",
-      "precoConsignado": "119,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "21/05/2026",
-      "tags": "#NV"
     },
     {
       "codigo": "2116",
