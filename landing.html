@@ -451,6 +451,7 @@
 
         <!-- REVENDEDORA -->
         <a
+          id="linkRevendedora"
           class="link-card c2 featured"
           href="https://renatasemijoias.com/seja_revendedora"
           target="_blank"
@@ -592,5 +593,19 @@
 
     </section>
   </main>
+  <script>
+    (function () {
+      const linkRevendedora = document.getElementById('linkRevendedora');
+      const origem = new URLSearchParams(window.location.search).get('orig');
+
+      if (!linkRevendedora || !origem) {
+        return;
+      }
+
+      const destino = new URL(linkRevendedora.href);
+      destino.searchParams.set('orig', origem);
+      linkRevendedora.href = destino.toString();
+    })();
+  </script>
 </body>
 </html>
