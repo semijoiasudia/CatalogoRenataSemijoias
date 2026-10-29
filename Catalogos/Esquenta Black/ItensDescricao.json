@@ -2,6 +2,30 @@
   "categoria": "Esquenta Black",
   "produtos": [
     {
+      "codigo": "6420",
+      "descricao": "BIJUTERIA BRACELETE MAX LOSANGOS",
+      "tipo": "Bijuteria",
+      "imagem": "6420.jpg",
+      "pastaFotos": "Catalogos/Esquenta Black/",
+      "precoOferta": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "02/08/2026",
+      "tags": "#EB"
+    },
+    {
+      "codigo": "6419",
+      "descricao": "BIJUTERIA BRACELETE MAX ORGÂNICO COM BORDAS ABUALADAS",
+      "tipo": "Bijuteria",
+      "imagem": "6419.jpg",
+      "pastaFotos": "Catalogos/Esquenta Black/",
+      "precoOferta": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "02/08/2026",
+      "tags": "#EB"
+    },
+    {
       "codigo": "6365",
       "descricao": "RELOGIO OVAL CRAVEJADO - PULSEIRA AJUSTÁVEL - L. FASHION",
       "imagem": "6365.jpg",
@@ -383,6 +407,19 @@
       "dataUltimaEntrada": "14/07/2025",
       "tags": "#IF#EB",
       "subcategoria_id": "7"
+    },
+    {
+      "codigo": "4517",
+      "descricao": "BRINCO FLOR 8 PÉTALAS CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "4517.jpg",
+      "pastaFotos": "Catalogos/Esquenta Black/",
+      "precoOferta": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "02/07/2025",
+      "tags": "#EB",
+      "subcategoria_id": "9"
     },
     {
       "codigo": "4371",

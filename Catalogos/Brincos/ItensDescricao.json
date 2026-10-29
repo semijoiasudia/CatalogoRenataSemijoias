@@ -1844,18 +1844,6 @@
       "subcategoria_id": "7"
     },
     {
-      "codigo": "5621",
-      "descricao": "BRINCO GOTA CÔNCAVA TRABALHADA TAM G",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5621.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "74,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "22/11/2025",
-      "subcategoria_id": "7"
-    },
-    {
       "codigo": "5620",
       "descricao": "BRINCO FLOR ORGÂNICA TAM M",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -2895,11 +2883,12 @@
       "tipo": "Semijoia banhada a Prata",
       "imagem": "4517.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "36,90",
+      "precoOferta": "39,90",
       "precoConsignado": "62,90",
       "banho": "Prata",
       "dataUltimaEntrada": "02/07/2025",
-      "subcategoria_id": "9"
+      "subcategoria_id": "9",
+      "tags": "#EB"
     },
     {
       "codigo": "4516",
