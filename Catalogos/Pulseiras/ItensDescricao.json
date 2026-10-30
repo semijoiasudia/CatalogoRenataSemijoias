@@ -122,30 +122,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6484",
-      "descricao": "PULSEIRA DUPLA COM PINGENTE PAI NOSSO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6484.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "109,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6483",
-      "descricao": "PULSEIRA ELOS TRABALHADOS E ESFERA 10MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6483.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "102,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6482",
       "descricao": "PULSEIRA MEDALHA ESPÍRITO SANTO VAZADA",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -168,6 +144,30 @@
       "banho": "Prata",
       "dataUltimaEntrada": "09/08/2026",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6439",
+      "descricao": "PULSEIRA DUPLA VENEZIANA COM CRUZ",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6439.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6338",
+      "descricao": "PULSEIRA ÁRVORE DA VIDA - ELOS GROUMET",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6338.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "precoOferta": "109,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "28/06/2026",
+      "tags": "#DT"
     },
     {
       "codigo": "6336",
@@ -242,14 +242,14 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6325",
-      "descricao": "PULSEIRA CORAÇÕES ENTRELAÇADOS E VENEZIANA",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6325.jpg",
+      "codigo": "6322",
+      "descricao": "PULSEIRA CORAÇÕES ABAULADOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6322.jpg",
       "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Prata",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
       "dataUltimaEntrada": "28/06/2026",
       "tags": "#NV"
     },
@@ -344,17 +344,6 @@
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "05/10/2025",
       "tags": "#NV#DT"
-    },
-    {
-      "codigo": "4962",
-      "descricao": "PULSEIRA PÉROLAS AMARELAS 18+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4962.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "109,90",
-      "precoConsignado": "129,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
     },
     {
       "codigo": "4743",
