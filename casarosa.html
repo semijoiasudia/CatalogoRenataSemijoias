@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Casa Rosa | Catálogo de semijoias</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Casa Rosa | Catálogo de semijoias">
+    <meta property="og:description" content="Confira o catálogo online da Casa Rosa.">
+    <meta property="og:image" content="/imagens/CasaRosa.png">
+    <meta property="og:image:secure_url" content="/imagens/CasaRosa.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="267">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Casa Rosa | Catálogo de semijoias">
+    <meta name="twitter:description" content="Confira o catálogo online da Casa Rosa.">
+    <meta name="twitter:image" content="/imagens/CasaRosa.png">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <p>Carregando catálogo...</p>
+
+    <script>
+        /*
+         * Esta página reutiliza o catálogo principal para receber todas as
+         * atualizações de produtos. Apenas a logomarca e o rodapé são
+         * personalizados para a Casa Rosa.
+         */
+        (async () => {
+            try {
+                const resposta = await fetch('index.html', { cache: 'no-store' });
+
+                if (!resposta.ok) {
+                    throw new Error(`Não foi possível carregar o catálogo (${resposta.status}).`);
+                }
+
+                const catalogo = await resposta.text();
+                const metadadosCasaRosa = [
+                    '<meta name="description" content="Catálogo online de semijoias e acessórios da Casa Rosa.">',
+                    '<meta name="keywords" content="Casa Rosa, semijoias, acessórios, brincos, colares, anéis, pulseiras, piercings e aço inox">',
+                    '<title>Casa Rosa | Catálogo de semijoias</title>',
+                    '<meta property="og:type" content="website">',
+                    '<meta property="og:title" content="Casa Rosa | Catálogo de semijoias">',
+                    '<meta property="og:description" content="Confira o catálogo online da Casa Rosa.">',
+                    '<meta property="og:image" content="/imagens/CasaRosa.png">',
+                    '<meta property="og:image:secure_url" content="/imagens/CasaRosa.png">',
+                    '<meta property="og:image:type" content="image/png">',
+                    '<meta property="og:image:width" content="300">',
+                    '<meta property="og:image:height" content="267">'
+                ].join('');
+                const estilosModalCasaRosa = [
+                    '<style>',
+                    '#imageModal .modal-content { display: flex; flex-direction: column; }',
+                    '#imageModal .modal-content > .close { position: static; order: 1; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; margin-top: 10px; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: transparent; font-size: 0; }',
+                    '#imageModal .modal-content > .close::after { content: "Fechar visualização"; color: #5f5748; font-size: 14px; font-weight: bold; }',
+                    '#imageModal .modal-content > .close:hover { background: #e8dcc0; }',
+                    '</style>'
+                ].join('');
+                const catalogoCasaRosa = catalogo
+                    .replace(
+                        /<!-- meta tags de SEO aqui -->[\s\S]*?<\/script>\s*(?=<style>)/,
+                        metadadosCasaRosa
+                    )
+                    .replaceAll('imagens/logo.png', 'imagens/CasaRosa.png')
+                    .replace(
+                        /(<img src="imagens\/CasaRosa\.png" alt=")[^"]+(" draggable="false">)/,
+                        '$1Casa Rosa$2'
+                    )
+                    .replace(
+                        /fetch\("rodapes\/rodape_[^"]+\.txt"\)/,
+                        'fetch("rodapes/rodape_CasaRosa.txt")'
+                    )
+                    .replace(
+                        /© 2025 [^<`]+Todos os direitos reservados\./,
+                        '© 2025 Casa Rosa. Todos os direitos reservados.'
+                    )
+                    .replace(
+                        /const PHONE_NUMBER = '\d+';/,
+                        "const PHONE_NUMBER = '5534997763880';"
+                    )
+                    .replace('</head>', `${estilosModalCasaRosa}</head>`);
+
+                document.open();
+                document.write(catalogoCasaRosa);
+                document.close();
+            } catch (erro) {
+                document.body.innerHTML =
+                    '<p>Não foi possível carregar o catálogo. Atualize a página e tente novamente.</p>';
+                console.error(erro);
+            }
+        })();
+    </script>
+</body>
+</html>
