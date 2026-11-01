@@ -2,6 +2,30 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "3293",
+      "descricao": "ANEL REGULAVEL FIO DUPLO FINO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3293.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "705",
+      "descricao": "ANEL REGULAVEL 4 FILEIRAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "705.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "precoOferta": "79,90",
+      "precoConsignado": "102,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#DT#NV"
+    },
+    {
       "codigo": "6526",
       "descricao": "ANEL SOLITÁRIO - FIO COM DUAS PONTAS TORCIDAS - TAMANHO",
       "tipo": "Semijoia banhada a Ouro 18k",
