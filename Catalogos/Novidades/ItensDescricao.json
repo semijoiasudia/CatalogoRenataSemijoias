@@ -2,6 +2,91 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6698",
+      "descricao": "RELOGIO OVAL - FUNDO PRETO - AJUSTÁVEL - L. FASHION",
+      "imagem": "6698.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6697",
+      "descricao": "RELOGIO BRACELETE TREVO CRAVEJADO FUNDO PRATA",
+      "imagem": "6697.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6696",
+      "descricao": "RELOGIO BRACELETE FORMATO CORAÇÃO FUNDO PRETO",
+      "imagem": "6696.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "149,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6695",
+      "descricao": "RELOGIO BRACELETE FORMATO NAVETE FUNDO DOURADO",
+      "imagem": "6695.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6694",
+      "descricao": "RELOGIO BRACELETE QUADRADO FUNDO PRETO",
+      "imagem": "6694.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6693",
+      "descricao": "RELOGIO BRACELETE QUADRADO FUNDO PRETO",
+      "imagem": "6693.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Cor Prata",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6682",
+      "descricao": "BRINCO ARGOLA CLICK FLOR VAZADA 9MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6682.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "59,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "4"
+    },
+    {
       "codigo": "6647",
       "descricao": "RELOGIO UNISSEX REDONDO CLÁSSICO - FUNDO BRANCO",
       "imagem": "6647.jpg",
@@ -2941,6 +3026,19 @@
       "dataUltimaEntrada": "18/10/2026",
       "tags": "#NV",
       "subcategoria_id": "21"
+    },
+    {
+      "codigo": "2015",
+      "descricao": "BRINCO ARGOLA PING. CORAÇÃO VERDE ESMERALDA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2015.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "1"
     },
     {
       "codigo": "1490",

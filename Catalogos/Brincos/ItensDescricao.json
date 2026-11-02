@@ -2,6 +2,32 @@
   "categoria": "BRINCO",
   "produtos": [
     {
+      "codigo": "6682",
+      "descricao": "BRINCO ARGOLA CLICK FLOR VAZADA 9MM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6682.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "59,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2026",
+      "subcategoria_id": "4",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "2015",
+      "descricao": "BRINCO ARGOLA PING. CORAÇÃO VERDE ESMERALDA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "2015.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2026",
+      "subcategoria_id": "1",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6642",
       "descricao": "BRINCO TRIO PONTO DE LUZ 3/5/6MM",
       "tipo": "Semijoia banhada a Ouro 18k",
