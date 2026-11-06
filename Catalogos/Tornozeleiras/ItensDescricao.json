@@ -2,6 +2,18 @@
   "categoria": "TORNOZELEIRA",
   "produtos": [
     {
+      "codigo": "6651",
+      "descricao": "TORNOZELEIRA PINGENTES DIAMANTADOS E TIFFANYS COLORIDAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6651.jpg",
+      "pastaFotos": "Catalogos/Tornozeleiras/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6432",
       "descricao": "TORNOZELEIRA ELOS OVAIS E PINGENTE DE CORAÇÃO CRISTAL",
       "tipo": "Semijoia banhada a Prata",
@@ -12,17 +24,6 @@
       "banho": "Prata",
       "dataUltimaEntrada": "08/08/2026",
       "tags": "#NV"
-    },
-    {
-      "codigo": "6115",
-      "descricao": "TORNOZELEIRA CAUDA DE SEREIA 23+3CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6115.jpg",
-      "pastaFotos": "Catalogos/Tornozeleiras/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026"
     }
   ]
 }

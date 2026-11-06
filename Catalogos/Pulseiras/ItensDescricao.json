@@ -2,6 +2,18 @@
   "categoria": "PULSEIRA",
   "produtos": [
     {
+      "codigo": "6666",
+      "descricao": "PULSEIRA RIVIERA CRISTA E PLAQUINHA GRATIDÃO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6666.jpg",
+      "pastaFotos": "Catalogos/Pulseiras/",
+      "precoOferta": "109,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "4708",
       "descricao": "PULSEIRA ELOS H",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -24,18 +36,6 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "01/09/2026",
       "tags": "#NV"
-    },
-    {
-      "codigo": "6514",
-      "descricao": "PULSEIRA TIFFANYS 4MM COLORIDAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6514.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "26/08/2026",
-      "tags": "#NV#DT"
     },
     {
       "codigo": "6511",
@@ -69,18 +69,6 @@
       "pastaFotos": "Catalogos/Pulseiras/",
       "precoOferta": "69,90",
       "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "13/08/2026",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "6485",
-      "descricao": "PULSEIRA DUPLA MINI BOLINHAS E CORAÇÕES ENTRELAÇADOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6485.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "13/08/2026",
       "tags": "#NV"
@@ -120,18 +108,6 @@
       "banho": "Prata",
       "dataUltimaEntrada": "09/08/2026",
       "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6439",
-      "descricao": "PULSEIRA DUPLA VENEZIANA COM CRUZ",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6439.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "69,90",
-      "precoConsignado": "79,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "09/08/2026",
-      "tags": "#NV"
     },
     {
       "codigo": "6337",
@@ -194,18 +170,6 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6113",
-      "descricao": "PULSEIRA BOLINHAS E 2 PINGENTES DE CORAÇÃO",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6113.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "79,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "05/05/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6111",
       "descricao": "PULSEIRA 3 BARRAS",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -229,18 +193,6 @@
       "dataUltimaEntrada": "05/05/2026"
     },
     {
-      "codigo": "6007",
-      "descricao": "PULSEIRA ELOS TRABALHADOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6007.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "79,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "31/03/2026",
-      "tags": "#NV"
-    },
-    {
       "codigo": "4450",
       "descricao": "PULSEIRA 1 TREVO VERDE 18CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -250,17 +202,6 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "30/11/2025"
-    },
-    {
-      "codigo": "5345",
-      "descricao": "PULSEIRA TIFFANYS PINK 16+8CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5345.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "74,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "04/11/2025"
     },
     {
       "codigo": "5343",
@@ -274,18 +215,6 @@
       "dataUltimaEntrada": "04/11/2025"
     },
     {
-      "codigo": "5315",
-      "descricao": "PULSEIRA RIVIERA BAGUETE COLORS 4MM 17+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5315.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "119,90",
-      "precoConsignado": "149,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/11/2025",
-      "tags": "#NV"
-    },
-    {
       "codigo": "5310",
       "descricao": "PULSEIRA RIVIERA 3MM CRISTAL",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -295,17 +224,6 @@
       "precoConsignado": "109,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "02/11/2025"
-    },
-    {
-      "codigo": "5195",
-      "descricao": "PULSEIRA ELOS MÉDIOS OVAIS 17+4CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5195.jpg",
-      "pastaFotos": "Catalogos/Pulseiras/",
-      "precoOferta": "54,90",
-      "precoConsignado": "89,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "24/10/2025"
     },
     {
       "codigo": "5187",
