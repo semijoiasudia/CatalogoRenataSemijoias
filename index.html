@@ -421,6 +421,7 @@
             border-radius: 0; /* Removido border-radius */
         }
         .black-friday-ribbon,
+        .black-november-ribbon,
         .esquenta-black-ribbon {
             position: absolute;
             top: 19px;
@@ -440,6 +441,11 @@
         }
 
         .black-friday-ribbon {
+            color: #c9a873;
+            background: #111;
+        }
+
+        .black-november-ribbon {
             color: #c9a873;
             background: #111;
         }
@@ -1391,8 +1397,11 @@
         }
 
         .category-btn[data-category="Black Friday"],
+        .category-btn[data-category="Black November"],
         .category-btn[data-category="Black Friday"].active,
-        .category-btn[data-category="Black Friday"]:hover {
+        .category-btn[data-category="Black November"].active,
+        .category-btn[data-category="Black Friday"]:hover,
+        .category-btn[data-category="Black November"]:hover {
             border-color: #111;
             color: #c9a873;
             background: #111;
@@ -1873,6 +1882,7 @@
         let descricoes = {};
         let subcategoriasExibicao = {};
         let blackFridayCodes = new Set();
+        let blackNovemberCodes = new Set();
         let esquentaBlackCodes = new Set();
         let promocoesAtivasPorCodigo = new Map();
         
@@ -2605,6 +2615,7 @@
         // promocional para todas as ocorrências dos seus produtos no catálogo.
         async function loadPromocoesAtivas() {
             blackFridayCodes = new Set();
+            blackNovemberCodes = new Set();
             esquentaBlackCodes = new Set();
             promocoesAtivasPorCodigo = new Map();
 
@@ -2636,6 +2647,7 @@
 
                 const nomeCategoria = String(categoria.name || '').trim().toLowerCase();
                 const blackFriday = nomeCategoria === 'black friday';
+                const blackNovember = nomeCategoria === 'black november';
                 const esquentaBlack = nomeCategoria === 'esquenta black';
                 result.value.produtos.forEach((produto) => {
                     const codigo = String(produto.codigo);
@@ -2655,13 +2667,17 @@
                         blackFridayCodes.add(String(produto.codigo));
                     }
 
+                    if (blackNovember && /(?:^|#)BN(?:#|$)/.test(String(produto.tags || ''))) {
+                        blackNovemberCodes.add(String(produto.codigo));
+                    }
+
                     if (esquentaBlack && /(?:^|#)EB(?:#|$)/.test(String(produto.tags || ''))) {
                         esquentaBlackCodes.add(String(produto.codigo));
                     }
                 });
             });
 
-            console.log(`Produtos promocionais identificados: ${promocoesAtivasPorCodigo.size}. Black Friday: ${blackFridayCodes.size}. Esquenta Black: ${esquentaBlackCodes.size}.`);
+            console.log(`Produtos promocionais identificados: ${promocoesAtivasPorCodigo.size}. Black Friday: ${blackFridayCodes.size}. Black November: ${blackNovemberCodes.size}. Esquenta Black: ${esquentaBlackCodes.size}.`);
         }
 
         // Função para carregar todos os produtos de todas as categorias - removida pois não é mais necessária
@@ -2687,6 +2703,7 @@
                     const categoriaEhOferta = normalizarTipoPreco(categoriaAtual?.tipoPreco) === 'oferta';
                     const promocao = promocoesAtivasPorCodigo.get(String(produto.codigo));
                     const blackFriday = blackFridayCodes.has(String(produto.codigo));
+                    const blackNovember = blackNovemberCodes.has(String(produto.codigo));
                     const esquentaBlack = esquentaBlackCodes.has(String(produto.codigo));
                     const precoNormal = produto.precoConsignado || promocao?.precoConsignado;
                     const precoPromocional = promocao?.precoOferta || produto.precoOferta;
@@ -2713,8 +2730,13 @@
                         preco: precoDisplay,
                         precoCarrinho: precoCarrinho, // Preço para o carrinho, sem formatação "De: Por:"
                         isOferta: isOferta,
+                        precoOriginal: precoNormal ? formatarPreco(precoNormal) : '',
+                        precoPromocional: temOferta && precoPromocional
+                            ? formatarPreco(precoPromocional)
+                            : '',
                         exclusivo: /(?:^|#)EX(?:#|$)/.test(String(produto.tags || '')),
                         blackFriday: blackFriday,
+                        blackNovember: blackNovember,
                         esquentaBlack: esquentaBlack,
                         banho: normalizarBanho(produto.banho),
                         dataUltimaEntrada: produto.dataUltimaEntrada,
@@ -2832,7 +2854,25 @@
 
         function categoriaUsaOrdemCampanha(nomeCategoria) {
             const categoriaNormalizada = String(nomeCategoria || '').trim().toLowerCase();
-            return categoriaNormalizada === 'black friday' || categoriaNormalizada === 'esquenta black';
+            return categoriaNormalizada === 'black friday' ||
+                categoriaNormalizada === 'black november' ||
+                categoriaNormalizada === 'esquenta black';
+        }
+
+        function categoriaUsaPrioridadeDeTipo(nomeCategoria) {
+            return String(nomeCategoria || '').trim().toLowerCase() === 'black november';
+        }
+
+        function obterPrioridadeDeTipoNaBlackNovember(codigo) {
+            const produto = descricoes[codigo] || {};
+            const tipo = String(produto.tipo || '').trim().toLowerCase();
+
+            if (tipo.startsWith('semijoia banhada')) return 1;
+            if (!tipo && String(produto.descricao || '').trim().toLowerCase().startsWith('relogio')) return 2;
+            if (tipo === 'aço inox' || tipo === 'aco inox') return 3;
+            if (tipo === 'bijuteria') return 4;
+
+            return 2;
         }
 
         function atualizarOrdenacaoDaCategoria(nomeCategoria) {
@@ -2994,6 +3034,8 @@
 
             const usarOrdemCampanha =
                 currentSort === 'campaign' && categoriaUsaOrdemCampanha(currentCategory);
+            const usarPrioridadeDeTipo =
+                usarOrdemCampanha && categoriaUsaPrioridadeDeTipo(currentCategory);
             const chaveDataCampanha = usarOrdemCampanha ? obterChaveDataBrasilia() : '';
         
             filtered.sort((a, b) => {
@@ -3001,6 +3043,12 @@
                 const codigoB = b.codigo || b.name.split('.')[0];
 
                 if (usarOrdemCampanha) {
+                    if (usarPrioridadeDeTipo) {
+                        const prioridadeA = obterPrioridadeDeTipoNaBlackNovember(codigoA);
+                        const prioridadeB = obterPrioridadeDeTipoNaBlackNovember(codigoB);
+                        if (prioridadeA !== prioridadeB) return prioridadeA - prioridadeB;
+                    }
+
                     const pontuacaoA = calcularPontuacaoOrdemCampanha(codigoA, chaveDataCampanha);
                     const pontuacaoB = calcularPontuacaoOrdemCampanha(codigoB, chaveDataCampanha);
                     return pontuacaoA - pontuacaoB || codigoA.localeCompare(codigoB, undefined, { numeric: true });
@@ -3080,7 +3128,7 @@
 
             paginatedFiles.forEach(file => {
                 const codigo = file.codigo || file.name.split('.')[0];
-                const { descricao, descricaoCompleta, preco, precoCarrinho, banho, tipo, subcategoriaId, exclusivo, blackFriday, esquentaBlack } = descricoes[codigo] || {
+                const { descricao, descricaoCompleta, preco, precoCarrinho, banho, tipo, subcategoriaId, exclusivo, blackFriday, blackNovember, esquentaBlack } = descricoes[codigo] || {
                     descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                     descricaoCompleta: "",
                     preco: "Preço não disponível",
@@ -3090,6 +3138,7 @@
                     subcategoriaId: null,
                     exclusivo: false,
                     blackFriday: false,
+                    blackNovember: false,
                     esquentaBlack: false
                 };
 
@@ -3132,6 +3181,11 @@
                     blackFridayRibbon.className = 'black-friday-ribbon';
                     blackFridayRibbon.textContent = 'Black Friday';
                     imgContainer.appendChild(blackFridayRibbon);
+                } else if (blackNovember) {
+                    const blackNovemberRibbon = document.createElement('div');
+                    blackNovemberRibbon.className = 'black-november-ribbon';
+                    blackNovemberRibbon.textContent = 'Black November';
+                    imgContainer.appendChild(blackNovemberRibbon);
                 } else if (esquentaBlack) {
                     const esquentaBlackRibbon = document.createElement('div');
                     esquentaBlackRibbon.className = 'esquenta-black-ribbon';
@@ -3327,7 +3381,7 @@
             const src = file.download_url;
             codigo = file.codigo || file.name.split('.')[0];
 
-            const { descricao, descricaoCompleta, preco, precoCarrinho, tipo, subcategoriaId, exclusivo, blackFriday, esquentaBlack } = descricoes[codigo] || {
+            const { descricao, descricaoCompleta, preco, precoCarrinho, tipo, subcategoriaId, exclusivo, blackFriday, blackNovember, esquentaBlack } = descricoes[codigo] || {
                 descricao: "Descrição não disponível. Este ítem pode não estar disponível.", 
                 descricaoCompleta: "",
                 preco: "Preço não disponível",
@@ -3336,6 +3390,7 @@
                 subcategoriaId: null,
                 exclusivo: false,
                 blackFriday: false,
+                blackNovember: false,
                 esquentaBlack: false
             };
 
@@ -3346,6 +3401,8 @@
             if (existingLogo) existingLogo.remove();
             const existingBlackFridayRibbon = captureArea.querySelector('.modal-black-friday-ribbon');
             if (existingBlackFridayRibbon) existingBlackFridayRibbon.remove();
+            const existingBlackNovemberRibbon = captureArea.querySelector('.modal-black-november-ribbon');
+            if (existingBlackNovemberRibbon) existingBlackNovemberRibbon.remove();
             const existingEsquentaBlackRibbon = captureArea.querySelector('.modal-esquenta-black-ribbon');
             if (existingEsquentaBlackRibbon) existingEsquentaBlackRibbon.remove();
 
@@ -3367,6 +3424,11 @@
                 blackFridayRibbon.className = 'black-friday-ribbon modal-black-friday-ribbon';
                 blackFridayRibbon.textContent = 'Black Friday';
                 captureArea.appendChild(blackFridayRibbon);
+            } else if (blackNovember) {
+                const blackNovemberRibbon = document.createElement('div');
+                blackNovemberRibbon.className = 'black-november-ribbon modal-black-november-ribbon';
+                blackNovemberRibbon.textContent = 'Black November';
+                captureArea.appendChild(blackNovemberRibbon);
             } else if (esquentaBlack) {
                 const esquentaBlackRibbon = document.createElement('div');
                 esquentaBlackRibbon.className = 'esquenta-black-ribbon modal-esquenta-black-ribbon';
@@ -3728,6 +3790,8 @@
                 // ==============================
                 const faixaCampanha = descricoes[codigo]?.blackFriday
                     ? { texto: 'Black Friday', fundo: '#111', textoCor: '#c9a873' }
+                    : descricoes[codigo]?.blackNovember
+                        ? { texto: 'Black November', fundo: '#111', textoCor: '#c9a873' }
                     : descricoes[codigo]?.esquentaBlack
                         ? { texto: 'Esquenta Black', fundo: '#5b1f2a', textoCor: '#c9a873' }
                         : null;
@@ -3779,6 +3843,89 @@
                             ctx.measureText(letter).width + ribbonLetterSpacing;
                     });
                     ctx.restore();
+                }
+
+                // ==============================
+                // Preço das campanhas Black
+                // ==============================
+                const produtoParaSalvar = descricoes[codigo] || {};
+                const exibirPrecoBlack =
+                    (produtoParaSalvar.blackFriday || produtoParaSalvar.blackNovember) &&
+                    produtoParaSalvar.isOferta &&
+                    produtoParaSalvar.precoOriginal &&
+                    produtoParaSalvar.precoPromocional;
+
+                if (exibirPrecoBlack) {
+                    const margemPreco = 10 * scaleCanvas;
+                    const paddingHorizontal = 9 * scaleCanvas;
+                    const paddingVertical = 7 * scaleCanvas;
+                    const fonteRotulo = 6 * scaleCanvas;
+                    const fontePrecoAnterior = 9 * scaleCanvas;
+                    const fontePrecoOferta = 13 * scaleCanvas;
+                    const espacamentoRotulo = 5 * scaleCanvas;
+                    const espacamentoLinhas = 4 * scaleCanvas;
+                    const rotuloDe = 'DE:';
+                    const rotuloPor = 'POR:';
+
+                    ctx.font = `700 ${fonteRotulo}px Inter, Arial, sans-serif`;
+                    const larguraRotuloDe = ctx.measureText(rotuloDe).width;
+                    const larguraRotuloPor = ctx.measureText(rotuloPor).width;
+
+                    ctx.font = `700 ${fontePrecoAnterior}px Inter, Arial, sans-serif`;
+                    const larguraPrecoAnterior = ctx.measureText(produtoParaSalvar.precoOriginal).width;
+
+                    ctx.font = `800 ${fontePrecoOferta}px Inter, Arial, sans-serif`;
+                    const larguraPrecoOferta = ctx.measureText(produtoParaSalvar.precoPromocional).width;
+
+                    const larguraConteudo = Math.max(
+                        larguraRotuloDe + espacamentoRotulo + larguraPrecoAnterior,
+                        larguraRotuloPor + espacamentoRotulo + larguraPrecoOferta
+                    );
+                    const larguraCaixa = larguraConteudo + (paddingHorizontal * 2);
+                    const alturaCaixa =
+                        (paddingVertical * 2) +
+                        fontePrecoAnterior +
+                        espacamentoLinhas +
+                        fontePrecoOferta;
+                    const xCaixa = margemPreco;
+                    const yCaixa = canvasHeight - alturaCaixa - margemPreco;
+
+                    ctx.fillStyle = 'rgba(17, 17, 17, 0.88)';
+                    ctx.fillRect(xCaixa, yCaixa, larguraCaixa, alturaCaixa);
+                    ctx.strokeStyle = '#c9a873';
+                    ctx.lineWidth = 1 * scaleCanvas;
+                    ctx.strokeRect(xCaixa, yCaixa, larguraCaixa, alturaCaixa);
+
+                    const xTexto = xCaixa + paddingHorizontal;
+                    const yPrecoAnterior = yCaixa + paddingVertical + (fontePrecoAnterior / 2);
+                    const yPrecoOferta =
+                        yPrecoAnterior +
+                        (fontePrecoAnterior / 2) +
+                        espacamentoLinhas +
+                        (fontePrecoOferta / 2);
+
+                    ctx.textAlign = 'left';
+                    ctx.textBaseline = 'middle';
+                    ctx.font = `700 ${fonteRotulo}px Inter, Arial, sans-serif`;
+                    ctx.fillStyle = '#c9a873';
+                    ctx.fillText(rotuloDe, xTexto, yPrecoAnterior);
+                    ctx.fillText(rotuloPor, xTexto, yPrecoOferta);
+
+                    const xPrecoAnterior = xTexto + larguraRotuloDe + espacamentoRotulo;
+                    ctx.font = `700 ${fontePrecoAnterior}px Inter, Arial, sans-serif`;
+                    ctx.fillStyle = '#f5f0e8';
+                    ctx.fillText(produtoParaSalvar.precoOriginal, xPrecoAnterior, yPrecoAnterior);
+                    ctx.strokeStyle = '#c9a873';
+                    ctx.lineWidth = 1 * scaleCanvas;
+                    ctx.beginPath();
+                    ctx.moveTo(xPrecoAnterior, yPrecoAnterior);
+                    ctx.lineTo(xPrecoAnterior + larguraPrecoAnterior, yPrecoAnterior);
+                    ctx.stroke();
+
+                    const xPrecoOferta = xTexto + larguraRotuloPor + espacamentoRotulo;
+                    ctx.font = `800 ${fontePrecoOferta}px Inter, Arial, sans-serif`;
+                    ctx.fillStyle = '#ffffff';
+                    ctx.fillText(produtoParaSalvar.precoPromocional, xPrecoOferta, yPrecoOferta);
                 }
 
                 // ==============================

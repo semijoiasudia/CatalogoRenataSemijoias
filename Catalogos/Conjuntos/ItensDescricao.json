@@ -2,6 +2,18 @@
   "categoria": "CONJUNTO",
   "produtos": [
     {
+      "codigo": "4767",
+      "descricao": "CONJUNTO CHOKER ZIRCÔNIAS GOTAS PRETAS 29+10CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4767.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "precoOferta": "129,90",
+      "precoConsignado": "159,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/11/2026",
+      "tags": "#NV#DT#BN"
+    },
+    {
       "codigo": "6608",
       "descricao": "CONJUNTO FIO DE NYLON PONTO DE LUZ APEROL 8MM 39+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -352,7 +364,7 @@
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025",
-      "tags": "#IF#EB"
+      "tags": "#BN#IF#EB"
     },
     {
       "codigo": "4739",
