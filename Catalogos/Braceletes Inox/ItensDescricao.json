@@ -73,6 +73,18 @@
       "dataUltimaEntrada": "19/09/2026"
     },
     {
+      "codigo": "6567",
+      "descricao": "BRACELETE INOX BRACELETE TREVO BRANCO E 2 PONTOS DE LUZ",
+      "tipo": "Aço Inox",
+      "imagem": "6567.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6393",
       "descricao": "BRACELETE INOX BRACELETE 2 MEDALHAS SÃO BENTO",
       "tipo": "Aço Inox",
@@ -82,18 +94,6 @@
       "precoConsignado": "59,90",
       "banho": "Inox Dourado",
       "dataUltimaEntrada": "18/09/2026",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "6395",
-      "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "6395.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "29/07/2026",
       "tags": "#NV"
     },
     {
@@ -133,18 +133,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6292",
-      "descricao": "BRACELETE INOX BRACELETE INSP. V",
-      "tipo": "Aço Inox",
-      "imagem": "6292.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox",
-      "dataUltimaEntrada": "26/06/2026",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6291",
       "descricao": "BRACELETE INOX BRACELETE PREGO RESINA PRETA E PEDRAS CRISTAL",
       "tipo": "Aço Inox",
@@ -179,15 +167,15 @@
       "tags": "#DT"
     },
     {
-      "codigo": "6140",
-      "descricao": "BRACELETE INOX BRACELETE INSPIRAÇÃO H BRANCO NA LATERAL",
+      "codigo": "5376",
+      "descricao": "BRACELETE INOX BRACELETE INSPIRAÇÃO CART.",
       "tipo": "Aço Inox",
-      "imagem": "6140.jpg",
+      "imagem": "5376.jpg",
       "pastaFotos": "Catalogos/Braceletes Inox/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/05/2026"
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "26/06/2026"
     },
     {
       "codigo": "6138",
@@ -267,6 +255,17 @@
       "precoConsignado": "69,90",
       "banho": "Inox",
       "dataUltimaEntrada": "18/12/2025"
+    },
+    {
+      "codigo": "5379",
+      "descricao": "BRACELETE INOX BRACELETE 1 TREVO BRANCO PEROLADO",
+      "tipo": "Aço Inox",
+      "imagem": "5379.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "precoOferta": "44,90",
+      "precoConsignado": "69,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "06/11/2025"
     }
   ]
 }

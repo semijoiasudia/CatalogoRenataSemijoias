@@ -587,17 +587,17 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6467",
-      "descricao": "BRINCO ARGOLINHA COM PING. FORM. DIAMANTE COM ZIRCÔNIA",
+      "codigo": "6464",
+      "descricao": "BRINCO PONTO DE LUZ LILÁS 4MM INFANTIL/ADULTO",
       "tipo": "Semijoia banhada a Prata",
-      "imagem": "6467.jpg",
+      "imagem": "6464.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
+      "precoOferta": "32,90",
+      "precoConsignado": "39,90",
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "1",
-      "tags": "#NV"
+      "subcategoria_id": "8",
+      "tags": "#NV#IF"
     },
     {
       "codigo": "6463",
@@ -626,6 +626,19 @@
       "tags": "#NV"
     },
     {
+      "codigo": "6460",
+      "descricao": "BRINCO TRIO PONTO DE LUZ QUADRADO CRISTAL 3/4/5MM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6460.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "59,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026",
+      "subcategoria_id": "26",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6459",
       "descricao": "BRINCO CORAÇÃO EFEITO DIAMANTADO",
       "tipo": "Semijoia banhada a Prata",
@@ -636,19 +649,6 @@
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
       "subcategoria_id": "7",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "6230",
-      "descricao": "BRINCO TRIO ZIRCÔNIA GOTA CRISTAL",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6230.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "13/08/2026",
-      "subcategoria_id": "26",
       "tags": "#NV"
     },
     {
@@ -688,19 +688,6 @@
       "banho": "Prata",
       "dataUltimaEntrada": "10/08/2026",
       "subcategoria_id": "4",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "6450",
-      "descricao": "BRINCO ARGOLA CRAVEJADA 3 FILEIRAS CRISTAL",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6450.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "79,90",
-      "precoConsignado": "89,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "10/08/2026",
-      "subcategoria_id": "3",
       "tags": "#NV"
     },
     {
@@ -1390,6 +1377,18 @@
       "tags": "#NV#IF"
     },
     {
+      "codigo": "5948",
+      "descricao": "BRINCO ARGOLA CLICK CORES ALEATÓRIAS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5948.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "59,90",
+      "precoConsignado": "64,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "03/03/2026",
+      "subcategoria_id": "2"
+    },
+    {
       "codigo": "5944",
       "descricao": "BRINCO ARGOLA CLICK LISA 16MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1540,6 +1539,19 @@
       "dataUltimaEntrada": "22/02/2026",
       "subcategoria_id": "8",
       "tags": "#IF"
+    },
+    {
+      "codigo": "5894",
+      "descricao": "BRINCO DUO ZIRCÔNIA GOTA CRISTAL 2 TONS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5894.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "79,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "22/02/2026",
+      "subcategoria_id": "26",
+      "tags": "#NV"
     },
     {
       "codigo": "5807",
@@ -2473,6 +2485,18 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/08/2025",
       "subcategoria_id": "6"
+    },
+    {
+      "codigo": "4792",
+      "descricao": "BRINCO MEIA ARGOLA ORGANICA FORMATO LOSANGO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4792.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "49,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025",
+      "subcategoria_id": "29"
     },
     {
       "codigo": "4784",

@@ -62,18 +62,6 @@
       "tags": "#DT#NV"
     },
     {
-      "codigo": "6541",
-      "descricao": "CONJUNTO CORAÇÃO ZIRCÔNIA COR AQUA TAM P 46+5CM",
-      "tipo": "Semijoia banhada a Prata",
-      "imagem": "6541.jpg",
-      "pastaFotos": "Catalogos/Conjuntos/",
-      "precoOferta": "79,90",
-      "precoConsignado": "89,90",
-      "banho": "Prata",
-      "dataUltimaEntrada": "02/09/2026",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6540",
       "descricao": "CONJUNTO PONTO DE LUZ CRISTAL 10MM 46+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -218,6 +206,18 @@
       "tags": "#NV"
     },
     {
+      "codigo": "6436",
+      "descricao": "CONJUNTO GOTA AZUL TURQUESA BRINCO ARGOLA 45CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6436.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "precoOferta": "102,90",
+      "precoConsignado": "119,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/08/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6342",
       "descricao": "CONJUNTO FLOR CRAVEJADA VERDE ESMERALDA 46CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -353,6 +353,18 @@
       "precoConsignado": "139,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/10/2025"
+    },
+    {
+      "codigo": "4815",
+      "descricao": "CONJUNTO INFANTIL ESTRELA CRISTAL 35CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4815.jpg",
+      "pastaFotos": "Catalogos/Conjuntos/",
+      "precoOferta": "64,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "10/08/2025",
+      "tags": "#IF"
     },
     {
       "codigo": "4813",
