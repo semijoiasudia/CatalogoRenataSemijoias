@@ -2894,7 +2894,7 @@
                 optionCampanha.hidden = !usarOrdemCampanha;
             }
 
-            // Ao entrar em uma campanha, a rotação diária é o padrão.
+            // Ao entrar em uma campanha, a ordem própria da campanha é o padrão.
             // Uma escolha manual permanece ativa enquanto a pessoa ficar na mesma aba.
             if (usarOrdemCampanha && currentCategory !== nomeCategoria) {
                 currentSort = 'campaign';
@@ -3046,7 +3046,8 @@
                 currentSort === 'campaign' && categoriaUsaOrdemCampanha(currentCategory);
             const usarPrioridadeDeTipo =
                 usarOrdemCampanha && categoriaUsaPrioridadeDeTipo(currentCategory);
-            const chaveDataCampanha = usarOrdemCampanha ? obterChaveDataBrasilia() : '';
+            const chaveDataCampanha = usarOrdemCampanha && !usarPrioridadeDeTipo
+                ? obterChaveDataBrasilia() : '';
         
             filtered.sort((a, b) => {
                 const codigoA = a.codigo || a.name.split('.')[0];
@@ -3057,11 +3058,11 @@
                         const prioridadeA = obterPrioridadeDeTipoNaBlackNovember(codigoA);
                         const prioridadeB = obterPrioridadeDeTipoNaBlackNovember(codigoB);
                         if (prioridadeA !== prioridadeB) return prioridadeA - prioridadeB;
+                    } else {
+                        const pontuacaoA = calcularPontuacaoOrdemCampanha(codigoA, chaveDataCampanha);
+                        const pontuacaoB = calcularPontuacaoOrdemCampanha(codigoB, chaveDataCampanha);
+                        return pontuacaoA - pontuacaoB || codigoA.localeCompare(codigoB, undefined, { numeric: true });
                     }
-
-                    const pontuacaoA = calcularPontuacaoOrdemCampanha(codigoA, chaveDataCampanha);
-                    const pontuacaoB = calcularPontuacaoOrdemCampanha(codigoB, chaveDataCampanha);
-                    return pontuacaoA - pontuacaoB || codigoA.localeCompare(codigoB, undefined, { numeric: true });
                 }
 
                 const precoA = getNumericPrice(descricoes[codigoA]?.preco || "0");
@@ -3087,7 +3088,8 @@
                         dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
                 };
         
-                switch (currentSort) {
+                // Na Black November, ordenar por última entrada dentro de cada grupo.
+                switch (usarPrioridadeDeTipo ? 'newest' : currentSort) {
                     case 'newest':
                         // Ordenar pela data mais recente primeiro
                         const resultNewest = compararDatas(dataA, dataB, false);

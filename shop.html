@@ -42,9 +42,16 @@
                     .cart-content { box-sizing: border-box; max-height: 90vh; max-height: 90dvh; overflow-y: auto; }
                     .shop-order-note { color: #5f5748; font-size: 13px; line-height: 1.5; }
                     #imageModal .modal-content { display: flex; flex-direction: column; }
-                    #imageModal .modal-content > .close { position: static; order: 1; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; margin-top: 10px; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: transparent; font-size: 0; }
+                    #imageModal .modal-content > .close,
+                    #imageModal .add-to-cart-btn,
+                    #imageModal .request-btn { box-sizing: border-box; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: #5f5748; font-family: inherit; font-size: 14px; font-weight: bold; cursor: pointer; }
+                    #imageModal .add-to-cart-btn,
+                    #imageModal .request-btn { padding: 10px 12px; }
+                    #imageModal .modal-content > .close { position: static; order: 1; margin-top: 10px; color: transparent; font-size: 0; }
                     #imageModal .modal-content > .close::after { content: "Fechar visualização"; color: #5f5748; font-size: 14px; font-weight: bold; }
-                    #imageModal .modal-content > .close:hover { background: #e8dcc0; }
+                    #imageModal .modal-content > .close:hover,
+                    #imageModal .add-to-cart-btn:hover,
+                    #imageModal .request-btn:hover { background: #e8dcc0; }
                 </style>`;
 
                 substituir('</head>', `${estilosLoja}</head>`);
