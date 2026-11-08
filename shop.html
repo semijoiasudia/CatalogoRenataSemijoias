@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loja Renata - Semijoias e Acessórios</title>
+    <meta name="description" content="Escolha suas semijoias, monte sua sacola e solicite seu pedido pelo WhatsApp da Renata.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Loja Renata - Semijoias e Acessórios">
+    <meta property="og:description" content="Monte sua sacola e solicite seu pedido pelo WhatsApp.">
+    <meta property="og:url" content="https://renatasemijoias.com/shop.html">
+    <meta property="og:image" content="https://renatasemijoias.com/imagens/logo_otimizada_redes_sociais.jpg">
+    <style>
+        body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: Arial, sans-serif; color: #333; background: #fff; }
+    </style>
+</head>
+<body>
+    <p role="status">Carregando loja...</p>
+    <noscript>Ative o JavaScript para acessar a loja e montar sua sacola.</noscript>
+    <script>
+        // Reutiliza o catálogo principal, mantendo preços, campanhas e identidade da Renata.
+        // Todas as adaptações abaixo se aplicam exclusivamente à shop.html.
+        (async () => {
+            try {
+                const resposta = await fetch('index.html', { cache: 'no-store' });
+                if (!resposta.ok) {
+                    throw new Error(`Não foi possível carregar o catálogo (${resposta.status}).`);
+                }
+                let catalogo = await resposta.text();
+                function substituir(trecho, novoTrecho) {
+                    if (!catalogo.includes(trecho)) {
+                        throw new Error('A estrutura do catálogo mudou. Revise as adaptações da shop.html.');
+                    }
+                    catalogo = catalogo.replace(trecho, novoTrecho);
+                }
+
+                const estilosLoja = `<style>
+                    .cart-icon-container { display: flex !important; }
+                    .add-to-cart-gallery, .add-to-cart-btn, .request-btn { display: inline-flex !important; align-items: center; justify-content: center; }
+                    #faleConoscoBtn { display: inline-block !important; }
+                    .save-btn { display: none !important; }
+                    .cart-content { box-sizing: border-box; max-height: 90vh; max-height: 90dvh; overflow-y: auto; }
+                    .shop-order-note { color: #5f5748; font-size: 13px; line-height: 1.5; }
+                    #imageModal .modal-content { display: flex; flex-direction: column; }
+                    #imageModal .modal-content > .close { position: static; order: 1; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; margin-top: 10px; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: transparent; font-size: 0; }
+                    #imageModal .modal-content > .close::after { content: "Fechar visualização"; color: #5f5748; font-size: 14px; font-weight: bold; }
+                    #imageModal .modal-content > .close:hover { background: #e8dcc0; }
+                </style>`;
+
+                substituir('</head>', `${estilosLoja}</head>`);
+                substituir('<title>Renata - Semijoias e Acessórios</title>', '<title>Loja Renata - Semijoias e Acessórios</title>');
+                substituir('content="https://renatasemijoias.com"', 'content="https://renatasemijoias.com/shop.html"');
+                catalogo = catalogo.replaceAll('semijoiasCart', 'renataShopCart');
+
+                // Usa o preço final calculado pelo catálogo, sem depender do HTML de exibição.
+                substituir('let precoExibicao = preco;', 'let precoExibicao = descricoes[codigo]?.precoCarrinho || preco;');
+                substituir('const precoNumber = getNumericPrice(precoExibicao);', `const precoNumber = getNumericPrice(precoExibicao);
+            if (!Number.isFinite(precoNumber) || precoNumber <= 0) {
+                alert('Este item está sem preço disponível. Consulte pelo WhatsApp.');
+                return;
+            }`);
+                substituir('cart[existingItemIndex].quantity += 1;', `cart[existingItemIndex].quantity += 1;
+                cart[existingItemIndex].preco = precoExibicao;
+                cart[existingItemIndex].precoNumber = precoNumber;`);
+                substituir('<div class="cart-actions">', '<p class="shop-order-note">Pedido sujeito à confirmação de disponibilidade. No WhatsApp, toque em enviar para encaminhar sua solicitação.</p><div class="cart-actions">');
+                substituir("let message = '*Novo Pedido*\\n\\n';", "let message = '*Solicitação de pedido — Loja Renata*\\n\\n';");
+                substituir("message += '\\n\\nOlá, gostaria de fazer este pedido.';", "message += '\\n\\nOlá, gostaria de solicitar este pedido. Podem confirmar a disponibilidade das peças?';");
+                substituir('const message = `Olá, gostaria de solicitar o item com código ${codigo}.`;', 'const produto = descricoes[codigo];\n            const message = `Olá, gostaria de solicitar o item ${produto?.descricao || ""} (Ref.: ${codigo}) — ${produto?.precoCarrinho || "preço a consultar"}. Podem confirmar a disponibilidade?`;');
+
+                document.open();
+                document.write(catalogo);
+                document.close();
+            } catch (erro) {
+                document.body.innerHTML = '<p>Não foi possível carregar a loja. <a href="shop.html">Tente novamente</a>.</p>';
+                console.error(erro);
+            }
+        })();
+    </script>
+</body>
+</html>

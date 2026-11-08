@@ -1817,12 +1817,12 @@
                 <div class="delivery-option">
                     <input type="radio" id="deliveryUberlandia" name="deliveryOption" value="uberlandia" checked>
                     <label for="deliveryUberlandia">Entrega em Uberlândia</label>
-                    <span class="delivery-price">R$ 13,00</span>
+                    <span class="delivery-price" id="deliveryUberlandiaPrice"></span>
                 </div>
                 <div class="delivery-option">
                     <input type="radio" id="deliveryOther" name="deliveryOption" value="other">
                     <label for="deliveryOther">Entrega em outras cidades</label>
-                    <span class="delivery-price">A Calcular</span>
+                    <span class="delivery-price" id="deliveryOtherPrice"></span>
                 </div>
                 <div class="delivery-option">
                     <input type="radio" id="pickupStore" name="deliveryOption" value="pickup">
@@ -2118,7 +2118,10 @@
                             // Configurações específicas por seção
                             if (currentSection === "Entrega") {
                                 if (key === 'FreteUberlandia') {
-                                    deliveryConfig.freteUberlandia = parseFloat(value);
+                                    const frete = Number(value.replace(',', '.'));
+                                    if (value !== '' && Number.isFinite(frete) && frete >= 0) {
+                                        deliveryConfig.freteUberlandia = frete;
+                                    }
                                 } else if (key === 'FreteOutrasCidades') {
                                     deliveryConfig.freteOutrasCidades = value;
                                 }
@@ -2131,7 +2134,14 @@
                         }
                     }
                 })
-                .catch(error => console.warn("Erro ao processar config.ini:", error));
+                .catch(error => console.warn("Erro ao processar config.ini:", error))
+                .finally(() => {
+                    document.getElementById('deliveryUberlandiaPrice').textContent =
+                        `R$ ${deliveryConfig.freteUberlandia.toFixed(2).replace('.', ',')}`;
+                    document.getElementById('deliveryOtherPrice').textContent =
+                        deliveryConfig.freteOutrasCidades;
+                    updateCartTotals();
+                });
         }
         
         // Configurar os botões de categoria
