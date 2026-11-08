@@ -1313,32 +1313,6 @@
       "subcategoria_id": "21"
     },
     {
-      "codigo": "5964",
-      "descricao": "BRINCO TREVO 4 FOLHAS ZIRCÔNIAS COLORS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5964.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "49,90",
-      "precoConsignado": "59,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026",
-      "subcategoria_id": "9",
-      "tags": "#NV#IF"
-    },
-    {
-      "codigo": "5963",
-      "descricao": "BRINCO ARGOLA CRAVEJADA COLORS TAM PP ",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "5963.jpg",
-      "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "49,90",
-      "precoConsignado": "54,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/03/2026",
-      "subcategoria_id": "3",
-      "tags": "#IF"
-    },
-    {
       "codigo": "5962",
       "descricao": "BRINCO ARGOLA PREGO CRAVEJADO TAM P ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2023,6 +1997,19 @@
       "subcategoria_id": "9"
     },
     {
+      "codigo": "5172",
+      "descricao": "BRINCO BORBOLETA ZIRCÔNIAS CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5172.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "49,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "24/10/2025",
+      "subcategoria_id": "9",
+      "tags": "#BN"
+    },
+    {
       "codigo": "5135",
       "descricao": "BRINCO FLOR CRAVEJADA TAM PP",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -2468,11 +2455,12 @@
       "tipo": "Semijoia banhada a Ródio Branco",
       "imagem": "4801.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "32,90",
+      "precoOferta": "29,90",
       "precoConsignado": "49,90",
       "banho": "Ródio Branco",
       "dataUltimaEntrada": "10/08/2025",
-      "subcategoria_id": "7"
+      "subcategoria_id": "7",
+      "tags": "#BN"
     },
     {
       "codigo": "4793",
