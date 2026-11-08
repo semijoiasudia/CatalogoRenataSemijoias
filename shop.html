@@ -42,6 +42,10 @@
                     .cart-content { box-sizing: border-box; max-height: 90vh; max-height: 90dvh; overflow-y: auto; }
                     .shop-order-note { color: #5f5748; font-size: 13px; line-height: 1.5; }
                     #imageModal .modal-content { display: flex; flex-direction: column; }
+                    /* Preserva a foto inteira; o modal rola quando o conteúdo excede a tela. */
+                    #imageModal .modal-content > .capture-area,
+                    #imageModal .modal-content > .modal-info,
+                    #imageModal .modal-content > .modal-buttons { flex: 0 0 auto; }
                     #imageModal .modal-content > .close,
                     #imageModal .add-to-cart-btn,
                     #imageModal .request-btn { box-sizing: border-box; flex: 0 0 auto; width: 100%; min-height: 42px; height: auto; border: 1px solid #c9bda1; border-radius: 6px; background: #f5f0e8; color: #5f5748; font-family: inherit; font-size: 14px; font-weight: bold; cursor: pointer; }
