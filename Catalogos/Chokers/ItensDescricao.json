@@ -2,30 +2,6 @@
   "categoria": "CHOKER",
   "produtos": [
     {
-      "codigo": "6510",
-      "descricao": "CHOKER ELOS TRABALHADOS E ESFERA 10MM 36+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6510.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "precoOferta": "129,90",
-      "precoConsignado": "139,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "26/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6125",
-      "descricao": "CHOKER CORACOES ENTRELAÇADOS P 37+5CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6125.jpg",
-      "pastaFotos": "Catalogos/Chokers/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "07/05/2026",
-      "tags": "#NV"
-    },
-    {
       "codigo": "6024",
       "descricao": "CHOKER CORAÇÕES E TIFFANYS CRISTAL 37+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -192,6 +168,18 @@
       "precoConsignado": "89,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/10/2025"
+    },
+    {
+      "codigo": "5213",
+      "descricao": "CHOKER CORAÇÕES ABAULADOS E BOLINHAS 32+7CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5213.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "84,90",
+      "precoConsignado": "134,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2025",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5178",
