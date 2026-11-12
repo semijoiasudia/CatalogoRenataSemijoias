@@ -2,18 +2,6 @@
   "categoria": "BRACELETE INOX",
   "produtos": [
     {
-      "codigo": "6613",
-      "descricao": "BRACELETE INOX BRACELETE PRISMA INSPIR. ALTA JOALHERIA",
-      "tipo": "Aço Inox",
-      "imagem": "6613.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "precoOferta": "59,90",
-      "precoConsignado": "69,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/10/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6609",
       "descricao": "BRACELETE INOX BRACELETE INSPIRACAO CART. PEDRAS BAGUETE",
       "tipo": "Aço Inox",
@@ -61,6 +49,18 @@
       "dataUltimaEntrada": "19/09/2026"
     },
     {
+      "codigo": "6568",
+      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
+      "tipo": "Aço Inox",
+      "imagem": "6568.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "18/09/2026",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6567",
       "descricao": "BRACELETE INOX BRACELETE TREVO BRANCO E 2 PONTOS DE LUZ",
       "tipo": "Aço Inox",
@@ -73,26 +73,26 @@
       "tags": "#NV"
     },
     {
-      "codigo": "6393",
-      "descricao": "BRACELETE INOX BRACELETE 2 MEDALHAS SÃO BENTO",
+      "codigo": "6391",
+      "descricao": "BRACELETE INOX BRACELETE INSP. V COM PEDRAS",
       "tipo": "Aço Inox",
-      "imagem": "6393.jpg",
-      "pastaFotos": "Catalogos/Braceletes Inox/",
-      "precoOferta": "59,90",
-      "precoConsignado": "59,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "18/09/2026",
-      "tags": "#NV"
-    },
-    {
-      "codigo": "6395",
-      "descricao": "BRACELETE INOX BRACELETE INSP. ALGARISMOS ROMANOS E PEDRAS",
-      "tipo": "Aço Inox",
-      "imagem": "6395.jpg",
+      "imagem": "6391.jpg",
       "pastaFotos": "Catalogos/Braceletes Inox/",
       "precoOferta": "49,90",
       "precoConsignado": "59,90",
       "banho": "Inox",
+      "dataUltimaEntrada": "29/07/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6389",
+      "descricao": "BRACELETE INOX BRACELETE TREVO CRISTAL E PEDRAS CRISTAL",
+      "tipo": "Aço Inox",
+      "imagem": "6389.jpg",
+      "pastaFotos": "Catalogos/Braceletes Inox/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
       "dataUltimaEntrada": "29/07/2026",
       "tags": "#NV"
     },
