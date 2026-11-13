@@ -2,6 +2,42 @@
   "categoria": "COLAR",
   "produtos": [
     {
+      "codigo": "6702",
+      "descricao": "COLAR PINGENTE CORAÇÃO ESPÍRITO SANTO 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6702.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "precoOferta": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "12/11/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6645",
+      "descricao": "COLAR CORAÇÃO LISO E TRABALHADO 46CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6645.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "precoOferta": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6643",
+      "descricao": "COLAR PINGENTE CORAÇÃO ESPÍRITO SANTO VAZADO 41+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6643.jpg",
+      "pastaFotos": "Catalogos/Colares/",
+      "precoOferta": "89,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "29/10/2026",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6049",
       "descricao": "COLAR FIO DE NYLON MENINA 39+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -333,18 +369,6 @@
       "tags": "#IF"
     },
     {
-      "codigo": "5541",
-      "descricao": "COLAR RIVIERA COLORS 3MM 46CM",
-      "tipo": "Semijoia banhada a Ródio Branco",
-      "imagem": "5541.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "precoOferta": "102,90",
-      "precoConsignado": "149,90",
-      "banho": "Ródio Branco",
-      "dataUltimaEntrada": "20/11/2025",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "5540",
       "descricao": "COLAR RIVIERA COLORS 3MM 46CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -512,17 +536,6 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "29/10/2025",
       "tags": "#NV#DT"
-    },
-    {
-      "codigo": "4934",
-      "descricao": "COLAR OLHO GREGO / ELOS TRABALHADOS 45CM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4934.jpg",
-      "pastaFotos": "Catalogos/Colares/",
-      "precoOferta": "109,90",
-      "precoConsignado": "169,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "27/09/2025"
     },
     {
       "codigo": "4928",

@@ -2,6 +2,18 @@
   "categoria": "ANEL",
   "produtos": [
     {
+      "codigo": "6653",
+      "descricao": "ANEL REGULÁVEL - SÃO BENTO ",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6653.jpg",
+      "pastaFotos": "Catalogos/Aneis/",
+      "precoOferta": "119,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "3293",
       "descricao": "ANEL REGULAVEL FIO DUPLO FINO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -86,18 +98,6 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6492",
-      "descricao": "ANEL REGULÁVEL PEDRA OVAL PINK 8X10MM",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6492.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
       "codigo": "6312",
       "descricao": "ANEL REGULÁVEL FALANGE TRIPLO LISO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -114,18 +114,6 @@
       "descricao": "ANEL REGULÁVEL TRIPLO LISO LARGO",
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "6311.jpg",
-      "pastaFotos": "Catalogos/Aneis/",
-      "precoOferta": "89,90",
-      "precoConsignado": "109,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "17/08/2026",
-      "tags": "#NV#DT"
-    },
-    {
-      "codigo": "6108",
-      "descricao": "ANEL REGULÁVEL 2 ASAS VAZADAS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6108.jpg",
       "pastaFotos": "Catalogos/Aneis/",
       "precoOferta": "89,90",
       "precoConsignado": "109,90",
