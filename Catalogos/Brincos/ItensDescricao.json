@@ -418,6 +418,19 @@
       "tags": "#NV"
     },
     {
+      "codigo": "6547",
+      "descricao": "BRINCO PONTO DE LUZ BASE ALTA VERDE CLARO 3MM",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "6547.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "29,90",
+      "precoConsignado": "32,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "17/09/2026",
+      "subcategoria_id": "8",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6518",
       "descricao": "BRINCO CORAÇÃO COM 3 FIOS E PINGENTES DE CORAÇÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -584,6 +597,19 @@
       "banho": "Prata",
       "dataUltimaEntrada": "13/08/2026",
       "subcategoria_id": "7",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6465",
+      "descricao": "BRINCO ARGOLA CLICK LISA ABAULADA 15MM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6465.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "69,90",
+      "precoConsignado": "79,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "13/08/2026",
+      "subcategoria_id": "2",
       "tags": "#NV"
     },
     {
@@ -977,6 +1003,19 @@
       "tags": "#NV#DT"
     },
     {
+      "codigo": "6235",
+      "descricao": "BRINCO DUAS GOTAS CURVAS",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "6235.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "59,90",
+      "precoConsignado": "69,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "09/06/2026",
+      "subcategoria_id": "7",
+      "tags": "#NV"
+    },
+    {
       "codigo": "6227",
       "descricao": "BRINCO PONTO DE LUZ 8MM",
       "tipo": "Semijoia banhada a Prata",
@@ -1064,6 +1103,18 @@
       "subcategoria_id": "9"
     },
     {
+      "codigo": "6084",
+      "descricao": "BRINCO DUO CORAÇÃO ALONGADO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6084.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "79,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "27"
+    },
+    {
       "codigo": "6081",
       "descricao": "BRINCO ARGOLA TRANQUETA SOL COM PONTO DE LUZ",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1147,6 +1198,31 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
       "subcategoria_id": "2",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6070",
+      "descricao": "BRINCO FLOR CRAVEJADA COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6070.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "49,90",
+      "precoConsignado": "69,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "9"
+    },
+    {
+      "codigo": "6069",
+      "descricao": "BRINCO CORAÇÃO CRISTAL CRAVEJADO AO REDOR COLORS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6069.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "21/04/2026",
+      "subcategoria_id": "9",
       "tags": "#NV#DT"
     },
     {
@@ -1500,6 +1576,19 @@
       "dataUltimaEntrada": "16/01/2026",
       "subcategoria_id": "5",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "5744",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO GOTA ALONGADA",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "5744.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "79,90",
+      "precoConsignado": "109,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "09/12/2025",
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "5734",
@@ -1893,6 +1982,19 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "10/11/2025",
       "subcategoria_id": "25"
+    },
+    {
+      "codigo": "5424",
+      "descricao": "BRINCO ARGOLA CLICK FORMATO CORAÇÃO COLORS TAM G",
+      "tipo": "Semijoia banhada a Ródio Branco",
+      "imagem": "5424.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "79,90",
+      "precoConsignado": "119,90",
+      "banho": "Ródio Branco",
+      "dataUltimaEntrada": "07/11/2025",
+      "subcategoria_id": "2",
+      "tags": "#NV"
     },
     {
       "codigo": "5175",
@@ -2330,6 +2432,19 @@
       "precoConsignado": "69,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "12/09/2025",
+      "subcategoria_id": "26",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "4862",
+      "descricao": "BRINCO TRIO PONTO DE LUZ BASE ALTA ROSA CLARO",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4862.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "39,90",
+      "precoConsignado": "62,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "11/09/2025",
       "subcategoria_id": "26",
       "tags": "#NV"
     },

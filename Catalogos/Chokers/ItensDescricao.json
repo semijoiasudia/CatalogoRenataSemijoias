@@ -2,6 +2,18 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "6510",
+      "descricao": "CHOKER ELOS TRABALHADOS E ESFERA 10MM 36+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6510.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "129,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "26/08/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6024",
       "descricao": "CHOKER CORAÇÕES E TIFFANYS CRISTAL 37+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -181,6 +193,17 @@
       "banho": "Prata",
       "dataUltimaEntrada": "24/10/2025",
       "tags": "#NV#DT"
+    },
+    {
+      "codigo": "4910",
+      "descricao": "CHOKER MIÇANGAS PRETAS E CORAÇÃO VAZADO 39+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "4910.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "82,90",
+      "precoConsignado": "129,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "13/09/2025"
     },
     {
       "codigo": "4718",
