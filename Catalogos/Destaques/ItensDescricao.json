@@ -2,6 +2,30 @@
   "categoria": "Destaques",
   "produtos": [
     {
+      "codigo": "6675",
+      "descricao": "CHOKER BOLINHAS E PINGENTE GOTA CRISTAL 35+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6675.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "109,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6674",
+      "descricao": "COLAR PINGENTES DE CORAÇÕES COLORS 40+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6674.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "109,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6666",
       "descricao": "PULSEIRA RIVIERA CRISTA E PLAQUINHA GRATIDÃO",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -706,19 +730,6 @@
       "subcategoria_id": "10"
     },
     {
-      "codigo": "6406",
-      "descricao": "BRINCO TRIO ARGOLA CLICK 3 CORAÇÕES CRAVEJADOS",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "6406.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "129,90",
-      "precoConsignado": "159,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "29/07/2026",
-      "tags": "#NV#DT",
-      "subcategoria_id": "22"
-    },
-    {
       "codigo": "6362",
       "descricao": "RELOGIO TREVO - PULSEIRA ELÁSTICA - LINHA FASHION ",
       "imagem": "6362.jpg",
@@ -1174,19 +1185,6 @@
       "subcategoria_id": "10"
     },
     {
-      "codigo": "4667",
-      "descricao": "BRINCO CORACAO M LISO LEVE DOBRA",
-      "tipo": "Semijoia banhada a Ouro 18k",
-      "imagem": "4667.jpg",
-      "pastaFotos": "Catalogos/Destaques/",
-      "precoOferta": "44,90",
-      "precoConsignado": "79,90",
-      "banho": "Ouro 18k",
-      "dataUltimaEntrada": "02/08/2025",
-      "tags": "#NV#DT",
-      "subcategoria_id": "7"
-    },
-    {
       "codigo": "4619",
       "descricao": "BRINCO EAR CUFF 2 FLORES",
       "tipo": "Semijoia banhada a Ródio Branco",
@@ -1236,6 +1234,19 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "24/09/2026",
       "tags": "#NY#DT"
+    },
+    {
+      "codigo": "3767",
+      "descricao": "BRINCO GOTA E 2 FIOS",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "3767.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "89,90",
+      "precoConsignado": "119,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "18/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "10"
     },
     {
       "codigo": "3374",

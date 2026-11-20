@@ -2,6 +2,18 @@
   "categoria": "CHOKER",
   "produtos": [
     {
+      "codigo": "6675",
+      "descricao": "CHOKER BOLINHAS E PINGENTE GOTA CRISTAL 35+5CM",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6675.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "109,90",
+      "precoConsignado": "139,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "01/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6510",
       "descricao": "CHOKER ELOS TRABALHADOS E ESFERA 10MM 36+5CM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -147,6 +159,17 @@
       "precoConsignado": "169,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "08/11/2025"
+    },
+    {
+      "codigo": "5338",
+      "descricao": "CHOKER ELOS OVAIS E ELOS REDONDOS 37+5CM",
+      "tipo": "Semijoia banhada a Prata",
+      "imagem": "5338.jpg",
+      "pastaFotos": "Catalogos/Chokers/",
+      "precoOferta": "84,90",
+      "precoConsignado": "139,90",
+      "banho": "Prata",
+      "dataUltimaEntrada": "03/11/2025"
     },
     {
       "codigo": "5337",
