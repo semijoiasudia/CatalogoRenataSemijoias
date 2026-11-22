@@ -2,6 +2,54 @@
   "categoria": "INOX",
   "produtos": [
     {
+      "codigo": "6281",
+      "descricao": "INOX BRINCO DUO TREVO PRETO",
+      "tipo": "Aço Inox",
+      "imagem": "6281.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "precoOferta": "39,90",
+      "precoConsignado": "49,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/11/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6279",
+      "descricao": "INOX BRINCO DUO TREVO PRETO",
+      "tipo": "Aço Inox",
+      "imagem": "6279.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "precoOferta": "39,90",
+      "precoConsignado": "49,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/11/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6187",
+      "descricao": "INOX CONJUNTO 5 TREVOS PRETOS",
+      "tipo": "Aço Inox",
+      "imagem": "6187.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "5360",
+      "descricao": "INOX CONJUNTO 5 TREVOS PRETO 44+5CM",
+      "tipo": "Aço Inox",
+      "imagem": "5360.jpg",
+      "pastaFotos": "Catalogos/Aco Inox/",
+      "precoOferta": "69,90",
+      "precoConsignado": "89,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "22/11/2026",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "5278",
       "descricao": "INOX PULSEIRA MEDALHA SÃO BENTO",
       "tipo": "Aço Inox",
