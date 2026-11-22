@@ -150,7 +150,7 @@
       "precoConsignado": "159,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "09/10/2026",
-      "tags": "#NV#NY#DT#EX"
+      "tags": "#NV#NY#DT"
     },
     {
       "codigo": "6602",
@@ -740,6 +740,18 @@
       "dataUltimaEntrada": "30/07/2026",
       "tags": "#NV#DT",
       "subcategoria_id": "10"
+    },
+    {
+      "codigo": "6392",
+      "descricao": "BRACELETE INOX BRACELETE PAI NOSSO",
+      "tipo": "Aço Inox",
+      "imagem": "6392.jpg",
+      "pastaFotos": "Catalogos/Destaques/",
+      "precoOferta": "49,90",
+      "precoConsignado": "59,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "22/11/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "6342",
