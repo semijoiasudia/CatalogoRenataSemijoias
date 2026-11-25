@@ -2,15 +2,15 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
-      "codigo": "6698",
-      "descricao": "RELOGIO OVAL - FUNDO PRETO - AJUSTÁVEL - L. FASHION",
-      "imagem": "6698.jpg",
+      "codigo": "6597",
+      "descricao": "RELOGIO ESPORTIVO DIGITAL ROSA",
+      "imagem": "6597.jpg",
       "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "69,90",
-      "precoConsignado": "89,90",
-      "banho": "Cor Ouro",
-      "dataUltimaEntrada": "02/11/2026",
-      "subcategoria_id": "14",
+      "precoOferta": "119,90",
+      "precoConsignado": "129,90",
+      "banho": " ",
+      "dataUltimaEntrada": "06/10/2026",
+      "subcategoria_id": "18",
       "tags": "#NV"
     },
     {
@@ -26,9 +26,21 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6572",
-      "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
-      "imagem": "6572.jpg",
+      "codigo": "6357",
+      "descricao": "RELOGIO REDONDO COM ALGARISMOS PULSEIRA COURO SINT MARROM",
+      "imagem": "6357.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "139,90",
+      "precoConsignado": "159,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "29/09/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6581",
+      "descricao": "RELOGIO BRACELETE INSP OVAL LISO - FUNDO CINZA",
+      "imagem": "6581.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "precoOferta": "129,90",
       "precoConsignado": "159,90",
@@ -38,13 +50,13 @@
       "tags": "#NV#DT"
     },
     {
-      "codigo": "6571",
+      "codigo": "6572",
       "descricao": "RELOGIO BRACELETE REDONDO INSP CART. COM PEDRAS",
-      "imagem": "6571.jpg",
+      "imagem": "6572.jpg",
       "pastaFotos": "Catalogos/Relogios/",
       "precoOferta": "129,90",
       "precoConsignado": "159,90",
-      "banho": "Cor Ouro",
+      "banho": "Cor Prata",
       "dataUltimaEntrada": "28/09/2026",
       "subcategoria_id": "14",
       "tags": "#NV#DT"
@@ -119,18 +131,6 @@
       "banho": "Inox",
       "dataUltimaEntrada": "10/06/2026",
       "subcategoria_id": "15"
-    },
-    {
-      "codigo": "6209",
-      "descricao": "RELOGIO CASIO OVAL MÉDIO - FUNDO PRETO",
-      "imagem": "6209.jpg",
-      "pastaFotos": "Catalogos/Relogios/",
-      "precoOferta": "149,90",
-      "precoConsignado": "169,90",
-      "banho": "Inox Dourado",
-      "dataUltimaEntrada": "09/06/2026",
-      "subcategoria_id": "18",
-      "tags": "#NV"
     },
     {
       "codigo": "5978",
