@@ -2,6 +2,30 @@
   "categoria": "RELOGIO",
   "produtos": [
     {
+      "codigo": "6721",
+      "descricao": "RELOGIO TAG HEUER CARRERA AZUL",
+      "imagem": "6721.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "169,90",
+      "precoConsignado": "192,90",
+      "banho": " ",
+      "dataUltimaEntrada": "26/11/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV#DT"
+    },
+    {
+      "codigo": "6720",
+      "descricao": "RELOGIO TAG HEUER CARRERA COM FUNDO CINZA",
+      "imagem": "6720.jpg",
+      "pastaFotos": "Catalogos/Relogios/",
+      "precoOferta": "169,90",
+      "precoConsignado": "192,90",
+      "banho": " ",
+      "dataUltimaEntrada": "26/11/2026",
+      "subcategoria_id": "18",
+      "tags": "#NV#DT"
+    },
+    {
       "codigo": "6597",
       "descricao": "RELOGIO ESPORTIVO DIGITAL ROSA",
       "imagem": "6597.jpg",
