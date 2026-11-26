@@ -2,6 +2,18 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6722",
+      "descricao": "RELOGIO ROLEX 2 BANHOS COM CALENDÁRIO",
+      "imagem": "6722.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "169,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "26/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6721",
       "descricao": "RELOGIO TAG HEUER CARRERA AZUL - PULSEIRA BORRACHA",
       "imagem": "6721.jpg",
