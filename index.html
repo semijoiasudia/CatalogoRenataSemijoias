@@ -1512,6 +1512,31 @@
             white-space: pre-line;
         }
 
+        .validade-black-friday {
+            width: fit-content;
+            max-width: 100%;
+            margin: 8px auto 4px;
+            padding: 8px 12px;
+            border: 1px solid #aa9068;
+            border-radius: 5px;
+            background: linear-gradient(125deg, #302c27, #191816);
+            color: #dfcba8;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .validade-black-friday strong {
+            display: block;
+            color: #f6e9d2;
+            font: 600 16px/1.25 Georgia, serif;
+            letter-spacing: normal;
+            text-transform: none;
+        }
+
         .modal-info .descricao-completa {
             margin: -5px 0 10px;
             padding: 8px 10px;
@@ -1876,6 +1901,8 @@
 
         // Configuração do parcelamento. Altere para false para ocultar durante os testes.
         const EXIBIR_PARCELAMENTO = true;
+        const dataOfertaBlackFriday = '26 e 27 de novembro';
+        const validadeBlackFridayHtml = `Oferta válida somente em <strong>${dataOfertaBlackFriday}</strong>`;
         const QUANTIDADE_PARCELAS = 3;
 
         let categoriasAtivas = [];
@@ -1883,6 +1910,8 @@
         let subcategoriasExibicao = {};
         let blackFridayCodes = new Set();
         let blackNovemberCodes = new Set();
+        let produtosBlackNovember = null;
+        let blackFridayCarregada = false;
         let esquentaBlackCodes = new Set();
         let promocoesAtivasPorCodigo = new Map();
         
@@ -2626,6 +2655,8 @@
         async function loadPromocoesAtivas() {
             blackFridayCodes = new Set();
             blackNovemberCodes = new Set();
+            produtosBlackNovember = null;
+            blackFridayCarregada = false;
             esquentaBlackCodes = new Set();
             promocoesAtivasPorCodigo = new Map();
 
@@ -2659,6 +2690,8 @@
                 const blackFriday = nomeCategoria === 'black friday';
                 const blackNovember = nomeCategoria === 'black november';
                 const esquentaBlack = nomeCategoria === 'esquenta black';
+                if (blackFriday) blackFridayCarregada = true;
+                if (blackNovember) produtosBlackNovember = result.value.produtos;
                 result.value.produtos.forEach((produto) => {
                     const codigo = String(produto.codigo);
                     const promocao = {
@@ -2703,6 +2736,16 @@
                 if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
                 
                 const data = await response.json();
+                if (String(categoryName).trim().toLowerCase() === 'black friday' && produtosBlackNovember) {
+                    const codigos = new Set(data.produtos.map(produto => String(produto.codigo)));
+                    produtosBlackNovember.forEach(produto => {
+                        const codigo = String(produto.codigo);
+                        if (/(?:^|#)BN(?:#|$)/.test(String(produto.tags || '')) && !codigos.has(codigo)) {
+                            data.produtos.push(produto);
+                            codigos.add(codigo);
+                        }
+                    });
+                }
                 console.log(`Carregados ${data.produtos.length} produtos da categoria ${data.categoria || categoryName}`);
                 
                 // Adicionar os produtos ao objeto descricoes
@@ -2784,7 +2827,10 @@
                 categoriasAtivas.sort((a, b) => a.name.localeCompare(b.name));
                 
                 // Criar botões para cada categoria ativa
+                const blackFridayAtiva = blackFridayCarregada;
                 categoriasAtivas.forEach(categoria => {
+                    if (blackFridayAtiva && produtosBlackNovember &&
+                        String(categoria.name || '').trim().toLowerCase() === 'black november') return;
                     const button = document.createElement('button');
                     button.className = 'category-btn';
                     button.innerHTML = `<span class="icon icon-gem"></span> ${categoria.name}`;
@@ -2819,7 +2865,10 @@
                 // 1. Parâmetro na URL
                 // 2. Valor do config.ini
                 // 3. Valor padrão "Brincos"
-                const initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
+                let initialCategory = getQueryParam('categoria') || categoriaInicial || 'Brincos';
+                if (blackFridayAtiva && produtosBlackNovember && initialCategory.trim().toLowerCase() === 'black november') {
+                    initialCategory = 'Black Friday';
+                }
                 let initialButton = null;
                 
                 // Procurar o botão correspondente à categoria inicial
@@ -2870,7 +2919,8 @@
         }
 
         function categoriaUsaPrioridadeDeTipo(nomeCategoria) {
-            return String(nomeCategoria || '').trim().toLowerCase() === 'black november';
+            const nome = String(nomeCategoria || '').trim().toLowerCase();
+            return nome === 'black november' || nome === 'black friday';
         }
 
         function obterPrioridadeDeTipoNaBlackNovember(codigo) {
@@ -3055,6 +3105,11 @@
 
                 if (usarOrdemCampanha) {
                     if (usarPrioridadeDeTipo) {
+                        if (String(currentCategory).trim().toLowerCase() === 'black friday') {
+                            const blackA = blackFridayCodes.has(String(codigoA));
+                            const blackB = blackFridayCodes.has(String(codigoB));
+                            if (blackA !== blackB) return blackA ? -1 : 1;
+                        }
                         const prioridadeA = obterPrioridadeDeTipoNaBlackNovember(codigoA);
                         const prioridadeB = obterPrioridadeDeTipoNaBlackNovember(codigoB);
                         if (prioridadeA !== prioridadeB) return prioridadeA - prioridadeB;
@@ -3088,7 +3143,7 @@
                         dateStrB.localeCompare(dateStrA);  // Decrescente (mais recente primeiro)
                 };
         
-                // Na Black November, ordenar por última entrada dentro de cada grupo.
+                // Nas campanhas Black, ordenar por última entrada dentro de cada grupo.
                 switch (usarPrioridadeDeTipo ? 'newest' : currentSort) {
                     case 'newest':
                         // Ordenar pela data mais recente primeiro
@@ -3188,7 +3243,7 @@
                 imgContainer.appendChild(img);
                 imgContainer.appendChild(logo);
 
-                if (blackFriday) {
+                if (blackFriday || (blackNovember && currentCategory.trim().toLowerCase() === 'black friday')) {
                     const blackFridayRibbon = document.createElement('div');
                     blackFridayRibbon.className = 'black-friday-ribbon';
                     blackFridayRibbon.textContent = 'Black Friday';
@@ -3275,6 +3330,12 @@
                 }
 
                 contentWrapper.appendChild(precoElement);
+                if (blackFriday) {
+                    const validade = document.createElement('div');
+                    validade.className = 'validade-black-friday';
+                    validade.innerHTML = validadeBlackFridayHtml;
+                    contentWrapper.appendChild(validade);
+                }
                 if (parcelamentoElement) {
                     contentWrapper.appendChild(parcelamentoElement);
                 }
@@ -3431,7 +3492,7 @@
             logo.draggable = false;
             captureArea.appendChild(logo);
 
-            if (blackFriday) {
+            if (blackFriday || (blackNovember && currentCategory.trim().toLowerCase() === 'black friday')) {
                 const blackFridayRibbon = document.createElement('div');
                 blackFridayRibbon.className = 'black-friday-ribbon modal-black-friday-ribbon';
                 blackFridayRibbon.textContent = 'Black Friday';
@@ -3482,6 +3543,7 @@
                 ${exclusiveHTML}
                 ${subcategoriaHTML}
                 <div class="preco">${preco}</div>
+                ${blackFriday ? `<div class="validade-black-friday">${validadeBlackFridayHtml}</div>` : ''}
                 ${parcelamentoHTML}
             `;
             updateModalTransform();
@@ -3800,7 +3862,8 @@
                 // ==============================
                 // Faixa da campanha
                 // ==============================
-                const faixaCampanha = descricoes[codigo]?.blackFriday
+                const faixaCampanha = (descricoes[codigo]?.blackFriday ||
+                    (descricoes[codigo]?.blackNovember && currentCategory.trim().toLowerCase() === 'black friday'))
                     ? { texto: 'Black Friday', fundo: '#111', textoCor: '#c9a873' }
                     : descricoes[codigo]?.blackNovember
                         ? { texto: 'Black November', fundo: '#111', textoCor: '#c9a873' }
@@ -3874,6 +3937,9 @@
                     const fonteRotulo = 6 * scaleCanvas;
                     const fontePrecoAnterior = 9 * scaleCanvas;
                     const fontePrecoOferta = 13 * scaleCanvas;
+                    const fonteValidade = 10 * scaleCanvas;
+                    const estiloFonteValidade = `600 ${fonteValidade}px Georgia, serif`;
+                    const textoValidade = produtoParaSalvar.blackFriday ? `Só ${dataOfertaBlackFriday}` : '';
                     const espacamentoRotulo = 5 * scaleCanvas;
                     const espacamentoLinhas = 4 * scaleCanvas;
                     const rotuloDe = 'DE:';
@@ -3889,16 +3955,21 @@
                     ctx.font = `800 ${fontePrecoOferta}px Inter, Arial, sans-serif`;
                     const larguraPrecoOferta = ctx.measureText(produtoParaSalvar.precoPromocional).width;
 
+                    ctx.font = estiloFonteValidade;
+                    const larguraValidade = textoValidade ? ctx.measureText(textoValidade).width : 0;
+
                     const larguraConteudo = Math.max(
                         larguraRotuloDe + espacamentoRotulo + larguraPrecoAnterior,
-                        larguraRotuloPor + espacamentoRotulo + larguraPrecoOferta
+                        larguraRotuloPor + espacamentoRotulo + larguraPrecoOferta,
+                        larguraValidade
                     );
                     const larguraCaixa = larguraConteudo + (paddingHorizontal * 2);
                     const alturaCaixa =
                         (paddingVertical * 2) +
                         fontePrecoAnterior +
                         espacamentoLinhas +
-                        fontePrecoOferta;
+                        fontePrecoOferta +
+                        (textoValidade ? espacamentoLinhas + fonteValidade : 0);
                     const xCaixa = margemPreco;
                     const yCaixa = canvasHeight - alturaCaixa - margemPreco;
 
@@ -3938,6 +4009,12 @@
                     ctx.font = `800 ${fontePrecoOferta}px Inter, Arial, sans-serif`;
                     ctx.fillStyle = '#ffffff';
                     ctx.fillText(produtoParaSalvar.precoPromocional, xPrecoOferta, yPrecoOferta);
+                    if (textoValidade) {
+                        ctx.font = estiloFonteValidade;
+                        ctx.fillStyle = '#f6e9d2';
+                        ctx.fillText(textoValidade, xTexto,
+                            yPrecoOferta + fontePrecoOferta / 2 + espacamentoLinhas + fonteValidade / 2);
+                    }
                 }
 
                 // ==============================

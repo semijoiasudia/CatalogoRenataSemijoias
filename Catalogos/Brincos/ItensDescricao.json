@@ -15,6 +15,19 @@
       "tags": "#NV#DT"
     },
     {
+      "codigo": "6683",
+      "descricao": "BRINCO RAMINHO CRAVEJADO CRISTAL",
+      "tipo": "Semijoia banhada a Ouro 18k",
+      "imagem": "6683.jpg",
+      "pastaFotos": "Catalogos/Brincos/",
+      "precoOferta": "39,90",
+      "precoConsignado": "79,90",
+      "banho": "Ouro 18k",
+      "dataUltimaEntrada": "02/11/2026",
+      "subcategoria_id": "12",
+      "tags": "#NV#DT#BK"
+    },
+    {
       "codigo": "6682",
       "descricao": "BRINCO ARGOLA CLICK FLOR VAZADA 9MM",
       "tipo": "Semijoia banhada a Ouro 18k",
@@ -1182,11 +1195,12 @@
       "tipo": "Semijoia banhada a Ouro 18k",
       "imagem": "6074.jpg",
       "pastaFotos": "Catalogos/Brincos/",
-      "precoOferta": "39,90",
+      "precoOferta": "29,90",
       "precoConsignado": "49,90",
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "21/04/2026",
-      "subcategoria_id": "12"
+      "subcategoria_id": "12",
+      "tags": "#BN"
     },
     {
       "codigo": "6071",
@@ -2829,7 +2843,7 @@
       "banho": "Ouro 18k",
       "dataUltimaEntrada": "22/11/2024",
       "subcategoria_id": "8",
-      "tags": "#BK"
+      "tags": "#BN"
     },
     {
       "codigo": "3632",
