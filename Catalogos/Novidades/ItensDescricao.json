@@ -2,6 +2,54 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6726",
+      "descricao": "RELOGIO REDONDO ALGARISMOS E DETALHES EM BRANCO",
+      "imagem": "6726.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "149,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6725",
+      "descricao": "RELOGIO REDONDO ALGARISMOS E DETALHES EM MARROM",
+      "imagem": "6725.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "129,90",
+      "precoConsignado": "149,90",
+      "banho": "Cor Ouro",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "14"
+    },
+    {
+      "codigo": "6724",
+      "descricao": "RELOGIO ROLEX FUNDO PRETO COM CALENDÁRIO",
+      "imagem": "6724.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "169,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6723",
+      "descricao": "RELOGIO CASIO RETANGULAR - FUNDO ROSA - ALGARISMOS",
+      "imagem": "6723.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6722",
       "descricao": "RELOGIO ROLEX 2 BANHOS COM CALENDÁRIO",
       "imagem": "6722.jpg",
