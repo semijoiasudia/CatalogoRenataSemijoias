@@ -2,6 +2,53 @@
   "categoria": "Novidades",
   "produtos": [
     {
+      "codigo": "6730",
+      "descricao": "RELOGIO ROLEX DOURADO FUNDO CINZA COM CALENDÁRIO",
+      "imagem": "6730.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "169,90",
+      "precoConsignado": "189,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6729",
+      "descricao": "RELOGIO CASIO ILLUMINATOR DIGITAL MASCULINO",
+      "imagem": "6729.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
+      "codigo": "6728",
+      "descricao": "RELOGIO INSPIRAÇÃO REDONDO - ALGARISMOS",
+      "imagem": "6728.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "159,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV"
+    },
+    {
+      "codigo": "6727",
+      "descricao": "RELOGIO INSPIRAÇÃO RETANGULAR - ALGARISMOS",
+      "imagem": "6727.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "169,90",
+      "precoConsignado": "179,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT",
+      "subcategoria_id": "18"
+    },
+    {
       "codigo": "6726",
       "descricao": "RELOGIO REDONDO ALGARISMOS E DETALHES EM BRANCO",
       "imagem": "6726.jpg",
@@ -2557,6 +2604,17 @@
       "dataUltimaEntrada": "18/10/2026",
       "tags": "#NV",
       "subcategoria_id": "21"
+    },
+    {
+      "codigo": "5683",
+      "descricao": "RELOGIO INSPIRAÇÃO CART. 1ª LINHA - 2 BANHOS",
+      "imagem": "5683.jpg",
+      "pastaFotos": "Catalogos/Novidades/",
+      "precoOferta": "149,90",
+      "precoConsignado": "169,90",
+      "banho": "Inox Dourado",
+      "dataUltimaEntrada": "27/11/2026",
+      "tags": "#NV#DT"
     },
     {
       "codigo": "5626",
